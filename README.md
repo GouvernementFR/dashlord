@@ -1,6 +1,6 @@
 # DashLord
 
-![GitHub repo size](https://img.shields.io/github/repo-size/steelthom/dashlord)
+![GitHub repo size](https://img.shields.io/github/repo-size/GouvernementFR/dashlord)
 
 Tableau de bord des bonnes pratiques techniques
 
