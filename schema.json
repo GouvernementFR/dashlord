@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dashlord configuration file",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "tools": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "404": {
+          "description": "Enable 404 detection",
+          "type": "boolean"
+        },
+        "betagouv": {
+          "description": "Enable betagouv API data",
+          "type": "boolean"
+        },
+        "budget_page": {
+          "description": "Enable budget page detection",
+          "type": "boolean"
+        },
+        "codescan": {
+          "description": "Enable codescan alerts",
+          "type": "boolean"
+        },
+        "declaration-a11y": {
+          "description": "Enable declaration a11y scan",
+          "type": "boolean"
+        },
+        "declaration-rgpd": {
+          "description": "Enable declaration RGPD scan",
+          "type": "boolean"
+        },
+        "dependabot": {
+          "description": "Enable dependabot alerts",
+          "type": "boolean"
+        },
+        "dsfr": {
+          "description": "Enable DSFR detection",
+          "type": "boolean"
+        },
+        "ecoindex": {
+          "description": "Enable ecoindex scan",
+          "type": "boolean"
+        },
+        "github_repository": {
+          "description": "Enable GitHub repository detection (from betagouv data)",
+          "type": "boolean"
+        },
+        "http": {
+          "description": "Enable Mozilla HTTP Observatory scan",
+          "type": "boolean"
+        },
+        "lighthouse": {
+          "description": "Enable Lighthouse",
+          "type": "boolean"
+        },
+        "nmap": {
+          "description": "Enable nmapvuln scan",
+          "type": "boolean"
+        },
+        "nuclei": {
+          "description": "Enable nuclei scan",
+          "type": "boolean"
+        },
+        "screenshot": {
+          "description": "Enable screenshots",
+          "type": "boolean"
+        },
+        "sonarcloud": {
+          "description": "Enable sonarcloud API results",
+          "type": "boolean"
+        },
+        "stats": {
+          "description": "Enable /stats page check",
+          "type": "boolean"
+        },
+        "testssl": {
+          "description": "Enable testssl.sh",
+          "type": "boolean"
+        },
+        "thirdparties": {
+          "description": "Enable thirdparties scan",
+          "type": "boolean"
+        },
+        "tracking": {
+          "description": "Enable tracking detection",
+          "type": "boolean"
+        },
+        "trivy": {
+          "description": "Enable trivy docker scans",
+          "type": "boolean"
+        },
+        "wappalyzer": {
+          "description": "Enable wappalyzer scan",
+          "type": "boolean"
+        },
+        "zap": {
+          "description": "Enable ZaProxy baseline scan",
+          "type": "boolean"
+        }
+      },
+      "required": []
+    }
+  },
+  "patternProperties": {
+    "^_.*": {
+      "description": "Commentaire ou configuration interne (ex.ancres YAML)",
+      "type": [
+        "string",
+        "number",
+        "object",
+        "array",
+        "boolean",
+        "null"
+      ]
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Titre du DashLord"
+    },
+    "description": {
+      "type": "string",
+      "description": "Sous-titre du dashlord"
+    },
+    "entity": {
+      "type": "string",
+      "description": "Nom de votre entité"
+    },
+    "footer": {
+      "type": "string",
+      "description": "Message dans le footer"
+    },
+    "marianne": {
+      "type": "boolean",
+      "description": "Affiche ou pas la Marianne",
+      "default": false
+    },
+    "loginUrl": {
+      "type": "string"
+    },
+    "matomoId": {
+      "type": "number"
+    },
+    "matomoUrl": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "object",
+      "description": "Ajoute un logo d'opérateur. Soit une URL, soit un objet avec src et direction",
+      "properties": {
+        "logo": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "direction": {
+                  "type": "string",
+                  "default": "horizontal",
+                  "enum": [
+                    "horizontal",
+                    "vertical"
+                  ]
+                }
+              },
+              "required": [
+                "src"
+              ]
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "logo",
+        "name"
+      ]
+    },
+    "tools": {
+      "$ref": "#/definitions/tools"
+    },
+    "columns": {
+      "$ref": "#/definitions/tools"
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "betaId": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pages": {
+            "type": "array",
+            "description": "Additionnal URLs to scan with LightHouse",
+            "examples": [
+              "/actu",
+              "/partners"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "repositories": {
+            "type": "array",
+            "description": "Repositories no GitHub",
+            "examples": [
+              "SocialGouv/www",
+              "SocialGouv/template"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "docker": {
+            "type": "array",
+            "description": "Docker images to scan",
+            "examples": [
+              "ghcr.io/socialgouv/www/app"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "tools": {
+            "$ref": "#/definitions/tools"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "entity",
+    "tools",
+    "urls"
+  ]
+}
