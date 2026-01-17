@@ -1,0 +1,158 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:28:25 GMT",
+      "x-content-type-options": "nosniff, nosniff",
+      "set-cookie": [
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "Drupal.visitor.agefiph_profil=0; expires=Sun, 17 Jan 2027 02:28:25 GMT; Max-Age=31535999; path=/; HttpOnly; secure",
+        "TS0159c17e=012e80918bf0a073830aa8e04735246489bf38f7ee0c202a7062908593c8dc26dca66051f7b9325bde1804397921968e7f7f5b81ca; Path=/; Domain=.www.agefiph.fr; Secure; HttpOnly"
+      ],
+      "cache-control": "max-age=900, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-frame-options": "ALLOW-FROM https://appuipro.agefiph.fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Sat, 17 Jan 2026 02:28:25 GMT",
+      "etag": "\"1768616905-gzip\"",
+      "vary": "Cookie,Accept-Encoding",
+      "x-front": "portail2",
+      "content-type": "text/html; charset=UTF-8",
+      "x-backend": "server1",
+      "age": "450",
+      "x-cache": "HIT",
+      "x-cache-hits": "4",
+      "accept-ranges": "bytes",
+      "content-length": "11829",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "Drupal.visitor.agefiph_profil": {
+          "domain": "www.agefiph.fr",
+          "expires": "2027-01-17T02:28:25.000Z",
+          "httponly": true,
+          "max-age": 31535999,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS0159c17e": {
+          "domain": "www.agefiph.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.agefiph.fr/",
+      "redirects": true,
+      "route": [
+        "http://agefiph.fr/",
+        "https://www.agefiph.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-allow-from-origin",
+      "scoreModifier": 0,
+      "data": "ALLOW-FROM https://appuipro.agefiph.fr"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
