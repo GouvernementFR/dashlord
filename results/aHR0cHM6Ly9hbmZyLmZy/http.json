@@ -1,0 +1,147 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 20,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:38:58 GMT",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "content-language": "fr",
+      "x-typo3-debug-cache": "Cached page generated 17-01-26 01:21. Expires 17-01-26 13:21",
+      "cache-control": "private, no-store, max-age=0",
+      "x-typo3-parsetime": "0ms",
+      "expires": "Sat, 17 Jan 2026 02:38:58 GMT",
+      "vary": "Accept-Encoding",
+      "x-ua-compatible": "IE=edge",
+      "x-content-type-options": "nosniff",
+      "content-length": "11995",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "set-cookie": [
+        "TS37a498b5027=08b33461baab2000ea4c41cbf8163596de2623650933ff64bd1ee761b2fa6f46e29ed8de99e039600839192746113000a9f0bc300638f5555e356549e4b4b9c683db936db630b3d6d9d04a133011747ef102fd998a680697fea01a3631bd2995; Path=/"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "TS37a498b5027": {
+          "domain": "www.anfr.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "https://www.anfr.fr/accueil",
+      "redirects": true,
+      "route": [
+        "http://anfr.fr/",
+        "https://anfr.fr/",
+        "https://www.anfr.fr/",
+        "https://www.anfr.fr/accueil"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//code.jquery.com/ui/1.12.1/jquery-ui.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://forms.sbc35.com/form.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
