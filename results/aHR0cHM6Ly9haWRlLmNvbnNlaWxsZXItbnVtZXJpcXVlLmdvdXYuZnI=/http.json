@@ -1,0 +1,136 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:35:51 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "cloudflare",
+      "vary": "Accept-Encoding",
+      "cache-control": "public, max-age=60",
+      "x-crisp-ray": "e290c366-634f-47bd-a70f-ff6a5739ffb2",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=12,cfOrigin;dur=294",
+      "x-page-cache-status": "EXPIRED",
+      "x-page-cache-date": "Sat, 17 Jan 2026 02:35:51 GMT",
+      "strict-transport-security": "max-age=2592000",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XLQtY5KdOufshDIG6MQc%2BWCbR7rilqjBeH0SaKyiAGG0o9gaMROT%2F4r3YHyvBG4q03cTfQybzoPIWkpYB9aytNZ0fF6D587t51efyFxs2FfL%2FqbjaTCjEtn4lBuhu%2BKe5A%3D%3D\"}]}",
+      "cf-cache-status": "DYNAMIC",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "cf-ray": "9bf276300a15290e-IAD",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://aide.conseiller-numerique.gouv.fr/fr/",
+      "redirects": true,
+      "route": [
+        "http://aide.conseiller-numerique.gouv.fr/",
+        "https://aide.conseiller-numerique.gouv.fr/",
+        "https://aide.conseiller-numerique.gouv.fr/fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2592000",
+      "includeSubDomains": false,
+      "maxAge": 2592000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://static.crisp.help/javascripts/libs/libs.min.js?c2b50f410e1948f5861dbca6bbcbd5df9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.crisp.help/javascripts/site/common/common.min.js?c86907751c64929d4057cef41590a3137": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
