@@ -1,0 +1,199 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:42:07 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "cache-control": "max-age=86400, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Thu, 15 Jan 2026 14:13:20 GMT",
+      "etag": "\"1768486400-gzip\"",
+      "vary": "Cookie,Accept-Encoding",
+      "content-security-policy": "frame-src 'self' https://ancv.epticahosting.com https://www.youtube.com https://www.linkedin.com https://platform.twitter.com https://syndication.twitter.com www.googletagmanager.com; object-src 'none'; script-src 'self' 'unsafe-inline' cdn.syndication.twimg.com platform.twitter.com connect.fa connect.facebook.net https://unpkg.com; script-src-attr 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' cdn.syndication.twimg.com platform.twitter.com connect.fa connect.facebook.net www.googletagmanager.com www.google-analytics.com mmtro.com cdn.mmtro.com https://static.axept.io https://www.youtube.com https://unpkg.com; style-src 'self' 'unsafe-inline' platform.twitter.com https://ton.twimg.com fonts.googleapis.com https://unpkg.com; style-src-attr 'self' 'unsafe-inline'; base-uri 'self'; frame-ancestors 'self'",
+      "permissions-policy": "camera=(), fullscreen=self, geolocation=self",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "referrer-policy": "same-origin",
+      "x-drupal-cache": "HIT",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-src": [
+          "'self'",
+          "https://ancv.epticahosting.com",
+          "https://platform.twitter.com",
+          "https://syndication.twitter.com",
+          "https://www.linkedin.com",
+          "https://www.youtube.com",
+          "www.googletagmanager.com"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.syndication.twimg.com",
+          "connect.fa",
+          "https://unpkg.com",
+          "platform.twitter.com"
+        ],
+        "script-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.mmtro.com",
+          "cdn.syndication.twimg.com",
+          "connect.fa",
+          "https://static.axept.io",
+          "https://unpkg.com",
+          "https://www.youtube.com",
+          "mmtro.com",
+          "platform.twitter.com",
+          "www.google-analytics.com",
+          "www.googletagmanager.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "fonts.googleapis.com",
+          "https://ton.twimg.com",
+          "https://unpkg.com",
+          "platform.twitter.com"
+        ],
+        "style-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.ancv.com/",
+      "redirects": true,
+      "route": [
+        "http://ancv.com/",
+        "https://ancv.com/",
+        "https://www.ancv.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://unpkg.com/aos@2.3.1/dist/aos.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
