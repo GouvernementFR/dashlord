@@ -1,0 +1,203 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:33:39 GMT",
+      "cache-control": "max-age=0, must-revalidate, private",
+      "expires": "Sat, 17 Jan 2026 02:33:39 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self' blob:; connect-src 'self' *.asp-public.fr/; frame-ancestors 'self' blob: *.asp-public.fr/; frame-src 'self' blob: *.asp-public.fr/; worker-src 'self' blob: *.asp-public.fr/; object-src 'self' *.asp-public.fr/; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr/; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr/; media-src 'self' data: *.asp-public.fr/;",
+      "x-content-security-policy": "allow 'self' *.asp-public.fr; options eval-script inline-script; connect-src 'self' *.asp-public.fr; frame-ancestors 'self' blob: *.asp-public.fr; frame-src 'self' blob: *.asp-public.fr; object-src 'self' *.asp-public.fr; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr; media-src 'self' data: *.asp-public.fr;",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "text/html; charset=ISO-8859-1",
+      "content-language": "fr",
+      "connection": "close",
+      "set-cookie": [
+        "isolement=1074929324.14663.0000; path=/; Httponly; Secure",
+        "TS0103dab5=01b74c0fdd4aa15eba884dccf56d5b4995bba3fb4b64595025415f242e73734244b82a0ef2bc4fbb5ed1afaab1e5b05b570b0ebe55; Path=/; Secure; HttpOnly"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "blob:"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.asp-public.fr/"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "*.asp-public.fr/",
+          "blob:"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "blob:"
+        ],
+        "worker-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "blob:"
+        ],
+        "object-src": [
+          "'self'",
+          "*.asp-public.fr/"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "font-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:"
+        ],
+        "img-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "data:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.asp-public.fr/"
+        ],
+        "media-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "isolement": {
+          "domain": "activitepartielle.emploi.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS0103dab5": {
+          "domain": "activitepartielle.emploi.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://activitepartielle.emploi.gouv.fr/apart/",
+      "redirects": true,
+      "route": [
+        "http://activitepartielle.emploi.gouv.fr/",
+        "https://activitepartielle.emploi.gouv.fr/",
+        "https://activitepartielle.emploi.gouv.fr/apart/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
