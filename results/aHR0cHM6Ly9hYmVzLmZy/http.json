@@ -1,0 +1,150 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sat, 17 Jan 2026 02:26:02 GMT",
+      "link": "<https://abes.fr/wp-json/>; rel=\"https://api.w.org/\", <https://abes.fr/wp-json/wp/v2/pages/41585>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://abes.fr/>; rel=shortlink",
+      "last-modified": "Sat, 17 Jan 2026 01:43:43 GMT",
+      "expires": "Sat, 17 Jan 2026 02:43:43 GMT",
+      "cache-control": "max-age=1061, public",
+      "etag": "\"05a3cd7dc9f81aebd5caabde19739e14\"",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "content-type": "text/html; charset=UTF-8",
+      "x-ua-compatible": "IE=edge",
+      "x-cacheable": ":perhaps:",
+      "x-varnish": "1039601623 196716",
+      "age": "455",
+      "via": "1.1 varnish (Varnish/7.1)",
+      "accept-ranges": "bytes",
+      "x-varnutype": "5",
+      "x-cache": "HIT",
+      "x-cachettl": "144s",
+      "content-length": "91279",
+      "set-cookie": [
+        "WEBMO-VNU=4|aWr1B|aWr1B; path=/; HttpOnly; SameSite=Strict"
+      ],
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "WEBMO-VNU": {
+          "domain": "abes.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://abes.fr/",
+      "redirects": true,
+      "route": [
+        "http://abes.fr/",
+        "https://abes.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://stats.wp.com/e-202603.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
