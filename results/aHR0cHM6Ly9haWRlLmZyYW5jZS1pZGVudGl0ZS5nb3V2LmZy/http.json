@@ -1,0 +1,131 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "nginx",
+      "date": "Sat, 17 Jan 2026 02:35:51 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "vary": "Accept-Encoding",
+      "content-language": "fr-FR",
+      "etag": "W/\"3642e-lawQrcI4ehKWBKD4BbzW7k2Hgec\"",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "cache-control": "no-cache",
+      "strict-transport-security": "max-age=2592000;",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "x-cache": "Miss from cloudfront",
+      "via": "1.1 3a09d8ad835dc40b88adae7ab3b4c0a0.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "IAH51-P1",
+      "x-amz-cf-id": "JsIFWKNYCJzxa2TkCWRdS8ne6YsqxGcXFdmYPwPfP_HAz09SHC_tBw=="
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://aide.france-identite.gouv.fr/kb/fr/",
+      "redirects": true,
+      "route": [
+        "http://aide.france-identite.gouv.fr/",
+        "https://aide.france-identite.gouv.fr/",
+        "https://aide.france-identite.gouv.fr/kb",
+        "https://aide.france-identite.gouv.fr/kb/en",
+        "https://aide.france-identite.gouv.fr/kb/fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2592000;",
+      "includeSubDomains": false,
+      "maxAge": 2592000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://stonly.com/static/js/bundle.52e7c0cf.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
