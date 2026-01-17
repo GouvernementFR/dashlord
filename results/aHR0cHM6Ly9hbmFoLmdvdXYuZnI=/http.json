@@ -1,0 +1,225 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:38:28 GMT",
+      "server": "Apache",
+      "x-dt-tracestate": "f91d7514-c11c5b27@dt",
+      "traceresponse": "00-7ab1287ea927038f160f38a17557e3f2-31afcd7967c669e1-01",
+      "cache-control": "max-age=86400, public",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Wed, 14 Jan 2026 19:31:27 GMT",
+      "etag": "\"1768419088-gzip:dtagent10327251022105625qfd0\"",
+      "vary": "Cookie,Accept-Encoding",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "content-security-policy": "font-src 'self' themes.googleusercontent.com data:; frame-src 'self' https://player.vimeo.com/ https://www.dailymotion.com/ https://youtu.be/ https://www.youtube.com/ https://simulaides.ademe.fr/ https://bo-ris.ademe.fr/ https://preprod-simulaidesv2.ademe-dri.fr/ http://preprod-ris.ademe.fr/ https://prod-ris.ademe-dri.fr/ https://www3.ademe.fr/ https://experience.arcgis.com/ https://geo.dailymotion.com/ https://*.arcgis.com https://cartanah.anah.gouv.fr/ ; img-src 'self' data: https://logs1412.xiti.com https://vocalcom01.teleperformance.fr http://gva.et-gv.fr http://muth.anah.fr ; manifest-src 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://player.vimeo.com/api/ wss://widget-mediator.zopim.com https://static.zdassets.com  https://cdn.jsdelivr.net; script-src-attr 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' https://static.zdassets.com http://gva.et-gv.fr http://muth.anah.fr https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://vocalcom01.teleperformance.fr; style-src-attr 'self' 'unsafe-inline'",
+      "x-drupal-cache": "HIT",
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"1074114617\"",
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "dtCookie=v_4_srv_2_sn_FA0569C6096332DDAA069A584012EF24_perc_100000_ol_0_mul_1_app-3A5c83c44d4360eb5e_1_rcs-3Acss_0; Path=/; Domain=.anah.gouv.fr"
+      ],
+      "transfer-encoding": "chunked",
+      "remoteip": "132.196.32.48",
+      "strict-transport-security": "max-age=16000000;includeSubDomains;",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-xss-protection": "1 ;mode=block",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "font-src": [
+          "'self'",
+          "data:",
+          "themes.googleusercontent.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "http://preprod-ris.ademe.fr/",
+          "https://*.arcgis.com",
+          "https://bo-ris.ademe.fr/",
+          "https://cartanah.anah.gouv.fr/",
+          "https://experience.arcgis.com/",
+          "https://geo.dailymotion.com/",
+          "https://player.vimeo.com/",
+          "https://preprod-simulaidesv2.ademe-dri.fr/",
+          "https://prod-ris.ademe-dri.fr/",
+          "https://simulaides.ademe.fr/",
+          "https://www.dailymotion.com/",
+          "https://www.youtube.com/",
+          "https://www3.ademe.fr/",
+          "https://youtu.be/"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "http://gva.et-gv.fr",
+          "http://muth.anah.fr",
+          "https://logs1412.xiti.com",
+          "https://vocalcom01.teleperformance.fr"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net",
+          "https://player.vimeo.com/api/",
+          "https://static.zdassets.com",
+          "wss://widget-mediator.zopim.com"
+        ],
+        "script-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "http://gva.et-gv.fr",
+          "http://muth.anah.fr",
+          "https://cdn.jsdelivr.net",
+          "https://static.zdassets.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://vocalcom01.teleperformance.fr"
+        ],
+        "style-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": true,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "dtCookie": {
+          "domain": "anah.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.anah.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://anah.gouv.fr/",
+        "https://anah.gouv.fr/",
+        "https://www.anah.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000;includeSubDomains;",
+      "includeSubDomains": true,
+      "maxAge": 16000000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
