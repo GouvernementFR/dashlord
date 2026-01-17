@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sat, 17 Jan 2026 02:35:39 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "Accept-Encoding, Cookie",
+      "last-modified": "Sat, 17 Jan 2026 02:35:36 GMT",
+      "cache-control": "max-age=298, must-revalidate",
+      "x-nananana": "Batcache-Hit",
+      "x-hacker": "Want root?  Visit join.a8c.com and mention this header.",
+      "host-header": "WordPress.com",
+      "link": "<https://academiesciencesmoralesetpolitiques.fr/wp-json/>; rel=\"https://api.w.org/\", <https://academiesciencesmoralesetpolitiques.fr/wp-json/wp/v2/pages/27529>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://wp.me/P9n9SO-7a1>; rel=shortlink",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://academiesciencesmoralesetpolitiques.fr/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://academiesciencesmoralesetpolitiques.fr",
+      "x-ac": "29.bur _atomic_bur MISS",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "a8c-cdn, dc;desc=bur, cache;desc=MISS;dur=94.0"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://academiesciencesmoralesetpolitiques.fr/",
+      "redirects": true,
+      "route": [
+        "http://academiesciencesmoralesetpolitiques.fr/",
+        "https://academiesciencesmoralesetpolitiques.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://cdn-cookieyes.com/client_data/f473f907f33078b34dbca8fd/script.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202603": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.elementor.com/a11y/widget.js?api_key=ea11y-d1d8418a-89a9-4d38-8a09-cf4af0a7fd2d&ver=3.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//academiesciencesmoralesetpolitiques.fr/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1755181286&ver=1.21.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://stats.wp.com/e-202603.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
