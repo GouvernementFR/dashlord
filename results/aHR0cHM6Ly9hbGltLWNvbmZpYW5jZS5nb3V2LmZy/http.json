@@ -1,0 +1,123 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sat, 17 Jan 2026 02:37:24 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "48226",
+      "connection": "close",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "x-host": "AGRIGOUV-HTTP21",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "last-modified": "Fri, 16 Jan 2026 22:00:44 GMT",
+      "etag": "\"1768600844\"",
+      "cache-tags": "config:block_list config:block.block.agrigouv_local_actions node:89466 config:block.block.agrigouv_local_tasks config:block.block.agrigouv_page_title config:block.block.agrigouv_help config:block.block.agrigouv_content config:block.block.agrigouv_views_block__carrefour_related_items_block_1 config:block.block.portraitministre config:block.block.portaitministredeleguee config:block.block.agrigouv_powered config:block.block.agrigouv_branding config:block.block.agrigouv_account_menu config:block.block.agrigouv_tools config:block.block.agrigouv_messages config:block.block.agrigouv_breadcrumbs config:block.block.formulaireexposerechercher_principalpage_1 config:block.block.alerterouge config:block.block.formulaireexposerechercher_presse_etenduepage_1 config:block.block.blocheaderpourespacepresseetendu config:block.block.agrigouv_formulaireexposetous_les_dossierspage_1 config:block.block.agrigouv_formulaireexposetoutes_les_actualitespage_1 config:block.block.agrigouv_formulaireexposetoutes_les_regionspage_1 config:block.block.agrigouv_footer config:block.block.pieddepagereseau block_content:2 config:block.block.pieddepagepresentation config:block.block.trackinggarealarage config:block.block.trackingplantesendanger config:block.block.trackingpesteporcineafricaine config:block.block.typedecontenu config:block.block.thematique config:block.block.rubrique config:block.block.facetdateblock config:block.block.facetresetblock config:block.block.parthematiquepresse config:block.block.typepresse config:block.block.facetdatepresseblock config:block.block.facetresetpresseblock config:block.block.contactpresse config:block.block.navigationprincipale config:block.block.lastatistiqueagricole config:block.block.dernieresactus config:block.block.toutesnosinfographies config:matomo.settings config:system.menu.reseaux-sociaux block_view node_view media_view media:83019 media:83020 media:83021 media:83028 config:toc_api.toc_type.dsfr config:filter.format.full_html user:0 media:83018 config:system.site node:109438 config:system.menu.menu-header rendered config:cas.settings http_response config:user.role.anonymous config:system.menu.reseau config:system.menu.footer node:86702 node:86622 node:86621 node:62837 node:87159 config:system.menu.main node:86644 node:109205 node:109208 node:86646 node:86633 node:86643 node:109250 node:86631 node:90331 node:86655 node:86638 node:86637 node:86659 node:100573 node:86650 node:86654 node:108802 node:93847 node:86630 node:86628 node:86685 node:87849 node:107964 node:86674 node:86686 node:109423 node:86684 node:109417 block_content_view config:core.entity_view_display.block_content.basic.default local_task config:content_lock.settings",
+      "from-origin": "same",
+      "x-drupal-cache": "HIT",
+      "cache-control": "max-age=300",
+      "age": "295",
+      "x-cache": "HIT",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=2592000;"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
+      "destination": "https://agriculture.gouv.fr/alimconfiance-les-resultats-des-controles-sanitaires-accessibles-tous",
+      "redirects": true,
+      "route": [],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
