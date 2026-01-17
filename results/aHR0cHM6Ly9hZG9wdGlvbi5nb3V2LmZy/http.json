@@ -1,0 +1,146 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 00:05:44 GMT",
+      "cache-control": "max-age=10800, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "last-modified": "Sat, 17 Jan 2026 02:20:32 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "195",
+      "etag": "W/\"1768616432-gzip\"",
+      "x-cache": "HIT",
+      "x-cache-hits": "1",
+      "accept-ranges": "bytes",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-handicap-v2.cegedim.cloud-http=3468974346.20480.0000; path=/; Httponly; Secure",
+        "TS24c133e9029=087dc22938ab2800392ffc5c5788ec7c9d1588a607677931bcb3d87b8f06a6f799f10fe7aa9ac22a6a04490cf9284eec; Max-Age=30; Path=/",
+        "TSe7b29e8c027=087dc22938ab2000ac0a7fadbaa871eff1aa3afbff6bfe186901ac8c3f45f26d2c00aeb5e5ca96c008367f2bf31130002d24edb1de198f51f36a54b34e99a45bd906c8c3e718f6834776ce8bc07861afc0042377110ed35996e581d95c806d4c; Path=/"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServerpool-handicap-v2.cegedim.cloud-http": {
+          "domain": "solidarites.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS24c133e9029": {
+          "domain": "solidarites.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        },
+        "TSe7b29e8c027": {
+          "domain": "solidarites.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://solidarites.gouv.fr/adopter-un-enfant",
+      "redirects": true,
+      "route": [
+        "http://adoption.gouv.fr/",
+        "https://adoption.gouv.fr/",
+        "https://solidarites.gouv.fr/adopter-un-enfant"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
