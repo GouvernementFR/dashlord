@@ -1,0 +1,151 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 17 Jan 2026 02:34:41 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-request-id": "308ffff3-041b-4375-adcd-4d9c6d70c9dc, 308ffff3-041b-4375-adcd-4d9c6d70c9dc",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "</assets/application-33473c7e6e60a0328b1e42715e9218bf7addd95ad7bff165ea7469b1d2983481.css>; rel=preload; as=style; nopush",
+      "etag": "W/\"eeefed31909dbe2a62e520caa378edea\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "ahoy_visitor=e8e09451-ef14-484e-b707-2e54d1aaf4f8; path=/; expires=Mon, 17 Jan 2028 02:34:41 GMT; secure; httponly; samesite=lax",
+        "ahoy_visit=850c0e2f-fdde-4be6-96a9-a5250ace8b1c; path=/; expires=Sat, 17 Jan 2026 06:34:41 GMT; secure; httponly; samesite=lax",
+        "_mon_suivi_justice_session=l5ThD8KHzFiNkasUReJBZ8OwrRUffuZwhJDajKMCfeEDDssmk%2BUh8iO9Rv0gFkqbJAxZK1n412fRfk%2FwIdJ1lgdIgIMSld2zoh%2BtlMxOcVGRRKCyFQDzbfE9Hke6bttLsMHXpVLRlhI1vABauHG4fgHklop52C0y00fGDyeIDY%2Bt%2BRUoish%2FN2w1UNy14Pr64bw0AWFTEBSUKHTKBr8%2FPaU4HJu498Paq2CLRHr8mtExWQ%2FbUzN1vCmrZHMEwtqwy7xRhZIY1jomB%2FX69J03PRBOOSBGoXa5k3OlTFRommfLhw%3D%3D--Ls1J2Nz1M1zNA9ql--mr%2FDDXEdPx9DHiUWY1tUdA%3D%3D; path=/; secure; httponly; samesite=lax"
+      ],
+      "strict-transport-security": "max-age=63072000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "ahoy_visitor": {
+          "domain": "agents.mon-suivi-justice.beta.gouv.fr",
+          "expires": "2028-01-17T02:34:41.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "ahoy_visit": {
+          "domain": "agents.mon-suivi-justice.beta.gouv.fr",
+          "expires": "2026-01-17T06:34:41.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_mon_suivi_justice_session": {
+          "domain": "agents.mon-suivi-justice.beta.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://agents.mon-suivi-justice.beta.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://agents.mon-suivi-justice.beta.gouv.fr/",
+        "https://agents.mon-suivi-justice.beta.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
