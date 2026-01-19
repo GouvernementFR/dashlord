@@ -1,0 +1,231 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 110,
+    "statusCode": 200,
+    "testsFailed": 0,
+    "testsPassed": 10,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:46:31 GMT",
+      "server": "Apache",
+      "strict-transport-security": "max-age=34560000; includeSubDomains; preload",
+      "x-request-id": "rOUlxpWnGKa3UY9Gxf5Y",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "content-security-policy": "default-src 'none';base-uri 'none';manifest-src 'self';script-src 'nonce-b0xWelVYVWtwN0N5dVY4RWlFNFBkZTR2d1oyWVFRenArUHY4TTJLczhiRT06eXRzWVpURmc0K0hDN2pBMTdINS9RdDhacmRUOUtscXNpcUdPZlJUdDN0TT0=' blob:;script-src-elem 'strict-dynamic' 'nonce-b0xWelVYVWtwN0N5dVY4RWlFNFBkZTR2d1oyWVFRenArUHY4TTJLczhiRT06eXRzWVpURmc0K0hDN2pBMTdINS9RdDhacmRUOUtscXNpcUdPZlJUdDN0TT0=' blob:;style-src 'self' 'unsafe-inline';img-src 'self' data: blob:;font-src 'self' data:;connect-src 'self';media-src 'self';frame-src 'self';frame-ancestors 'self';worker-src 'self';form-action 'self'",
+      "feature-policy": "autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';microphone 'none';payment 'none'",
+      "x-robots-tag": "noindex, nofollow",
+      "referrer-policy": "no-referrer",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block",
+      "content-length": "6891",
+      "content-type": "text/html; charset=UTF-8",
+      "content-language": "fr",
+      "set-cookie": [
+        "BALANCEID=balancer.bercydoc2-bo; path=/; domain=.finances.gouv.fr;HttpOnly;Secure"
+      ],
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'none'"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'nonce-b0xwelvyvwtwn0n5dvy4rwlfnfbkztr2d1oywvfrenaruhy4ttjlczhirt06exrzwvpurmc0k0hdn2pbmtdins9rddhacmruoutscxnpcudpzljuddn0tt0='",
+          "blob:"
+        ],
+        "script-src-elem": [
+          "'nonce-b0xwelvyvwtwn0n5dvy4rwlfnfbkztr2d1oywvfrenaruhy4ttjlczhirt06exrzwvpurmc0k0hdn2pbmtdins9rddhacmruoutscxnpcudpzljuddn0tt0='",
+          "'strict-dynamic'",
+          "blob:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "worker-src": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BALANCEID": {
+          "domain": "finances.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "oc_sessionPassphrase": {
+          "domain": "bercydoc.finances.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__Host-nc_sameSiteCookielax": {
+          "domain": "bercydoc.finances.gouv.fr",
+          "expires": "2100-12-31T23:59:59.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__Host-nc_sameSiteCookiestrict": {
+          "domain": "bercydoc.finances.gouv.fr",
+          "expires": "2100-12-31T23:59:59.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "octks91t56w8": {
+          "domain": "bercydoc.finances.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://bercydoc.finances.gouv.fr/index.php/apps/user_saml/saml/selectUserBackEnd?redirectUrl=",
+      "redirects": true,
+      "route": [
+        "http://bercydoc.finances.gouv.fr/",
+        "https://bercydoc.finances.gouv.fr/",
+        "https://bercydoc.finances.gouv.fr/index.php/login",
+        "https://bercydoc.finances.gouv.fr/index.php/apps/user_saml/saml/selectUserBackEnd?redirectUrl="
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=34560000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 34560000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
