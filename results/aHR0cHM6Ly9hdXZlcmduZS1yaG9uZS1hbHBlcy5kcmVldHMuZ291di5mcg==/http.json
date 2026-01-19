@@ -1,0 +1,139 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:48:17 GMT",
+      "x-spip-cache": "86400",
+      "x-frame-options": "DENY",
+      "last-modified": "Mon, 19 Jan 2026 02:48:17 GMT",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!WVTvVfgXwD1F7rkXIkI7F7SI9ajmism1Nz1VSJgCZQQ9B6oysQYz478CDAfRwBTa4B6702BSIka13OTeLp3AI8YR7wk=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab2800cbbe1b8d514c7130dd0ec6cd032a39375b789131600e794d0021e54d93559af2f28af45d4ecdf8ce; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab2000361d39623e86fc6106d5645f6fc03566f5dc3aa11f222adf9f1695893defd3f908e3cfaa2d113000b3fd49524d6dd81bc5078c457643948520ac051b8d1aa5c53dd113ac57f1f14c1fdf80eda206256c58252bc1cbc6f6cd; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "BIGipServerpool-dreets2.cegedim.cloud-http": {
+          "domain": "auvergne-rhone-alpes.dreets.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS086c66aa029": {
+          "domain": "auvergne-rhone-alpes.dreets.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        },
+        "TS82bbd089027": {
+          "domain": "auvergne-rhone-alpes.dreets.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://auvergne-rhone-alpes.dreets.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://auvergne-rhone-alpes.dreets.gouv.fr/",
+        "https://auvergne-rhone-alpes.dreets.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
