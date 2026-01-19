@@ -1,0 +1,171 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A",
+    "error": null,
+    "score": 95,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Mon, 19 Jan 2026 02:46:17 GMT",
+      "content-type": "text/html",
+      "last-modified": "Wed, 10 Dec 2025 09:31:14 GMT",
+      "transfer-encoding": "chunked",
+      "etag": "W/\"69393de2-348:dtagent10275230919171419yUdy\"",
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"514663212\"",
+      "set-cookie": [
+        "dtCookie=v_4_srv_2_sn_B9C2E3DEA48CF2B92313FD5577750CBF_perc_100000_ol_0_mul_1_app-3Ab7ea4206ac532590_1; Path=/; Domain=.cohesion-territoires.gouv.fr",
+        "7a45e6ebefc89f0b9ec2ccafdc86a78a=1858ad55d7ce321f7ae90d37622ee63c; path=/; HttpOnly"
+      ],
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "cache-control": "no-cache",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "expect-ct": "enforce, max-age=3600",
+      "content-security-policy": "default-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://audience-sites.din.developpement-durable.gouv.fr/piwik.js; frame-src https://audience-sites.din.developpement-durable.gouv.fr/optinout.php;",
+      "strict-transport-security": "max-age=63072000;includeSubDomains;preload",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "script-src": [
+          "'self'",
+          "https://audience-sites.din.developpement-durable.gouv.fr/piwik.js"
+        ],
+        "frame-src": [
+          "https://audience-sites.din.developpement-durable.gouv.fr/optinout.php"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "dtCookie": {
+          "domain": "cohesion-territoires.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "7a45e6ebefc89f0b9ec2ccafdc86a78a": {
+          "domain": "avisau.cohesion-territoires.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000;includeSubDomains;preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
