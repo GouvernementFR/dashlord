@@ -1,0 +1,134 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 30,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Mon, 19 Jan 2026 02:50:52 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cache-control": "max-age=21600, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-drupal-cache-tags": "block_view config:block.block.boots_breadcrumb config:block.block.boots_content config:block.block.boots_flashinfoblock config:block.block.boots_footer config:block.block.boots_local_tasks config:block.block.boots_main config:block.block.boots_messages config:block.block.boots_page_title config:block.block.boots_top config:block.block.date_de_publication config:block.block.footerblock config:block.block.thematique config:block.block.type_de_contenu config:block_list config:cookie_category_list config:eu_cookie_compliance.settings config:filter.format.basic_html config:filter.format.full_html config:google_analytics.settings config:image.style.1110xauto config:image.style.1380xauto config:image.style.1984xauto config:image.style.2220xauto config:image.style.233xauto config:image.style.255xauto config:image.style.278xauto config:image.style.466xauto config:image.style.510xauto config:image.style.556xauto config:image.style.576xauto config:image.style.768xauto config:image.style.930xauto config:image.style.992xauto config:paragraphs.settings config:quicklink.settings config:responsive_image.styles.large config:responsive_image.styles.narrow config:responsive_image.styles.teaser config:responsive_image.styles.tiny config:responsive_image.styles.wide config:search_api_autocomplete.search.search config:system.menu.main config:system.site config:user.role.anonymous config:views.view.events config:views.view.news http_response local_task media:1254 media:1255 media:1256 media:2070 media:2457 media:2570 media:29 media:291 media:2947 media:30 media:3393 media:3642 media:3693 media:370 media:371 media:3833 media:3837 media:3884 media:3885 media:3886 media:3887 media:3891 media:3893 media:3905 media:442 media:482 media:691 media_view node:1042 node:1274 node:1362 node:1369 node:1370 node:1374 node:17 node:19 node:23 node:298 node:319 node:34 node:40 node:41 node:42 node:43 node:44 node:45 node:46 node:47 node:473 node:48 node:49 node:51 node:54 node:62 node:63 node:66 node:68 node:705 node:73 node:74 node_flash_info node_list node_view paragraph:118 paragraph:143 paragraph:145 paragraph:146 paragraph:207 paragraph:208 paragraph:220 paragraph:221 paragraph:2566 paragraph:2567 paragraph:2568 paragraph:2569 paragraph:3693 paragraph_view rendered taxonomy_term:346 taxonomy_term:392 user:1 user:3541 user:3756",
+      "x-drupal-cache-contexts": "languages:language_content languages:language_interface languages:language_url menu_item_extras_link_item_content_active_trails:main:3f5a1e15-7d80-49d1-beda-b7baad6da64f menu_item_extras_link_item_content_active_trails:main:41ed041b-06ec-402c-889e-7304ee8375be menu_item_extras_link_item_content_active_trails:main:43142d61-fe8a-4352-8069-5f38f96c4ffc menu_item_extras_link_item_content_active_trails:main:82eae8fb-d503-4730-8145-45d4360e8d3c route session.exists theme timezone url.path url.query_args:_wrapper_format url.site user.node_grants:view user.permissions user.roles:authenticated",
+      "x-drupal-cache-max-age": "0 (Uncacheable)",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Sun, 18 Jan 2026 23:01:26 GMT",
+      "etag": "\"1768777286-gzip\"",
+      "vary": "Cookie,Accept-Encoding",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-drupal-cache": "HIT"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
+      "destination": "https://bnu.fr/fr",
+      "redirects": true,
+      "route": [],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://polyfill-fastly.io/v3/polyfill.min.js?features=IntersectionObserver%2CIntersectionObserverEntry%2CURL%2CObject.assign%2CArray.from%2CArray.prototype.includes%2CString.prototype.includes%2CElement.prototype.matches%2CPromise%2CPromise.prototype.finally": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
