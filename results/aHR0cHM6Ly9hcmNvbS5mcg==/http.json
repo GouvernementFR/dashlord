@@ -1,0 +1,136 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 20,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:44:08 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "39802",
+      "connection": "close",
+      "cache-control": "max-age=21600, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "ALLOW-FROM https://as-pp-www.csa.fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "cache-tags": "config:block_list config:block.block.arcom_v2_copyright_2 config:block.block.arcom_v2_local_actions config:block.block.arcom_v2_local_tasks config:block.block.arcom_v2_page_title config:block.block.arcom_v2_help config:block.block.arcom_v2_pagerecherche_2 config:block.block.arcom_v2_pagerecherche config:block.block.arcom_v2_pagenewsletter config:block.block.arcom_v2_messages config:block.block.arcom_v2_content config:block.block.arcom_v2_breadcrumbs config:block.block.arcom_v2_formulaireexposerecherchesearch_form config:block.block.arcom_v2_blockdesreseauxsociaux block_content:3 config:block.block.arcom_v2_selecteurdelangue config:configurable_language_list config:block.block.arcom_v2_header config:block.block.arcom_v2_headertop config:block.block.arcom_v2_main_navigation config:block.block.arcom_v2_blocpourcotedroitdufooter block_content:2 config:block.block.arcom_v2_footer config:block.block.arcom_v2_footerheader config:block.block.arcom_v2_search_form config:block.block.arcom_v2_branding config:block.block.headerlienaccesibilite block_content:13 config:block.block.arcom_v2_solr_search_form config:lazy.settings node:17 block_view node_view paragraph_view paragraph:8092 config:paragraphs.settings config:filter.format.basic_html paragraph:473 paragraph:472 paragraph:471 config:field.storage.node.field_date_de_decision config:field.storage.node.field_type_de_presse config:views.view.homepage_presse node_list node:24825 node:24876 node:24874 config:filter.format.full_html taxonomy_term:16 taxonomy_term:18 paragraph:470 paragraph:469 config:field.storage.node.field_assemblee_pleniere config:field.storage.node.field_type_de_decision config:views.view.homepage_decisions node:24850 node:24861 node:24875 taxonomy_term:113 taxonomy_term:267 taxonomy_term:2689 taxonomy_term:21 paragraph:648 paragraph:647 paragraph:645 paragraph:1126 paragraph:983 paragraph:417 paragraph:7047 paragraph:6516 paragraph:6640 paragraph:8091 paragraph:8090 paragraph:8086 media:2135 paragraph:8085 media:2134 paragraph:8089 media:2133 paragraph:8088 media:2132 paragraph:8087 media:2214 paragraph:8084 paragraph:8083 paragraph:8081 paragraph:8082 paragraph:8097 paragraph:8096 paragraph:12901 paragraph:24090 paragraph:9171 paragraph:12874 paragraph:9213 paragraph:366 paragraph:365 paragraph:2834 file:11689 user:1 local_task CACHE_MISS_IF_UNCACHEABLE_HTTP_METHOD:form config:honeypot.settings block_content_view config:system.menu.header node:72 node:26 node:1861 config:system.site rendered http_response config:user.role.anonymous config:system.menu.footer node:61 node:67 node:54 config:system.menu.footer-header node:69 node:2516 node:32 node:4682 node:7 node:70 node:29 node:55 config:system.menu.main node:43 node:35 node:41 node:122 node:4570 node:4606 node:4571 node:123 node:1326 node:2567 node:7557 node:1309 node:7520 node:342 node:346 node:36 node:53 node:4461 node:49 node:121 node:7521 node:128 node:4426 node:42 node:872 node:2550 node:46 node:131 node:152 node:79 node:129 node:2084 node:2085 node:2086 config:color.theme.arcom_v2",
+      "x-xss-protection": "1; mode=block, 1; mode=block",
+      "feature-policy": "",
+      "last-modified": "Sat, 17 Jan 2026 11:11:56 GMT",
+      "age": "12619",
+      "x-varnish-cache": "HIT",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=15724800; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.arcom.fr/",
+      "redirects": true,
+      "route": [
+        "http://arcom.fr/",
+        "https://www.arcom.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15724800; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 15724800,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//tag.aticdn.net/624980/smarttag.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-allow-from-origin",
+      "scoreModifier": 0,
+      "data": "ALLOW-FROM https://as-pp-www.csa.fr"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
