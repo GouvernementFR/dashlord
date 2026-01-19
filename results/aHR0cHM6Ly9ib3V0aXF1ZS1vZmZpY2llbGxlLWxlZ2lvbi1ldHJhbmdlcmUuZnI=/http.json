@@ -1,0 +1,237 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:50:45 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "26460",
+      "connection": "close",
+      "cf-ray": "9c0306bf8ec7e168-ORD",
+      "x-sorting-hat-podid": "338",
+      "x-sorting-hat-shopid": "94031839571",
+      "set-cookie": [
+        "localization=FR; path=/; expires=Tue, 19 Jan 2027 02:50:45 GMT; SameSite=Lax",
+        "cart_currency=EUR; path=/; expires=Mon, 02 Feb 2026 02:50:45 GMT; SameSite=Lax",
+        "_shopify_y=cfb3c04f-accb-4a26-81ff-86af0e42bd63; domain=boutique-officielle-legion-etrangere.fr; path=/; expires=Tue, 19 Jan 2027 08:50:45 GMT; SameSite=Lax",
+        "_shopify_s=d6c677c5-89c3-49c8-b828-0e269e4b1b8a; domain=boutique-officielle-legion-etrangere.fr; path=/; expires=Mon, 19 Jan 2026 03:20:45 GMT; SameSite=Lax",
+        "_shopify_essential=:AZvUKXP4AAEARk_bSNjl7x1gsB9m89jhfBQBvgGAsmWUp19ASSzPzbatN9ToTZvl0mz_LAwU1GAxDgL339iQ9tTHzAQ1UP78FMz5TD9VSTF_JxCaIX0O7S0PIiIIBvJX50TOBpPnONSyClG955o-zTWOdWiPau0w2CFHWw342dTtUBPktvFjxozQjmpZY_tBuJky-ubcgOXTQpbZqUvr72FzaKmoU8fjhI41bUD-HK29LrTOSELfYBjJljpb1GMx68e_U6bQL39caampoxIpo6WaNmcekYe-E1N2upN-RPd351cvX_le3kP2FhVxmUAm-DuhfuAeW9hlSGsSWsWFTvlnL--LWjKuM6MmGH8sjje5oKR1CDM:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+        "_shopify_analytics=:AZvUKXWPAAEAfvkiJTR0LFEH5rn04Gk9-bC_EuLMCmHDWvxEG8HjNuH4Xd4IhvjCOirpJUw:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax"
+      ],
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <//boutique-officielle-legion-etrangere.fr/cdn/shop/t/3/assets/theme.css?v=3607038416388631051751978623>; as=\"style\"; rel=\"preload\", <//boutique-officielle-legion-etrangere.fr/cdn/shop/t/3/assets/le.css?v=168941335209058215471758645904>; as=\"style\"; rel=\"preload\"",
+      "etag": "\"page_cache:94031839571:IndexController:49c9c6034532160fa6bf89d18795cfe4\"",
+      "shopify-complexity-score": "418",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "x-shopid": "94031839571",
+      "x-shardid": "338",
+      "vary": "Accept, accept-encoding",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "content-language": "fr-FR",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=423;desc=\"gc:28\", db;dur=124, db_async;dur=18.788, parse;dur=2, render;dur=252, asn;desc=\"8075\", edge;desc=\"ORD\", country;desc=\"US\", theme;desc=\"181537145171\", pageType;desc=\"index\", servedBy;desc=\"r954\", requestID;desc=\"78f1ca2f-5229-4b89-9873-07648c30f647-1768791045\", _y;desc=\"cfb3c04f-accb-4a26-81ff-86af0e42bd63\", _s;desc=\"d6c677c5-89c3-49c8-b828-0e269e4b1b8a\", _cmp;desc=\"3.AMPS_USIL_f_f_9YFQYipmSyKOQJfPzZnSCQ\", compressionLevel;desc=\"7\", compressionTime;dur=11.776, cfRequestDuration;dur=513.000011",
+      "x-dc": "gcp-us-central1,gcp-us-east1,gcp-us-east1",
+      "x-request-id": "78f1ca2f-5229-4b89-9873-07648c30f647-1768791045",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=cedmHrEEg1RGk986L8t0fRzMaSzYKbKrGqnYqDB0OnZvq73z7YcmDdo04CK72XYXTYeg1WpxmcSzLZ2bhlP1lGoWjcvAkxG8PnY1P%2BoJqySWw%2BFvpQ1a858gewNCkbcjjwGIMTNPBr9rb47HbvSfC3p7MwBJreCaVA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "x-download-options": "noopen",
+      "server": "cloudflare"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "block-all-mixed-content": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "localization": {
+          "domain": "boutique-officielle-legion-etrangere.fr",
+          "expires": "2027-01-19T02:50:45.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "cart_currency": {
+          "domain": "boutique-officielle-legion-etrangere.fr",
+          "expires": "2026-02-02T02:50:45.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "_shopify_y": {
+          "domain": "boutique-officielle-legion-etrangere.fr",
+          "expires": "2027-01-19T08:50:45.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "_shopify_s": {
+          "domain": "boutique-officielle-legion-etrangere.fr",
+          "expires": "2026-01-19T03:20:45.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "_shopify_essential": {
+          "domain": "boutique-officielle-legion-etrangere.fr",
+          "httponly": true,
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_shopify_analytics": {
+          "domain": "boutique-officielle-legion-etrangere.fr",
+          "httponly": true,
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://boutique-officielle-legion-etrangere.fr/",
+      "redirects": true,
+      "route": [
+        "http://boutique-officielle-legion-etrangere.fr/",
+        "https://boutique-officielle-legion-etrangere.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=7889238",
+      "includeSubDomains": false,
+      "maxAge": 7889238,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//boutique-officielle-legion-etrangere.fr/cdn/shop/t/3/assets/vendor.min.js?v=97444456987200009421746518612": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique-officielle-legion-etrangere.fr/cdn/shop/t/3/assets/theme.js?v=167785423349543195841751978412": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique-officielle-legion-etrangere.fr/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_XvpUV7qp.fr.esm.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique-officielle-legion-etrangere.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_C2xzKNNs.esm.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique-officielle-legion-etrangere.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E="
+        },
+        "https://cdn.shopify.com/extensions/019bca1b-e572-7c5b-aa02-883603694f1a/ts-ext-404/assets/transtore.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
