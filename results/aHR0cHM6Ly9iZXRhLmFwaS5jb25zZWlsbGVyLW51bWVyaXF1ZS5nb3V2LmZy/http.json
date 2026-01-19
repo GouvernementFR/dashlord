@@ -1,0 +1,131 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:51:05 GMT",
+      "content-type": "text/plain; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "access-control-allow-origin": "*",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+      "vary": "Accept-Encoding",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3ymXSp%2FTfd7oEjXKcVWjxN6DeT0SXOR%2F8RHUY6bI51DEZdh%2FVhx5e%2Fz3maJXwHGyPuaB2hFHMFrGY9W%2BhM4nXb7D1XLyMj2C6X2GWhN4tm1vlKACQpIm6%2FrxTBE%2FpkIdmE2Gm8E%3D\"}]}",
+      "sozu-id": "01KFA2KH24X9MXJW52CZN0SWD3",
+      "cf-cache-status": "DYNAMIC",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=293",
+      "server": "cloudflare",
+      "cf-ray": "9c03073f7d7cc365-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://beta.api.conseiller-numerique.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://beta.api.conseiller-numerique.gouv.fr/",
+        "https://beta.api.conseiller-numerique.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 15552000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-response-not-html",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    }
+  }
+}
