@@ -1,0 +1,157 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "connection": "close",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "W/\"bad47f23795549ddd0cf21721c4c8f47\"",
+      "link": "</assets/application-71e44113cc507745560a7359206c16b0a26de5899b66c23c3d545de80fa95699.css>; rel=preload; as=style; nopush",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "set-cookie": [
+        "_atlas_culture_app_session=oAHNgi%2FeMC6paQfYBUO2LQlu15dNbz5qRZhgUZuAo4RknEy8DoyrgXkeAln3d1iaU4B4bfgy9PkJVGnE0jTcY6TUln1gPMdRotPuSbJaTO50HYk7obK9QhVLp4bFhrs4kGaWBI1u21D9VjCRVOjWGiy5Rthx%2Fl%2BnPRtyEGdt1kCCl92PGBuPpWxdBEBrERwZdDMbtmiCd8EPNRtkra3TNoY%2ByVu%2Brd0mLnAzbpi6UqaeFRd%2F8veiBQQNRQhLL0GI6bPshM81TWvXP9OSCbLV8D9UuOouLqSKvZyN8xf7sbRiKg%3D%3D--%2BZWBzsWuD6g8hp%2BM--yLQv6Lx30jADYwWg2NA89A%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+      ],
+      "traceresponse": "00-188c02347a1c45dc846ef9f582fffabe-c44257bc9e742f00-01",
+      "x-content-type-options": "nosniff",
+      "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-platform-cache": "MISS",
+      "x-platform-cluster": "4l7mbbdxqkzvc-master-7rqtwti",
+      "x-platform-processor": "abb4mcmeyc6uvs5j777qimurom",
+      "x-platform-router": "2mvz6tybax7op3ekpf6yxzvxka",
+      "x-request-id": "250257ec-9606-4dcd-bf14-8efc13c0e247",
+      "x-runtime": "0.026492",
+      "x-xss-protection": "1; mode=block",
+      "accept-ranges": "bytes",
+      "via": "1.1 varnish, 1.1 varnish",
+      "date": "Mon, 19 Jan 2026 02:52:58 GMT",
+      "x-served-by": "cache-par-lfpg1960024-PAR, cache-chi-kigq8000034-CHI",
+      "x-cache": "MISS, MISS",
+      "x-cache-hits": "0, 0",
+      "strict-transport-security": "max-age=31557600",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_atlas_culture_app_session": {
+          "domain": "atlasculture.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://atlasculture.fr/",
+      "redirects": true,
+      "route": [
+        "http://atlasculture.fr/",
+        "https://atlasculture.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31557600",
+      "includeSubDomains": false,
+      "maxAge": 31557600,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
