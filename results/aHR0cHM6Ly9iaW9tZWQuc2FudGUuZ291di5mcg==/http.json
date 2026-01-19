@@ -1,0 +1,140 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:46:13 GMT",
+      "set-cookie": [
+        "JSESSIONID=CF2E666A928D1819C6E66B3097231B71.be-biomedc1; Path=/biomed/; HttpOnly",
+        "TS01298773=012337f68dba16beaec6f07be00c0f181472d28097d4f3008019ebf4aa8daf0206e35aeba0ba95e7b0713cdb553d9d245a3328f441858ae64349f7dc717217b7f1c53969eb; Path=/",
+        "TS01f1b749=012337f68d45a2edc3d2d543c27600e78e9dcf17dcd4f3008019ebf4aa8daf0206e35aeba0ba95e7b0713cdb553d9d245a3328f44137bd62e49ac0b8135a38cf5475a97d027cd68079fefc6b5352ed78d751a3434d; path=/biomed/"
+      ],
+      "content-type": "text/html;charset=UTF-8",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "Current_Session": {
+          "domain": "biomed.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01298773": {
+          "domain": "biomed.sante.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "JSESSIONID": {
+          "domain": "biomed.sante.gouv.fr",
+          "httponly": true,
+          "path": "/biomed/",
+          "port": null
+        },
+        "TS01f1b749": {
+          "domain": "biomed.sante.gouv.fr",
+          "path": "/biomed/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://biomed.sante.gouv.fr/biomed/",
+      "redirects": true,
+      "route": [
+        "http://biomed.sante.gouv.fr/",
+        "https://biomed.sante.gouv.fr/",
+        "http://biomed.sante.gouv.fr/biomed/",
+        "https://biomed.sante.gouv.fr/biomed/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
