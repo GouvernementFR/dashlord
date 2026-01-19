@@ -1,0 +1,131 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Mon, 19 Jan 2026 02:44:40 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding, accept, content-type, cookie",
+      "x-hacker": "Want root?  Visit join.a8c.com/hacker and mention this header.",
+      "host-header": "WordPress.com",
+      "link": "<https://public-api.wordpress.com/wp-json/?rest_route=/sites/baseaerienne106.wordpress.com>; rel=\"https://api.w.org/\", <https://wp.me/Pce11j-1w>; rel=shortlink",
+      "x-ac": "29.bur _bur MISS",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "strict-transport-security": "max-age=31536000",
+      "server-timing": "a8c-cdn, dc;desc=bur, cache;desc=MISS;dur=478.0"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://baseaerienne106.wordpress.com/",
+      "redirects": true,
+      "route": [
+        "http://baseaerienne106.wordpress.com/",
+        "https://baseaerienne106.wordpress.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202604924dcd77a86c6f1d3698ec27fc5da92b28585ddad3ee636c0397cf312193b2a1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://s1.wp.com/wp-content/plugins/gutenberg-core/v22.2.0/build/modules/block-library/file/view.min.js?m=1764855221i&ver=1764773747319": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//stats.wp.com/w.js?68": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
