@@ -1,0 +1,134 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:46:57 GMT",
+      "server": "Apache",
+      "content-type": "text/html; charset=utf-8",
+      "status": "200 OK",
+      "cache-control": "no-store",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block",
+      "x-request-id": "0a3bcca1-52cf-4ed7-9069-53a68cd0e934",
+      "x-download-options": "noopen",
+      "etag": "W/\"3b955531b15323169d89dc5572521b20\"",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "_redmine_session=U1VuT3lwN3ZlVHRWM3hwMTRuelpLeWVpNTdpU1luUzVHODRPT0JXRXAvTTVubnBDUzIyOTh0YnNuaFFaY1BHaWdMbmd4Uk5YQ3FFNFc3bkVxRWpZT3pydVRIOHBxVDNLOXdqMGNLVHlVVnBMWk84Yy9ubVNOdTF3T2h3THFDY1MwQ3ZwZTJSNitTeGE2cktUVDdYTGovMG9GQnFlYjNkei93ZC83eCtFd3QzdXVwcGdlanJUeUtWSXJLazBVV0RZLS1kcmVSYWVnTklyeWZuUnVWSDVPWTFnPT0%3D--225693bb4f56150093aa43661f04b555e4be718b; path=/; httponly; samesite=lax"
+      ],
+      "via": "1.1 assistance-geoportail-urbanisme.developpement-durable.gouv.fr",
+      "vary": "User-Agent",
+      "content-length": "2883",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "_redmine_session": {
+          "domain": "assistance-geoportail-urbanisme.developpement-durable.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://assistance-geoportail-urbanisme.developpement-durable.gouv.fr/login?back_url=http%3A%2F%2Fgeoportail-urbanisme.redmine.ac.cs%2F",
+      "redirects": true,
+      "route": [
+        "http://assistance-geoportail-urbanisme.developpement-durable.gouv.fr/",
+        "https://assistance-geoportail-urbanisme.developpement-durable.gouv.fr/",
+        "https://assistance-geoportail-urbanisme.developpement-durable.gouv.fr/login?back_url=http%3A%2F%2Fgeoportail-urbanisme.redmine.ac.cs%2F"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
