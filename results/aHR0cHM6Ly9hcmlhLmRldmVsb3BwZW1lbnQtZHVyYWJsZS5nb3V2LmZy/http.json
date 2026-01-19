@@ -1,0 +1,221 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:44:07 GMT",
+      "server": "Apache",
+      "cache-control": "no-cache",
+      "wpo-cache-status": "cached",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "content-security-policy": "default-src 'self' *.googleapis.com *.google.com *.google.fr *.w.org *.supportcandy.net *.gravatar.com *.dm-event.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.googleapis.com *.google.com *.google.fr *.w.org *.supportcandy.net *.gravatar.com widgetlogic.org api.dmcdn.net *.dailymotion.com; style-src 'self' 'unsafe-inline'  *.googleapis.com; img-src 'self' 'unsafe-inline'  *.googleusercontent.com *.w.org *.supportcandy.net *.gravatar.com data: *.gstatic.com  *.googleapis.com searchwp.com supportcandy.net; frame-src 'self' authentification.din.developpement-durable.gouv.fr *.googleapis.com 208c73af.sibforms.com *.dailymotion.com; font-src 'self' data: *.googleapis.com *.gstatic.com",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "last-modified": "Sun, 18 Jan 2026 07:47:37 GMT",
+      "vary": "User-Agent",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.dm-event.net",
+          "*.google.com",
+          "*.google.fr",
+          "*.googleapis.com",
+          "*.gravatar.com",
+          "*.supportcandy.net",
+          "*.w.org"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.dailymotion.com",
+          "*.google.com",
+          "*.google.fr",
+          "*.googleapis.com",
+          "*.googletagmanager.com",
+          "*.gravatar.com",
+          "*.supportcandy.net",
+          "*.w.org",
+          "api.dmcdn.net",
+          "widgetlogic.org"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.googleapis.com"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.googleapis.com",
+          "*.googleusercontent.com",
+          "*.gravatar.com",
+          "*.gstatic.com",
+          "*.supportcandy.net",
+          "*.w.org",
+          "data:",
+          "searchwp.com",
+          "supportcandy.net"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.dailymotion.com",
+          "*.googleapis.com",
+          "208c73af.sibforms.com",
+          "authentification.din.developpement-durable.gouv.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "*.googleapis.com",
+          "*.gstatic.com",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "wpml_referer_url": {
+          "domain": "aria.developpement-durable.gouv.fr",
+          "expires": "2026-01-20T02:44:06.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null
+        },
+        "_icl_current_language": {
+          "domain": "aria.developpement-durable.gouv.fr",
+          "expires": "2026-01-20T02:44:07.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null
+        },
+        "masquer_totaux_facettes": {
+          "domain": "aria.developpement-durable.gouv.fr",
+          "expires": "2027-01-19T02:44:06.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.aria.developpement-durable.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://aria.developpement-durable.gouv.fr/",
+        "https://aria.developpement-durable.gouv.fr/",
+        "https://www.aria.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=GT-MQDFQW7": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://widgetlogic.org/v2/js/data.js?t=1768694400&ver=6.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
