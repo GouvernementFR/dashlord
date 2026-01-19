@@ -1,0 +1,151 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:49:52 GMT",
+      "server": "Apache",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "PrestaShop-952165c8f3f6ea15c3c234b2d7dc4d84=def502001bc508b9a4120d63706b8f0a60519db187522fd6fb2bd9a3b7fb424680ae36118bf5a4d59d7e9cd92e04b4296c63bc24bc66a56ece1dd93dfcd9ac407db45cfbc793f44cc7d4e067280685cf82fe82d707808499c70e330d8993aa0290d6749937b0133e4ee7d28ca18a72fea33cd54c169256b9d74017bb047ba4d731b79f74fd70aa60dc45a5c89d475fff1ddafad7a939d68a441343fe125790eb971cbbd19dbcb6426289fc82fcab6fe966adb802dd9ffc18bd36f422c1f4e115a6a23038e64b686d2c9f206a899bc1ecc020caa1189bb6dda159511e4f82fd13112dd71d66fff73b5c3d0587a9b6dd7261b6edffe97f10001c19cae3f2be0ab4b138ea7f15fb46f539495282dda66088084dcdf1a9c65f7114077348c52e7efb5333960b9d86fac3e7a86acdb1b9d16bec8b43df745b28e39d3d5aad52ffb5916feac3f73ba9274edcc07215cceeebd24b0a9e64; expires=Sun, 08-Feb-2026 02:49:52 GMT; Max-Age=1728000; path=/; domain=boutique.airespace.defense.gouv.fr; secure; HttpOnly; SameSite=Lax",
+        "PHPSESSID=f0igdknm4emb4h4dmvn7dd2quh; expires=Thu, 26-Feb-2082 05:39:46 GMT; Max-Age=1770518992; path=/; secure; HttpOnly; SameSite=Lax",
+        "PrestaShop-952165c8f3f6ea15c3c234b2d7dc4d84=def50200a73bc360baa02bc9d2a548e0a687180ffbceb1a74be08861a3d5eb3fed38b84d5a23451bbdfc16fef32af8d881c3e8a1300f21d0c2f97d3e6a8b6074d6875f5b25c53d699a9dd7afd3012f6b5b4f4843cbb857587d51028183a26187aa5848ffe3dfd211d99c09c3f162bbc5939510b7d47782fef58174765e36b2f8f41eb2bb296835ec707b4261d1261eb9092f06688e2d7e7a3886f1cd27ad4252db5a3a46c1efcca54258c4aefdfbfe68d24592bb7daa5db7182ea54a98fff33ecf503be0e2f6af3c1025585a2a801d0be97dbe133f37e42486678988baa96c9f12525fcedbc132ddf5ec14f96ac4b2d59958eceb637629ff751224371a32c9f7fbde4173e8cabd7da691eaa29fa4b73d388629d77e8b940ee5ae048c5efa810326894960484a4a3bcebb4f608a8efcfe065895d7efaeab04899738b2886d367a2bedeacf60213411653fef107afc6167be1c228ef1321dd844ea24d50041f5ffae15ff; expires=Sun, 08-Feb-2026 02:49:52 GMT; Max-Age=1727998; path=/; domain=boutique.airespace.defense.gouv.fr; secure; HttpOnly; SameSite=Lax",
+        "PrestaShop-952165c8f3f6ea15c3c234b2d7dc4d84=def5020031da5e3d409370fc94e42632a131ec38fd72b14ae3502c045984781ef42f6fb3a12c37a66b77ce5ab17151e63ddebf3a6211adb4c546bb57f2034c1828dd3ad3662cdc942afb92cbbb79ac04d3836dd461d65250255fde2b4ede1e35f626568f1064d5ff9ce87e402ccb47db5e552975331a6a1f9a08e0860b2e0e183821a931fdb64fc74349babc4421a1ea8abf6f58a4a0b1f59418855ace62c7ae50519c026d8777c2d55d23572de6900aa04bfd1b74cf8b62decadf1988cc85a93c55da84633b2462cc7cb7ecb7afe40158ec196bb0de38b4e90e1c788af61ad96a9fabae9bc2c31e1908af89732da617acc0daeeae8c3c4c5365d4cf2c555342da43afe5dc2d18c3ccb576dcbe428f3678c796ac406572da1c117baad78083fdc7e1d1f7ea04c863e907c957b0dd45f5121f34e79c6437a548c59ff065cd81236727999476fd0d196c23469ab0423700d797186c8bba2cd9759e3bfa677a7354d7983d57e9f7e5cafb24549a71f6dcedb1ee205eaece7728684e5923960008a6dd3194d4711292aa5a29d111f9; expires=Sun, 08-Feb-2026 02:49:52 GMT; Max-Age=1727998; path=/; domain=boutique.airespace.defense.gouv.fr; secure; HttpOnly; SameSite=Lax"
+      ],
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "vary": "Accept-Encoding,User-Agent",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "PrestaShop-952165c8f3f6ea15c3c234b2d7dc4d84": {
+          "domain": "boutique.airespace.defense.gouv.fr",
+          "expires": "2026-02-08T02:49:52.000Z",
+          "httponly": true,
+          "max-age": 1727998,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PHPSESSID": {
+          "domain": "boutique.airespace.defense.gouv.fr",
+          "expires": "2082-02-26T05:39:46.000Z",
+          "httponly": true,
+          "max-age": 1770518992,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://boutique.airespace.defense.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://boutique.airespace.defense.gouv.fr/",
+        "https://boutique.airespace.defense.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.societe-des-avis-garantis.fr/wp-content/plugins/ag-core/widgets/JsWidget.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@alma/widgets@4.x.x/dist/widgets.umd.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
