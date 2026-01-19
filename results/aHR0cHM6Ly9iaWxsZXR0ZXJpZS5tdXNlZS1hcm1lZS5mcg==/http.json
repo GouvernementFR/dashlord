@@ -1,0 +1,148 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "private, no-store, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "vary": "Accept-Encoding",
+      "debug": "39.DefaultController.RenderModulesGroup.hugIInGghN(Tunnel);50.~DefaultController.RenderModulesGroup.hugIInGghN(Tunnel);51.DefaultController.RenderModulesGroup.pn1fGHxqQg(Text);58.~DefaultController.RenderModulesGroup.pn1fGHxqQg(Text);59.DefaultController.RenderModulesGroup.R2ZxnmBDl8(Code);60.~DefaultController.RenderModulesGroup.R2ZxnmBDl8(Code);60.DefaultController.RenderModulesGroup.2C4bZkvAil(Family);523.~DefaultController.RenderModulesGroup.2C4bZkvAil(Family);523.DefaultController.RenderModulesGroup.y1nYCcbgPp(Text);532.~DefaultController.RenderModulesGroup.y1nYCcbgPp(Text);532.DefaultController.RenderModulesGroup.Eeqz3wuE8e(Text);539.~DefaultController.RenderModulesGroup.Eeqz3wuE8e(Text);539.DefaultController.RenderModulesGroup.wzzjyg3iY2(Text);544.~DefaultController.RenderModulesGroup.wzzjyg3iY2(Text);546.DefaultController.RenderModulesGroup.qTnBHwhKgv(Menu);554.~DefaultController.RenderModulesGroup.qTnBHwhKgv(Menu);556.DefaultController.RenderModulesGroup.8JJWkiIKrz(Login);556.~DefaultController.RenderModulesGroup.8JJWkiIKrz(Login);558.DefaultController.RenderModulesGroup.ZLQnuDZ2jd(Menu);559.~DefaultController.RenderModulesGroup.ZLQnuDZ2jd(Menu);559.DefaultController.RenderModulesGroup.IIxvZzsfEk(Menu);562.~DefaultController.RenderModulesGroup.IIxvZzsfEk(Menu);565.DefaultController.RenderModulesGroup.2YMvnQB4DM(Language);566.~DefaultController.RenderModulesGroup.2YMvnQB4DM(Language);569.DefaultController.RenderModulesGroup.U8REMjI6a2(Notification);569.~DefaultController.RenderModulesGroup.U8REMjI6a2(Notification);570.DefaultController.RenderModulesGroup.dlCkSVGDRy(Menu);574.~DefaultController.RenderModulesGroup.dlCkSVGDRy(Menu);",
+      "x-frame-options": "DENY",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=16070400; includeSubDomains",
+      "referrer-policy": "unsafe-url",
+      "permissions-policy": "microphone=()",
+      "server": "GAT",
+      "date": "Mon, 19 Jan 2026 02:48:47 GMT",
+      "content-length": "18237",
+      "connection": "close",
+      "set-cookie": [
+        "CaptainCookie=!6rjrKF4uT7yMOYEVcFoLFVrAihocABMYIS/QtMdwiWszmaMEsLoaiGWccmodhS9QgOJCPpIFzFD5qg==; path=/; Httponly; Secure; SameSite=Lax"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "CaptainCookie": {
+          "domain": "billetterie.musee-armee.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "ASP.NET_SessionId": {
+          "domain": "billetterie.musee-armee.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://billetterie.musee-armee.fr/fr-FR/accueil",
+      "redirects": true,
+      "route": [
+        "http://billetterie.musee-armee.fr/",
+        "https://billetterie.musee-armee.fr/",
+        "https://billetterie.musee-armee.fr/fr-FR/",
+        "https://billetterie.musee-armee.fr/fr-FR/accueil"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "unsafe-url",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://cdn-vvt.tickeasy.com/jquery/jquery-3.7.1.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        },
+        "https://cdn-vvt.tickeasy.com/bootstrap/bootstrap.bundle.5.3.2.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
