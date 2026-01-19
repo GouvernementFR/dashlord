@@ -1,0 +1,181 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:46:37 GMT",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "cache-control": "must-revalidate, no-cache, private",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://mucj.autoecoles.securite-routiere.gouv.fr https://cdnjs.cloudflare.com https://cdn.trustcommander.net https://cstatic.weborama.fr https://www.googletagmanager.com http://cdnjs.cloudflare.com https://cdn.tagcommander.com maps.google.com; script-src-elem 'self' 'unsafe-inline' https://mucj.autoecoles.securite-routiere.gouv.fr https://cdnjs.cloudflare.com https://cdn.trustcommander.net https://cstatic.weborama.fr https://www.googletagmanager.com https://cdn.tagcommander.com maps.google.com; style-src 'self' 'unsafe-inline' https://api.tiles.mapbox.com; worker-src 'self' blob:; frame-ancestors 'self'; report-uri http://autoecoles.securite-routiere.gouv.fr/report-uri/enforce",
+      "referrer-policy": "strict-origin",
+      "vary": "Accept-Encoding",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "0",
+      "x-cache": "Miss",
+      "accept-ranges": "bytes",
+      "transfer-encoding": "chunked",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "http://cdnjs.cloudflare.com",
+          "https://cdn.tagcommander.com",
+          "https://cdn.trustcommander.net",
+          "https://cdnjs.cloudflare.com",
+          "https://cstatic.weborama.fr",
+          "https://mucj.autoecoles.securite-routiere.gouv.fr",
+          "https://www.googletagmanager.com",
+          "maps.google.com"
+        ],
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.tagcommander.com",
+          "https://cdn.trustcommander.net",
+          "https://cdnjs.cloudflare.com",
+          "https://cstatic.weborama.fr",
+          "https://mucj.autoecoles.securite-routiere.gouv.fr",
+          "https://www.googletagmanager.com",
+          "maps.google.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://api.tiles.mapbox.com"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "report-uri": [
+          "http://autoecoles.securite-routiere.gouv.fr/report-uri/enforce"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://autoecoles.securite-routiere.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://autoecoles.securite-routiere.gouv.fr/",
+        "https://autoecoles.securite-routiere.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.tagcommander.com/3602/tc_SecuriteRoutiere_2.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
