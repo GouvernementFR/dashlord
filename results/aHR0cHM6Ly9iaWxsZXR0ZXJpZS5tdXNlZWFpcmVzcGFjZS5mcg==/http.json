@@ -1,0 +1,253 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "vary": "Accept-Encoding",
+      "cache-control": "max-age=300, public",
+      "tiacpd": "1",
+      "content-type": "text/html",
+      "access-control-allow-credentials": "true",
+      "p3p": "CP=\"CAO PSA OUR\"",
+      "date": "Mon, 19 Jan 2026 02:49:06 GMT",
+      "keep-alive": "timeout=5, max=99",
+      "expires": "Mon, 19 Jan 2026 02:54:06 GMT",
+      "pragma": "public",
+      "digi_hacks": "1",
+      "access-control-allow-origin": "billetterie.museeairespace.fr",
+      "accept-ranges": "bytes",
+      "connection": "close",
+      "x-cache-info": "caching",
+      "content-length": "7665"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "X-Mapping-gkldneee": {
+          "domain": "billetterie.museeairespace.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "billetterie.museeairespace.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://billetterie.museeairespace.fr/index-css5-velmuseeairespace-pg1.html",
+      "redirects": true,
+      "route": [
+        "http://billetterie.museeairespace.fr/",
+        "https://billetterie.museeairespace.fr/index-css5-velmuseeairespace-pg1.html"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://statics.digitick.com/commun/js/jquery/jquery-1.9.1.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/jquery-migrate-1.1.1.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/php.namespaced.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/composant.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/gestionFormatPaysEtat.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/Broadcaster/class_Broadcaster.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/Broadcaster/class_BroadcasterError.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/Broadcaster/class_BroadcasterPlugin.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/componentManager.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/isMobile.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/libNouveauParcoursAchat.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery-ui-1.9.2.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.skitter.4.0.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/highlight.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/fancybox/jquery.fancybox-1.3.4.pack.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/initClosure.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/jquery-1.6.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.tools.tooltip.1.2.6.min.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/endClosure.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/tooltip.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.notification.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/date.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/commun/js/dateformat.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Page/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_CarrouselMiseEnAvant/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Panier/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Compte/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_ChoixLangue/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Dialogue/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_ListeFiltre/js/general.js?v=38d833fd7a9b7ef690e1a4496ae34ae9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://statics.digitick.com/ext/billetterie5/ressource/design/css5_shiying/js/scripts.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
