@@ -1,0 +1,138 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-consumer-id": "default_consumer",
+      "x-drupal-cache": "HIT",
+      "last-modified": "Mon, 19 Jan 2026 02:31:55 GMT",
+      "etag": "\"1768789915-gzip\"",
+      "content-length": "33988",
+      "content-type": "text/html; charset=UTF-8",
+      "cache-control": "public, max-age=900",
+      "expires": "Mon, 19 Jan 2026 03:00:55 GMT",
+      "date": "Mon, 19 Jan 2026 02:45:55 GMT",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "alt-svc": "h3=\":443\"; ma=93600",
+      "strict-transport-security": "max-age=600"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.banque-france.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://banque-france.fr/",
+        "https://banque-france.fr/",
+        "https://www.banque-france.fr/",
+        "https://www.banque-france.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=600",
+      "includeSubDomains": false,
+      "maxAge": 600,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tag.aticdn.net/piano-analytics.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.trustcommander.net/privacy/5322/privacy_v2_14.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
