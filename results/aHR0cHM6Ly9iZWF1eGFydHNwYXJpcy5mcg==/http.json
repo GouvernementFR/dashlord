@@ -1,0 +1,147 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx/1.22.1",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cache-control": "must-revalidate, no-cache, private",
+      "date": "Fri, 16 Jan 2026 16:49:42 GMT",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-consumer-id": "1a065827-ed9b-497a-b7dd-09d1ae42341c",
+      "vary": "X-Consumer-ID",
+      "x-drupal-cache": "HIT",
+      "access-control-allow-origin": "*"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://beauxartsparis.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://beauxartsparis.fr/",
+        "https://beauxartsparis.fr/",
+        "https://beauxartsparis.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=UA-34236809-2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://code.jquery.com/ui/1.12.1/jquery-ui.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/js/bootstrap.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha256-DSHWUwfs+dyvqNBAlaN3fBLYhXtZgMDSoNiXIPCv+E4="
+        },
+        "https://cdn.jsdelivr.net/gh/jfeltkamp/cookiesjsr@1/dist/cookiesjsr-preloader.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
