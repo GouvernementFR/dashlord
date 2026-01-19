@@ -1,0 +1,274 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 19 Jan 2026 02:45:54 GMT",
+      "server": "Apache",
+      "link": "<https://institut-du-vegetal.fr/wp-json/>; rel=\"https://api.w.org/\", <https://institut-du-vegetal.fr/wp-json/wp/v2/pages/1193>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://institut-du-vegetal.fr/>; rel=shortlink",
+      "x-frame-options": "SAMEORIGIN",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "cache-control": "max-age=0",
+      "expires": "Mon, 19 Jan 2026 02:45:54 GMT",
+      "vary": "Accept-Encoding",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "access-control-allow-origin": "https://institut-du-vegetal.fr",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://institut-du-vegetal.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://institut-du-vegetal.fr/",
+      "redirects": true,
+      "route": [
+        "http://astredhor.fr/",
+        "https://institut-du-vegetal.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://institut-du-vegetal.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/ays-popup-box/public/js/ays-pb-public.js?ver=6.1.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/search-filter-pro/public/assets/js/search-filter-build.min.js?ver=2.5.21": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/search-filter-pro/public/assets/js/chosen.jquery.min.js?ver=2.5.21": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.9-wc.10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/select2/select2.full.min.js?ver=4.0.3-wc.10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/helper/slick/slick.min.js?ver=1.8.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mediapilote/vendors/swiffyslider/swiffy-slider.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mediapilote/vendors/lightgallery/lightgallery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/themes/atelier/scripts/axeptio.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mediapilote/vendors/openstreetmap_leaflet/leaflet.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.4": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.4": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/custom-post-type-list-field-for-contact-form-7/assets/js/front.js?ver=1.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/custom-post-type-list-field-for-contact-form-7/assets/js/select2.js?ver=1.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/pojo-accessibility/modules/legacy/assets/js/app.min.js?ver=1.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/themes/atelier/scripts/main.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.4.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/helper/owl_carousel/owl.carousel.min.js?ver=2.3.4": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/helper/mp_style/mpwem_global.js?ver=1768790756": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js?ver=3.3.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js?ver=1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js?ver=1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/helper/timeline/timeline.min.js?ver=1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/helper/calender/calendar.min.js?ver=1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/frontend/filter_pagination.js?ver=1768790756": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://institut-du-vegetal.fr/wp-content/plugins/mage-eventpress/assets/frontend/mpwem_script.js?ver=1768790756": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
