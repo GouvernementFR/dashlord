@@ -1,0 +1,132 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:44:21 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "x-powered-by": "PHP/7.2",
+      "x-pingback": "https://www.cesdip.fr/xmlrpc.php",
+      "link": "<https://www.cesdip.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.cesdip.fr/wp-json/wp/v2/pages/189>; rel=\"alternate\"; type=\"application/json\", <https://wp.me/P8MU6G-33>; rel=shortlink",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://www.cesdip.fr/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://www.cesdip.fr",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniffâ",
+      "age": "0",
+      "x-cdn-cache": "MISS",
+      "x-cdn-request-id": "952415679",
+      "x-cdn-pop": "bhs",
+      "accept-ranges": "bytes",
+      "transfer-encoding": "chunked",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cesdip.fr/",
+      "redirects": true,
+      "route": [
+        "http://cesdip.fr/",
+        "https://cesdip.fr/",
+        "https://www.cesdip.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://stats.wp.com/e-202604.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniffâ"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
