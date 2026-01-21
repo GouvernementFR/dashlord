@@ -1,0 +1,181 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:44:57 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "9006",
+      "cache-control": "max-age=600, public",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "last-modified": "Tue, 20 Jan 2026 09:30:24 GMT",
+      "etag": "\"1768901424-gzip\"",
+      "age": "193",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "access-control-allow-methods": "GET, POST, HEAD",
+      "access-control-allow-headers": "DNT, User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Range",
+      "x-frame-options": "same-origin",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
+      "content-security-policy": "default-src 'self';script-src 'self' 'unsafe-inline' https://gvb.et-gv.fr https://hdge.diplomatie.gouv.fr https://ton.twimg.com https://platform.twitter.com;connect-src 'self' https://hdge.diplomatie.gouv.fr;object-src 'none';frame-src 'self' https://player.vimeo.com https://platform.twitter.com https://www.youtube.com https://www.youtube-nocookie.com;img-src 'self' data: https://media.diplomatie.gouv.fr;style-src 'self';font-src 'self' data:;",
+      "x-dns-prefetch-control": "off",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "strict-transport-security": "max-age=63072000",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://gvb.et-gv.fr",
+          "https://hdge.diplomatie.gouv.fr",
+          "https://platform.twitter.com",
+          "https://ton.twimg.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://hdge.diplomatie.gouv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://platform.twitter.com",
+          "https://player.vimeo.com",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://media.diplomatie.gouv.fr"
+        ],
+        "style-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://ch.diplomatie.gouv.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://ch.ambafrance.org/",
+        "https://ch.ambafrance.org/",
+        "https://ch.diplomatie.gouv.fr/",
+        "https://ch.diplomatie.gouv.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "same-origin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
