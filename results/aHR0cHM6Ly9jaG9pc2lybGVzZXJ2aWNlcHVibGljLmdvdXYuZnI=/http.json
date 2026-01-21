@@ -1,0 +1,186 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 110,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "link": "<https://choisirleservicepublic.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://choisirleservicepublic.gouv.fr/wp-json/wp/v2/pages/231>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://choisirleservicepublic.gouv.fr/>; rel=shortlink",
+      "set-cookie": [
+        "PHPSESSID=ete5ugck3hl11sihh3jeducc2k; path=/; secure; HttpOnly"
+      ],
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "vary": "Accept-Encoding",
+      "backend": "biep1",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "frame-ancestors 'self';",
+      "content-length": "37307",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Wed, 21 Jan 2026 02:47:15 GMT",
+      "server": "Apache/2",
+      "x-iplb-request-id": "AC462737:7410_3626FACC:01BB_69703E33_1079A7D5:081A",
+      "x-iplb-instance": "55307",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe-default-src-none",
+      "scoreModifier": 10,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'none'"
+        ],
+        "script-src-elem": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'none'"
+        ],
+        "form-action": [
+          "'none'"
+        ],
+        "img-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'none'"
+        ],
+        "font-src": [
+          "'none'"
+        ],
+        "connect-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "PHPSESSID": {
+          "domain": "choisirleservicepublic.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tag.aticdn.net/piano-analytics.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyB5JXFpaVW5jSUcupJ2dLfzrJfK2uhmB_o": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
