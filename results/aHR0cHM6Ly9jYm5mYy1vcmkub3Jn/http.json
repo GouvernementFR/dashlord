@@ -1,0 +1,147 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Wed, 21 Jan 2026 02:42:41 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "26865",
+      "connection": "close",
+      "x-powered-by": "PHP/8.1.34, PleskLin",
+      "cache-control": "max-age=10800, public",
+      "x-drupal-dynamic-cache": "HIT",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-drupal-cache-tags": "block_content:1 block_content:10 block_content:11 block_content:12 block_content:2 block_content:3 block_content:4 block_content:5 block_content:6 block_content:7 block_content:8 block_content:9 block_content_view block_view config:basic.settings config:block.block.basic_content config:block.block.basic_help config:block.block.basic_local_actions config:block.block.basic_local_tasks config:block.block.basic_main_menu config:block.block.basic_messages config:block.block.blocknewsletter config:block.block.blockuserloginfooter config:block.block.blockuserpasswordfooter config:block.block.bloclogo config:block.block.blocpieddepageadresse config:block.block.blocpieddepagereseauxsociaux config:block.block.choisirletypederecherche config:block.block.contenupageinscription config:block.block.faireundon config:block.block.lesreseauxbenevoles config:block.block.menufooter config:block.block.menufooter2 config:block.block.nosrevues config:block.block.nouvellesarchivesdelaflorejurassienne config:block.block.nouvellesarchivesdelaflorejurassienne_2 config:block.block.opiefranchecomte config:block.block.reseauxsociauxfbwall config:block.block.societebotanique config:block.block.stickmenu config:block.block.utilisateur config:block.block.views_block__agenda_block_2 config:block.block.views_block__view_actualite_block_1 config:block.block.views_block__view_enquete_block_3 config:block.block.views_block__view_slider_block_1 config:block_list config:cookie_category_list config:core.entity_view_display.block_content.basic.default config:core.entity_view_display.media.image.default config:email_registration.settings config:eu_cookie_compliance.settings config:field.storage.node.body config:field.storage.node.field_image config:field.storage.node.field_image_old config:field.storage.node.field_slider_image config:field.storage.node.field_slider_image_old config:field.storage.node.field_slider_link config:field.storage.node.field_texte config:field.storage.node.field_type_actualite config:field.storage.node.field_type_affichage config:filter.format.full_html config:google_analytics.settings config:image.style.1200x400 config:system.menu.main config:system.menu.menu-cbnfc-ori config:system.menu.menu-cbnfc-ori-suite- config:system.menu.menu-especes-vegetales config:system.menu.menu-especes-vegetales-suite- config:system.menu.menu-footer config:system.menu.menu-insectes-invertebres config:system.menu.menu-insectes-invertebres-suite- config:system.menu.menu-menu-footer-2 config:system.menu.menu-milieux-habitats config:system.menu.menu-milieux-habitats-suite- config:system.menu.menu-stick-menu config:system.site config:user.role.anonymous config:views.view.agenda config:views.view.view_actualite config:views.view.view_enquete config:views.view.view_slider file:1142 file:1143 file:1144 file:1156 file:1158 file:1163 file:1270 file:1271 file:1272 file:1273 file:1919 file:2702 file:4048 file:4059 file:4060 http_response local_task media:10 media:11 media:1137 media:1139 media:1146 media:1149 media:1155 media:1169 media:1177 media:1180 media:1192 media:1194 media:1207 media:1210 media:1214 media:1216 media:1217 media:557 media:564 media:9 media_view node:107796 node:107797 node:107801 node:107803 node:107805 node:107809 node:107812 node:107814 node:107816 node:107818 node:107825 node:107827 node:18325 node:18326 node:18341 node:18716 node:22 node:27 node:39 node:40 node:82769 node_list node_view rendered taxonomy_term:154 taxonomy_term:155 taxonomy_term:156 taxonomy_term:158 taxonomy_term:159 taxonomy_term:185 taxonomy_term:53 taxonomy_term:64 taxonomy_term:65 taxonomy_term:66 taxonomy_term:67 user:0 user:78 user:8029",
+      "x-drupal-cache-contexts": "cookies:big_pipe_nojs languages:language_content languages:language_interface layout_builder_is_active:node layout_builder_is_active:taxonomy_term route session.exists theme timezone url user",
+      "x-drupal-cache-max-age": "0 (Uncacheable)",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-generator": "Drupal 9 (https://www.drupal.org)",
+      "x-drupal-cache": "HIT",
+      "last-modified": "Tue, 20 Jan 2026 22:23:23 GMT",
+      "etag": "\"1768947803-gzip\""
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://cbnbfc-ori.fr/",
+      "redirects": true,
+      "route": [
+        "http://cbnfc-ori.org/",
+        "https://cbnbfc-ori.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=G-ESEGBXFW3W": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/leaflet@1.6.0/dist/leaflet.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://ignf.github.io/geoportal-extensions/leaflet-latest/dist/GpPluginLeaflet-src.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
