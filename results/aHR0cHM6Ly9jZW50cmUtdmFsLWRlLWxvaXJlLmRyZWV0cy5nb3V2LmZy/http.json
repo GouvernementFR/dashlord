@@ -1,0 +1,139 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:44:37 GMT",
+      "x-spip-cache": "86400",
+      "x-frame-options": "DENY",
+      "last-modified": "Wed, 21 Jan 2026 02:44:37 GMT",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!lp2Pw0WYhOtKkOQXIkI7F7SI9ajmitDLHOb/2XVmdSMZT7BbBb0jdIUGxtWgQngS/zjUA/O5/6Loti5qKzmvEt02rlY=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab2800923010e090d39fa78dc7f017b9e737b6ee2419c190f5cb3b10fbb63e4f9848cc68ea369ce6bf2d82; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab200046bc3cf9ade85819a67fdb9498f1a13659598b38aada452d9d2b43d8cee2c5070815513622113000960c5f5a25007cca9b2599817dac85346243e3cd78da0ea1d06ddc567cdc68af0aa621015e9e8a14a207cf9c1ca4cd5b; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "BIGipServerpool-dreets2.cegedim.cloud-http": {
+          "domain": "centre-val-de-loire.dreets.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS086c66aa029": {
+          "domain": "centre-val-de-loire.dreets.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        },
+        "TS82bbd089027": {
+          "domain": "centre-val-de-loire.dreets.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://centre-val-de-loire.dreets.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://centre-val-de-loire.dreets.gouv.fr/",
+        "https://centre-val-de-loire.dreets.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
