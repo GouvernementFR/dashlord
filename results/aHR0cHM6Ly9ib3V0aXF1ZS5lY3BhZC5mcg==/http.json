@@ -1,0 +1,149 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:42:46 GMT",
+      "server": "Apache",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "PHPSESSID=p198vdk0vqp0m2jd0kb36tjhb4; expires=Thu, 12-Feb-2082 05:25:32 GMT; Max-Age=1769136166; path=/; secure; HttpOnly; SameSite=Strict",
+        "PrestaShop-d593ebbfe23c22633182b15759a1439e=def5020089b1fe7766408012925b3a62508233931d2bbf540714cbf42cf72093825cd62a491020a5356da10dd0d12fb4d4d84d1f28702a10f6aa9ea5815ec9e8aba824f84245fc08438f8e68151416175751ea58c2eeaad5f8390aaa42d85e8fbcfcdcb2ee86b408cd733a01e35e0cc813523b5aa2e940f703ac490d0fb6efeb874a39c73ac50e181cbb38be2355a3767bd10a69951bad76d01f2841872086586b1d3af85a00b94af26be6e36f84c6526e653766b882006c2124ff45f48b717fa2bc09a26de499eb42e833b5dcd095e33deccdd8f6; expires=Fri, 23-Jan-2026 02:42:46 GMT; Max-Age=172800; path=/; domain=boutique.ecpad.fr; secure; HttpOnly; SameSite=Strict",
+        "PrestaShop-d593ebbfe23c22633182b15759a1439e=def50200bd6ada669efb37d45db98abb23b9176e44c4d2e773bd99796370fffd1d2d7d7bc6a763c45daae29a97158a3c115756986cca5727fb87e1442053147c4e9fc5a412a3403be334532f1008387955c00eeb8d0e94986fa07959209bdd18ef22e75ceb23ae1b3b354861ea555545aa795b1242d4c780bce72a2ca1c1eb4c38339d4d2e7900e9ff87116651adfcde761f83d2151c22dc4b71030a91caa8f1f2f7318769d9e79512918ce50c4159c8581493f5df575df1807b82ed30882f4ff1f87858169249ed0f16aa721136ec8374a09bbdaf6a2a9305d512fe3b398014e47c07bc2b63aa287333d08fd7b281c059f3d8b69fb9d73418d3f58e24; expires=Fri, 23-Jan-2026 02:42:46 GMT; Max-Age=172800; path=/; domain=boutique.ecpad.fr; secure; HttpOnly; SameSite=Strict"
+      ],
+      "vary": "Accept-Encoding",
+      "content-length": "14977",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "PHPSESSID": {
+          "domain": "boutique.ecpad.fr",
+          "expires": "2082-02-12T05:25:32.000Z",
+          "httponly": true,
+          "max-age": 1769136166,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "PrestaShop-d593ebbfe23c22633182b15759a1439e": {
+          "domain": "boutique.ecpad.fr",
+          "expires": "2026-01-23T02:42:46.000Z",
+          "httponly": true,
+          "max-age": 172800,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://boutique.ecpad.fr/",
+      "redirects": true,
+      "route": [
+        "http://boutique.ecpad.fr/",
+        "https://boutique.ecpad.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.2/dist/dsfr.module.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.2/dist/dsfr.nomodule.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
