@@ -1,0 +1,133 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:45:38 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "Apache",
+      "xkey": "ez-all c74 c96707 l71 r96707 r0 c127846 r127846 c127839 r127839 c127840 r127840 c127841 r127841 c127843 r127843 c127842 r127842 c127844 r127844 c1808 l1810 c96711 ct75 pl91972 p1 p2 p71 p32851 p1968 p91972 p1810 r1808 c127359 l147015 c96876 ct61 pl1810 p147015 r127359 l90192 c97010 c97231 c113 l114 l90193 c97012 c97230 c114 l115 l90194 c97013 c97229 c115 l116 l90197 c97016 c97228 c498 l60 l90201 c97020 c97227 c119 l120 l99169 c103108 c103109 c103070 l99122 c97008 r97010 r97012 r97013 r97016 r97020 r103108 r97008 c97253 l90526 c97234 l90511 ct65 pl2 p90526 r97253 ct60 r96923 r116796 r116707 r116709 r120065 r98115 r7981",
+      "x-powered-by": "Ibexa Commerce v4",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=15768000",
+      "x-storage": "default",
+      "x-varnish": "85387231",
+      "age": "0",
+      "via": "1.1 varnish (Varnish/6.5)",
+      "vary": "Origin,X-Editorial-Mode,Accept-Encoding",
+      "cache-control": "public, s-maxage=600, stale-while-revalidate=300, stale-if-error=300",
+      "x-cache-varnish": "2",
+      "x-cache": "MISS",
+      "accept-ranges": "bytes"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cancer.fr/",
+      "redirects": true,
+      "route": [
+        "http://cancer.fr/",
+        "https://cancer.fr/",
+        "https://www.cancer.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000",
+      "includeSubDomains": false,
+      "maxAge": 15768000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.numanis.net/accessedition.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.tagcommander.com/5845/tc_INCa_38.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
