@@ -1,0 +1,255 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:40:18 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "41985",
+      "connection": "close",
+      "cf-ray": "9c13723008cda727-IAD",
+      "x-sorting-hat-shopid": "66048983279",
+      "set-cookie": [
+        "localization=FR; path=/; expires=Thu, 21 Jan 2027 02:40:18 GMT; SameSite=Lax",
+        "cart_currency=EUR; path=/; expires=Wed, 04 Feb 2026 02:40:18 GMT; SameSite=Lax",
+        "_shopify_y=dd3d7c54-6274-4897-a5a6-5ebb23d7a689; domain=marinenationale.gouv.fr; path=/; expires=Thu, 21 Jan 2027 08:40:18 GMT; SameSite=Lax",
+        "_shopify_s=7e44a8bf-8770-4b72-9e64-03e821251164; domain=marinenationale.gouv.fr; path=/; expires=Wed, 21 Jan 2026 03:10:18 GMT; SameSite=Lax",
+        "_shopify_essential=:AZvebJo0AAEA9WHym-cXBF4Lbnyx-c9zvuAjYxuDIpPKv1QQEGH51In9YC1NgW2uVeGEqyWP8hR3fLOtLaIywQM-mdywE3EsB4wmz0Q9RAE31jmqD0lUU6N3YNpmunNBhMfrDHJUMqvdJ5YdVEjEKPWoCWu3x3LXdFzL84o1xrGeYz_I3ZqxA17pV2Wv1H3LM9590dnAcKta1p7B6bwaJBKIc6YZG3QbNvdDz1zsndfSZQX-cB_WStmFM2kdtwT0WiRaKe006pMuhnT9gjeQOYSjJdy0hiyhek2kJXgw9V3hKmVhQYvkUEXwO_bp8CHQd6hLI2PmcLdsR8PxIx7oZg5ugaA6NNx_RnNDQe09xLbwp9E:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+        "_shopify_analytics=:AZvebJtyAAEAOHwgzy4jOjyc7DGbf8aIJwPqav4ECkGGSab1SgztRf49X3tmG0rdLV1Uhq4:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax"
+      ],
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <//boutique.marinenationale.gouv.fr/cdn/shop/t/33/assets/theme.css?v=14069087290360216561763025944>; as=\"style\"; rel=\"preload\", <//boutique.marinenationale.gouv.fr/cdn/shop/t/33/assets/mn.css?v=67252679719824907081763025944>; as=\"style\"; rel=\"preload\"",
+      "etag": "\"page_cache:66048983279:IndexController:c0bbbbfa5d65e15282310fa8de3e6623\"",
+      "shopify-complexity-score": "328",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "x-shopid": "66048983279",
+      "x-shardid": "340",
+      "vary": "Accept, accept-encoding",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "content-language": "fr-FR",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=331;desc=\"gc:8\", db;dur=68, db_async;dur=13.986, render;dur=132, asn;desc=\"8075\", edge;desc=\"IAD\", country;desc=\"US\", theme;desc=\"188885107029\", pageType;desc=\"index\", servedBy;desc=\"5czz\", requestID;desc=\"834962b5-aa89-4e45-bca9-334e81e77b75-1768963217\", _y;desc=\"dd3d7c54-6274-4897-a5a6-5ebb23d7a689\", _s;desc=\"7e44a8bf-8770-4b72-9e64-03e821251164\", _cmp;desc=\"3.AMPS_USVA_f_t_CZA2xzCcQbmTRiVGE8pQvg\", compressionLevel;desc=\"5\", compressionTime;dur=4.961, cfRequestDuration;dur=391.000032",
+      "x-dc": "gcp-us-east1,gcp-us-east1,gcp-us-east1",
+      "x-request-id": "834962b5-aa89-4e45-bca9-334e81e77b75-1768963217",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=WuLcj0woWkJ08POm4MWBoG45ZnjWux2IBFWlN7oaSuLOdVPguM4Z7EjV3px2plHunM82GxjLUNdtKRS%2FufWdGu9AvBni%2B8VfThSLhJQEP3mU5iIuTaQwlrd%2BiAatD59Dj%2Fd%2BKEle8sYjRmX%2FtOpMPAJ3\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "x-download-options": "noopen",
+      "server": "cloudflare"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "block-all-mixed-content": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ],
+        "script-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 2
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "localization": {
+          "domain": "boutique.marinenationale.gouv.fr",
+          "expires": "2027-01-21T02:40:18.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "cart_currency": {
+          "domain": "boutique.marinenationale.gouv.fr",
+          "expires": "2026-02-04T02:40:18.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "_shopify_y": {
+          "domain": "marinenationale.gouv.fr",
+          "expires": "2027-01-21T08:40:18.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "_shopify_s": {
+          "domain": "marinenationale.gouv.fr",
+          "expires": "2026-01-21T03:10:18.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "_shopify_essential": {
+          "domain": "boutique.marinenationale.gouv.fr",
+          "httponly": true,
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_shopify_analytics": {
+          "domain": "boutique.marinenationale.gouv.fr",
+          "httponly": true,
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://boutique.marinenationale.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://boutique.marinenationale.gouv.fr/",
+        "https://boutique.marinenationale.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=7889238",
+      "includeSubDomains": false,
+      "maxAge": 7889238,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//boutique.marinenationale.gouv.fr/cdn/shop/t/33/assets/es-module-shims.min.js?v=93572372115946385171763025944": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique.marinenationale.gouv.fr/cdn/shop/t/33/assets/vendor.min.js?v=114730757745344854631763025944": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique.marinenationale.gouv.fr/cdn/shop/t/33/assets/theme.js?v=41259982597880492081763025944": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://shop.app/checkouts/internal/preloads.js?locale=fr-FR&shop_id=66048983279": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//boutique.marinenationale.gouv.fr/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_INwxTpsh.fr.esm.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique.marinenationale.gouv.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_YNAa1F1g.esm.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//boutique.marinenationale.gouv.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E="
+        },
+        "//boutique.marinenationale.gouv.fr/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-65b4c6d7.js?v=20250812": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://cdn.shopify.com/extensions/019bdc9e-9889-75cc-9a3d-a887384f20d4/judgeme-extensions-301/assets/loader.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://smartarget.online/loader.js?u=aaaeff6d0373aae39628b214622096004ed68998": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
