@@ -1,0 +1,196 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:40:50 GMT",
+      "cache-control": "no-cache,no-store,must-revalidate,private, max-age=0",
+      "pragma": "no-cache",
+      "x-frame-options": "SAMEORIGIN",
+      "content-type": "text/html;charset=UTF-8",
+      "expires": "Wed, 21 Jan 2026 02:40:50 GMT",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "set-cookie": [
+        "_Secure-APPID=pCEZSzVOD8NYBU-63XLWUtVk9oOUwcy98hXKGo-c.astrea; path=/; SameSite=Lax;HttpOnly;Secure",
+        "ROUTEID=.atr1sjboi001.dc.justice.gouv.fr:server-node1;  path=/;HttpOnly;Secure",
+        "BIGipServerx2Lrwv/jtif5Mttz+lWGRQ=!KDgnN9ro3gUP8x5edLNKq/VAg+8cxJ9W3kCB97OiJo9lE91H24kgJYarF/PYdV8B47DbkJDjRgs12w==; path=/; Httponly",
+        "TS0199bb81=01a6efdeadf7550434ca312c0d068562c4de333e3effbbe3d75c1725d7ffc0c9d7b8b9cb53585c4311f614dcecb680972d55f1a1ca4f69497cb730a56691d706f0074fdd012906bc4d511baf906129a3a70c8349f574aaf37e128806dd3105584744d04e04; Path=/; Domain=.casier-judiciaire.justice.gouv.fr"
+      ],
+      "content-security-policy": "default-src 'self'; img-src 'self' https://voxusagers.numerique.gouv.fr/static/bouton-blanc.svg data: 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self'; child-src 'self' https://2981108.fls.doubleclick.net; connect-src 'self'; media-src 'self' data:",
+      "vary": "Accept-Encoding",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=16070400; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:",
+          "https://voxusagers.numerique.gouv.fr/static/bouton-blanc.svg"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "font-src": [
+          "'self'"
+        ],
+        "child-src": [
+          "'self'",
+          "https://2981108.fls.doubleclick.net"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "_Secure-APPID": {
+          "domain": "casier-judiciaire.justice.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "ROUTEID": {
+          "domain": "casier-judiciaire.justice.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerx2Lrwv/jtif5Mttz+lWGRQ": {
+          "domain": "casier-judiciaire.justice.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "TS0199bb81": {
+          "domain": "casier-judiciaire.justice.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://casier-judiciaire.justice.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://casier-judiciaire.justice.gouv.fr/",
+        "https://casier-judiciaire.justice.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
