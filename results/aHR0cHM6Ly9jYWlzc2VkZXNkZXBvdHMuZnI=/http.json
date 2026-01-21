@@ -1,0 +1,195 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=UTF-8",
+      "cache-control": "max-age=0, public, no-store, max-age=0",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "x-grace": "10",
+      "x-ttl": "86400",
+      "x-tag": "1k2y 1kar 1ka5 1kaw 1k6l 1k9l 1k8n 1k7s 1k7o 1k7q 1k7u 1k9f 1k7t 1k98 1k71 1k7u 1k6f 1k6n 1k6n 1ka9 1kb3 1k9c 1cf 1k56 1kal 1k5x 2x 3f4 4m 1kk4 1k8k 1c23 1c6 1c24 1c21 1c2i 1k65 1cw 1cx 1cz 1cv 1cq 1cz 1c2j 1cd 2j 1kda 3uez 5r 1khi 4e 2h5x 1k68 1keb 3uey 1kgn 1kau 1kc4 1kbm 3u8q 3u1d 1cu 1c12 1c15 1c18 1k6t 1kbr 3u1c 1k7j 3uf0 3umm 1kjq 2h7z 1kfj 2h7b 2h7y 2h7q 3u8k 1b4 1k6l 2p 1kat 1cf 1c33 1c27 1c25 1c2m 1c28 1ca 1c1o 1c1p 1cc 1cy 1c20 1k57 1cs 1c1e 1c14 1c22 1cy 1c19 1ce 1c3 1c17 1c1c 1c1l 1c1g 1c1h 1c1j 1c1m 1k3w 2l 4z 1k6v 3f3",
+      "x-adv-varnish": "Cache-enabled",
+      "x-varnish-secret": "CtbymL14dl08guPVAyF98muDDVAr_SCyJUP-TcOZhfU",
+      "x-deflate-key": "b91f02cf5af93c1c9141ba365d5852c9d12df6fd39f8b5d9c3b80dc1bc1428e1",
+      "last-modified": "Tue, 20 Jan 2026 18:05:46 GMT",
+      "etag": "\"1768932346-gzip\"",
+      "x-xss-protection": "1; mode=block",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' https:; frame-src 'self' https: 'unsafe-inline'; connect-src 'self' https:",
+      "x-cache-hits": "0",
+      "strict-transport-security": "max-age=11510640000; includesubdomains",
+      "x-frame-options": "SAMEORIGIN",
+      "x-cdn": "Imperva",
+      "x-iinfo": "17-44528224-44636680 NNNN CT(115 117 0) RT(1768962312038 942245) q(0 0 3 1) r(4 5) U12",
+      "content-length": "9929",
+      "date": "Wed, 21 Jan 2026 02:40:54 GMT",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "set-cookie": [
+        "visid_incap_3104404=bQvXXALOSNq6u1RzNuqzhbU8cGkAAAAAQUIPAAAAAAA2LpjUi03MK+k/CSeDMu2Z; expires=Wed, 20 Jan 2027 07:07:07 GMT; HttpOnly; path=/; Domain=.caissedesdepots.fr",
+        "incap_ses_205_3104404=XIznT9I8CTT02NkN3E7YArY8cGkAAAAAJYwsm2JjCTs/S4qqWLzo9A==; path=/; Domain=.caissedesdepots.fr"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "https:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "*",
+          "data:",
+          "https:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "visid_incap_3104404": {
+          "domain": "caissedesdepots.fr",
+          "expires": "2027-01-20T07:07:07.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_205_3104404": {
+          "domain": "caissedesdepots.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.caissedesdepots.fr/",
+      "redirects": true,
+      "route": [
+        "http://caissedesdepots.fr/",
+        "https://www.caissedesdepots.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=11510640000; includesubdomains",
+      "includeSubDomains": true,
+      "maxAge": 11510640000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
