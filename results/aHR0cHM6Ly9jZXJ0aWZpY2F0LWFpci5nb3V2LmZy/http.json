@@ -1,0 +1,190 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Wed, 21 Jan 2026 02:44:02 GMT",
+      "content-type": "text/html",
+      "content-length": "110309",
+      "connection": "close",
+      "last-modified": "Fri, 02 Jan 2026 08:10:05 GMT",
+      "etag": "\"69577d5d-1aee5\"",
+      "x-frame-options": "SAMEORIGIN",
+      "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+      "permissions-policy": "geolocation=()",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "default-src 'self'; script-src 'report-sample' 'self' https://assets.app.smart-tribune.com https://portail.ppd.web-analytics-ingroupe.com https://portail.web-analytics-ingroupe.com https://polyfill.io https://polyfill-fastly.io/ https://msvcdsiqzkcom.matomo.cloud 'nonce-Z2pR5yT8wU1qO4iL7gE3hC6jX9kV0bN'; style-src 'report-sample' 'self' https://assets.app.smart-tribune.com https://fonts.googleapis.com https://cdnjs.cloudflare.com https://static.piste.gouv.fr 'nonce-Z2pR5yT8wU1qO4iL7gE3hC6jX9kV0bN'; object-src 'none';connect-src 'self' https://api-gateway.app.smart-tribune.com https://portail.ppd.web-analytics-ingroupe.com https://portail.web-analytics-ingroupe.com; font-src 'self' data: https://assets.app.smart-tribune.com https://cdnjs.cloudflare.com https://fonts.gstatic.com; frame-src 'self' https://www.bison-fute.gouv.fr http://www.youtube-nocookie.com https://www.youtube-nocookie.com https://www.youtube.com; media-src 'self'; img-src 'self' data: https://portail.ppd.web-analytics-ingroupe.com https://portail.web-analytics-ingroupe.com https://static.piste.gouv.fr https://stv2-uploads-prod.s3.eu-west-3.amazonaws.com https://uploads.app.smart-tribune.com;",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=63072000; includeSubdomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'nonce-z2pr5yt8wu1qo4il7ge3hc6jx9kv0bn'",
+          "'report-sample'",
+          "'self'",
+          "https://assets.app.smart-tribune.com",
+          "https://msvcdsiqzkcom.matomo.cloud",
+          "https://polyfill-fastly.io/",
+          "https://polyfill.io",
+          "https://portail.ppd.web-analytics-ingroupe.com",
+          "https://portail.web-analytics-ingroupe.com"
+        ],
+        "style-src": [
+          "'nonce-z2pr5yt8wu1qo4il7ge3hc6jx9kv0bn'",
+          "'report-sample'",
+          "'self'",
+          "https://assets.app.smart-tribune.com",
+          "https://cdnjs.cloudflare.com",
+          "https://fonts.googleapis.com",
+          "https://static.piste.gouv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://api-gateway.app.smart-tribune.com",
+          "https://portail.ppd.web-analytics-ingroupe.com",
+          "https://portail.web-analytics-ingroupe.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://assets.app.smart-tribune.com",
+          "https://cdnjs.cloudflare.com",
+          "https://fonts.gstatic.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "http://www.youtube-nocookie.com",
+          "https://www.bison-fute.gouv.fr",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://portail.ppd.web-analytics-ingroupe.com",
+          "https://portail.web-analytics-ingroupe.com",
+          "https://static.piste.gouv.fr",
+          "https://stv2-uploads-prod.s3.eu-west-3.amazonaws.com",
+          "https://uploads.app.smart-tribune.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.certificat-air.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://certificat-air.gouv.fr/",
+        "https://www.certificat-air.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer, strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubdomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
