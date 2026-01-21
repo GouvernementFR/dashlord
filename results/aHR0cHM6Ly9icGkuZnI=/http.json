@@ -1,0 +1,163 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 21 Jan 2026 02:40:22 GMT",
+      "server": "Apache/2.4.6 (CentOS)",
+      "cache-control": "public, s-maxage=300, stale-if-error=50, max-age=0",
+      "link": "<https://www.bpi.fr/>; rel=shortlink",
+      "strict-transport-security": "max-age=500; includeSubDomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "vary": "Accept-Encoding",
+      "expires": "Wed, 21 Jan 2026 02:40:22 GMT",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "x-ua-compatible": "IE=edge",
+      "content-length": "28070",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "3113858",
+      "age": "0",
+      "via": "1.1 varnish-v4",
+      "accept-ranges": "bytes",
+      "set-cookie": [
+        "_cerber_yFWNoVZBhRcbz=b_9PA%5D4QMJnd; expires=Thu, 22 Jan 2026 02:40:22 GMT; Max-Age=86400; path=/; secure; SameSite=Strict; HTTPOnly; Secure",
+        "_cerber_hnIHyT=nwrhS3; expires=Thu, 22 Jan 2026 02:40:22 GMT; Max-Age=86400; path=/; secure; SameSite=Strict; HTTPOnly; Secure",
+        "ROUTEID=.2; path=/"
+      ],
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "_cerber_yFWNoVZBhRcbz": {
+          "domain": "www.bpi.fr",
+          "expires": "2026-01-22T02:40:26.000Z",
+          "httponly": true,
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "_cerber_hnIHyT": {
+          "domain": "www.bpi.fr",
+          "expires": "2026-01-22T02:40:26.000Z",
+          "httponly": true,
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "ROUTEID": {
+          "domain": "www.bpi.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.bpi.fr/",
+      "redirects": true,
+      "route": [
+        "http://bpi.fr/",
+        "https://www.bpi.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es5,es6,fetch,Array.prototype.includes,CustomEvent,Element.prototype.closest,NodeList.prototype.forEach": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//www.bpi.fr/content/uploads/sites/2/pum/pum-site-scripts-2.js?defer&generated=1762339366&ver=a83b606e6e": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
