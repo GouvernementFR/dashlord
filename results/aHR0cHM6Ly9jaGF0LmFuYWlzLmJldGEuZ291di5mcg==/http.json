@@ -1,0 +1,132 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "W/\"5925bef43712b7b24c163443b5f97514\"",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "set-cookie": [
+        "_chatwoot_session=n2YED65aYuwtLg4qxpgnNJgQXSO2gAHDeHWjNqEPcUwCS4Uf0nhXfHSovMUZoleYwAo%2FJ0zHSGN162rtxrFwHFG%2BfidFPx%2FllyccB0XOf8rdr1kLbQQ9U9Fo7tEnXgxFxzy0%2FusAFnwI6FSlP3uw3dbsQtPWzkFF345Afa3OL8DKCT4TbbTirEAXQ6o6uKasD5UeHgcXJ4TqrsrcFmSBQ0Amn406e18n%2FvmKAqEr9KqRFsLlChZhUH2E78wfIyqrshxZVpOdGghEFz6si0jKKFFQZcAyQz5zKw%3D%3D--D6PdSaBUojFIllvs--KtONtyvzEA0jz0phBDQLXQ%3D%3D; path=/; HttpOnly; SameSite=Lax"
+      ],
+      "strict-transport-security": "max-age=315360000; includeSubDomains",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "97cbaaef-5efb-4cb9-b033-da08abf246fa",
+      "x-runtime": "0.007261",
+      "x-xss-protection": "1; mode=block",
+      "date": "Wed, 21 Jan 2026 02:46:53 GMT",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "_chatwoot_session": {
+          "domain": "chat.anais.beta.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://chat.anais.beta.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://chat.anais.beta.gouv.fr/",
+        "https://chat.anais.beta.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=315360000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 315360000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
