@@ -1,0 +1,247 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "strict-transport-security": "max-age=34560000; includeSubDomains",
+      "date": "Wed, 21 Jan 2026 02:46:47 GMT",
+      "server": "Apache",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "cache-control": "no-cache, no-store, must-revalidate, max-age=60, public",
+      "pragma": "no-cache",
+      "expires": "0",
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "*",
+      "access-control-allow-methods": "POST,GET",
+      "access-control-expose-headers": "*",
+      "access-control-max-age": "86400",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';img-src 'self' https://www.integration.impots.gouv.fr data:;style-src 'self' 'unsafe-inline';font-src 'self' https://fonts.googleapis.com;connect-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval';form-action * ;frame-ancestors 'self';",
+      "set-cookie": [
+        "ctxcfs=5904092109726c60289615419b35816ae715bd98e42c0eb43b506d2f5788326d; path=/; HttpOnly=1; SameSite=Lax; secure",
+        "fidgfippartpdata=%7B%22issuerTs%22%3A1768963607%7D; path=/; HttpOnly=1; SameSite=Lax; secure",
+        "__uzma=f7f66335-23e7-426a-933d-04620882b5f8; Max-Age=15724800; Expires=Wed, 22-Jul-2026 02:46:46 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzmb=1768963606; Max-Age=15724800; Expires=Wed, 22-Jul-2026 02:46:46 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzmc=275211051405; Max-Age=15724800; Expires=Wed, 22-Jul-2026 02:46:46 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzmd=1768963606; Max-Age=15724800; Expires=Wed, 22-Jul-2026 02:46:46 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzme=6477; Max-Age=15724800; Expires=Wed, 22-Jul-2026 02:46:46 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "SL_ClassKey=0.1.1;Expires=Thu, 22 Jan 2026 14:46:46 GMT;Path=/"
+      ],
+      "vary": "Accept-Encoding,User-Agent",
+      "via": "dpapusa213",
+      "connection": "close",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://www.integration.impots.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "font-src": [
+          "'self'",
+          "https://fonts.googleapis.com"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'"
+        ],
+        "form-action": [
+          "*"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "ctxcfs": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "fidgfippartpdata": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__uzma": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "expires": "2026-07-22T02:46:46.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmb": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "expires": "2026-07-22T02:46:46.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmc": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "expires": "2026-07-22T02:46:46.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmd": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "expires": "2026-07-22T02:46:46.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzme": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "expires": "2026-07-22T02:46:46.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "SL_ClassKey": {
+          "domain": "cfspart-idp.impots.gouv.fr",
+          "expires": "2026-01-22T14:46:46.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://cfspart-idp.impots.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://cfspart-idp.impots.gouv.fr/",
+        "https://cfspart-idp.impots.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=34560000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 34560000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
