@@ -1,0 +1,160 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Wed, 21 Jan 2026 02:43:39 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "set-cookie": [
+        "pll_language=fr; expires=Thu, 21 Jan 2027 02:43:39 GMT; Max-Age=31536000; path=/; domain=ceva-algues.com; secure; SameSite=Lax",
+        "WEBMO-VNU=4|aXA9X|aXA9X; path=/; HttpOnly; SameSite=Strict"
+      ],
+      "link": "<https://www.ceva-algues.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.ceva-algues.com/wp-json/wp/v2/pages/29>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.ceva-algues.com/>; rel=shortlink",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-cacheable": "NO:Got Cookie(s)",
+      "x-varnish": "854628915",
+      "age": "0",
+      "via": "1.1 varnish (Varnish/7.1)",
+      "accept-ranges": "bytes",
+      "x-varnutype": "5",
+      "x-cache": "MISS",
+      "x-cachettl": "120s",
+      "transfer-encoding": "chunked",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "WEBMO-VNU": {
+          "domain": "www.ceva-algues.com",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict"
+        },
+        "pll_language": {
+          "domain": "ceva-algues.com",
+          "expires": "2027-01-21T02:43:39.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.ceva-algues.com/",
+      "redirects": true,
+      "route": [
+        "http://ceva-algues.com/",
+        "https://ceva-algues.com/",
+        "https://www.ceva-algues.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=G-C44DJHX36X": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://forms.sbc29.com/form.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://forms.sbc28.com/form.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
