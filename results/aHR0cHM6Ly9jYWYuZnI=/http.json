@@ -1,0 +1,214 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "__uzma=40f9d178-d5c0-4865-9024-d8c03311cb26; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmb=1768963217; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzme=3916; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmc=234881010844; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmd=1768963217; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmf=7f900040f9d178-d5c0-4865-9024-d8c03311cb261-17689632178560-002bdb346cd7ff9181610; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax",
+        "uzmx=7f90005bd1cce5-8db0-4bda-a828-388cf6b91fba1-17689632178560-cf57ff61fc958da310; Domain=.caf.fr; HttpOnly; path=/; Expires=Wed, 22-Jul-26 02:40:17 GMT; Max-Age=15724800; SameSite=Lax"
+      ],
+      "date": "Wed, 21 Jan 2026 01:25:25 GMT",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "report-uri /report-csp-violation",
+      "x-xss-protection": "1; mode=block",
+      "access-control-expose-headers": "Content-Security-Policy, Location",
+      "access-control-methods": "POST, GET, OPTIONS, DELETE, PUT",
+      "access-control-allow-credentials": "true",
+      "location": "/",
+      "access-control-allow-headers": "x-csrf-token, authorization, content-type, accept, origin, x-requested-with",
+      "access-control-allow-methods": "GET",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"355689925\"",
+      "vary": "Origin, Accept-Encoding",
+      "age": "500"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "report-uri": [
+          "/report-csp-violation"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "__uzma": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmb": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzme": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmc": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmd": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "__uzmf": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "uzmx": {
+          "domain": "caf.fr",
+          "expires": "2026-07-22T02:40:17.000Z",
+          "httponly": true,
+          "max-age": 15724800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://http-observatory.security.mozilla.org"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://validate.perfdrive.com/268e6b2c898b10722b1602b1314611d6/?ssa=e38aa352-fe89-4ba9-8b7b-257f676fb446&ssb=55744308451&ssc=https%3A%2F%2Fcaf.fr%2F&ssi=7b83d542-cpt7-44ae-939f-ca534a9f1a00&ssk=botmanager_support@radware.com&ssm=65070527884021007109290331321040&ssn=d31880acd4d9b313883c32a1d98a7c4e7465ad40aefd-ea4a-4ffb-863a28&sso=1b6a37a8-81361afe94fbe69d1c1c7025b10d368870092288720ac54d&ssp=78733121431768918908176895728915089&ssq=42963516321818599960263218022699286600666&ssr=MjAuMTY5Ljc1LjY2&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.15;%20rv:133.0)%20Gecko/20100101%20Firefox/133.0%20-%20dashlord,&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhZi5mciIsInV6bXgiOiI3ZjkwMDA2MTk0Y2VmNS0yYmQyLTRlMDQtYmVjOC0zYWQ5ZTY0ZTNjZmIxLTE3Njg5NjMyMTgzMDAwLWUwOGNiNWEyMTBkZmRhNWYxMCIsIl9fdXptZiI6IjdmOTAwMGFkNDBhZWZkLWVhNGEtNGZmYi04N2E4LTgxMzYxYWZlOTRmYjEtMTc2ODk2MzIxODMwMDAtMDAyYTA1NDQzZjE0ODc0NDkwMzEwIn0=",
+      "redirects": true,
+      "route": [
+        "http://caf.fr/",
+        "https://caf.fr/",
+        "https://validate.perfdrive.com/268e6b2c898b10722b1602b1314611d6/?ssa=e38aa352-fe89-4ba9-8b7b-257f676fb446&ssb=55744308451&ssc=https%3A%2F%2Fcaf.fr%2F&ssi=7b83d542-cpt7-44ae-939f-ca534a9f1a00&ssk=botmanager_support@radware.com&ssm=65070527884021007109290331321040&ssn=d31880acd4d9b313883c32a1d98a7c4e7465ad40aefd-ea4a-4ffb-863a28&sso=1b6a37a8-81361afe94fbe69d1c1c7025b10d368870092288720ac54d&ssp=78733121431768918908176895728915089&ssq=42963516321818599960263218022699286600666&ssr=MjAuMTY5Ljc1LjY2&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.15;%20rv:133.0)%20Gecko/20100101%20Firefox/133.0%20-%20dashlord,&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhZi5mciIsInV6bXgiOiI3ZjkwMDA2MTk0Y2VmNS0yYmQyLTRlMDQtYmVjOC0zYWQ5ZTY0ZTNjZmIxLTE3Njg5NjMyMTgzMDAwLWUwOGNiNWEyMTBkZmRhNWYxMCIsIl9fdXptZiI6IjdmOTAwMGFkNDBhZWZkLWVhNGEtNGZmYi04N2E4LTgxMzYxYWZlOTRmYjEtMTc2ODk2MzIxODMwMDAtMDAyYTA1NDQzZjE0ODc0NDkwMzEwIn0="
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
