@@ -1,0 +1,201 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:40:33 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "cache-control": "max-age=86400, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "x-drupal-cache": "HIT",
+      "last-modified": "Mon, 19 Jan 2026 15:08:07 GMT",
+      "etag": "W/\"1768835287\"",
+      "x-varnish": "6905968 5322978",
+      "age": "296",
+      "x-cache": "HIT",
+      "x-cache-hits": "2",
+      "content-security-policy": "base-uri 'self'; connect-src 'self' https://www.data.gouv.fr; default-src 'self'; font-src 'self' data: https://fonts.gstatic.com data: https://static.data.gouv.fr; frame-src 'self' https://www.youtube.com https://www.documentation-administrative.gouv.fr https://youtu.be https://vimeo.com https://www.dailymotion.com https://www.youtube-nocookie.com; img-src 'self' data: https://i.ytimg.com https://static.data.gouv.fr https://www.documentation-administrative.gouv.fr; manifest-src 'self'; media-src 'self' https://www.youtube.com https://www.documentation-administrative.gouv.fr https://youtu.be https://vimeo.com https://www.dailymotion.com; object-src 'none'; script-src 'report-sample' 'self' https://cdn.jsdelivr.net https://static.data.gouv.fr/static/oembed.js; style-src 'report-sample' 'self' 'unsafe-inline' https://fonts.googleapis.com; worker-src 'none';",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "no-referrer",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "base-uri": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://www.data.gouv.fr"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://fonts.gstatic.com",
+          "https://static.data.gouv.fr"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://vimeo.com",
+          "https://www.dailymotion.com",
+          "https://www.documentation-administrative.gouv.fr",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com",
+          "https://youtu.be"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://i.ytimg.com",
+          "https://static.data.gouv.fr",
+          "https://www.documentation-administrative.gouv.fr"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'",
+          "https://vimeo.com",
+          "https://www.dailymotion.com",
+          "https://www.documentation-administrative.gouv.fr",
+          "https://www.youtube.com",
+          "https://youtu.be"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'report-sample'",
+          "'self'",
+          "https://cdn.jsdelivr.net",
+          "https://static.data.gouv.fr/static/oembed.js"
+        ],
+        "style-src": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com"
+        ],
+        "worker-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.civen.fr/",
+      "redirects": true,
+      "route": [
+        "http://civen.fr/",
+        "https://www.civen.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
