@@ -1,0 +1,198 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Fri, 23 Jan 2026 02:45:27 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "cache-control": "max-age=600",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Fri, 23 Jan 2026 02:55:27 GMT",
+      "last-modified": "Thu, 22 Jan 2026 17:09:27 GMT",
+      "etag": "\"1769101767\"",
+      "vary": "Cookie,Accept-Encoding",
+      "x-drupal-cache": "HIT",
+      "x-proxy-cache": "REVALIDATED",
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:; font-src 'self' data: https:;",
+      "referrer-policy": "same-origin",
+      "allow": "GET, POST, HEAD",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+      "access-control-expose-headers": "Content-Length,Content-Range",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-xss-protection": "1;mode=block",
+      "upgrade-insecure-requests": "1",
+      "set-cookie": [
+        "visid_incap_3062843=9QiHQBcFTkayDM7w1EJH/sfgcmkAAAAAQUIPAAAAAABoHBxDcSiNNmxbnb3Cc325; expires=Fri, 22 Jan 2027 07:08:52 GMT; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
+        "nlbi_3062843=3Br6O/ShXhw701bqA4KP3QAAAAAdLJQKCF7uuNH25FV739+v; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1525_3062843=FEJXI8M38WuhV2xc4uMpFcjgcmkAAAAAB0BeCHoN0FT6n60MkVvyzw==; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None"
+      ],
+      "x-cdn": "Imperva",
+      "transfer-encoding": "chunked",
+      "x-iinfo": "15-54277834-54277835 NNYN CT(121 247 0) RT(1769136327449 16) q(0 0 4 0) r(6 7) U12"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "object-src": [
+          "https:"
+        ],
+        "child-src": [
+          "https:",
+          "platform.twitter.com"
+        ],
+        "img-src": [
+          "data:",
+          "https:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "visid_incap_3062843": {
+          "domain": "entreprises.gouv.fr",
+          "expires": "2027-01-22T07:08:52.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "nlbi_3062843": {
+          "domain": "entreprises.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "incap_ses_1525_3062843": {
+          "domain": "entreprises.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.entreprises.gouv.fr/conseil-national-de-lindustrie-cni",
+      "redirects": true,
+      "route": [
+        "http://conseil-national-industrie.gouv.fr/",
+        "https://conseil-national-industrie.gouv.fr/",
+        "https://www.entreprises.gouv.fr/conseil-national-de-lindustrie-cni"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
