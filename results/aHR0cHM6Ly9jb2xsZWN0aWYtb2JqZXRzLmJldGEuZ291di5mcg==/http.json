@@ -1,0 +1,216 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:41:05 GMT",
+      "set-cookie": [
+        "_collectif_objets_session=AgHlXEWrigvx8xyF67Br5A7g7n2mfG3tSsziRu%2BPb9h%2BuB5D7HhiF0ClCGdAgf1QdvMaPujSOp4PDMNJGWMH2%2FjK07VlylTqRI7TONyrdyGETzJDb9x2sEvH7lPeAuCgv1qaFc%2BRS8JUPBrvKkEIEo2lu3Kmf2bbIcJO0tY3ve4%2BxAnCzMQNNlAQUB%2BZDGJDXSx6tG2WPoKLVOQy2XLJVbxQHEJJBPgDn%2BAdW7CvGuoWm2gngDY4frRtXhSSrLkllX%2Fbn1q2waHbNNq%2FbQivF5ZP5W9JKr%2BzzCXIhKPDRwyn--dVDjufQCL4YBalUZ--1JqZCT2Mbs9hkmOlJYLChQ%3D%3D; path=/; secure; httponly; samesite=lax"
+      ],
+      "content-type": "text/html; charset=utf-8",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "<https://collectif-objets.culture.gouv.fr/vite/assets/application-8b8b216d.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/lightbox_component_controller-fd1f7fd7.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/miniatures_component_controller-2b5a3d7b.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/photo_upload_component_controller-2f4d8fd8.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/all-a730786d.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/matomo_tracking-bab56819.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush",
+      "etag": "W/\"022ee6e77b2eac3b5373c9abb56922a6-gzip\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-security-policy": "default-src 'self' https:; script-src 'self' https: 'nonce-SReurcFFCgl33XU8RwcIbQ=='; img-src 'self' data: blob: https://*.s3.gra.io.cloud.ovh.net https://*.s3.fr-par.scw.cloud https://s3.fr-par.scw.cloud https://*.culture.gouv.fr https://*.cloud.culture.fr https://stats.beta.gouv.fr https://s3.eu-west-3.amazonaws.com/pop-phototeque/ https://pop-perf-assets.s3.gra.io.cloud.ovh.net/ https://collectif-objets.beta.gouv.fr/; connect-src 'self' https://openmaptiles.geo.data.gouv.fr https://openmaptiles.data.gouv.fr https://*.s3.gra.io.cloud.ovh.net https://*.s3.fr-par.scw.cloud https://s3.fr-par.scw.cloud https://*.culture.gouv.fr https://*.cloud.culture.fr https://stats.beta.gouv.fr; object-src 'self'; font-src 'self' https: data:; child-src blob:; worker-src blob:; style-src 'self' https:; frame-src 'self' https://collectif-objets-metabase.osc-secnum-fr1.scalingo.io/ https://tube.numerique.gouv.fr/",
+      "x-request-id": "6ab3ee08-1803-4ef1-be42-138d7788edc3",
+      "x-runtime": "0.020284",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-forwarded-for": ";",
+      "vary": "Accept-Encoding",
+      "x-cp-via": "C3-7df4a202-d3fa0c98",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "https:"
+        ],
+        "script-src": [
+          "'nonce-sreurcffcgl33xu8rwcibq=='",
+          "'self'",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://*.cloud.culture.fr",
+          "https://*.culture.gouv.fr",
+          "https://*.s3.fr-par.scw.cloud",
+          "https://*.s3.gra.io.cloud.ovh.net",
+          "https://collectif-objets.beta.gouv.fr/",
+          "https://pop-perf-assets.s3.gra.io.cloud.ovh.net/",
+          "https://s3.eu-west-3.amazonaws.com/pop-phototeque/",
+          "https://s3.fr-par.scw.cloud",
+          "https://stats.beta.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.cloud.culture.fr",
+          "https://*.culture.gouv.fr",
+          "https://*.s3.fr-par.scw.cloud",
+          "https://*.s3.gra.io.cloud.ovh.net",
+          "https://openmaptiles.data.gouv.fr",
+          "https://openmaptiles.geo.data.gouv.fr",
+          "https://s3.fr-par.scw.cloud",
+          "https://stats.beta.gouv.fr"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "child-src": [
+          "blob:"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "style-src": [
+          "'self'",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://collectif-objets-metabase.osc-secnum-fr1.scalingo.io/",
+          "https://tube.numerique.gouv.fr/"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_collectif_objets_session": {
+          "domain": "collectif-objets.culture.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://collectif-objets.culture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://collectif-objets.beta.gouv.fr/",
+        "http://collectif-objets.culture.gouv.fr/",
+        "https://collectif-objets.culture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://collectif-objets.culture.gouv.fr/vite/assets/application-8b8b216d.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://collectif-objets.culture.gouv.fr/vite/assets/matomo_tracking-bab56819.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
