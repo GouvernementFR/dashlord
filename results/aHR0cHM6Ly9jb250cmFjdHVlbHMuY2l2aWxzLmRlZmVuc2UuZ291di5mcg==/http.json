@@ -1,0 +1,137 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:46:37 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-request-id": "7de2b16c-ddca-4df1-a0f8-4f3461fed6ee, 7de2b16c-ddca-4df1-a0f8-4f3461fed6ee",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "</assets/application-729d2216bd2392815d7a98b303b9f7bbc2734e4235b1e80f560c5cf521fc9429.css>; rel=preload; as=style; nopush",
+      "etag": "W/\"5bb22c4ddd5e39fb6ab88d3296954cb0\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "_civilsdeladefense_session=TTHlRCHjCXlmUsb1J6lJr0hsEDAfS7pMqWGX7LKcVSKuxTtEFZTDuiU452YRfxwk20DRdRE2REs43u09rMxWbdonMkjKkZiTYsXNMQEVAcvHOVghtSQ9gEFYVPoSuhzAdx16Qf8t2ev%2BUYoWPKYyKQkfp0gEjhY8ESH9HYudd0DF5JnrBfTlJFwpJiwpWlfBm3YDV8DrGUZMpS8VkbMz3ot8ynpPV2nRCFKjTTyWMQHtsu3Q42Fy7xtSwx6RhKAiNgC2gtD0aaVylWGJ5UNxhYdvhHErmR%2BR85%2BfcpA9cveOrQ%3D%3D--VCUxA0uOvnf3QlAo--t8QY2D5fuCQ0GSyZMbZZwA%3D%3D; path=/; secure; httponly; SameSite=Lax"
+      ],
+      "x-runtime": "0.391312",
+      "strict-transport-security": "max-age=31556952; preload"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_civilsdeladefense_session": {
+          "domain": "contractuels.civils.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://contractuels.civils.defense.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://contractuels.civils.defense.gouv.fr/",
+        "https://contractuels.civils.defense.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31556952; preload",
+      "includeSubDomains": false,
+      "maxAge": 31556952,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/gh/altcha-org/altcha/dist/altcha.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
