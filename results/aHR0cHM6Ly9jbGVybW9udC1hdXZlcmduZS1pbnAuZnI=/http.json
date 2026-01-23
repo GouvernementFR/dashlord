@@ -1,0 +1,132 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:41:38 GMT",
+      "server": "Apache",
+      "link": "<https://www.clermont-auvergne-inp.fr/wp-json/>; rel=\"https://api.w.org/\"",
+      "set-cookie": [
+        "pll_language=fr; expires=Sat, 23 Jan 2027 02:41:39 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+      ],
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-frame-options": "DENY, SAMEORIGIN",
+      "x-content-type-options": "nosniff, nosniff",
+      "upgrade": "h2",
+      "connection": "Upgrade, close",
+      "vary": "Accept-Encoding,User-Agent",
+      "x-xss-protection": "1; mode=block",
+      "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "pll_language": {
+          "domain": "www.clermont-auvergne-inp.fr",
+          "expires": "2027-01-23T02:41:39.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.clermont-auvergne-inp.fr/",
+      "redirects": true,
+      "route": [
+        "http://clermont-auvergne-inp.fr/",
+        "http://www.clermont-auvergne-inp.fr/",
+        "https://www.clermont-auvergne-inp.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "DENY, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
