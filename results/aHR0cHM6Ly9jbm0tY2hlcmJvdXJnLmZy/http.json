@@ -1,0 +1,158 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 10,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-ws-ratelimit-limit": "1000",
+      "x-ws-ratelimit-remaining": "999",
+      "date": "Fri, 23 Jan 2026 02:43:33 GMT",
+      "server": "Apache",
+      "link": "<https://www.cnm-cherbourg.fr/wp-json/>; rel=\"https://api.w.org/\"",
+      "x-et-api-version": "v1",
+      "x-et-api-root": "https://www.cnm-cherbourg.fr/wp-json/tribe/tickets/v1/",
+      "x-et-api-origin": "https://www.cnm-cherbourg.fr",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://www.cnm-cherbourg.fr/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://www.cnm-cherbourg.fr",
+      "set-cookie": [
+        "jSALwYJB=cJd3UHvmg%5De8; expires=Sat, 24-Jan-2026 02:43:33 GMT; Max-Age=86400; path=/; secure",
+        "KNRQVcn=zuh_7.FT26a; expires=Sat, 24-Jan-2026 02:43:33 GMT; Max-Age=86400; path=/; secure",
+        "jbEeXtmK=9ylb%2Ao2JYFS; expires=Sat, 24-Jan-2026 02:43:33 GMT; Max-Age=86400; path=/; secure",
+        "LvYEUnk-g=ehH0brMO; expires=Sat, 24-Jan-2026 02:43:33 GMT; Max-Age=86400; path=/; secure"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "jSALwYJB": {
+          "domain": "www.cnm-cherbourg.fr",
+          "expires": "2026-01-24T02:43:33.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "KNRQVcn": {
+          "domain": "www.cnm-cherbourg.fr",
+          "expires": "2026-01-24T02:43:33.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "jbEeXtmK": {
+          "domain": "www.cnm-cherbourg.fr",
+          "expires": "2026-01-24T02:43:33.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "LvYEUnk-g": {
+          "domain": "www.cnm-cherbourg.fr",
+          "expires": "2026-01-24T02:43:33.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https",
+      "scoreModifier": -20,
+      "destination": "http://www.cnm-cherbourg.fr/",
+      "redirects": true,
+      "route": [
+        "http://cnm-cherbourg.fr/",
+        "http://www.cnm-cherbourg.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
