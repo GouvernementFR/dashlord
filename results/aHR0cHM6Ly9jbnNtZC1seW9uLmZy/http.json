@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:43:31 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "cloudflare",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "link": "<https://cnsmd-lyon.fr/wp-json/>; rel=\"https://api.w.org/\", <https://cnsmd-lyon.fr/wp-json/wp/v2/pages/385>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://cnsmd-lyon.fr/>; rel=shortlink",
+      "set-cookie": [
+        "PHPSESSID=qpp30lsbcf70q54lflbdigclq8; path=/",
+        "pll_language=fr; expires=Sat, 23 Jan 2027 02:43:30 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+      ],
+      "vary": "Accept-Encoding",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=6,cfOrigin;dur=1375",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1JbXnxM6mVJ2%2BvaujGbn5L27XMdtldALyXRoG7Qv0jZOe0O2bqcmQ8AKkSZwzWZLzE9p4GIcie1AMF%2FIEVOMPjr5onJCDe2jw3wGTQI%3D\"}]}",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9c23f1a10d240b82-SJC",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "PHPSESSID": {
+          "domain": "cnsmd-lyon.fr",
+          "path": "/",
+          "port": null
+        },
+        "pll_language": {
+          "domain": "cnsmd-lyon.fr",
+          "expires": "2027-01-23T02:43:30.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://cnsmd-lyon.fr/",
+      "redirects": true,
+      "route": [
+        "http://cnsmd-lyon.fr/",
+        "https://cnsmd-lyon.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
