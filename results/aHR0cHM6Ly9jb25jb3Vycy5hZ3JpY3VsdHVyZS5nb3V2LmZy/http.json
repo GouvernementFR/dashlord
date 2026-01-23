@@ -1,0 +1,215 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Fri, 23 Jan 2026 02:44:04 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "3533",
+      "connection": "close",
+      "x-powered-by": "PHP/8.3.30",
+      "content-language": "fr-FR",
+      "cache-control": "private, no-store, max-age=0",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'nonce-dDKMI2lMlidBdpVC78BIvonLcVPyV9UP1E0qTW8NSfbOhIkgCO-IfA' data: *.jquery.com https://api-web.educagri.fr https://unpkg.com https://analytics-sc.institut-agro.fr 'report-sample'; style-src-attr 'unsafe-inline' 'self' 'report-sample' data: *.jquery.com https://api-web.educagri.fr https://unpkg.com https://use.fontawesome.com; img-src 'self' data: *.ytimg.com *.vimeocdn.com https://api-web.educagri.fr; base-uri 'self'; frame-src 'self' *.youtube-nocookie.com *.youtube.com *.vimeo.com; font-src 'self' data: https://use.fontawesome.com https://api-web.educagri.fr https://fonts.gstatic.com; connect-src 'self' data: https://api-web.educagri.fr https://analytics-sc.institut-agro.fr; style-src 'self' 'unsafe-inline' data: *.jquery.com https://api-web.educagri.fr https://use.fontawesome.com https://fonts.googleapis.com 'report-sample'; style-src-elem 'self' 'unsafe-inline' data: *.jquery.com https://api-web.educagri.fr https://use.fontawesome.com https://fonts.googleapis.com 'report-sample' https://unpkg.com; report-uri https://cem.educagri.fr/api/csp/",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'nonce-dDKMI2lMlidBdpVC78BIvonLcVPyV9UP1E0qTW8NSfbOhIkgCO-IfA' data: *.jquery.com https://api-web.educagri.fr https://unpkg.com https://analytics-sc.institut-agro.fr 'report-sample'; style-src-attr 'unsafe-inline' 'self' 'report-sample' data: *.jquery.com https://api-web.educagri.fr https://unpkg.com https://use.fontawesome.com; img-src 'self' data: *.ytimg.com *.vimeocdn.com https://api-web.educagri.fr; base-uri 'self'; frame-src 'self' *.youtube-nocookie.com *.youtube.com *.vimeo.com; font-src 'self' data: https://use.fontawesome.com https://api-web.educagri.fr https://fonts.gstatic.com; connect-src 'self' data: https://api-web.educagri.fr https://analytics-sc.institut-agro.fr; style-src 'self' 'unsafe-inline' data: *.jquery.com https://api-web.educagri.fr https://use.fontawesome.com https://fonts.googleapis.com 'report-sample'; style-src-elem 'self' 'unsafe-inline' data: *.jquery.com https://api-web.educagri.fr https://use.fontawesome.com https://fonts.googleapis.com 'report-sample' https://unpkg.com; report-uri https://cem.educagri.fr/api/csp/",
+      "expires": "Fri, 23 Jan 2026 02:44:03 GMT",
+      "vary": "Accept-Encoding",
+      "x-ua-compatible": "IE=edge",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=63072000",
+      "x-frame-options": "SAMEORIGIN"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'nonce-ddkmi2lmlidbdpvc78bivonlcvpyv9up1e0qtw8nsfbohikgco-ifa'",
+          "'report-sample'",
+          "'self'",
+          "*.jquery.com",
+          "data:",
+          "https://analytics-sc.institut-agro.fr",
+          "https://api-web.educagri.fr",
+          "https://unpkg.com"
+        ],
+        "style-src-attr": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'",
+          "*.jquery.com",
+          "data:",
+          "https://api-web.educagri.fr",
+          "https://unpkg.com",
+          "https://use.fontawesome.com"
+        ],
+        "img-src": [
+          "'self'",
+          "*.vimeocdn.com",
+          "*.ytimg.com",
+          "data:",
+          "https://api-web.educagri.fr"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.vimeo.com",
+          "*.youtube-nocookie.com",
+          "*.youtube.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://api-web.educagri.fr",
+          "https://fonts.gstatic.com",
+          "https://use.fontawesome.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "data:",
+          "https://analytics-sc.institut-agro.fr",
+          "https://api-web.educagri.fr"
+        ],
+        "style-src": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'",
+          "*.jquery.com",
+          "data:",
+          "https://api-web.educagri.fr",
+          "https://fonts.googleapis.com",
+          "https://use.fontawesome.com"
+        ],
+        "style-src-elem": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'",
+          "*.jquery.com",
+          "data:",
+          "https://api-web.educagri.fr",
+          "https://fonts.googleapis.com",
+          "https://unpkg.com",
+          "https://use.fontawesome.com"
+        ],
+        "report-uri": [
+          "https://cem.educagri.fr/api/csp/"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://concours.agriculture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://concours.agriculture.gouv.fr/",
+        "https://concours.agriculture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://api-web.educagri.fr/logo/?imgSelector=logo_ministere&name=agriculture2_couleur_cartouche_svg&followTarget=false|imgSelector=ministere2&name=agriculture2_couleur_cartouche_svg": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
