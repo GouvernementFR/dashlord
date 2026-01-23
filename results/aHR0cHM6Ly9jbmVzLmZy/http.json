@@ -1,0 +1,282 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 100,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 22 Jan 2026 17:25:14 GMT",
+      "x-content-type-options": "nosniff, nosniff",
+      "cache-control": "max-age=86400, public",
+      "content-language": "fr",
+      "x-frame-options": "ALLOW-FROM https://www.facebook.com",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Thu, 22 Jan 2026 09:40:12 GMT",
+      "etag": "\"1769074812-gzip\"",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://youtube.com/ https://cnes.matomo.cloud/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com  https://cdn.matomo.cloud/cnes.matomo.cloud/ cdn.matomo.cloud/cnes.matomo.cloud https://tags.data-driven.fr/tags/ tags.data-driven.fr/tags https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://www.tiktok.com https://www.instagram.com/ https://platform.twitter.com/ https://www.myadvent.net/ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/ https://*.cnes.fr; object-src 'self' https://youtube.com/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com https://*.cnes.fr; style-src 'self' 'unsafe-inline' https://cdn.tarteaucitron.io/css/ cdn.tarteaucitron.io/css/ https://fonts.googleapis.com/ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/; img-src 'self' data: https://i.ytimg.com https://*.tile.openstreetmap.fr 'unsafe-inline' https://tarteaucitron.io/log/ tarteaucitron.io/log/ https://content.milibris.com/ https://*.cnes.fr; media-src 'self' https://podcast.cnes.fr/ https://www.podcast.cnes.fr/ https://*.cnes.fr; frame-src 'self' https://youtube.com https://www.youtube.com player.vimeo.com  youtube.com www.youtube.com https://youtube-nocookie.com youtube-nocookie.com www.youtube-nocookie.com https://tarteaucitron.io tarteaucitron.io https://tarteaucitron.io tarteaucitron.io https://cdn.tarteaucitron.io cdn.tarteaucitron.io https://videotheque.cnes.fr/ https://app.myadvent.net/ https://www.facebook.com/ https://www.linkedin.com/  https://www.instagram.com/ https://platform.twitter.com/  https://www.tiktok.com/ https://open.spotify.com/ https://*.twitch.tv https://*.cnes.fr; frame-ancestors 'self' https://youtube.com/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com  https://tarteaucitron.io/ tarteaucitron.io https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://*.cnes.fr; child-src 'self'  https://tarteaucitron.io tarteaucitron.io https://tarteaucitron.io tarteaucitron.io https://cdn.tarteaucitron.io cdn.tarteaucitron.io; font-src 'self' data: https://fonts.gstatic.com https://themes.googleusercontent.com https://cdn.cafeyn.co; connect-src 'self' 'unsafe-inline' https://cnes.matomo.cloud/ https://cdn.matomo.cloud/cnes.matomo.cloud/ https://tags.data-driven.fr cdn.matomo.cloud/cnes.matomo.cloud https://tags.data-driven.fr/tags/ tags.data-driven.fr/tags https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://content.milibris.com/ https://www.tiktok.com  https://*.cnes.fr",
+      "x-content-security-policy": "default-src 'self'; script-src 'self' https://youtube.com/ https://cnes.matomo.cloud/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com  https://cdn.matomo.cloud/cnes.matomo.cloud/ cdn.matomo.cloud/cnes.matomo.cloud https://tags.data-driven.fr/tags/ tags.data-driven.fr/tags https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://www.tiktok.com https://www.instagram.com/ https://platform.twitter.com/ https://www.myadvent.net/ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/ https://*.cnes.fr; object-src 'self' https://youtube.com/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com https://*.cnes.fr; style-src 'self' 'unsafe-inline' https://cdn.tarteaucitron.io/css/ cdn.tarteaucitron.io/css/ https://fonts.googleapis.com/ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/; img-src 'self' data: https://i.ytimg.com https://*.tile.openstreetmap.fr 'unsafe-inline' https://tarteaucitron.io/log/ tarteaucitron.io/log/ https://content.milibris.com/ https://*.cnes.fr; media-src 'self' https://podcast.cnes.fr/ https://www.podcast.cnes.fr/ https://*.cnes.fr; frame-src 'self' https://youtube.com https://www.youtube.com player.vimeo.com  youtube.com www.youtube.com https://youtube-nocookie.com youtube-nocookie.com www.youtube-nocookie.com https://tarteaucitron.io tarteaucitron.io https://tarteaucitron.io tarteaucitron.io https://cdn.tarteaucitron.io cdn.tarteaucitron.io https://videotheque.cnes.fr/ https://app.myadvent.net/ https://www.facebook.com/ https://www.linkedin.com/  https://www.instagram.com/ https://platform.twitter.com/  https://www.tiktok.com/ https://open.spotify.com/ https://*.twitch.tv https://*.cnes.fr; frame-ancestors 'self' https://youtube.com/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com  https://tarteaucitron.io/ tarteaucitron.io https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://*.cnes.fr; child-src 'self'  https://tarteaucitron.io tarteaucitron.io https://tarteaucitron.io tarteaucitron.io https://cdn.tarteaucitron.io cdn.tarteaucitron.io; font-src 'self' data: https://fonts.gstatic.com https://themes.googleusercontent.com https://cdn.cafeyn.co; connect-src 'self' 'unsafe-inline' https://cnes.matomo.cloud/ https://cdn.matomo.cloud/cnes.matomo.cloud/ https://tags.data-driven.fr cdn.matomo.cloud/cnes.matomo.cloud https://tags.data-driven.fr/tags/ tags.data-driven.fr/tags https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://content.milibris.com/ https://www.tiktok.com  https://*.cnes.fr",
+      "x-webkit-csp": "default-src 'self'; script-src 'self' https://youtube.com/ https://cnes.matomo.cloud/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com  https://cdn.matomo.cloud/cnes.matomo.cloud/ cdn.matomo.cloud/cnes.matomo.cloud https://tags.data-driven.fr/tags/ tags.data-driven.fr/tags https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://www.tiktok.com https://www.instagram.com/ https://platform.twitter.com/ https://www.myadvent.net/ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/ https://*.cnes.fr; object-src 'self' https://youtube.com/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com https://*.cnes.fr; style-src 'self' 'unsafe-inline' https://cdn.tarteaucitron.io/css/ cdn.tarteaucitron.io/css/ https://fonts.googleapis.com/ https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/; img-src 'self' data: https://i.ytimg.com https://*.tile.openstreetmap.fr 'unsafe-inline' https://tarteaucitron.io/log/ tarteaucitron.io/log/ https://content.milibris.com/ https://*.cnes.fr; media-src 'self' https://podcast.cnes.fr/ https://www.podcast.cnes.fr/ https://*.cnes.fr; frame-src 'self' https://youtube.com https://www.youtube.com player.vimeo.com  youtube.com www.youtube.com https://youtube-nocookie.com youtube-nocookie.com www.youtube-nocookie.com https://tarteaucitron.io tarteaucitron.io https://tarteaucitron.io tarteaucitron.io https://cdn.tarteaucitron.io cdn.tarteaucitron.io https://videotheque.cnes.fr/ https://app.myadvent.net/ https://www.facebook.com/ https://www.linkedin.com/  https://www.instagram.com/ https://platform.twitter.com/  https://www.tiktok.com/ https://open.spotify.com/ https://*.twitch.tv https://*.cnes.fr; frame-ancestors 'self' https://youtube.com/ https://www.youtube.com/ youtube.com www.youtube.com https://youtube-nocookie.com/ youtube-nocookie.com  https://tarteaucitron.io/ tarteaucitron.io https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://*.cnes.fr; child-src 'self'  https://tarteaucitron.io tarteaucitron.io https://tarteaucitron.io tarteaucitron.io https://cdn.tarteaucitron.io cdn.tarteaucitron.io; font-src 'self' data: https://fonts.gstatic.com https://themes.googleusercontent.com https://cdn.cafeyn.co; connect-src 'self' 'unsafe-inline' https://cnes.matomo.cloud/ https://cdn.matomo.cloud/cnes.matomo.cloud/ https://tags.data-driven.fr cdn.matomo.cloud/cnes.matomo.cloud https://tags.data-driven.fr/tags/ tags.data-driven.fr/tags https://tarteaucitron.io/ tarteaucitron.io https://cdn.tarteaucitron.io/ cdn.tarteaucitron.io https://content.milibris.com/ https://www.tiktok.com  https://*.cnes.fr",
+      "strict-transport-security": "max-age=15724800",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-type": "text/html; charset=UTF-8",
+      "x-url": "/",
+      "x-host": "cnes.fr",
+      "x-cacheable": "YES",
+      "x-cache-ttl": "86400.000",
+      "vary": "Accept-Encoding",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-ttl-remaining": "53047.505",
+      "x-cache-age": "33352",
+      "x-cache-hits": "3123",
+      "via": "1.1 google",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "cdn.matomo.cloud/cnes.matomo.cloud",
+          "cdn.tarteaucitron.io",
+          "https://*.cnes.fr",
+          "https://cdn.matomo.cloud/cnes.matomo.cloud/",
+          "https://cdn.tarteaucitron.io/",
+          "https://cnes.matomo.cloud/",
+          "https://platform.twitter.com/",
+          "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/",
+          "https://tags.data-driven.fr/tags/",
+          "https://tarteaucitron.io/",
+          "https://www.instagram.com/",
+          "https://www.myadvent.net/",
+          "https://www.tiktok.com",
+          "https://www.youtube.com/",
+          "https://youtube-nocookie.com/",
+          "https://youtube.com/",
+          "tags.data-driven.fr/tags",
+          "tarteaucitron.io",
+          "www.youtube.com",
+          "youtube-nocookie.com",
+          "youtube.com"
+        ],
+        "object-src": [
+          "'self'",
+          "https://*.cnes.fr",
+          "https://www.youtube.com/",
+          "https://youtube-nocookie.com/",
+          "https://youtube.com/",
+          "www.youtube.com",
+          "youtube-nocookie.com",
+          "youtube.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.tarteaucitron.io/css/",
+          "https://cdn.tarteaucitron.io/css/",
+          "https://fonts.googleapis.com/",
+          "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:",
+          "https://*.cnes.fr",
+          "https://*.tile.openstreetmap.fr",
+          "https://content.milibris.com/",
+          "https://i.ytimg.com",
+          "https://tarteaucitron.io/log/",
+          "tarteaucitron.io/log/"
+        ],
+        "media-src": [
+          "'self'",
+          "https://*.cnes.fr",
+          "https://podcast.cnes.fr/",
+          "https://www.podcast.cnes.fr/"
+        ],
+        "frame-src": [
+          "'self'",
+          "cdn.tarteaucitron.io",
+          "https://*.cnes.fr",
+          "https://*.twitch.tv",
+          "https://app.myadvent.net/",
+          "https://cdn.tarteaucitron.io",
+          "https://open.spotify.com/",
+          "https://platform.twitter.com/",
+          "https://tarteaucitron.io",
+          "https://videotheque.cnes.fr/",
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
+          "https://www.linkedin.com/",
+          "https://www.tiktok.com/",
+          "https://www.youtube.com",
+          "https://youtube-nocookie.com",
+          "https://youtube.com",
+          "player.vimeo.com",
+          "tarteaucitron.io",
+          "www.youtube-nocookie.com",
+          "www.youtube.com",
+          "youtube-nocookie.com",
+          "youtube.com"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "cdn.tarteaucitron.io",
+          "https://*.cnes.fr",
+          "https://cdn.tarteaucitron.io/",
+          "https://tarteaucitron.io/",
+          "https://www.youtube.com/",
+          "https://youtube-nocookie.com/",
+          "https://youtube.com/",
+          "tarteaucitron.io",
+          "www.youtube.com",
+          "youtube-nocookie.com",
+          "youtube.com"
+        ],
+        "child-src": [
+          "'self'",
+          "cdn.tarteaucitron.io",
+          "https://cdn.tarteaucitron.io",
+          "https://tarteaucitron.io",
+          "tarteaucitron.io"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://cdn.cafeyn.co",
+          "https://fonts.gstatic.com",
+          "https://themes.googleusercontent.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.matomo.cloud/cnes.matomo.cloud",
+          "cdn.tarteaucitron.io",
+          "https://*.cnes.fr",
+          "https://cdn.matomo.cloud/cnes.matomo.cloud/",
+          "https://cdn.tarteaucitron.io/",
+          "https://cnes.matomo.cloud/",
+          "https://content.milibris.com/",
+          "https://tags.data-driven.fr",
+          "https://tarteaucitron.io/",
+          "https://www.tiktok.com",
+          "tags.data-driven.fr/tags",
+          "tarteaucitron.io"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://cnes.fr/",
+      "redirects": true,
+      "route": [
+        "http://cnes.fr/",
+        "https://cnes.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15724800",
+      "includeSubDomains": false,
+      "maxAge": 15724800,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=cnes.fr&uuid=3f800a980ab620579f911d414bdfb1048cd8441f": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "ALLOW-FROM https://www.facebook.com"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
