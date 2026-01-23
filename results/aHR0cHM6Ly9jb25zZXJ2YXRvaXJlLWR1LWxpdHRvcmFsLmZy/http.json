@@ -1,0 +1,142 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:41:34 GMT",
+      "server": "Apache",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "content-script-type": "text/javascript",
+      "content-style-type": "text/css",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "content-language": "fr",
+      "set-cookie": [
+        "PHPSESSID=0b4n3ls1puqlq2l6k00h7gva5q; path=/; secure; HttpOnly; SameSite=Lax",
+        "C_CNIL_MSG=open; expires=Mon, 18 Jan 2027 02:41:34 GMT; Max-Age=31104000; path=/"
+      ],
+      "strict-transport-security": "max-age=16000000; includeSubDomains;",
+      "upgrade": "h2",
+      "connection": "Upgrade, close",
+      "vary": "Accept-Encoding",
+      "content-length": "8178",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "PHPSESSID": {
+          "domain": "www.conservatoire-du-littoral.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "C_CNIL_MSG": {
+          "domain": "www.conservatoire-du-littoral.fr",
+          "expires": "2027-01-18T02:41:34.000Z",
+          "max-age": 31104000,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.conservatoire-du-littoral.fr/",
+      "redirects": true,
+      "route": [
+        "http://conservatoire-du-littoral.fr/",
+        "https://www.conservatoire-du-littoral.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000; includeSubDomains;",
+      "includeSubDomains": true,
+      "maxAge": 16000000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
