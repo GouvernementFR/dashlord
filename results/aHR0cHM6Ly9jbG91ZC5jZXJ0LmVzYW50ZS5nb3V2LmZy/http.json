@@ -1,0 +1,215 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 115,
+    "statusCode": 200,
+    "testsFailed": 0,
+    "testsPassed": 10,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Fri, 23 Jan 2026 02:42:30 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "6458",
+      "connection": "close",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-robots-tag": "noindex, nofollow",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "no-referrer",
+      "content-security-policy": "default-src 'none';base-uri 'none';manifest-src 'self';script-src 'nonce-M4btPiKr/YCOH1lzbfwNj1Br1l+ASZ2Kar7q2hvUFIo=';script-src-elem 'strict-dynamic' 'nonce-M4btPiKr/YCOH1lzbfwNj1Br1l+ASZ2Kar7q2hvUFIo=';style-src 'self' 'unsafe-inline';img-src 'self' data: blob:;font-src 'self' data:;connect-src 'self';media-src 'self';frame-ancestors 'self';form-action 'self'",
+      "set-cookie": [
+        "oczgbb7nftcd=1fde393be4e059e7f36e0554e9cbd7f9; path=/; secure; HttpOnly; SameSite=Lax"
+      ],
+      "x-request-id": "1PejZigDeOmfRafsmYiu",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "feature-policy": "autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';microphone 'none';payment 'none'",
+      "strict-transport-security": "max-age=63072000",
+      "permissions-policy": "autoplay=(self),camera=(),fullscreen=(self),geolocation=(),microphone=(),payment=()"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'none'"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'nonce-m4btpikr/ycoh1lzbfwnj1br1l+asz2kar7q2hvufio='"
+        ],
+        "script-src-elem": [
+          "'nonce-m4btpikr/ycoh1lzbfwnj1br1l+asz2kar7q2hvufio='",
+          "'strict-dynamic'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "oczgbb7nftcd": {
+          "domain": "cloud.cert.esante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "oc_sessionPassphrase": {
+          "domain": "cloud.cert.esante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__Host-nc_sameSiteCookielax": {
+          "domain": "cloud.cert.esante.gouv.fr",
+          "expires": "2100-12-31T23:59:59.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__Host-nc_sameSiteCookiestrict": {
+          "domain": "cloud.cert.esante.gouv.fr",
+          "expires": "2100-12-31T23:59:59.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://cloud.cert.esante.gouv.fr/login",
+      "redirects": true,
+      "route": [
+        "http://cloud.cert.esante.gouv.fr/",
+        "https://cloud.cert.esante.gouv.fr/",
+        "https://cloud.cert.esante.gouv.fr/login"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer, same-origin",
+      "http": true,
+      "meta": true
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
