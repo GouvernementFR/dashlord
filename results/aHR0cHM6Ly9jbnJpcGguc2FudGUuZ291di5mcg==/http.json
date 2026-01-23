@@ -1,0 +1,251 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:43:23 GMT",
+      "last-modified": "Mon, 03 May 2021 08:35:19 GMT",
+      "expires": "Mon, 09 Mar 2026 02:43:23 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "pragma": "no-cache",
+      "x-xss-protection": "0",
+      "set-cookie": [
+        "PHPSESSID=jhbmvi4pe17gb9rmbbch2qu590; path=/; HttpOnly",
+        "PHPSESSID=jhbmvi4pe17gb9rmbbch2qu590; expires=Fri, 23-Jan-2026 06:43:23 GMT; Max-Age=14400; secure; HttpOnly",
+        "Current_Session=!CUXCbbglJlvO3ZLlb/OWdH3plk/zcRkTfLrClEN6lY+5MFT0VgKi+sJSN9Z5LoW85Eb6LKPjn/dUrG0=; path=/; Httponly; Secure",
+        "TS018982e5=012337f68d5e6df5553a47d01395cc8528aaf29081c8d3bc5b02ec05d8ced5eb48bb82eba1cad3715b9fe13a8ca8b3730f1ffaedf9f5276e779737b54651d0f135f3d7ca2fe630c3a4e7eb81a9e98e8d73e34916911b4e141c22f6968e9998fa641a3b8713; Path=/"
+      ],
+      "content-security-policy": "default-src https:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; font-src https: 'unsafe-inline'; report-to 'none'",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "https:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "font-src": [
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "report-to": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "PHPSESSID": {
+          "domain": "cnriph.sante.gouv.fr",
+          "expires": "2026-01-23T06:43:23.000Z",
+          "httponly": true,
+          "max-age": 14400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "Current_Session": {
+          "domain": "cnriph.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS018982e5": {
+          "domain": "cnriph.sante.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//cnriph.sante.gouv.fr/assets/js/jquery-2.2.4.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/js/jquery-ui-1.10.4.custom.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/js/bootstrap.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/js/jquery.ui.touch-punch.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/plugin/DataTables-1.10.15/js/jquery.dataTables.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/js/tinymce/tinymce.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/jquery-cookie-master/jquery.cookie.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-editable-1.5.3/bootstrap-editable/js/bootstrap-editable.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-editable-1.5.3/select2/select2.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-editable-1.5.3/select2/fr.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/UploadKit-master/externals/plupload/js/plupload.full.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/UploadKit-master/uploadkit.js.php": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-wysihtml5-master/lib/js/wysihtml5-0.3.0.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/js/bootstrap-wysihtml5-0.0.2.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/assets/js/wysihtml5.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-wysihtml5-master/lib/js/prettify.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/jqBootstrapValidation-1.3.6/jqBootstrapValidation.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cnriph.sante.gouv.fr/lib/bootstrap-responsive-tabs-master/js/responsive-tabs-2.3.2.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
