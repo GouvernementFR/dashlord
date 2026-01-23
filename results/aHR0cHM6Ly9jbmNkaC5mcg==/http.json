@@ -1,0 +1,194 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 100,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 02:40:31 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "cache-control": "must-revalidate, no-cache, private",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "x-varnish": "6966162",
+      "age": "0",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "content-security-policy": "base-uri 'self'; connect-src 'self' https://l.sharethis.com; default-src 'self'; font-src 'self'; frame-src 'self' https://f.info.cncdh.fr https://platform.twitter.com https://ws.sharethis.com https://www.youtube-nocookie.com; frame-ancestors 'self' https://f.info.cncdh.fr; img-src 'self' data: https://f.info.cncdh.fr https://i.ytimg.com https://l.sharethis.com https://ws.sharethis.com; manifest-src 'self'; media-src 'self'; object-src 'none'; script-src 'report-sample' 'self' https://connect.facebook.net/fr_FR/sdk.js https://ifrm.cncdh.fr https://platform.linkedin.com/in.js https://platform.twitter.com/widgets.js https://welkom-editor.io/js/landing/landing.js https://ws.sharethis.com/button/buttons.js; style-src 'report-sample' 'self' 'unsafe-inline' https://ws.sharethis.com; worker-src 'none';",
+      "x-frame-options": "ALLOW-FROM https://f.info.cncdh.fr/",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "base-uri": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://l.sharethis.com"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://f.info.cncdh.fr",
+          "https://platform.twitter.com",
+          "https://ws.sharethis.com",
+          "https://www.youtube-nocookie.com"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "https://f.info.cncdh.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://f.info.cncdh.fr",
+          "https://i.ytimg.com",
+          "https://l.sharethis.com",
+          "https://ws.sharethis.com"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'report-sample'",
+          "'self'",
+          "https://connect.facebook.net/fr_fr/sdk.js",
+          "https://ifrm.cncdh.fr",
+          "https://platform.linkedin.com/in.js",
+          "https://platform.twitter.com/widgets.js",
+          "https://welkom-editor.io/js/landing/landing.js",
+          "https://ws.sharethis.com/button/buttons.js"
+        ],
+        "style-src": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'",
+          "https://ws.sharethis.com"
+        ],
+        "worker-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.cncdh.fr/",
+      "redirects": true,
+      "route": [
+        "http://cncdh.fr/",
+        "https://www.cncdh.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "ALLOW-FROM https://f.info.cncdh.fr/"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
