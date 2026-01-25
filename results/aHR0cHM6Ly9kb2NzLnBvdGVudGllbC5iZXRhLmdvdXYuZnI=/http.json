@@ -1,0 +1,268 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:54:45 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cf-ray": "9c347cdc1dfa241f-IAD",
+      "cf-cache-status": "DYNAMIC",
+      "age": "51592",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, accept-encoding",
+      "content-security-policy": "default-src 'self' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' blob: *; img-src * 'self' blob: data:; connect-src *; font-src *; frame-src *; object-src 'none'; base-uri 'self' https://static-2v.gitbook.com; form-action 'self' https://static-2v.gitbook.com *; frame-ancestors https: ;",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-content-type-options": "nosniff",
+      "x-gitbook-route-site": "docs.potentiel.beta.gouv.fr/",
+      "x-gitbook-route-type": "static",
+      "x-gitbook-target": "2v",
+      "x-matched-path": "/sites/static/[mode]/[siteURL]/[siteData]/[pagePath]",
+      "x-nextjs-prerender": "1",
+      "x-nextjs-stale-time": "300",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "iad1::iad1::8qqn2-1769309685213-b8315009f6a8",
+      "server": "cloudflare",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*",
+          "blob:"
+        ],
+        "img-src": [
+          "'self'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "connect-src": [
+          "*"
+        ],
+        "font-src": [
+          "*"
+        ],
+        "frame-src": [
+          "*"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'",
+          "https://static-2v.gitbook.com"
+        ],
+        "form-action": [
+          "'self'",
+          "*",
+          "https://static-2v.gitbook.com"
+        ],
+        "frame-ancestors": [
+          "https:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://docs.potentiel.beta.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://docs.potentiel.beta.gouv.fr/",
+        "https://docs.potentiel.beta.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://static-2v.gitbook.com/_next/static/chunks/87c73c54-3c195070c5cbb22b.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/1902-3c9af5e38470b7ba.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/main-app-a0ac55901a15e772.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/app/global-error-99197ad4868e95f4.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/f5718501-3323166cff243a9d.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/9071f66d-390fafe3303b2acb.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/6500-df22b4917e9f7eea.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/2821-18260ac545927e21.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/823-966a7d5e414098a2.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/9370-09f5ace4f053ef73.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/4156-101f1da17ca9557d.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/7458-7ca3a490d5ceb0b3.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/app/sites/static/%5Bmode%5D/%5BsiteURL%5D/%5BsiteData%5D/(content)/%5BpagePath%5D/page-d7e5eea3bf9c3abf.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/4945-430fa5cc2f8244f6.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/906-cb5ca13923f3dc86.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/4642-f72eb645ecae187c.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/app/sites/static/%5Bmode%5D/%5BsiteURL%5D/%5BsiteData%5D/(content)/layout-fd52f19cb85afd1f.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://integrations.gitbook.com/v1/integrations/googleanalytics/installations/228e9cb77b947e1b5a8991b4bcd02128874f5e1ff8ab56b01e6d2254c111d668/sites/site_gsiuX/script.js?version=151.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/polyfills-42372ed130431b0a.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-2v.gitbook.com/_next/static/chunks/webpack-b91250255b993252.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
