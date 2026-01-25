@@ -1,0 +1,170 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:49:15 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cache-control": "no-cache, no-store",
+      "pragma": "no-cache",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "frame-ancestors 'self' *.cstb.fr *.batipedia.com https://cmsback-prod.cstb.local",
+      "permissions-policy": "fullscreen=()",
+      "referrer-policy": "no-referrer",
+      "x-content-type-options": "nosniff",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": [
+        ".AspNetCore.Antiforgery.20e9Y6TxwoI=CfDJ8KTT_Dov0dpOv4X9TiPpUu9A6aT02YIeZfKWIm5ZZ5roMgTINdmbUGFTFJxnLrf-JrL7yz-VaC_1-e-ude-mSPkfoRpwF5STq6CJHjtrRU3jN3gdDTgQpRBfr6_9AYTDLlAxrKqDNrAs9UOitiJJcLs; path=/; samesite=strict; httponly",
+        "_cfuvid=e567wvjpBAM3rEhvKwmzaUv297sw79TqP_lsP9Hxsv8-1769309354.4749765-1.0.1.1-t.3SLxm0jWoZDpOwJ2yYZ4DypyOGskHQXG0_.HyrGwI; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.cstb.fr"
+      ],
+      "cf-ray": "9c3474c978163434-LAX",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "*.batipedia.com",
+          "*.cstb.fr",
+          "https://cmsback-prod.cstb.local"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        ".AspNetCore.Antiforgery.20e9Y6TxwoI": {
+          "domain": "www.cstb.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict"
+        },
+        "_cfuvid": {
+          "domain": "www.cstb.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cstb.fr/",
+      "redirects": true,
+      "route": [
+        "http://cstb.fr/",
+        "https://cstb.fr/",
+        "https://www.cstb.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://unpkg.com/leaflet@1.3.1/dist/leaflet.js": {
+          "crossorigin": "",
+          "integrity": "sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        },
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyBGjZxt2eYCLL56VjIFKh1PewUOWd0oGcI": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
