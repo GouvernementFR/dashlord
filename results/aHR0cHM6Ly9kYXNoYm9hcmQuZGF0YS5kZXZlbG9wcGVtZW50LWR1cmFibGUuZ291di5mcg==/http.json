@@ -1,0 +1,184 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 20,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sun, 25 Jan 2026 02:50:37 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "4678",
+      "connection": "close",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "permissions-policy": "browsing-topics=()",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "base-uri 'self'; default-src 'self'; img-src 'self' blob: data: https://apachesuperset.gateway.scarf.sh https://static.scarf.sh/ ows.terrestris.de https://cdn.document360.io; worker-src 'self' blob:; connect-src 'self' https://api.mapbox.com https://events.mapbox.com https://tile.openstreetmap.org https://tile.osm.ch; object-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'strict-dynamic' 'nonce-bweCl0acB6qBeWU8UjLYIEJQhfCgOqiY'",
+      "strict-transport-security": "max-age=31556926; includeSubDomains, max-age=15724800; includeSubdomains",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "vary": "Accept-Encoding, Cookie",
+      "access-control-allow-origin": "https://tile.openstreetmap.org",
+      "set-cookie": [
+        "session=eyJjc3JmX3Rva2VuIjoiNGZmZGUzNjNjMDcyZTNkYjQ3MWQxMDE0YzNlZmY0NjE4MWNmNGNlZCIsImxvY2FsZSI6ImVuIn0.aXWE_Q.MjB8hgH08snBgriIwoANLmF-qEk; HttpOnly; Path=/; SameSite=Lax"
+      ],
+      "x-frame-options": "ALLOWALL"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "base-uri": [
+          "'self'"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://apachesuperset.gateway.scarf.sh",
+          "https://cdn.document360.io",
+          "https://static.scarf.sh/",
+          "ows.terrestris.de"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://api.mapbox.com",
+          "https://events.mapbox.com",
+          "https://tile.openstreetmap.org",
+          "https://tile.osm.ch"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "script-src": [
+          "'nonce-bwecl0acb6qbewu8ujlyiejqhfcgoqiy'",
+          "'strict-dynamic'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": true,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "session": {
+          "domain": "dashboard.data.developpement-durable.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://dashboard.data.developpement-durable.gouv.fr/login/?next=%2Fsuperset%2Fwelcome%2F",
+      "redirects": true,
+      "route": [
+        "http://dashboard.data.developpement-durable.gouv.fr/",
+        "https://dashboard.data.developpement-durable.gouv.fr/",
+        "https://dashboard.data.developpement-durable.gouv.fr/superset/welcome/",
+        "https://dashboard.data.developpement-durable.gouv.fr/login/?next=%2Fsuperset%2Fwelcome%2F"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=31556926; includeSubDomains, max-age=15724800; includeSubdomains",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "ALLOWALL"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
