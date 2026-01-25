@@ -1,0 +1,142 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:51:43 GMT",
+      "cache-control": "no-cache, private, max-age=1",
+      "expires": "Sun, 25 Jan 2026 02:51:44 GMT",
+      "vary": "Accept-Encoding",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "0",
+      "x-cache": "Miss",
+      "set-cookie": [
+        "XSRF-TOKEN=eyJpdiI6IkxseWptZFpCQjZZMEdxRlgvRndPekE9PSIsInZhbHVlIjoiWXVQTGNOK3h1dmh3VFVrUFM5bGtpQUlMMVVrS244aXRsYlhtQjdLeXNVU29UeTVObll1a2htM1BqTWo5R0JBYWhqQ2t1OWIxUm4wMCtNZ3RUM2ZKbldMOVdFVEhBU0RBZ21udkw2SlYrcG0vQmVweWdCTDNZVFNYWlFXTGhlWW8iLCJtYWMiOiJmZTExYTg1ZmNkMTBiZjJlZjA1OTE0ZWQ0MjI3ZGYyZGYxYjY5ZTk1MThkNzdjOGFhNTY4MWFlNzc1YWUwYjcwIiwidGFnIjoiIn0%3D; expires=Sun, 25 Jan 2026 04:51:43 GMT; Max-Age=7200; path=/; secure; samesite=lax",
+        "laravel_session=eyJpdiI6IkFLejhhU0xMVU8rSFZzSGRjRzJqZFE9PSIsInZhbHVlIjoiSFVJYzJPSDVLL0pQaVFBYktsSFpTUWdGNE8yZFI2aGM2U25IMHh6RW5mYlhqUEdnTyttMVpESCtjSWFybERNc25XNERRNHNsUFdjWTd1L1FqeGRIKzVxSzJpSldGT0prZmd1clJlTEZNbjdRblNVeWlaVnFremhJMGt0REp3UXkiLCJtYWMiOiIzYzUyNmIxMTJkMjQxOTc2MjljYWE2ODllZDA5ZGJkZTNhNGRiZWExZTgzZjcyODc3MTA3MGMyY2ZmOTAyYTA2IiwidGFnIjoiIn0%3D; expires=Sun, 25 Jan 2026 04:51:43 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+      ],
+      "transfer-encoding": "chunked",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "XSRF-TOKEN": {
+          "domain": "deming.datastorest-smsi.interieur.gouv.fr",
+          "expires": "2026-01-25T04:51:43.000Z",
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "laravel_session": {
+          "domain": "deming.datastorest-smsi.interieur.gouv.fr",
+          "expires": "2026-01-25T04:51:43.000Z",
+          "httponly": true,
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "lsid": {
+          "domain": "deming.datastorest-smsi.interieur.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https",
+      "scoreModifier": -20,
+      "destination": "http://deming.datastorest-smsi.interieur.gouv.fr/login",
+      "redirects": true,
+      "route": [
+        "http://deming.datastorest-smsi.interieur.gouv.fr/",
+        "http://deming.datastorest-smsi.interieur.gouv.fr/login"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
