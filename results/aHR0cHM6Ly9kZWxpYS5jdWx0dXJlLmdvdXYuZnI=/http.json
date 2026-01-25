@@ -1,0 +1,184 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:51:49 GMT",
+      "server": "Apache",
+      "set-cookie": [
+        "JSESSIONID=2F27E1341B234E1091F9F4C31F9E85FD; Path=/; Secure; HttpOnly"
+      ],
+      "x-frame-options": "DENY",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "feature-policy": "vibrate 'none'; usermedia 'none';",
+      "permission-policy": "autoplay 'self'",
+      "content-security-policy": "default-src 'self' blob: ; img-src 'self' https://tarteaucitron.io https://cdn.tarteaucitron.io https://logs.xiti.com data:; style-src 'self'  https://cdn.tarteaucitron.io 'unsafe-inline'; script-src 'self' https://tarteaucitron.io https://cdn.tarteaucitron.io https://tag.aticdn.net https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval' blob: ;",
+      "vary": "Origin,Accept-Encoding,User-Agent,Access-Control-Request-Method,Access-Control-Request-Headers",
+      "last-modified": "Mon, 15 Sep 2025 08:22:26 GMT",
+      "accept-ranges": "bytes",
+      "x-xss-protection": "0",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "content-language": "fr-FR",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html;charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "blob:"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://cdn.tarteaucitron.io",
+          "https://logs.xiti.com",
+          "https://tarteaucitron.io"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.tarteaucitron.io"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "https://cdn.jsdelivr.net",
+          "https://cdn.tarteaucitron.io",
+          "https://tag.aticdn.net",
+          "https://tarteaucitron.io"
+        ],
+        "form-action": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "JSESSIONID": {
+          "domain": "delia.culture.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "same-origin, origin",
+      "http": true,
+      "meta": true
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=pfcdelia.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://tag.aticdn.net/18798/smarttag.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
