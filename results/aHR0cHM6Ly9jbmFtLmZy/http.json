@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 5,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:49:04 GMT",
+      "server": "Apache",
+      "set-cookie": [
+        "JSESSIONID=FBDEA2D5A4A516EAFE5790A67862B617.abeliap; Path=/; Secure; HttpOnly",
+        "SERVERID=abeliap; path=/"
+      ],
+      "vary": "Accept-Encoding",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html;charset=UTF-8",
+      "cache-control": "private"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "JSESSIONID": {
+          "domain": "www.cnam.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "SERVERID": {
+          "domain": "www.cnam.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cnam.fr/portail/conservatoire-national-des-arts-et-metiers-accueil-821166.kjsp",
+      "redirects": true,
+      "route": [
+        "http://cnam.fr/",
+        "https://cnam.fr/",
+        "https://www.cnam.fr/portail/conservatoire-national-des-arts-et-metiers-accueil-821166.kjsp"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://storage.googleapis.com/ideta-prod.appspot.com/bots/-NWGuWsyb46AWMYn6jpL/scripts/integration-web.js?GoogleAccessId=firebase-adminsdk-4b3yf%40ideta-prod.iam.gserviceaccount.com&Expires=16447017600&Signature=WTyQiG5HfHrpHeON%2BBMKnv84AxhaZ2bHKHXGVlRwkTyoajb0mxNst58kemhhP4BSgI%2Bz9260Wy7TYX8E6%2B0fke7KTiVFxxD3NH5fs%2FP4kXSqqO44l5XFJZdIT87WsbmIci3qNPeSUjv2tNgx%2Bnqx3huFbNPAq1pvNu5ZPx8zTkxoj7MbO5KmZEALNAf8lAzHEASEXoLhBT1VMNx4ncteosELGyjP0mo1oppYM%2FIBUrM62Y8%2FrdvVQznCnEvnSd%2FIT3ig%2FkvhGSJDPgS06jNL1ZC%2FlWz06arOtZHaBrqT1nzqjqHQfQUH6Rn9rkvU6N%2B9giwGnXhZQmzDzVTzb3ZqFw%3D%3D": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
