@@ -1,0 +1,173 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 115,
+    "statusCode": 200,
+    "testsFailed": 0,
+    "testsPassed": 10,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "content-security-policy": "base-uri 'self'; connect-src 'self' wss:; default-src 'self'; font-src 'self' data:; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob:; object-src 'none'; style-src 'self' 'unsafe-inline';",
+      "expires": "0",
+      "pragma": "no-cache",
+      "referrer-policy": "strict-origin",
+      "set-cookie": [
+        "__Host-grv_csrf=3d61503853ead0bce9f55b77065b250e6d91f9a14b328f8233a8eebf7822b386; Path=/; HttpOnly; Secure; SameSite=None"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "vary": "Cookie",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "date": "Sun, 25 Jan 2026 02:53:39 GMT",
+      "content-length": "794",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "base-uri": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'",
+          "wss:"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "__Host-grv_csrf": {
+          "domain": "dinum-opi.teleport.beta.numerique.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin, no-referrer",
+      "http": true,
+      "meta": true
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
