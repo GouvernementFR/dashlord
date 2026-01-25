@@ -1,0 +1,136 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "private",
+      "content-type": "text/html; charset=utf-8",
+      "server": "Microsoft-IIS/10.0",
+      "set-cookie": [
+        "DerogBio.ASPXAUTH=; expires=Mon, 11-Oct-1999 22:00:00 GMT; path=/; HttpOnly; SameSite=Lax"
+      ],
+      "x-aspnet-version": "4.0.30319",
+      "x-powered-by": "ASP.NET",
+      "access-control-allow-origin": "https://sve.derogationbio.inao.gouv.fr",
+      "access-control-allow-headers": "accept,authorization,AuthorizationOperator,AgenceBioSynchronize,content-type,cache-control,content-disposition",
+      "access-control-allow-methods": "*",
+      "access-control-expose-headers": "Content-Disposition",
+      "date": "Sun, 25 Jan 2026 02:51:52 GMT",
+      "connection": "close",
+      "content-length": "2564"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "ASP.NET_SessionId": {
+          "domain": "derogationbio.inao.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "DerogBio.ASPXAUTH": {
+          "domain": "derogationbio.inao.gouv.fr",
+          "expires": "1999-10-11T22:00:00.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://sve.derogationbio.inao.gouv.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https",
+      "scoreModifier": -20,
+      "destination": "http://derogationbio.inao.gouv.fr/Fwamework/Users/Login.aspx?ReturnUrl=%2f",
+      "redirects": true,
+      "route": [
+        "http://derogationbio.inao.gouv.fr/",
+        "http://derogationbio.inao.gouv.fr/Fwamework/Users/Login.aspx?ReturnUrl=%2f"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
