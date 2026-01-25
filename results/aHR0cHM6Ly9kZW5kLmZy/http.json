@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:51:53 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "cache-control": "must-revalidate, no-cache, private",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "content-security-policy-report-only": "default-src 'self' *.irsn.fr *.asnr.fr www.dend.fr; script-src 'self' *.irsn.fr *.asnr.fr www.dend.fr cdn.ckeditor.com embed.api.video public.message-business.com static.doubleclick.net unpkg.com vod.api.video www.google.com www.gstatic.com www.youtube.com www.youtube-nocookie.com; object-src 'none'; style-src 'self' 'unsafe-inline'  *.irsn.fr *.asnr.fr www.dend.fr fonts.googleapis.com unpkg.com www.youtube.com www.youtube-nocookie.com; img-src 'self' data:  *.irsn.fr *.asnr.fr www.dend.fr i.ytimg.com yt3.ggpht.com; media-src 'self'  *.irsn.fr *.asnr.fr www.dend.fr; frame-src 'self'  *.irsn.fr *.asnr.fr www.dend.fr embed.api.video www.youtube.com www.youtube-nocookie.com; frame-ancestors 'self'  *.irsn.fr *.asnr.fr www.dend.fr; child-src 'self'  *.irsn.fr *.asnr.fr www.dend.fr embed.api.video www.youtube.com www.youtube-nocookie.com; font-src 'self' data:  *.irsn.fr *.asnr.fr www.dend.fr embed.api.video fonts.gstatic.com themes.googleusercontent.com; connect-src 'self'  *.irsn.fr *.asnr.fr www.dend.fr collector.api.video googleads.g.doubleclick.net jnn-pa.googleapis.com vod.api.video www.youtube.com www.youtube-nocookie.com; report-uri /sa-report-csp-violation; upgrade-insecure-requests",
+      "x-xss-protection": "1, 1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "from-origin": "same",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "content-security-policy": "frame-ancestors 'self'",
+      "x-url": "/",
+      "x-host": "www.dend.fr",
+      "x-cacheable": "NO:Not Cacheable",
+      "x-cache-ttl": "0.000",
+      "accept-ranges": "bytes",
+      "x-cache": "MISS",
+      "x-cache-hits": "0"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.dend.fr/",
+      "redirects": true,
+      "route": [
+        "http://dend.fr/",
+        "http://www.dend.fr/",
+        "https://www.dend.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
