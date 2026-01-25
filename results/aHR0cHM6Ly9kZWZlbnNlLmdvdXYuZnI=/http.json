@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 23 Jan 2026 19:10:43 GMT",
+      "set-cookie": [
+        "cookiedef=!hMZkEqwHEnZoj2aecT1PYrEDAreRinFMW48ByzR1ErUUaJ4o0wExOTqMvmFcEmlXpgSWsHKTiTcUNw==; path=/; Httponly",
+        "BIGipServer~Tenant-Externe~application~pool-ubika=201486346.20480.0000; path=/; Httponly; Secure"
+      ],
+      "cache-control": "max-age=604800, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "cache-tags": "config:block_list config:block.block.open_theme_onglets_2 config:block.block.open_theme_onglets config:block.block.open_theme_actionsdadministrationprincipales config:block.block.open_theme_messages config:block.block.open_theme_contenudelapageprincipale config:block.block.open_theme_connexionutilisateur config:block.block.blocktothetopopensde config:block.block.blocksocialmediaopensde config:block.block.blockfooteropensde config:block.block.blockheaderopensde config:block.block.open_theme_filsdariane node:491 config:block.block.open_theme_admin config:block.block.open_theme_tools config:block.block.typedecontenu config:block.block.groupescontenudegroupegroupeparentgroupetitre config:matomo.settings group_content_list:plugin:group_node:authority group_content_list:plugin:group_node:cold_content group_content_list:plugin:group_node:event group_content_list:plugin:group_node:geozone group_content_list:plugin:group_node:homepage group_content_list:plugin:group_node:hub_news_list group_content_list:plugin:group_node:manual_list group_content_list:plugin:group_node:map group_content_list:plugin:group_node:map_poi group_content_list:plugin:group_node:news_article group_content_list:plugin:group_node:poi block_view menu_link_content_list:menu_link_content footer group_list minarm_default_config config:minarm_social_networks.settings node_view paragraph_view paragraph:10201 config:paragraphs.settings paragraph:5087 paragraph:19733 paragraph:11043 paragraph:26741 paragraph:4144 paragraph:101229 paragraph:69996 paragraph:34600 paragraph:25675 paragraph:10200 paragraph:2026 node_list:news_article paragraph:103330 user:46 media:78869 config:system.site header menu:minarm-oicd-ministere-armees language_selector rendered http_response config:user.role.anonymous config:group_role_list config:group.role.organism_entity-anonymous flexible_permissions group_content_list:plugin:group_membership:entity:0 local_task config:workflows.workflow.minarm_workflow",
+      "x-drupal-cache": "HIT",
+      "access-control-allow-origin": "*",
+      "last-modified": "Fri, 23 Jan 2026 19:10:35 GMT",
+      "etag": "\"1769195435\"",
+      "content-length": "94298",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "1579853 294918",
+      "age": "28653",
+      "accept-ranges": "bytes",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+          "domain": "www.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "cookiedef": {
+          "domain": "www.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.defense.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://defense.gouv.fr/",
+        "https://defense.gouv.fr/",
+        "https://www.defense.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
