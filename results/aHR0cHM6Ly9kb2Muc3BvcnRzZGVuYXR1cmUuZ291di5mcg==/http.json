@@ -1,0 +1,181 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sun, 25 Jan 2026 02:53:27 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "PhpMyBibli-OPACDB=creps_rh; expires=Thu, 07 Jan 2027 08:13:27 GMT; Max-Age=30000000; secure; HttpOnly; SameSite=Lax",
+        "PHPSESSID=3fug60c5vmg057ncdco97fc4tt; path=/; secure; HttpOnly; SameSite=Lax",
+        "PmbOpac-LOGIN=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; secure; HttpOnly; SameSite=Lax",
+        "PmbOpac-SESSNAME=PmbOpac; secure; HttpOnly; SameSite=Lax",
+        "PmbOpac-SESSID=9659811282; secure; HttpOnly; SameSite=Lax",
+        "PmbOpac-DATABASE=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; secure; HttpOnly; SameSite=Lax"
+      ],
+      "cache-control": "post-check=0, pre-check=0, post-check=0, pre-check=0",
+      "expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+      "last-modified": "Sun, 25 Jan 2026 02:53:27 GMT",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "feature-policy": "midi none;notifications none;push none;sync-xhr *;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;payment none;",
+      "referrer-policy": "strict-origin-when-cross-origin"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "PhpMyBibli-OPACDB": {
+          "domain": "doc.sportsdenature.gouv.fr",
+          "expires": "2027-01-07T08:13:27.000Z",
+          "httponly": true,
+          "max-age": 30000000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PHPSESSID": {
+          "domain": "doc.sportsdenature.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PmbOpac-LOGIN": {
+          "domain": "doc.sportsdenature.gouv.fr",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "httponly": true,
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PmbOpac-SESSNAME": {
+          "domain": "doc.sportsdenature.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PmbOpac-SESSID": {
+          "domain": "doc.sportsdenature.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PmbOpac-DATABASE": {
+          "domain": "doc.sportsdenature.gouv.fr",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "httponly": true,
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://doc.sportsdenature.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://doc.sportsdenature.gouv.fr/",
+        "https://doc.sportsdenature.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubdomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
