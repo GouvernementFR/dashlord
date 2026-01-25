@@ -1,0 +1,142 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "cache-control": "max-age=7200, public",
+      "date": "Sun, 25 Jan 2026 02:49:00 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
+      "connection": "close",
+      "set-cookie": [
+        "visid_incap_3172063=MCZs6cT+Tq6XapbhXdbc7puEdWkAAAAAQUIPAAAAAAAPE+/yEMtbFYTe9rOTUJYM; expires=Sun, 24 Jan 2027 07:44:58 GMT; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
+        "nlbi_3172063=PEQ5NDym9Abs8bXn/w99fgAAAADVbxCXMKWhBEEDdfwKZkVH; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
+        "incap_ses_1253_3172063=5cE3YK4FMGZ0xrlBWo1jEZyEdWkAAAAAUJYV/HmLePDfUlPvw1u0Qw==; path=/; Domain=.cybermalveillance.gouv.fr"
+      ],
+      "x-cdn": "Imperva",
+      "x-iinfo": "12-56113745-56113748 NNNN CT(98 212 0) RT(1769309339926 10) q(0 0 3 1) r(7 7) U18"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "visid_incap_3172063": {
+          "domain": "cybermalveillance.gouv.fr",
+          "expires": "2027-01-24T07:44:58.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "nlbi_3172063": {
+          "domain": "cybermalveillance.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_1253_3172063": {
+          "domain": "cybermalveillance.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cybermalveillance.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://cybermalveillance.gouv.fr/",
+        "https://cybermalveillance.gouv.fr/",
+        "https://www.cybermalveillance.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
