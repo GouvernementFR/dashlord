@@ -1,0 +1,248 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:54:28 GMT",
+      "set-cookie": [
+        "DS_NODE=app1; path=/; SameSite=Lax; secure",
+        "_csrf_token=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkluTmZNV05yVVc5Mk5uZzBabEZsYWtsamRqRm9WRXRPT0Rsa1FYbGhiVzAyV0hnNFoxbEhhWEZZWVhjaSIsImV4cCI6IjIwMjctMDEtMjVUMDI6NTQ6MjguMTY3WiIsInB1ciI6ImNvb2tpZS5fY3NyZl90b2tlbiJ9fQ%3D%3D--903a25a4516d9b6bc921d163e5c015bb748a2b35; path=/; expires=Mon, 25 Jan 2027 02:54:28 GMT; HttpOnly; SameSite=Lax; secure",
+        "_DS_session=BtR3oo9fhbyNIAAqD0SIPqO2YnzNuJ09EjOWHEGvaawl%2FZR8Ealfu5ue3ZiTx%2FoKhpqvaebDOkrsG%2FDJlfV%2FvQVunUYaRzv35bzvBlQbH%2FpIDr49Xt0tZ49%2BWm1%2BvTR%2B8h8cXO4Pbp4vLggN1bM4O79Dj%2FWrg8bc6ve%2BoirwYEikHNRSw8jOb5i%2BWsxxNHaEM%2BsmGiGmmVRIoxt2gpLKUg7DcV8oPkWzwDUzXOXJmsy9pueVHmltI3T8VD2WsAnTuJ2TgUb4Mh7SHXES1aVC9DPEBA%3D%3D--Np%2FCuN4GVQ9ka7Mm--piaIFuG%2FYZ0uhB9dYjKVAQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax",
+        "cookiedef=!xLl/Nr0z1jvFnWCecT1PYrEDAreRitfMTlWKYxz/8XF1UfCve7JEkhKHu4Ae06fyFgiLkbw/WwMa; path=/; Httponly",
+        "BIGipServer~Tenant-Externe~application~pool-ubika=218263562.20480.0000; path=/; Httponly; Secure"
+      ],
+      "strict-transport-security": "max-age=31536000;, max-age=31536000;, max-age=63072000; includeSubDomains",
+      "x-xss-protection": "1; mode=block",
+      "x-download-options": "noopen",
+      "x-permitted-cross-domain-policies": "none",
+      "link": "<https://demarches-simplifiees.defense.gouv.fr/assets/Muli-Regular-bb62be3d0c815d86838837a026024c5833d2a54e3b457012d5d161a3ece1aaa9.woff2>; rel=preload; as=font; type=font/woff2; crossorigin=anonymous,<https://demarches-simplifiees.defense.gouv.fr/assets/Muli-Bold-d2dc11eebbc84a2ec6433ef027713b0c75c40c51cb522eaf2ab7dfa7be432e30.woff2>; rel=preload; as=font; type=font/woff2; crossorigin=anonymous,</assets/application-9502e9a6b539f051536206f9267fe6363485452e68fffd382079dc12dd5b7ccb.css>; rel=preload; as=style; nopush",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "W/\"f8e454141b7ac95301b1f43b609fc023\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-security-policy": "img-src 'self' data: blob: *.openstreetmap.org *.cloud.ovh.net * stats.data.gouv.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: *.sendinblue.com *.crisp.chat crisp.chat *.sibautomation.com sibautomation.com cdn.jsdelivr.net maxcdn.bootstrapcdn.com code.jquery.com stats.data.gouv.fr prod-dossier-numerique.cloud.defense.gouv.fr; style-src 'self' 'unsafe-inline' *.crisp.chat crisp.chat cdn.jsdelivr.net maxcdn.bootstrapcdn.com; connect-src 'self' wss://*.crisp.chat *.crisp.chat in-automate.sendinblue.com app.franceconnect.gouv.fr sentry.io openmaptiles.geo.data.gouv.fr openmaptiles.github.io tiles.geo.api.gouv.fr wxs.ign.fr demarches-simplifiees.defense.gouv.fr api-adresse.data.gouv.fr data.education.gouv.fr geo.api.gouv.fr prod-dossier-numerique.cloud.defense.gouv.fr; frame-src 'self'; default-src 'self' data: blob: 'report-sample' fonts.gstatic.com in-automate.sendinblue.com player.vimeo.com sentry.io *.crisp.chat crisp.chat *.crisp.help *.sibautomation.com sibautomation.com data *.gouv.fr",
+      "x-request-id": "0eef5ad8-1b0c-46c9-b242-a124d5cae664",
+      "x-runtime": "0.013980",
+      "content-length": "8328",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "img-src": [
+          "'self'",
+          "*",
+          "*.openstreetmap.org",
+          "blob:",
+          "data:",
+          "stats.data.gouv.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.crisp.chat",
+          "*.sendinblue.com",
+          "*.sibautomation.com",
+          "blob:",
+          "cdn.jsdelivr.net",
+          "code.jquery.com",
+          "crisp.chat",
+          "maxcdn.bootstrapcdn.com",
+          "prod-dossier-numerique.cloud.defense.gouv.fr",
+          "sibautomation.com",
+          "stats.data.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.crisp.chat",
+          "cdn.jsdelivr.net",
+          "crisp.chat",
+          "maxcdn.bootstrapcdn.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.crisp.chat",
+          "api-adresse.data.gouv.fr",
+          "app.franceconnect.gouv.fr",
+          "data.education.gouv.fr",
+          "demarches-simplifiees.defense.gouv.fr",
+          "geo.api.gouv.fr",
+          "in-automate.sendinblue.com",
+          "openmaptiles.geo.data.gouv.fr",
+          "openmaptiles.github.io",
+          "prod-dossier-numerique.cloud.defense.gouv.fr",
+          "sentry.io",
+          "tiles.geo.api.gouv.fr",
+          "wss://*.crisp.chat",
+          "wxs.ign.fr"
+        ],
+        "frame-src": [
+          "'self'"
+        ],
+        "default-src": [
+          "'report-sample'",
+          "'self'",
+          "*.crisp.chat",
+          "*.crisp.help",
+          "*.gouv.fr",
+          "*.sibautomation.com",
+          "blob:",
+          "crisp.chat",
+          "data",
+          "fonts.gstatic.com",
+          "in-automate.sendinblue.com",
+          "player.vimeo.com",
+          "sentry.io",
+          "sibautomation.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "DS_NODE": {
+          "domain": "demarches-simplifiees.defense.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_csrf_token": {
+          "domain": "demarches-simplifiees.defense.gouv.fr",
+          "expires": "2027-01-25T02:54:28.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_DS_session": {
+          "domain": "demarches-simplifiees.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "cookiedef": {
+          "domain": "demarches-simplifiees.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+          "domain": "demarches-simplifiees.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://demarches-simplifiees.defense.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://demarches-simplifiees.defense.gouv.fr/",
+        "https://demarches-simplifiees.defense.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=31536000;, max-age=31536000;, max-age=63072000; includeSubDomains",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
