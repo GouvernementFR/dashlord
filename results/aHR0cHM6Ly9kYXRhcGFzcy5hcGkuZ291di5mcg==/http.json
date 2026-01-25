@@ -1,0 +1,133 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sun, 25 Jan 2026 02:49:11 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "19082",
+      "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "</assets/dsfr-fonts-c176c522.css>; rel=preload; as=style; nopush,</assets/dsfr-46906334.css>; rel=preload; as=style; nopush,</assets/dsfr-utility-9aa6ca1d.css>; rel=preload; as=style; nopush,</assets/dsfr-extensions-8f6c2aa4.css>; rel=preload; as=style; nopush,</assets/application-daad00bf.css>; rel=preload; as=style; nopush,</assets/components/authorization-request-events-782a1a29.css>; rel=preload; as=style; nopush,</assets/components/authorization-requests-legal-c86fd649.css>; rel=preload; as=style; nopush,</assets/components/authorization-requests-scopes-cf704b0b.css>; rel=preload; as=style; nopush,</assets/components/authorization_header-c2a2be8f.css>; rel=preload; as=style; nopush,</assets/components/authorization_request_form-932b2c27.css>; rel=preload; as=style; nopush,</assets/components/authorization_row-be5823e9.css>; rel=preload; as=style; nopush,</assets/components/basic_card-e692dc58.css>; rel=preload; as=style; nopush",
+      "etag": "W/\"a918901a6edf45a7474bcc394f53c70a\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "_data_pass_session=u95ROIs%2BshyDnA%2B%2B6oyymAhbZAID6%2B%2F3Q0OH2kj9v%2FvKfUACf8zkCauExCgalX%2B%2F%2FtkCDr6ROGNPL1a8lOMTYr69NkrgS8ziNjKdIwTobaQs2j%2B9cVsLbXhB0N5CTx7X8XLHSsm%2FID%2BK0OP9wTUvIOXGlzAhfiTs1ESkmTxMcUxAsrbbEWSaBPwoRNtJWmcx4izU1m43hJKHtbkgxjEF8H8H3GwDZhVdExScEthBGHw3Mc6x4kDtSNwiKfVoS4%2F10dFsU6lFyPAiHB9ZYGjb%2FlWbh8L9JsZ6L94%3D--TJRKtDaPdxlkVbSf--%2B4IKC1lyBlzI8XBShLS4ng%3D%3D; path=/; secure; httponly; samesite=lax"
+      ],
+      "x-request-id": "5b0f84ed-2398-4497-bace-1f3b9da96baf",
+      "x-runtime": "0.010974",
+      "strict-transport-security": "max-age=63072000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_data_pass_session": {
+          "domain": "datapass.api.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://datapass.api.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://datapass.api.gouv.fr/",
+        "https://datapass.api.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
