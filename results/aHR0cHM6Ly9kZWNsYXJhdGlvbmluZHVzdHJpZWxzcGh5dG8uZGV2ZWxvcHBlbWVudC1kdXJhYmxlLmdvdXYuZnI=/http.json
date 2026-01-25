@@ -1,0 +1,146 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:49:09 GMT",
+      "cache-control": "max-age=0, private, must-revalidate, max-age=0, must-revalidate, private",
+      "expires": "Sun, 25 Jan 2026 02:49:09 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "set-cookie": [
+        "PHPSESSID=06qk28c7oj5hqovf0i3c4dm0ah; path=/; secure; HttpOnly; SameSite=Strict;",
+        "TS01ef09d3=0169b64a18647d466895839729dad39a76c26df95fc34c73ec1dadd29b52fa5d33f67b4dc82bd19e2647a49ececfe0351a39971d935cc0f3407f06fd6c9a6a44cde55a349e; Path=/; Domain=.declarationindustrielsphyto.developpement-durable.gouv.fr",
+        "TS01ef09d3028=011161eb9d8b0bd0c9282be57f5694c93cb1f649a2c98638eb18d100e28fbad99d5cfc8ea8fb5bafe66a614e01a13d2249f30eaaa5; Path=/; Domain=.declarationindustrielsphyto.developpement-durable.gouv.fr;",
+        "TSe2d7afbc027=08d4373573ab2000822602e66761bc6b94ad02c009cddac8dca4c33e62152e0e8965888c0f78aa21088f84979b11300091119a6ee2072a52e5df2e2424cb16788eb26fa65c49ada8cf9516ef4657737cdb3edc0a04b78e6c4678aaae98bf91bc; Path=/"
+      ],
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin",
+      "strict-transport-security": "max-age=16070400; includeSubdomains; preload",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "PHPSESSID": {
+          "domain": "declarationindustrielsphyto.developpement-durable.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "TS01ef09d3": {
+          "domain": "declarationindustrielsphyto.developpement-durable.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "TS01ef09d3028": {
+          "domain": "declarationindustrielsphyto.developpement-durable.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "TSe2d7afbc027": {
+          "domain": "declarationindustrielsphyto.developpement-durable.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://declarationindustrielsphyto.developpement-durable.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://declarationindustrielsphyto.developpement-durable.gouv.fr/",
+        "https://declarationindustrielsphyto.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubdomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
