@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 25 Jan 2026 02:54:07 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "last-modified": "Sun, 25 Jan 2026 02:54:07 GMT",
+      "content-length": "32381",
+      "connection": "close",
+      "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "fdiplo-prst=!VBcMpJACXnAAUa53g/jcRw5qqbeXnBNJzDZPY9iKVBwiAIyOGtSsTha3nf+8XoUyliBZ2R5KHzEMGg==; path=/; Httponly; Secure",
+        "TS017a74ff=01185409085312f58272f6167441bc161812e2d60e35b60d7547a129bb737699d2b39f2915af4ca325b7d0ea7091922946a0986db1beb86710eef2e6767b176a574ce885d0a909bdc3a0fe985a5b3e2c7686925ac7; Path=/; Domain=.www.diplomatie.gouv.fr"
+      ],
+      "x-xss-protection": "1",
+      "x-content-type-options": "nosniff"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "fdiplo-prst": {
+          "domain": "www.diplomatie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01acda37": {
+          "domain": "diplomatie.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "BIGipServerPOOL_DMZ01_80_FRANCE_DIPLO": {
+          "domain": "www.diplomatie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS017a74ff": {
+          "domain": "www.diplomatie.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.diplomatie.gouv.fr/fr/",
+      "redirects": true,
+      "route": [
+        "http://diplomatie.gouv.fr/",
+        "https://diplomatie.gouv.fr/",
+        "http://www.diplomatie.gouv.fr/",
+        "https://www.diplomatie.gouv.fr/",
+        "https://www.diplomatie.gouv.fr/fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
