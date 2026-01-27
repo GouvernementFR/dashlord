@@ -1,0 +1,180 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 20,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cteonnt-length": "137552",
+      "x-xss-protection": "1; mode=block",
+      "content-security-policy": "img-src 'self' https: data: *.ebrd.com ;, frame-ancestors 'self' ;",
+      "permissions-policy": "policy1=()",
+      "referrer-policy": "no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-frame-options": "SAMEORIGIN",
+      "x-vhost": "www.ebrd.com",
+      "x-forwarded-host": "www.ebrd.com",
+      "access-control-allow-origin": "www.ebrd.com,https://www.ebrd.com/",
+      "content-type": "text/html;charset=utf-8",
+      "x-content-type-options": "nosniff",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Tue, 27 Jan 2026 02:46:18 GMT",
+      "set-cookie": [
+        "affinity=\"2bc762eb241580f6\"; Path=/; HttpOnly; secure",
+        "waf_mgt_id_.ebrd.com_%2F_wat=AAAAAAXYjeWCWlph-1i6WicX9gWe_o6CDArWdaRVWuxkZBBNaavgX-5LNYfMSPwlDcDcPfAurE6_YhxKV-jzCmpWdaf3&; Domain=.ebrd.com; Path=/; HttpOnly"
+      ],
+      "x-served-by": "cache-bur-kbur8200101-BUR",
+      "x-cache": "MISS",
+      "x-timer": "S1769481978.987948,VS0,VS0,VE936",
+      "vary": "Accept-Encoding,Origin",
+      "connection": "close",
+      "x-cache-control-orig": "max-age=900, s-maxage=900, stale-while-revalidate=300, stale-if-error=300",
+      "cache-control": "max-age=3, must-revalidate, private",
+      "x-expires-orig": "Tue, 27 Jan 2026 02:51:18 GMT",
+      "expires": "Mon, 26 Jul 1997 05:00:00 GMT",
+      "etag": "\"316533-981b20290880\"",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "img-src": [
+          "'self'",
+          "*.ebrd.com",
+          "data:",
+          "https:"
+        ],
+        ",": [
+          "'self'",
+          "frame-ancestors"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "affinity": {
+          "domain": "www.ebrd.com",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "waf_mgt_id": {
+          "domain": "ebrd.com",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "waf_mgt_id_.ebrd.com_%2F_wat": {
+          "domain": "ebrd.com",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "www.ebrd.com,https://www.ebrd.com/"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-header-invalid",
+      "scoreModifier": -5,
+      "data": "no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//assets.adobedtm.com/84e4c56632dd/b0347c80e37d/launch-7b27ff139622.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
