@@ -1,0 +1,247 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 27 Jan 2026 02:50:21 GMT",
+      "cache-control": "max-age=0, must-revalidate, private",
+      "link": "<https://ecole.marches-publics.gouv.fr/api/v2/docs.jsonld>; rel=\"http://www.w3.org/ns/hydra/core#apiDocumentation\"",
+      "expires": "Tue, 27 Jan 2026 02:50:21 GMT",
+      "set-cookie": [
+        "no-design=1; path=/; secure; HttpOnly; Secure; SameSite=Lax; __Secure-PHPSESSID=8636d5",
+        "PHPSESSID=c759c1e064546ac8b13b2578f2cbbf2c; path=/; secure; httponly; samesite=lax; Secure; SameSite=Lax; __Secure-PHPSESSID=8636d5",
+        "PHPSESSID=c759c1e064546ac8b13b2578f2cbbf2c; path=/; secure; httponly; samesite=lax; Secure; SameSite=Lax; K_V_D___Secure-PHPSESSID=hhgaalbmmadhgmppeneogigkhafmlpogeijgdnaafdlhdnpopdibhjfdfheijpcbjickekppandg",
+        "no-design=1; path=/; secure; HttpOnly; Secure; SameSite=Lax; K_V_D___Secure-PHPSESSID=ifneihogbbklhehjcikjpohneejfolhkdimkdnbmddecmdghbibgjfjnnagndfolgimjnofnangk"
+      ],
+      "vary": "Accept-Encoding",
+      "content-length": "8774",
+      "content-type": "text/html; charset=UTF-8",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self' data: java.com place-interne.fr open-groupe.matomo.cloud w3.org; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: java.com place-interne.fr webstats.place-interne.fr cdn.matomo.cloud w3.org js.stripe.com redac-document-ecole.marches-publics.gouv.fr redac-clausier-ecole.marches-publics.gouv.fr; object-src 'self' data: java.com place-interne.fr w3.org; style-src 'self' 'unsafe-inline' data: java.com place-interne.fr w3.org js.stripe.com https://fonts.googleapis.com redac-document-ecole.marches-publics.gouv.fr redac-clausier-ecole.marches-publics.gouv.fr; img-src 'self' data: java.com place-interne.fr webstats.place-interne.fr w3.org;media-src 'self' data: java.com place-interne.fr w3.org; frame-src 'self' blob: data: js.stripe.com redac-document-ecole.marches-publics.gouv.fr redac-clausier-ecole.marches-publics.gouv.fr; child-src 'self' data: ecole.marches-publics.gouv.fr ecole-marches-publics.finances.rie.gouv.fr mpe-ecole.place-interne.fr evolution.place-interne.fr js.stripe.com redac-document-ecole.marches-publics.gouv.fr redac-clausier-ecole.marches-publics.gouv.fr ; font-src 'self' data: https://fonts.gstatic.com java.com place-interne.fr w3.org; connect-src 'self' data: java.com place-interne.fr open-groupe.matomo.cloud w3.org http://localhost:11992/health http://localhost:11992/run-local-application",
+      "feature-policy": "geolocation none; midi none; notifications none; push none; sync-xhr none; microphone none; camera none; magnetometer none; gyroscope none; speaker none; vibrate none; fullscreen none; payment none",
+      "strict-transport-security": "max-age=15768000",
+      "server": "OPEN-HAPROXY-FRONT-ECOLE",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "data:",
+          "java.com",
+          "open-groupe.matomo.cloud",
+          "place-interne.fr",
+          "w3.org"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "cdn.matomo.cloud",
+          "data:",
+          "java.com",
+          "js.stripe.com",
+          "place-interne.fr",
+          "redac-clausier-ecole.marches-publics.gouv.fr",
+          "redac-document-ecole.marches-publics.gouv.fr",
+          "w3.org",
+          "webstats.place-interne.fr"
+        ],
+        "object-src": [
+          "'self'",
+          "data:",
+          "java.com",
+          "place-interne.fr",
+          "w3.org"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:",
+          "https://fonts.googleapis.com",
+          "java.com",
+          "js.stripe.com",
+          "place-interne.fr",
+          "redac-clausier-ecole.marches-publics.gouv.fr",
+          "redac-document-ecole.marches-publics.gouv.fr",
+          "w3.org"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "java.com",
+          "place-interne.fr",
+          "w3.org",
+          "webstats.place-interne.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "data:",
+          "java.com",
+          "place-interne.fr",
+          "w3.org"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "js.stripe.com",
+          "redac-clausier-ecole.marches-publics.gouv.fr",
+          "redac-document-ecole.marches-publics.gouv.fr"
+        ],
+        "child-src": [
+          "'self'",
+          "data:",
+          "ecole-marches-publics.finances.rie.gouv.fr",
+          "ecole.marches-publics.gouv.fr",
+          "evolution.place-interne.fr",
+          "js.stripe.com",
+          "mpe-ecole.place-interne.fr",
+          "redac-clausier-ecole.marches-publics.gouv.fr",
+          "redac-document-ecole.marches-publics.gouv.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://fonts.gstatic.com",
+          "java.com",
+          "place-interne.fr",
+          "w3.org"
+        ],
+        "connect-src": [
+          "'self'",
+          "data:",
+          "http://localhost:11992/health",
+          "http://localhost:11992/run-local-application",
+          "java.com",
+          "open-groupe.matomo.cloud",
+          "place-interne.fr",
+          "w3.org"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "no-design": {
+          "domain": "ecole.marches-publics.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "PHPSESSID": {
+          "domain": "ecole.marches-publics.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000",
+      "includeSubDomains": false,
+      "maxAge": 15768000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
