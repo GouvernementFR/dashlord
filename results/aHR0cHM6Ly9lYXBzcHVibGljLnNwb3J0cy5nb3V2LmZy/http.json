@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 10,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "private",
+      "content-type": "text/html; charset=utf-8",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "set-cookie": [
+        "__RequestVerificationToken=NHFnlX-pfVO_15HGBFOOcEdq7axWIERStMKBIr0eJSCLfhyNVklQxqttMUt0RBLjrTKjbiPpsAedlTyuz1TezidLcKgpM_WreVMDqYwVMTg1; path=/; HttpOnly",
+        "TS01298773=012337f68d8d48f9a5ba15c7ca5e4548de3c89ebf62809436a2c26bc3bae093e75a75ff7778228c65cbc9666be2582cca4a5b143cd316092c4338cc18e7b09006ef8296cf72c52e85362908292a2199bf8af05a274; Path=/"
+      ],
+      "date": "Tue, 27 Jan 2026 02:47:55 GMT",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "Current_Session": {
+          "domain": "eapspublic.sports.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01298773": {
+          "domain": "eapspublic.sports.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "__RequestVerificationToken": {
+          "domain": "eapspublic.sports.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https",
+      "scoreModifier": -20,
+      "destination": "http://eapspublic.sports.gouv.fr/CarteProRecherche/Recherche",
+      "redirects": true,
+      "route": [
+        "http://eapspublic.sports.gouv.fr/",
+        "http://eapspublic.sports.gouv.fr/CarteProRecherche/Recherche"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
