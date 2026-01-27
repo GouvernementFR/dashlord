@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 403,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 27 Jan 2026 02:48:05 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"9c44eddc0da42189\", cfOrigin;dur=0,cfEdge;dur=10",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "set-cookie": [
+        "__cf_bm=469oqh3fuTG3Guz1jIuUmOrA1kmaHoXWoUg3uQpm4X4-1769482085-1.0.1.1-zvG3K8nw.tzsQ9GqIVKVjgjTx5IkS7mIXbDSw9fhQMEDf448tYFjBcnZ8uuRKrA_gz7h3et5l4_MVc.DAwAl_4W9robkjjaqGke649pMQSo; path=/; expires=Tue, 27-Jan-26 03:18:05 GMT; domain=.economie.gouv.fr; HttpOnly; Secure; SameSite=None"
+      ],
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "server": "cloudflare",
+      "cf-ray": "9c44eddc0da42189-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "__cf_bm": {
+          "domain": "economie.gouv.fr",
+          "expires": "2026-01-27T03:18:05.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "http://economie.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://economie.gouv.fr/"
+      ],
+      "statusCode": 403
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": "max-age=15552000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 15552000,
+      "preload": true,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    }
+  }
+}
