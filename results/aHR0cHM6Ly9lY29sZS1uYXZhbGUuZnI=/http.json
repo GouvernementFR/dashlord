@@ -1,0 +1,206 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "x-frame-options": "DENY",
+      "upgrade": "h2,h2c",
+      "last-modified": "Mon, 26 Jan 2026 14:36:06 GMT",
+      "cache-control": "max-age=0",
+      "expires": "Tue, 27 Jan 2026 02:48:38 GMT",
+      "vary": "Accept-Encoding",
+      "content-security-policy": "script-src-elem 'self' 'unsafe-inline' data: maps.googleapis.com code.jquery.com www.youtube.com maps.google.com www.google.com www.gstatic.com cdnjs.cloudflare.com connect.facebook.net; img-src 'self' 'unsafe-inline' https://* data: maps.googleapis.com www.google.com; media-src 'self'; connect-src 'self' ; font-src 'self' data: parkeon.fireworxlive.com fonts.gstatic.com; frame-ancestors 'self'; default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.youtube.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com; object-src 'none'; frame-src 'self' www.youtube-nocookie.com www.google.com maps.google.com player.vimeo.com www.facebook.com www.youtube.com; base-uri 'self'",
+      "strict-transport-security": "max-age=63072000",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "49194",
+      "date": "Tue, 27 Jan 2026 02:48:38 GMT",
+      "server": "LiteSpeed",
+      "x-tuned-by": "N0C",
+      "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdnjs.cloudflare.com",
+          "code.jquery.com",
+          "connect.facebook.net",
+          "data:",
+          "maps.google.com",
+          "maps.googleapis.com",
+          "www.google.com",
+          "www.gstatic.com",
+          "www.youtube.com"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:",
+          "https://*",
+          "maps.googleapis.com",
+          "www.google.com"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "fonts.gstatic.com",
+          "parkeon.fireworxlive.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "www.youtube.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdnjs.cloudflare.com",
+          "fonts.googleapis.com"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'self'",
+          "maps.google.com",
+          "player.vimeo.com",
+          "www.facebook.com",
+          "www.google.com",
+          "www.youtube-nocookie.com",
+          "www.youtube.com"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.ecole-navale.fr/",
+      "redirects": true,
+      "route": [
+        "http://ecole-navale.fr/",
+        "https://www.ecole-navale.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.9.5/tarteaucitron.js?ver=1.9.5": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
