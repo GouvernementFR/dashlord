@@ -1,0 +1,147 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 26 Jan 2026 10:14:15 GMT",
+      "cache-control": "max-age=10800, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "last-modified": "Mon, 26 Jan 2026 23:20:10 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "531",
+      "etag": "W/\"1769469610-gzip\"",
+      "x-cache": "HIT",
+      "x-cache-hits": "3",
+      "accept-ranges": "bytes",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-handicap-v2.cegedim.cloud-http=3468974346.20480.0000; path=/; Httponly; Secure",
+        "TS24c133e9029=087dc22938ab28001f730cb9b5f70f3966ac76a6ab600d145110285af51f4bd601416100c6a6a68bf6932ce79fe5e75f; Secure; Max-Age=30; Path=/",
+        "TSe7b29e8c027=087dc22938ab2000cefefacd293e8dc0e311fcb81bddadbf1f7295cafa53f0cc870662c09194b4c608102a4aef113000e17cb8fd5e24b5bfa43e5705354c797db40bd26f162c7259d7d8e076fa47965cf54baa587cc3b02ea96448a2374ba01a; Secure; Path=/"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-handicap-v2.cegedim.cloud-http": {
+          "domain": "egalite-femmes-hommes.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS24c133e9029": {
+          "domain": "egalite-femmes-hommes.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSe7b29e8c027": {
+          "domain": "egalite-femmes-hommes.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://egalite-femmes-hommes.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://egalite-femmes-hommes.gouv.fr/",
+        "https://egalite-femmes-hommes.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
