@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=utf-8",
+      "status": "200 OK",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "debug": "protocol:https://,header.X_FORWARDED_FOR:,header.X_REAL_IP:,remote_ip:::ffff:18.232.61.132,request.ip:::ffff:18.232.61.132,port:443,host:fr.orson.io",
+      "cache-control": "max-age=240, public",
+      "x-request-id": "c6dcf10e-8716-4ef9-8698-3e162d82c565",
+      "x-runtime": "0.709217",
+      "server": "nginx",
+      "content-length": "11961",
+      "accept-ranges": "bytes",
+      "date": "Tue, 27 Jan 2026 02:48:21 GMT",
+      "x-varnish": "242846026 242845884",
+      "age": "233",
+      "via": "1.1 varnish",
+      "x-cache": "HIT",
+      "vary": "X-MUBARAK-X-PROTO",
+      "x-haproxy-ssl": "Yes",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://fr.orson.io/1441/page-introuvable",
+      "redirects": true,
+      "route": [
+        "http://edtechentertainment.lafrenchtech.com/",
+        "https://fr.orson.io/1441/page-introuvable"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.google.com/recaptcha/api.js?render=": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://945e69e9f57bd8a7f9a7-dde498fccb50b45f74aa952df6f23b83.ssl.cf1.rackcdn.com/assets/lib/plugins/scroll-reveal/scrollReveal-8a1bad3ada5cf3be91ff2c5095c25461.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://945e69e9f57bd8a7f9a7-dde498fccb50b45f74aa952df6f23b83.ssl.cf1.rackcdn.com/assets/themes/classic/application-e50e6b8bd788557d24212da962a945d3.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://945e69e9f57bd8a7f9a7-dde498fccb50b45f74aa952df6f23b83.ssl.cf1.rackcdn.com/assets/plugins-0290eef20131344227ad97aae8fd929d.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://945e69e9f57bd8a7f9a7-dde498fccb50b45f74aa952df6f23b83.ssl.cf1.rackcdn.com/assets/widgets_init-fc159364ad36163afa155e73fd5114a2.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
