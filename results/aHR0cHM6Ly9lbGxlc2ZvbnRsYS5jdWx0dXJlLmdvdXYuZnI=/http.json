@@ -1,0 +1,149 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "connection": "close",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "W/\"8df1114899d76117df11100e457c2737\"",
+      "link": "</assets/application-7cdfed0474f21f63530b7039ece3ebb034f01d06b7f745f0ed4f0d98a533ba57.css>; rel=preload; as=style; nopush",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "set-cookie": [
+        "_ellesfontlaphoto_session=XA1g6Wg9Qh7DXeDfnj73J2YuMr0m0SZPrRNeJvRTdlDuWNJeMVSkfMpqgJiOJxDFRMFhRHzPBMM15TUUtClih%2BPVy5PqEfKbDrdITUPeO3bzDxdWJWyNBxXEXg4LnC0nBcHFX%2B8%2FAiV2oNzWCwdOna7zq9vrDR6rFSLjzbk3g2Df7qGtpP%2BtFmhkEIIVy2wReq6%2BVqGWufSu26o9lL9TiUY1bx%2BiiE90bckcaH9sF9mAdKwH8%2FobrpYa5sjajEY%2BfXDGMz4o0a4uj1Wr1KGiwCVm4FxRTEgfPOsa9GFMP7qRP6brXtZ4WZbGbcc11dkpR4a9yo%2FWvzrkHN7q84YF5J%2BFxvPRRkCDeq8bTut7nHDXlHJ2ny3wPFhEVrg%2FFDxRqlByqf6Ze9DNQOZ%2FNIYbrxTJd5gqdKYf8SnqmoPpglN7OkCQZLS5P3gHmBIXiflJm22ot28tTzSqJps951W2IRKt09%2BLLGvxWSaqClCHb4N4n4pTEyzBNQlA0jUohlNFZg%3D%3D--QpWnpJ%2BUehG07DGm--PnIKhBCv3LuL%2FNX%2FBjmelw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+      ],
+      "traceresponse": "00-188e76cffccd64da3a390d66e664b10e-3b8feca6d51ad4f2-01",
+      "x-content-type-options": "nosniff",
+      "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-platform-cache": "MISS",
+      "x-platform-cluster": "tl34jw4qs4bu2-master-7rqtwti",
+      "x-platform-processor": "gwzrtyfmq5bg3qickflrztm5jm",
+      "x-platform-router": "nthylk4d6puxch5isukqy3sywa",
+      "x-request-id": "f05e2163-9db0-49cb-8902-64e2e7dd6e01",
+      "x-runtime": "0.223196",
+      "x-xss-protection": "1; mode=block",
+      "accept-ranges": "bytes",
+      "via": "1.1 varnish, 1.1 varnish",
+      "date": "Tue, 27 Jan 2026 02:52:19 GMT",
+      "x-served-by": "cache-par-lfpb1150073-PAR, cache-iad-kiad7000133-IAD",
+      "x-cache": "MISS, MISS",
+      "x-cache-hits": "0, 0",
+      "strict-transport-security": "max-age=31557600",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_ellesfontlaphoto_session": {
+          "domain": "ellesfontla.culture.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://ellesfontla.culture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://ellesfontla.culture.gouv.fr/",
+        "https://ellesfontla.culture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31557600",
+      "includeSubDomains": false,
+      "maxAge": 31557600,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.13.0/tarteaucitron.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
