@@ -1,0 +1,176 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Tue, 27 Jan 2026 02:50:59 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "48802",
+      "connection": "close",
+      "x-powered-by": "PHP/8.3.30, PleskLin",
+      "cache-control": "no-cache",
+      "wpo-cache-status": "cached",
+      "last-modified": "Tue, 27 Jan 2026 00:52:28 GMT"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//www.googletagmanager.com/gtag/js?id=G-W3EECX6PGR": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/jquery/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/jquery/jquery-migrate.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://widgetlogic.org/v2/js/data.js?t=1769472000&ver=6.0.8": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/underscore.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/wp-util.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/backbone.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://stats.wp.com/e-202605.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/imagesloaded.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/jquery/ui/menu.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/dom-ready.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/hooks.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/i18n.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/a11y.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/url.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/api-fetch.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
