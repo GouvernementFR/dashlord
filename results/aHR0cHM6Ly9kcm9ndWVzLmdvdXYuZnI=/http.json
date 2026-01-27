@@ -1,0 +1,192 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 27 Jan 2026 02:50:08 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "11476",
+      "connection": "close",
+      "cache-control": "max-age=86400, public",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "cache-tags": "config:block_list config:block.block.aide_2 config:block.block.mildeca_theme_account_menu block_content:1 config:block.block.logomenufooter config:block.block.pieddepagesitesexterne config:block.block.mildeca_theme_branding config:block.block.mildeca_theme_breadcrumbs config:block.block.mildeca_theme_content config:block.block.mildeca_theme_help config:block.block.mildeca_theme_local_actions config:block.block.mildeca_theme_local_tasks config:block.block.mildeca_theme_page_title config:block.block.mildeca_theme_footer config:block.block.mildeca_theme_main_menu config:block.block.mildeca_theme_messages config:block.block.mildeca_theme_powered config:block.block.mildeca_theme_tools config:block.block.pieddepage2 config:block.block.reseauxsociaux config:block.block.searchheaderblock node:67 block_view config:system.menu.pied-de-page-2 node:315 node:290 node:345 node:291 config:system.menu.pied-de-page-sites-externe config:system.menu.footer node:263 node:324 node:266 node:73 config:system.menu.reseaux-sociaux node_view paragraph_view paragraph:240 config:paragraphs.settings config:filter.format.basic_html paragraph:236 paragraph:235 paragraph:234 paragraph:238 paragraph:242 paragraph:241 paragraph:2870 config:filter.format.full_html paragraph:224 paragraph:237 paragraph:245 paragraph:246 paragraph:1076 user:1 config:system.site local_task config:system.menu.main node:11 node:5 node:262 config:system.menu.aide rendered page_manager_route_name:entity.node.canonical http_response config:user.role.anonymous CACHE_MISS_IF_UNCACHEABLE_HTTP_METHOD:form config:honeypot.settings search_api_autocomplete_search_list:views:recherche config:search_api_autocomplete.search.recherche",
+      "last-modified": "Tue, 27 Jan 2026 02:31:14 GMT",
+      "etag": "\"1769481074-gzip\"",
+      "age": "0",
+      "x-varnish-cache": "MISS",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "content-security-policy": "base-uri 'self'; connect-src 'self'; default-src 'self'; font-src 'self'; frame-src 'self' https://www.youtube.com https://www.documentation-administrative.gouv.fr https://youtu.be https://vimeo.com https://www.dailymotion.com https://www.youtube-nocookie.com; img-src 'self' data: https://api.mapbox.com; manifest-src 'self'; media-src 'self' https://www.youtube.com https://www.documentation-administrative.gouv.fr https://youtu.be https://vimeo.com https://www.dailymotion.com; object-src 'none'; script-src 'report-sample' 'self' https://gva.et-gv.fr/pkP567.js?2 https://vkod.drogues.gouv.fr/col312a/-/153224807; style-src 'report-sample' 'self' 'unsafe-inline'; worker-src 'none';",
+      "referrer-policy": "strict-origin-when-cross-origin"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "base-uri": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://vimeo.com",
+          "https://www.dailymotion.com",
+          "https://www.documentation-administrative.gouv.fr",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com",
+          "https://youtu.be"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://api.mapbox.com"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'",
+          "https://vimeo.com",
+          "https://www.dailymotion.com",
+          "https://www.documentation-administrative.gouv.fr",
+          "https://www.youtube.com",
+          "https://youtu.be"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'report-sample'",
+          "'self'",
+          "https://gva.et-gv.fr/pkp567.js?2",
+          "https://vkod.drogues.gouv.fr/col312a/-/153224807"
+        ],
+        "style-src": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "worker-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.drogues.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://drogues.gouv.fr/",
+        "https://www.drogues.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
