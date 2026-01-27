@@ -1,0 +1,168 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 20,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 27 Jan 2026 02:50:51 GMT",
+      "server": "Apache",
+      "strict-transport-security": "max-age=63072000",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-drupal-cache": "HIT",
+      "etag": "\"1769479627-0\"",
+      "content-security-policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.google.com https://*.facebook.net https://*.twitter.com https://*.linkedin.com https://www.google-analytics.com https://cdn.jsdelivr.net https://code.jquery.com https://cdn.syndication.twimg.com https://cdn.rawgit.com  https://static.addtoany.com  https://compteurweb.ehess.fr",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "content-language": "fr",
+      "x-ua-compatible": "IE=edge",
+      "x-generator": "Drupal 7 (https://www.drupal.org)",
+      "link": "<https://www.ehess.fr/sites/all/themes/ehess_subtheme/logo.png>; rel=\"image_src\",<https://www.ehess.fr/fr>; rel=\"canonical\",<https://www.ehess.fr/fr>; rel=\"shortlink\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicon.ico>; rel=\"shortcut icon\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicon.ico>; rel=\"icon_16x16\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicon.ico>; rel=\"icon_32x32\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_96.png>; rel=\"icon_96x96\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_195.png>; rel=\"icon_192x192\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_57.png>; rel=\"apple-touch-icon\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_76.png>; rel=\"apple-touch-icon_72x72\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_76.png>; rel=\"apple-touch-icon_76x76\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_120.png>; rel=\"apple-touch-icon_114x114\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_120.png>; rel=\"apple-touch-icon_120x120\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_144.png>; rel=\"apple-touch-icon_144x144\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_150.png>; rel=\"apple-touch-icon_152x152\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_180.png>; rel=\"apple-touch-icon_180x180\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_57.png>; rel=\"apple-touch-icon-precomposed\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_76.png>; rel=\"apple-touch-icon-precomposed_72x72\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_76.png>; rel=\"apple-touch-icon-precomposed_76x76\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_120.png>; rel=\"apple-touch-icon-precomposed_114x114\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_120.png>; rel=\"apple-touch-icon-precomposed_120x120\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_144.png>; rel=\"apple-touch-icon-precomposed_144x144\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_150.png>; rel=\"apple-touch-icon-precomposed_152x152\",<https://www.ehess.fr/sites/all/themes/ehess_subtheme/favicons/EHESS_favicon_180.png>; rel=\"apple-touch-icon-precomposed_180x180\"",
+      "cache-control": "public, max-age=43200",
+      "last-modified": "Tue, 27 Jan 2026 02:07:07 GMT",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://*.facebook.net",
+          "https://*.google.com",
+          "https://*.linkedin.com",
+          "https://*.twitter.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdn.rawgit.com",
+          "https://cdn.syndication.twimg.com",
+          "https://code.jquery.com",
+          "https://compteurweb.ehess.fr",
+          "https://static.addtoany.com",
+          "https://www.google-analytics.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.ehess.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://ehess.fr/",
+        "https://www.ehess.fr/",
+        "https://www.ehess.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//code.jquery.com/jquery-1.12.4.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//code.jquery.com/jquery-migrate-1.4.1.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//code.jquery.com/ui/1.10.2/jquery-ui.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
