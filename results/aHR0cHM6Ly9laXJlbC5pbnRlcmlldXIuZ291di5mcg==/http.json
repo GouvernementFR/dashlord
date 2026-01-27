@@ -1,0 +1,133 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 27 Jan 2026 02:50:48 GMT",
+      "set-cookie": [
+        "dtCookie=v_4_srv_6_sn_92EBC1191DD8CD59099E2A3E5A65C8B6_perc_100000_ol_0_mul_1_app-3Ada904087035b8bb3_1; Path=/; Domain=.interieur.gouv.fr",
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1G8nHgwSDyJv; Expires=Tue, 27-Jan-2026 04:50:47 GMT; Path=/"
+      ],
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "last-modified": "Tue, 17 Sep 2024 15:19:47 GMT",
+      "etag": "\"56a7-6225238639a08-gzip:dtagent10323250822043923sG4I\"",
+      "accept-ranges": "bytes",
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true",
+      "vary": "Accept-Encoding",
+      "x-xss-protection": "1;mode=block",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"1843774006\"",
+      "content-length": "7361",
+      "content-type": "text/html",
+      "strict-transport-security": "max-age=31536000",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "dtCookie": {
+          "domain": "interieur.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "YOMe1h3tgHKNQxhV6V7n5g__": {
+          "domain": "eirel.interieur.gouv.fr",
+          "expires": "2026-01-27T04:50:47.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
