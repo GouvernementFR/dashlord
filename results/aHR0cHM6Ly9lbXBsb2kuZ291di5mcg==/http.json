@@ -1,0 +1,161 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 28 Jan 2026 13:09:47 GMT",
+      "cache-control": "max-age=10800, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "last-modified": "Wed, 28 Jan 2026 17:16:50 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "1693",
+      "x-cache": "HIT",
+      "x-cache-hits": "16",
+      "x-cache-ttl": "9106.619",
+      "accept-ranges": "bytes",
+      "connection": "close",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "set-cookie": [
+        "TSe92b7ff4029=087dc22938ab28002e22349300c53a83c592555ac6047cce487a6853a89b6a4ecf51586c3e05653a2518ee806ea2935c; Secure; Max-Age=30; Path=/",
+        "TS780b36e3027=087dc22938ab200011af375c06d0331055b136e4ed1e3ae4800cf9896e9c756bdfe1949499db7d1208646305191130009bb4669e81cad4f43ba3dc0789c81f61b5b1ce486140a2a6e09804c48eb7939ec87ce8e793c3a81a69979dcc5c83ae7b; Secure; Path=/"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "emploi.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc4ff0492027": {
+          "domain": "emploi.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerpool-travail-production.cegedim.cloud-tcp80": {
+          "domain": "travail-emploi.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSe92b7ff4029": {
+          "domain": "travail-emploi.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS780b36e3027": {
+          "domain": "travail-emploi.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://travail-emploi.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://emploi.gouv.fr/",
+        "https://travail-emploi.gouv.fr/emploi/",
+        "https://travail-emploi.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
