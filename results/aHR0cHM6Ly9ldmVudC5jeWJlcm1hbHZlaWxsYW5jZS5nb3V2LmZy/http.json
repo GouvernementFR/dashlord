@@ -1,0 +1,124 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "via": "1.1 2733aa94cc15bc99c6328b4e904aa4cc.cloudfront.net (CloudFront), 1.1 64d5385c423c2207e3680beec4636de8.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "CMH68-P7, ORD56-P1",
+      "server": "CloudFront",
+      "date": "Thu, 29 Jan 2026 03:01:01 GMT",
+      "cache-control": "public, must-revalidate, proxy-revalidate, max-age=3, stale-while-revalidate=3, stale-if-error=300",
+      "last-modified": "Thu, 29 Jan 2026 03:01:01 GMT",
+      "access-control-allow-origin": "https://event.cybermalveillance.gouv.fr",
+      "x-enhanced": "Took 436ms (html took 436ms, event took 234ms)",
+      "vary": "Accept-Encoding",
+      "x-cache": "Miss from cloudfront",
+      "x-amz-cf-id": "nhj0FYTf_1lkh5puJmlBErBuGr_PYt1Pb1te_zA_5xnP7Am6J8zenQ=="
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://event.cybermalveillance.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://event.cybermalveillance.gouv.fr/",
+        "https://event.cybermalveillance.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.recaptcha.net/recaptcha/api.js?onload=recaptchaOnLoadCallback&render=explicit": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
