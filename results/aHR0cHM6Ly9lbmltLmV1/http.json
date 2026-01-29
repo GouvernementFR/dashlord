@@ -1,0 +1,147 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 29 Jan 2026 02:56:39 GMT",
+      "server": "Apache/2.2.15 (Red Hat)",
+      "x-powered-by": "PHP/5.4.34",
+      "x-drupal-cache": "HIT",
+      "etag": "\"1769655388-1\"",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 7 (https://www.drupal.org)",
+      "link": "<https://www.enim.eu/>; rel=\"canonical\",<https://www.enim.eu/>; rel=\"shortlink\"",
+      "cache-control": "public, max-age=3600",
+      "last-modified": "Thu, 29 Jan 2026 02:56:28 GMT",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "set-cookie": [
+        "visid_incap_2947508=F85SbBy2Q0KBIMnWz8JNw2bMemkAAAAAQUIPAAAAAABnSiTZIf6Hz151azyvs7np; expires=Thu, 28 Jan 2027 07:00:19 GMT; HttpOnly; path=/; Domain=.enim.eu",
+        "nlbi_2947508=6lxgf0VBoE6a7vOqHvn2XAAAAABE6J/Pd4zPwbmmeGaFs01n; HttpOnly; path=/; Domain=.enim.eu",
+        "incap_ses_1845_2947508=E4OKe+PNyl+PzpOSVcKaGWfMemkAAAAAhn9aGkhmJWeWKO+TJA4Eew==; path=/; Domain=.enim.eu"
+      ],
+      "x-cdn": "Imperva",
+      "x-iinfo": "57-20364188-20364192 NNNN CT(102 97 0) RT(1769655399548 12) q(0 0 2 1) r(3 4) U12"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "visid_incap_2947508": {
+          "domain": "enim.eu",
+          "expires": "2027-01-28T07:00:19.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "nlbi_2947508": {
+          "domain": "enim.eu",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_1845_2947508": {
+          "domain": "enim.eu",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.enim.eu/",
+      "redirects": true,
+      "route": [
+        "http://enim.eu/",
+        "https://www.enim.eu/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
