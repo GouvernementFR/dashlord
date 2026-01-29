@@ -1,0 +1,147 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Thu, 29 Jan 2026 02:58:35 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "68912",
+      "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "</assets/api_entreprise-68c9e9659c8a47d36c6e1b9453a88d05e9e237f1b051f10c3074323f9d9a3558.css>; rel=preload; as=style; nopush,</assets/api_entreprise-d174fae89f5196c66fa3511c5226e8be0f2caca4d5c049924cd4a3f7d63261b5.js>; rel=preload; as=script; nopush,</assets/turbo-a1d8a8d700e7b62aaaa3ef494d8093863f59d83ab9936c2c0217f3aaf8630538.js>; rel=modulepreload; as=script; nopush",
+      "etag": "W/\"640ef3951df3ae819e4df8768c2e4bc3\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "_admin_apientreprise_session=PStMXiT%2BF8FUgewccCUJiEd0Mp22PL853CNLrxTi1rDB6xc%2Bf8z37Dla9EdZ4gCztPFBwZf2XxCyvOB6OBTQnh3vjtc5qiKch6%2Fla3DQDNGcE4HZiFLYaZ%2FdeG6F%2Ff3jajAdcUiVz92G58KxUnvBRmCTx8veYjkpf69ioejvaSaApJEa8D%2F8RjSfTMNO6W6rRQkp6ruPkUc5I0AzDh8%2BCCOkm3oU1NIt8nt31tuHR7%2Bo%2BrPnVGvnKlpBuUrHMVgCS17%2F1lgKbWZmifvPY77rvMJF1QT1NRKpy7SeklnYPi33WqPY--zL24TxBYDDCQlBis--%2Bj8kP6QNezL7b15seZBDUQ%3D%3D; path=/; secure; httponly; samesite=lax"
+      ],
+      "x-request-id": "ba1f295d-9a56-4b4d-9375-f9a9cf650be9",
+      "x-runtime": "0.149075",
+      "vary": "Origin",
+      "strict-transport-security": "max-age=63072000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_admin_apientreprise_session": {
+          "domain": "entreprise.api.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://entreprise.api.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://entreprise.api.gouv.fr/",
+        "https://entreprise.api.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        },
+        "https://app.mailjet.com/pas-nc-embedded-v1.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hyperping.io/badge.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
