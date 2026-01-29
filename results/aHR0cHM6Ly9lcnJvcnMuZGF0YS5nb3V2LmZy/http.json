@@ -1,0 +1,143 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "max-age=0, no-cache, no-store, must-revalidate, private",
+      "content-language": "en",
+      "content-length": "15071",
+      "content-security-policy-report-only": "base-uri 'none'; style-src 'unsafe-inline' *; object-src 'none'; connect-src 'self' *.algolia.net *.algolianet.com *.algolia.io; img-src blob: data: *; media-src *; frame-ancestors 'none'; font-src 'self' data:; default-src 'none'; script-src 'self' 'unsafe-inline' 'report-sample' errors.data.gouv.fr 'nonce-jpouXccTa6lDsCQbTFQjPA=='; worker-src 'none'",
+      "content-type": "text/html",
+      "date": "Thu, 29 Jan 2026 02:56:50 GMT",
+      "expires": "Thu, 29 Jan 2026 02:56:50 GMT",
+      "server": "nginx",
+      "set-cookie": [
+        "sc=1KZvCwiDo0fsQ43x6t3HlESci5rxKglx; expires=Thu, 28 Jan 2027 02:56:50 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
+        "sentrysid=eyJ0ZXN0Y29va2llIjoid29ya2VkIiwiX25leHQiOiIvIn0:1vlIDC:TYX8_LMI_XUIYywftOYOL21w3jz95AY9NlK1-jFUiNc; expires=Thu, 12 Feb 2026 02:56:50 GMT; HttpOnly; Max-Age=1209600; Path=/; Secure"
+      ],
+      "vary": "Accept-Language, Cookie",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented-but-reporting-enabled",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "sentrysid": {
+          "domain": "errors.data.gouv.fr",
+          "expires": "2026-02-12T02:56:50.000Z",
+          "httponly": true,
+          "max-age": 1209600,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "sc": {
+          "domain": "errors.data.gouv.fr",
+          "expires": "2027-01-28T02:56:50.000Z",
+          "max-age": 31449600,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://errors.data.gouv.fr/auth/login/sentry/",
+      "redirects": true,
+      "route": [
+        "http://errors.data.gouv.fr/",
+        "https://errors.data.gouv.fr/",
+        "https://errors.data.gouv.fr/auth/login/",
+        "https://errors.data.gouv.fr/auth/login/sentry/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "deny"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
