@@ -1,0 +1,153 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 29 Jan 2026 02:59:19 GMT",
+      "server": "Apache",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "permissions-policy": "accelerometer=(), autoplay=(), camera=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=*, midi=(), payment=(), usb=()",
+      "feature-policy": "accelerometer 'none'; autoplay 'none'; camera *; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone *; midi 'none'; payment 'none'; usb 'none';",
+      "x-xss-protection": "1",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "x-jcms-ajax-id": "AjaxCtxt-0-1769655559542",
+      "vary": "Accept-Encoding",
+      "content-length": "5823",
+      "strict-transport-security": "max-age=94608000; includeSubDomains; preload",
+      "content-security-policy": "default-src https://* wss://* gap-iab://* data: blob: 'unsafe-inline' 'unsafe-eval'",
+      "connection": "close",
+      "content-type": "text/html;charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "data:",
+          "gap-iab://*",
+          "https://*",
+          "wss://*"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "JSESSIONID": {
+          "domain": "espace.lutte-pauvrete.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://espace.lutte-pauvrete.gouv.fr/front/privateLogin.jsp?redirect=https%3A%2F%2Fespace.lutte-pauvrete.gouv.fr%2Fjcms%2F",
+      "redirects": true,
+      "route": [
+        "http://espace.lutte-pauvrete.gouv.fr/",
+        "https://espace.lutte-pauvrete.gouv.fr/",
+        "https://espace.lutte-pauvrete.gouv.fr/front/privateLogin.jsp?redirect=https%3A%2F%2Fespace.lutte-pauvrete.gouv.fr%2Fjcms%2F"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=94608000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 94608000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
