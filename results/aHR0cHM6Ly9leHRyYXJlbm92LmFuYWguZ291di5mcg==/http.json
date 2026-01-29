@@ -1,0 +1,192 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx/1.27.2",
+      "date": "Thu, 29 Jan 2026 03:00:46 GMT",
+      "content-type": "text/html;charset=utf-8",
+      "transfer-encoding": "chunked",
+      "set-cookie": [
+        "AUTH_SESSION_ID=NTQyMWU2YjItMTVjYS00NmI4LWIwYzQtNDE4NTNmY2NiYjJlLmQ3dVRoaDhfRFk5RzROQnRJMVJYazZkY0lvbEt2WUNObEVpQ3FoeEU2UjJjWno0c0EtQl9iQ2ZRWW9peHRfaEYyemhaOWNfOTYtYlNhcHR4bXhtaHN3.82c25fc2336f-36387;Version=1;Path=/auth/realms/extranet_users/;Secure;HttpOnly;SameSite=None",
+        "KC_AUTH_SESSION_HASH=\"NORwrwKF9ndZdxbyoeGtQqB94W0YY+U2pTjIV/33eXg\";Version=1;Path=/auth/realms/extranet_users/;Max-Age=60;Secure;SameSite=Strict",
+        "KC_RESTART=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..pWL38y_CZHDbASib3iEDaw.gY4LTQisxr7TsjWIHqqQK9t9JBR_pw3xzkBLskmy9tz-_YMz3DeT_hwgOmSy-fafRQeOCmpd1dVqxOUxiM4yND655pa9hQNLwvCj_SeAkjs0MxcJ5I_b0GulaEmM56vvtXAlRaJ6epjpeJAJvAKcaS-D0Z9ZwhucuzH54EqlQ4urOGHU9L7LMqoFwm7FRo2V1X4z2UEuYv3SGtePxlzmyYU3xPv6pURfmznNJgRqy4YQL_kDkuIkEFZfTVLkuENuMznM7UxUmmEX8GynccDxa0kgl3xQmnRnVceaMh31b7a7i9Tlxe_G3svmWOL3SQAoKZU0m8Stlpdr5TQe3f2whcrNwY_JcAoD5-BZmfL3uRim9XA4HCexdqlWiquv2qZKOpFTIBEFyFQdXeFyt0mfF76LIZ4BdvOW--MCWzJKtK1tYJLwaTwt9BkAY-lePAEirSnUnuoT8x7NnElWpdS5RTYu8fWUU_JANGBti7ptWsrGJuKkkMUKaF34fHld_7PDtfdARchu6Yu-yVV5eL-ovnV-oZ8Mb-K0afVRZsPETBiUV3oFfoWDLefTosUGU0Yejsvqi-axrbQH-kY7bkF7n2UxmBE18kfl40blCfFDdnvdaTgVxX7gSIUXYqjJBz43IVK_v-Q9Sz6vywEu-x1X_gm0dPhD97GPqa1d5OaQO4W5ef4maD79llwbGc_BAoodvNGHQUb8KbbZZI_69FH8sPttmjJZs-vG3PPiJnYbkwYzAzz68yQuKcFGam2v1L3ol2tC8oeq7K1WIyygWpFXuRPfDfEH597wImx352yKwQeRXn4JazaS_-BsSckLwk3fb15SJMDky4CHoP_OAkfX4JtelAXv7xMhlXusRgc2Q9GsPZ5Ct0CsJcgxgehUwCeD2m_3TbnDgp90EJU9GAMQOtZ1Dd7KbAdvab5aCfH7mJgITrJXJ5aJgTq_zDuIezvC.-hzGAJWbpwLvgSWrNeKhNg;Version=1;Path=/auth/realms/extranet_users/;Secure;HttpOnly;SameSite=None"
+      ],
+      "cache-control": "no-store, must-revalidate, max-age=0",
+      "content-language": "en",
+      "content-security-policy": "frame-src 'self'; frame-ancestors 'self'; object-src 'none';",
+      "x-robots-tag": "none",
+      "traceresponse": "00-13fc822846077ae1a071dd361e1eca1f-6eb99261525616f6-01",
+      "x-dt-tracestate": "f91d7514-c11c5b27@dt",
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"-2055823757\"",
+      "strict-transport-security": "max-age=16000000;includeSubDomains;",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-xss-protection": "1 ;mode=block",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "SSESS5c14e1e6bbb3fcdf5db555c77ce7eb6e": {
+          "domain": "extrarenov.anah.gouv.fr",
+          "expires": "2026-02-21T06:34:05.000Z",
+          "httponly": true,
+          "max-age": 2000000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "dtCookie": {
+          "domain": "anah.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "AUTH_SESSION_ID": {
+          "domain": "extrarenov.anah.gouv.fr",
+          "httponly": true,
+          "path": "/auth/realms/extranet_users/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "KC_AUTH_SESSION_HASH": {
+          "domain": "extrarenov.anah.gouv.fr",
+          "max-age": 60,
+          "path": "/auth/realms/extranet_users/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "KC_RESTART": {
+          "domain": "extrarenov.anah.gouv.fr",
+          "httponly": true,
+          "path": "/auth/realms/extranet_users/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://extrarenov.anah.gouv.fr/auth/realms/extranet_users/protocol/openid-connect/auth?client_id=extranet_ecfr&response_type=code&scope=openid%20email%20profile&redirect_uri=https%3A//extrarenov.anah.gouv.fr/openid-connect/keycloak&state=PdbFP5-K0-AmC-03k2iouJ-6C6H9jPRomPp45klB-yc",
+      "redirects": true,
+      "route": [
+        "http://extrarenov.anah.gouv.fr/",
+        "https://extrarenov.anah.gouv.fr/",
+        "https://extrarenov.anah.gouv.fr/auth/realms/extranet_users/protocol/openid-connect/auth?client_id=extranet_ecfr&response_type=code&scope=openid%20email%20profile&redirect_uri=https%3A//extrarenov.anah.gouv.fr/openid-connect/keycloak&state=PdbFP5-K0-AmC-03k2iouJ-6C6H9jPRomPp45klB-yc"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000;includeSubDomains;",
+      "includeSubDomains": true,
+      "maxAge": 16000000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
