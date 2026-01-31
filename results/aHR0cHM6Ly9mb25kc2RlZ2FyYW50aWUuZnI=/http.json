@@ -1,0 +1,240 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 02:54:33 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "link": "<https://www.fondsdegarantie.fr/>; rel=shortlink",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "content-type": "text/html; charset=UTF-8",
+      "content-security-policy": "frame-ancestors 'self' ;script-src 'self' 'unsafe-inline' 'unsafe-eval' *.facebook.net tarteaucitron.io *.tarteaucitron.io *.google-analytics.com *.addthis.com *.googletagmanager.com *.matomo.cloud *.addtoany.com *.infisecure.com *.flippingbook.com *.cloudfront.net;report-uri https://prod.ap.batic.cudasvc.com/xenios/api/v1/violation/report?paid=16904&v=v2.0&payload=LRG-P4ZSBwSmQp3mNLuc8pbU9WjEe5EedSeufxGQtKUQP2erBIeiS-5nf3eKBfy6p1LeP4kuI8SYK_xzLGSlwudoWIjyERj8JrelWvNcj2a3wjTU8UteEQ4IyjzCXcmtjWuFRh3OOj7SpYh1bodOaKDEZCg53mEZx2Dtvj67izCUynWJTvF9PxeLW3mhwZ7n;worker-src 'self' *.flippingbook.com *.cloudfront.net blob:;",
+      "set-cookie": [
+        "BNIS_vid=QKKp8mPBE3QS262LVDxVJG8yQWItn/mh+2z3r5Gxy2EEw9/lrQf3rP0BrrxkwkbWt503ItBP5sxM8aZ7A+eq9MMLwPX/qwqaVFOE+YdOYB+r45KvMZx0/eBynaTs5TWblNAk+0uR4cICOw1n2d8qBiF8eg1lpE0yhDXHEJS3eAbqSW1z4dVH+8Ir/Ct6IoQx5pAfWXO88kc=; Path=/",
+        "BNIS___utm_is1=KzdRNkDan/mslCUFtUwdjQ6tQ7pwWLXrRLYF0wHGu/+/XCvqRF8J6pm4hHEj6Vyj39wRlQYBX2f3lbbYGIhNmyc1LZs3IZxt1bA8RDJsjvdsTk7OmDxhEA==; Max-Age=31536000; Path=/",
+        "BNIS___utm_is2=Rj+ZKfi5tosfRm3qAtECsnE4NfBWr3XW+wkE8KNv3GDqD+7Lp9KAytt+TcRcEuOx/Ne6OWO2Vsg=; Max-Age=10800; Path=/",
+        "BNIS___utm_is3=UVmn2mOjWnNliaGbpYxfgKllLiQc3qLg6Lg8xKTo6AiADPslzbtfwEq4D7K3xGxiNlhS3Q6OmflMeiQ235oMw9fk7gYTZXCDzrJYGL5DDpI=;  Path=/",
+        "BNIS_x-bni-jas=KflhrWtb03rHQ3LBBgMNSlmWz/cmNc9+g625RIW29DfNXO8Iqx83MK90pATFmEZ9FO604AK1qWk/kxrv9+nWFkJvZe6AXPPc1lKIUFIVuaRGu3EcTtd2eQ==; Path=/",
+        "PHPSESSID=1la1u5ehku1sukace111518618; path=/; Secure; SameSite=Lax",
+        "BNES_PHPSESSID=TU/9yPGJM7KBpMcoGRF2uFk5GmZb74YcZNxIEt3SRgfm5pTBVJBWe9YY2H5MSBoMxUsWDkHOyUYHrdAzsq2mYtt+aKU57fKNj72cxXhsGSo=; path=/; Secure; SameSite=Lax",
+        "pll_language=fr; expires=Sun, 31 Jan 2027 02:54:34 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax",
+        "BNES_pll_language=Rsyk8v5NVYieg3weno3C2Jx9YRzRMT01gmp1oBj6C4lre9vNZuLmW3mLMrprlvlcwjGXWSn38c5/Hu6TkECE8A==; expires=Sun, 31 Jan 2027 02:54:34 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+      ],
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.addthis.com",
+          "*.addtoany.com",
+          "*.cloudfront.net",
+          "*.facebook.net",
+          "*.flippingbook.com",
+          "*.google-analytics.com",
+          "*.googletagmanager.com",
+          "*.infisecure.com",
+          "*.matomo.cloud",
+          "*.tarteaucitron.io",
+          "tarteaucitron.io"
+        ],
+        "report-uri": [
+          "https://prod.ap.batic.cudasvc.com/xenios/api/v1/violation/report?paid=16904&v=v2.0&payload=lrg-p4zsbwsmqp3mnluc8pbu9wjee5eedseufxgqtkuqp2erbieis-5nf3ekbfy6p1lep4kui8syk_xzlgslwudowijyerj8jrelwvncj2a3wjtu8uteeq4iyjzcxcmtjwufrh3ooj7spyh1bodoakdezcg53mezx2dtvj67izcuynwjtvf9pxelw3mhwz7n"
+        ],
+        "worker-src": [
+          "'self'",
+          "*.cloudfront.net",
+          "*.flippingbook.com",
+          "blob:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "BNIS_vid": {
+          "domain": "www.fondsdegarantie.fr",
+          "path": "/",
+          "port": null
+        },
+        "BNIS___utm_is1": {
+          "domain": "www.fondsdegarantie.fr",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null
+        },
+        "BNIS___utm_is2": {
+          "domain": "www.fondsdegarantie.fr",
+          "max-age": 10800,
+          "path": "/",
+          "port": null
+        },
+        "BNIS___utm_is3": {
+          "domain": "www.fondsdegarantie.fr",
+          "path": "/",
+          "port": null
+        },
+        "BNIS_x-bni-jas": {
+          "domain": "www.fondsdegarantie.fr",
+          "path": "/",
+          "port": null
+        },
+        "PHPSESSID": {
+          "domain": "www.fondsdegarantie.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "BNES_PHPSESSID": {
+          "domain": "www.fondsdegarantie.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "pll_language": {
+          "domain": "www.fondsdegarantie.fr",
+          "expires": "2027-01-31T02:54:34.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "BNES_pll_language": {
+          "domain": "www.fondsdegarantie.fr",
+          "expires": "2027-01-31T02:54:34.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.fondsdegarantie.fr/",
+      "redirects": true,
+      "route": [
+        "http://fondsdegarantie.fr/",
+        "http://www.fondsdegarantie.fr/",
+        "https://www.fondsdegarantie.fr//",
+        "https://www.fondsdegarantie.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=www.fondsdegarantie.fr&uuid=b254035ae7275324b9c2d029faf289485c48df74": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.infisecure.com/barracuda.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
