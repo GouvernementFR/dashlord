@@ -1,0 +1,229 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "age": "36591",
+      "content-length": "54983",
+      "content-type": "text/html;charset=utf-8",
+      "date": "Fri, 30 Jan 2026 15:39:28 GMT",
+      "etag": "W/\"05a77ac8030d2f893080c0b0eadd7436--gzip\"",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "server": "Squarespace",
+      "set-cookie": [
+        "crumb=BX69gg9mv9mwZTkyNWRlMGFkNWQ3ZDBkZTJhN2Q4MWU4ZDkyNjhm;Secure;Path=/"
+      ],
+      "strict-transport-security": "max-age=0",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-contextid": "6xPEDV0c/yt123qxw",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "crumb": {
+          "domain": "frenchtechlondon.com",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://frenchtechlondon.com/",
+      "redirects": true,
+      "route": [
+        "http://frenchtechlondon.com/",
+        "https://frenchtechlondon.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=0",
+      "includeSubDomains": false,
+      "maxAge": 0,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-e88ac43909c3e4ac-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/common-vendors-ca5ce1a64a3152e7-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/common-4af50033f568d6e6-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "//assets.squarespace.com/universal/scripts-compressed/performance-6c7058b44420b6db-min.en-US.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/image-effect-refracted-lines.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/website.components.imageFluid.shared.constants.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/image-effect-liquid.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/8830.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/website.components.imageFluid.visitor.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/de3cfdd7-c40e-48fc-a4e7-e1fe286e9678_305/8830.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/de3cfdd7-c40e-48fc-a4e7-e1fe286e9678_305/3196.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/image-effect-parallax.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/de3cfdd7-c40e-48fc-a4e7-e1fe286e9678_305/block-animation-preview-manager.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/9882.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/image-effect-refracted-circles.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/de3cfdd7-c40e-48fc-a4e7-e1fe286e9678_305/trigger-animation-runtime.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/de3cfdd7-c40e-48fc-a4e7-e1fe286e9678_305/website.components.button.visitor.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/image-effect-film-grain.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/fc932e99-7613-41a4-a126-d9ee594f93ed_135/748.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.1851d17e358685d86e509b43c0ad04c8.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
