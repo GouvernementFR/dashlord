@@ -1,0 +1,189 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 02:54:36 GMT",
+      "set-cookie": [
+        "AUTH_SESSION_ID=OTZlNGQ2ZmQtNjJjYS00NGU1LTk3MjgtM2NmZDhiMmQyMWVhLnpEcUxCWFZIaTBpUHA2dkJwQVAxLU12d0ZRUEFSeTA1QjdhMk5jaHAtclZDUUxfTXF5blphdUZZWGgxaVhhR21jNVdzbGRzZ0RRSXZ0bkpyMUdoYUJB.91c3fab8d2a8-1268; Version=1; Path=/realms/siarmes/; Secure; HttpOnly; SameSite=None",
+        "KC_AUTH_SESSION_HASH=fB4npyf02rMN2lVnDkC1PEUUXqL2kcrV+XSKJavT5is; Version=1; Path=/realms/siarmes/; Max-Age=60; Secure; SameSite=Strict",
+        "KC_RESTART=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..gDJCoo4nEVCYOG8HshX1IQ.b2Z1Y-yGbOU6Ixe4ASPMxMIitt5l1GHf_iX1l8r1YVVKTdSqn2q6pxE4ltaZzX2Vna5l9lyhGhDmHQqmeT80ywLe1B7ki5IdfqK7Pa5xFrXzZXB3mCsrqgAPQ-ZYMCcaUjezc4UbjnGb8VmNqS33-oxhYXHL8OZT_kYoF3-akT0iFbgxP11zKivFZ6QkiOtTYQxZdANAHB2MdM3oEfVcW8KPPtiRztoAbxvGWwG7rWdwTQhKEHmPq7lHYZjtG7AqNH21OhncsYeUefa-RPyLN8HIHU-bJw5ct2gaWuTVu5cg0MHJYJiWGdgGFWuwZewH3DUZVQEYwp0epsgNQxs36MVYH93wRfW7NsqJQOBZpQiIv8JzsRD9CHVOJj-9p7AyCn3MtyYCzPbl11IFRVsOAA6BDV7SZUlRRBWVe26p7u9gsdYJVLYSOMVtb4jPlH_N-3pF6wHYGEAA89IoCJQ6tavx5sEbeMYEoWP1PhvFsvnFXB-I5SJcMyp0HoWBq5YC_F9U4WV_NNiAtaLBOekf2K7GW7deiX6_1NdkWUNdW7SySDEYBX2qWvgb8zActtHd7sYnDfpbhxsEr6zLTUAV1MGs3igmUuGNbnn-z0BNZ0h362q4_v29ZH2UpozpcBylNOnqmXrloQyI3ze6-8Y2j0v2oTt9YhZP0MWmAfzUClIddtvmCgdO_tslBWps8QebcwbW10z0rSV7T4DiAl7gqiUzXKcx1DM5fx3TWKytuE_sO3I4WbT7jC5Q0jPGA6gI-5iPjs133mqiiNKqhS2op35tmC0yeO4ffrZOj76kDzDoyeP8TA1CmWFrX6cv21HwjydMOB7WDZz9VWkRLOpka38wsbB8YxsT07Eud3F4taXCk6GzqAi9I98x_kpgoCFnC8otsFDAiFqK3V5MXiHWswjcTLwzDgl_RtVyfJQ4iKk7gNH-5vKOtrjMZyi3iJwoj4GXYj1fPt0HN9_ubPeCd2jHvugSa8BnQQ0nsOO_XMGgitjovUgZyXX7Zv66MR1Tb9e45wPk-xoCYNd_RicyfTiL8iu4_MTjtqKKyCTyTyAb5n0hYUcG5bBjPN8JeyWWFd4O-FATwLO6__iqYaLQhlupatCsZdhEuuhP4zfUOeI.5FghAcZqkNJAiy9CA1j5CQ; Version=1; Path=/realms/siarmes/; Secure; HttpOnly; SameSite=None",
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1QfPOgwSDQ2N; Expires=Sat, 31-Jan-2026 04:54:36 GMT; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, max-age=0",
+      "content-language": "fr",
+      "content-security-policy": "frame-src 'self'; frame-ancestors 'self'; object-src 'none';",
+      "content-type": "text/html;charset=utf-8",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
+      "x-robots-tag": "none",
+      "x-xss-protection": "1; mode=block",
+      "vary": "Accept-Encoding",
+      "expect-ct": "max-age=86400, enforce",
+      "content-length": "1794",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "YOMe1h3tgHKNQxhV6V7n5g__": {
+          "domain": "formation.sia.registres.interieur.gouv.fr",
+          "expires": "2026-01-31T04:54:36.000Z",
+          "path": "/",
+          "port": null
+        },
+        "mod_auth_openidc_state_6_bqbEharASRUSJHvIQOptEE18w": {
+          "domain": "formation.sia.registres.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "AUTH_SESSION_ID": {
+          "domain": "formation.sia.registres.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/realms/siarmes/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "KC_AUTH_SESSION_HASH": {
+          "domain": "formation.sia.registres.interieur.gouv.fr",
+          "max-age": 60,
+          "path": "/realms/siarmes/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "KC_RESTART": {
+          "domain": "formation.sia.registres.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/realms/siarmes/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://formation.sia.registres.interieur.gouv.fr/realms/siarmes/protocol/openid-connect/auth?response_type=code&scope=openid%20email&client_id=siarmes-oidc-client-app&state=vFjDLedigqW4aWCfIj5EnlngZ4E&redirect_uri=https%3A%2F%2Fformation.sia.registres.interieur.gouv.fr%2Flivre-de-police%2Fredirect_uri&nonce=bCKGQ-DbGy_HDle_aJpBfIjwe_2rDYucAMazQX7V_AA",
+      "redirects": true,
+      "route": [
+        "http://formation.sia.registres.interieur.gouv.fr/",
+        "https://formation.sia.registres.interieur.gouv.fr/",
+        "https://formation.sia.registres.interieur.gouv.fr/livre-de-police",
+        "https://formation.sia.registres.interieur.gouv.fr/realms/siarmes/protocol/openid-connect/auth?response_type=code&scope=openid%20email&client_id=siarmes-oidc-client-app&state=vFjDLedigqW4aWCfIj5EnlngZ4E&redirect_uri=https%3A%2F%2Fformation.sia.registres.interieur.gouv.fr%2Flivre-de-police%2Fredirect_uri&nonce=bCKGQ-DbGy_HDle_aJpBfIjwe_2rDYucAMazQX7V_AA"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
