@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 02:55:04 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "cloudflare",
+      "set-cookie": [
+        "target_audience=company; path=/",
+        "__cf_bm=r9lasidCSs5Xw1C5ktKkzu7Plf1OdXfEHJ0Yn_yUqDo-1769828103.303042-1.0.1.1-4mzqC7U8bJNwe9NrGSju9o.5UDASKy4jU6bgm1p6AILV0_v85krIMC4w8jrvdzGjyn6J2t6sx_9m32N6_CRq0rCte1_y68zVFW29JGGALscmI9xZZvEgG1ZjLzZ156Pg; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 31 Jan 2026 03:25:04 GMT"
+      ],
+      "link": "<https://fondschaleur.ademe.fr/wp-json/>; rel=\"https://api.w.org/\", <https://fondschaleur.ademe.fr/wp-json/wp/v2/pages/170>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://fondschaleur.ademe.fr/>; rel=shortlink",
+      "refresh": "0",
+      "vary": "X-Forwarded-For",
+      "strict-transport-security": "max-age=63072000",
+      "x-cache-status": "MISS",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9c65ed8daf3fd700-IAD"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "target_audience": {
+          "domain": "fondschaleur.ademe.fr",
+          "path": "/",
+          "port": null
+        },
+        "__cf_bm": {
+          "domain": "ademe.fr",
+          "expires": "2026-01-31T03:25:04.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://fondschaleur.ademe.fr/",
+      "redirects": true,
+      "route": [
+        "http://fondschaleur.ademe.fr/",
+        "https://fondschaleur.ademe.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
