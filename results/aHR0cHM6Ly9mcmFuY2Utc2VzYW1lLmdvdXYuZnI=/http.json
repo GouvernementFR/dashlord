@@ -1,0 +1,131 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 02:56:39 GMT",
+      "server": "DGDDI-WS",
+      "strict-transport-security": "max-age=3600; includeSubDomains; preload",
+      "set-cookie": [
+        "ROUTEID=.tomcat93_francesesame_portail_web; path=/"
+      ],
+      "accept-ranges": "bytes",
+      "etag": "W/\"1623-1747400018000-gzip\"",
+      "last-modified": "Fri, 16 May 2025 12:53:38 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "same-origin",
+      "cache-control": "no-cache",
+      "content-length": "629",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "ROUTEID": {
+          "domain": "france-sesame.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=3600; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 3600,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tag.aticdn.net/613880/smarttag.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
