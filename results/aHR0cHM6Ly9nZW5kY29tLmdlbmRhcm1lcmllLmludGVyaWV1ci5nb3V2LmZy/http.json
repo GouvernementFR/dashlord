@@ -1,0 +1,176 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 105,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 02:59:43 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "vary": "Accept-Encoding, Accept",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-discourse-route": "static/show",
+      "cross-origin-opener-policy": "same-origin-allow-popups",
+      "discourse-no-onebox": "1",
+      "cache-control": "no-cache, no-store",
+      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-eMLhKGpeM8NQlTGdgfNNqWyOy' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'",
+      "x-request-id": "28d32d2d-91d3-45bb-b46a-8050e8d817ef",
+      "x-runtime": "0.027426",
+      "x-discourse-trackview": "1",
+      "strict-transport-security": "max-age=31536000",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-emlhkgpem8nqltgdgfnnqwyoy'",
+          "'strict-dynamic'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "manifest-src": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": true,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "destination_url": {
+          "domain": "gendcom.gendarmerie.interieur.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "SESSION-RP": {
+          "domain": "gendcom.gendarmerie.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS014d4b06": {
+          "domain": "gendcom.gendarmerie.interieur.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://gendcom.gendarmerie.interieur.gouv.fr/login",
+      "redirects": true,
+      "route": [
+        "http://gendcom.gendarmerie.interieur.gouv.fr/",
+        "https://gendcom.gendarmerie.interieur.gouv.fr/",
+        "https://gendcom.gendarmerie.interieur.gouv.fr/login"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
