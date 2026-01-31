@@ -1,0 +1,188 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 02:55:08 GMT",
+      "set-cookie": [
+        "AUTH_SESSION_ID=YWUxNTA0MWYtMzNlYy00NTc3LWJkZDAtNjRkMTZlNjBiY2MzLmdWTGREamh1THN3bEZUSDZKNmZ4MzVVYkUxbGhfZ1JuejczZWF0V2t0R2M3Z3FYSlFyM0RyX3BsT1VObTctdWx3cE9SdjMxZmxCREdaaDhxRlJjMGVR.59c869f1f8dd-2513; Version=1; Path=/realms/detenteurs/; Secure; HttpOnly; SameSite=None",
+        "KC_AUTH_SESSION_HASH=4gmTfSCmjXO0hZRAzMEiMSbi86yUdPtWZbet69M6M+Y; Version=1; Path=/realms/detenteurs/; Max-Age=60; Secure; SameSite=Strict",
+        "KC_RESTART=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..LMDpUF6bTBFEQYtK746bmA.Dw_wzLoeh4KMWbfWpsxe_ScmU_Bj_nMox6SALdKdfXO7OBAVubwij9lfr7O8hj8wBPv139NT43peimsO4RleIskd4gQ6fwBwoq8FbWmXoMsxAto_WkA7TUnHf6v5LXzhJjZTxKqn3E2HvNTAOS56r7U9pvg6j-GsjnbRZQVJmnAXpkw7h0-fYW60XYgi2dMF300tKuKNX4uJtrplp-mQ2EQlErTsL4pYxgxkDx9TX4cd3DpvDz4VIdpzM9aOP1hNTKYEWQremli--0o5Mg_g25JTs-g4kW-6EvMJI63ltzpjHslJ1cFBiBphdR5dY8lDFz_Kr5W6KZ_Gq6y7k9x2ATgm5DqbMXzWo6gB51UtruF7JS55OnM-S_LVh17x-jE0A4hPYH_GW9hbebrBMBlju1wmliuYbI4iIEaKJKdESci2E9awbqqTKmDt9-qk-hyxXd9JzUbC6U-OjpLGIhaFL_l9zO86D9tPygpGzgZcKFhiPj_O1kr6pJQJ2RfrRBudrDYomOUTPgFRkxmPjVT47RXIZtzU3Aav2PTNX7YnQDUW41hwX2wRznpWdXnkBbCH-ecUSuoXST8dj5pKgBQxZKUKnc5igBOOVxmWoEeLAVC1gvpidmZ6BSKsQErsSr-M6zUohcq4051UPcU3lJAiLMCf7KGSZadGIcevY0Mpd9l1a9SkWVL0IV1ZHihkq51Q2zEfsZXa9WpRO7J45lqvb65-oRfT67zfQdTqh6MLjkgcMs4uV3HbagfoZGqAm_o2ZTnGNCvVBsOB53Vlx8n6uqhZTB4Pk-1Y0r7YmlPZHcEWkW6LYPeWKKRWK4Uo2fiy2SYuRMaQ_inBhCF2cTyxkOmZS3JrmBqtiS23CMa-CJre0mCn1k90SbAte7lI7wi5GKYoplFnyjckGrcHwk-jkhmJ6cc3nhWmRQ5SybEcDE5eG6qmgYfov7WOzTyP7IvqDW_U0h9L1e2EJoQZZdJx_ZEBzXzrkcj4ilGNMqu5b16cHXBQ0wLt1CW8lIg6uBoj_nnC14yMQmD8fOaZ7RwviW1UUWP15ixov90aLq1J8YfRv35GTAotWskxo6JcUY863iDnkq8cxrJnORz85WrnL35-BbLhRaAiNxQ9qj9nOTd2xkacXw-2BK1HwfIWzngH.y1rdt4OrSTiuo-C6qSwT1g; Version=1; Path=/realms/detenteurs/; Secure; HttpOnly; SameSite=None",
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1x-LOgwSDj7o; Expires=Sat, 31-Jan-2026 04:55:08 GMT; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, max-age=0",
+      "content-language": "fr",
+      "content-security-policy": "frame-src 'self'; frame-ancestors 'self'; object-src 'none';",
+      "content-type": "text/html;charset=utf-8",
+      "referrer-policy": "no-referrer",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
+      "x-robots-tag": "none",
+      "x-xss-protection": "1; mode=block",
+      "vary": "Accept-Encoding",
+      "content-length": "4075",
+      "strict-transport-security": "max-age=2678400",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "YOMe1h3tgHKNQxhV6V7n5g__": {
+          "domain": "formation.sia.detenteurs.interieur.gouv.fr",
+          "expires": "2026-01-31T04:55:08.000Z",
+          "path": "/",
+          "port": null
+        },
+        "mod_auth_openidc_state_Fcn0CuzBznEc2OOov2H_M77k9_w": {
+          "domain": "formation.sia.detenteurs.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "AUTH_SESSION_ID": {
+          "domain": "formation.sia.detenteurs.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/realms/detenteurs/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "KC_AUTH_SESSION_HASH": {
+          "domain": "formation.sia.detenteurs.interieur.gouv.fr",
+          "max-age": 60,
+          "path": "/realms/detenteurs/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "KC_RESTART": {
+          "domain": "formation.sia.detenteurs.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/realms/detenteurs/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://formation.sia.detenteurs.interieur.gouv.fr/realms/detenteurs/protocol/openid-connect/auth?response_type=code&scope=openid%20email&client_id=detenteurs-oidc-client-app&state=mrcjR5q0EjUdvERplF4T46FWDWo&redirect_uri=https%3A%2F%2Fformation.sia.detenteurs.interieur.gouv.fr%2Fespace-detenteurs%2Fredirect_uri&nonce=icbXhGmJ5qXnq9ZA5ISHm0FlnWnQB_cTyzP1b9zAUr4",
+      "redirects": true,
+      "route": [
+        "http://formation.sia.detenteurs.interieur.gouv.fr/",
+        "https://formation.sia.detenteurs.interieur.gouv.fr/",
+        "https://formation.sia.detenteurs.interieur.gouv.fr/espace-detenteurs",
+        "https://formation.sia.detenteurs.interieur.gouv.fr/realms/detenteurs/protocol/openid-connect/auth?response_type=code&scope=openid%20email&client_id=detenteurs-oidc-client-app&state=mrcjR5q0EjUdvERplF4T46FWDWo&redirect_uri=https%3A%2F%2Fformation.sia.detenteurs.interieur.gouv.fr%2Fespace-detenteurs%2Fredirect_uri&nonce=icbXhGmJ5qXnq9ZA5ISHm0FlnWnQB_cTyzP1b9zAUr4"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2678400",
+      "includeSubDomains": false,
+      "maxAge": 2678400,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
