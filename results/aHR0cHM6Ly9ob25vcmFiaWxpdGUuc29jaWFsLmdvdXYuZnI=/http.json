@@ -1,0 +1,190 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 31 Jan 2026 11:06:03 GMT",
+      "cache-control": "must-revalidate, no-cache, private",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.matomo.cloud https://cdn.jsdelivr.net https://unpkg.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://unpkg.com; img-src 'self' https://cdnjs.cloudflare.com data:; media-src 'self'; frame-src 'self' https://portail-demande.honorabilite.social.gouv.fr/ https://chatbot-runner.kleegroup.com/; font-src 'self' https://cdnjs.cloudflare.com data:; connect-src 'self' https://stats-analytics.cegedim.cloud https://cdn.matomo.cloud; report-uri /report-csp-violation",
+      "x-xss-protection": "1; mode=block",
+      "vary": "Accept-Encoding",
+      "content-length": "7368",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "0",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "accept-ranges": "bytes",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-sih-edito-prod.cegedim.cloud.cegedim.cloud-tcp80=!Xpuk3PwWPJ3BLmMXIkI7F7SI9ajmiuvkynaoMt9+AHYeN2fcc6RuLh3ZjLUi+iKG8qps1Rc5GL0L/Lzbx0xKI2MkuzI=; path=/; Httponly; Secure"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net",
+          "https://cdn.matomo.cloud",
+          "https://cdnjs.cloudflare.com",
+          "https://unpkg.com"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://unpkg.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://cdnjs.cloudflare.com"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://chatbot-runner.kleegroup.com/",
+          "https://portail-demande.honorabilite.social.gouv.fr/"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://cdnjs.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://cdn.matomo.cloud",
+          "https://stats-analytics.cegedim.cloud"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-sih-edito-prod.cegedim.cloud.cegedim.cloud-tcp80": {
+          "domain": "honorabilite.social.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
