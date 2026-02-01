@@ -1,0 +1,185 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx/1.25.3",
+      "date": "Sun, 01 Feb 2026 03:09:26 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-powered-by": "PHP/7.4.33",
+      "cache-control": "no-cache, private",
+      "set-cookie": [
+        "XSRF-TOKEN=eyJpdiI6IkYvWExlV1pBenR6VGVaQjRaakdFV1E9PSIsInZhbHVlIjoiblRLcldweHlnKzNNMWdnQ1haWTh5eWVmUmI4M0ZwOHhkL1VKck13bmxVb1VkRDhud1BGMmpnN3hzcFV4UVRKZEgxcXVPQjgwRHFrT20yeTRPSnFUQXlHaXdKK2hwalEzNVc3VVZzNlJuM3MwS3R2QUhNV2xyS3NzNGxSN3llSTEiLCJtYWMiOiIyNjhiZmVjYjgwNDViNmYzZGE3NDc2MzA4MWQ3YWM4ODM5Zjc3ODYxMDliZTc1MWU2MmMyYTdjNmVjMjllNzcwIn0%3D; expires=Sun, 01-Feb-2026 05:09:26 GMT; Max-Age=7200; path=/; samesite=lax",
+        "ifargentine_session=eyJpdiI6IlFrWGp3OU1CZVB6K0NZYnNlQmZ3RGc9PSIsInZhbHVlIjoiajJ0ZmlNcVYvOENzdW5BdEpYZ3ZxaEhWeTZYa1BjQTJQMzZLM1NYb2l5b3RvUGpqb2pFK21oL3U4QzJnK1BaQk96dzVNZG4zYlAxNEV2SlgzMkJQaHRrWGxFbG0yNVJOQ25IQUlhWkZ6SmpMd0tsL3lkU3p6S28zLzZGbnBSaGYiLCJtYWMiOiIwMTAwYTY5M2QzZDY1Y2UwYzUxN2I5Y2M5YjI0YzA2YTMwZmZlNTdmODQ1NTkzZWMxMDEzNzJmMGEyNmJjMTk3In0%3D; expires=Sun, 01-Feb-2026 05:09:26 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+      ],
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=31536000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "XSRF-TOKEN": {
+          "domain": "ifargentine.com.ar",
+          "expires": "2026-02-01T05:09:26.000Z",
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "ifargentine_session": {
+          "domain": "ifargentine.com.ar",
+          "expires": "2026-02-01T05:09:26.000Z",
+          "httponly": true,
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://ifargentine.com.ar/",
+      "redirects": true,
+      "route": [
+        "http://ifargentine.com.ar/",
+        "https://ifargentine.com.ar/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=UA-76117348-1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/aos@2.3.1/dist/aos.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/vendor/modernizr.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/vendor/TweenMax.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/vendor/ScrollToPlugin.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/vendor/EasePack.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/vendor/libraries.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/vendor/foundation.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.jasonlusk.com/scroll/js/app.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.lightwidget.com/widgets/lightwidget.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
