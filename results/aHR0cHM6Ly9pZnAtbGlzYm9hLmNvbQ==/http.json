@@ -1,0 +1,164 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 7,
+    "testsPassed": 3,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 01 Feb 2026 03:11:18 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "16600",
+      "connection": "close",
+      "server": "OVHcloud",
+      "x-powered-by": "PHP/8.3",
+      "last-modified": "Sun, 01 Feb 2026 00:02:22 GMT",
+      "cache-provider": "CLOUDWAYS-CACHE-DE",
+      "content-security-policy": "upgrade-insecure-requests;, upgrade-insecure-requests;",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "referrer-policy": "strict-origin-when-cross-origin, strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000, max-age=63072000; preload",
+      "x-content-type-options": "nosniff, nosniff",
+      "cross-origin-opener-policy": "unsafe-none, unsafe-none",
+      "cross-origin-embedder-policy": "unsafe-none; report-to='default', unsafe-none; report-to='default'",
+      "cross-origin-resource-policy": "cross-origin, cross-origin",
+      "permissions-policy": "accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(self), encrypted-media=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=*, picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=(), gamepad=(), serial=(), accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(self), encrypted-media=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=*, picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=(), gamepad=(), serial=()",
+      "x-xss-protection": "1; mode=block, 1; mode=block",
+      "vary": "Accept-Encoding",
+      "cache-control": "private, must-revalidate",
+      "expires": "Sun, 01 Feb 2026 04:11:18 GMT",
+      "access-control-allow-methods": "GET,POST",
+      "access-control-allow-headers": "Content-Type, Authorization",
+      "cross-origin-embedder-policy-report-only": "unsafe-none; report-to='default'",
+      "cross-origin-opener-policy-report-only": "unsafe-none; report-to='default'",
+      "x-content-security-policy": "default-src 'self'; img-src *; media-src * data:;",
+      "x-permitted-cross-domain-policies": "none"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ],
+        ",": [
+          "upgrade-insecure-requests"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https",
+      "scoreModifier": -20,
+      "destination": "http://www.ifp-lisboa.com/",
+      "redirects": true,
+      "route": [
+        "http://ifp-lisboa.com/",
+        "http://www.ifp-lisboa.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin, strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=31536000, max-age=63072000; preload",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//www.ifp-lisboa.com//content/themes/ifplisboa/dist/js/script.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.googletagmanager.com/gtag/js?id=G-KGZJVPW3DW": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v12.0": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": false,
+      "result": "corp-header-invalid",
+      "scoreModifier": -5,
+      "data": "cross-origin, cross-origin",
+      "http": true,
+      "meta": false
+    }
+  }
+}
