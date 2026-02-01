@@ -1,0 +1,196 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 01 Feb 2026 03:09:49 GMT",
+      "server": "Apache",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "CMSSESSIDf023dce2c204=jff518lkmtosav84a0m4tj6heo; path=/"
+      ],
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=63072000;",
+      "x-xss-protection": "1; mode=block",
+      "upgrade": "h2",
+      "connection": "Upgrade, close",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "sameorigin",
+      "access-control-allow-origin": "*",
+      "content-security-policy": "default-src    'self' *.datatables.net https://captcheck.netsyms.com ;            base-uri       'self' ;            frame-src      'self' https://maps.google.com https://www.google.com https://www.youtube.com https://www.idref.fr https://duckduckgo.com https://cdn.knightlab.com ;            img-src        'self' data: https://*.tile.openstreetmap.fr https://*.opentopomap.org https://api.mapbox.com https://api.tiles.mapbox.com https://server.arcgisonline.com https://unpkg.com *.datatables.net https://captcheck.netsyms.com *.jquery.com;            font-src       'self' data: ;            script-src     'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://*.datatables.net https://code.jquery.com https://api.mapbox.com https://*.youtube.com https://ajax.googleapis.com https://captcheck.netsyms.com *.githubusercontent.com ;            style-src      'self' 'unsafe-inline' https://unpkg.com https://*.datatables.net https://api.mapbox.com  https://code.jquery.com;",
+      "content-length": "11218",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.datatables.net",
+          "https://captcheck.netsyms.com"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://cdn.knightlab.com",
+          "https://duckduckgo.com",
+          "https://maps.google.com",
+          "https://www.google.com",
+          "https://www.idref.fr",
+          "https://www.youtube.com"
+        ],
+        "img-src": [
+          "'self'",
+          "*.datatables.net",
+          "*.jquery.com",
+          "data:",
+          "https://*.opentopomap.org",
+          "https://*.tile.openstreetmap.fr",
+          "https://api.mapbox.com",
+          "https://api.tiles.mapbox.com",
+          "https://captcheck.netsyms.com",
+          "https://server.arcgisonline.com",
+          "https://unpkg.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.githubusercontent.com",
+          "https://*.datatables.net",
+          "https://*.youtube.com",
+          "https://ajax.googleapis.com",
+          "https://api.mapbox.com",
+          "https://captcheck.netsyms.com",
+          "https://code.jquery.com",
+          "https://unpkg.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.datatables.net",
+          "https://api.mapbox.com",
+          "https://code.jquery.com",
+          "https://unpkg.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "CMSSESSIDf023dce2c204": {
+          "domain": "www.ifao.egnet.net",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
+      "destination": "https://www.ifao.egnet.net/",
+      "redirects": true,
+      "route": [],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
