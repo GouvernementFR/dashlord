@@ -1,0 +1,319 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sun, 01 Feb 2026 03:04:36 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "52143",
+      "connection": "close",
+      "x-powered-by": "PHP/8.1.33, PleskLin",
+      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+      "link": "<https://guadeloupe-portcaraibes.com/wp-json/>; rel=\"https://api.w.org/\", <https://guadeloupe-portcaraibes.com/wp-json/wp/v2/pages/381>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://guadeloupe-portcaraibes.com/>; rel=shortlink",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://guadeloupe-portcaraibes.com/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://guadeloupe-portcaraibes.com",
+      "vary": "Accept-Encoding",
+      "x-cache-status": "MISS"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://guadeloupe-portcaraibes.com/",
+      "redirects": true,
+      "route": [
+        "http://guadeloupe-portcaraibes.com/",
+        "https://guadeloupe-portcaraibes.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://c0.wp.com/c/6.9/wp-includes/js/jquery/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/jquery/jquery-migrate.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.brevo.com/js/sdk-loader.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/vendor/wp-polyfill.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/vendor/react.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/vendor/react-dom.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/vendor/react-jsx-runtime.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/dom-ready.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/hooks.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/i18n.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/a11y.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/url.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/api-fetch.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/blob.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/block-serialization-default-parser.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/autop.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/deprecated.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/dom.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/escape-html.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/element.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/is-shallow-equal.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/keycodes.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/priority-queue.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/compose.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/private-apis.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/redux-routine.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/data.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/html-entities.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/rich-text.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/shortcode.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/warning.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/blocks.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/vendor/moment.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/date.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/primitives.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/components.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/keyboard-shortcuts.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/commands.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/notices.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/preferences-persistence.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/preferences.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/style-engine.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/token-list.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/block-editor.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/dist/core-data.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//guadeloupe-portcaraibes.com/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.40": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//guadeloupe-portcaraibes.com/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.40": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/jquery/ui/core.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://c0.wp.com/c/6.9/wp-includes/js/underscore.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
