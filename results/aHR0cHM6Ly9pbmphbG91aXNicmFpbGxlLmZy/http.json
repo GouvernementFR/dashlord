@@ -1,0 +1,220 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "no-cache, no-store",
+      "pragma": "no-cache",
+      "content-type": "text/html; charset=utf-8",
+      "expires": "-1",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "_syrSessGuid=0fe77063-3a70-4115-b71e-33a20f1b7636; expires=Tue, 03-Feb-2026 03:32:28 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "_syrPrefsGuid=e80b7f98-396f-455d-bf11-d461ea2831cb; expires=Wed, 03-Feb-2027 03:02:28 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "InstanceST=INJA=00040mbJhbCYHquUog7OWXGwpoyfva0gQoE_E9HPe9RkXbmPqD61WNRGCuv5kaXuFX4qWjpcmqkPNkUXK8SuwXlI=; path=/; secure; HttpOnly; SameSite=None",
+        "InstanceCI=INJA=jIh2mykus1UoHkUE4e3MpbpRTanuWtCBpsFDAkro; path=/; secure; HttpOnly; SameSite=None"
+      ],
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "date": "Tue, 03 Feb 2026 03:02:27 GMT",
+      "connection": "close",
+      "content-length": "38223"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https:"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "https:"
+        ],
+        "media-src": [
+          "'self'",
+          "blob:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.google-analytics.com",
+          "https://*.matomo.cloud"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_syrSessGuid": {
+          "domain": "injalouisbraille.fr",
+          "expires": "2026-02-03T03:32:28.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_syrPrefsGuid": {
+          "domain": "injalouisbraille.fr",
+          "expires": "2027-02-03T03:02:28.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "InstanceST": {
+          "domain": "injalouisbraille.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "InstanceCI": {
+          "domain": "injalouisbraille.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://injalouisbraille.fr/",
+      "redirects": true,
+      "route": [
+        "http://injalouisbraille.fr/",
+        "https://injalouisbraille.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
