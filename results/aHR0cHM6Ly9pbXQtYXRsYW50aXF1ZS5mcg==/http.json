@@ -1,0 +1,230 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 02 Feb 2026 16:25:44 GMT",
+      "server": "Apache",
+      "cache-control": "max-age=10800, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-drupal-cache": "HIT",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' region1.google-analytics.com stats.g.doubleclick.net www.google-analytics.com https://www.youtube.com https://www.youtube-nocookie.com https://platform.twitter.com https://www.linkedin.com https://indd.adobe.com https://syndication.twitter.com/; connect-src *; font-src *; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.youtube-nocookie.com https://imtcast.imt.fr/ https://haltools.archives-ouvertes.fr/ https://indd.adobe.com/ https://barometredelascienceouverte.esr.gouv.fr/ https://www.rcf.fr https://platform.twitter.com https://www.linkedin.com https://syndication.twitter.com/ https://v.calameo.com/ https://player.vimeo.com; img-src * data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.google.com www.gstatic.com www.googletagmanager.com region1.google-analytics.com stats.g.doubleclick.net google-analytics.com www.youtube.com www.youtube-nocookie.com https://cdn.jsdelivr.net https://platform.linkedin.com https://www.linkedin.com googletagmanager.com cdnjs.cloudflare.com https://cdnjs.cloudflare.com https://platform.twitter.com https://polyfill-fastly.io https://www.google.com localhost:35729 yui.yahooapis.com; script-src-elem * 'unsafe-inline' localhost:35729; style-src 'self' 'unsafe-inline' fonts.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src-elem 'self' 'unsafe-inline' fonts.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdnjs.cloudflare.com; frame-ancestors 'self';",
+      "last-modified": "Mon, 02 Feb 2026 16:25:44 GMT",
+      "etag": "\"1770049544-gzip\"",
+      "x-xss-protection": "0",
+      "content-length": "26459",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://indd.adobe.com",
+          "https://platform.twitter.com",
+          "https://syndication.twitter.com/",
+          "https://www.linkedin.com",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com",
+          "region1.google-analytics.com",
+          "stats.g.doubleclick.net",
+          "www.google-analytics.com"
+        ],
+        "connect-src": [
+          "*"
+        ],
+        "font-src": [
+          "*"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://barometredelascienceouverte.esr.gouv.fr/",
+          "https://haltools.archives-ouvertes.fr/",
+          "https://imtcast.imt.fr/",
+          "https://indd.adobe.com/",
+          "https://platform.twitter.com",
+          "https://player.vimeo.com",
+          "https://syndication.twitter.com/",
+          "https://v.calameo.com/",
+          "https://www.google.com/",
+          "https://www.linkedin.com",
+          "https://www.rcf.fr",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com/"
+        ],
+        "img-src": [
+          "*",
+          "data:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "cdnjs.cloudflare.com",
+          "google-analytics.com",
+          "googletagmanager.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://platform.linkedin.com",
+          "https://platform.twitter.com",
+          "https://polyfill-fastly.io",
+          "https://www.google.com",
+          "https://www.linkedin.com",
+          "localhost:35729",
+          "region1.google-analytics.com",
+          "stats.g.doubleclick.net",
+          "www.google.com",
+          "www.googletagmanager.com",
+          "www.gstatic.com",
+          "www.youtube-nocookie.com",
+          "www.youtube.com",
+          "yui.yahooapis.com"
+        ],
+        "script-src-elem": [
+          "'unsafe-inline'",
+          "*",
+          "localhost:35729"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "fonts.googleapis.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://www.googletagmanager.com"
+        ],
+        "style-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "fonts.googleapis.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://www.googletagmanager.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.imt-atlantique.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://imt-atlantique.fr/",
+        "http://www.imt-atlantique.fr/",
+        "https://www.imt-atlantique.fr/",
+        "https://www.imt-atlantique.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
