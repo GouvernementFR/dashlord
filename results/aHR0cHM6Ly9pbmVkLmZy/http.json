@@ -1,0 +1,159 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:06:38 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "strict-transport-security": "max-age=31536000; includeSubdomains;",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1;  mode=block",
+      "set-cookie": [
+        "PHPSESSID=vn9eokp676di163irdsdeg3cp2; path=/;HttpOnly;Secure",
+        "BNIS_vid=fZ9Ceri5AVAjnL/pMnXfy2DzbffGnG40HmW+VGVEtX3KLt7eZpmUc37mPJVK0Lc0tylkmNGRx5gc9SyvMM6c8QZVP2gSnHyQ6lnB3h6fLIjV4Fhq+i2NK/bDdkylaLsFf1tsw0Ck81cShRvEXF0L8oSEMxwVuJ/G1bSJdo74MdIESNNP15IqRRDUAfo/YYyrjzQ+aPMfDfHHNg45JWP7FQ==; Path=/",
+        "BNIS___utm_is1=yQEQ9nX4N6qrjV1ECUBB+Py7T2Q98HYSbkyt8vgimVhZ/6oBZwhd4Zpsoy/Eg9N3Oo78GLUffHzujEm54H6wURunqFPwBuggAeRnPg5t0j+TjBH3p8oY5A==; Max-Age=31536000; Path=/",
+        "BNIS___utm_is2=t9Ai4aXvXe953n9nneTPrYD/BFIDjwsud2co7sgLT2w6rgyvPtzCJ+AxPb1nRkwMUeUWkdauK6g=; Max-Age=10800; Path=/",
+        "BNIS___utm_is3=dIhKvDJuTFNA1BfRVsft75Crc6zi/FmFQxqhNsCfFyMYiplBkaHNPN1PYTLQrIVYWL/FLwud+Cp2v8hHlH+WnkIxe7Mq9iMur0oEV/KklXI=;  Path=/",
+        "BNIS_x-bni-jas=CleMGjkgjbM5MgIt52p+OuYV6kOGmLsu+pbPXVDqqjWCVEZk4LpVpegqE9WgnIs0UCjc7tZdZyoWHXSRHYsR2EtgcMJy8DgGtGCS5anKhMx+HtPZvWpPEA==; Path=/"
+      ],
+      "vary": "Accept-Encoding,User-Agent",
+      "connection": "close",
+      "content-type": "text/html; charset=utf-8",
+      "x-frame-options": "SAMEORIGIN"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "PHPSESSID": {
+          "domain": "www.ined.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BNIS_vid": {
+          "domain": "www.ined.fr",
+          "path": "/",
+          "port": null
+        },
+        "BNIS___utm_is1": {
+          "domain": "www.ined.fr",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null
+        },
+        "BNIS___utm_is2": {
+          "domain": "www.ined.fr",
+          "max-age": 10800,
+          "path": "/",
+          "port": null
+        },
+        "BNIS___utm_is3": {
+          "domain": "www.ined.fr",
+          "path": "/",
+          "port": null
+        },
+        "BNIS_x-bni-jas": {
+          "domain": "www.ined.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.ined.fr/",
+      "redirects": true,
+      "route": [
+        "http://ined.fr/",
+        "https://www.ined.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubdomains;",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
