@@ -1,0 +1,150 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:06:35 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "link": "<https://institutfrancais-liban.com/wp-json/>; rel=\"https://api.w.org/\", <https://institutfrancais-liban.com/wp-json/wp/v2/pages/9898>; rel=\"alternate\"; type=\"application/json\", <https://institutfrancais-liban.com/>; rel=shortlink",
+      "x-et-api-version": "v1",
+      "x-et-api-root": "https://institutfrancais-liban.com/wp-json/tribe/tickets/v1/",
+      "x-et-api-origin": "https://institutfrancais-liban.com",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://institutfrancais-liban.com/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://institutfrancais-liban.com",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2XF0ASyTfRT82VYhmE2schNIHPuyZitNoiLUWakQ8TnCFMEiqpeMmR4l8MJvZasggokTbTaXyMkoAI%2FpFLgh1kRsiOUDt01yiteJysQZaAUYN2mFkOj6rg%3D%3D\"}]}",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-turbo-charged-by": "LiteSpeed",
+      "cf-cache-status": "DYNAMIC",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=15,cfOrigin;dur=802",
+      "cf-ray": "9c7eb68bbcd7122a-ORD"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://institutfrancais-liban.com/",
+      "redirects": true,
+      "route": [
+        "http://institutfrancais-liban.com/",
+        "https://institutfrancais-liban.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://kit.fontawesome.com/53427e6545.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://liban.extranet-aec.com/js/aec-webapp.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/api.js?render=6LcK3qIoAAAAAIbLArSRd7H3DxA7vz2VoWeanQza&ver=3.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
