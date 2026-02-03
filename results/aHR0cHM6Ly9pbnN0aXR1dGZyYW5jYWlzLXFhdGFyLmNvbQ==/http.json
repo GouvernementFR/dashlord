@@ -1,0 +1,331 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:05:57 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "OVHcloud",
+      "x-powered-by": "PHP/7.4",
+      "link": "<https://if-qatar.com/wp-json/>; rel=\"https://api.w.org/\", <https://if-qatar.com/wp-json/wp/v2/pages/7173>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://if-qatar.com/>; rel=shortlink",
+      "vary": "Accept-Encoding"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://if-qatar.com/",
+      "redirects": true,
+      "route": [
+        "http://institutfrancais-qatar.com/",
+        "http://www.if-qatar.com/",
+        "https://if-qatar.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//www.googletagmanager.com/gtag/js?id=G-RCG7E0ZCMF": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wp-recent-square/js/functions.js?ver=1.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/jquery.min.js?ver=3.7.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.js?ver=9.2.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/resizable.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/button.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/jquery/ui/dialog.min.js?ver=1.13.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/events-manager/includes/js/events-manager.js?ver=6.6.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/events-manager/includes/external/flatpickr/l10n/fr.js?ver=6.6.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/themes/twentytwentyV/scripts/custom.js?ver=6.6.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/themes/twentytwentyV/assets/js/index.js?ver=6.6.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/mailin/js/mailin-front.js?ver=1733388777": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://platform.twitter.com/widgets.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0&appId=980762609224195&autoLogAppEvents=1": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/js/app.js?ver=4.12.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/animate-it/assets/js/animo.min.js?ver=1.0.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/animate-it/assets/js/jquery.ba-throttle-debounce.min.js?ver=1.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/animate-it/assets/js/viewportchecker.js?ver=1.4.4": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/animate-it/assets/js/edsanimate.js?ver=1.4.4": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/animate-it/assets/js/edsanimate.site.js?ver=1.4.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/flexy-breadcrumb/public/js/flexy-breadcrumb-public.js?ver=1.2.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js?ver=1.14.7": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js?ver=4.3.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/imagesloaded.min.js?ver=5.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wp-responsive-recent-post-slider/assets/js/slick.min.js?ver=3.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wp-responsive-recent-post-slider/assets/js/wppsac-public.js?ver=3.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.2.6": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/searchwp-modal-search-form/assets/dist/searchwp-modal-form.min.js?ver=0.5.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.16.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.24.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.24.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.16.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.24.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.16.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/underscore.min.js?ver=1.13.4": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-includes/js/wp-util.min.js?ver=6.6.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wpforms/assets/js/integrations/elementor/frontend.min.js?ver=1.8.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wpforms/assets/lib/jquery.validate.min.js?ver=1.19.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wpforms/assets/lib/mailcheck.min.js?ver=1.1.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wpforms/assets/lib/punycode.min.js?ver=1.0.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wpforms/assets/js/utils.min.js?ver=1.8.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://if-qatar.com/wordpress/wp-content/plugins/wpforms/assets/js/wpforms.min.js?ver=1.8.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
