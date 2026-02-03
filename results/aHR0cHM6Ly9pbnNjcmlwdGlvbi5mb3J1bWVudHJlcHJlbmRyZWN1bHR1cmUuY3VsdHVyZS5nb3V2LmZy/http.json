@@ -1,0 +1,184 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:05:45 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "83167",
+      "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "etag": "W/\"0405abd5a200a01587143e58c2342133\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "utm_data=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkludDlJZz09IiwiZXhwIjoiMjAyNy0wMi0wM1QwMzowNTo0NS4yMTdaIiwicHVyIjoiY29va2llLnV0bV9kYXRhIn19--0ab024c36dc8b06d54383e4ac9fe4df7bbd65888; path=/; expires=Wed, 03 Feb 2027 03:05:45 GMT; secure; httponly"
+      ],
+      "x-request-id": "6a6119974e3f2c4664b290285d243a81",
+      "x-runtime": "0.186268",
+      "strict-transport-security": "max-age=15724800; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "utm_data": {
+          "domain": "inscription.forumentreprendreculture.culture.gouv.fr",
+          "expires": "2027-02-03T03:05:45.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://inscription.forumentreprendreculture.culture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://inscription.forumentreprendreculture.culture.gouv.fr/",
+        "https://inscription.forumentreprendreculture.culture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15724800; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 15724800,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://assets.eventmaker.io/assets/website/website-b0c50c145d1e214d6f47a4daf1846babd57b749488caf0348462eaaff72564b1.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/assets/i18n/fr-37f54d029610d282079655507facb47e85b7cd93b878b21e18a1d95992cb5d37.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://code.jquery.com/jquery-migrate-3.3.2.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cms-assets.eventmaker.io/builds/grand-conference/assets-736e701ba/main.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/runtime-d72d16853e02c115814c.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/3410-5628be0941c97581ce06.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/4171-89a57cd8feee051ae9c2.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/1819-8d1b82ec156c61d4915c.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/7595-92733c5f37b46b58eaa9.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/01timeConflictChecker-e22f05743333f8ca472d.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/6441-d4bed3824e84b776eb30.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.eventmaker.io/packs/js/apiClient-b8b0d9b7606d6281916f.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
