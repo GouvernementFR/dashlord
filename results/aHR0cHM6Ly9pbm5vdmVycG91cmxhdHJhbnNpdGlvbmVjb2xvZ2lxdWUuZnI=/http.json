@@ -1,0 +1,168 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:06:06 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "link": "</assets/print-b711dda660259c6e84d5ab0ddae61e8e1527cc6473821e386fbfca40a1578fdd.css>; rel=preload; as=style; nopush,</assets/min_application-1568bbc1312f2c02649b0f2936b43aed165a43afc11835e623773a19345a80bc.css>; rel=preload; as=style; nopush,</packs/css/application-0375a1fb.css>; rel=preload; as=style; nopush,<https://s0.assets-yammer.com/assets/platform_social_buttons.min.js>; rel=preload; as=script; nopush,</assets/common-93e7899de2939dbd20e958a02d48e93a19670d7499b522b9f51dda88d173ac3b.js>; rel=preload; as=script; nopush,</assets/application-a2647590f7f25210ea030b263137655eeca595870d08208783feabb8a320f7bb.js>; rel=preload; as=script; nopush,<https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js>; rel=preload; as=script; nopush,</packs/js/common-7d1d1a7cdde18a1524e7.js>; rel=preload; as=script; nopush,</packs/js/application-261694cb5446b4fa6b38.js>; rel=preload; as=script; nopush",
+      "content-security-policy": "frame-ancestors 'self' https://pagesense.zoho.eu",
+      "etag": "W/\"a2ccdc3edbe883eb9d0c2bb43f0840d5\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "_agorize_session=435db7616267b9f25e4e7ab8852fedac; path=/; expires=Tue, 03 Feb 2026 07:06:06 GMT; secure; HttpOnly; SameSite=None"
+      ],
+      "x-request-id": "a9940070022923234aaae54c7aef1c64",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "https://pagesense.zoho.eu"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_agorize_session": {
+          "domain": "www.innoverpourlatransitionecologique.fr",
+          "expires": "2026-02-03T07:06:06.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.innoverpourlatransitionecologique.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://innoverpourlatransitionecologique.fr/",
+        "https://innoverpourlatransitionecologique.fr/",
+        "https://www.innoverpourlatransitionecologique.fr/",
+        "https://www.innoverpourlatransitionecologique.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://s0.assets-yammer.com/assets/platform_social_buttons.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCss99stUsqQefs50rtKUqFoYfy_Y2j7zo&language=fr&callback=map.init": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.fs.agorize.com/filestack-js/3.35.4/filestack.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
