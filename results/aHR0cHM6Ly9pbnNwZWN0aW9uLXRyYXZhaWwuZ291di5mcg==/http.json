@@ -1,0 +1,134 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:04:43 GMT",
+      "x-spip-cache": "21600",
+      "x-frame-options": "SAMEORIGIN",
+      "last-modified": "Tue, 03 Feb 2026 03:04:43 GMT",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!4FxibPEKnQOHs1gXIkI7F7SI9ajmikrJGXaOjibSmwyy2uEvbVDOMqnfeUludjo1dmefqDLvo4xmDaJOzCekrWUVO1lb; path=/; Httponly; Secure",
+        "TSc4ff0492027=087dc22938ab2000614dda67a7ce5cf35157f3eb7168d60dc45f9abc4545b8099b130f0184a3793a0877e46c841130003660f065747fd66a931b8330a961b7796c891f8e647f7a23a4432260bb546de861bc3be378ebf571aa9e8bd0bd1a63b0; Secure; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "inspection-travail.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc4ff0492027": {
+          "domain": "inspection-travail.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://travail-emploi.gouv.fr/contacter-linspection-du-travail-ou-repondre-vos-questions-sur-le-droit-du-travail",
+      "redirects": true,
+      "route": [
+        "http://inspection-travail.gouv.fr/",
+        "https://travail-emploi.gouv.fr/ministere/contacter-inspection-du-travail/",
+        "https://travail-emploi.gouv.fr/contacter-linspection-du-travail-ou-repondre-vos-questions-sur-le-droit-du-travail"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
