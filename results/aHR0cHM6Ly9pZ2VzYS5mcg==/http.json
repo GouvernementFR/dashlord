@@ -1,0 +1,148 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "24280",
+      "connection": "close",
+      "date": "Tue, 03 Feb 2026 03:02:28 GMT",
+      "x-unique-id": "JjCNGrgnzdIecIKItOByBRjLISn1bAWf6p7MlcD9XCqssOp-xAOE9Q==",
+      "access-control-allow-origin": "https://pw-matomo.igesa.fr",
+      "cache-control": "s-maxage=0, private, no-store",
+      "content-security-policy": "frame-ancestors 'self'",
+      "x-content-type-options": "nosniff",
+      "x-fstrz": "o,clc",
+      "x-xss-protection": "0",
+      "x-gen-id": "8WvK9KMc_HXlRvqQMN8j8VtNsmo3m3uEmnKG14ufZxCYx16eoHsf5w==",
+      "server": "fasterize",
+      "x-cache": "Miss from cloudfront",
+      "via": "1.1 5ceb9cec7debee0553fef552eba62cc4.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "IAD55-P10",
+      "x-amz-cf-id": "JjCNGrgnzdIecIKItOByBRjLISn1bAWf6p7MlcD9XCqssOp-xAOE9Q=="
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://pw-matomo.igesa.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.igesa.fr/accueil",
+      "redirects": true,
+      "route": [
+        "http://igesa.fr/",
+        "https://www.igesa.fr/",
+        "https://www.igesa.fr/accueil"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://kit.fontawesome.com/04c7f343e7.js?v=04c7f343e7": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://widget.taggbox.com/embed.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
