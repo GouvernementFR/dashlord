@@ -1,0 +1,154 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 5,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 03 Feb 2026 03:04:17 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "22718",
+      "connection": "close",
+      "na-ls-cache-enabled": "off",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "PHPSESSID=4jii878u3s4e0tatohm2tgm2to; expires=Thu, 14-May-2026 03:04:16 GMT; Max-Age=8640000; path=/; secure; HttpOnly; SameSite=Strict",
+        "setuki_sid=19c09b3885e9a9897b6a3f03c6fb6704; expires=Thu, 14-May-2026 03:04:16 GMT; Max-Age=8640000; path=/; HttpOnly; SameSite=Strict"
+      ],
+      "vary": "Accept-Encoding",
+      "x-cdn-nazwa.pl-location": "WAS",
+      "x-cdn-nazwa.pl-policyused": "cdn=disabled",
+      "server": "Apache/2"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "PHPSESSID": {
+          "domain": "institutfrancais.pl",
+          "expires": "2026-05-14T03:04:16.000Z",
+          "httponly": true,
+          "max-age": 8640000,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "setuki_sid": {
+          "domain": "institutfrancais.pl",
+          "expires": "2026-05-14T03:04:16.000Z",
+          "httponly": true,
+          "max-age": 8640000,
+          "path": "/",
+          "port": null,
+          "samesite": "strict"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://institutfrancais.pl/",
+      "redirects": true,
+      "route": [
+        "http://institutfrancais.pl/",
+        "https://institutfrancais.pl/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=G-P7F2SQ83KL": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.googletagmanager.com/gtag/js?id=G-KQV2MK1Y9E": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.googletagmanager.com/gtag/js?id=AW-1002973810": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
