@@ -1,0 +1,231 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 02 Feb 2026 18:13:15 GMT",
+      "cache-control": "max-age=86400, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "content-security-policy": "default-src 'self'; script-src 'self' *.axept.io *.cegedim.cloud player.ausha.co *.cloudflare.com cdn.mathjax.org v.calameo.com *.dailymotion.com *.vimeo.com 'unsafe-eval' webpack: 'unsafe-inline' stats-cnrs-preprod.cegedim.cloud www.statistiques.cnrs.fr statistiques.cnrs.fr; object-src 'none'; style-src 'self' 'unsafe-inline' *.axept.io *.cloudflare.com cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' axeptio.imgix.net favicons.axept.io *.openstreetmap.org data:; media-src 'self'; frame-src 'self' player.ausha.co *.dailymotion.com *.vimeo.com v.calameo.com *.youtube.com mediavideo.cnrs.fr webcast.in2p3.fr *.scoop.it *.genial.ly; frame-ancestors 'self'; child-src 'self'; font-src 'self' fonts.gstatic.com; connect-src 'self' *.axept.io www.statistiques.cnrs.fr statistiques.cnrs.fr *.cegedim.cloud; report-uri /report-csp-violation; upgrade-insecure-requests",
+      "last-modified": "Mon, 02 Feb 2026 18:13:13 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "31900",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-hits": "161",
+      "connection": "close",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "set-cookie": [
+        "TSc1dc6a3a029=087dc22938ab2800d339428fe1f499e5a5928f633617844bf6d7a90936a042d2eb5a1a3c77822e51b81ac20a9aa48783; Secure; Max-Age=30; Path=/",
+        "TSd85d6352027=087dc22938ab20000fe28570f96d8b3dace36e099a2e99036c1c59388f68670d90c07bf4fd9f057f080ca99e3811300021b7a353616bcfc0e97db48bcb49523362a6400c94d363e1c78689c84e049c03d1a309ccb821378a705d7dd98988ade2; Secure; Path=/"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.axept.io",
+          "*.cegedim.cloud",
+          "*.cloudflare.com",
+          "*.dailymotion.com",
+          "*.vimeo.com",
+          "cdn.mathjax.org",
+          "player.ausha.co",
+          "statistiques.cnrs.fr",
+          "stats-cnrs-preprod.cegedim.cloud",
+          "v.calameo.com",
+          "webpack:",
+          "www.statistiques.cnrs.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.axept.io",
+          "*.cloudflare.com",
+          "cdnjs.cloudflare.com",
+          "fonts.googleapis.com"
+        ],
+        "img-src": [
+          "'self'",
+          "*.openstreetmap.org",
+          "axeptio.imgix.net",
+          "data:",
+          "favicons.axept.io"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.dailymotion.com",
+          "*.genial.ly",
+          "*.scoop.it",
+          "*.vimeo.com",
+          "*.youtube.com",
+          "mediavideo.cnrs.fr",
+          "player.ausha.co",
+          "v.calameo.com",
+          "webcast.in2p3.fr"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "child-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "fonts.gstatic.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.axept.io",
+          "*.cegedim.cloud",
+          "statistiques.cnrs.fr",
+          "www.statistiques.cnrs.fr"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "TSc1dc6a3a029": {
+          "domain": "www.insis.cnrs.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSd85d6352027": {
+          "domain": "www.insis.cnrs.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.insis.cnrs.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://insis.cnrs.fr/",
+        "https://insis.cnrs.fr/",
+        "https://www.insis.cnrs.fr/",
+        "https://www.insis.cnrs.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
