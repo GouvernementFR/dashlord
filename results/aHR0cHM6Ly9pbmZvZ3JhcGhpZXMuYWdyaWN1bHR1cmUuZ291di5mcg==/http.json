@@ -1,0 +1,157 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Tue, 03 Feb 2026 03:02:32 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding, X-UA-Device, Accept",
+      "x-rid": "df68ea327f1581e4c5e0cbc8a9fa216b",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=15552001",
+      "x-tumblr-user": "minagri-infographies",
+      "x-tumblr-pixel-0": "https://px.srvcs.tumblr.com/impixu?T=1770087752&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2luZm9ncmFwaGllcy5hZ3JpY3VsdHVyZS5nb3V2LmZyLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyJ9&U=CMKLFBOJLO&K=177e2cf2e64eaea9274cb94bdcdc21bbd2c5979e249ad9ab0ab4159345473121--https://px.srvcs.tumblr.com/impixu?T=1770087752&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9pbmZvZ3JhcGhpZXMuYWdyaWN1bHR1cmUuZ291di5mci8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii8iLCJwb3N0cyI6W3sicG9zdGlkIjoiNjMwNTE3ODU0NDI0NDgxNzkyIiwiYmxvZ2lkIjoxODI3MDE1",
+      "x-tumblr-pixel-1": "NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTY2NDU5ODE5NzA3IiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTQxMDMzNDAwNjEyIiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTc3Njg4OTY5NjQ3IiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTU1Mzg2MzI4ODUyIiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNjYxMjE3MzMzNDAxMDU5MzI4IiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTA5MTk5NDcwNjUyIiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG",
+      "x-tumblr-pixel-2": "9zdGlkIjoiMTE4ODY2OTEyOTQyIiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiMTA4NjM2MDEyMTY3IiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNzgwMjQ1NTExNjcxMzE2NDgwIiwiYmxvZ2lkIjoxODI3MDE1NzMsInNvdXJjZSI6MzN9XX0=&U=AEDAAIONEG&K=64f876dac038394aea1772bd756e220125ce76eefbe93c6e83201ec74b62b872",
+      "x-tumblr-pixel": "3",
+      "link": "<https://64.media.tumblr.com/3e9d7c41c4d84f29e25aeebd5de1d177/2d36a582e6750d80-a7/s128x128u_c1/8f97b21df5cb000a6c5b71cfe56a6c52709a2d0c.pnj>; rel=icon",
+      "x-ua-compatible": "IE=Edge,chrome=1",
+      "x-ua-device": "desktop",
+      "x-nc": "MISS"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://http-observatory.security.mozilla.org"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://infographies.agriculture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://infographies.agriculture.gouv.fr/",
+        "https://infographies.agriculture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552001",
+      "includeSubDomains": false,
+      "maxAge": 15552001,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202606": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.tumblr.com/e6lc7yi/aTlnbzy4q/headliner-plugins.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.tumblr.com/e6lc7yi/cyanbzy54/headliner-app.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://securepubads.g.doubleclick.net/tag/js/gpt.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=4a1639e90881218a9d0826bd29b5b53a": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
