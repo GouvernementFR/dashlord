@@ -1,0 +1,143 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 05 Feb 2026 03:02:50 GMT",
+      "server": "Apache",
+      "set-cookie": [
+        "SessionStatId=78314dd4.64a0ae878ccbb; path=/; expires=Sun, 03-Feb-36 03:02:50 GMT; domain=.telepac.agriculture.gouv.fr; HttpOnly; secure",
+        "JSESSIONID=fb4719ca211e90b9~E74576BC78C9C5A8B48B4BDE871C7F41.jvm-tomp056; Path=/telepac; Secure; HttpOnly"
+      ],
+      "cache-control": "private",
+      "vary": "Accept-Encoding,User-Agent",
+      "connection": "close",
+      "content-type": "text/html;charset=ISO-8859-15",
+      "strict-transport-security": "max-age=15552000",
+      "x-frame-options": "SAMEORIGIN",
+      "content-length": "12160"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "cookiesession1": {
+          "domain": "isis.telepac.agriculture.gouv.fr",
+          "expires": "2027-02-05T03:02:46.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "SessionStatId": {
+          "domain": "telepac.agriculture.gouv.fr",
+          "expires": "2036-02-03T03:02:50.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "JSESSIONID": {
+          "domain": "isis.telepac.agriculture.gouv.fr",
+          "httponly": true,
+          "path": "/telepac",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://isis.telepac.agriculture.gouv.fr/telepac/auth/accueil.action",
+      "redirects": true,
+      "route": [
+        "http://isis.telepac.agriculture.gouv.fr/",
+        "https://isis.telepac.agriculture.gouv.fr/",
+        "https://isis.telepac.agriculture.gouv.fr/telepac/auth/accueil.action"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552000",
+      "includeSubDomains": false,
+      "maxAge": 15552000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
