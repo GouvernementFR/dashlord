@@ -1,0 +1,132 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Thu, 05 Feb 2026 03:04:57 GMT",
+      "content-type": "text/html;charset=ISO-8859-1",
+      "content-length": "5172",
+      "connection": "close",
+      "pragma": "No-cache",
+      "cache-control": "no-cache,no-store,max-age=0",
+      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "set-cookie": [
+        "JSESSIONID=CB4AD3F24F3736AB52B3181C41CF377D.jvm11; Path=/itrf; HttpOnly"
+      ],
+      "x-varnish": "45393027",
+      "age": "0",
+      "via": "1.1 varnish (Varnish/5.2)",
+      "accept-ranges": "bytes",
+      "x-frame-options": "âDENYâ",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "JSESSIONID": {
+          "domain": "itrf.education.gouv.fr",
+          "httponly": true,
+          "path": "/itrf",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://itrf.education.gouv.fr/itrf/menuaccueil.do",
+      "redirects": true,
+      "route": [
+        "http://itrf.education.gouv.fr/",
+        "https://itrf.education.gouv.fr/",
+        "https://itrf.education.gouv.fr/itrf/",
+        "http://itrf.education.gouv.fr/itrf/menuaccueil.do",
+        "https://itrf.education.gouv.fr/itrf/menuaccueil.do"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "âDENYâ"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
