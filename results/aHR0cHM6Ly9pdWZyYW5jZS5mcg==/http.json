@@ -1,0 +1,144 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 05 Feb 2026 03:02:25 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "pragma": "no-cache",
+      "expires": "Fri, 06 Jun 1975 15:10:00 GMT",
+      "vary": "User-Agent,Accept-Encoding",
+      "set-cookie": [
+        "PHPSESSID=15qlhgtieoo3ooe3demc747fk2; path=/; HttpOnly",
+        "BE_USER_AUTH=4cbde0e42d232fe0f04c414875d8c4ecf8d24336; expires=Wed, 04-Feb-2026 03:02:25 GMT; Max-Age=-86400; path=/; httponly",
+        "FE_USER_AUTH=8702e2a8f6b8b867c551576a9d2282d3663227da; expires=Wed, 04-Feb-2026 03:02:25 GMT; Max-Age=-86400; path=/; httponly"
+      ],
+      "upgrade": "h2",
+      "connection": "Upgrade",
+      "last-modified": "Thu, 05 Feb 2026 03:02:25 GMT",
+      "content-length": "8129",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "PHPSESSID": {
+          "domain": "www.iufrance.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "BE_USER_AUTH": {
+          "domain": "www.iufrance.fr",
+          "expires": "2026-02-04T03:02:25.000Z",
+          "httponly": true,
+          "max-age": -86400,
+          "path": "/",
+          "port": null
+        },
+        "FE_USER_AUTH": {
+          "domain": "www.iufrance.fr",
+          "expires": "2026-02-04T03:02:25.000Z",
+          "httponly": true,
+          "max-age": -86400,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.iufrance.fr/",
+      "redirects": true,
+      "route": [
+        "http://iufrance.fr/",
+        "http://www.iufrance.fr/",
+        "https://www.iufrance.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
