@@ -1,0 +1,139 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 04 Feb 2026 05:30:19 GMT",
+      "x-drupal-cache-timestamp": "1769701259",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "cache-control": "public, max-age=86400",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "etag": "\"1770183019-1\"",
+      "last-modified": "Wed, 04 Feb 2026 05:30:19 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "x-ua-device": "DESKTOP",
+      "x-cache": "HIT",
+      "vary": "Accept-Encoding",
+      "accept-ranges": "bytes",
+      "content-length": "59152",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServer34MTuypDk3zboBHeznTQiA=!iYFgmPoKPf376iJedLNKq/VAg+8cxFnn4xi/zBvyUgwz4FBy1QeV2BGHm8nTazMCv5truUIPKE7Q9A==; path=/; Httponly",
+        "TS01ffdb6c=01a6efdead382e44c8e8534bd71df3f4af482ffdbc0acaedeba8a30f6885263dcaa0cc20c61695a33f64d3154f42d1e3962e328eb9615616447713d3c6ba1fa258c8c290db; Path=/; Domain=.www.justice.fr"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServer34MTuypDk3zboBHeznTQiA": {
+          "domain": "www.justice.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "TS01ffdb6c": {
+          "domain": "www.justice.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.justice.fr/",
+      "redirects": true,
+      "route": [
+        "http://justice.fr/",
+        "https://justice.fr/",
+        "http://www.justice.fr/",
+        "https://www.justice.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
