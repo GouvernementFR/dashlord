@@ -1,0 +1,239 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 30,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 05 Feb 2026 03:02:50 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "29566",
+      "connection": "close",
+      "access-control-allow-origin": "*",
+      "cache-control": "no-cache, no-store",
+      "expires": "-1",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "shell#lang=en; path=/; secure; SameSite=None",
+        "ASP.NET_SessionId=yixtg5lonpw12xj2cyntxudc; path=/; secure; HttpOnly; SameSite=None",
+        "SC_ANALYTICS_GLOBAL_COOKIE=71fc78c2aaba49f4a6201e5f0eb4888a|False; expires=Sun, 03-Feb-2036 03:02:49 GMT; path=/; secure; HttpOnly; SameSite=None",
+        "sxa_site=irena-azure-cd; path=/; secure; SameSite=None",
+        "ARRAffinity=4c6ee82994cdb13c80ef71ebe150bd3a0d35e34e2dd05059be2575146a389428;Path=/;HttpOnly;Secure;Domain=www.irena.org",
+        "ARRAffinitySameSite=4c6ee82994cdb13c80ef71ebe150bd3a0d35e34e2dd05059be2575146a389428;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.irena.org"
+      ],
+      "vary": "Accept-Encoding",
+      "request-context": "appId=cid-v1:78b16eb4-1ae0-46e0-827b-5d976591e0ea",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://open.spotify.com https://www.google.com https://www.gstatic.com https://twitframe.com https://*.list-manage.com https://*.mailchimp.com https://chimpstatic.com https://*.g.doubleclick.net https://*.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://platform.twitter.com https://app.powerbi.com https://cdnjs.cloudflare.com https://mc-cd8320d4-36a1-40ac-83cc-3389-cdn-endpoint.azureedge.net https://prod-cdn.irena.org https://fs27.formsite.com https://public.tableau.com https://s3.amazonaws.com https://irena.us18.list-manage.com https://apps.sitecore.net https://youtube.com https://www.youtube.com https://api.flickr.com https://e.infogram.com/ https://flagcdn.com/ https://fonts.googleapis.com https://img.youtube.com https://live.staticflickr.com https://flagcdn.com/ data: https://fonts.gstatic.com data: https://www.googletagmanager.com https://www.irena.org https://widget.usersnap.com https://static.addtoany.com/ https://resources.usersnap.com https://i.creativecommons.org; img-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline';"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "data:",
+          "https://*.analytics.google.com",
+          "https://*.g.doubleclick.net",
+          "https://*.google-analytics.com",
+          "https://*.google.com",
+          "https://*.googletagmanager.com",
+          "https://*.list-manage.com",
+          "https://*.mailchimp.com",
+          "https://api.flickr.com",
+          "https://app.powerbi.com",
+          "https://apps.sitecore.net",
+          "https://cdnjs.cloudflare.com",
+          "https://chimpstatic.com",
+          "https://e.infogram.com/",
+          "https://flagcdn.com/",
+          "https://fonts.googleapis.com",
+          "https://fonts.gstatic.com",
+          "https://fs27.formsite.com",
+          "https://i.creativecommons.org",
+          "https://img.youtube.com",
+          "https://irena.us18.list-manage.com",
+          "https://live.staticflickr.com",
+          "https://mc-cd8320d4-36a1-40ac-83cc-3389-cdn-endpoint.azureedge.net",
+          "https://open.spotify.com",
+          "https://platform.twitter.com",
+          "https://prod-cdn.irena.org",
+          "https://public.tableau.com",
+          "https://resources.usersnap.com",
+          "https://s3.amazonaws.com",
+          "https://static.addtoany.com/",
+          "https://twitframe.com",
+          "https://widget.usersnap.com",
+          "https://www.google.com",
+          "https://www.googletagmanager.com",
+          "https://www.gstatic.com",
+          "https://www.irena.org",
+          "https://www.youtube.com",
+          "https://youtube.com"
+        ],
+        "img-src": [
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "font-src": [
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "shell#lang": {
+          "domain": "www.irena.org",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "ASP.NET_SessionId": {
+          "domain": "www.irena.org",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "SC_ANALYTICS_GLOBAL_COOKIE": {
+          "domain": "www.irena.org",
+          "expires": "2036-02-03T03:02:49.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "sxa_site": {
+          "domain": "www.irena.org",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "ARRAffinity": {
+          "domain": "www.irena.org",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "ARRAffinitySameSite": {
+          "domain": "www.irena.org",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.irena.org/",
+      "redirects": true,
+      "route": [
+        "http://irena.org/",
+        "https://www.irena.org/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
