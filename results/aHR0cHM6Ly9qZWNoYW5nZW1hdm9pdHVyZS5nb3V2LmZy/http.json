@@ -1,0 +1,209 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 05 Feb 2026 03:02:23 GMT",
+      "last-modified": "Fri, 14 Nov 2025 14:44:04 GMT",
+      "etag": "\"49a2-6438f07697500\"",
+      "accept-ranges": "bytes",
+      "content-length": "18850",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self' blob:; connect-src 'self' *.asp-public.fr/ api-adresse.data.gouv.fr/ https://audience-sites.din.developpement-durable.gouv.fr/; frame-ancestors 'self' *.asp-public.fr/; frame-src 'self' blob: *.asp-public.fr/ https://3689183.fls.doubleclick.net/; worker-src 'self' blob: *.asp-public.fr/; object-src 'self' blob: *.asp-public.fr/; style-src 'self' 'unsafe-inline'; font-src 'self' 'unsafe-inline' data:; img-src 'self' data: *.asp-public.fr/ https://audience-sites.din.developpement-durable.gouv.fr/; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr/ https://audience-sites.din.developpement-durable.gouv.fr/; media-src 'self' data: *.asp-public.fr/",
+      "x-content-security-policy": "allow 'self' *.asp-public.fr; options eval-script inline-script; connect-src 'self' *.asp-public.fr api-adresse.data.gouv.fr  https://audience-sites.din.developpement-durable.gouv.fr; frame-ancestors 'self' *.asp-public.fr; frame-src 'self' blob: *.asp-public.fr https://3689183.fls.doubleclick.net; object-src 'self' blob: *.asp-public.fr; style-src 'self' 'unsafe-inline'; font-src 'self' 'unsafe-inline' data:; img-src 'self' data: *.asp-public.fr https://audience-sites.din.developpement-durable.gouv.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr https://audience-sites.din.developpement-durable.gouv.fr; media-src 'self' data: *.asp-public.fr",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "text/html",
+      "content-language": "fr",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerjechangemavoiture=1108483756.38683.0000; path=/; Httponly; Secure",
+        "TS01d51d48=01b74c0fddefb56d67a6ae5c6fac0568814c26c3d8f6b461ca43714de457c6b5b02016cbd8475b7a6261e14a64e95e5ab657250e4c06b482d9ff3f366e654453a71d48116a; Path=/; Secure; HttpOnly"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "blob:"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "api-adresse.data.gouv.fr/",
+          "https://audience-sites.din.developpement-durable.gouv.fr/"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "*.asp-public.fr/"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "blob:",
+          "https://3689183.fls.doubleclick.net/"
+        ],
+        "worker-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "blob:"
+        ],
+        "object-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "blob:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "font-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:"
+        ],
+        "img-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "data:",
+          "https://audience-sites.din.developpement-durable.gouv.fr/"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.asp-public.fr/",
+          "https://audience-sites.din.developpement-durable.gouv.fr/"
+        ],
+        "media-src": [
+          "'self'",
+          "*.asp-public.fr/",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerjechangemavoiture": {
+          "domain": "jechangemavoiture.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01d51d48": {
+          "domain": "jechangemavoiture.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://jechangemavoiture.gouv.fr/jcmv/",
+      "redirects": true,
+      "route": [
+        "http://jechangemavoiture.gouv.fr/",
+        "https://jechangemavoiture.gouv.fr/",
+        "https://jechangemavoiture.gouv.fr/jcmv/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
