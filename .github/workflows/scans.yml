@@ -85,7 +85,7 @@ jobs:
           mkdir scans
 
       - name: Mozilla HTTP Observatory
-        if: ${{ inputs.tool == 'httpobs' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }}
+        if: inputs.tool == 'httpobs' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch'
         continue-on-error: true
         timeout-minutes: 10
         id: http
@@ -116,7 +116,7 @@ jobs:
           fi
 
       - name: DSFR
-        if: ${{ inputs.tool == 'dsfr' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == 'dsfr' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/dsfr@main
@@ -125,7 +125,7 @@ jobs:
           output: scans/dsfr.json
 
       - name: Déclaration a11y
-        if: ${{ inputs.tool == 'declaration-a11y' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == 'declaration-a11y' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/declaration-a11y@main
@@ -134,7 +134,7 @@ jobs:
           output: scans/declaration-a11y.json
 
       - name: Déclaration RGPD
-        if: ${{ inputs.tool == 'declaration-rgpd' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == 'declaration-rgpd' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/declaration-rgpd@main
@@ -143,7 +143,7 @@ jobs:
           output: scans/declaration-rgpd.json
 
       - name: EcoIndex
-        if: ${{ inputs.tool == 'ecoindex' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == 'ecoindex' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/ecoindex@main
@@ -152,7 +152,7 @@ jobs:
           output: scans/ecoindex.json
 
       - name: Detect 404
-        if: ${{ inputs.tool == '404' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == '404' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/404@main
@@ -161,7 +161,7 @@ jobs:
           output: scans/404.json
 
       - name: Tracking
-        if: ${{ inputs.tool == 'tracking' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == 'tracking' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/tracking@main
@@ -170,7 +170,7 @@ jobs:
           output: scans/tracking.json
 
       - name: Lighthouse scan
-        if: ${{ inputs.tool == 'lighthouse' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+        if: (inputs.tool == 'lighthouse' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
         continue-on-error: true
         timeout-minutes: 10
         uses: Quentium-Forks/dashlord-actions/lhci@main
@@ -178,7 +178,7 @@ jobs:
           url: ${{ matrix.sites.url }}
 
       # - name: Wappalyzer scan
-      #   if: ${{ inputs.tool == 'wappalyzer' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+      #   if: (inputs.tool == 'wappalyzer' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
       #   continue-on-error: true
       #   timeout-minutes: 10
       #   uses: SocialGouv/wappalyzer-action@master
@@ -194,7 +194,7 @@ jobs:
       #     echo "value=$HOSTNAME" >> $GITHUB_OUTPUT
 
       # - name: testssl.sh scan
-      #   if: ${{ inputs.tool == 'testssl' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+      #   if: (inputs.tool == 'testssl' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
       #   continue-on-error: true
       #   timeout-minutes: 10
       #   uses: mbogh/test-ssl-action@main
@@ -204,7 +204,7 @@ jobs:
       #     grade: F
 
       # - name: Nmap vulnerabilities scan
-      #   if: ${{ inputs.tool == 'nmapvuln' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+      #   if: (inputs.tool == 'nmapvuln' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
       #   continue-on-error: true
       #   timeout-minutes: 10
       #   uses: MTES-MCT/nmap-action@main
@@ -216,7 +216,7 @@ jobs:
       #     raw: false
 
       # - name: Betagouv API scan
-      #   if: ${{ inputs.tool == 'betagouv' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+      #   if: (inputs.tool == 'betagouv' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
       #   continue-on-error: true
       #   timeout-minutes: 10
       #   id: betagouv
@@ -226,7 +226,7 @@ jobs:
       #     output: scans/betagouv.json
 
       # - name: Budget page
-      #   if: ${{ inputs.tool == 'betagouv-budget' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+      #   if: (inputs.tool == 'betagouv-budget' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
       #   continue-on-error: true
       #   timeout-minutes: 10
       #   uses: betagouv/check-url-action@main
@@ -236,7 +236,7 @@ jobs:
       #     exactExpectedRegex: ^budget$
 
       # - name: Stats page
-      #   if: ${{ inputs.tool == 'betagouv-stats' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch' }} && steps.failed-httpobs.outputs.failed != 'true'
+      #   if: (inputs.tool == 'betagouv-stats' || inputs.tool == 'all' || github.event_name != 'workflow_dispatch') && steps.failed-httpobs.outputs.failed != 'true'
       #   continue-on-error: true
       #   timeout-minutes: 10
       #   uses: betagouv/check-url-action@main
