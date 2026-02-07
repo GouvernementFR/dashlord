@@ -1,0 +1,146 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx/1.22.1",
+      "date": "Sat, 07 Feb 2026 02:59:09 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-security-policy": "",
+      "etag": "W/\"ec6e40e502bba15e58053f9181dff9b4\"",
+      "permissions-policy": "interest-cohort=()",
+      "set-cookie": [
+        "preferred_language=fr; path=/; Secure; SameSite=None",
+        "_gitlab_session=c50d7185359080e8f14efdc26da28223; path=/; expires=Sat, 07 Feb 2026 04:59:09 GMT; secure; HttpOnly; SameSite=None"
+      ],
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-gitlab-meta": "{\"correlation_id\":\"01KGV0KYVJVVHDKQBD0ERJVBRR\",\"version\":\"1\"}",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "01KGV0KYVJVVHDKQBD0ERJVBRR",
+      "x-runtime": "0.055325",
+      "x-ua-compatible": "IE=edge",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=63072000",
+      "referrer-policy": "strict-origin-when-cross-origin"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-header-invalid",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "preferred_language": {
+          "domain": "librairie.rcn.aife.economie.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "_gitlab_session": {
+          "domain": "librairie.rcn.aife.economie.gouv.fr",
+          "expires": "2026-02-07T04:59:09.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "http://librairie.rcn.aife.economie.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://librairie.rcn.aife.economie.gouv.fr/"
+      ],
+      "statusCode": 502
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": "max-age=63072000",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
