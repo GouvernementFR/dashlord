@@ -1,0 +1,191 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Sat, 07 Feb 2026 02:59:04 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "content-language": "fr",
+      "set-cookie": [
+        "lang=fr; Path=/; Expires=Sun, 07 Feb 2027 02:59:04 GMT; SameSite=Strict"
+      ],
+      "content-security-policy": "script-src 'nonce-362517cc-ebe8-4d02-b4a9-8d35565ebb93' 'strict-dynamic' 'unsafe-eval'; object-src 'none'; base-uri 'none';",
+      "etag": "W/\"504a-oCVJws+7KUwHcgiPebV5D59oFAc\"",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "permissions-policy": "geolocation=(), camera=(), microphone=(self)",
+      "strict-transport-security": "max-age=86400; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "script-src": [
+          "'nonce-362517cc-ebe8-4d02-b4a9-8d35565ebb93'",
+          "'strict-dynamic'",
+          "'unsafe-eval'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": true,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "lang": {
+          "domain": "lanceurs-dalerte.emploi.gouv.fr",
+          "expires": "2027-02-07T02:59:04.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "strict"
+        },
+        "compaas": {
+          "domain": "lanceurs-dalerte.emploi.gouv.fr",
+          "expires": "2026-02-07T14:59:03.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "compaas.sig": {
+          "domain": "lanceurs-dalerte.emploi.gouv.fr",
+          "expires": "2026-02-07T14:59:03.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://lanceurs-dalerte.emploi.gouv.fr/fr/alert-forms/34f24f9c-ef67-4f7c-b239-5ce73bbc5950",
+      "redirects": true,
+      "route": [
+        "http://lanceurs-dalerte.emploi.gouv.fr/",
+        "https://lanceurs-dalerte.emploi.gouv.fr/",
+        "https://lanceurs-dalerte.emploi.gouv.fr/fr",
+        "https://lanceurs-dalerte.emploi.gouv.fr/fr/alert-forms/34f24f9c-ef67-4f7c-b239-5ce73bbc5950"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=86400; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 86400,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://captcha.liveidentity.com/captcha/public/antibot.min.v3.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://d3js.org/d3.v4.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/chart.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
