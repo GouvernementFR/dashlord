@@ -1,0 +1,143 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 06 Feb 2026 21:25:30 GMT",
+      "set-cookie": [
+        "cookiedef=!zPruApQCvQg7ikCecT1PYrEDAreRisteEoiQxzhHpOMYEKeTouKm7/T44mka7L+9YX/qiRmqiwMt+2A=; path=/; Httponly",
+        "BIGipServer~Tenant-Externe~application~pool-ubika=201486346.20480.0000; path=/; Httponly; Secure"
+      ],
+      "cache-control": "max-age=604800, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "cache-tags": "config:block_list config:block.block.open_theme_onglets_2 config:block.block.open_theme_onglets user:0 config:block.block.open_theme_actionsdadministrationprincipales config:block.block.blocktothetopopensde config:block.block.open_theme_messages config:block.block.open_theme_contenudelapageprincipale config:block.block.open_theme_connexionutilisateur config:block.block.open_theme_blockbandeaudinformation config:block.block.blocksocialmediaopensde config:block.block.blockfooteropensde config:block.block.blockheaderopensde config:block.block.open_theme_filsdariane node:142 config:block.block.open_theme_admin config:block.block.open_theme_tools config:block.block.typedecontenu block_view menu_link_content_list:menu_link_content footer minarm_default_config node_view paragraph_view paragraph:18848 config:paragraphs.settings paragraph:1507 paragraph:1027 paragraph:1508 paragraph:21078 paragraph:27059 paragraph:1029 paragraph:24791 node:895 node:890 eventToRebuild group_list node_list paragraph:16251 open_eulerian.eulerian_configuration.settings user:9 media:277 local_task config:workflows.workflow.minarm_workflow information_banner_all header main rendered http_response config:user.role.anonymous",
+      "x-drupal-cache": "MISS",
+      "last-modified": "Fri, 06 Feb 2026 21:25:26 GMT",
+      "etag": "\"1770413126\"",
+      "content-length": "86614",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "17992669 14331958",
+      "age": "20028",
+      "accept-ranges": "bytes",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "cookiedef": {
+          "domain": "maison-des-blesses.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+          "domain": "maison-des-blesses.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://maison-des-blesses.defense.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://maison-des-blesses.defense.gouv.fr/",
+        "https://maison-des-blesses.defense.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
