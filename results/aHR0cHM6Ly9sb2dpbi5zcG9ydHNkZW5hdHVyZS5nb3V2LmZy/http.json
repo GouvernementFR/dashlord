@@ -1,0 +1,138 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 07 Feb 2026 03:00:29 GMT",
+      "server": "Apache",
+      "set-cookie": [
+        "CFID=245613757; Expires=Sun, 08-Feb-2026 03:00:29 GMT; Path=/",
+        "CFTOKEN=24155b2223035b92-1C703B3E-BFBB-5F63-2FBE2F253E88B7E0; Expires=Sun, 08-Feb-2026 03:00:29 GMT; Path=/"
+      ],
+      "content-language": "fr-FR",
+      "vary": "Accept-Encoding",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html;charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "CFID": {
+          "domain": "login.sportsdenature.gouv.fr",
+          "expires": "2026-02-08T03:00:29.000Z",
+          "path": "/",
+          "port": null
+        },
+        "CFTOKEN": {
+          "domain": "login.sportsdenature.gouv.fr",
+          "expires": "2026-02-08T03:00:29.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://login.sportsdenature.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://login.sportsdenature.gouv.fr/",
+        "https://login.sportsdenature.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c0c842799a0294": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/api.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
