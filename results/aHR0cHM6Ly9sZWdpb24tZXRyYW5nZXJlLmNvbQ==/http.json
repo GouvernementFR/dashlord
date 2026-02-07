@@ -1,0 +1,143 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 30,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 06 Feb 2026 20:00:28 GMT",
+      "cache-control": "max-age=604800, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "cache-tags": "config:block_list config:block.block.open_theme_onglets_2 config:block.block.open_theme_onglets config:block.block.open_theme_actionsdadministrationprincipales config:block.block.blocktothetopopensde config:block.block.open_theme_messages config:block.block.open_theme_contenudelapageprincipale config:block.block.open_theme_connexionutilisateur config:block.block.blocksocialmediaopensde config:block.block.blockfooteropensde config:block.block.blockheaderopensde config:block.block.open_theme_filsdariane node:3535 config:block.block.open_theme_admin config:block.block.open_theme_tools config:block.block.typedecontenu config:block.block.groupescontenudegroupegroupeparentgroupetitre config:matomo.settings group_content_list:plugin:group_node:news_article group_content_list:plugin:group_node:authority group_content_list:plugin:group_node:cold_content group_content_list:plugin:group_node:event group_content_list:plugin:group_node:geozone group_content_list:plugin:group_node:homepage group_content_list:plugin:group_node:hub_news_list group_content_list:plugin:group_node:manual_list group_content_list:plugin:group_node:map group_content_list:plugin:group_node:map_poi group_content_list:plugin:group_node:poi block_view menu_link_content_list:menu_link_content footer group_list minarm_default_config config:minarm_social_networks.settings node_view paragraph_view paragraph:17351 config:paragraphs.settings paragraph:15328 paragraph:15319 paragraph:15317 paragraph:15318 paragraph:17350 paragraph:17400 paragraph:17511 node:4303 paragraph:15316 node_list:news_article paragraph:15315 user:4 media:12228 group_content:17761 group:96 config:system.site header menu:minarm-oicd-legion-etrangere language_selector rendered http_response config:user.role.anonymous config:group_role_list config:group.role.organism_entity-anonymous flexible_permissions group_content_list:plugin:group_membership:entity:0 local_task config:workflows.workflow.minarm_workflow",
+      "x-drupal-cache": "MISS",
+      "access-control-allow-origin": "*",
+      "last-modified": "Fri, 06 Feb 2026 20:00:27 GMT",
+      "etag": "\"1770408027\"",
+      "content-length": "73996",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "667617761 294552959",
+      "age": "25379",
+      "accept-ranges": "bytes",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "cookiedef": {
+          "domain": "www.terre.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+          "domain": "www.terre.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.terre.defense.gouv.fr/legion-etrangere",
+      "redirects": true,
+      "route": [
+        "http://legion-etrangere.com/",
+        "https://www.legion-etrangere.com/",
+        "https://www.terre.defense.gouv.fr/legion-etrangere/",
+        "http://www.terre.defense.gouv.fr/legion-etrangere",
+        "https://www.terre.defense.gouv.fr/legion-etrangere"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
