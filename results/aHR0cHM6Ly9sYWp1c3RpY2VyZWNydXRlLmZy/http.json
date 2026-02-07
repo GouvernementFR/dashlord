@@ -1,0 +1,141 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 30,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 06 Feb 2026 10:06:27 GMT",
+      "x-content-type-options": "nosniff, nosniff",
+      "cache-control": "max-age=86400, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Thu, 05 Feb 2026 10:27:04 GMT",
+      "etag": "\"1770287224\"",
+      "vary": "Cookie",
+      "cache-tags": "block_view block_visibility_group:ours_jobs_group config:block.block.blocdinscriptionalanewsletter config:block.block.blockcontactform config:block.block.breadcrumbs config:block.block.formulaireexposesearchsearch_page config:block.block.logoblock config:block.block.logoheaderblock config:block.block.mainpagecontent config:block.block.menufooterprincipal config:block.block.menufooterreseauxsociaux config:block.block.menufootersecondaire config:block.block.menupostfooter config:block.block.menuprincipalheader config:block.block.messages config:block.block.onglets config:block.block.ourjobs config:block.block.primaryadminactions config:block.block.views_block__article_views_block_news config:block.block.views_block__article_views_block_news_similar config:block.block.views_block__article_views_full_listing_article config:block.block.views_block__jobs_block_jobs_similar config:block.block.viewsexposedfilterblock config:block.block.viewsexposedfilterblock_bottom config:block_list config:block_visibility_groups.block_visibility_group.ours_jobs_group config:filter.format.simplified_editor config:honeypot.settings config:image.style.highlight_img_style config:image.style.image_en_une_img_style config:paragraphs.settings config:system.menu.menu-footer-principal config:system.menu.menu-footer-reseaux-sociaux config:system.menu.menu-footer-secondaire config:system.menu.menu-post-footer config:system.menu.menu-principal-header config:user.role.anonymous file:2898 file:2919 file:3012 file:3094 file:3095 file:314 file:3721 file:3722 file:409 file:526 file:555 http_response local_task media:151 media:171 media:2388 media:2407 media:2439 media:2490 media:2568 media:2569 media:298 media:3156 media:316 media_view node:10 node:11 node:12 node:135 node:14 node:143 node:15 node:16 node:17 node:19 node:346 node:355 node:356 node:447 node:473 node:589 node:7 node:75 node:8 node:9 node:98 node_view paragraph:10 paragraph:11 paragraph:12 paragraph:13 paragraph:149 paragraph:150 paragraph:172 paragraph:178 paragraph:2509 paragraph:2510 paragraph:522 paragraph:530 paragraph:640 paragraph:8 paragraph:9 paragraph_view rendered user:10",
+      "x-drupal-cache": "HIT",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "60753",
+      "x-cache": "HIT",
+      "x-cache-hits": "1849",
+      "accept-ranges": "bytes",
+      "content-length": "39279",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerLagdkrlnPc4BxbqI1VThxg=!ULc8l73FT8cSVpJedLNKq/VAg+8cxBXuFKSvA+tzZKGf6aHKwVgD0xd48sJLGEhazh4Sv/eCtecmCw==; path=/; Httponly",
+        "TS018d6167=01a6efdead8839dce0504568397bb4a6a19ce90f7f6e703615e956e1119d6cc1d8e57d84e5a48316db9e70bb267067e9e4d08e0f4cb2afa206f31aba403372fabf066c237f; Path=/; Domain=.lajusticerecrute.fr"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServerLagdkrlnPc4BxbqI1VThxg": {
+          "domain": "lajusticerecrute.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "TS018d6167": {
+          "domain": "lajusticerecrute.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://lajusticerecrute.fr/",
+      "redirects": true,
+      "route": [
+        "http://lajusticerecrute.fr/",
+        "https://lajusticerecrute.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
