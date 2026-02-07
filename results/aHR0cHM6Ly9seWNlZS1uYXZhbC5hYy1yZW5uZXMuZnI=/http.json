@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 07 Feb 2026 03:03:51 GMT",
+      "server": "nginx/1.27.3",
+      "content-type": "text/html; charset=utf-8",
+      "x-powered-by": "PHP/8.3.17",
+      "vary": "Cookie,Accept-Encoding",
+      "composed-by": "SPIP 4.4.5 @ www.spip.net + https://lycee-naval.ac-rennes.fr/sites/lycee-naval.ac-rennes.fr/local/config.txt",
+      "link": "<https://lycee-naval.ac-rennes.fr/sites/lycee-naval.ac-rennes.fr/local/cache-css/a62a71f16198f589acc9b7a20417d4d3.css?1770415784>;rel=\"preload\";as=\"style\"",
+      "x-spip-cache": "43200",
+      "last-modified": "Sat, 07 Feb 2026 03:03:51 GMT",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "set-cookie": [
+        "Persistence=!5Ds1MkyRKoD6ojb7+nU2Tb3LoKwfQGqZTFBdaWUpcqcTihjjvjm6NXRalm1yqUKz9k86sum7KGe5Qq9uLvlanx8QUHKcUATWqR1Reqi/Pg==; path=/; Httponly; Secure"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "Persistence": {
+          "domain": "lycee-naval.ac-rennes.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://lycee-naval.ac-rennes.fr/",
+      "redirects": false,
+      "route": [
+        "http://lycee-naval.ac-rennes.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//maps.google.com/maps/api/js?language=fr&key=": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
