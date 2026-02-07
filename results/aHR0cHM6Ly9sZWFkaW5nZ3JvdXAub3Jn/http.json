@@ -1,0 +1,149 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 10,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 07 Feb 2026 03:01:22 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "link": "<https://www.diplomatie.gouv.fr/local/cache-css/55f21a3b90f422cc90e39440ca450884.css?1768907532>;rel=\"stylesheet prefetch\"",
+      "last-modified": "Sat, 07 Feb 2026 03:01:22 GMT",
+      "content-length": "32696",
+      "connection": "close",
+      "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "BIGipServerPOOL_DMZ01_80_FRANCE_DIPLO=722540972.20480.0000; path=/; Httponly; Secure",
+        "TS017a74ff=0118540908e24474f003aa02d2ee89f239d0ba2e7c7095001b454dfdf41f3bd6598aec891a683e569290185f2afd6592d5d70915535329fe5211606e783bfeb06488c99afd; Path=/; Domain=.www.diplomatie.gouv.fr"
+      ],
+      "x-xss-protection": "1",
+      "x-content-type-options": "nosniff"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServerPOOL_DMZ01_80_FRANCE_DIPLO": {
+          "domain": "www.diplomatie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS017a74ff": {
+          "domain": "www.diplomatie.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/les-financements-innovants-pour-le-developpement/",
+      "redirects": true,
+      "route": [
+        "http://leadinggroup.org/",
+        "https://leadinggroup.org/",
+        "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/les-financements-innovants-pour-le-developpement/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.diplomatie.gouv.fr/local/cache-js/1f1c1ef105a5eb8dd4b9f905f7f2b08c.js?1768907532": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.diplomatie.gouv.fr/plugins/tarteaucitron_mae/lib/tarteaucitron/tarteaucitron.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.diplomatie.gouv.fr/local/cache-js/jsdyn-services_tac_services_mae_activation_js-6eb871ca.js?1723531753": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.diplomatie.gouv.fr/local/cache-js/jsdyn-javascript_fd_application_js-3ee027b7.js?1701168438": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
