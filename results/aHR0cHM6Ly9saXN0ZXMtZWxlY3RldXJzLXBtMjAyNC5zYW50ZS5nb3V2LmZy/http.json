@@ -1,0 +1,231 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 07 Feb 2026 02:59:10 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "<https://listes-electeurs-pm2024.sante.gouv.fr/assets/Muli-Regular-bb62be3d0c815d86838837a026024c5833d2a54e3b457012d5d161a3ece1aaa9.woff2>; rel=preload; as=font; type=font/woff2; crossorigin=anonymous,<https://listes-electeurs-pm2024.sante.gouv.fr/assets/Muli-Bold-d2dc11eebbc84a2ec6433ef027713b0c75c40c51cb522eaf2ab7dfa7be432e30.woff2>; rel=preload; as=font; type=font/woff2; crossorigin=anonymous,</assets/application-86ddde921f36d58174997ac667ba1b816bc8603db1b9f75c14bfa573f9b09b15.css>; rel=preload; as=style; nopush",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-security-policy": "img-src 'self' data: blob: *.openstreetmap.org *.cloud.ovh.net *; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: *.sendinblue.com *.crisp.chat crisp.chat *.sibautomation.com sibautomation.com cdn.jsdelivr.net maxcdn.bootstrapcdn.com code.jquery.com; style-src 'self' 'unsafe-inline' *.crisp.chat crisp.chat cdn.jsdelivr.net maxcdn.bootstrapcdn.com; connect-src 'self' wss://*.crisp.chat *.crisp.chat in-automate.sendinblue.com app.franceconnect.gouv.fr sentry.io openmaptiles.geo.data.gouv.fr openmaptiles.github.io tiles.geo.api.gouv.fr wxs.ign.fr  *.cegedim.cloud *.fabrique.social.gouv.fr listes-electeurs-pm2024.sante.gouv.fr api-adresse.data.gouv.fr data.education.gouv.fr geo.api.gouv.fr arssante.opendatasoft.com; frame-src 'self'; default-src 'self' data: blob: 'report-sample' fonts.gstatic.com in-automate.sendinblue.com player.vimeo.com app.franceconnect.gouv.fr sentry.io *.crisp.chat crisp.chat *.crisp.help *.sibautomation.com sibautomation.com data",
+      "set-cookie": [
+        "_csrf_token=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltRTBaRlZqTTFsdk1UWmtlRWRWUVdNek4wTk9aRGhhUzBWQ1RqQnJSMFJSVUdSb2VqZDZhRWxTUnpnOUlnPT0iLCJleHAiOiIyMDI3LTAyLTA3VDAyOjU5OjEwLjQzOVoiLCJwdXIiOiJjb29raWUuX2NzcmZfdG9rZW4ifX0%3D--c2c091d588981355aedaed14654b1771cfa6631c; path=/; expires=Sun, 07 Feb 2027 02:59:10 GMT; HttpOnly; SameSite=Lax; secure",
+        "_DS_session=HRJwue3E7Y%2FDUa8Co3k0MnOY1lgIiDu8Xl%2FFt3VcYNafQEyLnAFbbpQNNgvwSgGh0Q2%2BnhaKbYLUCU3TN9RZjQNB1HXJmpz7Lxtss8eOqpyDGtvUBGfpKP5PjfjAnZScfqSEvYMzFlDQXwTYYWUyx9dhX79aLTebEZnJELHjGIBxSRmbzfb9GMS9740FRYwRkD2ANvIViY%2BDHtCFUluE3dzm%2Fdgm%2F%2B%2BaRfFK32hqj7zqbsJdpwQRd8tDEovmDIsFI%2F5POqCAir6odxa4l7SM6YZ9ag%3D%3D--bO6b%2BBQOZwJDRNGk--oI3mQoP6GbUbAIE5XC%2Fm7A%3D%3D; HttpOnly; path=/; secure; HttpOnly; SameSite=Lax",
+        "BIGipServerpool-pharel-prod2.cegedim.cloud-http=!A5JDLgu0+MJa3xQXIkI7F7SI9ajmitJ0fWDYfr7TdsblJXO9O1edXFENnsJde7DbEETBEwG++tuUZFPI8n/OwxJS3yx2; path=/; Httponly; Secure"
+      ],
+      "x-request-id": "19a9923c-4d2e-4303-876b-032f2d307399",
+      "x-runtime": "0.016302",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "img-src": [
+          "'self'",
+          "*",
+          "*.openstreetmap.org",
+          "blob:",
+          "data:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.crisp.chat",
+          "*.sendinblue.com",
+          "*.sibautomation.com",
+          "blob:",
+          "cdn.jsdelivr.net",
+          "code.jquery.com",
+          "crisp.chat",
+          "maxcdn.bootstrapcdn.com",
+          "sibautomation.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.crisp.chat",
+          "cdn.jsdelivr.net",
+          "crisp.chat",
+          "maxcdn.bootstrapcdn.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.cegedim.cloud",
+          "*.crisp.chat",
+          "*.fabrique.social.gouv.fr",
+          "api-adresse.data.gouv.fr",
+          "app.franceconnect.gouv.fr",
+          "arssante.opendatasoft.com",
+          "data.education.gouv.fr",
+          "geo.api.gouv.fr",
+          "in-automate.sendinblue.com",
+          "listes-electeurs-pm2024.sante.gouv.fr",
+          "openmaptiles.geo.data.gouv.fr",
+          "openmaptiles.github.io",
+          "sentry.io",
+          "tiles.geo.api.gouv.fr",
+          "wss://*.crisp.chat",
+          "wxs.ign.fr"
+        ],
+        "frame-src": [
+          "'self'"
+        ],
+        "default-src": [
+          "'report-sample'",
+          "'self'",
+          "*.crisp.chat",
+          "*.crisp.help",
+          "*.sibautomation.com",
+          "app.franceconnect.gouv.fr",
+          "blob:",
+          "crisp.chat",
+          "data",
+          "fonts.gstatic.com",
+          "in-automate.sendinblue.com",
+          "player.vimeo.com",
+          "sentry.io",
+          "sibautomation.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "_csrf_token": {
+          "domain": "listes-electeurs-pm2024.sante.gouv.fr",
+          "expires": "2027-02-07T02:59:10.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_DS_session": {
+          "domain": "listes-electeurs-pm2024.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "BIGipServerpool-pharel-prod2.cegedim.cloud-http": {
+          "domain": "listes-electeurs-pm2024.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://listes-electeurs-pm2024.sante.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://listes-electeurs-pm2024.sante.gouv.fr/",
+        "https://listes-electeurs-pm2024.sante.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
