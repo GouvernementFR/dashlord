@@ -1,0 +1,174 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 07 Feb 2026 03:01:30 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "last-modified": "Sat, 31 Jan 2026 15:01:40 GMT",
+      "vary": "Accept-Encoding,User-Agent",
+      "x-front": "TEMPLATEDEBIAN11",
+      "access-control-allow-origin": "https://epargnonsnosressources.gouv.fr",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "accelerometer=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
+      "content-security-policy": "upgrade-insecure-requests",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": [
+        "__cf_bm=3FqriB.lKERNXdRLWs8G2Zc5KIAZs6c8a4_FgiJfvUo-1770433290-1.0.1.1-GpR2QH.2qJ0009IQX6yI4HVv8XAHeeybVYWr72w1Ip4VEvCUfnahNgnGqOZ2u9BV.Gf0eeZRS.prTqpPHIZGmqg3nX_IumHUUGDBVlmV67E; path=/; expires=Sat, 07-Feb-26 03:31:30 GMT; domain=.epargnonsnosressources.gouv.fr; HttpOnly; Secure; SameSite=None"
+      ],
+      "server": "cloudflare",
+      "cf-ray": "9c9fa49da9d68f17-IAD"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "__cf_bm": {
+          "domain": "epargnonsnosressources.gouv.fr",
+          "expires": "2026-02-07T03:31:30.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://epargnonsnosressources.gouv.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://epargnonsnosressources.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://longuevieauxobjets.gouv.fr/",
+        "https://longuevieauxobjets.gouv.fr/",
+        "https://epargnonsnosressources.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=epargnonsnosressources.gouv.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://epargnonsnosressources.gouv.fr/wp-content/cache/min/1/ajax/libs/iframe-resizer/4.3.6/iframeResizer.min.js?ver=1769015189": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        },
+        "https://epargnonsnosressources.gouv.fr/wp-content/cache/min/1/wp-content/themes/ademe/dist/app.js?ver=1769015189": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://epargnonsnosressources.gouv.fr/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://epargnonsnosressources.gouv.fr/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
