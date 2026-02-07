@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx/1.18.0",
+      "date": "Sat, 07 Feb 2026 03:04:07 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-powered-by": "PHP/7.2.24",
+      "set-cookie": [
+        "MoodleSession_frontal=c24f9f86bd17717098dff5a05e28b2a8; path=/",
+        "mmid=WmG01evYfEZdFzTy6hnI; path=/; domain=magistere.education.fr; secure",
+        "BIGipServer2jpP5cf5BR1MKLCTjnawqg=!YREEhIe45y/Zgd4cUuXzBVxHRHRyQ/dFX/LkeVBukpx/Q/xzfJo6zWIKOPjeESLi2v5cRwkhXFd3SHRUtEzS7RwxWAphtAR/2V5MemM=; path=/; Httponly; Secure"
+      ],
+      "content-language": "fr-mag",
+      "content-script-type": "text/javascript",
+      "content-style-type": "text/css",
+      "x-ua-compatible": "IE=edge",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-transform",
+      "pragma": "no-cache",
+      "expires": "Mon, 20 Aug 1969 09:23:00 GMT",
+      "last-modified": "Sat, 07 Feb 2026 03:04:07 GMT",
+      "x-frame-options": "sameorigin",
+      "strict-transport-security": "max-age=63072000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "MoodleSession_frontal": {
+          "domain": "magistere.education.fr",
+          "path": "/",
+          "port": null
+        },
+        "mmid": {
+          "domain": "magistere.education.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServer2jpP5cf5BR1MKLCTjnawqg": {
+          "domain": "magistere.education.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://magistere.education.fr/",
+      "redirects": true,
+      "route": [
+        "http://magistere.education.fr/",
+        "https://magistere.education.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
