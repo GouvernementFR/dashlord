@@ -1,0 +1,193 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "openresty",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "101674",
+      "connection": "close",
+      "cache-control": "max-age=180, public",
+      "date": "Sat, 07 Feb 2026 02:59:43 GMT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Sat, 07 Feb 2026 02:59:43 GMT",
+      "etag": "\"1770433183\"",
+      "vary": "Cookie",
+      "x-generator": "Drupal 11 (https://www.drupal.org)",
+      "content-security-policy": "default-src 'none'; script-src 'self'  https://www.gstatic.com/ https://www.google.com https://www.recaptcha.net  https://statistiques.sigp.aviation-civile.gouv.fr 'unsafe-inline' 'unsafe-eval'; object-src 'self'; style-src 'self' http://fonts.googleapis.com https://fonts.googleapis.com 'unsafe-inline' ; img-src 'self' data: https://libelaero.fr/ https://statistiques.sigp.aviation-civile.gouv.fr https://www.gstatic.com/images/; media-src 'self'; frame-src 'self'  https://www.recaptcha.net https://www.google.com https://www.youtube.com/embed/ https://www.google.com/ https://www.dailymotion.com/embed/video/; child-src 'self'  https://www.google.com https://www.youtube.com/embed/ https://www.google.com/ https://www.dailymotion.com/embed/video/; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://statistiques.sigp.aviation-civile.gouv.fr; report-uri /report-csp-violation",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "from-origin": "same",
+      "referrer-policy": "same-origin",
+      "feature-policy": "payment 'none'"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://statistiques.sigp.aviation-civile.gouv.fr",
+          "https://www.google.com",
+          "https://www.gstatic.com/",
+          "https://www.recaptcha.net"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "http://fonts.googleapis.com",
+          "https://fonts.googleapis.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://libelaero.fr/",
+          "https://statistiques.sigp.aviation-civile.gouv.fr",
+          "https://www.gstatic.com/images/"
+        ],
+        "media-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://www.dailymotion.com/embed/video/",
+          "https://www.google.com",
+          "https://www.recaptcha.net",
+          "https://www.youtube.com/embed/"
+        ],
+        "child-src": [
+          "'self'",
+          "https://www.dailymotion.com/embed/video/",
+          "https://www.google.com",
+          "https://www.youtube.com/embed/"
+        ],
+        "font-src": [
+          "'self'",
+          "https://fonts.gstatic.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://statistiques.sigp.aviation-civile.gouv.fr"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.libelaero.fr/",
+      "redirects": true,
+      "route": [
+        "http://libelaero.fr/",
+        "https://www.libelaero.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
