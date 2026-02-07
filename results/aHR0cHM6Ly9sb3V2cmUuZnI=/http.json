@@ -1,0 +1,213 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 115,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 07 Feb 2026 03:00:31 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "352986",
+      "connection": "close",
+      "link": "<https://api-www.louvre.fr>; rel=\"preconnect\"",
+      "cache-control": "s-maxage=1800, public, max-age=0, stale-while-revalidate=60",
+      "feature-policy": "geolocation 'none', clipboard-read 'none', payment 'none', document-domain 'none', camera 'none', microphone 'none', usb 'none', serial 'none'",
+      "permissions-policy": "fullscreen=(self \"https://www.youtube.com\" \"https://player.vimeo.com\" \"https://livemap.getwemap.com\"),geolocation=(self \"https://livemap.getwemap.com\")",
+      "document-policy": "document-write=?0",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "content-security-policy": "default-src 'self' https://api-www.louvre.fr;base-uri 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;script-src 'self' 'strict-dynamic' 'unsafe-inline' https://tag.aticdn.net https://www.youtube.com 'nonce-ffe2ace9-5e3e-4c46-b1b0-0d10d1ff99e0';img-src 'self' data: https://api-www.louvre.fr https://i.ytimg.com https://i.vimeocdn.com;media-src 'self' https://api-www.louvre.fr https://*.ausha.co https://*.radiofrance-podcast.net;connect-src 'self' https://api-www.louvre.fr fxxslpn.pa-cd.com https://*.clarity.ms;frame-src https://www.youtube.com https://player.vimeo.com https://livemap.getwemap.com https://embed.radiofrance.fr/;frame-ancestors 'none';form-action 'self' https://api-www.louvre.fr;manifest-src 'self';font-src 'self' https://fonts.gstatic.com;object-src 'none';upgrade-insecure-requests",
+      "x-dns-prefetch-control": "off",
+      "expect-ct": "max-age=0",
+      "x-frame-options": "DENY",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-download-options": "noopen",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-xss-protection": "0",
+      "etag": "W/\"k6htts48cw7jyj\"",
+      "x-cache": "HIT",
+      "x-cache-hits": "42",
+      "access-control-allow-origin": "https://www.louvre.fr",
+      "access-control-allow-methods": "GET, OPTIONS",
+      "access-control-allow-headers": "Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Authorization, Access-Control-Allow-Origin, Req.Http.Origin, Cors",
+      "age": "320",
+      "accept-ranges": "bytes",
+      "x-wadp-age": "276.210",
+      "x-wadp-ttl": "1479.963",
+      "x-content-type-options": "nosniff",
+      "x-clara-wadp": "24565700 38856275",
+      "server": "wadp2",
+      "x-wadp-cache": "HIT"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'self'",
+          "https://api-www.louvre.fr"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com"
+        ],
+        "script-src": [
+          "'nonce-ffe2ace9-5e3e-4c46-b1b0-0d10d1ff99e0'",
+          "'strict-dynamic'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://api-www.louvre.fr",
+          "https://i.vimeocdn.com",
+          "https://i.ytimg.com"
+        ],
+        "media-src": [
+          "'self'",
+          "https://*.ausha.co",
+          "https://*.radiofrance-podcast.net",
+          "https://api-www.louvre.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "fxxslpn.pa-cd.com",
+          "https://*.clarity.ms",
+          "https://api-www.louvre.fr"
+        ],
+        "frame-src": [
+          "https://embed.radiofrance.fr/",
+          "https://livemap.getwemap.com",
+          "https://player.vimeo.com",
+          "https://www.youtube.com"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "form-action": [
+          "'self'",
+          "https://api-www.louvre.fr"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "https://fonts.gstatic.com"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": true,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://www.louvre.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.louvre.fr/",
+      "redirects": true,
+      "route": [
+        "http://louvre.fr/",
+        "https://www.louvre.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 15552000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    }
+  }
+}
