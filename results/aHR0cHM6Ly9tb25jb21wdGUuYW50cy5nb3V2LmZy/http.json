@@ -1,0 +1,177 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 110,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 09 Feb 2026 03:11:18 GMT",
+      "content-type": "text/html",
+      "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "content-security-policy": "default-src 'self';       script-src 'self' 'nonce-6ea6da03802c3c7ebb9dc8fc8a31d95e' https://captcha.liveidentity.com/ https://cdn.woopic.com/ https://xgyj.ants.gouv.fr https://ajcb.moncompte.ants.gouv.fr;       object-src 'none';       style-src 'self' 'unsafe-inline';       img-src 'self' data: https://captcha.liveidentity.com/ https://cdn.woopic.com/ https://xgyj.ants.gouv.fr https://ajcb.moncompte.ants.gouv.fr;       media-src 'self' https://captcha.liveidentity.com/ https://cdn.woopic.com/;       font-src 'self' data:;       frame-ancestors 'none';       connect-src 'self' https://captcha.liveidentity.com/ https://cdn.woopic.com/ https://xgyj.ants.gouv.fr https://ajcb.moncompte.ants.gouv.fr https://geo.api.gouv.fr/;",
+      "x-nonce": "6ea6da03802c3c7ebb9dc8fc8a31d95e",
+      "x-frame-options": "DENY",
+      "strict-transport-security": "max-age=31536000; includesubdomains",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'nonce-6ea6da03802c3c7ebb9dc8fc8a31d95e'",
+          "'self'",
+          "https://ajcb.moncompte.ants.gouv.fr",
+          "https://captcha.liveidentity.com/",
+          "https://cdn.woopic.com/",
+          "https://xgyj.ants.gouv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://ajcb.moncompte.ants.gouv.fr",
+          "https://captcha.liveidentity.com/",
+          "https://cdn.woopic.com/",
+          "https://xgyj.ants.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "https://captcha.liveidentity.com/",
+          "https://cdn.woopic.com/"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://ajcb.moncompte.ants.gouv.fr",
+          "https://captcha.liveidentity.com/",
+          "https://cdn.woopic.com/",
+          "https://geo.api.gouv.fr/",
+          "https://xgyj.ants.gouv.fr"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": "max-age=31536000; includesubdomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://captcha.liveidentity.com/captcha/public/antibot.min.v5-latest.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
