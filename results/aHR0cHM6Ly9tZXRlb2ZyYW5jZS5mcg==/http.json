@@ -1,0 +1,146 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "openresty",
+      "date": "Mon, 09 Feb 2026 03:07:00 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "cache-control": "must-revalidate, no-cache, private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "link": "<https://meteofrance.fr/>; rel=\"shortlink\", <https://meteofrance.fr/>; rel=\"canonical\", <https://meteofrance.fr/page-daccueil-test>; rel=\"alternate\"; hreflang=\"fr\", <https://meteofrance.fr/page-daccueil-test>; rel=\"revision\", </sites/meteofrance.fr/files/css/css_IDuhMecX_eT7Nr-Qq613xKchiC3RVA1RamgUxoBjrp4.css>; rel=preload; as=style, </sites/meteofrance.fr/files/css/css_h_M4l0oKulJ1Z3IJYSvMOHTxC5K6lHlOdEVoEzmERzI.css>; rel=preload; as=style, </sites/meteofrance.fr/files/js/js_u9OepQzrrEOHEGWAPerUE6rwsqzO0JtU-p2KahRYgmU.js>; rel=preload; as=script, </sites/meteofrance.fr/files/js/js_4PTvoa3OwhowGh-rsBxbnu6tGfUA5qq_WtWW9ZfHU-k.js>; rel=preload; as=script",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "set-cookie": [
+        "mfsession=rlWwoTSmplV6VzyhqTIlozI0VvjvLJkaVwbvFSZlAGLvYPW0rKNvBvWXI1DvsD.rlWdqTxvBvWwAGuuLGMwA2H2LzD0ZwWuZJIwZTWvATZ0ZmAuATMwMvVfVzyuqPV6ZGp3ZQLjAwDlZU0.sl7-lJNyAIOqIA4-XkEjScsaWqIGOREswUNQpQWf5J4; Path=/; Max-Age=3600; SameSite=None; Secure"
+      ],
+      "x-core-variant": "Modern",
+      "x-loc-where": "Modern",
+      "x-this-proto": "https",
+      "x-server-name": "meteofrance.fr",
+      "x-xss-protection": "1; mode=block",
+      "x-cache-status": "HIT",
+      "x-request-id": "509c1b02881d99f2f1d0bc9d6380ba3f"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "mfsession": {
+          "domain": "meteofrance.fr",
+          "max-age": 3600,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://meteofrance.fr/",
+      "redirects": true,
+      "route": [
+        "http://meteofrance.fr/",
+        "https://meteofrance.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/vue@2.6.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/vuex@3.5.1/dist/vuex.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
