@@ -1,0 +1,141 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 5,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "max-age=21600, public",
+      "content-language": "fr",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 09 Feb 2026 03:11:45 GMT",
+      "etag": "\"1770598377\"",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Mon, 09 Feb 2026 00:52:57 GMT",
+      "traceresponse": "00-1892756afcb161430acced06e4aefeaf-44b7d4e330ece5a9-01",
+      "vary": "X-Bin",
+      "x-adv-varnish": "Cache-enabled",
+      "x-content-type-options": "nosniff",
+      "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
+      "x-deflate-key": "b91f02cf5af93c1c9141ba365d5852c9d12df6fd39f8b5d9c3b80dc1bc1428e1",
+      "x-drupal-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 9 (https://www.drupal.org)",
+      "x-grace": "10",
+      "x-platform-cluster": "xahczahar6dee-master-7rqtwti",
+      "x-platform-processor": "o57ea4a5l4x56qqmnktq6yhxbm",
+      "x-platform-router": "ykkpxk5pcqszgwcfb2f2zjcj34",
+      "x-tag": "1k2y 1k7x 1k6y 3u5 1k9k 1k5q 1k7y 1k6d 1k9d 1k5l 1k5s 1k9r 1k8f 1k9r 3u2 1k7m 3u4 1kal 1c13 1k5c 1k69 1kcx 1kbl 1kbw 1kam 1kai 1kak 1k4j 1kal 1kan 1kap 1kaq 1kak 1k8a 1k78 1k8m 1k5z 1kay 1kbm 1k8q 1k62 2x 1k9l 1k65 1c4o 5r 1kax 1c1y 1c4n 1c1 1k8n 1c2 1cp 1c3h 1c5c 1c5e 1c4c 1612y 16zt 2j 4e 2h3s 1k68 1k5l 2k 2h19 2m 1f3q 1kcq 1k55 1k5g 1k5l 1k5d 2h18 1fzd 2h1a 1fzc 1kci 1k5i 1k5b 2h1c 1f3n 1kbn 1k5e 1k5f 1k5m 1k5f 2h1b 1f3m 1b1 1k6q 1kaj 1kbv 4f 2h1d 1k8l 1k7j 1k57 1c4b 1c4 1c5 1c6 1c7 1cj 1cf 1cg 1ch 1c5d 1c3y 1cm 1c4x 1cn 1c3i 1c9 1ca 1cb 1cc 1cd 1ce 1c4p 1co 1c16 1c4j 1cq 1cr 1cs 1ct 1cu 1c1i 1c1j 1c4k 1c1l 1c9l 1c1o 1c3k 1c40 1c41 1c42 1c43 1c44 1c45 1c46 1c1r 1c4x 1c4z 1c4q 1c1w 1c1t 1c1x 1c9b 1k6k 2hsx 1k8z 1fdy 1ka7 1k53 1k5d 2hvo 1c7o 1fcg 2hr9 1c6q 1fye 2h19x 1c9j 1frv 2h3h 1fnb 1k3w 1k8l 2l 4z 1k6v",
+      "x-ttl": "3600",
+      "x-ua-compatible": "IE=edge",
+      "x-varnish-secret": "af1ca2701f72024c89d02503358edd01d2270f4da9e608010ece6b74c3bcb78a",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://mobiliernational.culture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://mobiliernational.culture.gouv.fr/",
+        "https://mobiliernational.culture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//maps.googleapis.com/maps/api/js?key=AIzaSyBirgRml7IwsEPwZhKGAfviSn_jsEYmUcM": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
