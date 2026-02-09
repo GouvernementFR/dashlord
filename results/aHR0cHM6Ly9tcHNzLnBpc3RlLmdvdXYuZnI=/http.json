@@ -1,0 +1,192 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 100,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 09 Feb 2026 03:14:06 GMT",
+      "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+      "last-modified": "Mon, 09 Feb 2026 03:09:40 GMT",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "etag": "\"337b395786350e473f485ad2155e4c7e-gzip\"",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "text/html; charset=utf-8",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=31536000",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "transfer-encoding": "chunked",
+      "x-iplb-request-id": "ACD62CD0:AC01_894A7DE9:01BB_698950FE_495A3AE:2EFD1F",
+      "x-iplb-instance": "65572",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.piste.aife",
+          "*.piste.gouv.fr"
+        ],
+        "object-src": [
+          "'self'",
+          "*.piste.aife",
+          "*.piste.gouv.fr"
+        ],
+        "script-src": [
+          "'nonce-kg51bgwp'",
+          "'unsafe-eval'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.piste.aife",
+          "*.piste.gouv.fr",
+          "https://localhost/"
+        ],
+        "font-src": [
+          "'self'",
+          "*.piste.aife",
+          "*.piste.gouv.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.piste.aife",
+          "*.piste.gouv.fr",
+          "data:",
+          "https://localhost/"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'"
+        ],
+        "base-uri": [
+          "'none'"
+        ]
+      },
+      "http": false,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "8db00a4d3c022eb432915bb75cb1324f": {
+          "domain": "mpss.piste.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "4247f7cef93dafb1d38114e3e685e876": {
+          "domain": "mpss.piste.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
