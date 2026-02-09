@@ -1,0 +1,190 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 100,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 09 Feb 2026 03:11:57 GMT",
+      "set-cookie": [
+        "lemonldappdata=%7B%22_url%22%3A%22aHR0cHM6Ly9hdXRoLnNzby5kc3IuaW50ZXJpZXVyLmdvdXYuZnIvb2F1dGgy%22%2C%22issuerTs%22%3A1770606717%2C%22issuerRequestoauth2%22%3A%221770534837_48018%22%2C%22keepPdata%22%3A%5B%22issuerRequestoauth2%22%2C%22issuerRequestoauth2Path%22%5D%2C%22issuerRequestoauth2Path%22%3A%5B%22authorize%22%5D%7D; path=/; HttpOnly=1; SameSite=Lax; secure",
+        "bZA_=v1bZLOgw__tIq; Expires=Mon, 09-Feb-2026 05:11:57 GMT; Path=/"
+      ],
+      "content-type": "text/html",
+      "content-length": "2135",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "access-control-allow-origin": "*",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "*",
+      "access-control-allow-methods": "POST,GET",
+      "access-control-expose-headers": "*",
+      "access-control-max-age": "86400",
+      "x-frame-options": "DENY",
+      "content-security-policy": "default-src 'self';img-src 'self' data:;style-src 'self';font-src 'self';connect-src 'self';script-src 'self';form-action * https://auth.sso.dsr.interieur.gouv.fr;frame-ancestors 'none';",
+      "vary": "Accept-Encoding,User-Agent",
+      "strict-transport-security": "max-age=31536000",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe",
+      "scoreModifier": 5,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:"
+        ],
+        "style-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'"
+        ],
+        "form-action": [
+          "*",
+          "https://auth.sso.dsr.interieur.gouv.fr"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "mod_auth_openidc_state_dd8bWDXCQs-Vv26TPExZCphsmvg": {
+          "domain": "mon-transport-exceptionnel.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "lemonldappdata": {
+          "domain": "auth.sso.dsr.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "bZA_": {
+          "domain": "auth.sso.dsr.interieur.gouv.fr",
+          "expires": "2026-02-09T05:11:57.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://auth.sso.dsr.interieur.gouv.fr//oauth2/authorize?response_type=code&scope=openid%20email%20profile%20agentdata&client_id=site_oidc-client-id&state=JPCH9OF_nM6CuDEzpqWscqRU2Xk&redirect_uri=https%3A%2F%2Fmon-transport-exceptionnel.interieur.gouv.fr%2Flogin-callback&nonce=FqEg-_BoiLngm_wV74YdkxshB2gQN5imAvPw6Psqvf0",
+      "redirects": true,
+      "route": [
+        "http://mon-transport-exceptionnel.interieur.gouv.fr/",
+        "https://auth.sso.dsr.interieur.gouv.fr//oauth2/authorize?response_type=code&scope=openid%20email%20profile%20agentdata&client_id=site_oidc-client-id&state=JPCH9OF_nM6CuDEzpqWscqRU2Xk&redirect_uri=https%3A%2F%2Fmon-transport-exceptionnel.interieur.gouv.fr%2Flogin-callback&nonce=FqEg-_BoiLngm_wV74YdkxshB2gQN5imAvPw6Psqvf0"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
