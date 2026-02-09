@@ -1,0 +1,200 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+      "content-length": "27102",
+      "content-security-policy": "default-src 'self'; connect-src 'self' https://sentry.incubateur.net https://stats.beta.gouv.fr/matomo.php ; img-src 'self' https://storage.crisp.chat https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com; media-src 'self' https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com; style-src 'self' 'nonce-n0LCwZTUFXx+xc/WWL1zfw=='; style-src-elem 'self' 'nonce-n0LCwZTUFXx+xc/WWL1zfw=='; script-src 'self' https://browser.sentry-cdn.com 'nonce-n0LCwZTUFXx+xc/WWL1zfw=='; frame-src https://metabase.monservicesecurise.beta.gouv.fr/",
+      "content-type": "text/html; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Mon, 09 Feb 2026 03:09:04 GMT",
+      "etag": "W/\"69de-bll073mAFrfU6us68G7mwUf+muw\"",
+      "expires": "0",
+      "pragma": "no-cache",
+      "referrer-policy": "no-referrer",
+      "set-cookie": [
+        "session=eyJfY3NyZlNlY3JldCI6ImZER09KSVVJQzNKb0tRPT0ifQ==; path=/; samesite=strict; secure; httponly",
+        "session.sig=laaq4XOnVjGCHz4kZyLXu1F7cTQ; path=/; samesite=strict; secure; httponly"
+      ],
+      "sozu-id": "01KH05ZER9ZHVNBGR3G8JPZR33",
+      "surrogate-control": "no-store",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-ratelimit-limit": "600",
+      "x-ratelimit-remaining": "599",
+      "x-ratelimit-reset": "1770606549",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe",
+      "scoreModifier": 5,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://sentry.incubateur.net",
+          "https://stats.beta.gouv.fr/matomo.php"
+        ],
+        "img-src": [
+          "'self'",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
+          "https://storage.crisp.chat"
+        ],
+        "media-src": [
+          "'self'",
+          "https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com"
+        ],
+        "style-src": [
+          "'nonce-n0lcwztufxx+xc/wwl1zfw=='",
+          "'self'"
+        ],
+        "style-src-elem": [
+          "'nonce-n0lcwztufxx+xc/wwl1zfw=='",
+          "'self'"
+        ],
+        "script-src": [
+          "'nonce-n0lcwztufxx+xc/wwl1zfw=='",
+          "'self'",
+          "https://browser.sentry-cdn.com"
+        ],
+        "frame-src": [
+          "https://metabase.monservicesecurise.beta.gouv.fr/"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "session": {
+          "domain": "monservicesecurise.cyber.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "session.sig": {
+          "domain": "monservicesecurise.cyber.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://monservicesecurise.cyber.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://monservicesecurise.cyber.gouv.fr/",
+        "https://monservicesecurise.cyber.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.41.1/lab-anssi-ui-kit.iife.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://browser.sentry-cdn.com/7.102.1/bundle.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "deny"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    }
+  }
+}
