@@ -1,0 +1,201 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 09 Feb 2026 03:06:35 GMT",
+      "set-cookie": [
+        "cookiedef=!A4b+VGk+bWjrgaqecT1PYrEDAreRijmSLqB0Cs59lqel1XxrGI+EZjFYx3PE0LLkRko2iFy5ivjR; path=/; Httponly",
+        "BIGipServer~Tenant-Externe~application~pool-ubika=201486346.20480.0000; path=/; Httponly; Secure"
+      ],
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "cache-control": "max-age=86400, private",
+      "x-arko-cache-strategy": "etag",
+      "x-arko-version": "8.44",
+      "etag": "W/\"90100a4c31e78f34-7d21d639ab6d7ee4bedaf002979ddb5b572efe4e9404e7706d74182a7a237d69-951194f7564a0c3e4f2141482e38bf29-8.44-1--1\"",
+      "content-security-policy": "default-src *; img-src * 'self' data: https: blob:; script-src * 'self' data: 'unsafe-inline' 'unsafe-eval' self; worker-src 'self' blob: 'self'; object-src 'none'; frame-src * data: blob:; child-src * data: blob:; style-src * 'self' 'unsafe-inline' self; frame-ancestors 'self'",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "*"
+        ],
+        "img-src": [
+          "'self'",
+          "*",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*",
+          "data:",
+          "self"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "child-src": [
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*",
+          "self"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+          "domain": "www.memoiredeshommes.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "cookiedef": {
+          "domain": "www.memoiredeshommes.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.memoiredeshommes.defense.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://memoiredeshommes.defense.gouv.fr/",
+        "https://memoiredeshommes.defense.gouv.fr/",
+        "https://www.memoiredeshommes.defense.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?flags=gated&features=IntersectionObserver%2CIntersectionObserverEntry%2CURL%2CSymbol%2Ces2016%2CNodeList.prototype.forEach%2Cfetch%2CFunction.prototype.name&callback=onPolyfill": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
