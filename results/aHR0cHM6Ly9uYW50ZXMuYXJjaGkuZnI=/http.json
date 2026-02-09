@@ -1,0 +1,303 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 09 Feb 2026 03:13:24 GMT",
+      "server": "Apache",
+      "x-xss-protection": "1; mode=block, 1; mode=block; report=https://www.nantes.archi.fr?gdsih-xxp-report;",
+      "last-modified": "Fri, 06 Feb 2026 10:44:06 GMT",
+      "accept-ranges": "bytes",
+      "cache-control": "max-age=7200, public",
+      "expires": "Mon, 09 Feb 2026 05:13:24 GMT",
+      "vary": "Accept-Encoding,User-Agent",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: www.nantes.archi.fr *.vimeo.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.nantes.archi.fr 'unsafe-eval' js.braintreegateway.com unpkg.com www.googletagmanager.com *.google-analytics.com region1.google-analytics.com s0.wp.com platform.instagram.com www.instagram.com *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net google-analytics.com www.google-analytics.com ssl.google-analytics.com stats.g.doubleclick.net ajax.googleapis.com maps.googleapis.com maps.google.com translate.googleapis.com translate.google.com googletagmanager.com tagmanager.google.com; style-src 'self' 'unsafe-inline' data: unpkg.com www.googletagmanager.com *.google-analytics.com region1.google-analytics.com www.nantes.archi.fr s0.wp.com *.vimeocdn.com fonts.googleapis.com 'unsafe-inline' maps.googleapis.com maps.google.com translate.googleapis.com tagmanager.google.com; img-src 'self' data: www.nantes.archi.fr localhost unpkg.com www.googletagmanager.com *.google-analytics.com region1.google-analytics.com s0.wp.com s.w.org ps.w.org ts.w.org secure.gravatar.com www.gravatar.com data: blob: google-analytics.com www.google-analytics.com ssl.google-analytics.com www.google.com *.googleapis.com maps.google.com maps.gstatic.com www.gstatic.com *.ggpht.com translate.googleapis.com translate.google.com i.ytimg.com; connect-src 'self' region1.google-analytics.com *.vimeo.com www.google-analytics.com stats.g.doubleclick.net ampcid.google.com analytics.google.com about: maps.googleapis.com maps.google.com translate.googleapis.com www.googletagmanager.com; font-src 'self' data: unpkg.com www.googletagmanager.com *.google-analytics.com region1.google-analytics.com www.nantes.archi.fr s0.wp.com data: fonts.gstatic.com fonts.googleapis.com; media-src 'self' unpkg.com www.googletagmanager.com *.google-analytics.com region1.google-analytics.com www.nantes.archi.fr s0.wp.com; frame-src 'self' www.instagram.com *.vimeo.com *.vimeocdn.com maps.googleapis.com maps.google.com www.youtube.com www.googletagmanager.com; child-src 'self' www.nantes.archi.fr *.vimeo.com *.vimeocdn.com www.youtube.com www.googletagmanager.com; object-src 'self'; worker-src 'self' blob: www.nantes.archi.fr; upgrade-insecure-requests; report-uri https://www.nantes.archi.fr?gdsih-csp-report;",
+      "feature-policy": "interest-cohort 'none'; accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; document-domain 'self'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; legacy-image-formats 'self'; magnetometer 'none'; microphone 'none'; midi 'none'; notifications 'self'; payment 'none'; speaker 'none'; sync-xhr 'none'; unoptimized-images 'self'; unsized-media 'self'; usb 'none'; battery 'none'; display-capture 'none'; layout-animations 'none'; picture-in-picture 'none'; vibrate 'none'; vr 'none';",
+      "permissions-policy": "interest-cohort=(), accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), document-domain=(self), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), legacy-image-formats=(self), magnetometer=(), microphone=(), midi=(), notifications=(self), payment=(), speaker=(), sync-xhr=(), unoptimized-images=(self), unsized-media=(self), usb=(), battery=(), display-capture=(), layout-animations=(), picture-in-picture=(), vibrate=(), vr=()",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-length": "17502",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.vimeo.com",
+          "data:",
+          "www.nantes.archi.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.google-analytics.com",
+          "*.newrelic.com",
+          "*.nr-data.net",
+          "*.vimeo.com",
+          "*.vimeocdn.com",
+          "ajax.googleapis.com",
+          "google-analytics.com",
+          "googletagmanager.com",
+          "js.braintreegateway.com",
+          "maps.google.com",
+          "maps.googleapis.com",
+          "platform.instagram.com",
+          "region1.google-analytics.com",
+          "s0.wp.com",
+          "ssl.google-analytics.com",
+          "stats.g.doubleclick.net",
+          "tagmanager.google.com",
+          "translate.google.com",
+          "translate.googleapis.com",
+          "unpkg.com",
+          "www.google-analytics.com",
+          "www.googletagmanager.com",
+          "www.instagram.com",
+          "www.nantes.archi.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.google-analytics.com",
+          "*.vimeocdn.com",
+          "data:",
+          "fonts.googleapis.com",
+          "maps.google.com",
+          "maps.googleapis.com",
+          "region1.google-analytics.com",
+          "s0.wp.com",
+          "tagmanager.google.com",
+          "translate.googleapis.com",
+          "unpkg.com",
+          "www.googletagmanager.com",
+          "www.nantes.archi.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "*.ggpht.com",
+          "*.google-analytics.com",
+          "*.googleapis.com",
+          "blob:",
+          "data:",
+          "google-analytics.com",
+          "i.ytimg.com",
+          "localhost",
+          "maps.google.com",
+          "maps.gstatic.com",
+          "ps.w.org",
+          "region1.google-analytics.com",
+          "s.w.org",
+          "s0.wp.com",
+          "secure.gravatar.com",
+          "ssl.google-analytics.com",
+          "translate.google.com",
+          "translate.googleapis.com",
+          "ts.w.org",
+          "unpkg.com",
+          "www.google-analytics.com",
+          "www.google.com",
+          "www.googletagmanager.com",
+          "www.gravatar.com",
+          "www.gstatic.com",
+          "www.nantes.archi.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.vimeo.com",
+          "about:",
+          "ampcid.google.com",
+          "analytics.google.com",
+          "maps.google.com",
+          "maps.googleapis.com",
+          "region1.google-analytics.com",
+          "stats.g.doubleclick.net",
+          "translate.googleapis.com",
+          "www.google-analytics.com",
+          "www.googletagmanager.com"
+        ],
+        "font-src": [
+          "'self'",
+          "*.google-analytics.com",
+          "data:",
+          "fonts.googleapis.com",
+          "fonts.gstatic.com",
+          "region1.google-analytics.com",
+          "s0.wp.com",
+          "unpkg.com",
+          "www.googletagmanager.com",
+          "www.nantes.archi.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "*.google-analytics.com",
+          "region1.google-analytics.com",
+          "s0.wp.com",
+          "unpkg.com",
+          "www.googletagmanager.com",
+          "www.nantes.archi.fr"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.vimeo.com",
+          "*.vimeocdn.com",
+          "maps.google.com",
+          "maps.googleapis.com",
+          "www.googletagmanager.com",
+          "www.instagram.com",
+          "www.youtube.com"
+        ],
+        "child-src": [
+          "'self'",
+          "*.vimeo.com",
+          "*.vimeocdn.com",
+          "www.googletagmanager.com",
+          "www.nantes.archi.fr",
+          "www.youtube.com"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:",
+          "www.nantes.archi.fr"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ],
+        "report-uri": [
+          "https://www.nantes.archi.fr?gdsih-csp-report"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.nantes.archi.fr/",
+      "redirects": true,
+      "route": [
+        "http://nantes.archi.fr/",
+        "https://www.nantes.archi.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=UA-72312039-1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//www.nantes.archi.fr/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//www.nantes.archi.fr/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
