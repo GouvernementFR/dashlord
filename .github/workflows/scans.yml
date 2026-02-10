@@ -252,44 +252,36 @@ jobs:
           # only clean up previous stats when all tools ran
           cleanup: ${{ inputs.tool == 'all' && true || false }}
 
-      - name: Commit
+      - name: Commit and push
         id: commit
         continue-on-error: true
         run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name GitHub
-          git add --sparse results
-          git commit -m "update: ${{ matrix.sites.url }}"
-          git pull --rebase --no-ff origin ${{ github.ref }}
-          git push
-
-      - name: Commit retry 1
-        if: steps.commit.outcome=='failure'
-        id: commit-retry
-        continue-on-error: true
-        run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name GitHub
-          git reset --soft HEAD~1
-          git stash --include-untracked
-          git pull --rebase --no-ff origin ${{ github.ref }}
-          git stash pop || true
-          git add --sparse results
-          git commit -m "update: ${{ matrix.sites.url }}"
-          git push
-
-      - name: Commit retry 2
-        if: steps.commit-retry.outcome=='failure'
-        run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name GitHub
-          git reset --soft HEAD~1
-          git stash --include-untracked
-          git pull --rebase --no-ff origin ${{ github.ref }}
-          git stash pop || true
-          git add --sparse results
-          git commit -m "update: ${{ matrix.sites.url }}"
-          git push
+          set -euo pipefail
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub"
+          # ensure results is in sparse-checkout (no-op if not using sparse)
+          git sparse-checkout set results || true
+          # stage results changes
+          git add --sparse results || git add -A results || true
+          # commit if there are staged changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "update: ${{ matrix.sites.url }}" || true
+          fi
+          # determine branch
+          BRANCH=$(git rev-parse --abbrev-ref HEAD || echo "${GITHUB_REF#refs/heads/}")
+          # try push with a few retries, pulling with autostash/rebase between attempts
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "$BRANCH" || true
+            if git push origin "$BRANCH"; then
+              echo "Push succeeded"
+              break
+            else
+              echo "Push failed, retrying (attempt $i)"
+              sleep $((i * 2))
+            fi
+          done
 
 #      - uses: EndBug/add-and-commit@v9
 #        with:
