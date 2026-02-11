@@ -1,0 +1,233 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 02:55:40 GMT",
+      "cache-control": "max-age=1800, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Wed, 11 Feb 2026 03:25:40 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "content-security-policy": "object-src 'self' https://ssm-ecologie.shinyapps.io; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://svc.webspellchecker.net svc.webspellchecker.net platform.twitter.com http://platform.twitter.com http://platform.twitter.com/widgets.js www.tiktok.com https://www.tiktok.com https://www.tiktok.com/embed.js https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/falcon/embed/embed_v1.0.13.js https://gvb.et-gv.fr/ufU638.js https://fxtt.ofb.gouv.fr/ufU638.js cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com https://cdn.ckeditor.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://www.google.com www.gstatic.com; script-src-attr 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' https://svc.webspellchecker.net svc.webspellchecker.net platform.twitter.com http://platform.twitter.com www.tiktok.com https://www.tiktok.com sf16-website-login.neutral.ttwstatic.com https://sf16-website-login.neutral.ttwstatic.com https://cdn.plyr.io https://www.youtube.com https://player.vimeo.com https://wwwstats.brgm-rec.fr https://wwwstats.brgm.fr https://ajax.googleapis.com https://gvb.et-gv.fr https://fxtt.ofb.gouv.fr cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com https://cdn.ckeditor.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://www.google.com www.gstatic.com; style-src 'self' 'unsafe-hashes' 'unsafe-inline' https://svc.webspellchecker.net svc.webspellchecker.net cdn.datatables.net cdn.jsdelivr.net cdnjs.cloudflare.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com; style-src-attr 'self' 'unsafe-inline'; style-src-elem * 'unsafe-inline'; worker-src 'self' blob:; frame-ancestors 'self' https://svc.webspellchecker.net svc.webspellchecker.net; report-to default",
+      "surrogate-control": "max-age=1800",
+      "last-modified": "Wed, 11 Feb 2026 02:55:37 GMT",
+      "etag": "\"1770778537-gzip\"",
+      "content-length": "44624",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "13134990 30446158",
+      "age": "829",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-hits": "33",
+      "x-cache-ttl": "970.298",
+      "x-iplb-request-id": "84C45084:0800_93878F29:01BB_698BF27C_8B2AA:346169",
+      "x-iplb-instance": "66093",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "object-src": [
+          "'self'",
+          "https://ssm-ecologie.shinyapps.io"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "cdn.datatables.net",
+          "cdn.jsdelivr.net",
+          "cdnjs.cloudflare.com",
+          "http://platform.twitter.com",
+          "https://cdn.ckeditor.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://fxtt.ofb.gouv.fr/ufu638.js",
+          "https://gvb.et-gv.fr/ufu638.js",
+          "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/falcon/embed/embed_v1.0.13.js",
+          "https://svc.webspellchecker.net",
+          "https://unpkg.com",
+          "https://www.google.com",
+          "https://www.tiktok.com",
+          "platform.twitter.com",
+          "svc.webspellchecker.net",
+          "www.gstatic.com",
+          "www.tiktok.com"
+        ],
+        "script-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.datatables.net",
+          "cdn.jsdelivr.net",
+          "cdnjs.cloudflare.com",
+          "http://platform.twitter.com",
+          "https://ajax.googleapis.com",
+          "https://cdn.ckeditor.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdn.plyr.io",
+          "https://cdnjs.cloudflare.com",
+          "https://fxtt.ofb.gouv.fr",
+          "https://gvb.et-gv.fr",
+          "https://player.vimeo.com",
+          "https://sf16-website-login.neutral.ttwstatic.com",
+          "https://svc.webspellchecker.net",
+          "https://unpkg.com",
+          "https://www.google.com",
+          "https://www.tiktok.com",
+          "https://www.youtube.com",
+          "https://wwwstats.brgm-rec.fr",
+          "https://wwwstats.brgm.fr",
+          "platform.twitter.com",
+          "sf16-website-login.neutral.ttwstatic.com",
+          "svc.webspellchecker.net",
+          "www.gstatic.com",
+          "www.tiktok.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "cdn.datatables.net",
+          "cdn.jsdelivr.net",
+          "cdnjs.cloudflare.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://svc.webspellchecker.net",
+          "https://unpkg.com",
+          "svc.webspellchecker.net"
+        ],
+        "style-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "style-src-elem": [
+          "'unsafe-inline'",
+          "*"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "https://svc.webspellchecker.net",
+          "svc.webspellchecker.net"
+        ],
+        "report-to": [
+          "default"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://ofb.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://ofb.gouv.fr/",
+        "https://ofb.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
