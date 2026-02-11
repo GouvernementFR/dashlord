@@ -1,0 +1,168 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "no-cache, no-store",
+      "pragma": "no-cache",
+      "content-type": "text/html; charset=utf-8",
+      "expires": "-1",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=31536000",
+      "traceparent": "00-5cf066c091e2a531f22d041ad1ac71fa-53999f5b42ead2b0-01",
+      "tracestate": "d4240e8f-a7623821@dt=fw4;8;1219f08a;273b01;2;0;0;2e9;7b56;2h01;3h1219f08a;4h273b01;5h01;7h4c2069d9a9160ec6",
+      "p3p": "CP=CAO PSA OUR",
+      "x-route-name": "/Pages/General/accueil.aspx",
+      "x-frame-options": "SAMEORIGIN",
+      "set-cookie": [
+        "ASP.NET_SessionId=zokivbpk0wzliqwj0dkc5voe; path=/; secure; HttpOnly; SameSite=Lax",
+        "__AntiXsrfToken=e1aab606d95145ad994c574c5f63af95; path=/; secure; HttpOnly; SameSite=Lax",
+        "__RequestVerificationToken=LDhzRXWhxouMq-uxXbOSspwkGI1EQ2FFlBX28P1ZKQcqCAjQtr7_k4MARFk_uxfNO_Uqb3VwzEkntgz-pcOHq6tBz_c1; path=/; secure; HttpOnly; SameSite=Lax"
+      ],
+      "x-content-type-options": "nosniff",
+      "date": "Wed, 11 Feb 2026 03:22:20 GMT",
+      "content-length": "34093",
+      "connection": "close",
+      "referrer-policy": "strict-origin-when-cross-origin"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "ts_sessionid": {
+          "domain": "passerelles.economie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "BIGipServerREC_PRD_FO_SBG1": {
+          "domain": "passerelles.economie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "ASP.NET_SessionId": {
+          "domain": "passerelles.economie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__AntiXsrfToken": {
+          "domain": "passerelles.economie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "__RequestVerificationToken": {
+          "domain": "passerelles.economie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "https://passerelles.economie.gouv.fr/accueil.aspx?LCID=1036",
+      "redirects": true,
+      "route": [
+        "http://passerelles.economie.gouv.fr/",
+        "https://passerelles.economie.gouv.fr/",
+        "https://passerelles.economie.gouv.fr/accueil.aspx?LCID=1036"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": "max-age=31536000",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
