@@ -1,0 +1,139 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Wed, 11 Feb 2026 03:22:13 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "</assets/application-60467398db768d8289e4e0406004c33249a3181b05c4dd96ba2fc48efbffdd25.css>; rel=preload; as=style; nopush,</assets/application-c2c07caaaffabbb08f0f711eb04c2f2043b01ace00abc0dbfec2b0dc0b5dcf73.js>; rel=preload; as=script; nopush",
+      "etag": "W/\"7421e1d1606bf0f82c70a390fc1d69ce\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "_parser_session=ef6uu5PYBAw8L0dDPxUTKOZC3x0MRf%2BfDmELseDSZ7udtSzFSEgn9q6MqXR%2Fmnb1fV%2FuudyEaKqa7wbwSSX9Rk4nxrU64UxdF1%2FhI3Hod5IOPc7bdDVQ3yyVyFo8j010BO2ACDlXBuRhC3zrjfz%2Fcl23rImc63yS7vf1Ev1%2FfgcSASuhKqx16sJ61iN9xgfnMOdAEBtJ26OXoPM5DiafKize9h3GStq%2FTglgqf%2BHRkp1cyVel0L3kTKRxsEqtsW2ANzH%2FYN47sRkESR5aJYBe3vFbft6IwU%3D--iC2SBHIFcm6sU9lc--7tGG98E9GNF084YdOOnbWA%3D%3D; path=/; httponly; samesite=lax"
+      ],
+      "x-request-id": "40b56b5f-ca30-4061-9bf9-ae803a8ec76b",
+      "x-runtime": "0.006520",
+      "strict-transport-security": "max-age=15724800; includeSubdomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "_parser_session": {
+          "domain": "parser.data.code.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://parser.data.code.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://parser.data.code.gouv.fr/",
+        "https://parser.data.code.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15724800; includeSubdomains",
+      "includeSubDomains": true,
+      "maxAge": 15724800,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://plausible.ecosyste.ms/js/script.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
