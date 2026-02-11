@@ -1,0 +1,141 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 03:07:36 GMT",
+      "x-spip-cache": "86400",
+      "x-frame-options": "DENY",
+      "last-modified": "Wed, 11 Feb 2026 03:07:36 GMT",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!1zxX2JLHDYQMGCIXIkI7F7SI9ajmigVBOh2Z1BY8GBSZgWgMetQhKWkhmJ2WGKbMqcxwHkKsK3PsVwjY1W+WTGtGUQU=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab28006bf827a480ef6c22eac2d5f9abd62caabdb6f6ecb66f0c13f3114084ad4c55aa1e9130a7ee1937ee; Secure; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab200043a847e5d0fb148eccf026d0dc046eb867578b1389a982eb9025fb5c7631bfc6089a150084113000b1be2931a269cb300a569189c809b2cee067cf11c8213c0b363cd36c7c0fd55a96b0b3701e3b19ce8237132d4d10e8ce; Secure; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-dreets2.cegedim.cloud-http": {
+          "domain": "occitanie.dreets.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS086c66aa029": {
+          "domain": "occitanie.dreets.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS82bbd089027": {
+          "domain": "occitanie.dreets.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://occitanie.dreets.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://occitanie.dreets.gouv.fr/",
+        "https://occitanie.dreets.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
