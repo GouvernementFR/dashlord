@@ -1,0 +1,228 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 03:15:37 GMT",
+      "cache-control": "max-age=0, must-revalidate, private, s-maxage=3600",
+      "link": "<https://www.onisep-services.fr>; rel=\"canonical\"",
+      "content-security-policy": "frame-ancestors 'self' *.onisep.fr *.onisep.fr:8000 *.avenirs.onisep.fr *.onisep-preprod.fr *.avenirs.onisep-preprod.fr *.onisep-services.fr *.cordeesdelareussite.fr *.gouv.fr www.meformerenregion.fr;block-all-mixed-content;script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' *.onisep.fr *.onisep.fr:8000 *.onisep-preprod.fr *.onisep-services.fr *.cordeesdelareussite.fr tag.aticdn.net *.gouv.fr *.google gva.et-gv.fr https://*.googletagservices.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net https://m.youtube.com https://maps.googleapis.com https://maps.google.com https://securepubads.g.doubleclick.net https://www.youtube.com https://cdnjs.cloudflare.com https://challenges.cloudflare.com https://cdn.jsdelivr.net https://unpkg.com;style-src 'self' 'report-sample' 'unsafe-inline' *.onisep.fr *.avenirs.onisep.fr *.onisep-preprod.fr *.avenirs.onisep-preprod.fr *.onisep-services.fr *.cordeesdelareussite.fr *.google.com fonts.googleapis.com cdnjs.cloudflare.com unpkg.com cdn.jsdelivr.net;object-src *.google *.googlesyndication.com;child-src 'self' blob: *.onisep.fr *.onisep.fr:8000 *.onisep-preprod.fr *.onisep-services.fr *.cordeesdelareussite.fr *.gouv.fr *.google *.google.com www.dailymotion.com v.calameo.com view.genial.ly *.doubleclick.net *.googlesyndication.com *.googleadservices.com www.youtube.com www.youtube-nocookie.com player.vimeo.com livee.com challenges.cloudflare.com;base-uri 'self';form-action 'self' *.onisep.fr *.onisep.fr:8000 *.onisep-preprod.fr *.onisep-services.fr *.google.com *.payfip.gouv.fr *.tipi-client.budget.gouv.fr;worker-src 'self' blob: www.google.com",
+      "vary": "Origin,cookie,authorization,Accept-Encoding",
+      "expires": "Wed, 11 Feb 2026 03:15:37 GMT",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8",
+      "strict-transport-security": "max-age=6307200; includeSubDomains; preload;",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "*.avenirs.onisep-preprod.fr",
+          "*.avenirs.onisep.fr",
+          "*.cordeesdelareussite.fr",
+          "*.gouv.fr",
+          "*.onisep-preprod.fr",
+          "*.onisep-services.fr",
+          "*.onisep.fr",
+          "www.meformerenregion.fr"
+        ],
+        "block-all-mixed-content": [
+          "'none'"
+        ],
+        "script-src": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.cordeesdelareussite.fr",
+          "*.google",
+          "*.gouv.fr",
+          "*.onisep-preprod.fr",
+          "*.onisep-services.fr",
+          "*.onisep.fr",
+          "gva.et-gv.fr",
+          "https://*.doubleclick.net",
+          "https://*.google.com",
+          "https://*.googleadservices.com",
+          "https://*.googlesyndication.com",
+          "https://*.googletagservices.com",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com",
+          "https://challenges.cloudflare.com",
+          "https://m.youtube.com",
+          "https://maps.google.com",
+          "https://maps.googleapis.com",
+          "https://securepubads.g.doubleclick.net",
+          "https://unpkg.com",
+          "https://www.youtube.com",
+          "tag.aticdn.net"
+        ],
+        "style-src": [
+          "'report-sample'",
+          "'self'",
+          "'unsafe-inline'",
+          "*.avenirs.onisep-preprod.fr",
+          "*.avenirs.onisep.fr",
+          "*.cordeesdelareussite.fr",
+          "*.google.com",
+          "*.onisep-preprod.fr",
+          "*.onisep-services.fr",
+          "*.onisep.fr",
+          "cdn.jsdelivr.net",
+          "cdnjs.cloudflare.com",
+          "fonts.googleapis.com",
+          "unpkg.com"
+        ],
+        "object-src": [
+          "*.google"
+        ],
+        "child-src": [
+          "'self'",
+          "*.cordeesdelareussite.fr",
+          "*.doubleclick.net",
+          "*.google",
+          "*.googleadservices.com",
+          "*.googlesyndication.com",
+          "*.gouv.fr",
+          "*.onisep-preprod.fr",
+          "*.onisep-services.fr",
+          "*.onisep.fr",
+          "blob:",
+          "challenges.cloudflare.com",
+          "livee.com",
+          "player.vimeo.com",
+          "v.calameo.com",
+          "view.genial.ly",
+          "www.dailymotion.com",
+          "www.youtube-nocookie.com",
+          "www.youtube.com"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'",
+          "*.google.com",
+          "*.onisep-preprod.fr",
+          "*.onisep-services.fr",
+          "*.onisep.fr",
+          "*.payfip.gouv.fr",
+          "*.tipi-client.budget.gouv.fr"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:",
+          "www.google.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.onisep-services.fr/",
+      "redirects": true,
+      "route": [
+        "http://onisep-services.fr/",
+        "http://www.onisep-services.fr/",
+        "https://www.onisep-services.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
