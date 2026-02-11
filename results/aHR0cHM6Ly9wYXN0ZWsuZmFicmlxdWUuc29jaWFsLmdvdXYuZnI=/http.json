@@ -1,0 +1,182 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-security-policy": "base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'nonce-HjUDz9KpEFpdBe1yGq3nAQ=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com",
+      "content-type": "text/html; charset=utf-8",
+      "csrf-token": "h0HQJQ1mDWfZMNmlWja8d-OXwAXA7n1jgEIJg8pQWhZ5V3ZaoFKAumohXu5yr9oQjOwDHBZmTmfLvWWo4_hFaQ",
+      "date": "Wed, 11 Feb 2026 03:23:52 GMT",
+      "etag": "W/\"d0826f04e4220d097bb851b4302930d7\"",
+      "link": "</assets/application-f87ee7ab9c721f4eb1ceae4fccdcac18719616a6abfbca2733e78a7b9af2157c.css>; rel=preload; as=style; nopush,</assets/application-print-03b49985a4830cb5379c75dde562b82d9cb2d7eee523c566dc793e7be07a85e0.css>; rel=preload; as=style; nopush",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx",
+      "set-cookie": [
+        "_zammad_session_a138cfd0f37=f6ee722c61719c027765277910d23f9a; path=/; secure; HttpOnly; SameSite=Lax"
+      ],
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "34b5e3e1-5673-486b-afef-af2e69e3c416",
+      "x-runtime": "0.029251",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "base-uri": [
+          "'self'",
+          "https://pastek.fabrique.social.gouv.fr"
+        ],
+        "default-src": [
+          "'self'",
+          "https://images.zammad.com",
+          "ws:",
+          "wss:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "img-src": [
+          "*",
+          "data:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-hjudz9kpefpdbe1ygq3naq=='",
+          "'self'",
+          "'unsafe-eval'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "frame-src": [
+          "player.vimeo.com",
+          "www.youtube.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_zammad_session_a138cfd0f37": {
+          "domain": "pastek.fabrique.social.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://pastek.fabrique.social.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://pastek.fabrique.social.gouv.fr/",
+        "https://pastek.fabrique.social.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
