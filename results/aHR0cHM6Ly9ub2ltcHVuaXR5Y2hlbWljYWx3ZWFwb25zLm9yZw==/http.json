@@ -1,0 +1,176 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 03:07:34 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "20040",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "last-modified": "Tue, 10 Feb 2026 06:50:32 GMT",
+      "etag": "\"207b3-64a72ac00e50e-gzip\"",
+      "accept-ranges": "bytes",
+      "cache-control": "max-age=0",
+      "expires": "Wed, 11 Feb 2026 03:07:34 GMT",
+      "vary": "Accept-Encoding",
+      "content-security-policy": "default-src 'none'; form-action 'none'; script-src 'unsafe-inline' 'self' https://www.google-analytics.com https://ssl.google-analytics.com; base-uri 'self'; img-src 'self' https://www.google-analytics.com ;object-src 'none'; frame-ancestors 'none' ; style-src 'self' 'unsafe-inline'; font-src 'self'; child-src https://www.youtube.com; connect-src: https://www.google-analytics.com;",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-dns-prefetch-control": "off",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), aria-notify=(), captured-surface-control=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), on-device-speech-recognition=(), summarizer=(), wildcards=(), interest-cohort=()",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "strict-transport-security": "max-age=63072000",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "form-action": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://ssl.google-analytics.com",
+          "https://www.google-analytics.com"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://www.google-analytics.com"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "font-src": [
+          "'self'"
+        ],
+        "child-src": [
+          "https://www.youtube.com"
+        ],
+        "connect-src:": [
+          "https://www.google-analytics.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://noimpunitychemicalweapons.org/-en-.html",
+      "redirects": true,
+      "route": [
+        "http://noimpunitychemicalweapons.org/",
+        "https://noimpunitychemicalweapons.org/",
+        "https://noimpunitychemicalweapons.org/-en-.html"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
