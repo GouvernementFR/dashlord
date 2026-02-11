@@ -1,0 +1,120 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 03:16:01 GMT",
+      "set-cookie": [
+        "bot_mitigation_cookie=5EAWSJDBAFECVFCPZNGLC46AM47DQCYTKADQMHFCLESLCVODKW37MCTFECEVX3QYIPYCW5F62H2CGO5NO6PIKUZO6AYAUZDMJGEV5MU6XAVOANDJR63Q====; Path=/"
+      ],
+      "content-type": "text/html",
+      "vary": "Accept-Encoding",
+      "content-length": "201",
+      "x-cp-via": "C2-b1cd852e-23ef3578",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "bot_mitigation_cookie": {
+          "domain": "permisdeconduire.ants.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "https://permisdeconduire.ants.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://permisdeconduire.ants.gouv.fr/",
+        "https://permisdeconduire.ants.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": null,
+      "includeSubDomains": true,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
