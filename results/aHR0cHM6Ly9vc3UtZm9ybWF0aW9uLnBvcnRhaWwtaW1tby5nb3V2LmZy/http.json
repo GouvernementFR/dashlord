@@ -1,0 +1,209 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 03:19:11 GMT",
+      "server": "Apache",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0, no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "COOKIE_NAME=COOKIE_VALUE0; expires=Wed, 11 Feb 2026 08:19:11 GMT; Max-Age=18000; path=/; domain=easyvista.com; secure; HttpOnly; SameSite=Lax",
+        "PHPSESSID=14b359b9a1d8f77c39fc2e2fb823df1c; path=/; HttpOnly; SameSite=Lax; Secure"
+      ],
+      "vary": "User-Agent,Accept-Encoding",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "frame-ancestors 'self' osu-recette-admin.portail-immo.gouv.fr dgfip-qualif-apps-demo.easyvista.com osu-formation.portail-immo.gouv.fr osu-recette.portail-immo.gouv.fr URL_SH; default-src 'none'; object-src 'none'; img-src 'self' blob: data: https:; media-src 'self' data: https: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' data: https:; frame-src 'self' https: blob:; connect-src 'self' https: wss:; base-uri 'self'; form-action 'self' https:; manifest-src 'self'",
+      "hosting-release": "U2FsdGVkX18OusdOIJCvCAai2UeE9opCBdDJzKcOy8g=",
+      "x-frame-options": "sameorigin",
+      "permissions-policy": "accelerometer=*, autoplay=*, camera=*, cross-origin-isolated=*, display-capture=*, encrypted-media=*, fullscreen=*, geolocation=*, gyroscope=*, keyboard-map=*, magnetometer=*, microphone=*, midi=*, payment=*, picture-in-picture=*, publickey-credentials-get=*, screen-wake-lock=*, sync-xhr=*, usb=*, web-share=*, xr-spatial-tracking=*",
+      "content-length": "11966",
+      "content-type": "text/html; charset=UTF-8",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "dgfip-qualif-apps-demo.easyvista.com",
+          "osu-formation.portail-immo.gouv.fr",
+          "osu-recette-admin.portail-immo.gouv.fr",
+          "osu-recette.portail-immo.gouv.fr",
+          "url_sh"
+        ],
+        "default-src": [
+          "'none'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "media-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https:",
+          "wss:"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'",
+          "https:"
+        ],
+        "manifest-src": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "PHPSESSID": {
+          "domain": "osu-formation.portail-immo.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
