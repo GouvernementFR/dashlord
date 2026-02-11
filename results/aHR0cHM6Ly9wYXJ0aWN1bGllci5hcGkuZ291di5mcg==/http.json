@@ -1,0 +1,143 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Wed, 11 Feb 2026 03:23:07 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "30022",
+      "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "</assets/api_particulier-2c83490d077e11086f920cb1115c7a30361898d48099a956d30ca7ca117bc894.css>; rel=preload; as=style; nopush,</assets/api_particulier-acf7c363d432ab11cd4a2548a9916c3fc39f09fe313c526bf2570d5ba942e2cf.js>; rel=preload; as=script; nopush,</assets/turbo-ddc44468c3f2a177272c2635e622ef6a909e2fa74c250a9f98a31a94a87d1d29.js>; rel=modulepreload; as=script; nopush",
+      "etag": "W/\"8a779d0662fb7aa59b5ed4b83158458b\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "set-cookie": [
+        "_admin_apientreprise_session=qSNAD%2FAVK7Q%2BLVaJLN0vgzPpng6KsYEq5AenM0IFKDet1MAVLFU2tT8RT3YB%2B4QnEIZM90ZkEj2gN0pAPowwfLjHft9dRD1Fr3XFE7fK9OrwtCj0KPbDdnoGjbL%2F7OgIJ0GMegCfxXFDDtPq4eTPApEAlmMnmdAYmYKh1IOKDoOLoZ5I2u6Gcad33a%2Bl0HTIFjNft%2BRXJkaM6bqzJxt0mhQAg9kEPtCWPqBVYvptoY53Z7iraa6hD86Xi5AJID096sDchQ%2FdDNeCyWuGiT7rCUi8GV1fR6P1p8ZgjElTKVwtkX0u--8d9ApENBy08RrESI--MyuviiwCyCdVvpm1aLxPJA%3D%3D; path=/; secure; httponly; samesite=lax"
+      ],
+      "x-request-id": "0193dddf-90a8-4be3-a50a-ba8c8d64e4de",
+      "x-runtime": "0.033747",
+      "vary": "Origin",
+      "strict-transport-security": "max-age=63072000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_admin_apientreprise_session": {
+          "domain": "particulier.api.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://particulier.api.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://particulier.api.gouv.fr/",
+        "https://particulier.api.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        },
+        "https://app.mailjet.com/pas-nc-embedded-v1.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
