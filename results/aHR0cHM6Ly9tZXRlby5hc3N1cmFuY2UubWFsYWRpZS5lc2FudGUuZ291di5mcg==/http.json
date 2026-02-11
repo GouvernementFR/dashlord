@@ -1,0 +1,241 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "alt-svc": "h3=\":443\"; ma=2592000",
+      "cache-control": "no-cache",
+      "content-security-policy": "base-uri *; frame-ancestors *; connect-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; child-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; frame-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; media-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; font-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; form-action *; style-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; script-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; worker-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; img-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'; default-src * 'unsafe-inline' 'unsafe-eval' data: blob: 'unsafe-hashes'",
+      "content-type": "text/html; charset=utf-8",
+      "cross-origin-embedder-policy-report-only": "require-corp; report-uri https://in.logs.betterstack.com?source_token=xkTaXFmvkxhd18ZziZ7mH8V2",
+      "cross-origin-opener-policy-report-only": "same-origin; report-uri https://in.logs.betterstack.com?source_token=xkTaXFmvkxhd18ZziZ7mH8V2",
+      "date": "Wed, 11 Feb 2026 03:13:17 GMT",
+      "feature-policy": "accelerometer 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'self' https://www.youtube.com; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture *; usb 'none'",
+      "link": "<https://d1lppblt9t2x15.cloudfront.net/logos/660eee359d5cac97ebbe57b60f77c28b.png>; rel=preload; as=image; type=image/png,<https://uptime.betterstackcdn.com/assets/public_status_pages-b5232cbb.css>; rel=preload; as=style; nopush",
+      "permissions-policy": "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=*, usb=()",
+      "ratelimit-policy": "1000; w=60",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx/1.27.4",
+      "strict-transport-security": "max-age=63113904; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "via": "1.1 Caddy",
+      "x-content-type-options": "nosniff",
+      "x-nginx-cache": "MISS",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "e71c66af-3a42-464a-944c-927d3c01ee79",
+      "x-runtime": "0.048551",
+      "x-xss-protection": "0",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "base-uri": [
+          "*"
+        ],
+        "frame-ancestors": [
+          "*"
+        ],
+        "connect-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "child-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "frame-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "media-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "font-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "form-action": [
+          "*"
+        ],
+        "style-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "script-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "worker-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "img-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://meteo.assurance.maladie.esante.gouv.fr/password",
+      "redirects": true,
+      "route": [
+        "http://meteo.assurance.maladie.esante.gouv.fr/",
+        "https://meteo.assurance.maladie.esante.gouv.fr/",
+        "https://meteo.assurance.maladie.esante.gouv.fr/password"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63113904; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63113904,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://uptime.betterstackcdn.com/assets/es-module-shims.min-03900212.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.googletagmanager.com/gtag/js?id=AW-10805602682": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
