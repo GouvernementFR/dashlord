@@ -1,0 +1,140 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 11 Feb 2026 03:21:00 GMT",
+      "set-cookie": [
+        "JSESSIONID=890EE7F1938BDEE4089E3F9DCE9FF9B2.or-orobnatc1; Path=/orobnat/; HttpOnly",
+        "TS01298773=012337f68d82b9b34bd7d72da6e9db56c3ec6305b51c5bde34991d86b2f9efa952a13b149c09159ad711b95bb02cc669146c44e2bcfb63aaa4817434f93baf788bc55f1403; Path=/",
+        "TS0167b815=012337f68df3a48c908d38a7bcd99aa58d8a7f18be1c5bde34991d86b2f9efa952a13b149c09159ad711b95bb02cc669146c44e2bcfcd9b5122116ccee73d7386853094e877c495ddec46dd15da8f85479dd6655ae; path=/orobnat/"
+      ],
+      "content-type": "text/html;charset=ISO-8859-1",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "Current_Session": {
+          "domain": "orobnat.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01298773": {
+          "domain": "orobnat.sante.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "JSESSIONID": {
+          "domain": "orobnat.sante.gouv.fr",
+          "httponly": true,
+          "path": "/orobnat/",
+          "port": null
+        },
+        "TS0167b815": {
+          "domain": "orobnat.sante.gouv.fr",
+          "path": "/orobnat/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://orobnat.sante.gouv.fr/orobnat/",
+      "redirects": true,
+      "route": [
+        "http://orobnat.sante.gouv.fr/",
+        "https://orobnat.sante.gouv.fr/",
+        "http://orobnat.sante.gouv.fr/orobnat/",
+        "https://orobnat.sante.gouv.fr/orobnat/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
