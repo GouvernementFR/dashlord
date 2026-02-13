@@ -1,0 +1,170 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:18:51 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "cache-control": "no-cache",
+      "expires": "-1",
+      "set-cookie": [
+        "VT_USER=cc753470abdc59c328827ad0df38bc51; expires=Sat, 21-Feb-2026 11:18:51 GMT; Max-Age=720000; path=/; secure",
+        "HAPROXYID=s02; path=/; HttpOnly"
+      ],
+      "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+      "content-security-policy": "default-src  'self' 'unsafe-inline' 'unsafe-eval' anom-diffusion-admin.ligeo-archives.com archives-nationales-outre-mer.culture.gouv.fr anom.prd.cloud.culture.fr instance1.ligeo-easyappointments.boscop.fr data: s3.fr-par.scw.cloud webchat.wikit.ai/webchat-embed.js anom.prd.cloud.culture.fr stats.recherche-anom.culture.gouv.fr recherche-anom.culture.gouv.fr   wiki-diffusion.ligeo-archives.com",
+      "x-frame-options": "SAMEORIGIN",
+      "strict-transport-security": "max-age=63072000",
+      "x-xss-protection": "1;mode=block",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "anom-diffusion-admin.ligeo-archives.com",
+          "anom.prd.cloud.culture.fr",
+          "archives-nationales-outre-mer.culture.gouv.fr",
+          "data:",
+          "instance1.ligeo-easyappointments.boscop.fr",
+          "recherche-anom.culture.gouv.fr",
+          "s3.fr-par.scw.cloud",
+          "stats.recherche-anom.culture.gouv.fr",
+          "webchat.wikit.ai/webchat-embed.js",
+          "wiki-diffusion.ligeo-archives.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "VT_USER": {
+          "domain": "recherche-anom.culture.gouv.fr",
+          "expires": "2026-02-21T11:18:51.000Z",
+          "max-age": 720000,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "HAPROXYID": {
+          "domain": "recherche-anom.culture.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://recherche-anom.culture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://recherche-anom.culture.gouv.fr/",
+        "https://recherche-anom.culture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://archives-nationales-outre-mer.culture.gouv.frhttps//webchat.wikit.ai/webchat-embed.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
