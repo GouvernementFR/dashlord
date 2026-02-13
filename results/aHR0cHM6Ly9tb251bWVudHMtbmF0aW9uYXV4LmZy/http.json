@@ -1,0 +1,130 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "connection": "close",
+      "server": "nginx",
+      "content-type": "text/html; charset=UTF-8",
+      "x-powered-by": "Ibexa Experience v4",
+      "x-frame-options": "IFRAME",
+      "via": "1.1 varnish, 1.1 varnish",
+      "x-esi-received-from": "ezwr80zrtZMovrlg2s2KH0--F_cmn_website_steamulo_org,ssl_shield_paris_fr",
+      "fastly-restarts": "1",
+      "accept-ranges": "bytes",
+      "age": "46841",
+      "date": "Fri, 13 Feb 2026 03:07:34 GMT",
+      "cache-control": "public, s-maxage=600, stale-while-revalidate=300, stale-if-error=300",
+      "x-served-by": "cache-par-lfpb1150045-PAR, cache-chi-kigq8000058-CHI",
+      "x-cache": "HIT, MISS",
+      "x-cache-hits": "616, 0",
+      "x-timer": "S1770952054.373179,VS0,VE94",
+      "vary": "Accept-Encoding, Origin, X-Editorial-Mode",
+      "strict-transport-security": "max-age=31557600",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.monuments-nationaux.fr/",
+      "redirects": true,
+      "route": [
+        "http://monuments-nationaux.fr/",
+        "https://monuments-nationaux.fr/",
+        "https://www.monuments-nationaux.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31557600",
+      "includeSubDomains": false,
+      "maxAge": 31557600,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=www.monuments-nationaux.fr&uuid=44bef0615f07a8910d298883133530559da9bfae": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "IFRAME"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
