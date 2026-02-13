@@ -1,0 +1,161 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Fri, 13 Feb 2026 03:19:32 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "x-powered-by": "PHP/7.4.33, PleskLin",
+      "cache-control": "max-age=0, must-revalidate, private",
+      "pragma": "no-cache",
+      "expires": "Fri, 13 Feb 2026 03:19:32 GMT",
+      "set-cookie": [
+        "PHPSESSID=m0krni5kogkjnou0t7s7b6mnsf; path=/; HttpOnly",
+        "visid_incap_3209272=EGl+LJ7TTuesSf33hfyA80GYjmkAAAAAQUIPAAAAAABcmZOUaDmLJVm9HZC1KMk6; expires=Fri, 12 Feb 2027 13:31:02 GMT; HttpOnly; path=/; Domain=.premar-manche.gouv.fr; Secure; SameSite=None",
+        "nlbi_3209272=UdB9afuNxQ03IsDFFe+LRAAAAAAwZTuHUyqbDHwU7Y2OtlIq; HttpOnly; path=/; Domain=.premar-manche.gouv.fr; Secure; SameSite=None",
+        "incap_ses_187_3209272=la79HwTK4joqPO2poFuYAkOYjmkAAAAAmirGMSw29ozv8mvck4jdWQ==; path=/; Domain=.premar-manche.gouv.fr; Secure; SameSite=None"
+      ],
+      "vary": "Accept-Encoding,User-Agent",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-cdn": "Imperva",
+      "transfer-encoding": "chunked",
+      "x-iinfo": "48-35112439-35112445 NNNN CT(141 143 0) RT(1770952770717 13) q(0 0 3 1) r(5 16) U24"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "PHPSESSID": {
+          "domain": "www.premar-manche.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "visid_incap_3209272": {
+          "domain": "premar-manche.gouv.fr",
+          "expires": "2027-02-12T13:31:02.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "nlbi_3209272": {
+          "domain": "premar-manche.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "incap_ses_187_3209272": {
+          "domain": "premar-manche.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.premar-manche.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://premar-manche.gouv.fr/",
+        "https://premar-manche.gouv.fr/",
+        "https://www.premar-manche.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://platform.twitter.com/widgets.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
