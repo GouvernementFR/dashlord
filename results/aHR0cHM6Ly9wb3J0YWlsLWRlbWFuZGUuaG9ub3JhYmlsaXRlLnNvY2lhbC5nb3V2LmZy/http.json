@@ -1,0 +1,137 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:15:35 GMT",
+      "content-type": "text/html;charset=utf-8",
+      "connection": "close",
+      "x-robots-tag": "noindex, nofollow",
+      "set-cookie": [
+        "BIGipServerpool-portail-prevention.cegedim.cloud-http=!5ksUUkskyrI1e60XIkI7F7SI9ajmil7JuFOAIENYL8UCacRjc3K0PpMrrtpthJtk0fNBtXpyXHUBr0tQJlvcqUuLCMc=; path=/; Httponly; Secure",
+        "TSb2175213029=087dc22938ab2800fa6582662466adaedae9fbfe5983d59a2e5cc41cd5876508d1f4755dcd74ce5b352931e840c2bc48; Secure; Max-Age=30; Path=/",
+        "TS780b36e3027=087dc22938ab2000771015b491c47638c42e33a54158d18c3683c218bfc758fc83ced69eb0fe248608c835356e113000d386f6cf3c64f399635a36bd45a2a6d73fe33296f2c826998a5d9efa4c667aea427477abab54a4279739565d110ac887; Secure; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-portail-prevention.cegedim.cloud-http": {
+          "domain": "portail-demande.honorabilite.social.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSb2175213029": {
+          "domain": "portail-demande.honorabilite.social.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS780b36e3027": {
+          "domain": "portail-demande.honorabilite.social.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://portail-demande.honorabilite.social.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://portail-demande.honorabilite.social.gouv.fr/",
+        "https://portail-demande.honorabilite.social.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
