@@ -1,0 +1,214 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Fri, 13 Feb 2026 03:06:05 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cache-control": "max-age=0, must-revalidate, private",
+      "pragma": "no-cache",
+      "expires": "Fri, 13 Feb 2026 03:10:20 GMT",
+      "set-cookie": [
+        "public=nst87at3512lmpk2gdlde48cgd; path=/; secure; httponly; samesite=lax",
+        "incap_ses_79_3031704=lK7aWWZZyxO9fKt7NaoYARuWjmkAAAAA17XZnHGuNhfQLNYjONjiHQ==; path=/; Domain=.prix-carburants.gouv.fr; Secure; SameSite=None"
+      ],
+      "vary": "Accept-Encoding",
+      "referrer-policy": "same-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "allow": "GET, POST, HEAD, OPTIONS",
+      "x-xss-protection": "1;mode=block",
+      "access-control-allow-methods": "GET, POST, HEAD, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+      "access-control-expose-headers": "Content-Length,Content-Range",
+      "content-security-policy": "form-action 'self'; base-uri 'none'; frame-ancestors 'none'; default-src https:; style-src https: 'self' 'unsafe-inline' ; script-src https: 'self' 'unsafe-inline'; object-src 'none' ; child-src https: ; img-src https: data: map.roulez-eco.fr; worker-src blob:;",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "upgrade-insecure-requests": "1",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), bluetooth=(), camera=(), encrypted-media=(), fullscreen=(self), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(self), usb=(), vr=()",
+      "x-cdn": "Imperva",
+      "x-iinfo": "51-49567410-49567417 NNNN CT(195 187 0) RT(1770952219713 13) q(0 0 4 1) r(6 7) U12"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "form-action": [
+          "'self'"
+        ],
+        "base-uri": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "default-src": [
+          "https:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "child-src": [
+          "https:"
+        ],
+        "img-src": [
+          "data:",
+          "https:",
+          "map.roulez-eco.fr"
+        ],
+        "worker-src": [
+          "blob:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "visid_incap_3031704": {
+          "domain": "prix-carburants.gouv.fr",
+          "expires": "2027-02-12T10:44:56.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "incap_ses_100_3031704": {
+          "domain": "prix-carburants.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "public": {
+          "domain": "www.prix-carburants.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "incap_ses_79_3031704": {
+          "domain": "prix-carburants.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "https://www.prix-carburants.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://prix-carburants.gouv.fr/",
+        "https://www.prix-carburants.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
