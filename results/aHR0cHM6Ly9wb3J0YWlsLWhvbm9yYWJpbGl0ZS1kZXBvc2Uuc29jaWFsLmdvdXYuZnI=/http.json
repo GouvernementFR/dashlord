@@ -1,0 +1,146 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:07:32 GMT",
+      "content-type": "text/html;charset=utf-8",
+      "connection": "close",
+      "x-robots-tag": "noindex, nofollow",
+      "set-cookie": [
+        "BIGipServerpool-portail-honorabilite-depose.cegedim.cloud-http=!iUB9bmRFcNP63ioXIkI7F7SI9ajmiiInFiy3qpUKUsBRqsKVwofDXcv/8puJxhkFL6d0FN7la/slysJGXZaAUlbUgTc=; path=/; Httponly; Secure; SameSite=Strict",
+        "TS01ac8ac8=01352d3811be24415501e18c8b2679c5e7c14a82e112a73a3d3c9d8098af0e2c49f9b504f6c0919f48722e63aa7a5ad916aa85a1ba; Path=/; Secure; HttpOnly",
+        "TSa3a98900029=087dc22938ab28004133aacfcb22c41294f75538cb44ed1af72d319c31ac518a6072bc129798395e7e45daa5b7697b7d; Secure; Max-Age=30; Path=/",
+        "TSeef2e69c027=087dc22938ab2000f2b5fa2f7e6843f6c7908c302f8c558243a950dbbba4aff82738ba98271032d108cab328c611300012b03368e5f98bc41e98382ef332600d4678de78874690de8f4953e16e9b7a3f714a870a3392e682a439d493f65747c3; Secure; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-portail-honorabilite-depose.cegedim.cloud-http": {
+          "domain": "portail-honorabilite-depose.social.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "TS01ac8ac8": {
+          "domain": "portail-honorabilite-depose.social.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSa3a98900029": {
+          "domain": "portail-honorabilite-depose.social.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSeef2e69c027": {
+          "domain": "portail-honorabilite-depose.social.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://portail-honorabilite-depose.social.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://portail-honorabilite-depose.social.gouv.fr/",
+        "https://portail-honorabilite-depose.social.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
