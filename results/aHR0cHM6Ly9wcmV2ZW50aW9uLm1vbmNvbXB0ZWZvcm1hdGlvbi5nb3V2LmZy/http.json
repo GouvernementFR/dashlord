@@ -1,0 +1,165 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "max-age=300, public, no-store, max-age=0",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-drupal-cache-tags": "CACHE_MISS_IF_UNCACHEABLE_HTTP_METHOD:form block_content:1 block_content:2 block_content:3 block_content:4 block_content_view block_view config:block.block.banner config:block.block.navigationprincipale config:block.block.ncpp_account_menu config:block.block.ncpp_branding config:block.block.ncpp_breadcrumbs config:block.block.ncpp_content config:block.block.ncpp_cpfrgpd config:block.block.ncpp_footer config:block.block.ncpp_footerbottombas config:block.block.ncpp_footermiddle config:block.block.ncpp_footertop config:block.block.ncpp_footertopmenu config:block.block.ncpp_formulaireexposeactualitespage_1 config:block.block.ncpp_help config:block.block.ncpp_icdcalert config:block.block.ncpp_local_actions config:block.block.ncpp_local_tasks config:block.block.ncpp_logo config:block.block.ncpp_main_menu config:block.block.ncpp_menufooter config:block.block.ncpp_messages config:block.block.ncpp_moncomptenotlogged config:block.block.ncpp_page_title config:block.block.ncpp_powered config:block.block.ncpp_retouraide config:block.block.ncpp_search config:block.block.ncpp_tools config:block.block.ncpp_viewsactusfilter config:block_list config:filter.format.basic_html config:filter.format.full_html config:paragraphs.settings config:system.menu.footer-top-menu config:system.menu.main config:system.menu.menu-footer config:system.menu.mon-compte-not-logged config:system.site config:user.role.anonymous file:44 file:45 http_response local_task media:28 media:29 media_view node:11 node:12 node:13 node:14 node:7 node:8 node_view paragraph:16 paragraph:18 paragraph:6 paragraph:7 paragraph_view rendered user:1",
+      "x-drupal-cache-contexts": "cookies:big_pipe_nojs languages:language_content languages:language_interface route session.exists theme timezone url user",
+      "x-drupal-cache-max-age": "0 (Uncacheable)",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "strict-transport-security": "max-age=15768000; includeSubDomains; preload",
+      "last-modified": "Mon, 02 Feb 2026 15:09:19 GMT",
+      "etag": "\"1770044959-gzip\"",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "text/html; charset=UTF-8",
+      "x-cache-hits": "0",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "same-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "x-cdn": "Imperva",
+      "x-iinfo": "16-15947032-15921701 pNNy RT(1770952829747 9) q(0 0 0 0) r(2 2) U24",
+      "content-length": "12614",
+      "date": "Fri, 13 Feb 2026 03:20:30 GMT",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "set-cookie": [
+        "nlbi_2927369=vpNEdlJbrEeYWED/JAuDEgAAAADjXuVfsnQt7IwXcZ4apKVz; HttpOnly; path=/; Domain=.moncompteformation.gouv.fr",
+        "incap_ses_6523_2927369=NH1iD0tiqDlFslpKblqGWn2YjmkAAAAATM3OZ9VZoL0lEQ65iP6nyA==; path=/; Domain=.moncompteformation.gouv.fr"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "nlbi_2927369": {
+          "domain": "moncompteformation.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "visid_incap_2927369": {
+          "domain": "moncompteformation.gouv.fr",
+          "expires": "2027-02-12T07:50:51.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_130_2927369": {
+          "domain": "moncompteformation.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_6523_2927369": {
+          "domain": "moncompteformation.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://prevention.moncompteformation.gouv.fr/espace-public/",
+      "redirects": true,
+      "route": [
+        "http://prevention.moncompteformation.gouv.fr/",
+        "https://prevention.moncompteformation.gouv.fr/",
+        "https://prevention.moncompteformation.gouv.fr/espace-public/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 15768000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=DC-3048978": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://try.abtasty.com/3469869e8794719de917ef2a40e37abe.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
