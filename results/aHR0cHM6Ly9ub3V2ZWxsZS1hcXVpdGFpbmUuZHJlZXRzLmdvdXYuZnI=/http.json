@@ -1,0 +1,141 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:07:34 GMT",
+      "x-spip-cache": "86400",
+      "x-frame-options": "DENY",
+      "last-modified": "Fri, 13 Feb 2026 03:07:34 GMT",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html; charset=utf-8",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!8GfVNt3YooViC8oXIkI7F7SI9ajmimNNkatJmoKbL1HA0ARjgQlevC3rSM6nE/McHo5ADjUw5i4Qd4iBiTK3DX3SY3U=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab2800ec27dfa6337d9b2a19d170d0006e3d1c86a0a7938b9ee1c55ccfdaed6e50f2e8a9b801c134e3cd9e; Secure; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab200001e9338553119610bd0653c22eca1f768cdea9a9db941370feffcdd01cfa91bc0891033e92113000734e8936b9bc946790da947b69bf936f17a7f18505b8d23c29f316d6d649a0febc7e80c70f68192a01ec72d892c57131; Secure; Path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-dreets2.cegedim.cloud-http": {
+          "domain": "nouvelle-aquitaine.dreets.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS086c66aa029": {
+          "domain": "nouvelle-aquitaine.dreets.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS82bbd089027": {
+          "domain": "nouvelle-aquitaine.dreets.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://nouvelle-aquitaine.dreets.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://nouvelle-aquitaine.dreets.gouv.fr/",
+        "https://nouvelle-aquitaine.dreets.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
