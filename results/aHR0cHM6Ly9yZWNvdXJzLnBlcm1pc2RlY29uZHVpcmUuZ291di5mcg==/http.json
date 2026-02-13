@@ -1,0 +1,211 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:12:04 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "content-security-policy": "default-src 'self'; img-src 'self' secure.adnxs.com cm.g.doubleclick.net data: privacy.trustcommander.net privacy.commander1.com logs4.xiti.com mmtro.com static.piste.gouv.fr; connect-src 'self' privacy.trustcommander.net privacy.commander1.com;style-src 'self' 'unsafe-inline' fonts.googleapis.com static.piste.gouv.fr; object-src 'none'; frame-ancestors 'self'  cdn.tagcommander.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' data: cdn.tagcommander.com cdn.trustcommander.net mmtro.com cdn.mmtro.com platform.commandersact.com tag.aticdn.net logs4.xiti.com challenges.cloudflare.com; frame-src cdn.trustcommander.net challenges.cloudflare.com",
+      "strict-transport-security": "max-age=31536000",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": [
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1a9DOgwSDs33; Expires=Fri, 13-Feb-2026 05:12:04 GMT; Path=/",
+        "__cf_bm=gbwSgZ.OdZjkvvF40_Hjgdno_wTFOt_7c6WS660ife4-1770952323.9649208-1.0.1.1-cOtkBZ1tQV7HKOWteGVmAz.vxDOBKwysQdCLKaehgfDt6snh7dMmtMayAHmiUX3lpM8RcW_vnn2V8FU0x6OdBI6bWPj3LAY5eLihF3_b0b6i9tH9JyC5Bx4XEfmeMVTy; HttpOnly; Secure; Path=/; Domain=recours.permisdeconduire.gouv.fr; Expires=Fri, 13 Feb 2026 03:42:04 GMT",
+        "_cfuvid=6ujX5i87TptflSvth4kyVYe8axcEgCnXSff.HlLpo_w-1770952323.9649208-1.0.1.1-ZOasAs1Ca4BpNn3MBTZ4c8wi_UCZpSEZvC1bUIim98Q; HttpOnly; SameSite=None; Secure; Path=/; Domain=recours.permisdeconduire.gouv.fr"
+      ],
+      "server": "cloudflare",
+      "cf-ray": "9cd12458c8a31289-LAX"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "cm.g.doubleclick.net",
+          "data:",
+          "logs4.xiti.com",
+          "mmtro.com",
+          "privacy.commander1.com",
+          "privacy.trustcommander.net",
+          "secure.adnxs.com",
+          "static.piste.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "privacy.commander1.com",
+          "privacy.trustcommander.net"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "fonts.googleapis.com",
+          "static.piste.gouv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "cdn.tagcommander.com"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "cdn.mmtro.com",
+          "cdn.tagcommander.com",
+          "cdn.trustcommander.net",
+          "challenges.cloudflare.com",
+          "data:",
+          "logs4.xiti.com",
+          "mmtro.com",
+          "platform.commandersact.com",
+          "tag.aticdn.net"
+        ],
+        "frame-src": [
+          "cdn.trustcommander.net",
+          "challenges.cloudflare.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "YOMe1h3tgHKNQxhV6V7n5g__": {
+          "domain": "recours.permisdeconduire.gouv.fr",
+          "expires": "2026-02-13T05:12:04.000Z",
+          "path": "/",
+          "port": null
+        },
+        "__cf_bm": {
+          "domain": "recours.permisdeconduire.gouv.fr",
+          "expires": "2026-02-13T03:42:04.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "_cfuvid": {
+          "domain": "recours.permisdeconduire.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://recours.permisdeconduire.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://recours.permisdeconduire.gouv.fr/",
+        "https://recours.permisdeconduire.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
