@@ -1,0 +1,178 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:07:35 GMT",
+      "set-cookie": [
+        "bZA_=v1PIvHgw__bGB; Expires=Fri, 13-Feb-2026 05:07:35 GMT; Path=/"
+      ],
+      "last-modified": "Wed, 11 Feb 2026 22:08:37 GMT",
+      "etag": "\"659-64a939d1f8340-gzip\"",
+      "accept-ranges": "bytes",
+      "vary": "Accept-Encoding,User-Agent",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "expect-ct": "max-age=31536000, enforce",
+      "content-security-policy": "default-src 'self' https://qualification.onisr.interieur.gouv.fr/BOE/BI; connect-src 'self' https://data.geopf.fr https://api-dscr.ign.fr https://api-adresse.data.gouv.fr/; style-src 'unsafe-inline' 'self'; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://data.geopf.fr https://*.arcgisonline.com http://*.arcgisonline.com; object-src 'none'; script-src 'self' 'unsafe-eval' blob: cdnjs.cloudflare.com; font-src 'self' data:; frame-src 'self' blob:",
+      "content-length": "900",
+      "content-type": "text/html",
+      "strict-transport-security": "max-age=31536000",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'",
+          "https://qualification.onisr.interieur.gouv.fr/boe/bi"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://api-adresse.data.gouv.fr/",
+          "https://api-dscr.ign.fr",
+          "https://data.geopf.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "http://*.arcgisonline.com",
+          "https://*.arcgisonline.com",
+          "https://*.tile.openstreetmap.org",
+          "https://data.geopf.fr",
+          "https://tile.openstreetmap.org"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "blob:",
+          "cdnjs.cloudflare.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": true,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "bZA_": {
+          "domain": "qualification.onisr.interieur.gouv.fr",
+          "expires": "2026-02-13T05:07:35.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
