@@ -1,0 +1,181 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D+",
+    "error": null,
+    "score": 40,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:07:35 GMT",
+      "server": "openresty",
+      "strict-transport-security": "max-age=31536000, max-age=31536000; includeSubDomains; preload",
+      "content-type": "text/html",
+      "last-modified": "Mon, 26 Jan 2026 14:18:08 GMT",
+      "etag": "\"697777a0-14273-gzip\"",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin",
+      "content-security-policy": "default-src 'self' *.ping-info-nautique.fr; font-src 'self' *.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self' *.ping-info-nautique.fr *.data.shom.fr; img-src 'self' *.ping-info-nautique.fr *.din.developpement-durable.gouv.fr *.data.shom.fr *.openstreetmap.org data:; style-src 'self' 'unsafe-inline' 'unsafe-eval'; form-action 'self'; frame-ancestors 'none'; frame-src data:",
+      "set-cookie": [
+        "SRV=b0608912-32f9-42ff-9b9d-92a124039ac1; path=/"
+      ],
+      "vary": "Accept-Encoding",
+      "cache-control": "private",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.ping-info-nautique.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "*.gstatic.com"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.data.shom.fr",
+          "*.ping-info-nautique.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "*.data.shom.fr",
+          "*.din.developpement-durable.gouv.fr",
+          "*.openstreetmap.org",
+          "*.ping-info-nautique.fr",
+          "data:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "frame-src": [
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "SRV": {
+          "domain": "portail.ping-info-nautique.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://portail.ping-info-nautique.fr/",
+      "redirects": true,
+      "route": [
+        "http://portail.ping-info-nautique.fr/",
+        "https://portail.ping-info-nautique.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=31536000, max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
