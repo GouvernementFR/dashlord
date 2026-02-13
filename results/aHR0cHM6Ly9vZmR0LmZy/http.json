@@ -1,0 +1,165 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:00:50 GMT",
+      "server": "Apache",
+      "cache-control": "max-age=3600, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-generator": "Drupal 11 (https://www.drupal.org)",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' www.youtube.com fr-ofdt.matomo.cloud en.ofdt.fr www.ofdt.fr unpkg.com static.doubleclick.net data: *.openstreetmap.org www.google.com  ckeditor.com 'unsafe-eval' static.doubleclick.net fonts.googleapis.com *.gstatic.com cdn.ckeditor.com connect.facebook.net; report-uri /report-csp-violation; upgrade-insecure-requests",
+      "x-xss-protection": "1; mode=block",
+      "from-origin": "same",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-drupal-cache": "HIT",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "last-modified": "Fri, 13 Feb 2026 03:00:49 GMT",
+      "etag": "\"1770951649-gzip\"",
+      "content-length": "51442",
+      "content-type": "text/html; charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.gstatic.com",
+          "*.openstreetmap.org",
+          "cdn.ckeditor.com",
+          "ckeditor.com",
+          "connect.facebook.net",
+          "data:",
+          "en.ofdt.fr",
+          "fonts.googleapis.com",
+          "fr-ofdt.matomo.cloud",
+          "static.doubleclick.net",
+          "unpkg.com",
+          "www.google.com",
+          "www.ofdt.fr",
+          "www.youtube.com"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.ofdt.fr/",
+      "redirects": true,
+      "route": [
+        "http://ofdt.fr/",
+        "https://www.ofdt.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
