@@ -272,7 +272,7 @@ jobs:
           # determine branch
           BRANCH=$(git rev-parse --abbrev-ref HEAD || echo "${GITHUB_REF#refs/heads/}")
           # try push with a few retries, pulling with autostash/rebase between attempts
-          for i in 1 2 3; do
+          for i in $(seq 1 30); do
             git pull --rebase --autostash origin "$BRANCH" || true
             if git push origin "$BRANCH"; then
               echo "Push succeeded"
