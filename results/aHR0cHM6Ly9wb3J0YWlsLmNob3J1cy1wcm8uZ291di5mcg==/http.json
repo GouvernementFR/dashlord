@@ -1,0 +1,181 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "snow_adc",
+      "date": "Fri, 13 Feb 2026 03:07:37 GMT",
+      "content-type": "text/html;charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "BIGipServerpool_aifeprod=ee757b658b14d3064ef59707edff00ae; httponly; secure; samesite=None; path=/",
+        "glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; Secure; SameSite=None",
+        "glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; Secure; SameSite=None",
+        "glide_node_id_for_js=4d19c9ae45f8f629af2bdadf59e4bcc98edd7381012423305a584605df6191da; Path=/; Secure; SameSite=None"
+      ],
+      "server-timing": "sem_wait;dur=0, sesh_wait;dur=0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-is-logged-in": "false",
+      "x-transaction-id": "e3060a5d3343",
+      "x-content-type-options": "nosniff",
+      "pragma": "no-store,no-cache",
+      "cache-control": "no-cache,no-store,must-revalidate,max-age=-1",
+      "expires": "0",
+      "referrer-policy": "same-origin",
+      "strict-transport-security": "max-age=63072000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "BIGipServerpool_aifeprod": {
+          "domain": "portail.chorus-pro.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "JSESSIONID": {
+          "domain": "portail.chorus-pro.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "glide_user_route": {
+          "domain": "portail.chorus-pro.gouv.fr",
+          "expires": "2094-03-03T06:21:43.000Z",
+          "httponly": true,
+          "max-age": 2147483647,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "glide_node_id_for_js": {
+          "domain": "portail.chorus-pro.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "glide_user": {
+          "domain": "portail.chorus-pro.gouv.fr",
+          "expires": "1970-01-01T00:00:10.000Z",
+          "httponly": true,
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "glide_user_session": {
+          "domain": "portail.chorus-pro.gouv.fr",
+          "expires": "1970-01-01T00:00:10.000Z",
+          "httponly": true,
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://portail.chorus-pro.gouv.fr/aife_csm",
+      "redirects": true,
+      "route": [
+        "http://portail.chorus-pro.gouv.fr/",
+        "https://portail.chorus-pro.gouv.fr/",
+        "https://portail.chorus-pro.gouv.fr/aife_csm"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
