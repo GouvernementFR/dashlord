@@ -1,0 +1,136 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Fri, 13 Feb 2026 03:10:36 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "35846",
+      "connection": "close",
+      "cache-control": "public, max-age=600",
+      "x-ttl": "600",
+      "etag": "W/\"321b9-cAVjD6ipOa2xroTZAc2M9zCtqxM\"",
+      "x-cacheable": "YES",
+      "vary": "Accept-Encoding",
+      "x-varnish": "13446318 13643505",
+      "age": "133",
+      "x-varnish-cache": "HIT",
+      "x-cache-ttl-remaining": "466.611",
+      "x-cache-age": "133",
+      "x-cache-hits": "5",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=16000000; includeSubDomains; preload;"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.pour-les-personnes-agees.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://pour-les-personnes-agees.gouv.fr/",
+        "https://www.pour-les-personnes-agees.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 16000000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://siteimproveanalytics.com/js/siteanalyze_6134497.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn-eu.readspeaker.com/script/7866/webReader/webReader.js?pids=wr": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://app-script.monsido.com/v2/monsido-script.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
