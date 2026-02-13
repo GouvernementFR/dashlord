@@ -1,0 +1,203 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 13 Feb 2026 03:07:37 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "38879",
+      "connection": "close",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdn.datatables.net unpkg.com macarte.ign.fr *.enedis.fr *.gouv.fr audience-sites.din.developpement-durable.gouv.fr; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdn.datatables.net unpkg.com; img-src 'self' data: cdn.jsdelivr.net jedonnemonavis.numerique.gouv.fr; font-src 'self' 'unsafe-inline' data: cdn.jsdelivr.net; connect-src 'self' *.gouv.fr; frame-src 'self' blob: macarte.ign.fr *.enedis.fr",
+      "vary": "Cookie",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.enedis.fr",
+          "*.gouv.fr",
+          "audience-sites.din.developpement-durable.gouv.fr",
+          "cdn.datatables.net",
+          "cdn.jsdelivr.net",
+          "macarte.ign.fr",
+          "unpkg.com"
+        ],
+        "script-src-attr": [
+          "'unsafe-inline'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.datatables.net",
+          "cdn.jsdelivr.net",
+          "unpkg.com"
+        ],
+        "img-src": [
+          "'self'",
+          "cdn.jsdelivr.net",
+          "data:",
+          "jedonnemonavis.numerique.gouv.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "cdn.jsdelivr.net",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.gouv.fr"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.enedis.fr",
+          "blob:",
+          "macarte.ign.fr"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://planification.climat-energie.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://planification.climat-energie.gouv.fr/",
+        "https://planification.climat-energie.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/htmx.org@1.9.10": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        },
+        "https://cdn.datatables.net/v/dt/dt-2.2.0/datatables.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.21.0/tarteaucitron.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.2/dist/dsfr.module.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.2/dist/dsfr.nomodule.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr-chart@2.0.4/dist/DSFRChart/DSFRChart.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
