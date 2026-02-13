@@ -1,0 +1,196 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 120,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "frame-ancestors 'self'; report-uri /_/commcsp?disposition=enforce;",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-type": "text/html; charset=utf-8",
+      "content-language": "fr",
+      "link": "</recrutement/webruntime/framework/f005680334/prod/lwr_loader>; rel=preload; as=script; nopush, </recrutement/webruntime/framework/92e3371754/prod/lwr_bootstrap_locker>; rel=preload; as=script; nopush, </recrutement/webruntime/framework/59f5b575f9/prod/lwr_app_bootstrap_hook>; rel=preload; as=script; nopush, </recrutement/webruntime/framework/868578dbfa/prod/lwr_lwc>; rel=preload; as=script; nopush, </recrutement/webruntime/framework/f1f7179303/prod/lwr_app>; rel=preload; as=script; nopush, </recrutement/webruntime/view/3035fa55411afc8a3d79187a9505170d/prod/fr/home_view>; rel=preload; as=script; crossorigin; nopush, </recrutement/webruntime/component/2766218b29214884b4337175e57d064e/prod/fr/force/ldsEngineWebruntime_cmp>; rel=preload; as=script; crossorigin; nopush, </recrutement/webruntime/component/259a789b5905e4a3e65c0942cc97421d/prod/fr/force/luvioLwcBindings_cmp>; rel=preload; as=script; crossorigin; nopush, </recrutement/webruntime/component/da6467b90bc1eda0c5728f07f2d9928c/prod/fr/force/luvioRuntimeWebruntime_cmp>; rel=preload; as=script; crossorigin; nopush, </recrutement/webruntime/view/e637c14bc17254531ba62563a46fab57/prod/fr/header_Footer_and_Banner_view>; rel=preload; as=script; crossorigin; nopush, </recrutement/webruntime/component/b69830920c304e128a190b35da553e03/prod/fr/force/ldsWebruntimeOneStoreInit_cmp>; rel=preload; as=script; crossorigin; nopush, </recrutement/sfsites/c/resource/dsfr/dsfr.min.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/sfsites/c/resource/dsfr/utility/utility.min.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/assets/styles/styles.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/assets/styles/salesforce-lightning-design-system.min.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/assets/styles/dxp-site-spacing-styling-hooks.min.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/assets/styles/dxp-styling-hooks.min.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/assets/styles/dxp-slds-extensions.min.css?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/sfsites/c/resource/dsfrSlds?44dc563e5d>; rel=preload; as=style; nopush,</recrutement/sfsites/c/resource/virtuoStyles?44dc563e5d>; rel=preload; as=style; nopush",
+      "etag": "\"D4F5C9D8FC95851E4DB5F4C32DC3F221--gzip\"",
+      "x-frame-options": "SAMEORIGIN",
+      "content-length": "14645",
+      "cache-control": "private, must-revalidate, max-age=0",
+      "date": "Fri, 13 Feb 2026 03:10:16 GMT",
+      "connection": "close",
+      "x-origin-cache-control": "max-age=0,must-revalidate,private",
+      "akamai-grn": "0.2c06d217.1770952216.12323f0"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe-default-src-none",
+      "scoreModifier": 10,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "report-uri": [
+          "/_/commcsp?disposition=enforce"
+        ],
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'none'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'none'"
+        ],
+        "img-src": [
+          "'none'"
+        ],
+        "media-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'none'"
+        ],
+        "font-src": [
+          "'none'"
+        ],
+        "connect-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "CookieConsentPolicy": {
+          "domain": "recrutement.education.gouv.fr",
+          "expires": "2027-02-13T03:10:15.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "LSKey-c$CookieConsentPolicy": {
+          "domain": "recrutement.education.gouv.fr",
+          "expires": "2027-02-13T03:10:15.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://recrutement.education.gouv.fr/recrutement/",
+      "redirects": true,
+      "route": [
+        "http://recrutement.education.gouv.fr/",
+        "https://recrutement.education.gouv.fr/recrutLWRvforcesite/",
+        "https://recrutement.education.gouv.fr/recrutement/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=G-X2F36RRZ14": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/enterprise.js?render=6LfUIfonAAAAAJgKcF9H1a5ppidMkZD9lV6JUE4I": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
