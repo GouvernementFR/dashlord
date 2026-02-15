@@ -1,0 +1,157 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:10:12 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-request-id": "8d568ee6-7caa-46c1-a42a-271def7ad438",
+      "x-frame-options": "DENY",
+      "vary": "Accept-Language, Cookie",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "cross-origin-opener-policy": "same-origin",
+      "set-cookie": [
+        "sc-sticky-session=SG300btmjJFQyJ77NgJBKSr0/Y5QFZWrDWLLRRu9Qf7YrAbWKzeNnSemcH7ekocS5cL9RZ1b3hPt6GAM42jmMQ==; Expires=Mon, 16-Feb-26 03:10:12 GMT; Max-Age=86400; Path=/; Secure; HttpOnly; SameSite=None",
+        "incap_ses_1548_3272868=+4VCDfRg81TWX2bEVZp7FRM5kWkAAAAA1EaXzO5GYlT3km+LDMu9CA==; path=/; Domain=.numerique.gouv.fr"
+      ],
+      "strict-transport-security": "max-age=31536000",
+      "x-cdn": "Imperva",
+      "x-iinfo": "11-29063331-29063333 NNNN CT(79 84 0) RT(1771125011986 10) q(0 0 1 0) r(2 4) U12"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "visid_incap_3272868": {
+          "domain": "numerique.gouv.fr",
+          "expires": "2027-02-14T22:51:31.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "nlbi_3272868": {
+          "domain": "numerique.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_607_3272868": {
+          "domain": "numerique.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "sc-sticky-session": {
+          "domain": "www.numerique.gouv.fr",
+          "expires": "2026-02-16T03:10:12.000Z",
+          "httponly": true,
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "incap_ses_1548_3272868": {
+          "domain": "numerique.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.numerique.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://numerique.gouv.fr/",
+        "https://www.numerique.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-all-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
