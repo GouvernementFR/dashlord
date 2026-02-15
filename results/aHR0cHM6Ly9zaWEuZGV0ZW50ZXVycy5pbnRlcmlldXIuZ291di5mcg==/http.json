@@ -1,0 +1,196 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:16:58 GMT",
+      "set-cookie": [
+        "AUTH_SESSION_ID=OTQ0ZGQxMjEtOTk0Yi00ZWY5LWE4Y2MtNmExMzg3NzMwNDJhLlhMQ2VlX2dmbU9fSGdxRVN5ME51Y3ljVTEwNEg1d2dZd2FVcEdKWkt1RTZ3anAtQmt2NDBCcEg2eE9ZQzE1SDZObW1pZks0cm9kQmVpUTZyUHIxOHRR.9b4e32be0484-48747; Version=1; Path=/realms/detenteurs/; Secure; HttpOnly; SameSite=None",
+        "KC_AUTH_SESSION_HASH=ZSnCV8zJqffEVQ5HddrBAjhikdP6DM8wLIfRhvZ5dBE; Version=1; Path=/realms/detenteurs/; Max-Age=60; Secure; SameSite=Strict",
+        "KC_RESTART=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..U3c8cyba3VbFeoU7dtGLVw.b0nrVyZNUxgnhIMW-rX96hnpvPNfYQCvAp1Ae5tNdRZ_WNCaccoLcIOIfDwiS_xfpDJsM0BLy_Lu95DbwFYooIi7LBJTq1JBF0s47xhvtyJKWKF8VHYcg8Li7oQX-vRW-tDFgnKpG0sNocC0qcFlfqD8yQd8Z2TQufO1jD3Q91Agj837kiE5b_yUMvjmWhwgMnXeZxIxEya80t3gkGC13n_30uJHBYYsT0Rrq6j5yZpZ1OpY3OuKJesdC6aLGmyKmsjzyoo6YN_Y3soXL-X-34hP71W3ttW6gsczJ2WNSoji_KejLrYD0SsuPFT3sB40g9HUG6p-fW2Sx5KNmWoR-KPEYStIOtVNjc6ZZFRBCQhxKocHJl9WsdzdOlHDtXm1tT2iYs8P9mx35wPzTCxslQ60CTz1PqeGiKpnkG_7deAsmvTWP-XAipOZNhVEz_joemtHN-2mc_Sj15mswvMzODTNkIilCQF57o4EKUoJaW-6I3vqpfWsOAREmQaVSoedhOWVO3nLMxUC8mJ2mmWhBzcsdWV3FQ_zfCxTtjujp3XJZhsaCHqelTSUvN2XoFq9QLcx8gb5DbEkPmbLeXggFDYhIKhRjNXjiSkQkvQQGdkqeCg-yUbjOE3tkp-MS1VUGNWh9YQBRfKn38cA9JzBS2VIzPlrMRyEg9_OrdV2ONHILTV5j2rEb0Of15PS917Q6vFqlaaluEoOz5286aI5k0QPoYvvBEt840JKH3g-sf9gYU55DyhoPJU4hXD7VY4uNl2LoPPprOHa9YPgEMl7ooQiC1E_984ZPaXp-E_n5m3k6lkFE94_DVTUWdd-57mO1U4uUph_F-Vd6xc0ZtqHcmVAyJHdB4nY87ffwbOBnekfPnWrGtdFkxcyg8GTYWEILtlFOEVUnOH_xQimrKWdDaPGx1JaopoUKKPjTw5jT6dLFjP1O1ykuVH6g6LeXcKyYBTym55CxJnjQbY6ulsygy5GRMvP07Fd_ZibF3mDDW7te4_n4XNF-rXmjtiEyw4fiA_3Z_9BSZt8vmWoAbOCGU8zZ4I-duP09vqbfFopryt4dhKpd1Ny2bbi9qOhrXru.nB2p6xgZS6o2-iWS0_DjCQ; Version=1; Path=/realms/detenteurs/; Secure; HttpOnly; SameSite=None",
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1R-DOgwSD2nI; Expires=Sun, 15-Feb-2026 05:16:58 GMT; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, max-age=0",
+      "content-language": "fr",
+      "content-security-policy": "frame-src 'self'; frame-ancestors 'self'; object-src 'none';",
+      "content-type": "text/html;charset=utf-8",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
+      "x-robots-tag": "none",
+      "x-xss-protection": "1; mode=block",
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true",
+      "vary": "Accept-Encoding",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"-1921820547\"",
+      "content-length": "4316",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "dtCookie": {
+          "domain": "interieur.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "YOMe1h3tgHKNQxhV6V7n5g__": {
+          "domain": "sia.detenteurs.interieur.gouv.fr",
+          "expires": "2026-02-15T05:16:58.000Z",
+          "path": "/",
+          "port": null
+        },
+        "mod_auth_openidc_state_QYIcO0JBBST43SYBI0V5PsfMya0": {
+          "domain": "sia.detenteurs.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "AUTH_SESSION_ID": {
+          "domain": "sia.detenteurs.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/realms/detenteurs/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "KC_AUTH_SESSION_HASH": {
+          "domain": "sia.detenteurs.interieur.gouv.fr",
+          "max-age": 60,
+          "path": "/realms/detenteurs/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "KC_RESTART": {
+          "domain": "sia.detenteurs.interieur.gouv.fr",
+          "httponly": true,
+          "path": "/realms/detenteurs/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://sia.detenteurs.interieur.gouv.fr/realms/detenteurs/protocol/openid-connect/auth?response_type=code&scope=openid%20email&client_id=detenteurs-oidc-client-app&state=s04u7gby3611WLCZO7KhnNs_4YU&redirect_uri=https%3A%2F%2Fsia.detenteurs.interieur.gouv.fr%2Fespace-detenteurs%2Fredirect_uri&nonce=9gUeLjwcKwsM4e-HIvKuOjAhuno_DcRTbg_Rm9r3vDU",
+      "redirects": true,
+      "route": [
+        "http://sia.detenteurs.interieur.gouv.fr/",
+        "https://sia.detenteurs.interieur.gouv.fr/",
+        "https://sia.detenteurs.interieur.gouv.fr/espace-detenteurs",
+        "https://sia.detenteurs.interieur.gouv.fr/realms/detenteurs/protocol/openid-connect/auth?response_type=code&scope=openid%20email&client_id=detenteurs-oidc-client-app&state=s04u7gby3611WLCZO7KhnNs_4YU&redirect_uri=https%3A%2F%2Fsia.detenteurs.interieur.gouv.fr%2Fespace-detenteurs%2Fredirect_uri&nonce=9gUeLjwcKwsM4e-HIvKuOjAhuno_DcRTbg_Rm9r3vDU"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
