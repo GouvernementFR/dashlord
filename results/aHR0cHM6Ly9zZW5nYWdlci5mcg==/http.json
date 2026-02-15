@@ -1,0 +1,134 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:13:46 GMT",
+      "content-type": "text/html",
+      "connection": "close",
+      "vary": "Accept-Encoding, Origin, Accept-Encoding",
+      "etag": "W/\"39de6e4a31ef83504a9147fc3a1a7bfc\"",
+      "last-modified": "Fri, 13 Feb 2026 11:02:41 GMT",
+      "strict-transport-security": "max-age=16070400; includeSubDomains",
+      "x-amz-bucket-region": "us-east-1",
+      "x-amz-id-2": "39bf00a73747d99d94391fc2534ed1e03212f09d1608b4d28a781bee8de7256c",
+      "x-amz-request-id": "18944D0286EE85E2",
+      "x-content-type-options": "nosniff",
+      "x-ratelimit-limit": "601",
+      "x-ratelimit-remaining": "601",
+      "x-xss-protection": "1; mode=block",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://http-observatory.security.mozilla.org"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.sengager.fr/",
+      "redirects": true,
+      "route": [
+        "http://sengager.fr/",
+        "https://sengager.fr/",
+        "https://www.sengager.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-implemented-but-external-scripts-not-loaded-securely",
+      "scoreModifier": -20,
+      "data": {
+        "//cdn.tagcommander.com/3941/tc_ArmeedeTerre_28.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-Ei3RpkFTSSl7GLV55tyu4u+EZ3l2mPTyM8B33BRkRWrRkxCqN7XpWugSVBo5ea1WnKFy11StIW1XXl+U+PrxJg=="
+        },
+        "//cdn.tagcommander.com/3941/tc_ArmeedeTerre_26.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-wd+eqhaDlnHdRvHy0GQYE8J2Q59/eqcYMszRls5rf989Xu4JwA6l4Lt3brznhMhL3s4cZBMFXHX54FyZNnuMdA==  "
+        },
+        "https://scripts.polaria.ai/sengager.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-OnH3hBJh7cy2x6ZD1RvMktM/ILQszBWVSM5qzBEJByPjxMR6cfO9LXM8dLHclDTRvOl/hYVkFf4yXHplXXHtyw=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
