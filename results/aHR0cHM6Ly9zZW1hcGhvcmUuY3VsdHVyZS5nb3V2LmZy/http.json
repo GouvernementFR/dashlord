@@ -1,0 +1,149 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:13:16 GMT",
+      "server": "nginx",
+      "set-cookie": [
+        "SSESS5e2813f63434eb9ba437efb280ddcdf7=eu6C%2CtGkFrRaRLm-2GJBf9Y7--2KyejCZ6KWaFDBr1zKvpFu; expires=Tue, 10-Mar-2026 06:46:36 GMT; Max-Age=2000000; path=/; domain=.semaphore.culture.gouv.fr; secure; HttpOnly"
+      ],
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "3900",
+      "cache-control": "max-age=31536000, public",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "purge-cache-tags": "config:block_list config:block.block.semaphore_bootstrap_local_tasks config:block.block.semaphore_bootstrap_messages config:block.block.semaphore_bootstrap_content config:block.block.pagetitle config:block.block.views_block__interested_content_block_1 config:block.block.semaphore_bootstrap_main_menu config:block.block.mainnavigationmobile config:block.block.semaphore_bootstrap_breadcrumbs config:block.block.semaphore_bootstrap_branding config:block.block.leftfooter config:block.block.rightfooter config:block.block.leftfooter_2 config:block.block.semaphore_sub_bootstrap_main_menu config:block.block.block_derniers_mouvements config:block.block.block_front_magazines config:block.block.navigation_search_block config:block.block.my_actualities_block config:block.block.mcloginformblock config:block.block.site_map_block config:block.block.a_la_une_actualities_block config:block.block.dernieres_publications_block config:block.block.bannieredinformation user:0 config:matomo.settings block_view rendered http_response config:user.role.anonymous",
+      "cache-tags": "config:block_list config:block.block.semaphore_bootstrap_local_tasks config:block.block.semaphore_bootstrap_messages config:block.block.semaphore_bootstrap_content config:block.block.pagetitle config:block.block.views_block__interested_content_block_1 config:block.block.semaphore_bootstrap_main_menu config:block.block.mainnavigationmobile config:block.block.semaphore_bootstrap_breadcrumbs config:block.block.semaphore_bootstrap_branding config:block.block.leftfooter config:block.block.rightfooter config:block.block.leftfooter_2 config:block.block.semaphore_sub_bootstrap_main_menu config:block.block.block_derniers_mouvements config:block.block.block_front_magazines config:block.block.navigation_search_block config:block.block.my_actualities_block config:block.block.mcloginformblock config:block.block.site_map_block config:block.block.a_la_une_actualities_block config:block.block.dernieres_publications_block config:block.block.bannieredinformation user:0 config:matomo.settings block_view rendered http_response config:user.role.anonymous",
+      "last-modified": "Sun, 15 Feb 2026 03:13:15 GMT",
+      "etag": "\"1771125195-gzip\"",
+      "age": "0",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=63072000",
+      "x-cp-via": "C2-39ab91db-ce6b4a79",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "SSESS5e2813f63434eb9ba437efb280ddcdf7": {
+          "domain": "semaphore.culture.gouv.fr",
+          "expires": "2026-03-10T06:46:36.000Z",
+          "httponly": true,
+          "max-age": 2000000,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://semaphore.culture.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://semaphore.culture.gouv.fr/",
+        "https://semaphore.culture.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
+      "includeSubDomains": false,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://s3.fr-par.scw.cloud/sem-p0-bucket/s3fs-public-prod/languages/fr_VI-a5YXb5a5zlEbcxIjMiLh-Nn2ockrwvdhtPbuBe9c.js?VersionId=1768995795474010?t9h4o3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
