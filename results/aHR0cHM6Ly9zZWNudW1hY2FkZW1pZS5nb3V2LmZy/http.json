@@ -1,0 +1,138 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "keep-alive": "timeout=25",
+      "cache-control": "no-cache, private",
+      "date": "Sun, 15 Feb 2026 03:13:39 GMT",
+      "set-cookie": [
+        "XSRF-TOKEN=eyJpdiI6IjNFQnM0eVhrcytTVGNxcURIRVRNK0E9PSIsInZhbHVlIjoia09hTkhKXC9wbnF6amxmY2llYlBTWDFrUzVcL2FIeVRNRTNXSUpreGRSbFIya2IzbTdnK2xUZ1pKYmI2Y2NxT3loM0ZyS2hIWGhhQmo1N21FWVlNdGVPTVQ0TUc1VGJHamFqcFg3WTJ4bkN2a0tSMERDcFdUR3pDTlwvWGcxN1Q1UmkiLCJtYWMiOiJiZjU4ZjRmMTNhM2U3MzYzZmUwMjkzNWNjNTYzOWUxZjRkODA5MmNkZGZkZmFkYWVhNzVkMGMxMGY2YjAxN2VmIn0%3D; expires=Sun, 15-Feb-2026 05:13:39 GMT; Max-Age=7200; path=/; domain=secnumacademie.gouv.fr; secure; samesite=lax",
+        "laravel_session=eyJpdiI6IkM2a2pIemtmMkVTT1U4XC83SG1EMTVBPT0iLCJ2YWx1ZSI6IkR2V2Z6WUlUQVVLSmhPS2dVUmNkcm5xeklXNzEyd2ZPZkZXcno3UlRuWWxEdUF0ZTJvT0swTGNFUG82bTRNQTBXRmg5RmtvTXlMWnAzTm5ERUY4MlROTEsxQmYyV2E1NzFidlVNSWVCbkRBbjl6cXA1QnZkQVwvU0x4QlNFa0huZCIsIm1hYyI6IjU3NGMxZjEyZGE0OGFiMTg2OGMyMTk3NGNiZDYyMTcwYTUyMDU3YmRlYTUxZTY5YjM3NDBhZTJjMmYwZjU5MzIifQ%3D%3D; path=/; domain=secnumacademie.gouv.fr; secure; httponly; samesite=lax"
+      ],
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "XSRF-TOKEN": {
+          "domain": "secnumacademie.gouv.fr",
+          "expires": "2026-02-15T05:13:39.000Z",
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "laravel_session": {
+          "domain": "secnumacademie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://secnumacademie.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://secnumacademie.gouv.fr/",
+        "https://secnumacademie.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
