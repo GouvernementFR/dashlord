@@ -1,0 +1,160 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 10,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "set-cookie": [
+        "JSESSIONID=C1065A339BB29132DA6D0553B1CCD420.front1; Path=/gu-presentation; HttpOnly",
+        "SESSIONID=2038958602.36895.0000; path=/; Httponly; Secure",
+        "f5_cspm=1234;;",
+        "TS018e6783=01d296d53b78e5d9c9d1a3b8240012a4622641ff7609bd3332be4b3cec550b38fff82343ead22980ae2a74f0d5bcf7db0988a295a323b4392496c76021fac4239a2b1a6abed7309ed6d13eddcfdaee8ef0d3070533; Path=/; Domain=.reseaux-et-canalisations.ineris.fr",
+        "TS01d39827=01d296d53bb743add5556825b6686105f7b74a13d809bd3332be4b3cec550b38fff82343ea5c3aefc4deaed74fd38a5730e8a617235d6599326516e551a16a6f17ac87cfa3; path=/gu-presentation",
+        "TS018e6783028=01076a1c4726593cb9e0887a01645dd14315b38c9ead8e3658bd90f6163f4c1540da6e2cbd667b87f656a48f4c468b4fb9db92cfef; Path=/; Domain=.reseaux-et-canalisations.ineris.fr"
+      ],
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html;charset=UTF-8",
+      "content-language": "fr",
+      "date": "Sun, 15 Feb 2026 03:10:15 GMT",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "JSESSIONID": {
+          "domain": "reseaux-et-canalisations.ineris.fr",
+          "httponly": true,
+          "path": "/gu-presentation",
+          "port": null
+        },
+        "SESSIONID": {
+          "domain": "reseaux-et-canalisations.ineris.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "f5_cspm": {
+          "domain": "reseaux-et-canalisations.ineris.fr",
+          "path": "/gu-presentation/construire-sans-detruire",
+          "port": null
+        },
+        "TS018e6783": {
+          "domain": "reseaux-et-canalisations.ineris.fr",
+          "path": "/",
+          "port": null
+        },
+        "TS01d39827": {
+          "domain": "reseaux-et-canalisations.ineris.fr",
+          "path": "/gu-presentation",
+          "port": null
+        },
+        "TS018e6783028": {
+          "domain": "reseaux-et-canalisations.ineris.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://ekararum.ip-label.net/ekararum.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
