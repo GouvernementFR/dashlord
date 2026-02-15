@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "connection": "close",
+      "content-length": "27942",
+      "content-language": "fr",
+      "content-type": "text/html; charset=UTF-8",
+      "etag": "\"1771044686\"",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Sat, 14 Feb 2026 04:51:26 GMT",
+      "traceresponse": "00-189403c2448a556c59154ed908560e9e-4315d8bc0530ca1e-01",
+      "x-content-type-options": "nosniff",
+      "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "x-frame-options": "SAMEORIGIN",
+      "x-platform-cluster": "xisee54uq2umo-main-bvxea6i",
+      "x-platform-processor": "3ppy6uztp3dgzrn4tdomegnxti",
+      "x-platform-router": "sxf4cq5zgjmp3ul2hkdgnullz4",
+      "accept-ranges": "bytes",
+      "age": "80754",
+      "date": "Sun, 15 Feb 2026 03:17:21 GMT",
+      "x-served-by": "cache-par-lfpg1960089-PAR, cache-chi-kigq8000104-CHI",
+      "x-cache": "HIT, HIT",
+      "x-cache-hits": "1, 0",
+      "vary": "Cookie, Accept-Encoding",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "strict-transport-security": "max-age=31557600"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.sorbonne-universite.fr/",
+      "redirects": true,
+      "route": [
+        "http://sorbonne-universite.fr/",
+        "https://sorbonne-universite.fr/",
+        "https://www.sorbonne-universite.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31557600",
+      "includeSubDomains": false,
+      "maxAge": 31557600,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://admin-pipeline.upsun-fr-3.observability-pipeline.blackfire.io/js/probe.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
