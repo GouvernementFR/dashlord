@@ -1,0 +1,222 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 105,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:15:50 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31536000",
+      "content-type": "text/html; charset=utf-8",
+      "x-powered-by": "PHP/8.3.29",
+      "composed-by": "SPIP 4.4.8 @ www.spip.net + https://spote.developpement-durable.gouv.fr/local/config.txt",
+      "link": "<https://spote.developpement-durable.gouv.fr/local/cache-css/a4242b25c913e9c5b5e0b37b3088d1cc.css?1770894748>;rel=\"preload\";as=\"style\"",
+      "content-security-policy": "default-src 'self'; font-src 'self'; manifest-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net 'sha256-9wuBGIp+EhAXOKwOiY4F5rPeDPfRSM/7xR97CO7hNcw=' 'sha256-UbZyDkodh6JBdZUuHv4YFpcFh8ASgE8eeGeIM+2JLJg=' 'sha256-/B3NqY26pPE0Yah2hb/t8JUOd7IeKmp0hGhg51yHJog=' 'sha256-zsJfAiatzJRa8abutTWv+RrGFCnNeIjky9y+3N+SyIk=' 'sha256-GEduMRZqdpKG7Vp2y6LEL20Q/P7X09MtVwMJ7LreHCc=' 'sha256-aaWhbfwqpLzGfpv7llRlSUMCuWLM0FlZDEppx7ZL1h4=' 'sha256-5uozQJU4eTYLGo4FySXEMFlIs20D5H3z6efYml1PbYY=' 'sha256-cZ+tNJdZQjxo59W+IVTQQTwceua3Fe6hiQt7y9YifI4=' 'sha256-kd3GJBbni8uNjTKLkZ0vAj2skOkduxaB931iqNRgpaI=' 'sha256-iwtesfqyen7SWvgWShNJbwhzUcZAo63e7Fm8q8jrM00=' 'sha256-nurF4EPnaRI3LbyUqcNdXxJ2xTHbNoc4rltImoSkjFM=' 'sha256-+bIrVQ62eNTIoQ/VT6oABIUTvLCvJboZm/cYYIKccw4=' 'sha256-7G5pGJiwoDnB/uf4vr95QWNRQ6D9GLfFd3nQT6YcSx4=' 'sha256-ciacJqpRnBDaakZu7HaFnu3TYRt5m924trBKaIqUwpg=' 'sha256-r3a403XSyvdVyMGebx63hFg2BCm8py9hKwvRapPghTc=' 'sha256-Eqm3XBc4nEVI+n7zI4EzQZz4IHP+PTpB79FfXUzu+ao=' 'sha256-Jjdgove2ijze1Lpgjg7FV63Q1LOb9LEGxat4WCGK69U=' 'sha256-yny6nIoUKFsggGXFet48AXKi2oneGyl/rWGvD9UuijE=' 'sha256-EhRuzbTC6lISb9J9TShpGWtBOQjutrNojpuY4d9b8Es=' 'sha256-XSCkSoaiAUx9fLhxNyW3NW1FLxRxARXv5cFA0c8cPaA=' 'sha256-btMqUZ7dwkC4NuNYHerAqcCpg/B+ThdS/TA3IykKJc4='; base-uri 'self'; img-src 'self' https://audience-sites.din.developpement-durable.gouv.fr data:; style-src 'self' https://cdnjs.cloudflare.com https://audience-sites.din.developpement-durable.gouv.fr 'unsafe-inline';connect-src 'self';form-action 'self' ; object-src 'none';frame-src 'self' https://www.dailymotion.com https://storage.playplay.com https://s-beta.amazon-adsystem.com https://cs.admanmedia.com https://playback.lifesize.com/;frame-ancestors 'self';",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "no-referrer",
+      "x-spip-cache": "86400",
+      "last-modified": "Sun, 15 Feb 2026 03:15:50 GMT",
+      "set-cookie": [
+        "Path=/; HttpOnly; Secure",
+        "SRV=e6f1a06a-354a-4114-a1cb-65a59c9528b6; path=/"
+      ],
+      "vary": "Cookie,Accept-Encoding",
+      "cache-control": "private",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'sha256-+birvq62entioq/vt6oabiutvlcvjbozm/cyyikccw4='",
+          "'sha256-/b3nqy26ppe0yah2hb/t8juod7iekmp0hghg51yhjog='",
+          "'sha256-5uozqju4etylgo4fysxemflis20d5h3z6efyml1pbyy='",
+          "'sha256-7g5pgjiwodnb/uf4vr95qwnrq6d9glffd3nqt6ycsx4='",
+          "'sha256-9wubgip+ehaxokwoiy4f5rpedpfrsm/7xr97co7hncw='",
+          "'sha256-aawhbfwqplzgfpv7llrlsumcuwlm0flzdeppx7zl1h4='",
+          "'sha256-btmquz7dwkc4nunyheraqccpg/b+thds/ta3iykkjc4='",
+          "'sha256-ciacjqprnbdaakzu7hafnu3tyrt5m924trbkaiquwpg='",
+          "'sha256-cz+tnjdzqjxo59w+ivtqqtwceua3fe6hiqt7y9yifi4='",
+          "'sha256-ehruzbtc6lisb9j9tshpgwtboqjutrnojpuy4d9b8es='",
+          "'sha256-eqm3xbc4nevi+n7zi4ezqzz4ihp+ptpb79ffxuzu+ao='",
+          "'sha256-gedumrzqdpkg7vp2y6lel20q/p7x09mtvwmj7lrehcc='",
+          "'sha256-iwtesfqyen7swvgwshnjbwhzuczao63e7fm8q8jrm00='",
+          "'sha256-jjdgove2ijze1lpgjg7fv63q1lob9legxat4wcgk69u='",
+          "'sha256-kd3gjbbni8unjtklkz0vaj2skokduxab931iqnrgpai='",
+          "'sha256-nurf4epnari3lbyuqcndxxj2xthbnoc4rltimoskjfm='",
+          "'sha256-r3a403xsyvdvymgebx63hfg2bcm8py9hkwvrappghtc='",
+          "'sha256-ubzydkodh6jbdzuuhv4yfpcfh8asge8eegeim+2jljg='",
+          "'sha256-xscksoaiaux9flhxnyw3nw1flxrxarxv5cfa0c8cpaa='",
+          "'sha256-yny6nioukfsgggxfet48axki2onegyl/rwgvd9uuije='",
+          "'sha256-zsjfaiatzjra8abuttwv+rrgfcnneijky9y+3n+syik='",
+          "https://cdn.jsdelivr.net",
+          "https://cdnjs.cloudflare.com"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://audience-sites.din.developpement-durable.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://audience-sites.din.developpement-durable.gouv.fr",
+          "https://cdnjs.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://cs.admanmedia.com",
+          "https://playback.lifesize.com/",
+          "https://s-beta.amazon-adsystem.com",
+          "https://storage.playplay.com",
+          "https://www.dailymotion.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "Path": {
+          "domain": "spote.developpement-durable.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "SRV": {
+          "domain": "spote.developpement-durable.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://spote.developpement-durable.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://spote.developpement-durable.gouv.fr/",
+        "https://spote.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
