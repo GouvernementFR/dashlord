@@ -1,0 +1,197 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 125,
+    "statusCode": 200,
+    "testsFailed": 0,
+    "testsPassed": 10,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:15:01 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding, Accept, Accept-Language, Cookie",
+      "server": "Mastodon",
+      "x-frame-options": "DENY",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "0",
+      "referrer-policy": "same-origin",
+      "cache-control": "max-age=15, public, stale-while-revalidate=30, stale-if-error=86400",
+      "etag": "W/\"4ace75dde25d5ddb6cc7d7a6229cc176\"",
+      "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://social.numerique.gouv.fr; img-src 'self' data: blob: https://social.numerique.gouv.fr; media-src 'self' data: https://social.numerique.gouv.fr; manifest-src 'self' https://social.numerique.gouv.fr; form-action 'none'; child-src 'self' blob: https://social.numerique.gouv.fr; worker-src 'self' blob: https://social.numerique.gouv.fr; connect-src 'self' data: blob: https://social.numerique.gouv.fr wss://social.numerique.gouv.fr; script-src 'self' https://social.numerique.gouv.fr 'wasm-unsafe-eval'; frame-src 'self' https:; style-src 'self' https://social.numerique.gouv.fr 'nonce-mOCynbIizElRRqcFGz6gIQ=='",
+      "x-request-id": "187ff66e-1164-467b-90bf-a7c1cf34ce16",
+      "x-runtime": "0.024114",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "x-cached": "EXPIRED"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe-default-src-none",
+      "scoreModifier": 10,
+      "data": {
+        "base-uri": [
+          "'none'"
+        ],
+        "default-src": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "font-src": [
+          "'self'",
+          "https://social.numerique.gouv.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://social.numerique.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "data:",
+          "https://social.numerique.gouv.fr"
+        ],
+        "manifest-src": [
+          "'self'",
+          "https://social.numerique.gouv.fr"
+        ],
+        "form-action": [
+          "'none'"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://social.numerique.gouv.fr"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:",
+          "https://social.numerique.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://social.numerique.gouv.fr",
+          "wss://social.numerique.gouv.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'wasm-unsafe-eval'",
+          "https://social.numerique.gouv.fr"
+        ],
+        "frame-src": [
+          "'self'",
+          "https:"
+        ],
+        "style-src": [
+          "'nonce-mocynbiizelrrqcfgz6giq=='",
+          "'self'",
+          "https://social.numerique.gouv.fr"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://social.numerique.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://social.numerique.gouv.fr/",
+        "https://social.numerique.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-all-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
