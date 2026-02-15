@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:18:52 GMT",
+      "server": "Apache",
+      "content-type": "text/html; charset=utf-8",
+      "status": "200 OK",
+      "cache-control": "no-store",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block",
+      "x-request-id": "edb117b0-d09c-4ee9-be91-f658d0ad5b7d",
+      "x-download-options": "noopen",
+      "etag": "W/\"510a0204b6bc0373ab6c2b3b18428a2e\"",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "_redmine_session=ZGhZRHF5eFFMOUN6aTR0Q3JDZklPR010cFR6MndabTI1RE9oNjVjWkIvT3d4UU9PbGxlRlNHN1l3b3hiRE9wVmVvaVlvOEhXOGJka3FCSkJSenFobU11MGxzQlBMQ0tsc29DcWt6ZytVNFU2TU8xbnNmZW1ZUkZxOVNTSURwcEdpSk5ma0FQd3JqdDU3YzJ2T3B3bzkwVkdKdytBSEw4YmhnRytyNTliOE5KREsvMWVKeEVjWVhiM3BMb0FjemJjLS1jTUR3ZithSnBZckNiWENWSnVqNDl3PT0%3D--67842ae70a79dadaed688719032de4d8a07f4e0a; path=/; httponly; samesite=lax"
+      ],
+      "via": "1.1 sirh.projets.developpement-durable.gouv.fr",
+      "vary": "User-Agent",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "_redmine_session": {
+          "domain": "sirh.projet.developpement-durable.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://sirh.projet.developpement-durable.gouv.fr/login?back_url=https%3A%2F%2Fsirh.projet.developpement-durable.gouv.fr%2F",
+      "redirects": true,
+      "route": [
+        "http://sirh.projet.developpement-durable.gouv.fr/",
+        "https://sirh.projet.developpement-durable.gouv.fr/",
+        "http://sirh.projet.developpement-durable.gouv.fr/login?back_url=https%3A%2F%2Fsirh.projet.developpement-durable.gouv.fr%2F",
+        "https://sirh.projet.developpement-durable.gouv.fr/login?back_url=https%3A%2F%2Fsirh.projet.developpement-durable.gouv.fr%2F"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
