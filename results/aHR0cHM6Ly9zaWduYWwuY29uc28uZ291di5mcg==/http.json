@@ -1,0 +1,218 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "default-src 'self' *.aticdn.net *.data.gouv.fr *.beta.gouv.fr; script-src 'self' *.signal.conso.gouv.fr *.data.gouv.fr *.beta.gouv.fr *.twitter.com 'unsafe-inline' 'unsafe-eval'; connect-src 'self' *.sentry.io *.data.gouv.fr *.beta.gouv.fr data.economie.gouv.fr ressources.data.sncf.com https://signal-api.conso.gouv.fr https://entreprise.signal.conso.gouv.fr https://app-43801020-d534-4b34-9fd5-bff7ee2b4ccb.cleverapps.io; worker-src 'self' https://signal-api.conso.gouv.fr https://entreprise.signal.conso.gouv.fr https://app-43801020-d534-4b34-9fd5-bff7ee2b4ccb.cleverapps.io blob:; img-src 'self' data: https://signal.conso.gouv.fr/ https://signal-api.conso.gouv.fr *.cellar-c2.services.clever-cloud.com *.twitter.com *.xiti.com *.beta.gouv.fr; frame-src *.data.gouv.fr/ *.beta.gouv.fr *.twitter.com https://www.youtube-nocookie.com https://metabase-publicstats-signalconso.cleverapps.io/; frame-ancestors 'self'; child-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com blob:; font-src 'self' https://fonts.gstatic.com; report-uri /csp-violation-report-endpoint/;",
+      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding",
+      "link": "</image/logo-signalconso_145_61.png>; rel=preload; as=\"image\", </_next/static/media/consumer.e6d70146.png>; rel=preload; as=\"image\", </image/logo-dgccrf.png>; rel=preload; as=\"image\"",
+      "x-powered-by": "Next.js",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 15 Feb 2026 03:17:14 GMT",
+      "x-varnish": "10630429",
+      "age": "0",
+      "via": "1.1 e8fa496f-f0f5-4270-8772-9a551eb86540 (Varnish/8.0)",
+      "accept-ranges": "bytes",
+      "set-cookie": [
+        ""
+      ],
+      "x-cache": "MISS",
+      "x-cache-ttl": "119.999",
+      "x-cache-path-kind": "html_i18n",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "sozu-id": "01KHFMTSSRYFJH1ZTPS0WMRBTF"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.aticdn.net",
+          "*.beta.gouv.fr",
+          "*.data.gouv.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.beta.gouv.fr",
+          "*.data.gouv.fr",
+          "*.signal.conso.gouv.fr",
+          "*.twitter.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.beta.gouv.fr",
+          "*.data.gouv.fr",
+          "*.sentry.io",
+          "data.economie.gouv.fr",
+          "https://app-43801020-d534-4b34-9fd5-bff7ee2b4ccb.cleverapps.io",
+          "https://entreprise.signal.conso.gouv.fr",
+          "https://signal-api.conso.gouv.fr",
+          "ressources.data.sncf.com"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:",
+          "https://app-43801020-d534-4b34-9fd5-bff7ee2b4ccb.cleverapps.io",
+          "https://entreprise.signal.conso.gouv.fr",
+          "https://signal-api.conso.gouv.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "*.beta.gouv.fr",
+          "*.cellar-c2.services.clever-cloud.com",
+          "*.twitter.com",
+          "*.xiti.com",
+          "data:",
+          "https://signal-api.conso.gouv.fr",
+          "https://signal.conso.gouv.fr/"
+        ],
+        "frame-src": [
+          "*.beta.gouv.fr",
+          "*.data.gouv.fr/",
+          "*.twitter.com",
+          "https://metabase-publicstats-signalconso.cleverapps.io/",
+          "https://www.youtube-nocookie.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "child-src": [
+          "'self'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "blob:",
+          "https://fonts.googleapis.com"
+        ],
+        "font-src": [
+          "'self'",
+          "https://fonts.gstatic.com"
+        ],
+        "report-uri": [
+          "/csp-violation-report-endpoint/"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "NEXT_LANG": {
+          "domain": "signal.conso.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://signal.conso.gouv.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://signal.conso.gouv.fr/",
+        "https://signal.conso.gouv.fr/",
+        "https://signal.conso.gouv.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
