@@ -1,0 +1,178 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:16:41 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cache-control": "s-maxage=36000, max-age=5",
+      "last-modified": "Fri, 13 Feb 2026 12:47:16 GMT",
+      "link": "</hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js>; rel=preload; as=script,</hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js>; rel=preload; as=script,<//7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/template_assets/DEFAULT_ASSET/1770412220877/template_layout.min.css>; rel=preload; as=style,<https://www.skyjed.com/hubfs/hub_generated/template_assets/1/44897270594/1742163547289/template_Skyjed21.min.css>; rel=preload; as=style",
+      "strict-transport-security": "max-age=31536000",
+      "content-security-policy": "upgrade-insecure-requests",
+      "edge-cache-tag": "CT-46033705275,P-5697966,L-45600348781,L-46104781436,L-46110737299,L-46110737741,L-46110740616,L-46110740819,L-46110740868,L-46663727108,L-68647405170,L-71688890663,W-12591692650,W-150682626463,W-188521064970,W-46478867982,W-46664630938,CW-11459816360,CW-11459816415,CW-11459851076,CW-11459851115,CW-11461707897,CW-12262489436,CW-45649255560,CW-45928585320,CW-45955934020,CW-46031156829,CW-46032866185,CW-46034898477,E-44897270594,MENU-12591692650,MENU-150682626463,MENU-188521064970,MENU-46478867982,MENU-46664630938,PGS-ALL,SW-1,GC-121258149483,GC-121258150727,GC-179807477103,GC-46504408384,GC-46513894692,GC-46664198461,GC-57009205154,GC-59730482988",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-hs-cf-cache-status": "HIT",
+      "x-hs-cache-config": "BrowserCache-5s-EdgeCache-180s",
+      "x-hs-cache-control": "s-maxage=36000, max-age=0",
+      "x-hs-content-id": "46033705275",
+      "x-hs-hub-id": "5697966",
+      "x-hs-prerendered": "Fri, 13 Feb 2026 12:47:16 GMT",
+      "x-hs-cfworker-meta": "{\"contentType\":\"SITE_PAGE\",\"resolver\":\"PreRenderedContentResolver\"}",
+      "x-hs-portal-id": "5697966",
+      "set-cookie": [
+        "__cf_bm=8hDjdtPWuTd2rYjtndhSKganoyH5PdHJrUF4AlF3nbE-1771125401-1.0.1.1-oR.ZwjjSbkhU_JG62Kep1BXPj0Lnga6jbuGaCzqL0y.ooAbbG.eFAIzDI.LPLH5hcJi7N57BravMnVVNPvdt.GfWSTVTiAAwAS8wQEmtuxU; path=/; expires=Sun, 15-Feb-26 03:46:41 GMT; domain=.www.skyjed.com; HttpOnly; Secure; SameSite=None",
+        "_cfuvid=An.J._3cXbEzLtT77ukIn_lT7DZ_nlUBXkCQV65dkvI-1771125401311-0.0.1.1-604800000; path=/; domain=.www.skyjed.com; HttpOnly; Secure; SameSite=None"
+      ],
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=AtiDX%2F3XfqOu%2BTHryMM6MhxnndMQ%2FLwZUcCpTeswYs8gdDr%2B2xkhPyduqCTUzHYPsHqUfKroa2emFXlhfDBrU1MJvZ8fLNLZZ2pbL4r41k%2BPy%2Bg1lwuXCrrs3nfvKu2W\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+      "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare",
+      "cf-ray": "9ce1a5ddaba72305-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "__cf_bm": {
+          "domain": "www.skyjed.com",
+          "expires": "2026-02-15T03:46:41.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "_cfuvid": {
+          "domain": "www.skyjed.com",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.skyjed.com/",
+      "redirects": true,
+      "route": [
+        "http://skyjed.com/",
+        "https://skyjed.com/",
+        "https://www.skyjed.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=G-SXECGY74JX": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn2.hubspot.net/hubfs/273774/mp/act2/js/act21.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
