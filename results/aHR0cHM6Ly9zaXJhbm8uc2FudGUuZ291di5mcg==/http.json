@@ -1,0 +1,144 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:18:32 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
+      "cache-control": "public, max-age=0",
+      "last-modified": "Tue, 27 Jan 2026 14:02:22 GMT",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "set-cookie": [
+        "BIGipServerpool-sirano-production.cegedim.cloud-tcp3000=!FrQsZmH5WdbQuOcXIkI7F7SI9ajmiqIhVg4A8aaJJhQ4RFyunFfcbzbtGJDHlazW/+EneS7eJiTsfs27YhAgqM7PXseb; path=/; Httponly; Secure; SameSite=Strict",
+        "TS01ac8ac8=01352d3811ba70b9c9504135ae91af5ee74dfae5e57fb36660bc05f1bf353c2c3d7741b05779e45d3d837bc45de97349f7b626cc0a; Path=/; Secure; HttpOnly"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerpool-sirano-production.cegedim.cloud-tcp3000": {
+          "domain": "sirano.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        },
+        "TS01ac8ac8": {
+          "domain": "sirano.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://sirano.sante.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://sirano.sante.gouv.fr/",
+        "https://sirano.sante.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "http://localhost:8097/": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://tally.so/widgets/embed.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
