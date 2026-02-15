@@ -1,0 +1,166 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A",
+    "error": null,
+    "score": 95,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:15:57 GMT",
+      "content-type": "text/html",
+      "content-length": "1296",
+      "connection": "close",
+      "last-modified": "Fri, 22 Aug 2025 14:34:54 GMT",
+      "etag": "\"68a8800e-510\"",
+      "expires": "Sun, 15 Feb 2026 03:15:56 GMT",
+      "cache-control": "no-cache",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "frame-ancestors 'self'; default-src 'self' https://api.signalement.social-sante.gouv.fr https://connexion.signalement.social-sante.gouv.fr https://captcha.signalement.social-sante.gouv.fr blob:; style-src 'self' 'unsafe-inline'; img-src 'self' https://api.signalement.social-sante.gouv.fr https://connexion.signalement.social-sante.gouv.fr https://captcha.signalement.social-sante.gouv.fr blob: data:; media-src 'self' blob:;",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "set-cookie": [
+        "cookiesession1=678A3E1EED70279015E3E264F2265721;Expires=Mon, 15 Feb 2027 03:15:57 GMT;Path=/;HttpOnly"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "default-src": [
+          "'self'",
+          "blob:",
+          "https://api.signalement.social-sante.gouv.fr",
+          "https://captcha.signalement.social-sante.gouv.fr",
+          "https://connexion.signalement.social-sante.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://api.signalement.social-sante.gouv.fr",
+          "https://captcha.signalement.social-sante.gouv.fr",
+          "https://connexion.signalement.social-sante.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "blob:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "cookiesession1": {
+          "domain": "signalement.social-sante.gouv.fr",
+          "expires": "2027-02-15T03:15:57.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
