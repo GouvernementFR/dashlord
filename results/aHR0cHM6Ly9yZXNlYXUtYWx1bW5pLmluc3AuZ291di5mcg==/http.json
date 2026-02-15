@@ -1,0 +1,253 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:10:14 GMT",
+      "server": "Apache/2",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "PHPSESSID=t1cnehge7kvr4na8q01fi543ed; expires=Tue, 17-Mar-2026 03:10:14 GMT; Max-Age=2592000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax",
+        "langue_selected=fr; expires=Tue, 17-Mar-2026 03:10:14 GMT; Max-Age=2592000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax",
+        "as_id=34976379483aa255f871d0edccdf82f6; expires=Sat, 15-Aug-2026 02:10:15 GMT; Max-Age=15634800; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax"
+      ],
+      "x-frame-options": "SAMEORIGIN",
+      "upgrade": "h2",
+      "connection": "Upgrade, close",
+      "vary": "Accept-Encoding,Origin",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-credentials": "true",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' wss://*.hotjar.com *.hotjar.com data:;img-src * data: blob:; connect-src 'self' wss://*.hotjar.com *.hotjar.com *.hotjar.io *.addthis.com *.pa-cd.com lydia-app.com *.lydia-app.com *.openstreetmap.org maps.googleapis.com *.analytics.google.com *.google-analytics.com *.gstatic.com *.hcaptcha.com *.facebook.com *.raygun.io wss://*.crisp.chat *.cometchat.io *.api-eu.cometchat.io *.widget-eu.cometchat.io wss://*.websocket-eu.cometchat.io https://app  https://matomo.insp.gouv.fr/ ; object-src 'self' https://www.youtube.com https://www.dailymotion.com; frame-ancestors 'self' ; base-uri https://reseau-alumni.insp.gouv.fr/; form-action 'self' https://login.microsoftonline.com/ https://netanswer.rpxnow.com https://preprod-tpeweb.e-transactions.fr/ https://tpeweb.e-transactions.fr/ https://paiement.creditmutuel.fr https://systempay.cyberpluspaiement.com https://payment-webinit-mercanet.test.sips-atos.com/paymentInit https://payment-webinit-mercanet.test.sips-services.com/paymentInit https://payment-webinit.mercanet.bnpparibas.net/paymentInit https://old.pta.netanswer.fr https://www.paristech-alumni.org https://www.whats4u.org https://whats4u.org https://wats4u.com.alumnforce.org http://manageurs.mjb.lan https://manageurs.mjr1108.com https://www.xmp-consult.org https://tpeweb.paybox.com https://www.saferpay.com/",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.hotjar.com",
+          "data:",
+          "https:",
+          "wss://*.hotjar.com"
+        ],
+        "img-src": [
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.addthis.com",
+          "*.analytics.google.com",
+          "*.api-eu.cometchat.io",
+          "*.cometchat.io",
+          "*.facebook.com",
+          "*.google-analytics.com",
+          "*.gstatic.com",
+          "*.hcaptcha.com",
+          "*.hotjar.com",
+          "*.hotjar.io",
+          "*.lydia-app.com",
+          "*.openstreetmap.org",
+          "*.pa-cd.com",
+          "*.raygun.io",
+          "*.widget-eu.cometchat.io",
+          "https://app",
+          "https://matomo.insp.gouv.fr/",
+          "lydia-app.com",
+          "maps.googleapis.com",
+          "wss://*.crisp.chat",
+          "wss://*.hotjar.com",
+          "wss://*.websocket-eu.cometchat.io"
+        ],
+        "object-src": [
+          "'self'",
+          "https://www.dailymotion.com",
+          "https://www.youtube.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "base-uri": [
+          "https://reseau-alumni.insp.gouv.fr/"
+        ],
+        "form-action": [
+          "'self'",
+          "http://manageurs.mjb.lan",
+          "https://login.microsoftonline.com/",
+          "https://manageurs.mjr1108.com",
+          "https://netanswer.rpxnow.com",
+          "https://old.pta.netanswer.fr",
+          "https://paiement.creditmutuel.fr",
+          "https://payment-webinit-mercanet.test.sips-atos.com/paymentinit",
+          "https://payment-webinit-mercanet.test.sips-services.com/paymentinit",
+          "https://payment-webinit.mercanet.bnpparibas.net/paymentinit",
+          "https://preprod-tpeweb.e-transactions.fr/",
+          "https://systempay.cyberpluspaiement.com",
+          "https://tpeweb.e-transactions.fr/",
+          "https://tpeweb.paybox.com",
+          "https://wats4u.com.alumnforce.org",
+          "https://whats4u.org",
+          "https://www.paristech-alumni.org",
+          "https://www.saferpay.com/",
+          "https://www.whats4u.org",
+          "https://www.xmp-consult.org"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "PHPSESSID": {
+          "domain": "reseau-alumni.insp.gouv.fr",
+          "expires": "2026-03-17T03:10:14.000Z",
+          "httponly": true,
+          "max-age": 2592000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "langue_selected": {
+          "domain": "reseau-alumni.insp.gouv.fr",
+          "expires": "2026-03-17T03:10:14.000Z",
+          "httponly": true,
+          "max-age": 2592000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "as_id": {
+          "domain": "reseau-alumni.insp.gouv.fr",
+          "expires": "2026-08-15T02:10:15.000Z",
+          "httponly": true,
+          "max-age": 15634800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://reseau-alumni.insp.gouv.fr/",
+      "redirects": false,
+      "route": [
+        "http://reseau-alumni.insp.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hcaptcha.com/1/api.js?recaptchacompat=off&&hl=fr": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyBiEWqZllGv4pCVV2_0KPSGQiY_mvJeauo&callback=Function.prototype": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
