@@ -1,0 +1,229 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:14:46 GMT",
+      "content-type": "text/html",
+      "last-modified": "Thu, 15 Jan 2026 15:56:46 GMT",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "etag": "W/\"69690e3e-190a\"",
+      "x-xss-protection": "1; mode=block",
+      "content-security-policy": "default-src 'self' https://*.gouv.fr services.portailpro.gouv.fr wss://webchat.ac.portailpro.gouv.fr; style-src 'self' https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com https://acl.integration.portailpro.gouv.fr https://acl.portailpro.gouv.fr https://atvm.portailpro.gouv.fr 'unsafe-inline'; font-src 'self' https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com data:; script-src 'self' https://atvm.portailpro.gouv.fr https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr https://tag.aticdn.net https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com https://acl.integration.portailpro.gouv.fr https://acl.portailpro.gouv.fr 'unsafe-inline' 'unsafe-eval'; img-src 'self' https://atvm.portailpro.gouv.fr media.ac.portailpro.gouv.fr https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr/ https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com data:; frame-src http://10.156.82.34:8080 *.gouv.fr *.urssaf.fr *.net-entreprises.fr *.guichet-entreprises.fr *.mon-entreprise.fr https://logs1412.xiti.com; form-action 'self' auth.app.si1f-prod.dgfip-pcr.nuage12.fi.francecloud.rie.gouv.fr auth.portailpro.gouv.fr; media-src 'self' blob: https://*.gouv.fr services.portailpro.gouv.fr data: audio/wav;base64,* https://cdn.ac.portailpro.gouv.fr media.ac.portailpro.gouv.fr; base-uri 'self'; object-src 'none'; connect-src https://cdn.ac.portailpro.gouv.fr wss://webchat.ac.portailpro.gouv.fr *.gouv.fr *.urssaf.fr *.net-entreprises.fr *.guichet-entreprises.fr *.mon-entreprise.fr https://logs1412.xiti.com wss://acl.integration.portailpro.gouv.fr wss://acl.portailpro.gouv.fr services.portailpro.gouv.fr; prefetch-src 'self';",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-frame-options": "sameorigin",
+      "referrer-policy": "same-origin",
+      "permissions-policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), web-share(), interest-cohort=()"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "https://*.gouv.fr",
+          "services.portailpro.gouv.fr",
+          "wss://webchat.ac.portailpro.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://acl.integration.portailpro.gouv.fr",
+          "https://acl.portailpro.gouv.fr",
+          "https://assistance-en-ligne.integration.impots.gouv.fr",
+          "https://atvm.portailpro.gouv.fr",
+          "https://cdn.ac.portailpro.gouv.fr",
+          "https://logs1412.xiti.com",
+          "https://voxusagers.numerique.gouv.fr",
+          "https://www.interieur.gouv.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://assistance-en-ligne.integration.impots.gouv.fr",
+          "https://cdn.ac.portailpro.gouv.fr",
+          "https://logs1412.xiti.com",
+          "https://voxusagers.numerique.gouv.fr",
+          "https://www.interieur.gouv.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://acl.integration.portailpro.gouv.fr",
+          "https://acl.portailpro.gouv.fr",
+          "https://assistance-en-ligne.integration.impots.gouv.fr",
+          "https://atvm.portailpro.gouv.fr",
+          "https://cdn.ac.portailpro.gouv.fr",
+          "https://logs1412.xiti.com",
+          "https://tag.aticdn.net",
+          "https://voxusagers.numerique.gouv.fr",
+          "https://www.interieur.gouv.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://assistance-en-ligne.integration.impots.gouv.fr",
+          "https://atvm.portailpro.gouv.fr",
+          "https://cdn.ac.portailpro.gouv.fr",
+          "https://logs1412.xiti.com",
+          "https://voxusagers.numerique.gouv.fr/",
+          "https://www.interieur.gouv.fr",
+          "media.ac.portailpro.gouv.fr"
+        ],
+        "frame-src": [
+          "*.gouv.fr",
+          "*.guichet-entreprises.fr",
+          "*.mon-entreprise.fr",
+          "*.net-entreprises.fr",
+          "*.urssaf.fr",
+          "http://10.156.82.34:8080",
+          "https://logs1412.xiti.com"
+        ],
+        "form-action": [
+          "'self'",
+          "auth.app.si1f-prod.dgfip-pcr.nuage12.fi.francecloud.rie.gouv.fr",
+          "auth.portailpro.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "audio/wav",
+          "blob:",
+          "data:",
+          "https://*.gouv.fr",
+          "services.portailpro.gouv.fr"
+        ],
+        "base64,*": [
+          "https://cdn.ac.portailpro.gouv.fr",
+          "media.ac.portailpro.gouv.fr"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "connect-src": [
+          "*.gouv.fr",
+          "*.guichet-entreprises.fr",
+          "*.mon-entreprise.fr",
+          "*.net-entreprises.fr",
+          "*.urssaf.fr",
+          "https://cdn.ac.portailpro.gouv.fr",
+          "https://logs1412.xiti.com",
+          "services.portailpro.gouv.fr",
+          "wss://acl.integration.portailpro.gouv.fr",
+          "wss://acl.portailpro.gouv.fr",
+          "wss://webchat.ac.portailpro.gouv.fr"
+        ],
+        "prefetch-src": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "same-origin, origin",
+      "http": true,
+      "meta": true
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
