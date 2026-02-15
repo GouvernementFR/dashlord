@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sun, 15 Feb 2026 03:10:15 GMT",
+      "server": "Apache/2.4.37 (Red Hat Enterprise Linux)",
+      "x-powered-by": "PHP/7.3.20",
+      "cache-control": "no-cache, private",
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "XSRF-TOKEN=eyJpdiI6IjIvcXlUbjBHbmd0OHBuOTZBU1JpNUE9PSIsInZhbHVlIjoiclNmNEZRMGErSk5RdTN1dEZIdjBsenkxNUVjS2Z3bk4yQkcvZ1Q3elF1M242MWdLRWpJMy9DYTdBcFlQTExRdzlWNWxjcFNnSzc0cjhERVRnZE5saGxwazkxa0x6MjRGQVlKbnhjS2x5ZjZEdGZLNjVqOHg2azZ2TVFjL1BvUFkiLCJtYWMiOiIxNTdkNDk2ZjAwOGIwN2EwODJkOTMzMzA1Zjc5OWZiOWZhYmI5OGE2NmUxYzRhMmEyNDFlZWU1YjBiMjAxMDJhIiwidGFnIjoiIn0%3D; expires=Sun, 15-Feb-2026 05:10:15 GMT; Max-Age=7200; path=/; samesite=lax",
+        "rnsr_session=eyJpdiI6ImI0VWpUWmpQajhVWnQrVklvZFB4WUE9PSIsInZhbHVlIjoiRkl3U2xybnc2bHp6WDVqSGRQUGUrZHdtVXkvVHFYMHZDKy9PeFJzeklPT2FkV0tWNGRZMTY4bmE3dzBTOGpSUWZ5bnREZ3drdGMwMFFweitidTdEODVQbnhMQ2xWS001eHRIOVR5V1B6R1JmRURRaTB6bGN1eFZYSmZPR0EvNnIiLCJtYWMiOiJlODQ1YzQwNDllY2NiMTJkZjc3YjViNTBjNzRiMmUzZjM4NTJmZGQ2Mzg3ZDZiODhkZmQ1MzA0NGUyMjFjZTYxIiwidGFnIjoiIn0%3D; expires=Sun, 15-Feb-2026 05:10:15 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+      ],
+      "via": "1.1 rnsr.adc.education.fr (Apache/2.2.15)",
+      "x-rproxy-isi": "rp1ngextdu",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "XSRF-TOKEN": {
+          "domain": "rnsr.adc.education.fr",
+          "expires": "2026-02-15T05:10:15.000Z",
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
+        "rnsr_session": {
+          "domain": "rnsr.adc.education.fr",
+          "expires": "2026-02-15T05:10:15.000Z",
+          "httponly": true,
+          "max-age": 7200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://rnsr.adc.education.fr/",
+      "redirects": true,
+      "route": [
+        "http://rnsr.adc.education.fr/",
+        "https://rnsr.adc.education.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/api.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
