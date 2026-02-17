@@ -1,0 +1,149 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 10,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 17 Feb 2026 03:08:20 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "link": "<https://www.diplomatie.gouv.fr/local/cache-css/335ec229db432e18e7a819b5533d8941.css?1769765232>;rel=\"stylesheet prefetch\"",
+      "last-modified": "Tue, 17 Feb 2026 03:08:20 GMT",
+      "content-length": "25804",
+      "connection": "close",
+      "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "fdiplo-prst=!9qKTjxUQzDjN07V3g/jcRw5qqbeXnIJ1nMB0dXp8hOymbnwEeWBg6NBaN5HM/IVeKSxIEgW7HTcvqg==; path=/; Httponly; Secure",
+        "TS017a74ff=01185409089bbe84d6c5439ee7f77b73e215f3d1e49c075aa7f3dd92d31368dbda4ea21f778a36793ec68441bea7ec0c5b17e896dbd8c225bc70038af19b1bc5d15b24b3c8; Path=/; Domain=.www.diplomatie.gouv.fr"
+      ],
+      "x-xss-protection": "1",
+      "x-content-type-options": "nosniff"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "fdiplo-prst": {
+          "domain": "www.diplomatie.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS017a74ff": {
+          "domain": "www.diplomatie.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.diplomatie.gouv.fr/fr/dossiers-pays/syrie/",
+      "redirects": true,
+      "route": [
+        "http://sy.ambafrance.org/",
+        "https://sy.ambafrance.org/",
+        "https://www.diplomatie.gouv.fr/fr/dossiers-pays/syrie/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.diplomatie.gouv.fr/local/cache-js/1f1c1ef105a5eb8dd4b9f905f7f2b08c.js?1769765232": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.diplomatie.gouv.fr/plugins/tarteaucitron_mae/lib/tarteaucitron/tarteaucitron.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.diplomatie.gouv.fr/local/cache-js/jsdyn-services_tac_services_mae_activation_js-6eb871ca.js?1723531755": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.diplomatie.gouv.fr/local/cache-js/jsdyn-javascript_fd_application_js-3ee027b7.js?1617282794": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
