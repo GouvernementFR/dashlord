@@ -1,0 +1,128 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "alt-svc": "h3=\":443\"; ma=2592000",
+      "cache-control": "max-age=86400, public",
+      "content-language": "fr",
+      "content-security-policy-report-only": "object-src 'none'; script-src 'self' 'report-sample' 'unsafe-eval' https://unpkg.com 'unsafe-inline' https://webomat.unistra.fr/; script-src-elem 'self' 'report-sample' 'unsafe-eval' https://unpkg.com; style-src 'self' 'report-sample'; webrtc 'block'; worker-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 17 Feb 2026 03:08:28 GMT",
+      "etag": "W/\"1771297705\"",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Tue, 17 Feb 2026 03:08:25 GMT",
+      "permissions-policy": "geolocation=(),midi=(),syncxhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()",
+      "referrer-policy": "strict-origin",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding, Cookie",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-drupal-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented-but-reporting-enabled",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.unistra.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://unistra.fr/",
+        "https://unistra.fr/",
+        "https://www.unistra.fr/",
+        "https://www.unistra.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
