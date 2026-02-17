@@ -1,0 +1,174 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 17 Feb 2026 03:08:24 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains; preload",
+      "content-security-policy": "default-src * data: 'unsafe-eval' 'unsafe-inline'; img-src 'self' blob: data:; frame-ancestors 'none'",
+      "cf-cache-status": "DYNAMIC",
+      "last-modified": "Wed, 11 Feb 2026 13:43:29 GMT",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), battery=(), bluetooth=(), camera=(), ch-ua=(), ch-ua-arch=(), ch-ua-bitness=(), ch-ua-full=(), ch-ua-full=(), ch-ua-mobile=(), ch-ua-model=(), ch-ua-platform=(), ch-ua-platform=(), ch-ua-wow64=(), compute-pressure=(), cross-origin-isolated=(), direct-sockets=(), display-capture=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), sync-xhr=(), usb=(), web-share=(), window-management5=(), xr-spatial-tracking2=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "set-cookie": [
+        "__cf_bm=936Qvq6b7i10yvILWvVbZvIY8N1ityJpJubiToT3wJU-1771297703.7569957-1.0.1.1-ySPuMU8AMz8DssSlSiMHDHtXKFkJ.W6YnmiJ7mGMRNr0PX_dXsEpyhrULlSAclE5aGAH1HwvoRxSrUNUjvj6_CxYGf8EY0Od1.Qxjpuvly3AAFPR4XNZffWKLDAClLNA; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 17 Feb 2026 03:38:24 GMT"
+      ],
+      "content-language": "fr",
+      "cf-ray": "9cf214787e60fa15-ORD"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*",
+          "data:"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "__cf_bm": {
+          "domain": "ademe.fr",
+          "expires": "2026-02-17T03:38:24.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://syderep.ademe.fr/",
+      "redirects": true,
+      "route": [
+        "http://syderep.ademe.fr/",
+        "https://syderep.ademe.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.21.0/tarteaucitron.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-dzXi8iqqAJNuSDIPQE8alRwc17oxfn8N31sOE6Bc+iuDUp4dgrQp5O2vSL/Op63c+ZzHady1ccmdzIKOeRnP9A=="
+        },
+        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.21.0/tarteaucitron.services.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-mY90xajdZG4usf5d+d0tktGcOIPDc+sD7fD2pNNgy1QnrgeCsvaKpaFBOpGCsLotmj6VwVq3WqAAQ9azXZ44Gw=="
+        },
+        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.21.0/lang/tarteaucitron.fr.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-UmRJbofjTXDDcClRanV9SHr5VZvELdYEhlo+d55aGBpTr8uL4i0jHUD0G6HeJTAgi7/m2+d4zPJ79vRVZIXe0A=="
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
