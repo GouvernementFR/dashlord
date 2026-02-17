@@ -1,0 +1,288 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 17 Feb 2026 03:17:12 GMT",
+      "server": "Apache",
+      "content-language": "fr-FR",
+      "cache-control": "private, no-store, max-age=0",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' https://www.ifsttar.fr https://plausible.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src 'self' https://*.gstatic.com https://static.affluences.media/ data: ; frame-src 'self' https://youtu.be/ https://www.dailymotion.com https://mediavideo.cnrs.fr https://*.esr.gouv.fr https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src 'self' data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src 'self' 'unsafe-inline' https://plausible.io https://webchat.botpress.cloud https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src 'self' 'unsafe-inline' https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors 'self' https://*.eudonet.com, frame-ancestors 'self';",
+      "access-control-allow-origin": "*",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "expires": "Tue, 17 Feb 2026 03:17:12 GMT",
+      "vary": "Accept-Encoding",
+      "x-ua-compatible": "IE=edge",
+      "x-content-type-options": "nosniff",
+      "content-length": "18268",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://plausible.io",
+          "https://www.ifsttar.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "api-public.addthis.com",
+          "graph.facebook.com",
+          "https://*.addthis.com",
+          "https://*.audiomeans.fr",
+          "https://*.facebook.net",
+          "https://*.googletagmanager.com",
+          "https://*.tiktok.com",
+          "https://ajax.googleapis.com/ajax/",
+          "https://api-public-oci-origin.addthis.com",
+          "https://cdn-eu.readspeaker.com",
+          "https://cdn.syndication.twimg.com",
+          "https://connect.ok.ru/dk",
+          "https://graph.facebook.com",
+          "https://platform.twitter.com",
+          "https://plausible.io",
+          "https://public.tableau.com",
+          "https://static.affluences.media/",
+          "https://tarteaucitron.io",
+          "https://v1.addthisedge.com",
+          "https://vk.com/share.php",
+          "https://webapi.affluences.com/",
+          "https://widgets.pinterest.com",
+          "https://www.google-analytics.com",
+          "https://www.odnoklassniki.ru/dk",
+          "https://z.moatads.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.googleapis.com",
+          "https://*.googletagmanager.com",
+          "https://*.twimg.com",
+          "https://cdn-eu.readspeaker.com",
+          "https://platform.twitter.com",
+          "https://static.affluences.media"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://*.gstatic.com",
+          "https://static.affluences.media/"
+        ],
+        "frame-src": [
+          "'self'",
+          "http://*.u-pem.fr",
+          "https://*.audiomeans.fr",
+          "https://*.ephoto.fr",
+          "https://*.esr.gouv.fr",
+          "https://*.google.com",
+          "https://*.libcast.com",
+          "https://*.twitter.com",
+          "https://*.u-pem.fr",
+          "https://*.univ-eiffel.fr",
+          "https://*.univ-gustave-eiffel.fr",
+          "https://*.vimeo.com",
+          "https://*.youtube.com",
+          "https://archives-ouvertes.fr",
+          "https://cdn.theconversation.com",
+          "https://clap.univ-eiffel.fr",
+          "https://counter.theconversation.com",
+          "https://datawrapper.dwcdn.net",
+          "https://embed.acast.com",
+          "https://haltools.archives-ouvertes.fr",
+          "https://maps.google.fr/",
+          "https://mediavideo.cnrs.fr",
+          "https://my.matterport.com/",
+          "https://player.vimeo.com/",
+          "https://podcasts.ouest-france.fr",
+          "https://public.tableau.com",
+          "https://s7.addthis.com",
+          "https://spectremedia.org",
+          "https://static.affluences.media/",
+          "https://upem.moveonfr.com",
+          "https://view.genial.ly",
+          "https://www.dailymotion.com",
+          "https://www.facebook.com",
+          "https://www.geoportail.gouv.fr/",
+          "https://www.youtube-nocookie.com",
+          "https://youtu.be/"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://*.facebook.com",
+          "https://*.google.com",
+          "https://*.google.fr",
+          "https://*.googletagmanager.com",
+          "https://*.tiktok.com",
+          "https://*.twimg.com",
+          "https://*.twitter.com",
+          "https://analytics.google.com",
+          "https://counter.theconversation.com",
+          "https://gallery.mailchimp.com/",
+          "https://i.ytimg.com",
+          "https://images.theconversation.com",
+          "https://modele.univ-gustave-eiffel.fr",
+          "https://platform.twitter.com",
+          "https://public.tableau.com",
+          "https://ssl.google-analytics.com",
+          "https://static.affluences.media/",
+          "https://template.univ-gustave-eiffel.fr",
+          "https://www.addthis.com",
+          "https://www.google-analytics.com",
+          "https://www.ifsttar.fr/",
+          "https://www.univ-gustave-eiffel.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.addthis.com",
+          "https://*.analytics.google.com",
+          "https://*.doubleclick.net",
+          "https://*.facebook.com",
+          "https://*.google-analytics.com",
+          "https://*.googletagmanager.com",
+          "https://*.tiktok.com",
+          "https://api-public.addthis.com",
+          "https://api.countapi.xyz/",
+          "https://app-eu.readspeaker.com/",
+          "https://cdn-eu.readspeaker.com/",
+          "https://media-eu.readspeaker.com/",
+          "https://plausible.io",
+          "https://ssl.google-analytics.com",
+          "https://vttts-eu.readspeaker.com/",
+          "https://webchat.botpress.cloud",
+          "https://www.google.fr",
+          "https://www.ifsttar.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.addthis.com",
+          "https://api-public.addthis.com",
+          "https://podcast.u-pem.fr"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "frame-ancestors",
+          "https://*.eudonet.com,"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.univ-gustave-eiffel.fr/",
+      "redirects": true,
+      "route": [
+        "http://univ-gustave-eiffel.fr/",
+        "https://www.univ-gustave-eiffel.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
