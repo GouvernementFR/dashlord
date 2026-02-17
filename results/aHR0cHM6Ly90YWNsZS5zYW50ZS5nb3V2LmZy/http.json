@@ -1,0 +1,140 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 17 Feb 2026 03:08:19 GMT",
+      "set-cookie": [
+        "JSESSIONID=E507F9007E3B5E8F9D7C40E9C688DE32.ta-taclec1; Path=/tacle/; HttpOnly",
+        "TS01298773=012337f68d8d1cd9e6fd3a3ba11f4efa7bfd4eada9b1f6d1dc766466657a880b584c8acd0c3a7c0d96a243d334ceff659b290b86b52c5e99b8c379c99a766d8fc8fb9d7ba3; Path=/",
+        "TS019318ab=012337f68dbdd629ee662354edb3438adfdcdbf811b1f6d1dc766466657a880b584c8acd0c3a7c0d96a243d334ceff659b290b86b5c3953cb87b13a27620d778f2b6c58b26b154722ce37e425ed76509b9b6e605e5; path=/tacle/"
+      ],
+      "content-type": "text/html;charset=iso-8859-1",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "Current_Session": {
+          "domain": "tacle.sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01298773": {
+          "domain": "tacle.sante.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "JSESSIONID": {
+          "domain": "tacle.sante.gouv.fr",
+          "httponly": true,
+          "path": "/tacle/",
+          "port": null
+        },
+        "TS019318ab": {
+          "domain": "tacle.sante.gouv.fr",
+          "path": "/tacle/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://tacle.sante.gouv.fr/tacle/",
+      "redirects": true,
+      "route": [
+        "http://tacle.sante.gouv.fr/",
+        "https://tacle.sante.gouv.fr/",
+        "http://tacle.sante.gouv.fr/tacle/",
+        "https://tacle.sante.gouv.fr/tacle/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
