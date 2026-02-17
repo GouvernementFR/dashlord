@@ -1,0 +1,261 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Tue, 17 Feb 2026 03:16:22 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding, User-Agent",
+      "set-cookie": [
+        "PHPSESSID=nqc5r7h3seip58564q9heeo5q7; path=/; HTTPOnly; Secure"
+      ],
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "access-control-allow-origin": "*",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "referrer-policy": "origin-when-cross-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "connect-src 'self' *.unilim.fr www.google.com maps.googleapis.com *.facil-iti.app *.facil-iti.com; font-src 'self' *.facil-iti.app *.facil-iti.com *.googleapis.com *.gstatic.com cdnjs.cloudflare.com cdn.unilim.fr data:; frame-src 'self' formulaires.unilim.fr www.googletagmanager.com *.linkedin.com *.facil-iti.app *.facil-iti.com *.live.com *.youtube.com *.vimeo.com *.dailymotion.com *.unilim.fr static.addtoany.com www.google.com; script-src 'self' 'unsafe-inline' formulaires.unilim.fr www.youtube.com cdn.unilim.fr static.addtoany.com *.facil-iti.app *.facil-iti.com maps.googleapis.com mystats.unilim.fr static.addtoany.com www.googletagmanager.com connect.facebook.net 'unsafe-eval'; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com *.googleapis.com cdn.unilim.fr; frame-ancestors 'self' *.unilim.fr; img-src 'self' cdn.unilim.fr s.w.org *.facil-iti.app *.facil-iti.com www.facebook.com maps.gstatic.com maps.googleapis.com img.youtube.com cibul.s3.amazonaws.com cdn.openagenda.com data:; manifest-src 'self'; media-src 'self' mediaserver.unilim.fr; object-src 'self'; worker-src 'self' blob:;",
+      "permissions-policy": "camera=(), microphone=(),  accelerometer(), magnetometer(), interest-cohort(), payment(), geolocation=('self')"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "connect-src": [
+          "'self'",
+          "*.facil-iti.app",
+          "*.facil-iti.com",
+          "*.unilim.fr",
+          "maps.googleapis.com",
+          "www.google.com"
+        ],
+        "font-src": [
+          "'self'",
+          "*.facil-iti.app",
+          "*.facil-iti.com",
+          "*.googleapis.com",
+          "*.gstatic.com",
+          "cdn.unilim.fr",
+          "cdnjs.cloudflare.com",
+          "data:"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.dailymotion.com",
+          "*.facil-iti.app",
+          "*.facil-iti.com",
+          "*.linkedin.com",
+          "*.live.com",
+          "*.unilim.fr",
+          "*.vimeo.com",
+          "*.youtube.com",
+          "formulaires.unilim.fr",
+          "static.addtoany.com",
+          "www.google.com",
+          "www.googletagmanager.com"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.facil-iti.app",
+          "*.facil-iti.com",
+          "cdn.unilim.fr",
+          "connect.facebook.net",
+          "formulaires.unilim.fr",
+          "maps.googleapis.com",
+          "mystats.unilim.fr",
+          "static.addtoany.com",
+          "www.googletagmanager.com",
+          "www.youtube.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.googleapis.com",
+          "cdn.unilim.fr",
+          "cdnjs.cloudflare.com"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "*.unilim.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "*.facil-iti.app",
+          "*.facil-iti.com",
+          "cdn.openagenda.com",
+          "cdn.unilim.fr",
+          "cibul.s3.amazonaws.com",
+          "data:",
+          "img.youtube.com",
+          "maps.googleapis.com",
+          "maps.gstatic.com",
+          "s.w.org",
+          "www.facebook.com"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'",
+          "mediaserver.unilim.fr"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "Path": {
+          "domain": "unilim.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "PHPSESSID": {
+          "domain": "www.unilim.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.unilim.fr/",
+      "redirects": true,
+      "route": [
+        "http://unilim.fr/",
+        "https://unilim.fr/",
+        "https://www.unilim.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.unilim.fr/vendor/bootstrap/bootstrap-3.3.4/js/bootstrap.min.js?ver=6.8.3": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.unilim.fr/vendor/modernizr/modernizr-2.7.0.custom.js?ver=1.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.unilim.fr/vendor/slick/slick-1.4.1/slick/slick.min.js?ver=1.7": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdn.unilim.fr/vendor/holder/holder.js?ver=6.8.3": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
