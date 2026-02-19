@@ -1,0 +1,131 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:12:40 GMT",
+      "server": "nginx",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "20429",
+      "cache-control": "max-age=900, public,no-transform",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "cross-origin-embedder-policy": "unsafe-none",
+      "cross-origin-resource-policy": "unsafe-none",
+      "cross-origin-opener-policy": "unsafe-none",
+      "content-security-policy-report-only": "report-uri /report-csp-violation",
+      "strict-transport-security": "max-age=1000",
+      "from-origin": "same",
+      "referrer-policy": "no-referrer, no-referrer-when-downgrade",
+      "expect-ct": "max-age=86400",
+      "last-modified": "Thu, 19 Feb 2026 03:00:29 GMT",
+      "etag": "\"1771470029-gzip\"",
+      "vary": "Accept-Encoding",
+      "x-xss-protection": "1; mode=block",
+      "access-control-allow-origin": "*",
+      "x-cp-via": "C2-a4bfa1b7-64620774",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented-but-reporting-enabled",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.vie-publique.fr/",
+      "redirects": true,
+      "route": [
+        "http://vie-publique.fr/",
+        "https://vie-publique.fr/",
+        "http://www.vie-publique.fr/",
+        "https://www.vie-publique.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer, no-referrer-when-downgrade",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=1000",
+      "includeSubDomains": false,
+      "maxAge": 1000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": false,
+      "result": "corp-header-invalid",
+      "scoreModifier": -5,
+      "data": "unsafe-none",
+      "http": true,
+      "meta": false
+    }
+  }
+}
