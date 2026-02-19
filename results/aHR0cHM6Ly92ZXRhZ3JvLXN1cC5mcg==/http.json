@@ -1,0 +1,181 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:12:48 GMT",
+      "server": "Apache",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+      "link": "<https://www.vetagro-sup.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.vetagro-sup.fr/wp-json/wp/v2/pages/6383>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.vetagro-sup.fr/>; rel=shortlink",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://www.vetagro-sup.fr/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://www.vetagro-sup.fr",
+      "set-cookie": [
+        "PHPSESSID=vnj5h9tmlt46rmvp230t691l9f; path=/",
+        "CEFIBTXkHahcm=qD%2ArH%5D5jGPeE26; expires=Fri, 20-Feb-2026 03:12:48 GMT; Max-Age=86400; path=/; secure",
+        "IBSCyLPefOcEYk=7YNKBgve; expires=Fri, 20-Feb-2026 03:12:48 GMT; Max-Age=86400; path=/; secure",
+        "eDmKWtuJk=Y9mMyOuxr; expires=Fri, 20-Feb-2026 03:12:48 GMT; Max-Age=86400; path=/; secure",
+        "ogHuBIW_nTQUwr=Qfwt6DacUxYN; expires=Fri, 20-Feb-2026 03:12:48 GMT; Max-Age=86400; path=/; secure"
+      ],
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "PHPSESSID": {
+          "domain": "www.vetagro-sup.fr",
+          "path": "/",
+          "port": null
+        },
+        "CEFIBTXkHahcm": {
+          "domain": "www.vetagro-sup.fr",
+          "expires": "2026-02-20T03:12:48.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "IBSCyLPefOcEYk": {
+          "domain": "www.vetagro-sup.fr",
+          "expires": "2026-02-20T03:12:48.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "eDmKWtuJk": {
+          "domain": "www.vetagro-sup.fr",
+          "expires": "2026-02-20T03:12:48.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "ogHuBIW_nTQUwr": {
+          "domain": "www.vetagro-sup.fr",
+          "expires": "2026-02-20T03:12:48.000Z",
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.vetagro-sup.fr/",
+      "redirects": true,
+      "route": [
+        "http://vetagro-sup.fr/",
+        "https://vetagro-sup.fr/",
+        "https://www.vetagro-sup.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=UA-97636890-1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/api.js?render=6LcMic4aAAAAAKo8H_cM5bb-kA6YIbPJORzFRKOq&ver=3.0": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
