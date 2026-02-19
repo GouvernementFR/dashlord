@@ -1,0 +1,214 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "no-cache, no-store",
+      "pragma": "no-cache",
+      "content-type": "text/html; charset=utf-8",
+      "expires": "-1",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "_syrSessGuid=51f47979-0eae-4c98-a181-7bcc6dfb66c3; expires=Thu, 19-Feb-2026 03:42:45 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "_syrPrefsGuid=c39145b1-a289-4827-ade3-4c632d5d6686; expires=Fri, 19-Feb-2027 03:12:45 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "InstanceST=CNSPFV=00040A-nJa604ae58aw7JIksu4rLxdp_sn1fj3CUCXMMQ5uZuy5hpzK3Tyii66kqxGjyZaScbgf84D1Yhoft+E3Y=; path=/; secure; HttpOnly; SameSite=None",
+        "InstanceCI=CNSPFV=X7mTY5hpv_aE83KZbgNK9HuVjp2a092Ub1hrl-LE; path=/; secure; HttpOnly; SameSite=None"
+      ],
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-eval' 'unsafe-inline' blob:; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https:; frame-ancestors 'self' https:; connect-src 'self' https://*.google-analytics.com",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "date": "Thu, 19 Feb 2026 03:12:46 GMT",
+      "connection": "close",
+      "content-length": "29334"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "https:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "https:"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "https:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.google-analytics.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_syrSessGuid": {
+          "domain": "vigipallia.parlons-fin-de-vie.fr",
+          "expires": "2026-02-19T03:42:45.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_syrPrefsGuid": {
+          "domain": "vigipallia.parlons-fin-de-vie.fr",
+          "expires": "2027-02-19T03:12:45.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "InstanceST": {
+          "domain": "vigipallia.parlons-fin-de-vie.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "InstanceCI": {
+          "domain": "vigipallia.parlons-fin-de-vie.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://vigipallia.parlons-fin-de-vie.fr/",
+      "redirects": false,
+      "route": [
+        "http://vigipallia.parlons-fin-de-vie.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
