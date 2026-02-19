@@ -1,0 +1,128 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:12:45 GMT",
+      "server": "Apache",
+      "cache-control": "max-age=0, must-revalidate, private, s-maxage=600",
+      "link": "</build/runtime.63b1cdec.js>; rel=\"preload\"; as=\"script\"; defer,</build/3702.d5d05489.js>; rel=\"preload\"; as=\"script\"; defer,</build/4692.4a2fcfc7.js>; rel=\"preload\"; as=\"script\"; defer,</build/7501.24554435.js>; rel=\"preload\"; as=\"script\"; defer,</build/8020.09e035a1.js>; rel=\"preload\"; as=\"script\"; defer,</build/app.01b319c3.js>; rel=\"preload\"; as=\"script\"; defer,</build/dsfr_nomodule.5f110973.js>; rel=\"preload\"; as=\"script\"; defer; nomodule,</build/dsfr.3f053491.js>; rel=\"preload\"; as=\"script\"; defer; type=\"module\",</build/homepage.9f278ad9.js>; rel=\"preload\"; as=\"script\"; defer,</build/animate_aos.44fbff2a.js>; rel=\"preload\"; as=\"script\"; defer,</build/dsfr.921e4c86.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/8731.4226c458.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/998.39ba1398.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/app.fc2c89a0.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/icon.1ad61967.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/colors.04bc3e2f.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/1139.fa9c4c04.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/homepage.0182823f.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\",</build/animate_aos.d80d7782.css>; rel=\"preload\"; as=\"style\"; rel=\"stylesheet\"",
+      "expires": "Thu, 19 Feb 2026 03:12:45 GMT",
+      "vary": "Accept-Encoding,User-Agent",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "connection": "close",
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "BIGipServerYVNFLFoJUCrPkjlg8EZ6NQ=!SU7pM5cOydJDgkocUuXzBVxHRHRyQwdUGxUdvK1kCIjQqivPsYyyl1CPwxR1OzBvS5WyaMLnirSqOgX88W9q3q91IWs9/Ig3bMVkGJ8=; path=/; Httponly; Secure"
+      ],
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "BIGipServerYVNFLFoJUCrPkjlg8EZ6NQ": {
+          "domain": "videodiff.phm.education.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://videodiff.phm.education.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://videodiff.phm.education.gouv.fr/",
+        "https://videodiff.phm.education.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
