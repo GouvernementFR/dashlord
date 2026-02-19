@@ -1,0 +1,171 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "Apache",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-origin": "https://wallet.esw.esante.gouv.fr",
+      "access-control-expose-headers": "X-SSL-CLIENT-CERT,content-type",
+      "access-control-allow-headers": "X-SSL-CLIENT-CERT,content-type",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "content-security-policy": "frame-src 'self';frame-ancestors 'self'; object-src 'none';",
+      "last-modified": "Fri, 10 Oct 2025 10:39:21 GMT",
+      "etag": "\"c295-640cb87ca8840\"",
+      "accept-ranges": "bytes",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "x-ua-compatible": "IE=edge",
+      "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "Wed, 09 Aug 1991 11:15:00 GMT",
+      "x-ssl-client-cert": "none",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "date": "Thu, 19 Feb 2026 03:12:48 GMT",
+      "content-length": "8871",
+      "connection": "close",
+      "set-cookie": [
+        "Cookie-prd-esan-portail=!tUEdFZIKtIjTFBd1//oqHb3mbs2JRCulm56zLLgFA9aBiPfk+BKBdiIOqBHk+Kh6pa1d5bAXMYgVHO4=; path=/; Httponly; Secure",
+        "akacd_Policy_PRD_ESAN=2147483647~rv=82~id=0cdfc17aecea29cf52c32f84b1207cb0; path=/; Expires=Tue, 19 Jan 2038 03:14:07 GMT; Secure; SameSite=None"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-src": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "Cookie-prd-esan-portail": {
+          "domain": "wallet.esw.esante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "akacd_Policy_PRD_ESAN": {
+          "domain": "wallet.esw.esante.gouv.fr",
+          "expires": "2038-01-19T03:14:07.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "scoreModifier": 0,
+      "data": "https://wallet.esw.esante.gouv.fr"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://wallet.esw.esante.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://wallet.esw.esante.gouv.fr/",
+        "https://wallet.esw.esante.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
