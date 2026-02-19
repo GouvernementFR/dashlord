@@ -1,0 +1,144 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:25:26 GMT",
+      "set-cookie": [
+        "cookiedef=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0",
+        "cookiedef=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; domain=.gouv.fr",
+        "BIGipServer~Tenant-Externe~application~pool-ubika=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0",
+        "BIGipServer~Tenant-Externe~application~pool-ubika=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; domain=.gouv.fr"
+      ],
+      "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "pragma": "no-cache",
+      "last-modified": "Thu, 19 Feb 2026 03:25:26 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "81f30cf708470b974874c8a96a6bcdb2": {
+          "domain": "www.dircam.dsae.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "cookiedef": {
+          "domain": "www.dircam.dsae.defense.gouv.fr",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "max-age": 0,
+          "path": "/index.php/fr",
+          "port": null
+        },
+        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+          "domain": "www.dircam.dsae.defense.gouv.fr",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "max-age": 0,
+          "path": "/index.php/fr",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.dircam.dsae.defense.gouv.fr/index.php/fr/",
+      "redirects": true,
+      "route": [
+        "http://www.dircam.dsae.defense.gouv.fr/",
+        "https://www.dircam.dsae.defense.gouv.fr/",
+        "https://www.dircam.dsae.defense.gouv.fr/index.php/fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
