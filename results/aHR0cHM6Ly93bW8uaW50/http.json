@@ -1,0 +1,132 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "connection": "close",
+      "content-length": "27347",
+      "cache-control": "max-age=1800, public",
+      "content-language": "en",
+      "content-type": "text/html; charset=UTF-8",
+      "etag": "W/\"1771471158\"",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Thu, 19 Feb 2026 03:19:18 GMT",
+      "link": "</themes/custom/server_theme/dist/images/favicons//apple-touch-icon.png>; rel=\"apple-touch-icon\"; sizes=\"180x180\", </themes/custom/server_theme/dist/images/favicons//favicon-32x32.png>; rel=\"icon\"; type=\"image/png\"; sizes=\"32x32\", </themes/custom/server_theme/dist/images/favicons//favicon-16x16.png>; rel=\"icon\"; type=\"image/png\"; sizes=\"16x16\", </themes/custom/server_theme/dist/images/favicons//site.webmanifest>; rel=\"manifest\", </themes/custom/server_theme/dist/images/favicons//safari-pinned-tab.svg>; rel=\"mask-icon\"; color=\"#5bbad5\"",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31622400; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-drupal-cache": "MISS",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 11 (https://www.drupal.org)",
+      "x-pantheon-styx-hostname": "styx-eu-a-5858b5bd5c-9glfw",
+      "x-styx-req-id": "c6ce93c5-0d41-11f1-b788-caca969bf1f6",
+      "date": "Thu, 19 Feb 2026 03:19:19 GMT",
+      "x-served-by": "cache-ams2100114-AMS, cache-iad-kcgs7200111-IAD",
+      "x-cache": "MISS, MISS",
+      "x-cache-hits": "0, 0",
+      "x-timer": "S1771471158.404961,VS0,VE1541",
+      "vary": "Accept-Encoding, Cookie, Cookie, Cookie",
+      "age": "0",
+      "accept-ranges": "bytes",
+      "via": "1.1 varnish, 1.1 varnish"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://wmo.int/",
+      "redirects": true,
+      "route": [
+        "http://wmo.int/",
+        "https://wmo.int/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31622400; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31622400,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
