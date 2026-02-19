@@ -1,0 +1,225 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:16:37 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "last-modified": "Wed, 09 Jul 2025 11:30:14 GMT",
+      "connection": "close",
+      "etag": "W/\"686e52c6-3e5\"",
+      "server": "Pexip Infinity",
+      "content-security-policy": "upgrade-insecure-requests; default-src 'self'; frame-src 'self' https://telemetryservice.firstpartyapps.oaspapps.com/telemetryservice/telemetryproxy.html https://*.microsoft.com https://*.office.com; style-src 'self' 'unsafe-inline' https://*.microsoft.com https://*.office.com; object-src 'self'; font-src 'self' https://*.microsoft.com https://*.office.com; img-src 'self' https://www.adobe.com data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.microsoft.com https://*.office.com https://ajax.aspnetcdn.com https://api.keen.io; media-src 'self' blob:; connect-src 'self' https://*.microsoft.com https://*.office.com https://example.com 150.250.10.72 150.250.10.73 150.0.8.72 150.0.8.73 150.250.10.71 150.250.10.75 150.250.10.76 150.250.10.77 150.250.10.78 150.250.10.79 150.250.10.80 150.250.10.88 150.250.10.74 150.250.10.86 150.250.10.87 150.0.8.74 150.0.8.86 150.0.8.87 150.0.8.75 150.0.8.76 150.0.8.77 150.0.8.78 150.0.8.79 150.0.8.80; frame-ancestors 'self';",
+      "referrer-policy": "same-origin",
+      "strict-transport-security": "max-age=63072000; includeSubdomains;",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Thu, 19 Feb 2026 03:17:07 GMT",
+      "cache-control": "max-age=30",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "path=/webapp3/;Path=/webapp3;SameSite=Strict;Secure"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://*.microsoft.com",
+          "https://*.office.com",
+          "https://telemetryservice.firstpartyapps.oaspapps.com/telemetryservice/telemetryproxy.html"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.microsoft.com",
+          "https://*.office.com"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "https://*.microsoft.com",
+          "https://*.office.com"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://www.adobe.com"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://*.microsoft.com",
+          "https://*.office.com",
+          "https://ajax.aspnetcdn.com",
+          "https://api.keen.io"
+        ],
+        "media-src": [
+          "'self'",
+          "blob:"
+        ],
+        "connect-src": [
+          "'self'",
+          "150.0.8.72",
+          "150.0.8.73",
+          "150.0.8.74",
+          "150.0.8.75",
+          "150.0.8.76",
+          "150.0.8.77",
+          "150.0.8.78",
+          "150.0.8.79",
+          "150.0.8.80",
+          "150.0.8.86",
+          "150.0.8.87",
+          "150.250.10.71",
+          "150.250.10.72",
+          "150.250.10.73",
+          "150.250.10.74",
+          "150.250.10.75",
+          "150.250.10.76",
+          "150.250.10.77",
+          "150.250.10.78",
+          "150.250.10.79",
+          "150.250.10.80",
+          "150.250.10.86",
+          "150.250.10.87",
+          "150.250.10.88",
+          "https://*.microsoft.com",
+          "https://*.office.com",
+          "https://example.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "f5avraaaaaaaaaaaaaaaa_session_": {
+          "domain": "visio.justice.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "path": {
+          "domain": "visio.justice.gouv.fr",
+          "path": "/webapp3",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubdomains;",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
