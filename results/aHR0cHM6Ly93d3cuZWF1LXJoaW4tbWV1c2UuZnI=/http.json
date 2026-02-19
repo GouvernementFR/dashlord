@@ -1,0 +1,150 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 18 Feb 2026 09:40:22 GMT",
+      "cache-control": "max-age=3600, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-drupal-cache": "HIT",
+      "last-modified": "Wed, 18 Feb 2026 09:40:21 GMT",
+      "etag": "\"1771407621-gzip\"",
+      "content-length": "11799",
+      "connection": "close",
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "BIGipServer~PROD~pool_prod_www.eau-rhin-meuse.fr_443=rd1o00000000000000000000ffff0a7f6505o443; path=/; Httponly; Secure",
+        "TS0183da96=017324387543e641c5bef73be619263e62909b929d6d74c6bd944d76f8dd1670443b3370cafd2cac596ea5191d7c9ff59e9818ec7131df1a2b9429096ae2f19ef2a9a2e3d8; Path=/; Domain=.www.eau-rhin-meuse.fr"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServer~PROD~pool_prod_www.eau-rhin-meuse.fr_443": {
+          "domain": "www.eau-rhin-meuse.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS0183da96": {
+          "domain": "www.eau-rhin-meuse.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.eau-rhin-meuse.fr/",
+      "redirects": true,
+      "route": [
+        "http://www.eau-rhin-meuse.fr/",
+        "https://www.eau-rhin-meuse.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//unpkg.com/aos@2.3.1/dist/aos.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//unpkg.com/swiper/swiper-bundle.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
