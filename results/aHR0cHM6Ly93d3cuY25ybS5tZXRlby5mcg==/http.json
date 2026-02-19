@@ -1,0 +1,244 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:12:46 GMT",
+      "server": "Apache",
+      "strict-transport-security": "max-age=63072000;; includeSubDomains; preload",
+      "content-security-policy": "frame-ancestors https://*.sedoo.fr https://*.obs-mip.fr https://*.omp.eu https://*.cesbio.cnrs.fr https://*.aeris-data.fr https://*.actris.fr https://*.iagos.org https://*.atmo-access.eu https://*.eufar.net https://*.poleterresolide.fr https://*.resif.fr https://*.theia-land.fr https://*.ozcar-ri.org https://*.geotraces.org https://*.iodp-france.org https://*.iodp3-france.org https://*.data-terra.org https://*.ouvrirlascience.fr https://*.observaterre.fr https://*.in2p3.fr https://*.cnes.fr https://*.ore.fr https://*.earth-data.fr https://*.epos-france.fr;",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "link": "<https://cnrm.sedoo.fr/wp-json/>; rel=\"https://api.w.org/\", <https://cnrm.sedoo.fr/wp-json/wp/v2/pages/33>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://cnrm.sedoo.fr/>; rel=shortlink",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
+      "content-length": "13647",
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "related_Admin=0",
+        "pll_language=fr; expires=Fri, 19 Feb 2027 03:12:46 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+      ],
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "https://*.actris.fr",
+          "https://*.aeris-data.fr",
+          "https://*.atmo-access.eu",
+          "https://*.cesbio.cnrs.fr",
+          "https://*.cnes.fr",
+          "https://*.data-terra.org",
+          "https://*.earth-data.fr",
+          "https://*.epos-france.fr",
+          "https://*.eufar.net",
+          "https://*.geotraces.org",
+          "https://*.iagos.org",
+          "https://*.in2p3.fr",
+          "https://*.iodp-france.org",
+          "https://*.iodp3-france.org",
+          "https://*.obs-mip.fr",
+          "https://*.observaterre.fr",
+          "https://*.omp.eu",
+          "https://*.ore.fr",
+          "https://*.ouvrirlascience.fr",
+          "https://*.ozcar-ri.org",
+          "https://*.poleterresolide.fr",
+          "https://*.resif.fr",
+          "https://*.sedoo.fr",
+          "https://*.theia-land.fr"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "related_Admin": {
+          "domain": "www.cnrm.meteo.fr",
+          "path": "/",
+          "port": null
+        },
+        "pll_language": {
+          "domain": "www.cnrm.meteo.fr",
+          "expires": "2027-02-19T03:12:46.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cnrm.meteo.fr//",
+      "redirects": true,
+      "route": [
+        "http://www.cnrm.meteo.fr/",
+        "https://www.cnrm.meteo.fr//"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000;; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cnrm.sedoo.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/themes/sedoo-wpth-labs/js/materialize.min.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/themes/sedoo-wpth-labs/assets/MultiLevelPushMenu/js/modernizr.custom.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/plugins/sedoo-wppl-blocks/blocks/sedoo-taxquery/js/taxquery.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/plugins/sedoo-wppl-userpage/js/sedoo-wppl-userpage-filter.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/themes/sedoo-wpth-labs/js/navigation.js?ver=20151215": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/themes/sedoo-wpth-labs/js/skip-link-focus-fix.js?ver=20151215": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/themes/sedoo-wpth-labs/js/main.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/themes/sedoo-wpth-labs/js/toc.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/plugins/sedoo-wppl-blocks/blocks/sedoo-relatedcontents/js/relatedcontent.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cnrm.sedoo.fr/wp-content/plugins/sedoo-wppl-portfolio//js/front.js?ver=6.9.1": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
