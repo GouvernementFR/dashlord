@@ -1,0 +1,145 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D-",
+    "error": null,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 18 Feb 2026 09:04:26 GMT",
+      "x-content-type-options": "nosniff, nosniff",
+      "cache-control": "max-age=86400, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE",
+      "link": "<https://www.cours-appel.justice.fr/accueil>; rel=\"canonical\"",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Wed, 18 Feb 2026 09:03:58 GMT",
+      "etag": "\"1771405438-gzip\"",
+      "vary": "Cookie,Accept-Encoding",
+      "x-drupal-cache": "HIT",
+      "content-length": "10987",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "195219528 194817649",
+      "age": "65299",
+      "via": "1.1 varnish-v4",
+      "cache-tags": "HIT",
+      "accept-ranges": "bytes",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "BIGipServerPOOL_cours-appel.justice.fr_TCP_8080": {
+          "domain": "www.cours-appel.justice.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "TS0199e987": {
+          "domain": "www.cours-appel.justice.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.cours-appel.justice.fr/accueil",
+      "redirects": true,
+      "route": [
+        "http://www.cours-appel.justice.fr/",
+        "https://www.cours-appel.justice.fr/",
+        "http://www.cours-appel.justice.fr/accueil",
+        "https://www.cours-appel.justice.fr/accueil"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://unpkg.com/leaflet@1.0.3/dist/leaflet.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
