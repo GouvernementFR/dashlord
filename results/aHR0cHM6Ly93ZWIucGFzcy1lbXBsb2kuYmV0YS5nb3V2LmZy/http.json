@@ -1,0 +1,144 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 50,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:18:33 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "x-request-id": "e75288a2-dc6b-454d-8b27-798a57e06981, e75288a2-dc6b-454d-8b27-798a57e06981",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "cookie": "sc-sticky-session=/mCbENHlBl00ciPE4fZxeNNbcVVj/G+ISjZhbBPu7b0se5I0+zpWz8d+JURCZcrVFLqgZ8FYpbiqU5fkjyCNgA==",
+      "host": "web.pass-emploi.beta.gouv.fr",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:133.0) Gecko/20100101 Firefox/133.0 - dashlord,",
+      "x-current-path": "/login",
+      "x-forwarded-for": "51.8.121.162",
+      "x-forwarded-host": "web.pass-emploi.beta.gouv.fr",
+      "x-forwarded-port": "443",
+      "x-forwarded-proto": "https",
+      "x-real-ip": "51.8.121.162",
+      "x-request-start": "t=1771471113.504",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "cache-control": "s-maxage=31536000",
+      "etag": "\"kyd1k2ls3ibrz\"",
+      "set-cookie": [
+        "sc-sticky-session=/mCbENHlBl00ciPE4fZxeNNbcVVj/G+ISjZhbBPu7b0se5I0+zpWz8d+JURCZcrVFLqgZ8FYpbiqU5fkjyCNgA==; Expires=Fri, 20-Feb-26 03:18:33 GMT; Max-Age=86400; Path=/; Secure; HttpOnly; SameSite=None"
+      ],
+      "strict-transport-security": "max-age=31536000"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "sc-sticky-session": {
+          "domain": "web.pass-emploi.beta.gouv.fr",
+          "expires": "2026-02-20T03:18:33.000Z",
+          "httponly": true,
+          "max-age": 86400,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://web.pass-emploi.beta.gouv.fr/login?redirectUrl=%2F",
+      "redirects": true,
+      "route": [
+        "http://web.pass-emploi.beta.gouv.fr/",
+        "https://web.pass-emploi.beta.gouv.fr/",
+        "https://web.pass-emploi.beta.gouv.fr/login?redirectUrl=%2F"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
