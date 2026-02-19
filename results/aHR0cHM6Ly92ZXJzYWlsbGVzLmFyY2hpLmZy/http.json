@@ -1,0 +1,136 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 19 Feb 2026 03:12:46 GMT",
+      "server": "nginx",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "15582",
+      "cache-control": "max-age=21600, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "link": "<https://www.versailles.archi.fr/fr>; rel=\"shortlink\", <https://www.versailles.archi.fr/fr>; rel=\"canonical\"",
+      "x-ua-compatible": "IE=edge",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-generator": "Drupal 8 (https://www.drupal.org)",
+      "x-drupal-cache": "HIT",
+      "last-modified": "Wed, 18 Feb 2026 16:00:05 GMT",
+      "etag": "\"1771430405-gzip\"",
+      "strict-transport-security": "max-age=15768000; includeSubDomains",
+      "x-cp-via": "C2-5850fd27-91b6e029",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.versailles.archi.fr/fr",
+      "redirects": true,
+      "route": [
+        "http://versailles.archi.fr/",
+        "https://versailles.archi.fr/",
+        "https://www.versailles.archi.fr/",
+        "https://www.versailles.archi.fr/fr"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 15768000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CIntersectionObserverEntry%2CURL%2CObject.assign%2CArray.from%2CArray.prototype.includes%2CString.prototype.includes%2CElement.prototype.matches%2CPromise%2CPromise.prototype.finally": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://unpkg.com/quicklink@1.0.1/dist/quicklink.umd.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
