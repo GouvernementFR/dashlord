@@ -9,21 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "rdwr",
-      "date": "Sat, 17 Jan 2026 02:38:58 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
+      "date": "Sat, 21 Feb 2026 03:25:38 GMT",
       "set-cookie": [
-        "__uzma=a950eff0-80a3-4f18-b5b0-552b5ecf5bb8; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmb=1768617538; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzme=7904; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmc=791080770047; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmd=1768617538; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmf=7f9000a950eff0-80a3-4f18-b5b0-552b5ecf5bb81-17686175385250-002d026cd36c018ccc107; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax",
-        "uzmx=7f9000cc44d843-e10c-4830-a234-fff36161791e1-17686175385250-10b70d21e87c4c6310; Domain=.ants.gouv.fr; HttpOnly; path=/; Expires=Sat, 18-Jul-26 02:38:58 GMT; Max-Age=15724800; SameSite=Lax"
+        "bot_mitigation_cookie=ZTE2WXN37OJDLDQ6NHSERCJFHYANSGZWGKXUSJD7437RGSZNGZ7AKLP2G5GZHJACRELJTJHA4CTUFFEXPCVXPYOWLQQPY42WQQHYV2CF6OO6FBQQBEPA====; Path=/"
       ],
-      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+      "content-type": "text/html",
+      "cache-control": "no-store",
+      "vary": "Accept-Encoding",
+      "content-length": "199",
+      "x-cp-via": "C2-15b7e578-06f7a527",
+      "connection": "close"
     }
   },
   "tests": {
@@ -44,68 +39,10 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "__uzma": {
+        "bot_mitigation_cookie": {
           "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
           "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "__uzmb": {
-          "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "__uzme": {
-          "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "__uzmc": {
-          "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "__uzmd": {
-          "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "__uzmf": {
-          "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "uzmx": {
-          "domain": "ants.gouv.fr",
-          "expires": "2026-07-18T02:38:58.000Z",
-          "httponly": true,
-          "max-age": 15724800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
+          "port": null
         }
       },
       "sameSite": false
@@ -122,10 +59,11 @@
       "pass": true,
       "result": "redirection-all-redirects-preloaded",
       "scoreModifier": 0,
-      "destination": "http://ants.gouv.fr/",
+      "destination": "https://ants.gouv.fr/",
       "redirects": true,
       "route": [
-        "http://ants.gouv.fr/"
+        "http://ants.gouv.fr/",
+        "https://ants.gouv.fr/"
       ],
       "statusCode": 200
     },
