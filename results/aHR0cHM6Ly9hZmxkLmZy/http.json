@@ -9,7 +9,7 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 17 Jan 2026 02:36:06 GMT",
+      "date": "Sat, 21 Feb 2026 03:18:53 GMT",
       "server": "Apache",
       "link": "<https://www.afld.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.afld.fr/wp-json/wp/v2/pages/62>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.afld.fr/>; rel=shortlink",
       "x-tec-api-version": "v1",
@@ -18,8 +18,10 @@
       "strict-transport-security": "max-age=16000000",
       "upgrade": "h2",
       "connection": "Upgrade",
-      "vary": "Accept-Encoding",
-      "transfer-encoding": "chunked",
+      "vary": "X-FORWARDED-PROTO,Accept-Encoding",
+      "cache-control": "max-age=0",
+      "expires": "Sat, 21 Feb 2026 03:18:53 GMT",
+      "content-length": "39642",
       "content-type": "text/html; charset=UTF-8"
     }
   },
