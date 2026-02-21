@@ -1,0 +1,139 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 21 Feb 2026 03:06:00 GMT",
+      "server": "Apache",
+      "set-cookie": [
+        "SessionStatId=77cc447a.64b4cd13a2d94; path=/; expires=Tue, 19-Feb-36 03:06:00 GMT; domain=.telepac.agriculture.gouv.fr; HttpOnly; secure",
+        "JSESSIONID=8f61c4bf30a83c74~67809A49B5285F163C40013D4A0AB1A8.jvm-tomp205; Path=/telepac; Secure; HttpOnly"
+      ],
+      "cache-control": "private",
+      "vary": "Accept-Encoding,User-Agent",
+      "connection": "close",
+      "content-type": "text/html;charset=ISO-8859-15",
+      "strict-transport-security": "max-age=15552000",
+      "x-frame-options": "SAMEORIGIN",
+      "content-length": "12160"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "cookiesession1": {
+          "domain": "www.telepac.agriculture.gouv.fr",
+          "expires": "2027-02-21T03:05:58.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "SessionStatId": {
+          "domain": "telepac.agriculture.gouv.fr",
+          "expires": "2036-02-19T03:06:00.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "JSESSIONID": {
+          "domain": "www.telepac.agriculture.gouv.fr",
+          "httponly": true,
+          "path": "/telepac",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": "https://www.telepac.agriculture.gouv.fr/",
+      "redirects": true,
+      "route": [],
+      "statusCode": null
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552000",
+      "includeSubDomains": false,
+      "maxAge": 15552000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
