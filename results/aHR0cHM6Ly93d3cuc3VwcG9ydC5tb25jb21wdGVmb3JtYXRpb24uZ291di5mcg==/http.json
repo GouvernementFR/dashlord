@@ -1,0 +1,157 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C+",
+    "error": null,
+    "score": 60,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Sat, 21 Feb 2026 03:05:52 GMT",
+      "set-cookie": [
+        "JSESSIONID=237673D4B635B23BEB6913DB2D0AA0AE; Path=/; Secure; HttpOnly",
+        "atlassian.xsrf.token=BN4Q-Y6GK-L5CE-946Z_2354c45abbef22fe2e2f99641820b0b17d0b0bf0_lout; Path=/; Secure; SameSite=None"
+      ],
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "strict-transport-security": "max-age=15768000; includeSubDomains; preload, max-age=31536000",
+      "vary": "User-Agent",
+      "x-arequestid": "245x1235x1",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "frame-ancestors 'self'",
+      "server-timing": "threadId;desc=49",
+      "x-asessionid": "dynnof",
+      "x-ausername": "anonymous",
+      "x-accel-buffering": "no",
+      "x-permitted-cross-domain-policies": "none",
+      "content-type": "text/html;charset=UTF-8",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
+      "data": {
+        "JSESSIONID": {
+          "domain": "www.support.moncompteformation.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "atlassian.xsrf.token": {
+          "domain": "www.support.moncompteformation.gouv.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.support.moncompteformation.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://www.support.moncompteformation.gouv.fr/",
+        "https://www.support.moncompteformation.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=15768000; includeSubDomains; preload, max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN, SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
