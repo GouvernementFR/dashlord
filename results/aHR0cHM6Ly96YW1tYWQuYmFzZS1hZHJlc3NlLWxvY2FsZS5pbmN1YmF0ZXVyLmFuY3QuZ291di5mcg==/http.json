@@ -1,0 +1,182 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "cache-control": "max-age=0, private, must-revalidate",
+      "content-security-policy": "base-uri 'self' http://zammad.base-adresse-locale.incubateur.anct.gouv.fr; default-src 'self' ws: wss: https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'nonce-GW1eHKsf8FI/aG6Z2guCfw=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com",
+      "content-type": "text/html; charset=utf-8",
+      "csrf-token": "ZcXURoRmhjUp9I3lG8DWWFvDOWv76vDFGsgxYmjkz2d0It3O4htil6Q3t616GdwbCZwspXcDm7nRs8GMXOHnmA",
+      "date": "Sat, 21 Feb 2026 03:05:52 GMT",
+      "etag": "W/\"ea070f640cfd18bb04fd47385842d285\"",
+      "link": "</assets/application-52a3d853d988d2c443104b4d80125f2a09d65e109c64a09da1fcf336e9957750.css>; rel=preload; as=style; nopush,</assets/application-print-03b49985a4830cb5379c75dde562b82d9cb2d7eee523c566dc793e7be07a85e0.css>; rel=preload; as=style; nopush",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx",
+      "set-cookie": [
+        "_zammad_session_a138cfd0f37=7c48095f1282001bea802e18e020b6b1; path=/; HttpOnly; SameSite=Lax"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "a8cdbbf3-e089-458d-a968-7c5c0cae68c5",
+      "x-runtime": "0.041406",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "base-uri": [
+          "'self'",
+          "http://zammad.base-adresse-locale.incubateur.anct.gouv.fr"
+        ],
+        "default-src": [
+          "'self'",
+          "https://images.zammad.com",
+          "ws:",
+          "wss:"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "img-src": [
+          "*",
+          "data:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-gw1ehksf8fi/ag6z2gucfw=='",
+          "'self'",
+          "'unsafe-eval'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "frame-src": [
+          "player.vimeo.com",
+          "www.youtube.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "_zammad_session_a138cfd0f37": {
+          "domain": "zammad.base-adresse-locale.incubateur.anct.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "scoreModifier": 0,
+      "data": "*"
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://zammad.base-adresse-locale.incubateur.anct.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://zammad.base-adresse-locale.incubateur.anct.gouv.fr/",
+        "https://zammad.base-adresse-locale.incubateur.anct.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
