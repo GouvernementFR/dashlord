@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "F",
     "error": null,
-    "score": 50,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 17 Jan 2026 02:36:54 GMT",
+      "date": "Sat, 21 Feb 2026 03:19:41 GMT",
       "server": "Microsoft-IIS/10.0",
       "accept-ranges": "bytes",
-      "etag": "\"0c47cbbba89db1:0\"",
-      "content-length": "6962",
-      "via": "dpapusx008",
+      "etag": "\"011a3467737dc1:0\"",
+      "content-length": "6961",
+      "via": "dpapusx011",
       "strict-transport-security": "max-age=63072000; includeSubdomains; preload",
-      "last-modified": "Fri, 28 Feb 2025 08:28:24 GMT",
+      "last-modified": "Tue, 07 Oct 2025 10:43:54 GMT",
       "connection": "close",
       "content-type": "text/html"
     }
@@ -50,16 +50,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://adel.impots.gouv.fr/PAGE-ADEL.html",
       "redirects": true,
-      "route": [
-        "http://adel.impots.gouv.fr/",
-        "https://adel.impots.gouv.fr/",
-        "https://adel.impots.gouv.fr/PAGE-ADEL.html"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -73,13 +69,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubdomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
