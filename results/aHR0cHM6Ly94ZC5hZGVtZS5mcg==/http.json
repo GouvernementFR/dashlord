@@ -1,0 +1,155 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "openresty",
+      "date": "Sat, 21 Feb 2026 03:12:38 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "status": "200 OK",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "__strk_cookie_eu_visitor=false; path=/",
+        "XSRF-TOKEN=eQxDbRiFbD3ihkJrP%2BM4GoATXtgspKzs9%2F5ohPhJkwuo4rOIPFYRqlogRCmm6UOz%2BlyhjOO%2FT8PFz0AC4qZk2Q%3D%3D; path=/",
+        "_bobcat_session=eXhoVHZEOEdQRGRDYndITVV2TGZQWjI1OGVjbnZua3N0M1E5cWFxVXlia3krSTlLUk4vQzVkV1VkOHlCSzRHbmtpWTkvbzluV1Bvc1p5Q0VQM2k1andjalN0bXc2aitUZ0d5NlZneVQ0UitvUUg4akJsMS85WVRNWWxOSlV2RWtaMmxPdW5BTEU2ZTRKcmx5V3Jtd2F3PT0tLVpZdG9TQ2ltMXJHVG1PV1FjM0FhZVE9PQ%3D%3D--5b9f0a2bb210aedb23f1c06259d9010bee268b65; path=/; expires=Thu, 21 Feb 2036 03:12:38 -0000; HttpOnly"
+      ],
+      "etag": "W/\"b1e733e0e5ac2708bbd229cd1bc1d284\"",
+      "last-modified": "Fri, 20 Feb 2026 13:32:24 GMT",
+      "cache-control": "max-age=0, public, must-revalidate",
+      "x-request-id": "d5922cc4e9d8d577e17bd428e75f13e6",
+      "x-runtime": "4.141228"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "__strk_cookie_eu_visitor": {
+          "domain": "xd.ademe.fr",
+          "path": "/",
+          "port": null
+        },
+        "XSRF-TOKEN": {
+          "domain": "xd.ademe.fr",
+          "path": "/",
+          "port": null
+        },
+        "_bobcat_session": {
+          "domain": "xd.ademe.fr",
+          "expires": "2036-02-21T03:12:38.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://xd.ademe.fr/",
+      "redirects": true,
+      "route": [
+        "http://xd.ademe.fr/",
+        "https://xd.ademe.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "https://static-assets.strikinglycdn.com/detectIE-c385c24313ef0e9e4e7a1e131bf5e59f0fbd468f9f9ef44fd6739ae84ef0c0a4.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static-assets.strikinglycdn.com/i18n-2ace11ac644d0b40fb8b7cb65e9dd1e553022750e0254118dacbe1fe50735e97.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
