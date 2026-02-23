@@ -9,23 +9,23 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 19 Jan 2026 02:44:08 GMT",
+      "date": "Mon, 23 Feb 2026 03:33:38 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "a716813a-527b-4ca8-a0d9-7f4d54d74325",
+      "x-request-id": "6b1e18be-8735-4862-88bc-c21c95ce62a0",
       "x-powered-by": "Express",
-      "etag": "W/\"7c34-JqoNwI0xAxS1m3zgmvRLmszrpNk\"",
+      "etag": "W/\"7bf2-SuP+03RUnXo3wZsAlef+qW4GFko\"",
       "set-cookie": [
-        "connect.sid=s%3ArD9kbR4qbDmHIYA5MSb94RUC28XjmulC.gdgWJTdExQ%2B9GOnM9to26pvU6WPTOYIwY2pwUYdFCPQ; Path=/; Expires=Mon, 19 Jan 2026 02:49:08 GMT; HttpOnly; SameSite=Lax",
-        "sc-sticky-session=bqZ8OWwWTLpTA+fViG2tBSGdQUaH/7rZQcPKPYbny2Ns2Bu4U+fmglJy3IjVTo5UBOGUALb/HXY8N+wf37dv2A==; Expires=Tue, 20-Jan-26 02:44:08 GMT; Max-Age=86400; Path=/; Secure; HttpOnly; SameSite=None",
-        "visid_incap_3272865=t2AU9PI6S+eUxtRfkPb61XaabWkAAAAAQUIPAAAAAAC4/TNh4RoO2bvBpDBRCZpi; expires=Mon, 18 Jan 2027 09:04:00 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
-        "nlbi_3272865=GyZhVcJeY1zPYKfqaGmklwAAAACMv10nV8NUKsej9tQK2KzT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
-        "incap_ses_175_3272865=lgueDEiP4FrG3smvp7ltAneabWkAAAAAwX6IJYqAOPW/lafBOEkWUw==; path=/; Domain=.numerique.gouv.fr"
+        "connect.sid=s%3AJXHsBC4udXo6GZN-F0wImGk59QXYiwdN.UchrIOkzt8fZlpQrWivmnRxr2RLTMgLTq3DQYF03Ncc; Path=/; Expires=Mon, 23 Feb 2026 03:38:38 GMT; HttpOnly; SameSite=Lax",
+        "sc-sticky-session=Iu+UnOrmJ7a/FccCQjs+gqweszbyOnYeG7RTgOSrWdJy9nOVPE74g2DJ8gWggDp7O7DrVOCiUAOBI8GKJ7zzrw==; Expires=Tue, 24-Feb-26 03:33:38 GMT; Max-Age=86400; Path=/; Secure; HttpOnly; SameSite=None",
+        "visid_incap_3272865=Q1w/0Cj+Qzq3mqNW7S7P5pHKm2kAAAAAQUIPAAAAAACy9uEozdVVCzD8FnEEMKvv; expires=Mon, 22 Feb 2027 06:49:32 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
+        "nlbi_3272865=yidzaTy3U271AIyoaGmklwAAAAAuY4JYu8fbhUNsGElvv80J; HttpOnly; path=/; Domain=.numerique.gouv.fr",
+        "incap_ses_100_3272865=Rt80Y/IAcCdfdSj9mEVjAZLKm2kAAAAAtcRX3sXlaGkrmNnkWNTQdA==; path=/; Domain=.numerique.gouv.fr"
       ],
       "strict-transport-security": "max-age=31536000",
       "x-cdn": "Imperva",
-      "x-iinfo": "54-133838443-133838459 NNNN CT(141 140 0) RT(1768790647590 61) q(0 0 3 0) r(4 5) U12"
+      "x-iinfo": "46-30939391-30939411 NNNN CT(138 141 0) RT(1771817618203 50) q(0 0 3 2) r(4 4) U12"
     }
   },
   "tests": {
@@ -48,7 +48,7 @@
       "data": {
         "connect.sid": {
           "domain": "audioconf.numerique.gouv.fr",
-          "expires": "2026-01-19T02:49:08.000Z",
+          "expires": "2026-02-23T03:38:38.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -56,7 +56,7 @@
         },
         "sc-sticky-session": {
           "domain": "audioconf.numerique.gouv.fr",
-          "expires": "2026-01-20T02:44:08.000Z",
+          "expires": "2026-02-24T03:33:38.000Z",
           "httponly": true,
           "max-age": 86400,
           "path": "/",
@@ -66,7 +66,7 @@
         },
         "visid_incap_3272865": {
           "domain": "numerique.gouv.fr",
-          "expires": "2027-01-18T09:04:00.000Z",
+          "expires": "2027-02-22T06:49:32.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -77,7 +77,7 @@
           "path": "/",
           "port": null
         },
-        "incap_ses_175_3272865": {
+        "incap_ses_100_3272865": {
           "domain": "numerique.gouv.fr",
           "path": "/",
           "port": null
