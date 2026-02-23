@@ -9,20 +9,20 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 19 Jan 2026 02:46:31 GMT",
+      "date": "Mon, 23 Feb 2026 03:33:46 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=34560000; includeSubDomains; preload",
-      "x-request-id": "rOUlxpWnGKa3UY9Gxf5Y",
+      "x-request-id": "gcSRFYtRbc947cl8OA8r",
       "cache-control": "no-cache, no-store, must-revalidate",
-      "content-security-policy": "default-src 'none';base-uri 'none';manifest-src 'self';script-src 'nonce-b0xWelVYVWtwN0N5dVY4RWlFNFBkZTR2d1oyWVFRenArUHY4TTJLczhiRT06eXRzWVpURmc0K0hDN2pBMTdINS9RdDhacmRUOUtscXNpcUdPZlJUdDN0TT0=' blob:;script-src-elem 'strict-dynamic' 'nonce-b0xWelVYVWtwN0N5dVY4RWlFNFBkZTR2d1oyWVFRenArUHY4TTJLczhiRT06eXRzWVpURmc0K0hDN2pBMTdINS9RdDhacmRUOUtscXNpcUdPZlJUdDN0TT0=' blob:;style-src 'self' 'unsafe-inline';img-src 'self' data: blob:;font-src 'self' data:;connect-src 'self';media-src 'self';frame-src 'self';frame-ancestors 'self';worker-src 'self';form-action 'self'",
+      "content-security-policy": "default-src 'none';base-uri 'none';manifest-src 'self';script-src 'nonce-n1yajIFHFA9VOimM9qbrx7/jvVJeKTXpfmw+Qwx/BTs=' matomo.finances.gouv.fr blob:;script-src-elem 'strict-dynamic' 'nonce-n1yajIFHFA9VOimM9qbrx7/jvVJeKTXpfmw+Qwx/BTs=' matomo.finances.gouv.fr blob:;style-src 'self' 'unsafe-inline';img-src 'self' data: blob: matomo.finances.gouv.fr;font-src 'self' data:;connect-src 'self' matomo.finances.gouv.fr;media-src 'self';frame-src 'self';frame-ancestors 'self';worker-src 'self';form-action 'self'",
       "feature-policy": "autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';microphone 'none';payment 'none'",
       "x-robots-tag": "noindex, nofollow",
-      "referrer-policy": "no-referrer",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
       "x-xss-protection": "1; mode=block",
-      "content-length": "6891",
+      "referrer-policy": "no-referrer",
+      "content-length": "7303",
       "content-type": "text/html; charset=UTF-8",
       "content-language": "fr",
       "set-cookie": [
@@ -48,13 +48,15 @@
           "'self'"
         ],
         "script-src": [
-          "'nonce-b0xwelvyvwtwn0n5dvy4rwlfnfbkztr2d1oywvfrenaruhy4ttjlczhirt06exrzwvpurmc0k0hdn2pbmtdins9rddhacmruoutscxnpcudpzljuddn0tt0='",
-          "blob:"
+          "'nonce-n1yajifhfa9voimm9qbrx7/jvvjektxpfmw+qwx/bts='",
+          "blob:",
+          "matomo.finances.gouv.fr"
         ],
         "script-src-elem": [
-          "'nonce-b0xwelvyvwtwn0n5dvy4rwlfnfbkztr2d1oywvfrenaruhy4ttjlczhirt06exrzwvpurmc0k0hdn2pbmtdins9rddhacmruoutscxnpcudpzljuddn0tt0='",
+          "'nonce-n1yajifhfa9voimm9qbrx7/jvvjektxpfmw+qwx/bts='",
           "'strict-dynamic'",
-          "blob:"
+          "blob:",
+          "matomo.finances.gouv.fr"
         ],
         "style-src": [
           "'self'",
@@ -63,14 +65,16 @@
         "img-src": [
           "'self'",
           "blob:",
-          "data:"
+          "data:",
+          "matomo.finances.gouv.fr"
         ],
         "font-src": [
           "'self'",
           "data:"
         ],
         "connect-src": [
-          "'self'"
+          "'self'",
+          "matomo.finances.gouv.fr"
         ],
         "media-src": [
           "'self'"
