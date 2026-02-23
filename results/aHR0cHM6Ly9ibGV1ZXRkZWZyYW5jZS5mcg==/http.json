@@ -1,23 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 30,
+    "score": 75,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.22.1",
-      "date": "Mon, 19 Jan 2026 02:51:17 GMT",
+      "date": "Mon, 23 Feb 2026 03:25:45 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "no-cache, max-age=1",
       "wpo-cache-status": "cached",
-      "last-modified": "Sun, 18 Jan 2026 17:17:22 GMT",
-      "expires": "Mon, 19 Jan 2026 02:51:18 GMT",
+      "last-modified": "Sun, 22 Feb 2026 10:43:22 GMT",
+      "expires": "Mon, 23 Feb 2026 03:25:46 GMT",
       "x-content-type-options": "nosniff",
       "x-frame-options": "sameorigin",
       "x-robots-tag": "index,follow,noarchive",
@@ -26,7 +26,8 @@
       "x-permitted-cross-domain-policies": "none",
       "strict-transport-security": "max-age=63072000; includeSubdomains;",
       "content-security-policy": "frame-ancestors 'self' https://ui.dev;",
-      "x-proxy-cache": "EXPIRED"
+      "vary": "User-Agent",
+      "x-proxy-cache": "MISS"
     }
   },
   "tests": {
@@ -110,8 +111,8 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
         "https://cdn-cookieyes.com/client_data/2eb1ca9b10e1fdb4c0252a6b/script.js": {
           "crossorigin": null,
@@ -122,10 +123,6 @@
           "integrity": null
         },
         "https://cdn.brevo.com/js/sdk-loader.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//www.bleuetdefrance.fr/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1755970301&ver=1.21.5": {
           "crossorigin": null,
           "integrity": null
         }
