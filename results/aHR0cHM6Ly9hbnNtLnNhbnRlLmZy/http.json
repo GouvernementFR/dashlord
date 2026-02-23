@@ -1,21 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "A+",
     "error": null,
-    "score": 50,
+    "score": 100,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 17 Jan 2026 02:38:47 GMT",
+      "date": "Mon, 23 Feb 2026 03:14:44 GMT",
       "server": "Unknown",
       "content-type": "text/html; charset=UTF-8",
       "cache-control": "max-age=300, public, s-maxage=300",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
+      "x-frame-options": "DENY",
+      "content-security-policy": "default-src 'self'; block-all-mixed-content; connect-src 'self' *.ansm.sante.fr stats.integra.fr; font-src 'self' fonts.gstatic.com; frame-src 'self' www.youtube-nocookie.com platform.twitter.com geo.dailymotion.com; img-src 'self' data: stats.integra.fr *.dmcdn.net; script-src 'self' 'unsafe-eval' *.ansm.sante.fr www.google.com ajax.googleapis.com code.jquery.com cdnjs.cloudflare.com connect.facebook.net platform.linkedin.com platform.twitter.com stats.integra.fr 'nonce-Sb5E045pyAQlj+VZJ0gSLw=='; style-src 'self' *.ansm.sante.fr fonts.googleapis.com maxcdn.bootstrapcdn.com 'unsafe-inline'; upgrade-insecure-requests",
+      "x-content-security-policy": "default-src 'self'; block-all-mixed-content; connect-src 'self' *.ansm.sante.fr stats.integra.fr; font-src 'self' fonts.gstatic.com; frame-src 'self' www.youtube-nocookie.com platform.twitter.com geo.dailymotion.com; img-src 'self' data: stats.integra.fr *.dmcdn.net; script-src 'self' 'unsafe-eval' *.ansm.sante.fr www.google.com ajax.googleapis.com code.jquery.com cdnjs.cloudflare.com connect.facebook.net platform.linkedin.com platform.twitter.com stats.integra.fr 'nonce-Sb5E045pyAQlj+VZJ0gSLw=='; style-src 'self' *.ansm.sante.fr fonts.googleapis.com maxcdn.bootstrapcdn.com 'unsafe-inline'; upgrade-insecure-requests",
       "vary": "Accept-Encoding",
-      "x-varnish": "712879558 715359631",
-      "age": "305",
+      "x-varnish": "926996345 926996297",
+      "age": "18",
       "via": "1.1 varnish (Varnish/6.4)",
       "accept-ranges": "bytes",
       "strict-transport-security": "max-age=63072000",
@@ -27,13 +32,77 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "block-all-mixed-content": [
+          "'none'"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.ansm.sante.fr",
+          "stats.integra.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "fonts.gstatic.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "geo.dailymotion.com",
+          "platform.twitter.com",
+          "www.youtube-nocookie.com"
+        ],
+        "img-src": [
+          "'self'",
+          "*.dmcdn.net",
+          "data:",
+          "stats.integra.fr"
+        ],
+        "script-src": [
+          "'nonce-sb5e045pyaqlj+vzj0gslw=='",
+          "'self'",
+          "'unsafe-eval'",
+          "*.ansm.sante.fr",
+          "ajax.googleapis.com",
+          "cdnjs.cloudflare.com",
+          "code.jquery.com",
+          "connect.facebook.net",
+          "platform.linkedin.com",
+          "platform.twitter.com",
+          "stats.integra.fr",
+          "www.google.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.ansm.sante.fr",
+          "fonts.googleapis.com",
+          "maxcdn.bootstrapcdn.com"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -66,10 +135,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer, strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -97,17 +166,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
