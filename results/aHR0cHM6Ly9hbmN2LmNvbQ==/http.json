@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "B+",
     "error": null,
-    "score": 75,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 17 Jan 2026 02:42:07 GMT",
+      "date": "Mon, 23 Feb 2026 03:20:09 GMT",
       "content-type": "text/html; charset=UTF-8",
       "x-content-type-options": "nosniff",
       "cache-control": "max-age=86400, public",
@@ -17,8 +17,8 @@
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Thu, 15 Jan 2026 14:13:20 GMT",
-      "etag": "\"1768486400-gzip\"",
+      "last-modified": "Thu, 19 Feb 2026 08:17:31 GMT",
+      "etag": "\"1771489051-gzip\"",
       "vary": "Cookie,Accept-Encoding",
       "content-security-policy": "frame-src 'self' https://ancv.epticahosting.com https://www.youtube.com https://www.linkedin.com https://platform.twitter.com https://syndication.twitter.com www.googletagmanager.com; object-src 'none'; script-src 'self' 'unsafe-inline' cdn.syndication.twimg.com platform.twitter.com connect.fa connect.facebook.net https://unpkg.com; script-src-attr 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' cdn.syndication.twimg.com platform.twitter.com connect.fa connect.facebook.net www.googletagmanager.com www.google-analytics.com mmtro.com cdn.mmtro.com https://static.axept.io https://www.youtube.com https://unpkg.com; style-src 'self' 'unsafe-inline' platform.twitter.com https://ton.twimg.com fonts.googleapis.com https://unpkg.com; style-src-attr 'self' 'unsafe-inline'; base-uri 'self'; frame-ancestors 'self'",
       "permissions-policy": "camera=(), fullscreen=self, geolocation=self",
@@ -162,15 +162,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://unpkg.com/aos@2.3.1/dist/aos.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
