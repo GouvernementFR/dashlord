@@ -10,14 +10,14 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 17 Jan 2026 02:42:06 GMT",
+      "date": "Mon, 23 Feb 2026 03:14:40 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "16639",
+      "content-length": "20499",
       "connection": "close",
-      "link": "<https://www.anlci.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.anlci.gouv.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\", <https://www.anlci.gouv.fr/>; rel=shortlink",
+      "x-powered-by": "PHP/8.3.30, PleskLin",
+      "link": "<https://www.anlci.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.anlci.gouv.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.anlci.gouv.fr/>; rel=shortlink",
       "vary": "Accept-Encoding",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "x-powered-by": "PleskLin"
+      "referrer-policy": "no-referrer-when-downgrade"
     }
   },
   "tests": {
@@ -88,6 +88,14 @@
       "scoreModifier": -5,
       "data": {
         "https://static.addtoany.com/menu/page.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://plausible.io/js/pa-MvCfGHEHSOojQBx4TFZo2.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/countries-and-timezones/dist/index.min.js?ver=%202.1.3": {
           "crossorigin": null,
           "integrity": null
         },
