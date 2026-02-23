@@ -10,18 +10,11 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 19 Jan 2026 02:46:17 GMT",
+      "date": "Mon, 23 Feb 2026 03:27:58 GMT",
       "content-type": "text/html",
       "last-modified": "Wed, 10 Dec 2025 09:31:14 GMT",
       "transfer-encoding": "chunked",
-      "etag": "W/\"69393de2-348:dtagent10275230919171419yUdy\"",
-      "x-oneagent-js-injection": "true",
-      "x-ruxit-js-agent": "true",
-      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"514663212\"",
-      "set-cookie": [
-        "dtCookie=v_4_srv_2_sn_B9C2E3DEA48CF2B92313FD5577750CBF_perc_100000_ol_0_mul_1_app-3Ab7ea4206ac532590_1; Path=/; Domain=.cohesion-territoires.gouv.fr",
-        "7a45e6ebefc89f0b9ec2ccafdc86a78a=1858ad55d7ce321f7ae90d37622ee63c; path=/; HttpOnly"
-      ],
+      "etag": "W/\"69393de2-348\"",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "cache-control": "no-cache",
       "x-frame-options": "DENY",
@@ -30,6 +23,9 @@
       "expect-ct": "enforce, max-age=3600",
       "content-security-policy": "default-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://audience-sites.din.developpement-durable.gouv.fr/piwik.js; frame-src https://audience-sites.din.developpement-durable.gouv.fr/optinout.php;",
       "strict-transport-security": "max-age=63072000;includeSubDomains;preload",
+      "set-cookie": [
+        "7a45e6ebefc89f0b9ec2ccafdc86a78a=8248f626f7d37254fd395c13e93fae35; path=/; HttpOnly"
+      ],
       "connection": "close"
     }
   },
@@ -86,11 +82,6 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "dtCookie": {
-          "domain": "cohesion-territoires.gouv.fr",
-          "path": "/",
-          "port": null
-        },
         "7a45e6ebefc89f0b9ec2ccafdc86a78a": {
           "domain": "avisau.cohesion-territoires.gouv.fr",
           "httponly": true,
