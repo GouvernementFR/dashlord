@@ -3,24 +3,24 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 21 Jan 2026 02:44:37 GMT",
+      "date": "Wed, 25 Feb 2026 03:35:27 GMT",
       "x-spip-cache": "86400",
       "x-frame-options": "DENY",
-      "last-modified": "Wed, 21 Jan 2026 02:44:37 GMT",
+      "last-modified": "Wed, 25 Feb 2026 03:35:27 GMT",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-dreets2.cegedim.cloud-http=!lp2Pw0WYhOtKkOQXIkI7F7SI9ajmitDLHOb/2XVmdSMZT7BbBb0jdIUGxtWgQngS/zjUA/O5/6Loti5qKzmvEt02rlY=; path=/; Httponly; Secure",
-        "TS086c66aa029=087dc22938ab2800923010e090d39fa78dc7f017b9e737b6ee2419c190f5cb3b10fbb63e4f9848cc68ea369ce6bf2d82; Max-Age=30; Path=/",
-        "TS82bbd089027=087dc22938ab200046bc3cf9ade85819a67fdb9498f1a13659598b38aada452d9d2b43d8cee2c5070815513622113000960c5f5a25007cca9b2599817dac85346243e3cd78da0ea1d06ddc567cdc68af0aa621015e9e8a14a207cf9c1ca4cd5b; Path=/"
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!YxI+ksyabE5AuNoXIkI7F7SI9ajmikQnfCBg7Gu8WthbUbeTkL/ovzE2n38wOApgTYLctg5Y7jPH9TQXTQ5RfqnTQKc=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab2800d2603c18de2170bf765554a94c5ceb90db4ae1c723e71d1fcfdbbc870a3132fd42be30f42b017780; Secure; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab200041e896b480e60dbaec44d80e6c5e3b511fa5fcd8105712f4f810c326df55fe99086c85cbd61130006c64b5724dedfe4d483a2e29aef97de097efee2cc62e7c76cee80ad0d4f83e1bd367aa57af237ad09e143f78341b51c6; Secure; Path=/"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "transfer-encoding": "chunked"
@@ -40,9 +40,9 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dreets2.cegedim.cloud-http": {
           "domain": "centre-val-de-loire.dreets.gouv.fr",
@@ -55,12 +55,14 @@
           "domain": "centre-val-de-loire.dreets.gouv.fr",
           "max-age": 30,
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         },
         "TS82bbd089027": {
           "domain": "centre-val-de-loire.dreets.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         }
       },
       "sameSite": false
