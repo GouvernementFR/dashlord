@@ -3,25 +3,25 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 21 Jan 2026 02:40:18 GMT",
-      "link": "<https://bretagne.dreets.gouv.fr/sites/bretagne.dreets.gouv.fr/local/cache-css/1622b457e24ddfcb09705339baa68e83.css?1740399024>;rel=\"preload\";as=\"style\"",
+      "date": "Wed, 25 Feb 2026 03:29:09 GMT",
+      "link": "<https://bretagne.dreets.gouv.fr/sites/bretagne.dreets.gouv.fr/local/cache-css/8fc2c94174933008c0747ee018007658.css?1771920157>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "86400",
       "x-frame-options": "DENY",
-      "last-modified": "Wed, 21 Jan 2026 02:40:18 GMT",
+      "last-modified": "Wed, 25 Feb 2026 03:29:09 GMT",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-dreets2.cegedim.cloud-http=!xXZSC5GEzdL80SQXIkI7F7SI9ajmivGDGSuwOU7vmLkstfwzTz7uV2KKGViUkQkI6/rI48zPQfmICX9W7bJ5idPc4aI=; path=/; Httponly; Secure",
-        "TS086c66aa029=087dc22938ab2800d7af2fe84cef2d15b16d11fc644c73c25cb1dad948d6b3710d258e4d8858e57848199142d9bd897c; Max-Age=30; Path=/",
-        "TS82bbd089027=087dc22938ab2000f64606f45bc10399e92e7b0a1b3adeb9ab2759a6e46efc39ad3be30c263044f4082b4f8ec5113000c07dc8f06ec522431cc9da5a9771b42b6a2a6c81bffafc220a49b033bf6401fd7731d156dc98a537277c3b0d3774d226; Path=/"
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!1MbyMwapIzlvPOEXIkI7F7SI9ajmiqoeRdm6TFtl6jtod3+6arGsWn+V965k0xisRhknPLwz0Ki960Zk4Y50kKAhAVA=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab2800764c8d55cdaf86c608f64fac5dcb02ad705c0af756d81af863d83df88131291ecacb9842578375b2; Secure; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab200012ea73a71de64fc0ca0d72f2d22dcdcef97ab69c828d5c7c3308c86f90dccfc008c5392a8111300088e3b9d43a684a3aaa7b43803dee4de86d26b90da95d6a791d8a19fa1eac35f848cb652ad7b127712aecbe6b07c820df; Secure; Path=/"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "transfer-encoding": "chunked"
@@ -41,9 +41,9 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dreets2.cegedim.cloud-http": {
           "domain": "bretagne.dreets.gouv.fr",
@@ -56,12 +56,14 @@
           "domain": "bretagne.dreets.gouv.fr",
           "max-age": 30,
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         },
         "TS82bbd089027": {
           "domain": "bretagne.dreets.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         }
       },
       "sameSite": false
