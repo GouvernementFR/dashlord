@@ -3,24 +3,24 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 19 Jan 2026 02:48:17 GMT",
+      "date": "Wed, 25 Feb 2026 03:14:28 GMT",
       "x-spip-cache": "86400",
       "x-frame-options": "DENY",
-      "last-modified": "Mon, 19 Jan 2026 02:48:17 GMT",
+      "last-modified": "Wed, 25 Feb 2026 03:14:28 GMT",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-dreets2.cegedim.cloud-http=!WVTvVfgXwD1F7rkXIkI7F7SI9ajmism1Nz1VSJgCZQQ9B6oysQYz478CDAfRwBTa4B6702BSIka13OTeLp3AI8YR7wk=; path=/; Httponly; Secure",
-        "TS086c66aa029=087dc22938ab2800cbbe1b8d514c7130dd0ec6cd032a39375b789131600e794d0021e54d93559af2f28af45d4ecdf8ce; Max-Age=30; Path=/",
-        "TS82bbd089027=087dc22938ab2000361d39623e86fc6106d5645f6fc03566f5dc3aa11f222adf9f1695893defd3f908e3cfaa2d113000b3fd49524d6dd81bc5078c457643948520ac051b8d1aa5c53dd113ac57f1f14c1fdf80eda206256c58252bc1cbc6f6cd; Path=/"
+        "BIGipServerpool-dreets2.cegedim.cloud-http=!2BfWA1hub4WuEisXIkI7F7SI9ajmik+CPiitBgf8R4ksbQD/JLmnf07WOWxqQutQ2pVlwVt1bVtyfEslhO/EofzovcU=; path=/; Httponly; Secure",
+        "TS086c66aa029=087dc22938ab280058e951f5842fc400c739cc6026164a66ec00da99a26ef296e382273e01cdfe6fce1c5763c215bd2e; Secure; Max-Age=30; Path=/",
+        "TS82bbd089027=087dc22938ab2000b0173105af259ac536ee37d6775904668d4f57f813c4a4b4dd2d706ab50d6f7a083c143727113000f9a14360430281a1cf3e726c519ed19132e7009b2f42d1acbecfccd7fca26f4fbe0583c775f927d1ed1c3576f8a12dfc; Secure; Path=/"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "transfer-encoding": "chunked"
@@ -40,9 +40,9 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dreets2.cegedim.cloud-http": {
           "domain": "auvergne-rhone-alpes.dreets.gouv.fr",
@@ -55,12 +55,14 @@
           "domain": "auvergne-rhone-alpes.dreets.gouv.fr",
           "max-age": 30,
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         },
         "TS82bbd089027": {
           "domain": "auvergne-rhone-alpes.dreets.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         }
       },
       "sameSite": false
