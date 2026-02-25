@@ -5,40 +5,59 @@
     "error": null,
     "score": 75,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Wed, 21 Jan 2026 02:40:17 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "15114",
-      "connection": "close",
-      "x-powered-by": "PHP/8.2.30",
+      "date": "Wed, 18 Feb 2026 15:52:00 GMT",
+      "server": "Apache",
       "cache-control": "max-age=3600, public",
       "x-drupal-dynamic-cache": "HIT",
       "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "last-modified": "Wed, 21 Jan 2026 02:40:17 GMT",
-      "etag": "\"1768963217-gzip\"",
-      "strict-transport-security": "max-age=15768000; includeSubDomains"
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade",
+      "last-modified": "Wed, 25 Feb 2026 03:32:49 GMT",
+      "etag": "\"1771990369-gzip\"",
+      "content-length": "14984",
+      "content-type": "text/html; charset=UTF-8",
+      "strict-transport-security": "max-age=16000000;includeSubDomains;",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "x-xss-protection": "1 ;mode=block",
+      "content-security-policy": "upgrade-insecure-requests"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -70,11 +89,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -82,9 +101,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15768000; includeSubDomains",
+      "data": "max-age=16000000;includeSubDomains;",
       "includeSubDomains": true,
-      "maxAge": 15768000,
+      "maxAge": 16000000,
       "preload": false,
       "preloaded": false
     },
