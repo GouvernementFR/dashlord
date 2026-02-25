@@ -1,37 +1,101 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C+",
     "error": null,
-    "score": 0,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 19 Jan 2026 02:46:52 GMT",
+      "date": "Wed, 25 Feb 2026 03:14:31 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "8402",
+      "cache-control": "max-age=600, public",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "link": "<https://atlanta.consulfrance.org/local/cache-css/9d3fc5c3bf56ef8c12371b60a343faa9.css?1754410075>;rel=\"stylesheet prefetch\"",
-      "x-spip-cache": "86400",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade",
-      "last-modified": "Mon, 19 Jan 2026 02:46:52 GMT",
-      "content-length": "13981",
-      "content-type": "text/html; charset=utf-8",
-      "strict-transport-security": "max-age=63072000"
+      "last-modified": "Tue, 24 Feb 2026 23:17:56 GMT",
+      "etag": "\"1771975076-gzip\"",
+      "age": "22",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "access-control-allow-methods": "GET, POST, HEAD",
+      "access-control-allow-headers": "DNT, User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Range",
+      "x-frame-options": "same-origin",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
+      "content-security-policy": "default-src 'self';script-src 'self' 'unsafe-inline' https://gvb.et-gv.fr https://hdge.diplomatie.gouv.fr https://ton.twimg.com https://platform.twitter.com;connect-src 'self' https://hdge.diplomatie.gouv.fr;object-src 'none';frame-src 'self' https://player.vimeo.com https://platform.twitter.com https://www.youtube.com https://www.youtube-nocookie.com;img-src 'self' data: https://media.diplomatie.gouv.fr;style-src 'self';font-src 'self' data:;",
+      "x-dns-prefetch-control": "off",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "strict-transport-security": "max-age=63072000",
+      "connection": "close"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://gvb.et-gv.fr",
+          "https://hdge.diplomatie.gouv.fr",
+          "https://platform.twitter.com",
+          "https://ton.twimg.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://hdge.diplomatie.gouv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://platform.twitter.com",
+          "https://player.vimeo.com",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://media.diplomatie.gouv.fr"
+        ],
+        "style-src": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -53,21 +117,23 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://atlanta.consulfrance.org/",
+      "destination": "https://us.diplomatie.gouv.fr/fr",
       "redirects": true,
       "route": [
         "http://atlanta.consulfrance.org/",
-        "https://atlanta.consulfrance.org/"
+        "https://atlanta.consulfrance.org/",
+        "https://us.diplomatie.gouv.fr/",
+        "https://us.diplomatie.gouv.fr/fr"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -83,29 +149,24 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//maps.google.com/maps/api/js?language=fr&key=": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": false,
-      "result": "x-frame-options-not-implemented",
+      "result": "x-frame-options-header-invalid",
       "scoreModifier": -20,
-      "data": null
+      "data": "same-origin"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
