@@ -9,12 +9,12 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 23 Jan 2026 02:40:34 GMT",
+      "date": "Wed, 25 Feb 2026 03:31:59 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=13,cfOrigin;dur=349",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2lvBkSvmCpE54OhrkHlXGjvfmNsLMtL%2BwPN1A%2B8Sszdt4k5WEw6ZGMxhJHSynBpX7qY1YgDbtYhWSwMLEFM42xe9enl5rsnfHmSmne%2B60mr9IQ%3D%3D\"}]}",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FKThY56IBYwVB%2BWyKx1IcB7A0ZvFP58R5rPv1Boqgwtfjgqqc4d%2BjFh066VjbjW2RoB7HszZUugzPhin4SZoXm7gYzw1qndpbobY%2B%2Bkyz0Wh9w%3D%3D\"}]}",
       "last-modified": "Wed, 18 Dec 2024 16:33:58 GMT",
       "server": "cloudflare",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
@@ -24,8 +24,7 @@
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "speculation-rules": "\"/cdn-cgi/speculation\"",
-      "cf-ray": "9c23ed572d0144a6-IAD",
+      "cf-ray": "9d342204af672710-SJC",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -93,14 +92,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
