@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C+",
     "error": null,
-    "score": 65,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 21 Jan 2026 02:40:18 GMT",
+      "date": "Wed, 25 Feb 2026 03:14:27 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "13831",
+      "content-length": "13435",
       "connection": "close",
       "vary": "Accept-Encoding, Cookie",
       "cache-control": "max-age=86400, public",
@@ -19,9 +19,13 @@
       "x-content-type-options": "nosniff, nosniff",
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Mon, 19 Jan 2026 10:52:23 GMT",
-      "etag": "W/\"1768819943\"",
-      "x-xss-protection": "1; mode=block",
+      "last-modified": "Fri, 20 Feb 2026 15:05:34 GMT",
+      "etag": "W/\"1771599934\"",
+      "content-security-policy-report-only": "default-src 'self' *.irsn.fr *.asnr.fr; script-src 'self' *.irsn.fr *.asnr.fr cdn.ckeditor.com embed.api.video public.message-business.com static.doubleclick.net unpkg.com vod.api.video www.google.com www.gstatic.com www.youtube.com www.youtube-nocookie.com e.infogram.com; object-src 'none'; style-src 'self' 'unsafe-inline'  *.irsn.fr *.asnr.fr fonts.googleapis.com unpkg.com www.youtube.com www.youtube-nocookie.com; img-src 'self' data:  *.irsn.fr *.asnr.fr i.ytimg.com yt3.ggpht.com *.tile.openstreetmap.org; media-src 'self'  *.irsn.fr *.asnr.fr; frame-src 'self'  *.irsn.fr *.asnr.fr embed.api.video www.youtube.com www.youtube-nocookie.com e.infogram.com; frame-ancestors 'self'  *.irsn.fr *.asnr.fr; child-src 'self'  *.irsn.fr *.asnr.fr embed.api.video www.youtube.com www.youtube-nocookie.com; font-src 'self' data:  *.irsn.fr *.asnr.fr embed.api.video fonts.gstatic.com themes.googleusercontent.com; connect-src 'self'  *.irsn.fr *.asnr.fr collector.api.video googleads.g.doubleclick.net jnn-pa.googleapis.com vod.api.video www.youtube.com www.youtube-nocookie.com; report-uri /sa-report-csp-violation; upgrade-insecure-requests",
+      "x-xss-protection": "1, 1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "from-origin": "same",
+      "referrer-policy": "no-referrer-when-downgrade",
       "content-security-policy": "frame-ancestors 'self'",
       "x-url": "/",
       "x-host": "www.asnr.fr",
@@ -30,9 +34,8 @@
       "accept-ranges": "bytes",
       "x-cache": "HIT",
       "x-cache-ttl-remaining": "",
-      "x-cache-age": "144",
-      "x-cache-hits": "7",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "x-cache-age": "7855",
+      "x-cache-hits": "339"
     }
   },
   "tests": {
@@ -94,11 +97,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
