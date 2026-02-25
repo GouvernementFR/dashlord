@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 19 Jan 2026 02:46:18 GMT",
+      "date": "Wed, 25 Feb 2026 03:17:46 GMT",
       "server": "Apache",
       "cache-control": "max-age=10800, public",
       "x-drupal-dynamic-cache": "MISS",
@@ -23,8 +23,8 @@
       "x-drupal-cache": "HIT",
       "upgrade": "h2,h2c",
       "connection": "Upgrade, close",
-      "last-modified": "Mon, 19 Jan 2026 02:27:20 GMT",
-      "etag": "\"1768789640-gzip\"",
+      "last-modified": "Wed, 25 Feb 2026 03:06:00 GMT",
+      "etag": "\"1771988760-gzip\"",
       "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -58,15 +58,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://assas-universite.fr/fr",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.assas-universite.fr/fr",
       "redirects": true,
       "route": [
         "http://assas-universite.fr/",
-        "https://assas-universite.fr/",
-        "https://assas-universite.fr/fr"
+        "https://www.assas-universite.fr/",
+        "https://www.assas-universite.fr/fr"
       ],
       "statusCode": 200
     },
