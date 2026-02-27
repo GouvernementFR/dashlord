@@ -1,40 +1,42 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "B",
     "error": null,
-    "score": 65,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Sun, 25 Jan 2026 02:50:45 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "11390",
-      "connection": "close",
       "cache-control": "max-age=0, public",
+      "date": "Thu, 26 Feb 2026 13:18:27 GMT",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Sat, 24 Jan 2026 05:10:12 GMT",
+      "last-modified": "Thu, 26 Feb 2026 13:18:54 GMT",
       "x-grace": "10",
       "x-ttl": "3600",
       "x-adv-varnish": "Cache-enabled",
       "x-drupal-cache": "HIT",
       "x-cacheable": "YES",
-      "etag": "W/\"1769231412\"",
-      "x-varnish": "4030167 4757137",
-      "age": "2045",
+      "etag": "W/\"1772111934\"",
+      "x-varnish": "2695555 4623869",
+      "age": "719",
       "x-varnish-cache": "HIT",
-      "x-cache-ttl-remaining": "1554.512",
-      "x-cache-age": "2045",
-      "x-cache-hits": "44",
+      "x-cache-ttl-remaining": "2880.391",
+      "x-cache-age": "719",
+      "x-cache-hits": "35",
       "vary": "X-Bin, Accept-Encoding, Cookie",
       "accept-ranges": "bytes",
-      "strict-transport-security": "max-age=16000000; includeSubDomains; preload;"
+      "content-length": "11583",
+      "strict-transport-security": "max-age=31536000;includeSubDomains;preload",
+      "set-cookie": [
+        "71cb5072df71914e6bfa934d46addb86=47c20042a720ada6906385ebe188a160; path=/; HttpOnly; Secure; SameSite=None"
+      ],
+      "connection": "close"
     }
   },
   "tests": {
@@ -52,10 +54,27 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "25524d2b523d20cfe1434146f9c9fc54": {
+          "domain": "cnsa.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "71cb5072df71914e6bfa934d46addb86": {
+          "domain": "www.cnsa.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -66,13 +85,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.cnsa.fr/",
       "redirects": true,
       "route": [
         "http://cnsa.fr/",
+        "https://cnsa.fr/",
         "https://www.cnsa.fr/"
       ],
       "statusCode": 200
@@ -91,9 +111,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=16000000; includeSubDomains; preload;",
+      "data": "max-age=31536000;includeSubDomains;preload",
       "includeSubDomains": true,
-      "maxAge": 16000000,
+      "maxAge": 31536000,
       "preload": true,
       "preloaded": false
     },
