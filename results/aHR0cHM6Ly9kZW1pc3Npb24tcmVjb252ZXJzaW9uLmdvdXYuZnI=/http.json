@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
@@ -15,7 +15,7 @@
       "connection": "close",
       "x-powered-by": "PHP/8.2.20",
       "cache-control": "must-revalidate, public, s-maxage=3600",
-      "date": "Sun, 25 Jan 2026 02:49:12 GMT"
+      "date": "Fri, 27 Feb 2026 03:27:01 GMT"
     }
   },
   "tests": {
@@ -47,15 +47,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://demission-reconversion.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://demission-reconversion.gouv.fr/",
-        "https://demission-reconversion.gouv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -70,7 +67,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
