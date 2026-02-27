@@ -10,9 +10,9 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-      "content-security-policy": "default-src 'self' https://matomo.incubateur.anct.gouv.fr https://sentry.incubateur.anct.gouv.fr; script-src 'self' https://matomo.incubateur.anct.gouv.fr https://cdn.jsdelivr.net/npm/@scalar/api-reference 'unsafe-inline' 'unsafe-eval'; script-src-attr 'none'; style-src 'self' https: 'unsafe-inline'; img-src 'self' data: *; frame-src https://www.youtube-nocookie.com/; object-src 'none'; connect-src 'self' https://coop-mediation-numerique-uploads-main.s3.fr-par.scw.cloud https://auth.agentconnect.gouv.fr https://matomo.incubateur.anct.gouv.fr https://sentry.incubateur.anct.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://aides-territoires.beta.gouv.fr https://recherche-entreprises.api.gouv.fr https://api-adresse.data.gouv.fr https://dev.coop-mediation-numerique.incubateur.anct.gouv.fr https://coop-numerique.anct.gouv.fr; worker-src 'self' blob:; font-src 'self' https: data:; frame-ancestors 'self' https://matomo.incubateur.anct.gouv.fr; form-action 'self'; base-uri 'self'; upgrade-insecure-requests;",
+      "content-security-policy": "default-src 'self' https://matomo.incubateur.anct.gouv.fr https://sentry.incubateur.anct.gouv.fr; script-src 'self' https://matomo.incubateur.anct.gouv.fr https://cdn.jsdelivr.net/npm/@scalar/api-reference 'unsafe-inline' 'unsafe-eval'; script-src-attr 'none'; style-src 'self' https: 'unsafe-inline'; img-src 'self' data: *; frame-src https://www.youtube-nocookie.com/; object-src 'none'; connect-src 'self' https://coop-mediation-numerique-uploads-main.s3.fr-par.scw.cloud https://auth.agentconnect.gouv.fr https://matomo.incubateur.anct.gouv.fr https://sentry.incubateur.anct.gouv.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://aides-territoires.beta.gouv.fr https://recherche-entreprises.api.gouv.fr https://data.geopf.fr https://dev.coop-mediation-numerique.incubateur.anct.gouv.fr https://coop-numerique.anct.gouv.fr; worker-src 'self' blob:; font-src 'self' https: data:; frame-ancestors 'self' https://matomo.incubateur.anct.gouv.fr; form-action 'self'; base-uri 'self'; upgrade-insecure-requests;",
       "content-type": "text/html; charset=utf-8",
-      "date": "Fri, 23 Jan 2026 02:47:52 GMT",
+      "date": "Fri, 27 Feb 2026 03:30:09 GMT",
       "link": "</dsfr/fonts/Marianne-Regular.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </dsfr/fonts/Marianne-Bold.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </dsfr/fonts/Marianne-Medium.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </images/illustrations/landing-page/hero/besoin.webp>; rel=preload; as=\"image\", </images/illustrations/landing-page/hero/complexitÃ©.webp>; rel=preload; as=\"image\", </images/illustrations/landing-page/hero/solution.webp>; rel=preload; as=\"image\", </images/logo-anct.svg>; rel=preload; as=\"image\"",
       "strict-transport-security": "max-age=63072000",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
@@ -20,7 +20,7 @@
       "x-frame-options": "DENY",
       "x-powered-by": "Next.js",
       "x-xss-protection": "1; mode=block",
-      "x-envoy-upstream-service-time": "344",
+      "x-envoy-upstream-service-time": "146",
       "server": "envoy",
       "connection": "close",
       "transfer-encoding": "chunked"
@@ -67,10 +67,10 @@
         "connect-src": [
           "'self'",
           "https://aides-territoires.beta.gouv.fr",
-          "https://api-adresse.data.gouv.fr",
           "https://auth.agentconnect.gouv.fr",
           "https://coop-mediation-numerique-uploads-main.s3.fr-par.scw.cloud",
           "https://coop-numerique.anct.gouv.fr",
+          "https://data.geopf.fr",
           "https://dev.coop-mediation-numerique.incubateur.anct.gouv.fr",
           "https://matomo.incubateur.anct.gouv.fr",
           "https://openmaptiles.geo.data.gouv.fr",
