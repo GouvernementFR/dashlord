@@ -9,14 +9,14 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 23 Jan 2026 02:40:31 GMT",
+      "date": "Fri, 27 Feb 2026 03:12:59 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
       "x-frame-options": "DENY",
       "vary": "Cookie",
-      "content-security-policy": "default-src 'self' 'frame-src youtube.com www.youtube.com;'; style-src 'self' 'unsafe-inline' https://static.piste.gouv.fr; img-src 'self' https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://code.jquery.com",
+      "content-security-policy": "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://code.jquery.com; default-src 'self' 'frame-src youtube.com www.youtube.com;'; img-src 'self' https:; style-src 'self' 'unsafe-inline' https://static.piste.gouv.fr",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
@@ -30,6 +30,12 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://code.jquery.com"
+        ],
         "default-src": [
           "'frame-src",
           "'self'",
@@ -39,20 +45,14 @@
         "'": [
           "'none'"
         ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://static.piste.gouv.fr"
-        ],
         "img-src": [
           "'self'",
           "https:"
         ],
-        "script-src": [
+        "style-src": [
           "'self'",
-          "'unsafe-eval'",
           "'unsafe-inline'",
-          "https://code.jquery.com"
+          "https://static.piste.gouv.fr"
         ]
       },
       "http": true,
