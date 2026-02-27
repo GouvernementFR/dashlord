@@ -9,20 +9,20 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 23 Jan 2026 02:44:53 GMT",
+      "date": "Fri, 27 Feb 2026 03:26:45 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "x-content-type-options": "nosniff",
       "x-robots-tag": "all",
       "x-frame-options": "DENY",
-      "content-security-policy": "default-src 'self'; img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.gouv.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com https://ad.doubleclick.net data:; script-src 'self' 'nonce-ODU2NGNlZjctODJhOS00NWJmLWIwNjMtMDk1ODc2ZWQwOTQy' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com ; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com *.dailymotion.com https://*.doubleclick.net; connect-src 'self' https://geo.api.gouv.fr https://sentry2.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com https://www.google.com; worker-src 'self' blob:; upgrade-insecure-requests;",
+      "content-security-policy": "default-src 'self'; img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.gouv.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com https://ad.doubleclick.net data:; script-src 'self' 'nonce-ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com ; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'self' https://www.urssaf.fr https://code.travail.gouv.fr https://www.aides-entreprises.fr https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com *.dailymotion.com https://*.doubleclick.net; connect-src 'self' https://geo.api.gouv.fr https://sentry2.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com https://www.google.com; worker-src 'self' blob:; upgrade-insecure-requests;",
       "permissions-policy": "geolocation=(), microphone=(), camera=()",
       "referrer-policy": "strict-origin-when-cross-origin",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-xss-protection": "1; mode=block",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
-      "link": "</>; rel=preconnect; crossorigin=\"\", </_next/static/chunks/4f2d79b0c616b6db.css>; rel=preload; as=\"style\"; nonce=\"ODU2NGNlZjctODJhOS00NWJmLWIwNjMtMDk1ODc2ZWQwOTQy\", </_next/static/chunks/4989b5ff09433f24.css>; rel=preload; as=\"style\"; nonce=\"ODU2NGNlZjctODJhOS00NWJmLWIwNjMtMDk1ODc2ZWQwOTQy\", </_next/static/chunks/cca10de9ddeac81a.css>; rel=preload; as=\"style\"; nonce=\"ODU2NGNlZjctODJhOS00NWJmLWIwNjMtMDk1ODc2ZWQwOTQy\"",
+      "link": "</>; rel=preconnect; crossorigin=\"\", </_next/static/chunks/2f145050735f0fd2.css>; rel=preload; as=\"style\"; nonce=\"ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi\", </_next/static/chunks/d9267a09e6bdae32.css>; rel=preload; as=\"style\"; nonce=\"ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi\", </_next/static/chunks/40489027824d8058.css>; rel=preload; as=\"style\"; nonce=\"ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi\"",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate"
     }
   },
@@ -47,10 +47,11 @@
           "https://www.service-public.gouv.fr"
         ],
         "script-src": [
-          "'nonce-odu2ngnlzjctodjhos00nwjmlwiwnjmtmdk1odc2zwqwotqy'",
+          "'nonce-zjqwnwq0odktnwqwnc00otizlwi5yjmtnzg4zjc3ztm5mdfi'",
           "'self'",
           "https://matomo.fabrique.social.gouv.fr",
           "https://mon-entreprise.urssaf.fr",
+          "https://tally.so",
           "https://www.googletagmanager.com"
         ],
         "style-src": [
@@ -74,15 +75,20 @@
           "'self'",
           "*.dailymotion.com",
           "https://*.doubleclick.net",
+          "https://code.travail.gouv.fr",
           "https://matomo.fabrique.social.gouv.fr",
           "https://mon-entreprise.urssaf.fr",
-          "https://www.googletagmanager.com"
+          "https://tally.so",
+          "https://www.aides-entreprises.fr",
+          "https://www.googletagmanager.com",
+          "https://www.urssaf.fr"
         ],
         "connect-src": [
           "'self'",
           "https://geo.api.gouv.fr",
           "https://matomo.fabrique.social.gouv.fr",
           "https://sentry2.fabrique.social.gouv.fr",
+          "https://tally.so",
           "https://www.google.com",
           "https://www.googletagmanager.com"
         ],
