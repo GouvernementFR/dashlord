@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "public, max-age=600",
-      "content-length": "1347",
-      "content-security-policy": "default-src 'none'; font-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; object-src 'self' blob:; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; child-src 'self' https://*.duosecurity.com https://*.duofederal.com; frame-src 'self' https://*.duosecurity.com https://*.duofederal.com; frame-ancestors 'self' chrome-extension://nngceckbapebfimnlniiiahkandclblb chrome-extension://jbkfoedolllekgbhcbcoahefnbanhhlh moz-extension://* https://coffre.incubateur.anct.gouv.fr; img-src 'self' data: https://haveibeenpwned.com ; connect-src 'self' https://api.pwnedpasswords.com https://api.2fa.directory https://app.simplelogin.io/api/ https://app.addy.io/api/ https://api.fastmail.com/ https://api.forwardemail.net ;",
+      "content-length": "23139",
+      "content-security-policy": "default-src 'none'; font-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; media-src 'self'; object-src 'self' blob:; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; child-src 'self' https://*.duosecurity.com https://*.duofederal.com; frame-src 'self' https://*.duosecurity.com https://*.duofederal.com; frame-ancestors 'self' chrome-extension://nngceckbapebfimnlniiiahkandclblb chrome-extension://jbkfoedolllekgbhcbcoahefnbanhhlh moz-extension://* https://coffre.incubateur.anct.gouv.fr; img-src 'self' data: https://haveibeenpwned.com ; connect-src 'self' https://api.pwnedpasswords.com https://api.2fa.directory https://app.simplelogin.io/api/ https://app.addy.io/api/ https://api.fastmail.com/ https://api.forwardemail.net ;",
       "content-type": "text/html; charset=utf-8",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Fri, 23 Jan 2026 02:41:40 GMT",
-      "expires": "Fri, 23 Jan 2026 02:51:40 GMT",
+      "date": "Fri, 27 Feb 2026 03:12:55 GMT",
+      "expires": "Fri, 27 Feb 2026 03:22:55 GMT",
       "permissions-policy": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()",
       "referrer-policy": "same-origin",
       "server": "Rocket",
@@ -47,6 +47,9 @@
           "'self'"
         ],
         "form-action": [
+          "'self'"
+        ],
+        "media-src": [
           "'self'"
         ],
         "object-src": [
