@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 301,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 23 Jan 2026 02:47:09 GMT",
+      "date": "Fri, 27 Feb 2026 03:19:10 GMT",
       "x-frame-options": "SAMEORIGIN",
       "location": "http://contrats-de-generation.gouv.fr/",
       "content-length": "246",
@@ -17,7 +17,7 @@
       "connection": "close",
       "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab2000b1448c0e5d83d769be99ddd321ff639820655094f5cf0a9d984e574db15f120e08a8a23074113000c7682228a2b3e75f3e5c01509cb0ab7910180d9a6fa43c93840e41882a00850dbef00ef8d949c4bbdd0f0c9a5c748a0b; Path=/"
+        "TSc4ff0492027=087dc22938ab20000969c3b6e88e2c8db6f0d69725f7209c79690eb93a737d4e6777a35d8780654008c3d21cee113000ec07acd879f4f41d45f08fe0a3ca930c4c1a9d4118ef4e222a145d0a741746938042feeb60adc815347ff7f3787b792c; Secure; Path=/"
       ]
     }
   },
@@ -35,11 +35,19 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "contrats-de-generation.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
           "domain": "contrats-de-generation.gouv.fr",
           "httponly": true,
           "path": "/",
@@ -49,7 +57,8 @@
         "TSc4ff0492027": {
           "domain": "contrats-de-generation.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         }
       },
       "sameSite": false
