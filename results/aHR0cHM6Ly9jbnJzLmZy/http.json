@@ -3,31 +3,31 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 23 Jan 2026 02:41:10 GMT",
+      "date": "Fri, 27 Feb 2026 03:10:33 GMT",
       "cache-control": "max-age=86400, public",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "content-security-policy": "default-src 'self'; script-src 'self' *.axept.io *.cegedim.cloud player.ausha.co *.cloudflare.com cdn.mathjax.org v.calameo.com *.dailymotion.com *.vimeo.com 'unsafe-eval' webpack: 'unsafe-inline' stats-cnrs-preprod.cegedim.cloud www.statistiques.cnrs.fr statistiques.cnrs.fr; object-src 'none'; style-src 'self' 'unsafe-inline' *.axept.io *.cloudflare.com cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' axeptio.imgix.net favicons.axept.io *.openstreetmap.org data:; media-src 'self'; frame-src 'self' player.ausha.co *.dailymotion.com *.vimeo.com v.calameo.com *.youtube.com mediavideo.cnrs.fr webcast.in2p3.fr *.scoop.it *.genial.ly *.make.org; frame-ancestors 'self'; child-src 'self'; font-src 'self' fonts.gstatic.com cdnjs.cloudflare.com; connect-src 'self' *.axept.io www.statistiques.cnrs.fr statistiques.cnrs.fr *.cegedim.cloud; report-uri /report-csp-violation; upgrade-insecure-requests",
-      "last-modified": "Fri, 23 Jan 2026 02:41:03 GMT",
+      "content-security-policy": "default-src 'self'; script-src 'self' *.axept.io *.cegedim.cloud player.ausha.co *.cloudflare.com cdn.mathjax.org v.calameo.com *.dailymotion.com *.vimeo.com *.google.com *.gstatic.com *.sibforms.com sibforms.com 'unsafe-eval' webpack: 'unsafe-inline' stats-cnrs-preprod.cegedim.cloud www.statistiques.cnrs.fr statistiques.cnrs.fr; object-src 'none'; style-src 'self' 'unsafe-inline' *.axept.io *.cloudflare.com cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' axeptio.imgix.net favicons.axept.io *.openstreetmap.org data:; media-src 'self'; frame-src 'self' player.ausha.co *.dailymotion.com *.vimeo.com v.calameo.com *.youtube.com mediavideo.cnrs.fr webcast.in2p3.fr *.scoop.it *.genial.ly *.make.org *.sibforms.com *.sibforms.com *.google.com sibforms.com *.apm.eu-west-1.aws.cloud.es.io; frame-ancestors 'self'; child-src 'self'; font-src 'self' fonts.gstatic.com cdnjs.cloudflare.com *.axept.io; connect-src 'self' *.axept.io www.statistiques.cnrs.fr statistiques.cnrs.fr *.cegedim.cloud; report-uri /report-csp-violation; upgrade-insecure-requests",
+      "last-modified": "Fri, 27 Feb 2026 03:10:28 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "age": "209",
+      "age": "114",
       "accept-ranges": "bytes",
       "x-cache": "HIT",
-      "x-cache-hits": "603",
+      "x-cache-hits": "463",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "set-cookie": [
-        "TSc1dc6a3a029=087dc22938ab28002222eea862f00bfb2e719a31d957b81ceea5e28f32f69f394c07a03e4afe8a60fb73877cad3febaf; Max-Age=30; Path=/",
-        "TSd85d6352027=087dc22938ab2000825bb2d5d29d4ba52a185208484906d41e117c66d79cd02fa8c5c6f5cccea71908b25a98be1130001d4d2f29736e9f094ba6fc5c3777b3a329d1eadabac02280a6788173fe40a8f36dd027189db4fee94483cb69d1547564; Path=/"
+        "TSc1dc6a3a029=087dc22938ab28004b8ba974f7cf0519459b18e7fd809390075159d65f6458b8b5ca8d342d52bc321a15ac05a94bb37b; Secure; Max-Age=30; Path=/",
+        "TSd85d6352027=087dc22938ab2000691c5145cf627508711d80f4ddb72f4cbdbfe8f1bd01f83b94945b4f6d8ad27a084485fe2f113000c4b05d933ebe4c0286d8579e31df64e61680c8802c20cd55fbe4f0396ac55da18396752959b5758676fa77338e1c8460; Secure; Path=/"
       ],
       "transfer-encoding": "chunked"
     }
@@ -50,9 +50,13 @@
           "*.cegedim.cloud",
           "*.cloudflare.com",
           "*.dailymotion.com",
+          "*.google.com",
+          "*.gstatic.com",
+          "*.sibforms.com",
           "*.vimeo.com",
           "cdn.mathjax.org",
           "player.ausha.co",
+          "sibforms.com",
           "statistiques.cnrs.fr",
           "stats-cnrs-preprod.cegedim.cloud",
           "v.calameo.com",
@@ -82,14 +86,18 @@
         ],
         "frame-src": [
           "'self'",
+          "*.apm.eu-west-1.aws.cloud.es.io",
           "*.dailymotion.com",
           "*.genial.ly",
+          "*.google.com",
           "*.make.org",
           "*.scoop.it",
+          "*.sibforms.com",
           "*.vimeo.com",
           "*.youtube.com",
           "mediavideo.cnrs.fr",
           "player.ausha.co",
+          "sibforms.com",
           "v.calameo.com",
           "webcast.in2p3.fr"
         ],
@@ -101,6 +109,7 @@
         ],
         "font-src": [
           "'self'",
+          "*.axept.io",
           "cdnjs.cloudflare.com",
           "fonts.gstatic.com"
         ],
@@ -137,20 +146,22 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "TSc1dc6a3a029": {
           "domain": "www.cnrs.fr",
           "max-age": 30,
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         },
         "TSd85d6352027": {
           "domain": "www.cnrs.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         }
       },
       "sameSite": false
