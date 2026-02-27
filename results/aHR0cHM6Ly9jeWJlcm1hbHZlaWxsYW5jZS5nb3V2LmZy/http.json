@@ -9,23 +9,23 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
+      "etag": "\"c0582b34\"",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
-      "vary": "Accept-Encoding",
-      "cache-control": "max-age=7200, public",
-      "date": "Sun, 25 Jan 2026 02:49:00 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
+      "cache-control": "max-age=6764, public",
+      "expires": "Fri, 27 Feb 2026 05:24:26 GMT",
+      "date": "Fri, 27 Feb 2026 03:31:42 GMT",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
-      "connection": "close",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "vary": "Accept-Encoding",
       "set-cookie": [
-        "visid_incap_3172063=MCZs6cT+Tq6XapbhXdbc7puEdWkAAAAAQUIPAAAAAAAPE+/yEMtbFYTe9rOTUJYM; expires=Sun, 24 Jan 2027 07:44:58 GMT; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
-        "nlbi_3172063=PEQ5NDym9Abs8bXn/w99fgAAAADVbxCXMKWhBEEDdfwKZkVH; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
-        "incap_ses_1253_3172063=5cE3YK4FMGZ0xrlBWo1jEZyEdWkAAAAAUJYV/HmLePDfUlPvw1u0Qw==; path=/; Domain=.cybermalveillance.gouv.fr"
+        "visid_incap_3172063=7/XVi4xjSFOjtvHCFdStpR4QoWkAAAAAQUIPAAAAAACGatJsjhubRjLUsf4j2/OD; expires=Fri, 26 Feb 2027 06:32:45 GMT; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
+        "incap_ses_92_3172063=RhLlRXUhdwk1mz/qo9lGAR4QoWkAAAAA8lASvcplYQU4GTl+0AyBjQ==; path=/; Domain=.cybermalveillance.gouv.fr"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "12-56113745-56113748 NNNN CT(98 212 0) RT(1769309339926 10) q(0 0 3 1) r(7 7) U18"
+      "transfer-encoding": "chunked",
+      "x-iinfo": "46-99790425-99772297 2CNN RT(1772163102851 14) q(0 0 0 3) r(0 0)"
     }
   },
   "tests": {
@@ -48,18 +48,12 @@
       "data": {
         "visid_incap_3172063": {
           "domain": "cybermalveillance.gouv.fr",
-          "expires": "2027-01-24T07:44:58.000Z",
+          "expires": "2027-02-26T06:32:45.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "nlbi_3172063": {
-          "domain": "cybermalveillance.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "incap_ses_1253_3172063": {
+        "incap_ses_92_3172063": {
           "domain": "cybermalveillance.gouv.fr",
           "path": "/",
           "port": null
