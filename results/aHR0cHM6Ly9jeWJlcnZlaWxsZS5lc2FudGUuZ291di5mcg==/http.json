@@ -9,20 +9,20 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 25 Jan 2026 02:33:24 GMT",
+      "date": "Sun, 01 Mar 2026 02:53:20 GMT",
       "server": "Apache",
       "cache-control": "max-age=300, public",
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "content-security-policy": "default-src 'self'; child-src 'none'; connect-src 'self' https://use.typekit.net https://p.typekit.net https://cdnjs.cloudflare.com/ajax/libs/cropper https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.css https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.js https://fqjnnsg.pa-cd.com/ http://cdn.jsdelivr.net/npm/@popperjs/; font-src 'self' https://use.typekit.net; frame-src 'self' https://www.youtube-nocookie.com; img-src 'self' data: https://i.ytimg.com; media-src 'none'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.aticdn.net https://www.google.com; style-src 'self' 'unsafe-inline' https://p.typekit.net https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://use.typekit.net; worker-src 'self'; base-uri 'none'; frame-ancestors 'self'; report-uri https://cyberveille.esante.gouv.fr/report-uri/enforce",
+      "content-security-policy": "default-src 'self'; child-src 'none'; connect-src 'self' https://use.typekit.net https://p.typekit.net https://cdnjs.cloudflare.com/ajax/libs/cropper https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.css https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.js https://fqjnnsg.pa-cd.com/ http://cdn.jsdelivr.net/npm/@popperjs/ https://tag.aticdn.net/js-sdk/piano-analytics-6.16.3.js https://fonts.gstatic.com/s/inter/v19/; font-src 'self' https://use.typekit.net; frame-src 'self' https://www.youtube-nocookie.com; img-src 'self' data: https://i.ytimg.com; media-src 'none'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.aticdn.net https://www.google.com; style-src 'self' 'unsafe-inline' https://p.typekit.net https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://use.typekit.net; worker-src 'self'; base-uri 'none'; frame-ancestors 'self'",
       "strict-transport-security": "max-age=63072000",
       "from-origin": "same-origin",
-      "last-modified": "Sun, 25 Jan 2026 02:33:24 GMT",
-      "etag": "\"1769308404-gzip\"",
+      "last-modified": "Sun, 01 Mar 2026 02:53:20 GMT",
+      "etag": "\"1772333600-gzip\"",
       "x-vhost-id": "cyberveille-sante.gouv.fr",
-      "content-length": "10489",
+      "content-length": "10475",
       "content-type": "text/html; charset=UTF-8",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
@@ -48,8 +48,10 @@
           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js",
           "https://cdnjs.cloudflare.com/ajax/libs/cropper",
           "https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.js",
+          "https://fonts.gstatic.com/s/inter/v19/",
           "https://fqjnnsg.pa-cd.com/",
           "https://p.typekit.net",
+          "https://tag.aticdn.net/js-sdk/piano-analytics-6.16.3.js",
           "https://use.typekit.net"
         ],
         "font-src": [
@@ -93,9 +95,6 @@
         ],
         "frame-ancestors": [
           "'self'"
-        ],
-        "report-uri": [
-          "https://cyberveille.esante.gouv.fr/report-uri/enforce"
         ]
       },
       "http": true,
