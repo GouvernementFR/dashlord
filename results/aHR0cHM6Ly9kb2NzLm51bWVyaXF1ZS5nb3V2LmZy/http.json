@@ -1,30 +1,30 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "B",
     "error": null,
-    "score": 60,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 25 Jan 2026 02:54:02 GMT",
+      "date": "Sun, 01 Mar 2026 03:24:04 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "last-modified": "Tue, 13 Jan 2026 14:51:17 GMT",
-      "etag": "W/\"69665be5-f52\"",
+      "last-modified": "Thu, 29 Jan 2026 15:58:07 GMT",
+      "etag": "W/\"697b838f-e5c\"",
       "x-frame-options": "DENY",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "set-cookie": [
-        "visid_incap_3275205=fEzW9CffQPufUgOyzxq34MmFdWkAAAAAQUIPAAAAAABn3z6HYlSn+GIsc+JOiDC2; expires=Sun, 24 Jan 2027 06:45:33 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
-        "nlbi_3275205=swgqXLBw4F+nAlLPvSC9iwAAAABJtMj/O/QhSIN20tJ+nkgP; HttpOnly; path=/; Domain=.numerique.gouv.fr",
-        "incap_ses_564_3275205=7s3HMSO+Xl8mhRrLgLvTB8mFdWkAAAAALc12jSp30Ja7XaO9iYKVXg==; path=/; Domain=.numerique.gouv.fr"
+        "visid_incap_3275205=egr34VtxTP+Dt+0kp7k9HFKxo2kAAAAAQUIPAAAAAAC1Vb8bNBKgoo/EUWSoSlBE; expires=Sun, 28 Feb 2027 07:04:55 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None",
+        "nlbi_3275205=2UCeb8N6LVsy7JsnvSC9iwAAAAB+aoBRcH82OFnAOXJfXpVJ; HttpOnly; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None",
+        "incap_ses_176_3275205=KJIQH0vYLXw8QusBMkdxAlOxo2kAAAAAEs1OvzQEDYDhekht3mFHfQ==; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "16-72531585-72531588 NNNN CT(95 98 0) RT(1769309641975 9) q(0 0 2 1) r(3 3) U12"
+      "x-iinfo": "47-128425320-128425325 NNNN CT(145 145 0) RT(1772335443827 17) q(0 0 3 4) r(4 4) U12"
     }
   },
   "tests": {
@@ -41,30 +41,36 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "visid_incap_3275205": {
           "domain": "numerique.gouv.fr",
-          "expires": "2027-01-24T06:45:33.000Z",
+          "expires": "2027-02-28T07:04:55.000Z",
           "httponly": true,
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "none",
+          "secure": true
         },
         "nlbi_3275205": {
           "domain": "numerique.gouv.fr",
           "httponly": true,
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "none",
+          "secure": true
         },
-        "incap_ses_564_3275205": {
+        "incap_ses_176_3275205": {
           "domain": "numerique.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "none",
+          "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -75,16 +81,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://origin.docs.numerique.gouv.fr/",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://docs.numerique.gouv.fr/",
       "redirects": true,
       "route": [
         "http://docs.numerique.gouv.fr/",
-        "https://origin.docs.numerique.gouv.fr/"
+        "https://docs.numerique.gouv.fr/"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
