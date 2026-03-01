@@ -9,7 +9,7 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cteonnt-length": "137552",
+      "cteonnt-length": "139258",
       "x-xss-protection": "1; mode=block",
       "content-security-policy": "img-src 'self' https: data: *.ebrd.com ;, frame-ancestors 'self' ;",
       "permissions-policy": "policy1=()",
@@ -22,22 +22,18 @@
       "content-type": "text/html;charset=utf-8",
       "x-content-type-options": "nosniff",
       "accept-ranges": "bytes",
-      "age": "0",
-      "date": "Tue, 27 Jan 2026 02:46:18 GMT",
-      "set-cookie": [
-        "affinity=\"2bc762eb241580f6\"; Path=/; HttpOnly; secure",
-        "waf_mgt_id_.ebrd.com_%2F_wat=AAAAAAXYjeWCWlph-1i6WicX9gWe_o6CDArWdaRVWuxkZBBNaavgX-5LNYfMSPwlDcDcPfAurE6_YhxKV-jzCmpWdaf3&; Domain=.ebrd.com; Path=/; HttpOnly"
-      ],
-      "x-served-by": "cache-bur-kbur8200101-BUR",
-      "x-cache": "MISS",
-      "x-timer": "S1769481978.987948,VS0,VS0,VE936",
+      "age": "493",
+      "date": "Sun, 01 Mar 2026 03:34:00 GMT",
+      "x-served-by": "cache-pdk-kfty8610036-PDK",
+      "x-cache": "HIT",
+      "x-timer": "S1772336041.520672,VS0,VS0,VE4",
       "vary": "Accept-Encoding,Origin",
       "connection": "close",
       "x-cache-control-orig": "max-age=900, s-maxage=900, stale-while-revalidate=300, stale-if-error=300",
       "cache-control": "max-age=3, must-revalidate, private",
-      "x-expires-orig": "Tue, 27 Jan 2026 02:51:18 GMT",
+      "x-expires-orig": "Sun, 01 Mar 2026 03:15:42 GMT",
       "expires": "Mon, 26 Jul 1997 05:00:00 GMT",
-      "etag": "\"316533-981b20290880\"",
+      "etag": "\"6794e8-5b7e594e7d7d\"",
       "transfer-encoding": "chunked"
     }
   },
@@ -83,7 +79,7 @@
       "scoreModifier": -5,
       "data": {
         "affinity": {
-          "domain": "www.ebrd.com",
+          "domain": "ebrd.com",
           "httponly": true,
           "path": "/",
           "port": null,
