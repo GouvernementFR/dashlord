@@ -1,41 +1,41 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 20,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-type": "text/html; charset=UTF-8",
       "link": "<https://static.parastorage.com/>; rel=preconnect; crossorigin;,<https://static.parastorage.com/>; rel=preconnect;,<https://static.wixstatic.com/>; rel=preconnect; crossorigin;,<https://static.wixstatic.com/>; rel=preconnect;,<https://siteassets.parastorage.com>; rel=preconnect; crossorigin;,",
-      "etag": "W/\"721bc33e31d92103376bd35dbb600ce0\"",
+      "etag": "W/\"64044b371556b5806aa5699347791c25\"",
       "content-language": "en-US",
-      "strict-transport-security": "max-age=86400",
-      "x-cache-status": "HIT",
-      "x-wix-request-id": "1769309590.577139522117772741586",
+      "strict-transport-security": "max-age=31556952",
+      "x-cache-status": "MISS",
       "cache-control": "public,max-age=0,must-revalidate",
       "server": "Pepyaka",
       "x-content-type-options": "nosniff",
       "accept-ranges": "bytes",
-      "age": "118911",
-      "date": "Sun, 25 Jan 2026 02:53:10 GMT",
-      "x-served-by": "cache-bur-kbur8200063-BUR",
-      "x-cache": "MISS",
+      "age": "106383",
+      "date": "Sun, 01 Mar 2026 03:24:35 GMT",
+      "x-served-by": "cache-iad-kcgs7200049-IAD",
+      "x-cache": "HIT",
       "vary": "Accept-Encoding",
-      "server-timing": "cache;desc=hit, varnish;desc=hit_miss, dc;desc=fastly_sea1_g",
+      "server-timing": "cache;desc=miss, varnish;desc=miss_hit, dc;desc=fastly_g",
       "set-cookie": [
-        "sec-fetch-unsupported=1; Path=/; Secure; SameSite=Lax;",
-        "ssr-caching=cache#desc=hit#varnish=hit_miss#dc#desc=fastly_sea1_g; max-age=20"
+        "ssr-caching=cache#desc=miss#varnish=miss_hit#dc#desc=fastly_g; max-age=20",
+        "sec-fetch-unsupported=1; Path=/; Secure; SameSite=Lax;"
       ],
-      "x-seen-by": "yvSunuo/8ld62ehjr5B7kA==,dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=,xIKq3IotbbLp4+7DTTMx8R9slopJdhD+WySraMrpIY8=,m0j2EEknGIVUW/liY8BLLqPXpcX6IEGf7sG3D7kVVb552gCiAZcLpVSC0FDVNHZc,2d58ifebGbosy5xc+FRali59g2LESKXv+5urcFsOQXd6LsV0njMnt0NfWNvGqbNUH5CahN25DLfTcoHDYg14jQ==,2UNV7KOq4oGjA5+PKsX47HqjR+6CNmn/ng3r7CWVjR4=,2UNV7KOq4oGjA5+PKsX47EcNVZxMrnxWFErTxnFN3IM=",
+      "x-wix-request-id": "1772335475.373797238429441152",
+      "x-seen-by": "yvSunuo/8ld62ehjr5B7kA==,pmHZlB45NPy7b1VBAukQrewfbs+7qUVAqsIx00yI78k=,oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,Ua1iSBCTq7qSXjmRCGE1N5HpDYiXOm+7Iq0/ElaXCVRBbLj/xy9RjM2xCpun2vrp61v7VR/If9ZbVRVGhElrd4svUQzedMjQ2LjEY6RYJUY=,2d58ifebGbosy5xc+FRalnKUBqEQA7yplDr211+EOMnr/ziSUZvmJLOmFF6pnT0e1ZVPNNUxXtCDpQMX3ZllJg==,2UNV7KOq4oGjA5+PKsX47OoBRMKv+V6//mSDp7Ln4MpBgoOYGa1MpluGPPjG4/Tb,2UNV7KOq4oGjA5+PKsX47E0aocE5jZ+SHqU8+c6ueiQxwy5Yb789UDkEfaJNWrtQ,/B3VgDtICCNDWQOEWfZmMtLtnWxt96+mHTBV6lNzAY0=,UCXqFoU+MbsWXjA74cRbHYZiQfzy1r8YikIfxsOrLgEj6r0AZAMucqm4C7kwBEyau32u1JarVePcqEYUNGOuhg==,/B3VgDtICCNDWQOEWfZmMvFnwIKWwMCM5tvoi1edFTk=,LoUK8/saGAmOxZWtpubo2kD4pg0+gDMifLeRlJYA1goLkLDxdT621KDrliXi2GDrHfx61zLZ9Wp/L55YizwZf1O02Fr1CqG0HW3vRNOeGe6ooR4wF2vLCLilecSC/Nzx,/B3VgDtICCNDWQOEWfZmMuk4A/Luln3W6ZZC8L4QZH4=,RyPGOLsHDe7v/GTf4wBGupR5qoytdHw4HTz5gWd9esLTKkNRHpY73V0eegKyTZ3JtGDSdiAxM/4pQiCSaAB3cnvtTsVncVxEBnLTysWC7u3KDXgYg4JrI2r6DjecJo8H",
+      "content-length": "136300",
       "via": "1.1 google",
       "glb-x-seen-by": "bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=",
       "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "connection": "close"
     }
   },
   "tests": {
@@ -53,21 +53,21 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
+        "ssr-caching": {
+          "domain": "www.definspace.fr",
+          "max-age": 20,
+          "path": "/",
+          "port": null
+        },
         "sec-fetch-unsupported": {
           "domain": "www.definspace.fr",
           "path": "/",
           "port": null,
           "samesite": "lax",
           "secure": true
-        },
-        "ssr-caching": {
-          "domain": "www.definspace.fr",
-          "max-age": 20,
-          "path": "/",
-          "port": null
         }
       },
       "sameSite": false
@@ -104,12 +104,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=86400",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31556952",
       "includeSubDomains": false,
-      "maxAge": 86400,
+      "maxAge": 31556952,
       "preload": false,
       "preloaded": false
     },
@@ -131,28 +131,28 @@
           "crossorigin": "anonymous",
           "integrity": null
         },
-        "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.ad9e0bad.bundle.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.parastorage.com/services/wix-thunderbolt/dist/main.9938719a.bundle.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.f600e767.bundle.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js": {
           "crossorigin": "",
           "integrity": null
         },
         "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js": {
           "crossorigin": "",
+          "integrity": null
+        },
+        "https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7660a4b3.bundle.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.parastorage.com/services/wix-thunderbolt/dist/main.d5ab5c16.bundle.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.99fa8096.bundle.min.js": {
+          "crossorigin": null,
           "integrity": null
         },
         "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js": {
