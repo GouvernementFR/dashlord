@@ -9,13 +9,13 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 25 Jan 2026 02:52:53 GMT",
+      "date": "Sun, 01 Mar 2026 03:18:59 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "s-maxage=300, stale-while-revalidate=31535700",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=475",
       "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wxfvziC6NCM6ctAzz2wF3GrR%2FC0ArFRuH0b96Aa4znMmP7zqFkI8pjdOtu7rrFUzm1QWOPMnKh5jM2BhlXObX2rc1GqTk2BDuOjgnxSL\"}]}",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "vary": "Accept-Encoding, rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-content-type-options": "nosniff",
@@ -26,9 +26,8 @@
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1B9av50kg3G4oWs%2FyA3t7Lzgi0yw9N8%2Bop5JD2rrzA27La5nBNhdndEbkg9yyL0WGJKZ7ddP%2F1hnsr86%2BixsYGjusTEFd%2FJ4MQ7QcdA3\"}]}",
       "server": "cloudflare",
-      "cf-ray": "9c347a1d49d16e27-DFW",
+      "cf-ray": "9d550479fe5ebe62-SJC",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -95,14 +94,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
