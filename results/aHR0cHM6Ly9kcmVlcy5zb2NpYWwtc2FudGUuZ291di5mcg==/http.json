@@ -9,20 +9,21 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 27 Jan 2026 02:49:09 GMT",
+      "date": "Sun, 01 Mar 2026 03:33:51 GMT",
       "x-spip-cache": "21600",
       "x-frame-options": "SAMEORIGIN",
-      "last-modified": "Tue, 27 Jan 2026 02:49:09 GMT",
+      "last-modified": "Sun, 01 Mar 2026 03:33:51 GMT",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
-      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
+      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!70VwrfCkyjF2XaQXIkI7F7SI9ajmihfSu98gSDcDEsVa3/eJB/dA+ffMB+3RTs4mm798rTlzHvtqICJxe4ETMJgQagLS; path=/; Httponly; Secure",
-        "TSc4ff0492027=087dc22938ab200076c537a05e4538012986a7a35aafd8899f4fef58419056853ffc8e03a999c37a08371656ee1130002cdab8e837d60a26f342e13ce9dee73c8d880301fb70444ee8a729e2a3059f5da7bbbccd48d6616d717922ace80a1e6b; Secure; Path=/"
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!mYTJTJ5uGw+WelMXIkI7F7SI9ajmikmlwdjb8SpygVWdbckfExZ98ZpTxAUek2zA95kWhlkjQtXQ+rvQWQIW68INYHs2; path=/; Httponly; Secure; SameSite=Lax;",
+        "TS01c71406=01352d3811dededfe90e743911860fd4b831ffa5067635e49cd49506d4004d445d6d04b8f71bf0b0a2a0297e4e2c4a7ccc68bde4d7; Path=/; Secure; HttpOnly",
+        "TSc4ff0492027=087dc22938ab2000e00a9e08016a9ea2e37fe0467e957881be877f9124c1c484a8508152dea45a7608a3d242f01130007fe692adc55b21e3d029fe8610e89d6d2ed4ff3046ec42cb6924dbad507d5f7a43e96593f03bffe7673052c284b6c03b; Secure; Path=/"
       ],
-      "strict-transport-security": "max-age=31536000"
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -44,6 +45,14 @@
       "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "drees.social-sante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
           "domain": "drees.social-sante.gouv.fr",
           "httponly": true,
           "path": "/",
