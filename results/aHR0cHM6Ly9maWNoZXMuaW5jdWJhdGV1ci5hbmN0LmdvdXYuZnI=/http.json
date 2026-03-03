@@ -1,26 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 50,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx/1.18.0 (Ubuntu)",
-      "date": "Sat, 31 Jan 2026 02:54:53 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "content-length": "5476",
+      "content-length": "26101",
+      "content-type": "text/html",
+      "date": "Tue, 03 Mar 2026 03:34:22 GMT",
+      "last-modified": "Tue, 10 Feb 2026 03:32:03 GMT",
+      "x-amz-id-2": "txg881d3d8d81de45adb58c-0069a656be",
+      "x-amz-request-id": "txg881d3d8d81de45adb58c-0069a656be",
+      "etag": "\"9d0ea37add2959c789a9d6d38621c78c\"",
+      "age": "268",
       "connection": "close",
-      "cache-control": "max-age=600",
-      "etag": "\"3a7b6be0bccf27089b920f1be94ba4d125b82cb742e156a46bc776c6b7ff04ee-br\"",
-      "expires": "Sat, 31 Jan 2026 03:04:53 UTC",
-      "last-modified": "Fri, 30 Jan 2026 06:16:30 GMT",
-      "vary": "Origin",
-      "x-request-id": "01KG8ZK40HF5H0ECVHJM2H408Y",
-      "strict-transport-security": "max-age=63072000"
+      "x-cache": "hit-fresh"
     }
   },
   "tests": {
@@ -46,9 +44,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -74,12 +72,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
