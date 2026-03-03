@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "s-maxage=31536000",
       "content-type": "text/html; charset=utf-8",
-      "date": "Sat, 31 Jan 2026 02:54:33 GMT",
+      "date": "Tue, 03 Mar 2026 03:35:43 GMT",
       "etag": "\"yvwtzxbl1zqmy\"",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-nextjs-cache": "HIT",
@@ -51,13 +51,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
-      "destination": "https://fsv.fr/",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
       "redirects": true,
       "route": [],
-      "statusCode": 200
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
