@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "x-content-security-policy": "script-src 'self' blob: 'unsafe-inline' 'unsafe-eval' https://*.openstreetmap.org/; img-src 'self' blob: https://*.openstreetmap.org/; object-src 'self' blob: https://*.openstreetmap.org/; frame-src 'self' blob: https://*.openstreetmap.org/;",
-      "content-security-policy": "script-src 'self' blob: 'unsafe-inline' 'unsafe-eval' https://*.openstreetmap.org/; img-src 'self' blob: https://*.openstreetmap.org/; object-src 'self' blob: https://*.openstreetmap.org/; frame-src 'self' blob: https://*.openstreetmap.org/;",
+      "x-content-security-policy": "script-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://*.openstreetmap.org/; img-src 'self' data: blob: https://*.openstreetmap.org/; object-src 'self' data: blob: https://*.openstreetmap.org/; frame-src 'self' data: blob: https://*.openstreetmap.org/;",
+      "content-security-policy": "script-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://*.openstreetmap.org/; img-src 'self' data: blob: https://*.openstreetmap.org/; object-src 'self' data: blob: https://*.openstreetmap.org/; frame-src 'self' data: blob: https://*.openstreetmap.org/;",
       "link": "<https://ensa-bourges.fr/wp-json/>; rel=\"https://api.w.org/\", <https://ensa-bourges.fr/wp-json/wp/v2/pages/4>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://ensa-bourges.fr/>; rel=shortlink",
       "upgrade": "h2,h2c",
       "vary": "Accept-Encoding",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
-      "date": "Thu, 29 Jan 2026 02:58:47 GMT",
+      "date": "Tue, 03 Mar 2026 03:33:52 GMT",
       "server": "LiteSpeed",
       "x-tuned-by": "N0C",
       "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\"",
@@ -35,21 +35,25 @@
           "'unsafe-eval'",
           "'unsafe-inline'",
           "blob:",
+          "data:",
           "https://*.openstreetmap.org/"
         ],
         "img-src": [
           "'self'",
           "blob:",
+          "data:",
           "https://*.openstreetmap.org/"
         ],
         "object-src": [
           "'self'",
           "blob:",
+          "data:",
           "https://*.openstreetmap.org/"
         ],
         "frame-src": [
           "'self'",
           "blob:",
+          "data:",
           "https://*.openstreetmap.org/"
         ]
       },
