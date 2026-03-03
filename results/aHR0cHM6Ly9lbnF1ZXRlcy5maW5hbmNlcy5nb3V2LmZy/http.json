@@ -17,11 +17,11 @@
       "server": "",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-content-type-options": "nosniff",
-      "date": "Thu, 29 Jan 2026 02:56:42 GMT",
+      "date": "Tue, 03 Mar 2026 03:21:31 GMT",
       "connection": "close",
       "content-length": "436",
       "set-cookie": [
-        "cookiesession1=678A3E929AF965D529583E2FE1AA1F38;Expires=Fri, 29 Jan 2027 02:56:42 GMT;Path=/;Secure;HttpOnly"
+        "cookiesession1=678A3E923796C5DFA5DE45632AD66CC3;Expires=Wed, 03 Mar 2027 03:21:31 GMT;Path=/;Secure;HttpOnly"
       ]
     }
   },
@@ -45,7 +45,7 @@
       "data": {
         "cookiesession1": {
           "domain": "enquetes.finances.gouv.fr",
-          "expires": "2027-01-29T02:56:42.000Z",
+          "expires": "2027-03-03T03:21:31.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -64,15 +64,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://enquetes.finances.gouv.fr/",
+      "destination": "http://enquetes.finances.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://enquetes.finances.gouv.fr/",
-        "https://enquetes.finances.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
