@@ -1,37 +1,40 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 29 Jan 2026 02:56:39 GMT",
+      "date": "Tue, 03 Mar 2026 03:17:00 GMT",
       "server": "Apache/2.2.15 (Red Hat)",
       "x-powered-by": "PHP/5.4.34",
-      "x-drupal-cache": "HIT",
-      "etag": "\"1769655388-1\"",
+      "x-drupal-cache": "MISS",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "cache-control": "public, max-age=3600",
+      "x-content-type-options": "nosniff",
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "x-generator": "Drupal 7 (https://www.drupal.org)",
       "link": "<https://www.enim.eu/>; rel=\"canonical\",<https://www.enim.eu/>; rel=\"shortlink\"",
-      "cache-control": "public, max-age=3600",
-      "last-modified": "Thu, 29 Jan 2026 02:56:28 GMT",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "etag": "\"1772507820-1\"",
+      "last-modified": "Tue, 03 Mar 2026 03:17:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "textsize=81; expires=Wed, 03-Mar-2027 03:17:01 GMT; path=/",
+        "SSESS5dc4c805ff2966fe956924e2ee6c69a9=6EKq50XVV8707lWeP1ZcOLA821HcHWTvYOm7AkZzyVg; expires=Thu, 26-Mar-2026 06:50:21 GMT; path=/; domain=.enim.eu; secure; HttpOnly",
+        "visid_incap_2947508=zBnfRoQXSvChdD1ZY3ji1atSpmkAAAAAQUIPAAAAAAA5pc3uN2LVqtsVohm5EokN; expires=Tue, 02 Mar 2027 06:12:26 GMT; HttpOnly; path=/; Domain=.enim.eu",
+        "nlbi_2947508=uoKkL6hFPzsfLJDYHvn2XAAAAABEIteokZEeSrrpOHkSrQ3u; HttpOnly; path=/; Domain=.enim.eu",
+        "incap_ses_362_2947508=x73kOQIzSVzV3Za4PBUGBa1SpmkAAAAAnoz1Fw2YSpuEeTeGgJo+Vw==; path=/; Domain=.enim.eu"
+      ],
       "connection": "close",
       "transfer-encoding": "chunked",
-      "set-cookie": [
-        "visid_incap_2947508=F85SbBy2Q0KBIMnWz8JNw2bMemkAAAAAQUIPAAAAAABnSiTZIf6Hz151azyvs7np; expires=Thu, 28 Jan 2027 07:00:19 GMT; HttpOnly; path=/; Domain=.enim.eu",
-        "nlbi_2947508=6lxgf0VBoE6a7vOqHvn2XAAAAABE6J/Pd4zPwbmmeGaFs01n; HttpOnly; path=/; Domain=.enim.eu",
-        "incap_ses_1845_2947508=E4OKe+PNyl+PzpOSVcKaGWfMemkAAAAAhn9aGkhmJWeWKO+TJA4Eew==; path=/; Domain=.enim.eu"
-      ],
       "x-cdn": "Imperva",
-      "x-iinfo": "57-20364188-20364192 NNNN CT(102 97 0) RT(1769655399548 12) q(0 0 2 1) r(3 4) U12"
+      "x-iinfo": "54-228574389-228574391 NNNN CT(178 164 0) RT(1772507820121 4) q(0 0 4 0) r(5 15) U12"
     }
   },
   "tests": {
@@ -52,9 +55,23 @@
       "result": "cookies-without-secure-flag",
       "scoreModifier": -20,
       "data": {
+        "textsize": {
+          "domain": "www.enim.eu",
+          "expires": "2027-03-03T03:17:01.000Z",
+          "path": "/",
+          "port": null
+        },
+        "SSESS5dc4c805ff2966fe956924e2ee6c69a9": {
+          "domain": "enim.eu",
+          "expires": "2026-03-26T06:50:21.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
         "visid_incap_2947508": {
           "domain": "enim.eu",
-          "expires": "2027-01-28T07:00:19.000Z",
+          "expires": "2027-03-02T06:12:26.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -65,7 +82,7 @@
           "path": "/",
           "port": null
         },
-        "incap_ses_1845_2947508": {
+        "incap_ses_362_2947508": {
           "domain": "enim.eu",
           "path": "/",
           "port": null
@@ -122,10 +139,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
