@@ -1,18 +1,18 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Thu, 29 Jan 2026 03:00:26 GMT",
+      "date": "Tue, 03 Mar 2026 03:26:29 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "17918",
+      "content-length": "17957",
       "connection": "close",
       "link": "<https://eva.anlci.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://eva.anlci.gouv.fr/wp-json/wp/v2/pages/11>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://eva.anlci.gouv.fr/>; rel=shortlink",
       "vary": "Accept-Encoding",
@@ -81,15 +81,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://plausible.io/js/plausible.outbound-links.file-downloads.pageview-props.js?ver=2.5.0": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
