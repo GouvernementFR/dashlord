@@ -9,25 +9,25 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 28 Jan 2026 13:09:47 GMT",
+      "date": "Mon, 02 Mar 2026 08:39:43 GMT",
       "cache-control": "max-age=10800, public",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Wed, 28 Jan 2026 17:16:50 GMT",
+      "last-modified": "Mon, 02 Mar 2026 16:39:45 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "age": "1693",
+      "age": "0",
       "x-cache": "HIT",
-      "x-cache-hits": "16",
-      "x-cache-ttl": "9106.619",
+      "x-cache-hits": "1",
+      "x-cache-ttl": "10799.786",
       "accept-ranges": "bytes",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "set-cookie": [
-        "TSe92b7ff4029=087dc22938ab28002e22349300c53a83c592555ac6047cce487a6853a89b6a4ecf51586c3e05653a2518ee806ea2935c; Secure; Max-Age=30; Path=/",
-        "TS780b36e3027=087dc22938ab200011af375c06d0331055b136e4ed1e3ae4800cf9896e9c756bdfe1949499db7d1208646305191130009bb4669e81cad4f43ba3dc0789c81f61b5b1ce486140a2a6e09804c48eb7939ec87ce8e793c3a81a69979dcc5c83ae7b; Secure; Path=/"
+        "TSe92b7ff4029=087dc22938ab28001a015711f6683f4bd48e6d68a6da7ec890a8778450cec737c427377c53dfd0e14ae68d5b1bbcd262; Secure; Max-Age=30; Path=/",
+        "TS780b36e3027=087dc22938ab2000e642a9c08becd1360bfece0d4c23cec0937abb13b744bc3b45483cb03b424de908ec02babf11300066cb2f1a40738cf208742cc04d414d9c8790f7aef7e0fce3c6c054fea86f1b8c13f474c85035ff03777b3499cf4948af; Secure; Path=/"
       ],
       "transfer-encoding": "chunked"
     }
@@ -51,6 +51,14 @@
       "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "emploi.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
           "domain": "emploi.gouv.fr",
           "httponly": true,
           "path": "/",
