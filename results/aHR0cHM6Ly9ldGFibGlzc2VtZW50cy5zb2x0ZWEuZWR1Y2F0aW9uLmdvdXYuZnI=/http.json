@@ -1,19 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 30,
-    "statusCode": 403,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 29 Jan 2026 02:59:08 GMT",
-      "x-blocked-by": "9b6c817cf7f2489b821fc006b0da277f",
+      "date": "Tue, 03 Mar 2026 03:16:59 GMT",
       "content-type": "text/html",
-      "content-length": "490",
-      "connection": "close"
+      "last-modified": "Wed, 19 Nov 2025 09:33:56 GMT",
+      "etag": "W/\"691d8f04-13788\"",
+      "cache-control": "no-store",
+      "strict-transport-security": "max-age=11510640000; includesubdomains",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "same-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -46,56 +53,53 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://etablissements.soltea.education.gouv.fr/",
+      "destination": "http://etablissements.soltea.education.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://etablissements.soltea.education.gouv.fr/",
-        "https://etablissements.soltea.education.gouv.fr/"
-      ],
-      "statusCode": 403
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=11510640000; includesubdomains",
+      "includeSubDomains": true,
+      "maxAge": 11510640000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
