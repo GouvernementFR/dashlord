@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "D+",
     "error": null,
-    "score": 35,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 31 Jan 2026 02:20:22 GMT",
+      "date": "Tue, 03 Mar 2026 02:21:14 GMT",
       "cache-control": "max-age=43200, public",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
@@ -18,16 +18,16 @@
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding,Origin",
       "x-drupal-cache": "HIT",
-      "last-modified": "Sat, 31 Jan 2026 02:20:20 GMT",
-      "etag": "\"1769826020\"",
+      "last-modified": "Tue, 03 Mar 2026 02:21:13 GMT",
+      "etag": "\"1772504473\"",
       "content-security-policy": "frame-ancestors 'self' 'virteem.com';",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8",
       "set-cookie": [
-        "BIGipServerpool_georisques_preventix_web_https=2065176748.47873.0000; path=/; Httponly; Secure",
-        "TS01e3f304=01ce77d60077620150cb4766f8040194e1a947e8bbcdaccff9c7188b819033a5afead207c7ebd4648682c7c9868992cd2d00df68b4; Path=/; Domain=.www.georisques.gouv.fr"
+        "BIGipServerpool_georisques_preventix_web_https=2048399532.47873.0000; path=/; Httponly; Secure",
+        "TS01e3f304=01ce77d60067877ef4295f09ea94fc01c42f7ca0f5660fa5f44842ccbf4149ee0ed1050327a4422b5eb66b02f03469c7d3c09dc37c; Path=/; Domain=.www.georisques.gouv.fr"
       ],
-      "content-length": "16290"
+      "content-length": "15922"
     }
   },
   "tests": {
@@ -128,15 +128,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
