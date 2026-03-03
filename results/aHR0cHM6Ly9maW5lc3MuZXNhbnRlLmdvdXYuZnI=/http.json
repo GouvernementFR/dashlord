@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 31 Jan 2026 02:54:00 GMT",
+      "date": "Tue, 03 Mar 2026 03:30:42 GMT",
       "set-cookie": [
-        "BWROUTEID=1714ecb9ec7680ec56f30caff50c4d1a.1; Path=/"
+        "BWROUTEID=1714ecb9ec7680ec56f30caff50c4d1a.2; Path=/"
       ],
       "accept-ranges": "bytes",
       "etag": "W/\"119-1710862038000\"",
@@ -60,15 +60,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://finess.esante.gouv.fr/",
-      "redirects": false,
-      "route": [
-        "http://finess.esante.gouv.fr/"
-      ],
-      "statusCode": 403
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
