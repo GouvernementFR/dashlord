@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 31 Jan 2026 02:55:05 GMT",
+      "date": "Tue, 03 Mar 2026 03:31:19 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=600",
@@ -18,11 +18,11 @@
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Sat, 31 Jan 2026 03:05:05 GMT",
-      "last-modified": "Sat, 31 Jan 2026 01:04:02 GMT",
-      "etag": "\"1769821442\"",
+      "expires": "Tue, 03 Mar 2026 03:41:19 GMT",
+      "last-modified": "Tue, 03 Mar 2026 02:07:43 GMT",
+      "etag": "\"1772503663\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "HIT",
+      "x-drupal-cache": "MISS",
       "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:;",
       "referrer-policy": "same-origin",
@@ -35,13 +35,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3062846=TQEH9d3lSm+zx4oUu8YaDgdvfWkAAAAAQUIPAAAAAAAmc8b3ffEA5zgWiEHPY4Ce; expires=Sat, 30 Jan 2027 06:23:45 GMT; HttpOnly; path=/; Domain=.francenum.gouv.fr; Secure; SameSite=None",
-        "nlbi_3062846=yxO3OS+gSU2dOuKEhNltGwAAAABSqv8bCi6/vY7Suwo7uibj; HttpOnly; path=/; Domain=.francenum.gouv.fr; Secure; SameSite=None",
-        "incap_ses_102_3062846=Z4qZF60ZhzpaY11aj2BqAQhvfWkAAAAAjgJnZz+nS9wKId+Hb9ce4Q==; path=/; Domain=.francenum.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3062846=UE27AHaLS3iqD6dWGZfMTwdWpmkAAAAAQUIPAAAAAAByCf6FqqoF+HzNxLM5qTvq; expires=Tue, 02 Mar 2027 06:34:27 GMT; HttpOnly; path=/; Domain=.francenum.gouv.fr; Secure; SameSite=None",
+        "nlbi_3062846=BFz+XJng4yipJtANhNltGwAAAACCZA3kf/bckAZG85R8nw4E; HttpOnly; path=/; Domain=.francenum.gouv.fr; Secure; SameSite=None",
+        "incap_ses_419_3062846=DXZdKyhAzTeQhpMU2JbQBQdWpmkAAAAAF1NCOcE/aoFUV/l5jtURnA==; path=/; Domain=.francenum.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "46-80419766-80419770 NNYN CT(194 375 0) RT(1769828104728 12) q(0 0 6 0) r(8 9) U12"
+      "x-iinfo": "9-23762595-23762597 NNYN CT(116 238 0) RT(1772508679060 19) q(0 0 3 0) r(4 6) U12"
     }
   },
   "tests": {
@@ -93,7 +93,7 @@
       "data": {
         "visid_incap_3062846": {
           "domain": "francenum.gouv.fr",
-          "expires": "2027-01-30T06:23:45.000Z",
+          "expires": "2027-03-02T06:34:27.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -108,7 +108,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_102_3062846": {
+        "incap_ses_419_3062846": {
           "domain": "francenum.gouv.fr",
           "path": "/",
           "port": null,
