@@ -3,24 +3,25 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "etag": "W/\"2d94-+L3lzUytwlJcQwkPchIi4kO10HE\"",
+      "etag": "W/\"69973084-63e5\"",
+      "last-modified": "Thu, 19 Feb 2026 15:47:16 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "3834",
-      "cache-control": "max-age=3035, public",
-      "expires": "Sat, 31 Jan 2026 03:49:50 GMT",
-      "date": "Sat, 31 Jan 2026 02:59:15 GMT",
+      "content-length": "6526",
+      "cache-control": "max-age=1, public",
+      "expires": "Thu, 05 Mar 2026 03:14:40 GMT",
+      "date": "Thu, 05 Mar 2026 03:14:39 GMT",
       "set-cookie": [
-        "visid_incap_3270273=gkl5i1GaT8Oe4aKCIJNnGQNwfWkAAAAAQUIPAAAAAACmSF/V1OHakPCwkiF3DeX0; expires=Sat, 30 Jan 2027 09:22:59 GMT; HttpOnly; path=/; Domain=.franceconnect.gouv.fr",
-        "incap_ses_418_3270273=y6bCNNn0kkTzY2shSQnNBQNwfWkAAAAAI7HT6/PPxjPcfzViVZ/Ifw==; path=/; Domain=.franceconnect.gouv.fr"
+        "visid_incap_3270273=kkxiU0+WSQ2vi/TP2on3HR/1qGkAAAAAQUIPAAAAAADuDJTeYT0QLxKy5r1GC7R7; expires=Thu, 04 Mar 2027 07:27:43 GMT; HttpOnly; path=/; Domain=.franceconnect.gouv.fr",
+        "incap_ses_1328_3270273=GXDZdJIWzU7EZHkzeQFuEh/1qGkAAAAARX9ZFLyrnQ2WJL6VgvAM3Q==; path=/; Domain=.franceconnect.gouv.fr"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "2-7880686-7869985 2CNN RT(1769828356145 5) q(0 0 0 0) r(0 0)"
+      "x-iinfo": "11-39721557-39704778 2cNN RT(1772680480527 7) q(0 0 0 0) r(0 0)"
     }
   },
   "tests": {
@@ -43,12 +44,12 @@
       "data": {
         "visid_incap_3270273": {
           "domain": "franceconnect.gouv.fr",
-          "expires": "2027-01-30T09:22:59.000Z",
+          "expires": "2027-03-04T07:27:43.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_418_3270273": {
+        "incap_ses_1328_3270273": {
           "domain": "franceconnect.gouv.fr",
           "path": "/",
           "port": null
@@ -65,14 +66,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.franceconnect.gouv.fr/",
       "redirects": true,
       "route": [
         "http://franceconnect.gouv.fr/",
-        "https://franceconnect.gouv.fr/",
         "https://www.franceconnect.gouv.fr/"
       ],
       "statusCode": 200
