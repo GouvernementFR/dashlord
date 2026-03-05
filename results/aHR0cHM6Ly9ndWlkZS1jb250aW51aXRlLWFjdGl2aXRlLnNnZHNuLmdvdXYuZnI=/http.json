@@ -1,31 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "B",
     "error": null,
-    "score": 80,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 01 Feb 2026 02:57:17 GMT",
+      "date": "Thu, 05 Mar 2026 03:22:39 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "content-length": "1611",
       "cache-control": "private, must-revalidate",
-      "pragma": "no-cache",
       "expires": "-1",
+      "pragma": "no-cache",
+      "referrer-policy": "strict-origin-when-cross-origin, strict-origin",
       "set-cookie": [
-        "XSRF-TOKEN=eyJpdiI6IkVMZkhmTlQzZGZhYkVOZXVHZk5STkE9PSIsInZhbHVlIjoiZ3g1Rm52THpwakxBRXFob1NXd2p1V2U5N2ZiUmN3cWdVdDYwYWJhUlRvRFVZcnVQMEo5clVKTUtxeWd0b1JiWWJNWnBIWHlhdS9TS1REbXJVYzUwQWlDRUhRY0ZaeFFub0RrWk93NlRsRnFaNGhyKzZiNnNBUzdPSG9TWGZPdFMiLCJtYWMiOiI5YWMyMmI4YTMzOGUyYjk3NTc5N2U2NjI4OTBhOWNmZGQ1NDgyYzdkODg2MjBlNzhhYTQ2OGMxMWMxYzU0OTM5IiwidGFnIjoiIn0%3D; expires=Sun, 01 Feb 2026 05:04:38 GMT; Max-Age=7200; path=/; secure; samesite=lax",
-        "guide_de_la_continuite_dactivite_session=eyJpdiI6ImIwUFhXbDg4bHptMytWMTFseUF2T3c9PSIsInZhbHVlIjoicVpic0c2WGQzMzBzRjF2SFI4VUtnUnBxRzU4WVNLZlVncXk1cGw1UGEyMC9seGZFdWFvS0NoZzJqRWJ1bS9YOWhGYmFSMlcvK1V4WVVFZXZjWUVZdmtDM0hBenduRGwxWGx4RUVNYmw0VTVMRzU0MG5sYVFyZE91Y0ZDU214d0YiLCJtYWMiOiI4ZDIyODI0NzllYTkzZTQ2MWZlYTgyOGU1ZDdjZTUwZTExMTYyMTM5OTJkYzdlYTg1Y2RjZWRkYTgxYWU2NTRkIiwidGFnIjoiIn0%3D; expires=Sun, 01 Feb 2026 05:04:38 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax"
+        "XSRF-TOKEN=eyJpdiI6InErZE1uSzFMdjBOTS9QYjhHMkxWemc9PSIsInZhbHVlIjoiUGs4VWt5ZUhBUkUzSHhrZGhxVWl6NmVqcm9RcTIzR2F6aWtvM1l2U1p2ZzBOTlZ6WkNQZG15eHRqSGxNZnhzaDBnemVURXZzbHdmNGU2Smo1M2tDaHFnckdjb0FMeHN2ZXc4RGxuYlRSd1lGaThGazdFSkpZR05MTCtwQ1BlekwiLCJtYWMiOiI4ZTEwNWY5YmUzYzI4MWIwOGI4NmUzYmU2ZGEwNTVlMDc4NTM5NTE3NzNhZTZmODI1NTgyOGIxNzE3NjRhNDgxIiwidGFnIjoiIn0%3D; expires=Thu, 05 Mar 2026 05:22:39 GMT; Max-Age=7200; path=/; secure; samesite=lax",
+        "guide_de_la_continuite_dactivite_session=eyJpdiI6Ikd1SEVOSHVOSW0wemtka1JMUG91Umc9PSIsInZhbHVlIjoiTk03SFRNWG4vOTNGbGN1TlNhWnk2YW5RZ1NMbnZWOXhsbGZaSUQzV2VjanlkVHk5cUFJRUR5MG1FTDUrM3ZwU2FnOUVuYlk5aGZGWVU1cjRaU0xVTWs0STIwNkhLcEdRNFdyZUJLRnRKU0o4a01KNmF6UkRzcmJ3YmsyK3pEOTAiLCJtYWMiOiI1Mjg5MTJjYTk1MGQ3Y2RiYmI5ZTViNTYxZWIzYTg4MmFkMmFmY2JhNzI4MWYwNjVlMjJhZTZmODhlOTE4Y2NmIiwidGFnIjoiIn0%3D; expires=Thu, 05 Mar 2026 05:22:39 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax"
       ],
       "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
       "access-control-allow-headers": "*",
       "content-security-policy": "default-src 'self'; script-src 'self' https://guide-continuite-activite.phosforea.com 'unsafe-inline' 'unsafe-eval' https://www.numanis.net https://www.lisio-solution.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://www.lisio-solution.com; img-src 'self' data:; font-src 'self' data:; media-src 'self' blob:; connect-src 'self' https://www.mobiledition.com https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com; frame-src 'self' https://www.lisio-solution.com; frame-ancestors 'self'",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "strict-origin",
       "connection": "close"
     }
   },
@@ -105,7 +107,7 @@
       "data": {
         "XSRF-TOKEN": {
           "domain": "guide-continuite-activite.sgdsn.gouv.fr",
-          "expires": "2026-02-01T05:04:38.000Z",
+          "expires": "2026-03-05T05:22:39.000Z",
           "max-age": 7200,
           "path": "/",
           "port": null,
@@ -114,7 +116,7 @@
         },
         "guide_de_la_continuite_dactivite_session": {
           "domain": "guide-continuite-activite.sgdsn.gouv.fr",
-          "expires": "2026-02-01T05:04:38.000Z",
+          "expires": "2026-03-05T05:22:39.000Z",
           "httponly": true,
           "max-age": 7200,
           "path": "/",
@@ -150,7 +152,7 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "strict-origin",
+      "data": "strict-origin-when-cross-origin, strict-origin",
       "http": true,
       "meta": false
     },
@@ -174,17 +176,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
       "result": "x-frame-options-implemented-via-csp",
       "scoreModifier": 5,
-      "data": null
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
