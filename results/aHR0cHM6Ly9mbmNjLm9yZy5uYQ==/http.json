@@ -1,32 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
+      "server": "openresty/1.27.1.1",
+      "date": "Thu, 05 Mar 2026 03:14:52 GMT",
+      "content-length": "11863",
       "connection": "close",
-      "content-type": "text/html; charset=UTF-8",
-      "cache-control": "max-age=86400, public",
-      "x-drupal-dynamic-cache": "MISS",
-      "x-ua-compatible": "IE=edge",
-      "content-language": "en",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Wed, 28 Jan 2026 12:50:43 GMT",
-      "etag": "\"1769604643\"",
-      "vary": "Cookie,Accept-Encoding,User-Agent,User-Agent",
-      "x-generator": "Drupal 9 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "content-length": "7051",
-      "date": "Sat, 31 Jan 2026 02:54:30 GMT",
-      "server": "LiteSpeed",
-      "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+      "content-type": "text/html",
+      "cache-control": "private, no-cache, no-store, must-revalidate, max-age=0",
+      "cf-edge-cache": "no-cache"
     }
   },
   "tests": {
@@ -90,29 +79,24 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://unpkg.com/slide-element@2.3.1/dist/index.umd.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
