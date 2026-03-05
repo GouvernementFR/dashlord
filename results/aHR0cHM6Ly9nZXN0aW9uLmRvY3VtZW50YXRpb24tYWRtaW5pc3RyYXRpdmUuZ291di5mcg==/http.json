@@ -9,16 +9,17 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 31 Jan 2026 02:59:05 GMT",
+      "date": "Thu, 05 Mar 2026 03:28:38 GMT",
       "server": "Apache",
       "set-cookie": [
-        "PHPSESSID=fpspov3cg8p79kpnbj9n884qff; path=/",
-        "hal_lang=fr; Expires=Mon, 02-Feb-2026 02:59:05 GMT; Path=/; HttpOnly"
+        "PHPSESSID=rmknfrhhmk9g3vi1ar2up1dfkr; path=/",
+        "hal_lang=fr; Expires=Sat, 07-Mar-2026 03:28:38 GMT; Path=/; HttpOnly"
       ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "vary": "Accept-Encoding",
+      "cross-origin-resource-policy": "cross-origin",
       "access-control-allow-origin": "*",
       "content-security-policy": "default-src 'self' https://documentation-administrative.gouv.fr https://www.documentation-administrative.gouv.fr https://piwik-hal.ccsd.cnrs.fr ;       media-src  'self' https://streaming.ccsd.cnrs.fr/;       frame-src  'self' https://www.documentation-administrative.gouv.fr https://documentation-administrative.gouv.fr https://static.addtoany.com ;       img-src 'self' https://documentation-administrative.gouv.fr https://www.documentation-administrative.gouv.fr https://thumb.ccsd.cnrs.fr/ data: ;       script-src 'self' 'unsafe-inline' 'unsafe-eval' https://documentation-administrative.gouv.fr https://www.documentation-administrative.gouv.fr https://cdnjs.cloudflare.com https://unpkg.com https://leaflet.github.io https://www.gstatic.com https://static.addtoany.com https://code.jquery.com/ https://piwik-hal.ccsd.cnrs.fr/ ;       style-src  'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://fonts.googleapis.com  https://www.gstatic.com/ ;       font-src  'self' https://documentation-administrative.gouv.fr https://www.documentation-administrative.gouv.fr https://fonts.gstatic.com data: ;",
       "referrer-policy": "strict-origin",
@@ -119,7 +120,7 @@
         },
         "hal_lang": {
           "domain": "gestion.documentation-administrative.gouv.fr",
-          "expires": "2026-02-02T02:59:05.000Z",
+          "expires": "2026-03-07T03:28:38.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -191,10 +192,10 @@
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
+      "result": "corp-implemented-with-cross-origin",
       "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "data": "cross-origin",
+      "http": true,
       "meta": false
     }
   }
