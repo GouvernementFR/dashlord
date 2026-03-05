@@ -1,28 +1,30 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 35,
+    "score": 15,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Feb 2026 03:10:27 GMT",
+      "date": "Thu, 05 Mar 2026 03:28:08 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "x-webkit-csp": "default-src 'self'",
       "x-permitted-cross-domain-policies": "master-only",
       "vary": "Accept-Encoding",
-      "x-varnish": "23250239",
+      "x-varnish": "16556027",
       "age": "0",
       "accept-ranges": "bytes",
       "x-frame-options": "DENY",
       "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "x-xss-protection": "1;mode=block"
+      "x-xss-protection": "1;mode=block",
+      "x-cdn": "Imperva",
+      "x-iinfo": "0-35116033-35116034 NNNN CT(77 -1 0) RT(1772681288223 0) q(0 0 1 -1) r(2 2) U18"
     }
   },
   "tests": {
@@ -39,10 +41,29 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "visid_incap_3301724": {
+          "domain": "esante.gouv.fr",
+          "expires": "2027-03-04T06:56:35.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "nlbi_3301724": {
+          "domain": "esante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_483_3301724": {
+          "domain": "esante.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -78,7 +99,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -89,7 +110,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
