@@ -1,20 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 5,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Feb 2026 03:11:13 GMT",
+      "date": "Thu, 05 Mar 2026 03:29:23 GMT",
       "server": "Apache",
       "link": "<https://www.ifi-id.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.ifi-id.com/wp-json/wp/v2/pages/5>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.ifi-id.com/>; rel=shortlink",
-      "set-cookie": [
-        "htmega_has_count_5=1769915474; expires=Mon, 02-Feb-2026 03:11:14 GMT; Max-Age=86400; path=/; HttpOnly"
-      ],
       "connection": "close",
       "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
@@ -34,19 +31,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "htmega_has_count_5": {
-          "domain": "www.ifi-id.com",
-          "expires": "2026-02-02T03:11:14.000Z",
-          "httponly": true,
-          "max-age": 86400,
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
