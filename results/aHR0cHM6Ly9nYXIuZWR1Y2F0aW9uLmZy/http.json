@@ -10,13 +10,13 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "openresty",
-      "date": "Sat, 31 Jan 2026 03:00:01 GMT",
+      "date": "Thu, 05 Mar 2026 03:20:10 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
       "set-cookie": [
-        "PHPSESSID=0og2lh16kmuhm34ui966jneqgn; path=/"
+        "PHPSESSID=t6ug2n5pnjqvk9q1c29pkavbum; path=/; secure"
       ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
@@ -50,7 +50,8 @@
         "PHPSESSID": {
           "domain": "gar.education.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "secure": true
         }
       },
       "sameSite": false
