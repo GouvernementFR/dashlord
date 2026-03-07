@@ -3,19 +3,19 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Feb 2026 03:06:26 GMT",
-      "server": "Apache",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade, close",
-      "last-modified": "Sat, 22 Mar 2025 05:32:30 GMT",
+      "date": "Sat, 07 Mar 2026 03:29:29 GMT",
+      "server": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30",
+      "last-modified": "Sun, 19 Nov 2023 10:41:05 GMT",
+      "etag": "\"1443-60a7f01a55240\"",
       "accept-ranges": "bytes",
-      "content-length": "1220",
+      "content-length": "5187",
+      "connection": "close",
       "content-type": "text/html"
     }
   },
@@ -49,12 +49,13 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
+      "result": "redirection-not-to-https",
       "scoreModifier": -20,
-      "destination": "http://institutfrancais-madagascar.com/",
-      "redirects": false,
+      "destination": "http://institutfrancais-madagascar.com/dashboard/",
+      "redirects": true,
       "route": [
-        "http://institutfrancais-madagascar.com/"
+        "http://institutfrancais-madagascar.com/",
+        "http://institutfrancais-madagascar.com/dashboard/"
       ],
       "statusCode": 200
     },
@@ -70,7 +71,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -80,10 +81,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//code.jquery.com/jquery-1.10.2.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
