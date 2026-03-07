@@ -9,20 +9,20 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 02 Feb 2026 17:37:23 GMT",
+      "date": "Fri, 06 Mar 2026 23:58:59 GMT",
       "server": "Apache",
       "cache-control": "max-age=10800, public",
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "content-security-policy": "default-src 'self' 'unsafe-inline' www.youtube-nocookie.com www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' code.jquery.com stackpath.bootstrapcdn.com cdn.jsdelivr.net www.googletagmanager.com tagmanager.google.com tag.aticdn.net www.gstatic.com cdnjs.cloudflare.com js/intlTelInput.js www.google.com static.hotjar.com script.hotjar.com static.hotjar.com/c/hotjar-3253247.js script.hotjar.com/modules.bd615e91f206bba6c106.js; object-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' use.typekit.net stackpath.bootstrapcdn.com www.googletagmanager.com cdn.jsdelivr.net maxcdn.bootstrapcdn.com p.typekit.net fonts.googleapis.com tagmanager.google.com ton.twimg.com www.gstatic.com/charts/ css/intlTelInput.css static.hotjar.com script.hotjar.com cdnjs.cloudflare.com static.piste.gouv.fr; img-src 'self' 'unsafe-inline' data: i.ytimg.com www.googletagmanager.com pbs.twimg.com logs1412.xiti.com www.google-analytics.com/g/collect static.hotjar.com script.hotjar.com cdn.jsdelivr.net static.piste.gouv.fr; media-src 'self' 'unsafe-inline'; frame-src 'self' www.youtube-nocookie.com www.youtube.com view.genial.ly www.google.com vars.hotjar.com view.genially.com; child-src 'self' www.youtube-nocookie.com; font-src 'self' 'unsafe-inline' use.typekit.net *.bootstrapcdn.com cdn.jsdelivr.net themes.googleusercontent.com fonts.gstatic.com data: script.hotjar.com cdnjs.cloudflare.com; connect-src 'self' logs1412.xiti.com www.google-analytics.com/g/collect *.hotjar.com *.hotjar.io wss://*.hotjar.com",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' www.youtube-nocookie.com www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' code.jquery.com stackpath.bootstrapcdn.com cdn.jsdelivr.net www.googletagmanager.com tagmanager.google.com tag.aticdn.net www.gstatic.com cdnjs.cloudflare.com js/intlTelInput.js www.google.com static.hotjar.com script.hotjar.com static.hotjar.com/c/hotjar-3253247.js script.hotjar.com/modules.bd615e91f206bba6c106.js cdn.plot.ly unpkg.com/bootstrap-table@1.22.3/dist/bootstrap-table.min.js platform.twitter.com; object-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' use.typekit.net stackpath.bootstrapcdn.com www.googletagmanager.com cdn.jsdelivr.net maxcdn.bootstrapcdn.com p.typekit.net fonts.googleapis.com tagmanager.google.com ton.twimg.com www.gstatic.com/charts/ css/intlTelInput.css static.hotjar.com script.hotjar.com cdnjs.cloudflare.com static.piste.gouv.fr unpkg.com/bootstrap-table@1.22.3/dist/bootstrap-table.min.css; img-src 'self' 'unsafe-inline' data: i.ytimg.com www.googletagmanager.com pbs.twimg.com logs1412.xiti.com www.google-analytics.com/g/collect static.hotjar.com script.hotjar.com cdn.jsdelivr.net static.piste.gouv.fr *.esante.gouv.fr; media-src 'self' 'unsafe-inline'; frame-src 'self' www.youtube-nocookie.com www.youtube.com view.genial.ly www.google.com vars.hotjar.com view.genially.com platform.twitter.com www.facebook.com; child-src 'self' www.youtube-nocookie.com; font-src 'self' 'unsafe-inline' use.typekit.net *.bootstrapcdn.com cdn.jsdelivr.net themes.googleusercontent.com fonts.gstatic.com data: script.hotjar.com cdnjs.cloudflare.com; connect-src 'self' logs1412.xiti.com www.google-analytics.com/g/collect *.hotjar.com *.hotjar.io wss://*.hotjar.com api.digitalcx.com cdn.plot.ly; upgrade-insecure-requests",
       "from-origin": "same",
       "referrer-policy": "no-referrer",
       "expect-ct": "max-age=86400, report-uri=\"/report-expect-ct-failure\"",
-      "last-modified": "Mon, 02 Feb 2026 17:37:22 GMT",
-      "etag": "\"1770053842-gzip\"",
-      "content-length": "21258",
+      "last-modified": "Fri, 06 Mar 2026 23:58:58 GMT",
+      "etag": "\"1772841538-gzip\"",
+      "content-length": "23697",
       "content-type": "text/html; charset=UTF-8",
       "strict-transport-security": "max-age=31536000; preload",
       "x-xss-protection": "1; mode=block",
@@ -49,14 +49,17 @@
           "'unsafe-eval'",
           "'unsafe-inline'",
           "cdn.jsdelivr.net",
+          "cdn.plot.ly",
           "cdnjs.cloudflare.com",
           "code.jquery.com",
           "js/intltelinput.js",
+          "platform.twitter.com",
           "script.hotjar.com",
           "stackpath.bootstrapcdn.com",
           "static.hotjar.com",
           "tag.aticdn.net",
           "tagmanager.google.com",
+          "unpkg.com/bootstrap-table@1.22.3/dist/bootstrap-table.min.js",
           "www.google.com",
           "www.googletagmanager.com",
           "www.gstatic.com"
@@ -80,6 +83,7 @@
           "static.piste.gouv.fr",
           "tagmanager.google.com",
           "ton.twimg.com",
+          "unpkg.com/bootstrap-table@1.22.3/dist/bootstrap-table.min.css",
           "use.typekit.net",
           "www.googletagmanager.com",
           "www.gstatic.com/charts/"
@@ -87,6 +91,7 @@
         "img-src": [
           "'self'",
           "'unsafe-inline'",
+          "*.esante.gouv.fr",
           "cdn.jsdelivr.net",
           "data:",
           "i.ytimg.com",
@@ -104,9 +109,11 @@
         ],
         "frame-src": [
           "'self'",
+          "platform.twitter.com",
           "vars.hotjar.com",
           "view.genial.ly",
           "view.genially.com",
+          "www.facebook.com",
           "www.google.com",
           "www.youtube-nocookie.com",
           "www.youtube.com"
@@ -131,9 +138,14 @@
           "'self'",
           "*.hotjar.com",
           "*.hotjar.io",
+          "api.digitalcx.com",
+          "cdn.plot.ly",
           "logs1412.xiti.com",
           "wss://*.hotjar.com",
           "www.google-analytics.com/g/collect"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
         ]
       },
       "http": true,
@@ -173,11 +185,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://industriels.esante.gouv.fr/",
+      "destination": "https://esante.gouv.fr/ens",
       "redirects": true,
       "route": [
         "http://industriels.esante.gouv.fr/",
-        "https://industriels.esante.gouv.fr/"
+        "https://industriels.esante.gouv.fr/",
+        "https://esante.gouv.fr/ens"
       ],
       "statusCode": 200
     },
