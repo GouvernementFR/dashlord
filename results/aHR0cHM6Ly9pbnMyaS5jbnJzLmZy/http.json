@@ -9,25 +9,25 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 02 Feb 2026 18:11:54 GMT",
+      "date": "Fri, 06 Mar 2026 15:57:59 GMT",
       "cache-control": "max-age=86400, public",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "content-security-policy": "default-src 'self'; script-src 'self' *.axept.io *.cegedim.cloud player.ausha.co *.cloudflare.com cdn.mathjax.org v.calameo.com *.dailymotion.com *.vimeo.com 'unsafe-eval' webpack: 'unsafe-inline' stats-cnrs-preprod.cegedim.cloud www.statistiques.cnrs.fr statistiques.cnrs.fr; object-src 'none'; style-src 'self' 'unsafe-inline' *.axept.io *.cloudflare.com cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' axeptio.imgix.net favicons.axept.io *.openstreetmap.org data:; media-src 'self'; frame-src 'self' player.ausha.co *.dailymotion.com *.vimeo.com v.calameo.com *.youtube.com mediavideo.cnrs.fr webcast.in2p3.fr *.scoop.it *.genial.ly; frame-ancestors 'self'; child-src 'self'; font-src 'self' fonts.gstatic.com; connect-src 'self' *.axept.io www.statistiques.cnrs.fr statistiques.cnrs.fr *.cegedim.cloud; report-uri /report-csp-violation; upgrade-insecure-requests",
-      "last-modified": "Mon, 02 Feb 2026 18:11:51 GMT",
+      "content-security-policy": "default-src 'self'; script-src 'self' *.axept.io *.cegedim.cloud player.ausha.co *.cloudflare.com cdn.mathjax.org v.calameo.com *.dailymotion.com *.vimeo.com 'unsafe-eval' webpack: 'unsafe-inline' stats-cnrs-preprod.cegedim.cloud www.statistiques.cnrs.fr statistiques.cnrs.fr; object-src 'none'; style-src 'self' 'unsafe-inline' *.axept.io *.cloudflare.com cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' axeptio.imgix.net favicons.axept.io *.openstreetmap.org data:; media-src 'self'; frame-src 'self' player.ausha.co *.dailymotion.com *.vimeo.com v.calameo.com *.youtube.com mediavideo.cnrs.fr webcast.in2p3.fr *.scoop.it *.genial.ly; frame-ancestors 'self'; child-src 'self'; font-src 'self' fonts.gstatic.com *.axept.io; connect-src 'self' *.axept.io www.statistiques.cnrs.fr statistiques.cnrs.fr *.cegedim.cloud; report-uri /report-csp-violation; upgrade-insecure-requests",
+      "last-modified": "Fri, 06 Mar 2026 15:57:58 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "age": "31844",
+      "age": "40236",
       "accept-ranges": "bytes",
       "x-cache": "HIT",
-      "x-cache-hits": "259",
+      "x-cache-hits": "583",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "set-cookie": [
-        "TSc1dc6a3a029=087dc22938ab2800b548d4c1f7bb2923712d743044218555b36e9d664d7fff3f2610fb682ac1ab2e12d50b7978963eec; Secure; Max-Age=30; Path=/",
-        "TSd85d6352027=087dc22938ab2000b0169fe97afed84fed13836cfc831042d81a15ea3d119f78ec3075d34d254a5708a9479b6f113000122e6ec49ab45fc24f1317d0247cd8ff1fad0a55504aca76dc5b50a1f91fef54d16e4f3d1b05a2a0ef32b276c15c0bb4; Secure; Path=/"
+        "TSc1dc6a3a029=087dc22938ab280085aed9ac4d465af445e0376ea14727ece34c36ff4cd135d114586742f92f1f3b1778236cb0e3e801; Secure; Max-Age=30; Path=/",
+        "TSd85d6352027=087dc22938ab2000df274d52f6bc09a6390593510f127521908fb8c9044cb1aa551d57d39decd57d08807a2bc31130001ddabb31c56c8eb239efd1d44c0768ee9f60e46acfc84abb591473419243e7476fe5063f61fb4e8f17aca46947dd691f; Secure; Path=/"
       ],
       "transfer-encoding": "chunked"
     }
@@ -100,6 +100,7 @@
         ],
         "font-src": [
           "'self'",
+          "*.axept.io",
           "fonts.gstatic.com"
         ],
         "connect-src": [
