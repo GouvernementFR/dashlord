@@ -9,7 +9,7 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 02 Feb 2026 16:37:55 GMT",
+      "date": "Fri, 06 Mar 2026 16:11:54 GMT",
       "cache-control": "max-age=300, public, private",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
@@ -18,20 +18,20 @@
       "vary": "Cookie,Accept-Encoding",
       "content-security-policy-report-only": "object-src 'none'; script-src 'self' 'unsafe-inline' connect.facebook.net platform.linkedin.com platform.twitter.com cdn.matomo.cloud cdn.gtranslate.net translate.google.com translate.googleapis.com https://static.hotjar.com https://script.hotjar.com cdn.rawgit.com cdnjs.cloudflare.com https://cdn.ckeditor.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://www.google.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com",
       "content-security-policy": "object-src 'none'; frame-ancestors 'self'",
-      "last-modified": "Mon, 02 Feb 2026 16:37:54 GMT",
-      "etag": "\"1770050274-gzip\"",
+      "last-modified": "Fri, 06 Mar 2026 16:11:54 GMT",
+      "etag": "\"1772813514-gzip\"",
       "content-type": "text/html; charset=UTF-8",
       "x-ecritel-lb": "inpi-lb-01",
       "set-cookie": [
-        "SERVERID=s1; path=/; HttpOnly; Secure",
-        "visid_incap_2207353=/LvdO/61TYWpkkg+SZXPmE5lgWkAAAAAQUIPAAAAAACZggFFyljGm/u6biMXQ7p7; expires=Tue, 02 Feb 2027 07:37:09 GMT; HttpOnly; path=/; Domain=.inpi.fr",
-        "nlbi_2207353=bv82BcMgABDC3mgbe6Nu9QAAAAByCjeTB2mSxsNgonTN5kmx; HttpOnly; path=/; Domain=.inpi.fr",
-        "incap_ses_699_2207353=ZHdoNz9Hf1KVHaKiUFmzCU5lgWkAAAAAZ7HACjPUehqK6mzD0CXwbw==; path=/; Domain=.inpi.fr"
+        "SERVERID=s2; path=/; HttpOnly; Secure",
+        "visid_incap_2207353=RtjjYaDOTMud3vNnfFCcUa6Wq2kAAAAAQUIPAAAAAADF1nZPXbesijI9tuJ8hUE/; expires=Sat, 06 Mar 2027 21:01:33 GMT; HttpOnly; path=/; Domain=.inpi.fr",
+        "nlbi_2207353=2meJc1hGJm/eAwXNe6Nu9QAAAABPCd8buzCtuhHA20bVMaDa; HttpOnly; path=/; Domain=.inpi.fr",
+        "incap_ses_1842_2207353=nABfO0w9Qj2GtRH06RmQGa+Wq2kAAAAAkqHWozyRzJ8sk1g5UH6+2A==; path=/; Domain=.inpi.fr"
       ],
       "connection": "close",
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "18-16079401-16079404 NNNN CT(133 91 0) RT(1770087758557 8) q(0 0 3 0) r(4 5) U24"
+      "x-iinfo": "57-23312518-23312520 NNNN CT(92 98 0) RT(1772852910807 11) q(0 0 2 1) r(3 4) U24"
     }
   },
   "tests": {
@@ -80,7 +80,7 @@
         },
         "visid_incap_2207353": {
           "domain": "inpi.fr",
-          "expires": "2027-02-02T07:37:09.000Z",
+          "expires": "2027-03-06T21:01:33.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -91,7 +91,7 @@
           "path": "/",
           "port": null
         },
-        "incap_ses_699_2207353": {
+        "incap_ses_1842_2207353": {
           "domain": "inpi.fr",
           "path": "/",
           "port": null
@@ -131,7 +131,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
