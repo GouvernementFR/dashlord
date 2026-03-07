@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "C-",
     "error": null,
-    "score": 40,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 03 Feb 2026 03:07:04 GMT",
+      "date": "Sat, 07 Mar 2026 03:16:39 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -18,7 +18,6 @@
       "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
       "link": "<https://www.institutfrancais.mu/wp-json/>; rel=\"https://api.w.org/\", <https://www.institutfrancais.mu/wp-json/wp/v2/pages/3280>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.institutfrancais.mu/>; rel=shortlink",
       "vary": "Accept-Encoding,User-Agent",
-      "referrer-policy": "no-referrer-when-downgrade",
       "content-security-policy": "frame-ancestors 'self' *.aec-app.com *.aec.app",
       "x-frame-options": "SAMEORIGIN"
     }
@@ -83,11 +82,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -111,7 +110,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://ifmaurice.extranet-aec.com/js/aec-webapp.js?ver=6.9": {
+        "https://ifmaurice.extranet-aec.com/js/kiosque-aec.js?ver=6.9.1": {
           "crossorigin": null,
           "integrity": null
         }
