@@ -9,20 +9,21 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Feb 2026 03:04:43 GMT",
+      "date": "Sat, 07 Mar 2026 03:22:03 GMT",
       "x-spip-cache": "21600",
       "x-frame-options": "SAMEORIGIN",
-      "last-modified": "Tue, 03 Feb 2026 03:04:43 GMT",
+      "last-modified": "Sat, 07 Mar 2026 03:22:03 GMT",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
-      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
+      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!4FxibPEKnQOHs1gXIkI7F7SI9ajmikrJGXaOjibSmwyy2uEvbVDOMqnfeUludjo1dmefqDLvo4xmDaJOzCekrWUVO1lb; path=/; Httponly; Secure",
-        "TSc4ff0492027=087dc22938ab2000614dda67a7ce5cf35157f3eb7168d60dc45f9abc4545b8099b130f0184a3793a0877e46c841130003660f065747fd66a931b8330a961b7796c891f8e647f7a23a4432260bb546de861bc3be378ebf571aa9e8bd0bd1a63b0; Secure; Path=/"
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!SKdZwBH4igLPMa4XIkI7F7SI9ajmijrqqbIYisM9YY0vbkEGFOEEh919kDqiUIFL3aXDt6Tte/xIYy4nNO3eeJisVwXN; path=/; Httponly; Secure; SameSite=Lax;",
+        "TS01c71406=01352d3811461e14b7add03ce92e2e21b463303e4a818155b0a6b85c142154b8567ca39cdce5b1ac66c9f561facdb73b36f9f5fb30; Path=/; Secure; HttpOnly",
+        "TSc4ff0492027=087dc22938ab2000151737609febbf05e9c20d511099e8eae732be1707fd55968b36e74ff3b43bb108c8c91034113000233a34452a9af319243c65a7ce4ae7669b875a6165411257948deab88c05c0b7e5c28bc1a1a5ca1be606609ee9e5b17d; Secure; Path=/"
       ],
-      "strict-transport-security": "max-age=31536000"
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -44,6 +45,14 @@
       "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "inspection-travail.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
           "domain": "inspection-travail.gouv.fr",
           "httponly": true,
           "path": "/",
