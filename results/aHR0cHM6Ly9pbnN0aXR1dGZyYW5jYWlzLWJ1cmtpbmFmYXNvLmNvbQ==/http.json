@@ -3,20 +3,18 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 20,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "sw",
-      "date": "Tue, 03 Feb 2026 03:05:06 GMT",
-      "content-type": "text/html",
-      "content-length": "13899",
+      "date": "Sat, 07 Mar 2026 03:31:50 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "57827",
       "connection": "close",
       "upgrade": "h2,h2c",
-      "last-modified": "Wed, 16 Apr 2025 02:40:12 GMT",
-      "accept-ranges": "bytes",
       "vary": "Accept-Encoding"
     }
   },
@@ -50,12 +48,13 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://institutfrancais-burkinafaso.com/",
-      "redirects": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.burritosbeer.com/menu.htm",
+      "redirects": true,
       "route": [
-        "http://institutfrancais-burkinafaso.com/"
+        "http://institutfrancais-burkinafaso.com/",
+        "https://www.burritosbeer.com/menu.htm"
       ],
       "statusCode": 200
     },
@@ -81,10 +80,19 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://assets.teepublic.com/assets/product_page-2af4d77ccb74974f4afec6972768b6abd2dca23b01d5b2e7380c8a38dff3c308.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://assets.teepublic.com/packs/js/product_page-c8d7a3eb618da10ad666.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
