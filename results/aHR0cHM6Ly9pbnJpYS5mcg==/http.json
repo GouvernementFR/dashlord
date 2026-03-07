@@ -1,28 +1,29 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "C-",
     "error": null,
-    "score": 40,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Feb 2026 03:05:18 GMT",
+      "date": "Fri, 06 Mar 2026 23:03:44 GMT",
       "server": "Apache",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "x-content-type-options": "nosniff, nosniff",
       "cache-control": "must-revalidate, no-cache, private",
-      "x-drupal-dynamic-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
-      "x-frame-options": "\\\"sameorigin\\\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "x-generator": "Drupal 11 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "upgrade": "h2",
+      "connection": "Upgrade, close",
       "vary": "Accept-Encoding",
-      "connection": "close",
-      "transfer-encoding": "chunked",
+      "content-length": "23201",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -101,17 +102,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-header-invalid",
-      "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": false,
       "result": "x-frame-options-header-invalid",
       "scoreModifier": -20,
-      "data": "\\\"sameorigin\\\""
+      "data": "SAMEORIGIN, SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
