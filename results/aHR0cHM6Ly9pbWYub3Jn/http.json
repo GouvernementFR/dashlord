@@ -12,14 +12,14 @@
       "server": "AkamaiGHost",
       "mime-version": "1.0",
       "content-type": "text/html",
-      "content-length": "357",
-      "x-reference-error": "18.e8263e17.1770087750.730b0082",
-      "cache-control": "max-age=0",
-      "date": "Tue, 03 Feb 2026 03:02:30 GMT",
+      "content-length": "355",
+      "expires": "Sat, 07 Mar 2026 03:32:06 GMT",
+      "x-reference-error": "18.b5bd7768.1772854326.886731c",
+      "date": "Sat, 07 Mar 2026 03:32:06 GMT",
       "connection": "close",
       "alt-svc": "h3=\":443\"; ma=93600",
       "strict-transport-security": "max-age=31536000",
-      "akamai-grn": "0.e8263e17.1770087750.730b0082"
+      "akamai-grn": "0.b5bd7768.1772854326.886731c"
     }
   },
   "tests": {
@@ -54,13 +54,17 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://imf.org/",
+      "destination": "https://www.imf.org/en/home",
       "redirects": true,
       "route": [
         "http://imf.org/",
-        "https://imf.org/"
+        "https://imf.org/",
+        "https://www.imf.org/",
+        "https://www.imf.org/en/",
+        "https://www.imf.org/en",
+        "https://www.imf.org/en/home"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
