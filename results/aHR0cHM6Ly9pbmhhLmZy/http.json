@@ -1,18 +1,18 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Feb 2026 03:02:34 GMT",
+      "date": "Sat, 07 Mar 2026 03:08:29 GMT",
       "server": "Apache",
       "content-type": "text/html; charset=UTF-8",
-      "last-modified": "Mon, 02 Feb 2026 16:02:47 GMT",
+      "last-modified": "Fri, 06 Mar 2026 15:04:03 GMT",
       "strict-transport-security": "max-age=15768000; includeSubDomains; preload;",
       "connection": "close",
       "transfer-encoding": "chunked"
@@ -81,10 +81,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://code.jquery.com/ui/1.13.2/jquery-ui.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
