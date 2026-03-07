@@ -1,33 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C-",
     "error": null,
-    "score": 65,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Feb 2026 03:06:38 GMT",
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate",
-      "pragma": "no-cache",
-      "strict-transport-security": "max-age=31536000; includeSubdomains;",
+      "date": "Sat, 07 Mar 2026 02:45:17 GMT",
+      "cache-control": "must-revalidate, no-cache, private",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
       "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-drupal-cache": "HIT",
+      "strict-transport-security": "max-age=31536000; includeSubdomains;",
       "x-xss-protection": "1;  mode=block",
-      "set-cookie": [
-        "PHPSESSID=vn9eokp676di163irdsdeg3cp2; path=/;HttpOnly;Secure",
-        "BNIS_vid=fZ9Ceri5AVAjnL/pMnXfy2DzbffGnG40HmW+VGVEtX3KLt7eZpmUc37mPJVK0Lc0tylkmNGRx5gc9SyvMM6c8QZVP2gSnHyQ6lnB3h6fLIjV4Fhq+i2NK/bDdkylaLsFf1tsw0Ck81cShRvEXF0L8oSEMxwVuJ/G1bSJdo74MdIESNNP15IqRRDUAfo/YYyrjzQ+aPMfDfHHNg45JWP7FQ==; Path=/",
-        "BNIS___utm_is1=yQEQ9nX4N6qrjV1ECUBB+Py7T2Q98HYSbkyt8vgimVhZ/6oBZwhd4Zpsoy/Eg9N3Oo78GLUffHzujEm54H6wURunqFPwBuggAeRnPg5t0j+TjBH3p8oY5A==; Max-Age=31536000; Path=/",
-        "BNIS___utm_is2=t9Ai4aXvXe953n9nneTPrYD/BFIDjwsud2co7sgLT2w6rgyvPtzCJ+AxPb1nRkwMUeUWkdauK6g=; Max-Age=10800; Path=/",
-        "BNIS___utm_is3=dIhKvDJuTFNA1BfRVsft75Crc6zi/FmFQxqhNsCfFyMYiplBkaHNPN1PYTLQrIVYWL/FLwud+Cp2v8hHlH+WnkIxe7Mq9iMur0oEV/KklXI=;  Path=/",
-        "BNIS_x-bni-jas=CleMGjkgjbM5MgIt52p+OuYV6kOGmLsu+pbPXVDqqjWCVEZk4LpVpegqE9WgnIs0UCjc7tZdZyoWHXSRHYsR2EtgcMJy8DgGtGCS5anKhMx+HtPZvWpPEA==; Path=/"
-      ],
-      "vary": "Accept-Encoding,User-Agent",
       "connection": "close",
-      "content-type": "text/html; charset=utf-8",
-      "x-frame-options": "SAMEORIGIN"
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "BNIS_vid=Pd95Kf8Ze3Vb/RBrYQsufCx8yddRPdeBTw/Jl4A6x9dDmqfQb9NcKO4LEknpv0mIxnbySr1ql17MiBvZmxxC9lS8n4SE41JxqkslcxKvAxQ0pwu7GDdd6t6f+Ltnr/q/zWyXp1Y6Wz4ssJw3xr2cqT4tRI77r0aa0raj5OOvKzEAEFrAIldtJc19g0/33QbAurxC5PDwj0U=; Path=/",
+        "BNIS___utm_is1=c8YaLsQY0pfUUnB8y8VNg0+Q0fazY3I+H1mauTHrj6zgJiR10xJwAnLQTXSvQiJ3bsYawymUi4U4eVr8ycCXbR99n+vfEuTIEaQhv31vwR0IxvOUJdv/fw==; Max-Age=31536000; Path=/",
+        "BNIS___utm_is2=wANlVXWT/B5uGJg/BhSkvsqRqCDSZ6KZ4kP79PdFNGx9DQEbg0v2T++wWRd7IGZCYbfu1RLvv9w=; Max-Age=10800; Path=/",
+        "BNIS___utm_is3=SibxprKI/YJ/fip6yGm0QxKkOnkeUAwuyW8Z+F1bkgjsOIePdt5zEk6tO/I14JbGMKoV7xgsxuEBf45W9fd2fK2r0o9dGI3YX9kmrYLlvYQ=;  Path=/",
+        "BNIS_x-bni-jas=MTo4FVQ3pnvoW/Yxda5/SMwRjSwnQVSKENcccjdEQ1o18vEZFIshCJAxIr8DSDgOBQWxNJ/n8wBnprldSKAIlq5FTcGbe2SaD/gyBMBD++5edDQus5vwFg==; Path=/"
+      ]
     }
   },
   "tests": {
@@ -48,13 +49,6 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "PHPSESSID": {
-          "domain": "www.ined.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
         "BNIS_vid": {
           "domain": "www.ined.fr",
           "path": "/",
@@ -141,10 +135,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
