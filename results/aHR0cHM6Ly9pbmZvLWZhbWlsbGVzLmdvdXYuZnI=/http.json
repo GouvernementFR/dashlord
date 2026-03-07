@@ -9,7 +9,7 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Feb 2026 03:03:21 GMT",
+      "date": "Sat, 07 Mar 2026 03:08:31 GMT",
       "x-frame-options": "SAMEORIGIN",
       "location": "http://info-familles.gouv.fr/",
       "content-length": "237",
@@ -17,7 +17,7 @@
       "connection": "close",
       "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab20000b7408c60c0bef16cf2ea1acf6c749c892cd6de56d2a6898bb16f9dbd8ef23fb08f839105d113000a86362bf902189845247d2e061632821ddd5fd3779f17e2e3f6025c13579d2384162b621223c312f8e6b21975b0cc4d5; Secure; Path=/"
+        "TSc4ff0492027=087dc22938ab2000a734c69d594caf4fc4605e20e3574abbec303718bcf6f09ed1b724f61a390d6008546e5b8111300039ce47862665cd963e3277f8a3c7e7b52105bb502bdb07edd2ae79feda233df342537511752e8581899bfc596be2299d; Secure; Path=/"
       ]
     }
   },
@@ -40,6 +40,14 @@
       "scoreModifier": 0,
       "data": {
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "info-familles.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
           "domain": "info-familles.gouv.fr",
           "httponly": true,
           "path": "/",
