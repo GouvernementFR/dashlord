@@ -1,27 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Thu, 05 Feb 2026 03:02:51 GMT",
+      "date": "Mon, 09 Mar 2026 03:17:52 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "vary": "Accept-Encoding, X-Forwarded-Proto,Accept-Encoding,User-Agent",
-      "link": "<https://kr.ambafrance-culture.org/wp-json/>; rel=\"https://api.w.org/\", <https://kr.ambafrance-culture.org/wp-json/wp/v2/pages/14>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://kr.ambafrance-culture.org/>; rel=shortlink",
-      "pragma": "public",
-      "cache-control": "max-age=3600, public, max-age=0",
+      "vary": "Accept-Encoding, Accept-Encoding,User-Agent",
+      "link": "<https://kr.ambafrance-culture.org/wp-json/>; rel=\"https://api.w.org/\", <https://kr.ambafrance-culture.org/wp-json/wp/v2/pages/73851>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://kr.ambafrance-culture.org/>; rel=shortlink",
+      "x-tec-api-version": "v1",
+      "x-tec-api-root": "https://kr.ambafrance-culture.org/wp-json/tribe/events/v1/",
+      "x-tec-api-origin": "https://kr.ambafrance-culture.org",
       "x-content-type-options": "nosniff",
-      "last-modified": "Thu, 05 Feb 2026 03:02:51 GMT",
-      "expires": "Thu, 05 Feb 2026 03:02:50 GMT",
-      "referrer-policy": "no-referrer-when-downgrade"
+      "cache-control": "max-age=0",
+      "expires": "Mon, 09 Mar 2026 03:17:50 GMT"
     }
   },
   "tests": {
@@ -66,11 +66,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
