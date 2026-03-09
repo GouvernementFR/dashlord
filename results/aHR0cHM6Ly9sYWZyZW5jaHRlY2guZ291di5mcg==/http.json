@@ -1,21 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D-",
     "error": null,
-    "score": 75,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 07 Feb 2026 02:58:54 GMT",
+      "date": "Mon, 09 Mar 2026 03:34:34 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "22974",
+      "content-length": "23111",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "last-modified": "Fri, 06 Feb 2026 16:43:57 GMT",
+      "last-modified": "Sun, 08 Mar 2026 17:31:35 GMT",
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "content-security-policy": "default-src https: 'self'; object-src 'none'; child-src https: platform.twitter.com; img-src https: data:; font-src https: data:; style-src  https: 'unsafe-inline' 'unsafe-eval' 'self'; script-src https: 'unsafe-inline' 'unsafe-eval' 'self';",
@@ -132,10 +132,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//lafrenchtech.gouv.fr/?wordfence_syncAttackData=1772991095.5183": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
