@@ -4,23 +4,16 @@
     "grade": "D",
     "error": null,
     "score": 30,
-    "statusCode": 200,
+    "statusCode": 403,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Feb 2026 03:01:00 GMT",
-      "server": "Apache/2.4.37 (Red Hat Enterprise Linux)",
-      "cache-control": "max-age=0",
-      "x-ua-compatible": "IE=100",
-      "content-type": "text/html; charset=utf-8",
-      "set-cookie": [
-        "sympa_session=36697004434513; path=/; secure; HttpOnly"
-      ],
-      "via": "1.1 liste-diff.education.gouv.fr",
-      "x-rproxy-isi": "rp2ngextdu",
+      "date": "Mon, 09 Mar 2026 03:20:01 GMT",
+      "server": "Apache",
+      "content-length": "202",
       "connection": "close",
-      "transfer-encoding": "chunked"
+      "content-type": "text/html; charset=iso-8859-1"
     }
   },
   "tests": {
@@ -38,17 +31,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "sympa_session": {
-          "domain": "liste-diff.education.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -63,14 +48,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://liste-diff.education.gouv.fr/sympa",
+      "destination": "https://liste-diff.education.gouv.fr/",
       "redirects": true,
       "route": [
         "http://liste-diff.education.gouv.fr/",
-        "https://liste-diff.education.gouv.fr/",
-        "https://liste-diff.education.gouv.fr/sympa"
+        "https://liste-diff.education.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -95,7 +79,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
