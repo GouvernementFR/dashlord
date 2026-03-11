@@ -9,16 +9,16 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:08:53 GMT",
+      "date": "Wed, 11 Mar 2026 03:17:07 GMT",
       "server": "MSAWS",
       "set-cookie": [
-        "JSESSIONID_LFP=A243C7156C2E35900F8C292D761406E1.c59slfp27; Path=/; HttpOnly",
+        "JSESSIONID_LFP=DE3632D3D1D1E58BB793F4114814A0B0.c59slfp23; Path=/; HttpOnly",
         "ORIGINE=71; path=/",
         "SITE_COURANT=021; path=/",
-        "ANONYME=Y29kZURlcHQ9MDB8dXJsT3JpZ2luZT1odHRwOi8vbXNhLmZy; Path=/; Secure; HttpOnly",
+        "JetonCA=90dfd57d1151f8401024ab606e38349cd6b7f1d6b0f540ca66761da5ce130cfa730d1932eca4dbb6f98451665d7b20aa1835bf28490216aa45468d824d60b323421555268e8056809e275d17b4e2be90585a11c3bb928b37d6c8363873f3aa0a2ffdb1ad778bd0b1561e94cc186891894e1fae11443c5d7cb7601f3f1ce0b44533541cbd55a6c2a2_06f1b68e2c82c95cd3e9791107375c14; Path=/; Secure; HttpOnly",
         "PERSONNALISATION=\"MDA=\"; Version=1; Path=/; Secure; HttpOnly",
-        "JetonCA=90dfd57d1151f8409b33b9d5665367d817c9258aae1bed1666761da5ce130cfa730d1932eca4dbb6f98451665d7b20aa1835bf28490216aa45468d824d60b323421555268e8056809e275d17b4e2be90585a11c3bb928b37d6c8363873f3aa0a2ffdb1ad778bd0b14b5479ada3c9f5ce85c49b773a5cd074146517b74efe684e13aa53cb0a544223_b128e8ccc61fbc7d2bbd34538e7761e9; Path=/; Secure; HttpOnly",
-        "GUEST_LANGUAGE_ID=fr_FR; Expires=Tue, 09-Feb-2027 03:08:53 GMT; Path=/; HttpOnly"
+        "ANONYME=Y29kZURlcHQ9MDB8dXJsT3JpZ2luZT1odHRwOi8vbXNhLmZy; Path=/; Secure; HttpOnly",
+        "GUEST_LANGUAGE_ID=fr_FR; Expires=Thu, 11-Mar-2027 03:17:07 GMT; Path=/; HttpOnly"
       ],
       "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
       "cache-control": "private, no-cache, no-store, must-revalidate",
@@ -68,7 +68,7 @@
           "path": "/",
           "port": null
         },
-        "ANONYME": {
+        "JetonCA": {
           "domain": "www.msa.fr",
           "httponly": true,
           "path": "/",
@@ -82,7 +82,7 @@
           "port": null,
           "secure": true
         },
-        "JetonCA": {
+        "ANONYME": {
           "domain": "www.msa.fr",
           "httponly": true,
           "path": "/",
@@ -91,7 +91,7 @@
         },
         "GUEST_LANGUAGE_ID": {
           "domain": "www.msa.fr",
-          "expires": "2027-02-09T03:08:53.000Z",
+          "expires": "2027-03-11T03:17:07.000Z",
           "httponly": true,
           "path": "/",
           "port": null
