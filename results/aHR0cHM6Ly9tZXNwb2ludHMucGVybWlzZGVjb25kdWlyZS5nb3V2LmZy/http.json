@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:10:14 GMT",
+      "date": "Wed, 11 Mar 2026 03:17:10 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -22,17 +22,14 @@
       "origin-agent-cluster": "?1",
       "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9cb02c2f6fec483d\"",
+      "server-timing": "chlray;desc=\"9da767972d1d4648\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "set-cookie": [
-        "__cf_bm=uKVOGj8PoRz3HbBHm2tmxlPdOkDXnDnvU3yrjDwHzTA-1770606614-1.0.1.1-Z_ZjEdJvHjWUkHlvg7NX7j1WEZysx9QL6XMuQB_EeXVOi5iIIsXr_apdIO0jmP6v5OJ6Bru.KfPb3YcmeEow72QpBatUIVv3BYLCF2YO4Ms; path=/; expires=Mon, 09-Feb-26 03:40:14 GMT; domain=.permisdeconduire.gouv.fr; HttpOnly; Secure; SameSite=None"
+        "__cf_bm=zNpZiV4h8StYfGk5C.c__W3uls4KhuYGOrT4KXnSYsY-1773199030.9049203-1.0.1.1-X46skZy.WhsB2Pbiklbp55ICidri11wItw79W8h4wjMByl1xRKGdFfkKzFT9o3ZLPFT0e4pIXDZ7TsDmMq7L07tI0LfxnwhATnsp2IOI84uz0Pu1wEvA5olCr18d8YOG; HttpOnly; Secure; Path=/; Domain=permisdeconduire.gouv.fr; Expires=Wed, 11 Mar 2026 03:47:10 GMT"
       ],
-      "vary": "Accept-Encoding",
       "server": "cloudflare",
-      "cf-ray": "9cb02c2f6fec483d-SJC"
+      "cf-ray": "9da767972d1d4648-DFW"
     }
   },
   "tests": {
@@ -69,13 +66,13 @@
         },
         "bZA_": {
           "domain": "mespoints.permisdeconduire.gouv.fr",
-          "expires": "2026-02-09T05:10:14.000Z",
+          "expires": "2026-03-11T05:17:10.000Z",
           "path": "/",
           "port": null
         },
         "__cfwaitingroom_mes_points_permis": {
           "domain": "mespoints.permisdeconduire.gouv.fr",
-          "expires": "2026-02-09T03:17:14.000Z",
+          "expires": "2026-03-11T03:24:10.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -84,11 +81,10 @@
         },
         "__cf_bm": {
           "domain": "permisdeconduire.gouv.fr",
-          "expires": "2026-02-09T03:40:14.000Z",
+          "expires": "2026-03-11T03:47:10.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         },
         "_cfuvid": {
@@ -114,13 +110,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=5gWUsdeYHTkZoBkjqYnp6wP6C_A8iSC1sG3VwDauVmo%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=EgtJzoAn27-xs8sSe1_Q3baFzNdEeWL7__nvhb_snLA",
+      "destination": "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=Bx-D9dzalgXZ8yQPWW44Ooyo9IrYKkgTtGAcnyUJPa0%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=hWQzBIedWfqN5PtPCIrtA7QYpSDTPKm-3i1b19W2VF4",
       "redirects": true,
       "route": [
         "http://mespoints.permisdeconduire.gouv.fr/",
         "https://mespoints.permisdeconduire.gouv.fr/",
         "https://mespoints.permisdeconduire.gouv.fr/oauth2/authorization/mes-points-permis",
-        "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=5gWUsdeYHTkZoBkjqYnp6wP6C_A8iSC1sG3VwDauVmo%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=EgtJzoAn27-xs8sSe1_Q3baFzNdEeWL7__nvhb_snLA"
+        "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=Bx-D9dzalgXZ8yQPWW44Ooyo9IrYKkgTtGAcnyUJPa0%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=hWQzBIedWfqN5PtPCIrtA7QYpSDTPKm-3i1b19W2VF4"
       ],
       "statusCode": 403
     },
