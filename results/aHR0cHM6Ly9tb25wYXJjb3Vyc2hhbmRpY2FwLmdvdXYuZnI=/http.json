@@ -3,35 +3,24 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
-    "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "score": 5,
+    "statusCode": 403,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cache-control": "max-age=300, public",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff, nosniff",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "strict-transport-security": "max-age=15768000; includeSubDomains; preload",
-      "last-modified": "Mon, 09 Feb 2026 03:11:42 GMT",
-      "etag": "\"1770606702-gzip\"",
-      "x-xss-protection": "1; mode=block",
-      "x-permitted-cross-domain-policies": "none",
-      "referrer-policy": "same-origin",
-      "content-type": "text/html; charset=UTF-8",
-      "x-cache-hits": "0",
-      "x-frame-options": "SAMEORIGIN",
+      "x-blocked-by": "00ae2040f72541549cf6b52fde89abcf",
+      "content-type": "text/html",
       "x-cdn": "Imperva",
-      "x-iinfo": "17-113853144-113434579 pNNN RT(1770606702167 3) q(0 1 1 0) r(8 8) U24",
-      "content-length": "18438",
-      "date": "Mon, 09 Feb 2026 03:11:42 GMT",
+      "x-iinfo": "17-10962798-10331567 pNYN RT(1773199537603 8) q(0 0 0 7) r(1 1) U24",
+      "content-length": "412",
+      "date": "Wed, 11 Mar 2026 03:25:37 GMT",
       "connection": "close",
       "vary": "Accept-Encoding",
       "set-cookie": [
-        "nlbi_2290223=2N6dfc/PSlWX14pPSSsW3QAAAAC6sjTCTdjt+fS+VQira0cl; HttpOnly; path=/; Domain=.monparcourshandicap.gouv.fr",
-        "visid_incap_2290223=T/J5vzMGQs2hTwVgHy5nI21QiWkAAAAAQUIPAAAAAABO5zgszvSWdzmKp9blVEo1; expires=Mon, 08 Feb 2027 06:27:11 GMT; HttpOnly; path=/; Domain=.monparcourshandicap.gouv.fr",
-        "incap_ses_7239_2290223=TfAVWa6CABBfJg7aoBh2ZG1QiWkAAAAAa655iK+Rp0kFdFARLQT2sQ==; path=/; Domain=.monparcourshandicap.gouv.fr"
+        "nlbi_2290223=zBROZIpv/15UC/IvSSsW3QAAAABLw2sNqujw5F2mNK9KcAo3; HttpOnly; path=/; Domain=.monparcourshandicap.gouv.fr",
+        "visid_incap_2290223=i55MODirQs2x3BxKpegfjrHgsGkAAAAAQUIPAAAAAACOHkzsIC5TQhGyXBoLqbgL; expires=Wed, 10 Mar 2027 06:23:43 GMT; HttpOnly; path=/; Domain=.monparcourshandicap.gouv.fr",
+        "incap_ses_7239_2290223=duLga5XD/x4Kitogqhh2ZLHgsGkAAAAAIcndBYxwjXiPNW2YA8uOaA==; path=/; Domain=.monparcourshandicap.gouv.fr"
       ]
     }
   },
@@ -50,8 +39,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "nlbi_2290223": {
           "domain": "monparcourshandicap.gouv.fr",
@@ -61,7 +50,7 @@
         },
         "visid_incap_2290223": {
           "domain": "monparcourshandicap.gouv.fr",
-          "expires": "2027-02-08T06:27:11.000Z",
+          "expires": "2027-03-10T06:23:43.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -92,53 +81,48 @@
         "http://monparcourshandicap.gouv.fr/",
         "https://www.monparcourshandicap.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "same-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=15768000; includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 15768000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//cdn1.readspeaker.com/script/11237/webReader/webReader.js?pids=wr": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
       "pass": false,
-      "result": "x-content-type-options-header-invalid",
+      "result": "x-content-type-options-not-implemented",
       "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
