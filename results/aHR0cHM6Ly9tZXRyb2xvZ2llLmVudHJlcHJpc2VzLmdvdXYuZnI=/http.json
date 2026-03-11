@@ -10,17 +10,17 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 09 Feb 2026 03:11:07 GMT",
+      "date": "Wed, 11 Mar 2026 03:19:46 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=600",
-      "x-drupal-dynamic-cache": "MISS",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Mon, 09 Feb 2026 03:21:07 GMT",
-      "last-modified": "Sun, 08 Feb 2026 21:07:39 GMT",
-      "etag": "\"1770584859\"",
+      "expires": "Wed, 11 Mar 2026 03:29:46 GMT",
+      "last-modified": "Tue, 10 Mar 2026 15:49:43 GMT",
+      "etag": "\"1773157783\"",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "MISS",
       "x-proxy-cache": "HIT",
@@ -35,13 +35,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3062843=c9fsPiEJSL2xqcvh78PgVElQiWkAAAAAQUIPAAAAAAB23JM3YhMAKWTm6jkX8FaA; expires=Mon, 08 Feb 2027 11:24:59 GMT; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
-        "nlbi_3062843=hS0/P4w5wC/tI8deA4KP3QAAAABClYpFtvUxxW1mhtBplCyE; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
-        "incap_ses_396_3062843=mq8wZenpZiN3H3uWB+B+BUpQiWkAAAAAT/4wwYJiC237GtRIt3ewFg==; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3062843=ZNNflUfRS760JkPMRRYzE1HfsGkAAAAAQUIPAAAAAAAjm7LdqE7LILTbLCGZI1oR; expires=Wed, 10 Mar 2027 06:52:34 GMT; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
+        "nlbi_3062843=aUdCSCZrQW1pyCFUA4KP3QAAAABwbWHY11uweFk5No85nw7Y; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1286_3062843=wcV8HZPM5iplDQy90srYEVLfsGkAAAAAGjNhnNKDva6prIwtNqWhTw==; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "36-6509466-6509467 NNYN CT(171 353 0) RT(1770606666832 4) q(0 1 6 0) r(7 9) U12"
+      "x-iinfo": "14-28223227-28223228 NNYN CT(129 533 0) RT(1773199186050 7) q(0 0 7 0) r(8 9) U12"
     }
   },
   "tests": {
@@ -98,7 +98,7 @@
       "data": {
         "visid_incap_3062843": {
           "domain": "entreprises.gouv.fr",
-          "expires": "2027-02-08T11:24:59.000Z",
+          "expires": "2027-03-10T06:52:34.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -113,7 +113,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_396_3062843": {
+        "incap_ses_1286_3062843": {
           "domain": "entreprises.gouv.fr",
           "path": "/",
           "port": null,
