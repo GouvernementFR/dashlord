@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 70,
+    "score": 55,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:14:06 GMT",
+      "date": "Wed, 11 Mar 2026 03:17:26 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -19,15 +19,15 @@
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "HIT",
-      "last-modified": "Mon, 09 Feb 2026 03:00:05 GMT",
+      "last-modified": "Wed, 11 Mar 2026 03:15:06 GMT",
       "strict-transport-security": "max-age=15768000",
       "age": "0",
       "x-content-type-options": "nosniff",
-      "x-clara-wadp": "134680024",
+      "x-clara-wadp": "370751980",
       "x-wadp-cache": "MISS",
       "cf-cache-status": "DYNAMIC",
       "server": "cloudflare",
-      "cf-ray": "9cb031d1db99d2e5-ORD"
+      "cf-ray": "9da767f3fe191354-SJC"
     }
   },
   "tests": {
@@ -50,7 +50,7 @@
       "data": {
         "__cf_bm": {
           "domain": "musee-orangerie.fr",
-          "expires": "2026-02-09T03:44:05.000Z",
+          "expires": "2026-03-11T03:47:25.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -70,16 +70,14 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://www.musee-orangerie.fr/fr",
-      "redirects": true,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://musee-orangerie.fr/",
+      "redirects": false,
       "route": [
-        "http://musee-orangerie.fr/",
-        "https://www.musee-orangerie.fr/",
-        "https://www.musee-orangerie.fr/fr"
+        "http://musee-orangerie.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 429
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
