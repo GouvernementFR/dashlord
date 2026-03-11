@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
-      "date": "Mon, 09 Feb 2026 03:15:10 GMT",
+      "date": "Wed, 11 Mar 2026 03:22:43 GMT",
       "server": "Apache",
       "cache-control": "must-revalidate, no-cache, private",
       "content-language": "fr",
@@ -23,16 +23,20 @@
       "content-type": "text/html; charset=UTF-8",
       "via": "1.1 alproxy",
       "transfer-encoding": "chunked",
+      "set-cookie": [
+        "incap_ses_354_3071635=JeiTBKnrnHELfqDmtKnpBALgsGkAAAAAWzm2YrejoBkh4ax+gfqmSQ==; path=/; Domain=.nantes.port.fr; Secure; SameSite=None"
+      ],
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-cdn": "Imperva",
-      "x-iinfo": "14-119673915-119673916 NNNN CT(119 120 0) RT(1770606910015 5) q(0 1 3 -1) r(4 4) U12"
+      "content-security-policy-report-only": "default-src 'self' 'unsafe-eval' 'unsafe-hashes' 'unsafe-inline' data: blob: ; form-action 'none' ; frame-ancestors 'self' ; script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample'; report-uri /csp_report",
+      "x-iinfo": "17-50290397-50290405 NNNN CT(93 90 0) RT(1773199363087 6) q(0 1 3 82) r(4 4) U12"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
+      "result": "csp-not-implemented-but-reporting-enabled",
       "scoreModifier": -25,
       "data": null,
       "http": false,
@@ -48,7 +52,7 @@
       "data": {
         "visid_incap_3071635": {
           "domain": "nantes.port.fr",
-          "expires": "2027-02-08T08:12:50.000Z",
+          "expires": "2027-03-10T06:23:43.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -63,7 +67,14 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_1417_3071635": {
+        "incap_ses_7239_3071635": {
+          "domain": "nantes.port.fr",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "incap_ses_354_3071635": {
           "domain": "nantes.port.fr",
           "path": "/",
           "port": null,
