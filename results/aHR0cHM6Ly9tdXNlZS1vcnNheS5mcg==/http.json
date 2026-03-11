@@ -1,33 +1,36 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C+",
     "error": null,
-    "score": 65,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:15:12 GMT",
+      "date": "Wed, 11 Mar 2026 03:19:50 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "set-cookie": [
+        "__wadp_clearance_sid=1773199189818_yunr44bqw; Path=/; Max-Age=21600; Expires=Wed, 11 Mar 2026 09:19:49 GMT; Max-Age=21600"
+      ],
       "cache-control": "max-age=900, public",
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "HIT",
-      "last-modified": "Mon, 09 Feb 2026 03:15:05 GMT",
+      "last-modified": "Wed, 11 Mar 2026 03:15:04 GMT",
       "strict-transport-security": "max-age=15768000",
       "age": "0",
       "x-content-type-options": "nosniff",
-      "x-clara-wadp": "114951409",
+      "x-clara-wadp": "858242844",
       "x-wadp-cache": "MISS",
       "cf-cache-status": "DYNAMIC",
       "server": "cloudflare",
-      "cf-ray": "9cb0336b5db12714-SJC"
+      "cf-ray": "9da76b782bf261ff-ORD"
     }
   },
   "tests": {
@@ -44,21 +47,28 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "__cf_bm": {
           "domain": "musee-orsay.fr",
-          "expires": "2026-02-09T03:45:11.000Z",
+          "expires": "2026-03-11T03:49:49.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
           "samesite": "none",
           "secure": true
+        },
+        "__wadp_clearance_sid": {
+          "domain": "www.musee-orsay.fr",
+          "expires": "2026-03-11T09:19:49.000Z",
+          "max-age": 21600,
+          "path": "/",
+          "port": null
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
