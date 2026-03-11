@@ -1,22 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 10,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:06:38 GMT",
+      "date": "Wed, 11 Mar 2026 03:19:46 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "d9d86f10-8b9f-4c5d-9128-0429d119f750",
+      "x-request-id": "bf09aee3-037f-4e56-a436-53929c6faf3b",
       "x-powered-by": "Next.js",
-      "etag": "\"uce3as9kec1pry\"",
-      "vary": "Accept-Encoding"
+      "etag": "\"zlravgnsds1pn3\"",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=31536000"
     }
   },
   "tests": {
@@ -48,13 +49,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://lasuite.numerique.gouv.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://lasuite.numerique.gouv.fr/",
+      "redirects": true,
       "route": [
-        "http://lasuite.numerique.gouv.fr/"
+        "http://lasuite.numerique.gouv.fr/",
+        "https://lasuite.numerique.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -69,12 +71,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
