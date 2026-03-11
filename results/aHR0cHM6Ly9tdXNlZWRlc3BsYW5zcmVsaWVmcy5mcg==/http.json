@@ -1,34 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "F",
     "error": null,
-    "score": 70,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:13:34 GMT",
-      "server": "nginx",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "10241",
-      "cache-control": "max-age=2764800, public",
-      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "cache-tags": "config:block_list config:block.block.mpr_theme_abonnementsimplenews node:4 config:block.block.mpr_theme_content config:block.block.mpr_theme_local_actions config:block.block.mpr_theme_selecteurdelangue config:block.block.mpr_theme_breadcrumbs config:block.block.mpr_theme_ecoconceptionmenu config:block.block.mpr_theme_identitedusite config:block.block.mpr_theme_identitedusite_2 config:block.block.mpr_theme_messages config:block.block.mpr_theme_searchform config:block.block.mpr_theme_navigationprincipale config:block.block.mpr_theme_pieddepage block_view config:system.menu.ecoconception-menu node:37 node:38 node:43 node:156 node:44 config:system.menu.footer node:39 node:40 config:system.site node_view paragraph_view paragraph:38 config:paragraphs.settings media_view media:362 config:filter.format.full_html paragraph:69 media:431 node:119 media:269 config:workbench_access.access_scheme.administration taxonomy_term:60 taxonomy_term:59 taxonomy_term:58 taxonomy_term:2 paragraph:1273 node:120 media:368 user:2 node:116 media:268 media:320 paragraph:1272 block_content_view block_content:81 paragraph:1590 paragraph:1589 paragraph:1271 paragraph:1270 paragraph:1269 paragraph:1268 media:109 user_view paragraph:68 media:65 node:87 taxonomy_term:55 paragraph:1067 block_content:55 paragraph:1066 paragraph:1068 media:259 paragraph:1065 paragraph:1064 media:99 paragraph:37 media:430 node:102 taxonomy_term:30 taxonomy_term:29 media:289 taxonomy_term:15 paragraph:1170 node:101 media:288 node:103 media:290 media:322 paragraph:1169 block_content:65 paragraph:1168 paragraph:1167 paragraph:1166 paragraph:1165 media:101 paragraph:36 media:26 node:99 taxonomy_term:21 paragraph:1152 node:100 media:287 config:filter.format.plain_text node:98 media:285 media:321 paragraph:1151 block_content:62 paragraph:1418 paragraph:1417 paragraph:1150 paragraph:1148 media:365 paragraph:1147 paragraph:1149 media:62 media:439 paragraph:202 paragraph:14 media:436 paragraph:12 paragraph:11 paragraph:10 media:435 media:434 media:433 paragraph:1790 node:208 media:478 user:1 node:237 media:465 user:15 node:231 media:466 media:438 config_pages:2 config:system.menu.main node:16 node:17 node:3 node:8 node:19 node:21 node:27 node:205 node:30 node:29 node:25 node:26 node:7 node:46 node:50 node:14 node:55 node:31 node:32 node:33 node:34 node:234 config_pages:1 rendered page_manager_route_name:entity.node.canonical http_response config:user.role.anonymous",
-      "last-modified": "Thu, 05 Feb 2026 10:51:11 GMT",
-      "etag": "\"1770288671-gzip\"",
-      "age": "318122",
-      "x-cache": "HIT",
-      "x-cache-hits": "12811",
-      "accept-ranges": "bytes",
-      "strict-transport-security": "max-age=63072000",
-      "x-cp-via": "C2-2332e808-180bfeb3",
+      "date": "Wed, 11 Mar 2026 03:22:10 GMT",
+      "set-cookie": [
+        "bot_mitigation_cookie=C5F7TIGLY4IHM6PA74KYNYWLXXPAT74IDXKGSGUZSUX5XO6RDDHL66QMJ6TJPTJMCE46LL7I2EHZJOG7ZEDK3TSDBCQWUVWUW6HLHRNRDMBBBEC4UVBA====; Path=/"
+      ],
+      "content-type": "text/html",
+      "cache-control": "no-store",
+      "vary": "Accept-Encoding",
+      "content-length": "202",
+      "x-cp-via": "C2-c4212e52-3905671a",
       "connection": "close"
     }
   },
@@ -46,10 +35,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "bot_mitigation_cookie": {
+          "domain": "museedesplansreliefs.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -83,44 +78,35 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://tarteaucitron.io/load.js?domain=museedesplansreliefs.fr&uuid=cb6c31eaf0d65c6f8768c5734dd1a8df6bfd7780": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.addtoany.com/menu/page.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
