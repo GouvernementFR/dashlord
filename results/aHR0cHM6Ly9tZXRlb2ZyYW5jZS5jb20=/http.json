@@ -1,37 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 20,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "openresty",
-      "date": "Mon, 09 Feb 2026 03:12:44 GMT",
+      "date": "Fri, 13 Mar 2026 03:17:21 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "content-length": "200926",
       "connection": "close",
-      "vary": "Accept-Encoding",
-      "cache-control": "must-revalidate, no-cache, private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "link": "<https://meteofrance.com/>; rel=\"shortlink\", <https://meteofrance.com/>; rel=\"canonical\", <https://meteofrance.com/meteo-france>; rel=\"alternate\"; hreflang=\"fr\", <https://meteofrance.com/meteo-france>; rel=\"revision\", </sites/meteofrance.com/files/css/css_zTW8GC0A_h6QnTbx4PdqnHhj71fa41dxcr0jlVxP5Gk.css>; rel=preload; as=style, </sites/meteofrance.com/files/css/menu-css/menu_icons_1770599253.css?ta634i>; rel=preload; as=style, </sites/meteofrance.com/files/css/css_UaRvYq5K-yRLjnrspO5eDIyyjNrIL3TOuV8YVwDPmO4.css>; rel=preload; as=style, </sites/meteofrance.com/files/css/css_UGLm9h04IHha1x27Xr9mpw1HU8pxp9gyUPwwNZ70nyQ.css>; rel=preload; as=style, </sites/meteofrance.com/files/js/js_lyaQhZEDSO2w4OySyZSdUxWv_m97I60FDt7GfgfOESU.js>; rel=preload; as=script",
-      "x-ua-compatible": "IE=edge",
+      "cache-control": "max-age=3600, public",
       "content-language": "fr",
-      "x-content-type-options": "nosniff, nosniff",
+      "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "set-cookie": [
-        "mfsession=rlWwoTSmplV6VzyhqTIlozI0VvjvLJkaVwbvFSZlAGLvYPW0rKNvBvWXI1DvsD.rlWdqTxvBvWyAGIvLJLjZwH1MGNmZTV5BGH0AwEuMzLmLGAuBJWyLlVfVzyuqPV6ZGp3ZQLjAwp2AU0.tGkS7UZqouEqDLB2rP5YG5DmrWXymC3UwrHzWu2LpUb; Path=/; Max-Age=3600; SameSite=None; Secure"
-      ],
-      "x-core-variant": "Modern",
-      "x-loc-where": "Modern",
-      "x-this-proto": "https",
-      "x-server-name": "meteofrance.com",
-      "x-xss-protection": "1; mode=block",
+      "last-modified": "Fri, 13 Mar 2026 02:43:52 GMT",
+      "etag": "\"1773369832\"",
+      "vary": "Accept-Encoding",
       "x-cache-status": "HIT",
-      "x-request-id": "5aba1f5958f8f5112b7f1df665ad60cd"
+      "x-proxy-host": "backend",
+      "server": "MF",
+      "x-debug-token": "eyJ0eXAiOiJKV1QiLCJjbGFzcyI6ImludGVybmV0IiwiYWxnIjoiSFMyNTYifQ.eyJpYXQiOjE3NzMzNzIwOTgsImp0aSI6ImY4N2RmNmFlMDNkMjQ3OWJkZDlmZTY0MTBlZDUzODczIn0.a8H17MD0rpagNgsYkJXV6VF6bRVpetn6iWj2LISdQlI",
+      "set-cookie": [
+        "mfsession=rlW0rKNvBvWXI1DvYPWwoTSmplV6VzyhqTIlozI0VvjvLJkaVwbvFSZlAGLvsD.rlWcLKDvBwR3AmZmAmVjBGtfVzc0nFV6VzL4A2EzAzSyZQAxZwD3BJWxMQyzMGL0ZGOyMQHmBQpmVa0.n8U17ZQ0ecntAtfLxWKI6IS6oEIcrga6vJw2YVFqDyV; Path=/; Max-Age=3600; SameSite=None; Secure"
+      ]
     }
   },
   "tests": {
@@ -112,10 +108,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-header-invalid",
-      "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
