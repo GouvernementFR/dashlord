@@ -3,21 +3,18 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 403,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
+      "mime-version": "1.0",
       "content-type": "text/html",
-      "cache-control": "no-cache, no-store",
-      "connection": "close",
-      "content-length": "858",
-      "x-iinfo": "7-779884-0 0NNN RT(1770779428752 101) q(0 -1 -1 0) r(0 -1) B16 U24",
-      "set-cookie": [
-        "visid_incap_3090306=RF+aN9M+TBuXF0TlDF6jfiTzi2kAAAAAQUIPAAAAAAAug5AiundlAHXopKjfpJH5; expires=Wed, 10 Feb 2027 22:29:49 GMT; HttpOnly; path=/; Domain=.immobilier-etat.gouv.fr",
-        "incap_ses_1381_3090306=RjZWILISITTE7nalnkwqEyTzi2kAAAAA4xfcdxGDiInrVs14K8Hivg==; path=/; Domain=.immobilier-etat.gouv.fr"
-      ]
+      "content-length": "391",
+      "expires": "Fri, 13 Mar 2026 03:23:37 GMT",
+      "date": "Fri, 13 Mar 2026 03:23:37 GMT",
+      "connection": "close"
     }
   },
   "tests": {
@@ -34,23 +31,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "visid_incap_3090306": {
-          "domain": "immobilier-etat.gouv.fr",
-          "expires": "2027-02-10T22:29:49.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "incap_ses_1381_3090306": {
-          "domain": "immobilier-etat.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -95,7 +79,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
