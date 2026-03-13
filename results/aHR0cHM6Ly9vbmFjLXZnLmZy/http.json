@@ -9,14 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Feb 2026 03:13:43 GMT",
+      "date": "Fri, 13 Mar 2026 03:26:54 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=CS2EQDMDIM6JQK4BOZZBXTSAVZ5C336JGRR3ULM7LJ7P6POGU4AD5HZ5U7Q4NIYENSKLOZSN7F2SFYQ7S2HMF2KUBDGX2WQDGFJP4ZDZAAYEZYNEONBQ====; Path=/"
+        "bot_mitigation_cookie=R46QTULBJX7GDK53QCD7PZGOGIEMTOCDBYTJ23L5V5N52WCGKFU6YNGSEFXUIGJGQOYD7GBMPB3JUJ4T7ARFETNHLW2CS7IDADHLC2ANNYOLZYZQH3XQ====; Path=/"
       ],
       "content-type": "text/html",
+      "cache-control": "no-store",
       "vary": "Accept-Encoding",
       "content-length": "201",
-      "x-cp-via": "C2-6a8b3e10-8330866c",
+      "x-cp-via": "C3-1a41e5b1-0150d64c",
       "connection": "close"
     }
   },
@@ -56,12 +57,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://onac-vg.fr/",
+      "destination": "https://onac-vg.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://onac-vg.fr/",
+        "https://onac-vg.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
