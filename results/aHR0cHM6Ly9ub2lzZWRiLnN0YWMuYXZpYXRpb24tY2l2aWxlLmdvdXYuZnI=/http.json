@@ -1,30 +1,32 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "B",
     "error": null,
-    "score": 65,
+    "score": 70,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Feb 2026 03:09:26 GMT",
+      "date": "Fri, 13 Mar 2026 03:27:27 GMT",
       "set-cookie": [
-        "XSRF-TOKEN=eyJpdiI6ImlPSm92SWl3SDY2VlN3ZnkrUXNvMWc9PSIsInZhbHVlIjoiSmtYWVZ1VFQrMzBmeGxYT1I1UVJqRkdyV1c0N2VuVk5keDJBMHd6VGQyaTVzU2RxQTNQKzh5N1NGbVVPWkhMY2xLVS9CRjBlaW80aFkxN1hGYU9DUUludnpiMFFoUm94UWtuR0VYMmp0ZWs0V05MU3gycFRINHZKajV4Um9qTHkiLCJtYWMiOiI2ZjAyZDdkYjljMjdjOWUwMGQxMTA2MGI1ZmJmZTA5YjRlNGRlMDI0YWUwMDlmYWRhOTMwMzFkZWIwNWQxMWVjIiwidGFnIjoiIn0%3D; expires=Wed, 11-Feb-2026 05:09:26 GMT; Max-Age=7200; path=/; samesite=lax",
-        "noisedb_session=eyJpdiI6ImhiZVZrUnlocEhOeXFTYkVReElQYXc9PSIsInZhbHVlIjoiZGFiclRtQ3lwVGJzTFJ3bk5vTmt0SGx1TC9ZaVRXQ3hacjlaZkdKbWZNSHJJd0YreTJhRFJsOS9jTElmR1NVZmpWWjY1Q2Vic0RpekRwZUVjSU9STXRyQVhOMGlNN1dnOWd0M1ZCTUNieHYwR0MzOE9yQnJwbWxERzM1cEhuVTUiLCJtYWMiOiI5MDlkYTRiMDBmM2Y0MGMxZDVlMmZmODdiN2EyODJjN2I1ZjdhYWY3ZDA4MDU2ZTUyODFkZGJlZTdiNzBlYzUwIiwidGFnIjoiIn0%3D; expires=Wed, 11-Feb-2026 05:09:26 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+        "XSRF-TOKEN=eyJpdiI6Imp2YWlGLy9oTndLNnJOQXRIOG1ieWc9PSIsInZhbHVlIjoiVW5WYTZ4VzVTUW5GVnlCNzVDK0VsR3N3OFdXNnByYVJTbmpaZHExS0F2K2pScGtTQkVWUnF5OHdsa1VRNForRVJaSTlJSDhRUTVsbVAzMjhaT3FHV2FiWjIyRldhSkNFRWJoYzJiYVduL3pobXZwOFkzdUhHS0NsRXd6VFkvNzQiLCJtYWMiOiJjMWE2ZmZjZGUwMTFkYmRlMjIzOTcyMjcxMzY5MTAzODE3YjA2MGY0NmE4MTI4N2RkOGNkMTNiYjYyMDRiZWVkIiwidGFnIjoiIn0%3D; expires=Fri, 13 Mar 2026 05:27:27 GMT; Max-Age=7200; path=/; secure; samesite=lax; HttpOnly",
+        "noisedb_session=eyJpdiI6IlRSZWI2QzUvU1U1dEk3WmxWM1VNQUE9PSIsInZhbHVlIjoiTWNoVFY3YlJiL2hpQlFLWkdBenRwdW9RMGhTZ1NJd0xTakM4SGM0ZGRIS2dzekJXT3c5SzFsaVFhZGZzbWZCdVRjcVluS0tTQTNhakFPTDdwSVRDVXI2WWNZeFo1bHdGdWhudVRiT242akgwQVYyTmMyREgyMWM5WXJLSDNTVWQiLCJtYWMiOiJlNTQ2ZjZhNDVlZTBmYjQzZjA5ZTU0Zjk4MWMwYmM0ZGM3MTI3ODUyNjAxNDdlYTgyOWE4MmEwNTViNTljNDc4IiwidGFnIjoiIn0%3D; path=/; secure; httponly; samesite=lax"
       ],
-      "cache-control": "no-cache, private",
-      "content-security-policy": "connect-src 'self' https://statistiques.sigp.aviation-civile.gouv.fr; default-src 'none'; font-src 'self' data:; img-src 'self' data: https://statistiques.sigp.aviation-civile.gouv.fr; script-src 'self' 'unsafe-inline' https://statistiques.sigp.aviation-civile.gouv.fr https://www.stac.aviation-civile.gouv.fr/matomo/matomo.js; style-src 'self' 'unsafe-inline'; script-src 'nonce-mE3TZTSibFaf9tRNJMPsCGSYQQyycdTUFZBfgmPN' ; style-src 'nonce-mE3TZTSibFaf9tRNJMPsCGSYQQyycdTUFZBfgmPN' ; img-src 'nonce-mE3TZTSibFaf9tRNJMPsCGSYQQyycdTUFZBfgmPN'",
-      "permissions-policy": "accelerometer=(self), ambient-light-sensor=(self), autoplay=(self), battery=(self), camera=(self), cross-origin-isolated=(self), display-capture=(self), document-domain=*, encrypted-media=(self), execution-while-not-rendered=*, execution-while-out-of-viewport=*, fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), navigation-override=(self), payment=(), picture-in-picture=*, publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=*, usb=(self), web-share=(self), xr-spatial-tracking=(self)",
-      "x-download-options": "noopen",
-      "x-permitted-cross-domain-policies": "none",
-      "x-xss-protection": "1; mode=block",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "content-type": "text/html; charset=utf-8",
       "cross-origin-embedder-policy": "unsafe-none",
       "cross-origin-opener-policy": "unsafe-none",
       "cross-origin-resource-policy": "cross-origin",
-      "vary": "Accept-Encoding,User-Agent",
-      "content-type": "text/html; charset=UTF-8",
+      "expires": "Fri, 13 Mar 2026 03:27:27 GMT",
+      "permissions-policy": "geolocation=(), microphone=(), camera=()",
+      "pragma": "no-cache",
+      "vary": "Origin,User-Agent",
+      "x-dns-prefetch-control": "on",
+      "x-download-options": "noopen",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
@@ -37,39 +39,40 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-header-invalid",
+      "result": "csp-not-implemented",
       "scoreModifier": -25,
       "data": null,
       "http": false,
       "meta": false,
       "policy": null,
-      "numPolicies": 1
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -10,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "XSRF-TOKEN": {
           "domain": "noisedb.stac.aviation-civile.gouv.fr",
-          "expires": "2026-02-11T05:09:26.000Z",
-          "max-age": 7200,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "noisedb_session": {
-          "domain": "noisedb.stac.aviation-civile.gouv.fr",
-          "expires": "2026-02-11T05:09:26.000Z",
+          "expires": "2026-03-13T05:27:27.000Z",
           "httponly": true,
           "max-age": 7200,
           "path": "/",
           "port": null,
-          "samesite": "lax"
+          "samesite": "lax",
+          "secure": true
+        },
+        "noisedb_session": {
+          "domain": "noisedb.stac.aviation-civile.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -110,10 +113,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.14.2/dist/dsfr.module.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
