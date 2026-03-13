@@ -1,21 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "B+",
     "error": null,
-    "score": 60,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Feb 2026 03:06:42 GMT",
+      "date": "Fri, 13 Mar 2026 03:16:01 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "no-cache",
       "set-cookie": [
-        "parade-datar-ml-lng=fr; expires=Mon, 16-Feb-2026 03:06:42 GMT; Max-Age=604800; path=/; secure; HttpOnly"
+        "parade-datar-ml-lng=fr; expires=Fri, 20-Mar-2026 03:16:01 GMT; Max-Age=604800; path=/; secure; HttpOnly"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-content-type-options": "nosniff",
@@ -140,7 +140,7 @@
       "data": {
         "PHPSESSID": {
           "domain": "missionphotodatar.anct.gouv.fr",
-          "expires": "2026-02-10T03:06:40.000Z",
+          "expires": "2026-03-14T03:15:58.000Z",
           "httponly": true,
           "max-age": 86400,
           "path": "/",
@@ -149,7 +149,7 @@
         },
         "parade-datar-ml-lng": {
           "domain": "missionphotodatar.anct.gouv.fr",
-          "expires": "2026-02-16T03:06:42.000Z",
+          "expires": "2026-03-20T03:16:01.000Z",
           "httponly": true,
           "max-age": 604800,
           "path": "/",
@@ -191,12 +191,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented-no-https",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
