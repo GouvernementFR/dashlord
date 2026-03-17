@@ -13,18 +13,19 @@
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
       "cache-control": "max-age=7200, public",
-      "date": "Fri, 13 Feb 2026 03:07:36 GMT",
+      "date": "Tue, 17 Mar 2026 03:18:38 GMT",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
       "connection": "close",
       "set-cookie": [
-        "visid_incap_3172060=5MuSFMErSa6YlOo8n36cc3eVjmkAAAAAQUIPAAAAAABNmXtpG2gOvKJ+DbvOxHLJ; expires=Fri, 12 Feb 2027 06:28:18 GMT; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
-        "incap_ses_1412_3172060=6OWNTZ4FlAPUl9Q9B2+YE3iVjmkAAAAA1zjRwPMH5HCCbu3pAn3FqA==; path=/; Domain=.cybermalveillance.gouv.fr"
+        "visid_incap_3172060=FpabgOOeQ9ewLviYhLeSpwzIuGkAAAAAQUIPAAAAAACX96HpuEnGjXFhQPVdjvMo; expires=Tue, 16 Mar 2027 06:28:01 GMT; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
+        "nlbi_3172060=wUp+b5+SLgl4aI9+3D6QPQAAAABYr50ALjSJr92ptwopgO2k; HttpOnly; path=/; Domain=.cybermalveillance.gouv.fr",
+        "incap_ses_198_3172060=yRc7caglIWwcMjDgGHC/Ag7IuGkAAAAAhgRyjvyPJROrL8ieAUoZTw==; path=/; Domain=.cybermalveillance.gouv.fr"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "11-13252195-13196454 2NNN RT(1770952055953 13) q(0 0 0 0) r(8 8)"
+      "x-iinfo": "49-106196158-106196169 NNNN CT(1180 159 0) RT(1773717517232 74) q(0 0 14 0) r(18 18) U18"
     }
   },
   "tests": {
@@ -47,12 +48,18 @@
       "data": {
         "visid_incap_3172060": {
           "domain": "cybermalveillance.gouv.fr",
-          "expires": "2027-02-12T06:28:18.000Z",
+          "expires": "2027-03-16T06:28:01.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_1412_3172060": {
+        "nlbi_3172060": {
+          "domain": "cybermalveillance.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_198_3172060": {
           "domain": "cybermalveillance.gouv.fr",
           "path": "/",
           "port": null
