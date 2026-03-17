@@ -3,34 +3,22 @@
     "algorithmVersion": 4,
     "grade": "A+",
     "error": null,
-    "score": 120,
+    "score": 105,
     "statusCode": 200,
     "testsFailed": 0,
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:10:25 GMT",
+      "date": "Tue, 17 Mar 2026 03:18:30 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "262a54e7-1122-43ef-a012-40ba2603aa9f",
-      "content-security-policy": "default-src 'self' blob: metabase.potentiel.beta.gouv.fr;connect-src 'self' potentiel.beta.gouv.fr client.crisp.chat wss://client.relay.crisp.chat geo.api.gouv.fr;font-src 'self' client.crisp.chat;frame-src metabase.potentiel.beta.gouv.fr blob:;img-src 'self' data: image.crisp.chat;style-src 'self' 'unsafe-inline' data: client.crisp.chat;script-src 'self' 'nonce-a8a93d041fb268b458590468df872404ade4509aa7cb0762ffb79afa21873648' 'sha256-UEZfoO3SfsYbnIIAoHHUiIGOhT+nhTDv2gd4I5588HQ=' metabase.potentiel.beta.gouv.fr client.crisp.chat",
-      "cross-origin-opener-policy": "same-origin",
-      "cross-origin-resource-policy": "same-origin",
-      "origin-agent-cluster": "?1",
+      "x-request-id": "77e94a25-fc01-4e5b-aa1b-2bed20b590e8",
+      "content-security-policy": "default-src 'self' blob: https://metabase.potentiel.beta.gouv.fr; connect-src 'self' https://potentiel.beta.gouv.fr https://client.crisp.chat wss://client.relay.crisp.chat https://sentry.incubateur.net https://geo.api.gouv.fr; font-src 'self' https://client.crisp.chat; frame-src https://metabase.potentiel.beta.gouv.fr blob:; img-src 'self' data: https://image.crisp.chat; style-src 'self' 'unsafe-inline' data: https://client.crisp.chat; script-src 'self' 'nonce-UyYwR/U6KcreASr279jrPA==' 'sha256-UEZfoO3SfsYbnIIAoHHUiIGOhT+nhTDv2gd4I5588HQ=' https://metabase.potentiel.beta.gouv.fr https://client.crisp.chat",
       "referrer-policy": "strict-origin",
       "x-content-type-options": "nosniff",
-      "x-dns-prefetch-control": "off",
-      "x-download-options": "noopen",
       "x-frame-options": "SAMEORIGIN",
-      "x-permitted-cross-domain-policies": "none",
-      "x-xss-protection": "0",
-      "set-cookie": [
-        "__Host-next-auth.csrf-token=628ed963c263217b76aeaa26a131a10d7711cdf2df829b382741b5f38171f0c8%7Cadc7ba0b7263b3e7e27f1bde120c9013952305387590ccf47b15c715206b6f59; Path=/; HttpOnly; Secure; SameSite=Lax",
-        "__Secure-next-auth.callback-url=https%3A%2F%2Fpotentiel.beta.gouv.fr; Path=/; HttpOnly; Secure; SameSite=Lax"
-      ],
       "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
-      "x-powered-by": "Next.js",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
       "strict-transport-security": "max-age=31536000"
     }
@@ -45,40 +33,41 @@
         "default-src": [
           "'self'",
           "blob:",
-          "metabase.potentiel.beta.gouv.fr"
+          "https://metabase.potentiel.beta.gouv.fr"
         ],
         "connect-src": [
           "'self'",
-          "client.crisp.chat",
-          "geo.api.gouv.fr",
-          "potentiel.beta.gouv.fr",
+          "https://client.crisp.chat",
+          "https://geo.api.gouv.fr",
+          "https://potentiel.beta.gouv.fr",
+          "https://sentry.incubateur.net",
           "wss://client.relay.crisp.chat"
         ],
         "font-src": [
           "'self'",
-          "client.crisp.chat"
+          "https://client.crisp.chat"
         ],
         "frame-src": [
           "blob:",
-          "metabase.potentiel.beta.gouv.fr"
+          "https://metabase.potentiel.beta.gouv.fr"
         ],
         "img-src": [
           "'self'",
           "data:",
-          "image.crisp.chat"
+          "https://image.crisp.chat"
         ],
         "style-src": [
           "'self'",
           "'unsafe-inline'",
-          "client.crisp.chat",
-          "data:"
+          "data:",
+          "https://client.crisp.chat"
         ],
         "script-src": [
-          "'nonce-a8a93d041fb268b458590468df872404ade4509aa7cb0762ffb79afa21873648'",
+          "'nonce-uyywr/u6kcreasr279jrpa=='",
           "'self'",
           "'sha256-uezfoo3sfsybniiaohhuiigoht+nhtdv2gd4i5588hq='",
-          "client.crisp.chat",
-          "metabase.potentiel.beta.gouv.fr"
+          "https://client.crisp.chat",
+          "https://metabase.potentiel.beta.gouv.fr"
         ]
       },
       "http": true,
@@ -101,27 +90,10 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "__Host-next-auth.csrf-token": {
-          "domain": "potentiel.beta.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "__Secure-next-auth.callback-url": {
-          "domain": "potentiel.beta.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -187,10 +159,10 @@
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-implemented-with-same-origin",
-      "scoreModifier": 10,
-      "data": "same-origin",
-      "http": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     }
   }
