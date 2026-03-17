@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 403,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:18:47 GMT",
+      "date": "Tue, 17 Mar 2026 03:18:43 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -22,17 +22,14 @@
       "origin-agent-cluster": "?1",
       "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9cd12e32faeb34a5\"",
+      "server-timing": "chlray;desc=\"9dd8da1b9dce7ce0\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "set-cookie": [
-        "__cf_bm=ZasH5ULRBj.j3Lsv8PxrpWXMuSk78g.xsbxejR7sYfM-1770952727-1.0.1.1-EInyoxFqluVgFJSNhiayF4ajUPqPvk6maLW.3h4sRLHxBQYQtUlRn3.9LBC0CGKxDcmFiQ2sF1Uwmq6_8RLxtqxh6uLWBkruYCN7EXzzE6s; path=/; expires=Fri, 13-Feb-26 03:48:47 GMT; domain=.permisdeconduire.gouv.fr; HttpOnly; Secure; SameSite=None"
+        "__cf_bm=u.oQ5EhC4YXvSB_kc.0WM8CVxw09Q.bB31VMy_8sF6k-1773717523.7781093-1.0.1.1-QtRLZigqd12vCtYNKnb3X5ksi.thR8yNk0Y1arBeZT19p2QZtZKh6jHmcUwvrRY71zzlnAaS4y287nhCTro7FJRfczez044DmuMWrd_TPSVPNtTvqV.DmsxBj6.RFAup; HttpOnly; Secure; Path=/; Domain=permisdeconduire.gouv.fr; Expires=Tue, 17 Mar 2026 03:48:43 GMT"
       ],
-      "vary": "Accept-Encoding",
       "server": "cloudflare",
-      "cf-ray": "9cd12e32faeb34a5-IAD"
+      "cf-ray": "9dd8da1b9dce7ce0-ORD"
     }
   },
   "tests": {
@@ -50,20 +47,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "permisdeconduire.gouv.fr",
-          "expires": "2026-02-13T03:48:47.000Z",
+          "expires": "2026-03-17T03:48:43.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -74,17 +70,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://moncompte.permisdeconduire.gouv.fr/auth/realms/formation/protocol/openid-connect/auth?response_type=code&scope=openid%20email%20profile&client_id=formation_1&state=PX6lqveJ7mHFx23TtEiz5b-iuGk&redirect_uri=https%3A%2F%2Fpro.permisdeconduire.gouv.fr%2Foidc-callback&nonce=XsMra-PsrEW60Yd-Lq9ptsMVb4nybvJV0-31v6LOp_4",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://pro.permisdeconduire.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://pro.permisdeconduire.gouv.fr/",
-        "https://pro.permisdeconduire.gouv.fr/",
-        "https://moncompte.permisdeconduire.gouv.fr/auth/realms/formation/protocol/openid-connect/auth?response_type=code&scope=openid%20email%20profile&client_id=formation_1&state=PX6lqveJ7mHFx23TtEiz5b-iuGk&redirect_uri=https%3A%2F%2Fpro.permisdeconduire.gouv.fr%2Foidc-callback&nonce=XsMra-PsrEW60Yd-Lq9ptsMVb4nybvJV0-31v6LOp_4"
+        "http://pro.permisdeconduire.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
