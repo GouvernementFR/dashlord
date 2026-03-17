@@ -1,25 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C",
     "error": null,
-    "score": 65,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:10:22 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
-      "cache-control": "no-cache",
-      "expires": "-1",
+      "cache-control": "no-store",
+      "content-type": "text/html; charset=utf-8",
       "set-cookie": [
-        "VT_USER=9a449961d14757ab62640a680cae960e; expires=Sat, 21-Feb-2026 11:10:22 GMT; Max-Age=720000; path=/; secure"
+        "techaro.lol-anubis-auth=; Path=/; Expires=Tue, 17 Mar 2026 03:20:10 GMT; Max-Age=0; Secure; SameSite=None",
+        "techaro.lol-anubis-cookie-verification=019cf9cf-cb47-720f-a841-22248c6c6144; Path=/; Expires=Tue, 17 Mar 2026 03:51:10 GMT; Secure; SameSite=None"
       ],
-      "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-      "content-security-policy": "default-src  'self' 'unsafe-inline' 'unsafe-eval' recherche-anmt-admin.culture.fr *.ligeo-archives.com *.culture.gouv.fr *.jquery.com *.culture.fr *.google.com *.google.fr *.anct.gouv.fr   wiki-diffusion.ligeo-archives.com",
-      "x-frame-options": "SAMEORIGIN",
+      "date": "Tue, 17 Mar 2026 03:21:10 GMT",
+      "transfer-encoding": "chunked",
       "strict-transport-security": "max-age=63072000",
       "x-xss-protection": "1;mode=block",
       "x-content-type-options": "nosniff",
@@ -31,63 +28,39 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "*.anct.gouv.fr",
-          "*.culture.fr",
-          "*.culture.gouv.fr",
-          "*.google.com",
-          "*.google.fr",
-          "*.jquery.com",
-          "*.ligeo-archives.com",
-          "recherche-anmt-admin.culture.fr",
-          "wiki-diffusion.ligeo-archives.com"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
-        "HAPROXYID": {
+        "techaro.lol-anubis-auth": {
           "domain": "recherche-anmt.culture.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "VT_USER": {
-          "domain": "recherche-anmt.culture.gouv.fr",
-          "expires": "2026-02-21T11:10:22.000Z",
-          "max-age": 720000,
+          "expires": "2026-03-17T03:20:10.000Z",
+          "max-age": 0,
           "path": "/",
           "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "techaro.lol-anubis-cookie-verification": {
+          "domain": "recherche-anmt.culture.gouv.fr",
+          "expires": "2026-03-17T03:51:10.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -101,12 +74,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://recherche-anmt.culture.gouv.fr/archive/recherche/simple/n:19",
+      "destination": "https://recherche-anmt.culture.gouv.fr/",
       "redirects": true,
       "route": [
         "http://recherche-anmt.culture.gouv.fr/",
-        "https://recherche-anmt.culture.gouv.fr/",
-        "https://recherche-anmt.culture.gouv.fr/archive/recherche/simple/n:19"
+        "https://recherche-anmt.culture.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -132,15 +104,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://code.jquery.com/jquery-3.4.1.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -151,10 +118,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
