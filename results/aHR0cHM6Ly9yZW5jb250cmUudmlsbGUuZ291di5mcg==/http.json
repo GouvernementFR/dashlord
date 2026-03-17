@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 403,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:19:06 GMT",
+      "date": "Tue, 17 Mar 2026 03:18:53 GMT",
       "server": "Apache",
       "content-length": "199",
       "connection": "close",
@@ -45,13 +45,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
-      "destination": "https://rencontre.ville.gouv.fr/",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
       "redirects": true,
       "route": [],
-      "statusCode": 403
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
