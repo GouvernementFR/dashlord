@@ -10,21 +10,21 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "max-forwards": "20",
-      "via": "1.1 leto-p ()",
+      "via": "1.1 leto-b ()",
       "connection": "close",
-      "x-correlationid": "Id-32968e69876ce7339baafab6 0",
+      "x-correlationid": "Id-c1c7b8695933a0359f69f7e0 0",
       "accept-ranges": "bytes",
       "cache-control": "no-cache, no-store, must-revalidate",
-      "date": "Fri, 13 Feb 2026 03:10:42 GMT",
-      "etag": "\"130f7-6472a6f8d6580\"",
+      "date": "Tue, 17 Mar 2026 03:17:21 GMT",
+      "etag": "\"136ac-64b283b3ea440\"",
       "expires": "0",
-      "last-modified": "Tue, 30 Dec 2025 12:24:06 GMT",
+      "last-modified": "Thu, 19 Feb 2026 07:27:05 GMT",
       "pragma": "no-cache",
       "set-cookie": [
         "BIGipServerlspagri-seralias=3037863596.42273.0000; path=/; Httponly; Secure",
-        "Jonction=dboneco; Max-Age=14400; Path=/; SameSite=Strict; Secure; Httponly",
-        "primealaconversion=186128300.48160.0000; path=/; Httponly; Secure",
-        "TS01698630=01b74c0fdd49d4b6945ad327af1e700302086a228263422f541264391e215dd637b3bf853b8a4922d293a338bf4c4532bd5e57b2be4625052b2b1cd4d3ebd002d3f46f4dc0a57f3d18ebc5baa3f433df3820b2bed66315a3d34e64ece44ababb348c515c19; Path=/; Secure; HttpOnly"
+        "Jonction=dboneco; Max-Age=14400; Path=/; SameSite=Lax; Secure; Httponly",
+        "primealaconversion=169351084.48160.0000; path=/; Httponly; Secure",
+        "TS01698630=01b74c0fdd984bf24e0696ca5809e46c08df7c602134c5aa3325958e5d6047ab36d7b036c77a9bf9479ec8353f64c27cdac6bcd15a49620dc72340922339bd89d78eaeeeb51b0227256b4024e5915b0906fbd2840357b3c66016832e46bcc6395752c96994; Path=/; Secure; HttpOnly"
       ],
       "x-content-security-policy": "allow 'self' *.asp-public.fr; options eval-script inline-script; connect-src 'self' *.asp-public.fr api-adresse.data.gouv.fr; frame-ancestors 'self' blob: *.asp-public.fr https://www.ecologie.gouv.fr; frame-src 'self' blob: *.asp-public.fr https://3689183.fls.doubleclick.net; object-src 'self' *.asp-public.fr; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr https://voxusagers.numerique.gouv.fr https://audience-sites.din.developpement-durable.gouv.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr https://audience-sites.din.developpement-durable.gouv.fr; media-src 'self' data: *.asp-public.fr;",
       "x-content-type-options": "nosniff",
@@ -139,7 +139,7 @@
           "max-age": 14400,
           "path": "/",
           "port": null,
-          "samesite": "strict",
+          "samesite": "lax",
           "secure": true
         },
         "primealaconversion": {
