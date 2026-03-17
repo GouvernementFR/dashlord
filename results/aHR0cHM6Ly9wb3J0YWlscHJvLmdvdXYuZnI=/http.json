@@ -9,20 +9,20 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:07:33 GMT",
+      "date": "Tue, 17 Mar 2026 03:17:37 GMT",
       "content-type": "text/html",
-      "last-modified": "Thu, 15 Jan 2026 15:56:46 GMT",
+      "last-modified": "Wed, 25 Feb 2026 16:56:12 GMT",
       "transfer-encoding": "chunked",
-      "connection": "close",
       "vary": "Accept-Encoding",
-      "etag": "W/\"69690e3e-190a\"",
+      "etag": "W/\"699f29ac-190a\"",
       "x-xss-protection": "1; mode=block",
       "content-security-policy": "default-src 'self' https://*.gouv.fr services.portailpro.gouv.fr wss://webchat.ac.portailpro.gouv.fr; style-src 'self' https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com https://acl.integration.portailpro.gouv.fr https://acl.portailpro.gouv.fr https://atvm.portailpro.gouv.fr 'unsafe-inline'; font-src 'self' https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com data:; script-src 'self' https://atvm.portailpro.gouv.fr https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr https://tag.aticdn.net https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com https://acl.integration.portailpro.gouv.fr https://acl.portailpro.gouv.fr 'unsafe-inline' 'unsafe-eval'; img-src 'self' https://atvm.portailpro.gouv.fr media.ac.portailpro.gouv.fr https://cdn.ac.portailpro.gouv.fr https://voxusagers.numerique.gouv.fr/ https://www.interieur.gouv.fr https://assistance-en-ligne.integration.impots.gouv.fr https://logs1412.xiti.com data:; frame-src http://10.156.82.34:8080 *.gouv.fr *.urssaf.fr *.net-entreprises.fr *.guichet-entreprises.fr *.mon-entreprise.fr https://logs1412.xiti.com; form-action 'self' auth.app.si1f-prod.dgfip-pcr.nuage12.fi.francecloud.rie.gouv.fr auth.portailpro.gouv.fr; media-src 'self' blob: https://*.gouv.fr services.portailpro.gouv.fr data: audio/wav;base64,* https://cdn.ac.portailpro.gouv.fr media.ac.portailpro.gouv.fr; base-uri 'self'; object-src 'none'; connect-src https://cdn.ac.portailpro.gouv.fr wss://webchat.ac.portailpro.gouv.fr *.gouv.fr *.urssaf.fr *.net-entreprises.fr *.guichet-entreprises.fr *.mon-entreprise.fr https://logs1412.xiti.com wss://acl.integration.portailpro.gouv.fr wss://acl.portailpro.gouv.fr services.portailpro.gouv.fr; prefetch-src 'self';",
       "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload, max-age=15768000",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload, : max-age=15768000",
       "x-frame-options": "sameorigin",
       "referrer-policy": "same-origin",
-      "permissions-policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), web-share(), interest-cohort=()"
+      "permissions-policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), web-share(), interest-cohort=()",
+      "connection": "close"
     }
   },
   "tests": {
@@ -161,9 +161,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -189,7 +189,7 @@
       "pass": false,
       "result": "hsts-header-invalid",
       "scoreModifier": -20,
-      "data": "max-age=31536000; includeSubDomains; preload, max-age=15768000",
+      "data": "max-age=31536000; includeSubDomains; preload, : max-age=15768000",
       "includeSubDomains": false,
       "maxAge": null,
       "preload": false,
