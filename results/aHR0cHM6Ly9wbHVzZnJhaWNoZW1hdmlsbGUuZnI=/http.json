@@ -9,14 +9,14 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:15:35 GMT",
+      "date": "Tue, 17 Mar 2026 03:19:23 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "e850d4c2-430d-48a9-abc1-21096e36c576",
+      "x-request-id": "157a104e-fbdc-4154-ac40-08a559950cef",
       "x-frame-options": "DENY",
       "x-content-type-options": "nosniff",
-      "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr 'nonce-YTE5ZTM1NWItMzE2Mi00Y2Q0LTkxYmUtZDM4YTc3MDE0Yjdi' 'strict-dynamic' ; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://cdn.plusfraichemaville.fr/ https://pfmv-cms-prod.s3.fr-par.scw.cloud/ https://cartagene.cerema.fr https://tile.openstreetmap.org https://*.hsforms.com https://data.geopf.fr https://*.hubspot.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src https://stats.plusfraichemaville.fr https://cloud.contact.ademe.fr/; frame-ancestors 'none'; upgrade-insecure-requests; connect-src 'self' https://sentry.incubateur.net/ https://stats.beta.gouv.fr/matomo.php https://cta-eu1.hubspot.com/ https://api-adresse.data.gouv.fr/search/ https://*.hscollectedforms.net https://cartagene.cerema.fr https://data.geopf.fr https://openmaptiles.github.io https://openmaptiles.geo.data.gouv.fr https://openmaptiles.data.gouv.fr ;",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://stats.beta.gouv.fr 'nonce-NzI4MWZhZDYtMWNjYi00NDA0LThiNzMtYzFhZGMwNWM0ODcw' 'strict-dynamic' ; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://cdn.plusfraichemaville.fr/ https://pfmv-cms-prod.s3.fr-par.scw.cloud/ https://cartagene.cerema.fr https://tile.openstreetmap.org https://data.geopf.fr; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src https://stats.plusfraichemaville.fr https://cloud.contact.ademe.fr/; frame-ancestors 'none'; upgrade-insecure-requests; connect-src 'self' https://sentry.incubateur.net/ https://stats.beta.gouv.fr/matomo.php https://api-adresse.data.gouv.fr/search/ https://cartagene.cerema.fr https://data.geopf.fr https://openmaptiles.github.io https://openmaptiles.geo.data.gouv.fr https://openmaptiles.data.gouv.fr ;",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-powered-by": "Next.js",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate"
@@ -33,7 +33,7 @@
           "'self'"
         ],
         "script-src": [
-          "'nonce-yte5ztm1nwitmze2mi00y2q0ltkxymutzdm4ytc3mde0yjdi'",
+          "'nonce-nzi4mwzhzdytmwnjyi00nda0lthinzmtyzfhzgmwnwm0odcw'",
           "'strict-dynamic'"
         ],
         "style-src": [
@@ -44,8 +44,6 @@
           "'self'",
           "blob:",
           "data:",
-          "https://*.hsforms.com",
-          "https://*.hubspot.com",
           "https://cartagene.cerema.fr",
           "https://cdn.plusfraichemaville.fr/",
           "https://data.geopf.fr",
@@ -76,10 +74,8 @@
         ],
         "connect-src": [
           "'self'",
-          "https://*.hscollectedforms.net",
           "https://api-adresse.data.gouv.fr/search/",
           "https://cartagene.cerema.fr",
-          "https://cta-eu1.hubspot.com/",
           "https://data.geopf.fr",
           "https://openmaptiles.data.gouv.fr",
           "https://openmaptiles.geo.data.gouv.fr",
