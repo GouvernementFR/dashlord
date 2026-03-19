@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B-",
     "error": null,
-    "score": 10,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "dtCookie=v_4_srv_10_sn_5636B75B9F66BC8F4C9FED32FDCE237D_perc_100000_ol_0_mul_1_app-3Aade427e1a865ed0e_1_rcs-3Acss_0; Path=/; Domain=.registre-coproprietes-secure.gouv.fr",
+        "dtCookie=v_4_srv_5_sn_71331E919C54148029170AB0D89584A6_perc_100000_ol_0_mul_1_app-3Aade427e1a865ed0e_1_rcs-3Acss_0; Path=/; Domain=.registre-coproprietes-secure.gouv.fr",
         "SERVERID=docker1; path=/; HttpOnly; Secure"
       ],
       "x-oneagent-js-injection": "true",
-      "server-timing": "dtRpid;desc=\"823796353\", dtSInfo;desc=\"0\"",
+      "server-timing": "dtRpid;desc=\"-575838428\", dtSInfo;desc=\"0\"",
       "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-      "sicopro-version": "9.17.1-SNAPSHOT",
-      "etag": "\"1769787750:dtagent10329260206100503RiFr\"",
-      "last-modified": "Fri, 30 Jan 2026 15:42:29 GMT",
+      "sicopro-version": "9.19.0-SNAPSHOT",
+      "etag": "\"1773247820:dtagent10333260303165926RfCf\"",
+      "last-modified": "Wed, 11 Mar 2026 16:50:19 GMT",
       "accept-ranges": "bytes",
       "x-xss-protection": "0",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -26,7 +26,7 @@
       "expires": "0",
       "content-type": "text/html;charset=UTF-8",
       "transfer-encoding": "chunked",
-      "date": "Sun, 15 Feb 2026 03:10:16 GMT",
+      "date": "Thu, 19 Mar 2026 03:28:24 GMT",
       "connection": "close",
       "strict-transport-security": "max-age=16000000;includeSubDomains;",
       "x-frame-options": "SAMEORIGIN",
@@ -49,8 +49,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "dtCookie": {
           "domain": "registre-coproprietes-secure.gouv.fr",
@@ -76,12 +76,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.registre-coproprietes-secure.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://registre-coproprietes-secure.gouv.fr/",
+        "https://registre-coproprietes-secure.gouv.fr/",
+        "https://www.registre-coproprietes-secure.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -95,12 +99,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000;includeSubDomains;",
+      "includeSubDomains": true,
+      "maxAge": 16000000,
       "preload": false,
       "preloaded": false
     },
