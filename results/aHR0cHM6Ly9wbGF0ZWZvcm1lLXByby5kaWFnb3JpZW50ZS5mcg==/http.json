@@ -9,15 +9,15 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:10:16 GMT",
+      "date": "Thu, 19 Mar 2026 03:35:44 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=11,cfOrigin;dur=601",
-      "cache-control": "no-cache",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6IZRPOqR1SOVvn9SCM%2BOga%2FnCICPQBAQdWZ4oKRpalUeWK3XiuyD1E0xuVrF6Rjxo5hScpGoyKA6fwWmQyjyQVMwzx88%2BK8%2BkxUDKb68MWZOMBEmCToNjCVmacGb\"}]}",
       "speculation-rules": "\"/cdn-cgi/speculation\"",
-      "last-modified": "Wed, 11 Feb 2026 20:25:48 GMT",
+      "cache-control": "no-cache",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=q2VWK3Fpa%2FbRrOYaqZfeFDWNWOyDH6lwY3gsri3xReHbUjkjbayBInZ%2BpYVhKbWPP4MgfD4XXhN%2FPNWGi5AeeYW9WeNnZbZoRcmOfP2IROG5FmmIVsMxUEBc7mfK\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "last-modified": "Wed, 18 Mar 2026 10:17:09 GMT",
       "server": "cloudflare",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "vary": "Accept-Encoding, Accept-Encoding",
@@ -25,8 +25,7 @@
       "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "cf-ray": "9ce19c755f1724e5-LAX",
+      "cf-ray": "9de96dc6acc7843b-ORD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -93,14 +92,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
