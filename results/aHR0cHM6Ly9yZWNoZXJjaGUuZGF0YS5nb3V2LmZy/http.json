@@ -1,24 +1,32 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Feb 2026 03:22:36 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "vary": "Accept-Encoding",
-      "cache-control": "max-age=0, public",
-      "access-control-allow-origin": "*",
-      "access-control-allow-headers": "*",
       "access-control-allow-credentials": "true",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "access-control-allow-headers": "*",
+      "access-control-allow-origin": "*",
+      "cache-control": "max-age=0, public, max-age=0",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Thu, 19 Mar 2026 03:24:53 GMT",
+      "expires": "Thu, 19 Mar 2026 03:24:52 GMT",
+      "set-cookie": [
+        "_pk_ses.7.ca42=%2A; expires=Thu, 19-Mar-2026 03:54:53 GMT; path=/",
+        "_pk_id.7.ca42=7c551839f89063f4.1773890693; expires=Fri, 16-Apr-2027 03:24:53 GMT; path=/",
+        "_pk_cvar.7.ca42=%5B%5D; expires=Thu, 19-Mar-2026 03:54:53 GMT; path=/"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -35,10 +43,37 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "rdg_portal_sticky_session": {
+          "domain": "recherche.data.gouv.fr",
+          "max-age": 172800,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "_pk_ses.7.ca42": {
+          "domain": "recherche.data.gouv.fr",
+          "expires": "2026-03-19T03:54:53.000Z",
+          "path": "/",
+          "port": null
+        },
+        "_pk_id.7.ca42": {
+          "domain": "recherche.data.gouv.fr",
+          "expires": "2027-04-16T03:24:53.000Z",
+          "path": "/",
+          "port": null
+        },
+        "_pk_cvar.7.ca42": {
+          "domain": "recherche.data.gouv.fr",
+          "expires": "2026-03-19T03:54:53.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -76,10 +111,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -91,17 +126,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
