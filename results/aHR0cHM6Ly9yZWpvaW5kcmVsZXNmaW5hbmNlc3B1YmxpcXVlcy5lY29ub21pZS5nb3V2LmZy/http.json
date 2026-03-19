@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 13 Feb 2026 03:21:16 GMT",
+      "date": "Thu, 19 Mar 2026 03:23:38 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=600",
@@ -18,11 +18,11 @@
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Fri, 13 Feb 2026 03:31:16 GMT",
-      "last-modified": "Thu, 12 Feb 2026 16:30:20 GMT",
-      "etag": "\"1770913820\"",
+      "expires": "Thu, 19 Mar 2026 03:33:38 GMT",
+      "last-modified": "Wed, 18 Mar 2026 10:16:59 GMT",
+      "etag": "\"1773829019\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "HIT",
+      "x-drupal-cache": "MISS",
       "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:; font-src 'self' data: https:;",
       "referrer-policy": "same-origin",
@@ -35,13 +35,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3064992=9yFHU28xSeWkjaoijJlj/auYjmkAAAAAQUIPAAAAAABr9rZg+vmPwUOg+QBEW6bH; expires=Fri, 12 Feb 2027 09:15:26 GMT; HttpOnly; path=/; Domain=.economie.gouv.fr; Secure; SameSite=None",
-        "nlbi_3064992=JBETIjXCO0mh4X4HVVAa/QAAAABgTLuaM1qCj8X7zA/esa+S; HttpOnly; path=/; Domain=.economie.gouv.fr; Secure; SameSite=None",
-        "incap_ses_362_3064992=VnAjIB9gjWAJrxNIOhUGBayYjmkAAAAAln6lKTr32fa2qhWycw4ElQ==; path=/; Domain=.economie.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3064992=myjOBwrrTHGpaqSP1lgTpjlsu2kAAAAAQUIPAAAAAAC2+VvnOYJ/DTYolevjRvAO; expires=Thu, 18 Mar 2027 08:22:35 GMT; HttpOnly; path=/; Domain=.economie.gouv.fr; Secure; SameSite=None",
+        "nlbi_3064992=TFXKR2cd3x8qkwwsVVAa/QAAAADriupraAUmcXSbcLRfIesd; HttpOnly; path=/; Domain=.economie.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1847_3064992=kqWFKBlkm0CX5w3JV92hGTpsu2kAAAAAiuHYN5B5+2eLjLIMireF7A==; path=/; Domain=.economie.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "52-35713503-35713514 NNYN CT(171 361 0) RT(1770952875816 26) q(0 0 5 7) r(7 8) U12"
+      "x-iinfo": "46-170826373-170826377 NNYN CT(130 247 0) RT(1773890617896 8) q(0 0 4 1) r(5 6) U12"
     }
   },
   "tests": {
@@ -98,7 +98,7 @@
       "data": {
         "visid_incap_3064992": {
           "domain": "economie.gouv.fr",
-          "expires": "2027-02-12T09:15:26.000Z",
+          "expires": "2027-03-18T08:22:35.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -113,7 +113,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_362_3064992": {
+        "incap_ses_1847_3064992": {
           "domain": "economie.gouv.fr",
           "path": "/",
           "port": null,
