@@ -3,22 +3,22 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 30,
-    "statusCode": 301,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:10:19 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "location": "http://retraites.gouv.fr/",
-      "content-length": "233",
-      "content-type": "text/html; charset=iso-8859-1",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab2000bd9908d604464d614f42742c65adeda668254ed75e293a7c1057eb28d420516708b83ccb9a113000c5897545415696ff52b94ecb7fe7ac7a72e4454d99c753a28f0e080fbd016e2054218668565496c9c6838e2dcf977272; Secure; Path=/"
-      ]
+        "TSa1d3e6c3029=087dc22938ab28004b4c7c44a80bd7eaf212db440d3298295f444ced3d8539f9678cd8073241c8b796960d058a5fe8c2; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab20005563f363c24eb9dc98faa05a7aa455e22316e8dec6846ae1dd3a35c19b509b4608c08ab8e91130005f66b9b8447de39babc6de103fe555acaa9d4df6c92ecf8752f663c08d9b320580892b1c20985ec2ba44c07b110c899f; Secure; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "5036",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -39,6 +39,19 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
+        "TSa1d3e6c3029": {
+          "domain": "retraites.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc4ff0492027": {
+          "domain": "retraites.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
           "domain": "retraites.gouv.fr",
           "httponly": true,
@@ -50,12 +63,6 @@
         "TS01c71406": {
           "domain": "retraites.gouv.fr",
           "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TSc4ff0492027": {
-          "domain": "retraites.gouv.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -78,7 +85,7 @@
       "destination": "https://retraites.gouv.fr/",
       "redirects": true,
       "route": [],
-      "statusCode": 301
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -103,16 +110,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
