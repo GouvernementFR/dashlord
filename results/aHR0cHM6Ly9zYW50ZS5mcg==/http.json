@@ -1,23 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "F",
     "error": null,
-    "score": 55,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:14:47 GMT",
-      "content-type": "text/html",
+      "etag": "W/\"1774059213\"",
+      "last-modified": "Sat, 21 Mar 2026 02:13:33 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "439",
+      "date": "Sat, 21 Mar 2026 03:13:13 GMT",
+      "set-cookie": [
+        "visid_incap_3307490=22lUE/eFRXSlEYsCevJFnMkMvmkAAAAAQUIPAAAAAAC+nf8HzVurOc6u9KdPgY6R; expires=Sat, 20 Mar 2027 06:16:24 GMT; HttpOnly; path=/; Domain=.sante.fr",
+        "incap_ses_1405_3307490=PwxmMsSChVE+ZGSxnpB/E8kMvmkAAAAAvFtAa4TDjQG6gSjbeOmNtQ==; path=/; Domain=.sante.fr"
+      ],
+      "x-cdn": "Imperva",
+      "cache-control": "max-age=0",
       "transfer-encoding": "chunked",
-      "connection": "close",
-      "referrer-policy": "no-referrer",
-      "cache-control": "no-cache",
-      "strict-transport-security": "max-age=63072000",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block"
+      "x-iinfo": "14-7839454-7837313 2CNN RT(1774062794232 14) q(0 0 0 0) r(0 0)"
     }
   },
   "tests": {
@@ -34,10 +38,23 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "visid_incap_3307490": {
+          "domain": "sante.fr",
+          "expires": "2027-03-20T06:16:24.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_1405_3307490": {
+          "domain": "sante.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -64,20 +81,20 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "no-referrer",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -90,10 +107,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
