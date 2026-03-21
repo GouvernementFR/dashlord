@@ -9,21 +9,25 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:12:39 GMT",
+      "date": "Sat, 21 Mar 2026 03:12:04 GMT",
       "server": "Apache",
-      "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=63072000",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "geolocation=(), midi=(), notifications=(), push=(), sync-xhr=(), accelerometer=(), gyroscope=(), magnetometer=(), payment=(), camera=(), microphone=(), usb=(), xr=(), speaker=(self), vibrate=(), fullscreen=(self)",
+      "x-xss-protection": "0",
+      "cross-origin-embedder-policy": "unsafe-none",
+      "cross-origin-resource-policy": "same-origin",
+      "cross-origin-opener-policy": "same-origin",
       "upgrade": "h2",
       "connection": "Upgrade, close",
       "link": "<https://pole-sante.creps-vichy.sports.gouv.fr/index.php?rest_route=/>; rel=\"https://api.w.org/\", <https://pole-sante.creps-vichy.sports.gouv.fr/index.php?rest_route=/wp/v2/pages/8531>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://wp.me/P8rWYP-2dB>; rel=shortlink",
       "vary": "Accept-Encoding",
       "set-cookie": [
-        "ep_session_id=ep-sess-1771125159-6Oo1bwTz; path=/; secure; HttpOnly;HttpOnly;Secure"
+        "ep_session_id=ep-sess-1774062725-XYg2NyqD; path=/; secure; HttpOnly;HttpOnly;Secure"
       ],
-      "x-xss-protection": "0",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "content-length": "28489",
+      "content-length": "30419",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -101,43 +105,43 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/jquery/jquery.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/jquery/jquery.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/jquery/jquery-migrate.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/jquery/jquery-migrate.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.googletagmanager.com/gtag/js?id=G-LYBVQ6G6QD": {
+        "https://www.googletagmanager.com/gtag/js?id=GT-NCN2CKG9": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/imagesloaded.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/imagesloaded.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/masonry.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/masonry.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/jquery/ui/core.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/jquery/ui/core.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://stats.wp.com/e-202607.js": {
+        "https://stats.wp.com/e-202612.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/p/jetpack/15.5/_inc/build/carousel/jetpack-carousel.min.js": {
+        "https://c0.wp.com/p/jetpack/15.6/_inc/build/carousel/jetpack-carousel.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/dist/hooks.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/dist/hooks.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://c0.wp.com/c/6.9.1/wp-includes/js/dist/i18n.min.js": {
+        "https://c0.wp.com/c/6.9.4/wp-includes/js/dist/i18n.min.js": {
           "crossorigin": null,
           "integrity": null
         }
@@ -160,10 +164,10 @@
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
