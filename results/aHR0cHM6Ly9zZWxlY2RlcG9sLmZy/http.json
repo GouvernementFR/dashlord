@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:12:57 GMT",
+      "date": "Sat, 21 Mar 2026 03:16:05 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -22,17 +22,14 @@
       "origin-agent-cluster": "?1",
       "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9ce1a0667df02959\"",
+      "server-timing": "chlray;desc=\"9df9cbbd3a35e233\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "set-cookie": [
-        "__cf_bm=I79FjgaRT5pkiK9r49BlVw_vvd5tXLSDMkqCgeoMWzI-1771125177-1.0.1.1-Y3MkT7umqtbs_4JKOJBLPDGlCJkBGmIKi1kPxFROlMwgv7fBe8X8F1EDdyAq_XMQn7cftRid9rjYqbDYTw4m3sJKpIOjUj6_umZW5xXI9Ik; path=/; expires=Sun, 15-Feb-26 03:42:57 GMT; domain=.selecdepol.fr; HttpOnly; Secure; SameSite=None"
+        "__cf_bm=jOUGn2u0hBJWnlfnb4dQZwLGrrPC8cxZsMqysTP4Mg8-1774062965.3116593-1.0.1.1-rwcR_PfXzgBhWgBowVpWU7YmeWo_A.JtRYkkLTbgXsO1hK0vj4U5RDIXDkwBemSYZoq6lv8pR6y8s23kxyFXw7J.4r2bPh_DGhrwwINEddl6HOhaxJj4eCsYsuWzL32V; HttpOnly; Secure; Path=/; Domain=selecdepol.fr; Expires=Sat, 21 Mar 2026 03:46:05 GMT"
       ],
-      "vary": "Accept-Encoding",
       "server": "cloudflare",
-      "cf-ray": "9ce1a0667df02959-IAD"
+      "cf-ray": "9df9cbbd3a35e233-ORD"
     }
   },
   "tests": {
@@ -50,20 +47,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "selecdepol.fr",
-          "expires": "2026-02-15T03:42:57.000Z",
+          "expires": "2026-03-21T03:46:05.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
