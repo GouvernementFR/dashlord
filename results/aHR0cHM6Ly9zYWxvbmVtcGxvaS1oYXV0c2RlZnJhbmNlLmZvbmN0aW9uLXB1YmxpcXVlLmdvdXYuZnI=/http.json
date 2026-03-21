@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:14:10 GMT",
+      "date": "Sat, 21 Mar 2026 03:17:44 GMT",
       "content-type": "text/html; charset=utf-8",
       "content-length": "166802",
       "connection": "close",
@@ -21,11 +21,11 @@
       "etag": "W/\"070502ec73a3bac2a84b4e3287edf111\"",
       "cache-control": "max-age=0, private, must-revalidate",
       "set-cookie": [
-        "utm_data=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkludDlJZz09IiwiZXhwIjoiMjAyNy0wMi0xNVQwMzoxNDoxMC4wNzdaIiwicHVyIjoiY29va2llLnV0bV9kYXRhIn19--35520da7718123127cbbda01bfcf3491bf3f5ccf; path=/; expires=Mon, 15 Feb 2027 03:14:10 GMT; secure; httponly"
+        "utm_data=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkludDlJZz09IiwiZXhwIjoiMjAyNy0wMy0yMVQwMzoxNzo0NC4xODdaIiwicHVyIjoiY29va2llLnV0bV9kYXRhIn19--abec8f3642f7ffaa2048a19379ecacacc6f8e9e6; path=/; expires=Sun, 21 Mar 2027 03:17:44 GMT; secure; httponly"
       ],
-      "x-request-id": "fc954fe632f9be28e0af91ec475561b0",
-      "x-runtime": "0.131193",
-      "strict-transport-security": "max-age=15724800; includeSubDomains"
+      "x-request-id": "1c6a376db1b3732e4f778f25614a93a4",
+      "x-runtime": "0.258041",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
   },
   "tests": {
@@ -48,7 +48,7 @@
       "data": {
         "utm_data": {
           "domain": "salonemploi-hautsdefrance.fonction-publique.gouv.fr",
-          "expires": "2027-02-15T03:14:10.000Z",
+          "expires": "2027-03-21T03:17:44.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -91,9 +91,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15724800; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains",
       "includeSubDomains": true,
-      "maxAge": 15724800,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
