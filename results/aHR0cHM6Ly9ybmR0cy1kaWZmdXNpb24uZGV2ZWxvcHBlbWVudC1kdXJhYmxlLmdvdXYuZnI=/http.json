@@ -53,12 +53,16 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://rndts-diffusion.developpement-durable.gouv.fr/fr",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://rndts-diffusion.developpement-durable.gouv.fr/",
+        "https://rndts-diffusion.developpement-durable.gouv.fr/",
+        "https://rndts-diffusion.developpement-durable.gouv.fr/fr"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
