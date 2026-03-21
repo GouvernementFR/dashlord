@@ -1,29 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:12:54 GMT",
-      "x-spip-cache": "21600",
-      "x-frame-options": "SAMEORIGIN",
-      "last-modified": "Sun, 15 Feb 2026 03:12:54 GMT",
-      "vary": "Accept-Encoding",
-      "x-content-type-options": "nosniff",
-      "content-type": "text/html; charset=utf-8",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!+kttnZyGsD+rBkkXIkI7F7SI9ajmit3HMznFKE+Xggy+4wkh+XkOqfX676+Dddza4ewmVbbWG5q/2MvAHgh6WD/+/5MD; path=/; Httponly; Secure; SameSite=Lax;",
-        "TS01c71406=01352d38117914f209e55cc18f50a2b1d365a6658ab97340f9a1c72b983f5b8b1f0b02eda6cecb8e1edb30334c5af8917697b3c68f; Path=/; Secure; HttpOnly",
-        "TSc4ff0492027=087dc22938ab20001eb97500a967847f22eb2c41671fb7895ce499b0d790221e181b05ccda00136708e7507629113000256f865b714b5df560c0460793b0d2b96cd784701b1c3715febafbd5aaf3f901228d62d1d6cd3e824e822c37fd6b84f4; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab28005e144c220666ed8e5fdb7f42f94b7c76387778ae9a6e1b854bf7178a41c6e2c2b55c05969a0cc82c; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab200087ded5dabe299f41b1459c281ba33dd90d552a590f9aa988cb1237339a5e4efd08a915eeb41130008a0bf6fa018e680c12cb868ce20dafeb86ef69fad2499faa2cae687be5b78d600b3efbfe09a7de28ee303bbc4ee09d00; Secure; Path=/"
       ],
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "5088",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -44,17 +39,9 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+        "TSa1d3e6c3029": {
           "domain": "sante.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "TS01c71406": {
-          "domain": "sante.gouv.fr",
-          "httponly": true,
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
@@ -99,12 +86,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
