@@ -1,19 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 35,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:19:17 GMT",
-      "set-cookie": [
-        "cookiedef=!s6Fi6ihAzuoAKR2ecT1PYrEDAreRiqqF7hbRYx3cUOCgMmQwqWtWZ90TC9MqE6yxdcZNpsg2uGWNyDM=; path=/; Httponly",
-        "BIGipServer~Tenant-Externe~application~pool-ubika=201486346.20480.0000; path=/; Httponly; Secure"
-      ],
+      "date": "Mon, 23 Mar 2026 03:22:18 GMT",
       "last-modified": "Thu, 29 Aug 2024 07:30:44 GMT",
       "etag": "\"34c-620cd73d53100\"",
       "accept-ranges": "bytes",
@@ -22,7 +18,10 @@
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "connection": "close"
+      "connection": "close",
+      "set-cookie": [
+        "SESSIONID=!SU2w5KnaEqhD5HpXbgsyYa9QVNu6jPWQ8CpbDhO7dXrzg9kbYnt+cOBGCiZIHU6XSl7xYHMFE0VuxQ==; path=/; Httponly; Secure"
+      ]
     }
   },
   "tests": {
@@ -39,17 +38,11 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
-        "cookiedef": {
-          "domain": "simucr.defense.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+        "SESSIONID": {
           "domain": "simucr.defense.gouv.fr",
           "httponly": true,
           "path": "/",
