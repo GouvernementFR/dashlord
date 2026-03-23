@@ -10,20 +10,21 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "42704",
-      "cache-control": "public, stale-while-revalidate=300, stale-if-error=300",
-      "content-length": "5660",
+      "age": "0",
+      "cache-control": "max-age=0, must-revalidate, private, s-maxage=86400",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Mon, 16 Feb 2026 15:16:31 GMT",
-      "server": "Apache",
+      "date": "Mon, 23 Mar 2026 03:26:04 GMT",
+      "expires": "Mon, 23 Mar 2026 03:26:04 GMT",
+      "server": "Apache/2.4.66 (Debian)",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "vary": "Accept-Encoding",
+      "vary": "Origin,cookie,authorization,Accept-Encoding",
       "x-backend": "web3",
       "x-ogo-cache": "MISS",
-      "x-powered-by": "eZ Platform v2",
+      "x-powered-by": "Ibexa Open Source v3",
       "x-ttl": "86400.000",
-      "x-varnish": "4059083 4048203, 1093626184",
-      "connection": "close"
+      "x-varnish": "18051487, 1757118021",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -49,9 +50,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "null"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -101,7 +102,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPrE6ywWFRnmTNIvIETWki2dzPk1Ldsnk": {
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyBLmpwHo6MYzuf-g_EMV0i_S7Eybmi96Uc": {
           "crossorigin": null,
           "integrity": null
         }
