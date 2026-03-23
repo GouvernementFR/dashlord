@@ -3,21 +3,18 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 403,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
+      "mime-version": "1.0",
       "content-type": "text/html",
-      "cache-control": "no-cache, no-store",
-      "connection": "close",
-      "content-length": "867",
-      "x-iinfo": "14-122543703-0 0NNN RT(1771297702054 124) q(0 -1 -1 1) r(0 -1) B16 U24",
-      "set-cookie": [
-        "visid_incap_3090309=dCCkajc2TZCWyyQNJzAj7qXbk2kAAAAAQUIPAAAAAAAPib3Ow+QAvoVtiCWNtsG5; expires=Tue, 16 Feb 2027 22:14:26 GMT; HttpOnly; path=/; Domain=.portail-immo.gouv.fr",
-        "incap_ses_1385_3090309=ncQLDHbQ1zYD7Yiom4I4E6Xbk2kAAAAAfXM9+Oc+sLOQeOXdThTSrA==; path=/; Domain=.portail-immo.gouv.fr"
-      ]
+      "content-length": "390",
+      "expires": "Mon, 23 Mar 2026 03:22:10 GMT",
+      "date": "Mon, 23 Mar 2026 03:22:10 GMT",
+      "connection": "close"
     }
   },
   "tests": {
@@ -34,23 +31,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "visid_incap_3090309": {
-          "domain": "portail-immo.gouv.fr",
-          "expires": "2027-02-16T22:14:26.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "incap_ses_1385_3090309": {
-          "domain": "portail-immo.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -84,7 +68,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -95,7 +79,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
