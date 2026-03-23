@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C-",
     "error": null,
-    "score": 65,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "private",
@@ -14,12 +14,12 @@
       "set-cookie": [
         "ERMES=; expires=Mon, 11-Oct-1999 22:00:00 GMT; path=/; HttpOnly; SameSite=Lax"
       ],
-      "x-sessionid": "fxajpdozimaae2ag14bvbzdr",
+      "x-sessionid": "1nng3dhv3p4rh10r2wznpldh",
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=31536000",
-      "date": "Tue, 17 Feb 2026 03:08:18 GMT",
+      "date": "Mon, 23 Mar 2026 03:27:27 GMT",
       "connection": "close",
-      "content-length": "42736"
+      "content-length": "44814"
     }
   },
   "tests": {
@@ -60,17 +60,25 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://tracfin.finances.gouv.fr/Pages/Login.aspx?ReturnUrl=%2f",
+      "pass": false,
+      "result": "redirection-not-to-https",
+      "scoreModifier": -20,
+      "destination": "http://tracfin.finances.gouv.fr/acces-refuse",
       "redirects": true,
       "route": [
         "http://tracfin.finances.gouv.fr/",
-        "https://tracfin.finances.gouv.fr/",
-        "https://tracfin.finances.gouv.fr/Pages/Login.aspx?ReturnUrl=%2f"
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse",
+        "http://tracfin.finances.gouv.fr/acces-refuse"
       ],
-      "statusCode": 200
+      "statusCode": 302
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
