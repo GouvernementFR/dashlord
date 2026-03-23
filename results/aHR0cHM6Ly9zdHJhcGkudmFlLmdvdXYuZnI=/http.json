@@ -3,13 +3,13 @@
     "algorithmVersion": 4,
     "grade": "A+",
     "error": null,
-    "score": 115,
+    "score": 110,
     "statusCode": 200,
     "testsFailed": 0,
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Feb 2026 03:08:21 GMT",
+      "date": "Mon, 23 Mar 2026 03:25:20 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -21,16 +21,16 @@
       "x-download-options": "noopen",
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
-      "vary": "Origin, Accept-Encoding",
+      "vary": "Origin",
       "access-control-allow-origin": "",
       "access-control-allow-credentials": "true",
       "x-powered-by": "Strapi <strapi.io>",
-      "x-do-app-origin": "59eda043-770b-4ed4-9c79-e2469a0b52ee",
-      "cache-control": "private",
-      "x-do-orig-status": "200",
-      "cf-cache-status": "MISS",
+      "x-koyeb-backend": "fra",
       "server": "cloudflare",
-      "cf-ray": "9cf21465ed19d6d1-IAD",
+      "x-koyeb-brand": "strapi",
+      "x-koyeb-glb": "sfo",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e0a54079d2f939b-SJC",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -117,20 +117,10 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "__cf_bm": {
-          "domain": "strapi.vae.gouv.fr",
-          "expires": "2026-02-17T03:38:20.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -148,7 +138,6 @@
       "redirects": true,
       "route": [
         "http://strapi.vae.gouv.fr/",
-        "https://strapi.vae.gouv.fr/",
         "https://strapi.vae.gouv.fr/admin"
       ],
       "statusCode": 200
