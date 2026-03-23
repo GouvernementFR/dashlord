@@ -9,7 +9,7 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Feb 2026 03:18:07 GMT",
+      "date": "Mon, 23 Mar 2026 03:22:17 GMT",
       "server": "Microsoft-IIS/6.0",
       "cache-control": "private",
       "content-type": "text/html",
@@ -17,7 +17,7 @@
       "refresh": "0;URL=/Authentification/default.asp?",
       "vary": "Accept-Encoding",
       "set-cookie": [
-        "ASPSESSIONIDAARSQTCC=GIKHFLJAMNLOKNCLOIELHNHE; path=/"
+        "ASPSESSIONIDACADBBDT=GNPLEDEACMIHGPAPCAOPCCOM; path=/"
       ],
       "connection": "close",
       "transfer-encoding": "chunked"
@@ -41,7 +41,7 @@
       "result": "cookies-session-without-secure-flag",
       "scoreModifier": -40,
       "data": {
-        "ASPSESSIONIDAARSQTCC": {
+        "ASPSESSIONIDACADBBDT": {
           "domain": "sit.jura.pref.gouv.fr",
           "path": "/",
           "port": null
@@ -59,13 +59,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https",
+      "result": "redirection-missing",
       "scoreModifier": -20,
-      "destination": "http://sit.jura.pref.gouv.fr/identification.htm",
-      "redirects": true,
+      "destination": "http://sit.jura.pref.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://sit.jura.pref.gouv.fr/",
-        "http://sit.jura.pref.gouv.fr/identification.htm"
+        "http://sit.jura.pref.gouv.fr/"
       ],
       "statusCode": 200
     },
