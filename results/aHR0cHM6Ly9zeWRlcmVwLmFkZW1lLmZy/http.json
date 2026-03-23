@@ -1,34 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "B+",
     "error": null,
-    "score": 60,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Feb 2026 03:08:24 GMT",
-      "content-type": "text/html; charset=utf-8",
+      "date": "Mon, 23 Mar 2026 03:27:36 GMT",
+      "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "cloudflare",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains; preload",
-      "content-security-policy": "default-src * data: 'unsafe-eval' 'unsafe-inline'; img-src 'self' blob: data:; frame-ancestors 'none'",
-      "cf-cache-status": "DYNAMIC",
-      "last-modified": "Wed, 11 Feb 2026 13:43:29 GMT",
-      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), battery=(), bluetooth=(), camera=(), ch-ua=(), ch-ua-arch=(), ch-ua-bitness=(), ch-ua-full=(), ch-ua-full=(), ch-ua-mobile=(), ch-ua-model=(), ch-ua-platform=(), ch-ua-platform=(), ch-ua-wow64=(), compute-pressure=(), cross-origin-isolated=(), direct-sockets=(), display-capture=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), sync-xhr=(), usb=(), web-share=(), window-management5=(), xr-spatial-tracking2=()",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "vary": "Accept-Encoding",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "x-xss-protection": "1; mode=block",
+      "access-control-allow-origin": "*",
       "set-cookie": [
-        "__cf_bm=936Qvq6b7i10yvILWvVbZvIY8N1ityJpJubiToT3wJU-1771297703.7569957-1.0.1.1-ySPuMU8AMz8DssSlSiMHDHtXKFkJ.W6YnmiJ7mGMRNr0PX_dXsEpyhrULlSAclE5aGAH1HwvoRxSrUNUjvj6_CxYGf8EY0Od1.Qxjpuvly3AAFPR4XNZffWKLDAClLNA; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 17 Feb 2026 03:38:24 GMT"
+        "__cf_bm=rBHIR8idmAov.fra_SmYisd31z.cVkRy52tG1XQRxFM-1774236455.4558737-1.0.1.1-UIqkaWx_m3pzoqx4tgpeW2HWpBS8msnCsH9AkDApeDR0ZYtmrdPsGJ7Zw0SED86HL_FGNNosJDkgfSKkLAvKqQxBllq_c1iQm.VAImg7e1HGBkBBV.HBuxtWNJGLKI0o; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 23 Mar 2026 03:57:36 GMT"
       ],
-      "content-language": "fr",
-      "cf-ray": "9cf214787e60fa15-ORD"
+      "content-security-policy": "frame-ancestors 'self' prod-syderepv2.direct.prod.ademe-scw.fr prod-syderepv2.prod.ademe-scw.fr syderep.ademe.fr;",
+      "last-modified": "Tue, 10 Mar 2026 08:05:48 GMT",
+      "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
+      "referrer-policy": "strict-origin",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+      "vary": "Accept-Encoding,Origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
+      "x-xss-protection": "1; mode=block",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e0a57569cc6c99d-IAD"
     }
   },
   "tests": {
@@ -38,19 +38,11 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
-        "default-src": [
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "*",
-          "data:"
-        ],
-        "img-src": [
-          "'self'",
-          "blob:",
-          "data:"
-        ],
         "frame-ancestors": [
-          "'none'"
+          "'self'",
+          "prod-syderepv2.direct.prod.ademe-scw.fr",
+          "prod-syderepv2.prod.ademe-scw.fr",
+          "syderep.ademe.fr"
         ]
       },
       "http": true,
@@ -63,7 +55,7 @@
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": true
@@ -78,7 +70,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-02-17T03:38:24.000Z",
+          "expires": "2026-03-23T03:57:36.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -90,9 +82,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -112,19 +104,19 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
+      "data": "strict-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-header-invalid",
-      "scoreModifier": -20,
-      "data": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -159,7 +151,7 @@
       "pass": true,
       "result": "x-frame-options-implemented-via-csp",
       "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "data": "sameorigin"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
