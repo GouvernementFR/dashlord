@@ -1,36 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 16 Feb 2026 16:57:12 GMT",
-      "cache-control": "max-age=10800, public",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Mon, 16 Feb 2026 16:57:13 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "age": "4565",
-      "x-cache": "HIT",
-      "x-cache-hits": "219",
-      "x-cache-ttl": "6234.948",
-      "accept-ranges": "bytes",
-      "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-travail-production.cegedim.cloud-tcp80=!nMQacuCgGa89m6sXIkI7F7SI9ajmivB8DNO3aGQWo9kROAgPpzq/UdY7nv6+ytrP5Y0NaHt3DDyIu4jm88ki6huzh5B2; path=/; Httponly; Secure",
-        "TSe92b7ff4029=087dc22938ab280029a8241300638b47038a12abae255e936d52a51d4ae2f289b54ca79b16f5e57b747263b0df59a9df; Secure; Max-Age=30; Path=/",
-        "TS780b36e3027=087dc22938ab200077ab3ce7c2df619531479080e0302dc12b10f28adcbe882a5b79fec5a738d9ef0838f34a0a1130002659e7073b186dbd9348929680fdf492a253370e8939d62c6d2791b18ab7640974f51e309995492dbd72f8a263d0bcbb; Secure; Path=/"
+        "TSe92b7ff4029=087dc22938ab2800f67511ef2b4a0dcc73b3eedb0d90c19e12ab4c565e54474f6a1970845d182fb55236dda04b4f6174; Secure; Max-Age=30; Path=/",
+        "TS780b36e3027=087dc22938ab200025e2307549f56a3d09aa25461577138afa25fc5dedfbfa1b3507b1ae59df51e6080ae492ec11300028c2a7639737c6c334bb5e7d9c5c1c6fe4f0c800802b95295be798610eeb15690a8bd60e0f3419bcef135cdf74ca6814; Secure; Path=/"
       ],
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6028",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -51,13 +39,6 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-travail-production.cegedim.cloud-tcp80": {
-          "domain": "travail-emploi.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
         "TSe92b7ff4029": {
           "domain": "travail-emploi.gouv.fr",
           "max-age": 30,
@@ -106,12 +87,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
