@@ -3,17 +3,13 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 16 Feb 2026 13:29:23 GMT",
-      "set-cookie": [
-        "cookiedef=!GUJWmDth1Ipo4dSecT1PYrEDAreRihGgep9FXGXTC0Q+5pGWBMf/+79ybdUhm7tBr3Dn+impdW4utU0=; path=/; Httponly",
-        "BIGipServer~Tenant-Externe~application~pool-ubika=218263562.20480.0000; path=/; Httponly; Secure"
-      ],
+      "date": "Mon, 23 Mar 2026 16:54:52 GMT",
       "cache-control": "must-revalidate, no-cache, private",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
@@ -24,12 +20,15 @@
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "expect-ct": "max-age=86400",
       "x-drupal-cache": "HIT",
-      "content-length": "98684",
+      "content-length": "98458",
       "content-type": "text/html; charset=UTF-8",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "DENY",
-      "connection": "close"
+      "connection": "close",
+      "set-cookie": [
+        "SESSIONID=!/SdP0OSTOoofo31XbgsyYa9QVNu6jI3ICH3Ps0AcSHW77ywq9hPyBdsNX91rMm4H+CWWPn6Ff+MxJA==; path=/; Httponly; Secure"
+      ]
     }
   },
   "tests": {
@@ -65,22 +64,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
-        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+        "SESSIONID": {
           "domain": "www.terremag.defense.gouv.fr",
           "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
-        },
-        "cookiedef": {
-          "domain": "www.terremag.defense.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
         }
       },
       "sameSite": false
