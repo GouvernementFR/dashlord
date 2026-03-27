@@ -9,28 +9,16 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 16 Feb 2026 16:57:12 GMT",
-      "cache-control": "max-age=10800, public",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Mon, 16 Feb 2026 16:57:13 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "age": "4728",
-      "x-cache": "HIT",
-      "x-cache-hits": "137",
-      "x-cache-ttl": "6071.300",
-      "accept-ranges": "bytes",
-      "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-travail-production.cegedim.cloud-tcp80=!KyGqwHZ5OEaj25EXIkI7F7SI9ajmiqaVHlaVpdU3NLC5ZBepQxcPT+dOjvnj5HSZ+IkYUaASRbk76KdMjeSlWbCE1CCI; path=/; Httponly; Secure",
-        "TSe92b7ff4029=087dc22938ab2800729ad2283f993d6e420b08c701801faee2b47037327cc86907caffc93e50a3f056d2fbdafc11bbdf; Secure; Max-Age=30; Path=/",
-        "TS780b36e3027=087dc22938ab2000cfe2fd6c5d33269559ac6260bf67887b1955946f909c8df5633bfba22c94774608a32c419511300022f32b4f2aa808bbb560b8fccb219e88d7bb929f84736a184ccb8fb5c32e1e8195793e99ae93482d87d65496be90ecfb; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab280022415ab22b31af68b0def4993b521e6d738a222aba42c592bb38b3ceddb3d52eba3fb31cf1946019; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab2000ea6f38c4fa8de95c4316fd640ef7933b7e6e829a1cfe24aacc5e1881ae7d5f0408d750c09f1130005d685e85e029749145ed89eb79b8b73e9cee61187f272a9bfedb2541282781c80c8df3aa4b5a501e1a021e5450559603; Secure; Path=/"
       ],
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "5385",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -51,6 +39,19 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
+        "TSa1d3e6c3029": {
+          "domain": "travail-emploi-sante.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc4ff0492027": {
+          "domain": "travail-emploi-sante.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
           "domain": "travail-emploi-sante.gouv.fr",
           "httponly": true,
@@ -62,32 +63,6 @@
         "TS01c71406": {
           "domain": "travail-emploi-sante.gouv.fr",
           "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TSc4ff0492027": {
-          "domain": "travail-emploi-sante.gouv.fr",
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "BIGipServerpool-travail-production.cegedim.cloud-tcp80": {
-          "domain": "travail-emploi.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TSe92b7ff4029": {
-          "domain": "travail-emploi.gouv.fr",
-          "max-age": 30,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS780b36e3027": {
-          "domain": "travail-emploi.gouv.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -107,7 +82,7 @@
       "pass": false,
       "result": "redirection-invalid-cert",
       "scoreModifier": -20,
-      "destination": "https://travail-emploi.gouv.fr/",
+      "destination": "https://travail-emploi-sante.gouv.fr/",
       "redirects": true,
       "route": [],
       "statusCode": 200
