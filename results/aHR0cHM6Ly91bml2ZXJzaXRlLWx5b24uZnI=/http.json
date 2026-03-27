@@ -3,20 +3,19 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 35,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.13.12",
-      "date": "Tue, 17 Feb 2026 03:16:37 GMT",
+      "date": "Fri, 27 Mar 2026 03:19:59 GMT",
       "content-type": "text/html;charset=UTF-8",
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
       "set-cookie": [
-        "JSESSIONID=11C21426E3B75A66E788A344A69181FC; Path=/; HttpOnly",
-        "ksup-node=ffffffffaf180fe445525d5f4f58455e445a4a42378b;expires=Tue, 17-Feb-2026 03:18:37 GMT;path=/;secure;httponly"
+        "JSESSIONID=14DB83D12D69B960B538EE554676227C; Path=/; HttpOnly"
       ],
       "strict-transport-security": "max-age=15724800; includeSubDomains",
       "connection": "close"
@@ -45,14 +44,6 @@
           "httponly": true,
           "path": "/",
           "port": null
-        },
-        "ksup-node": {
-          "domain": "www.universite-lyon.fr",
-          "expires": "2026-02-17T03:18:37.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
         }
       },
       "sameSite": false
@@ -66,14 +57,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.universite-lyon.fr/",
       "redirects": true,
       "route": [
         "http://universite-lyon.fr/",
-        "https://universite-lyon.fr/",
         "https://www.universite-lyon.fr/"
       ],
       "statusCode": 200
