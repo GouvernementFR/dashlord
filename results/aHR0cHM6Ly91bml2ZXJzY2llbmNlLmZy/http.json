@@ -3,10 +3,10 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "Apache/2.4.62",
@@ -16,15 +16,15 @@
       "x-ua-compatible": "IE=edge",
       "vary": "Accept-Encoding",
       "testjiv": "on est bien sur rec2",
-      "content-length": "6718",
+      "content-length": "6587",
       "content-type": "text/html; charset=utf-8",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=15552001; includeSubDomains; preload",
       "x-frame-options": "SAMEORIGIN",
       "cache-control": "max-age=7200",
-      "expires": "Tue, 17 Feb 2026 05:15:15 GMT",
-      "date": "Tue, 17 Feb 2026 03:15:15 GMT",
+      "expires": "Fri, 27 Mar 2026 05:20:23 GMT",
+      "date": "Fri, 27 Mar 2026 03:20:23 GMT",
       "connection": "close"
     }
   },
@@ -76,13 +76,18 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-not-needed-no-http",
-      "scoreModifier": 0,
-      "destination": "https://www.universcience.fr/fr/",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.universcience.fr/fr/accueil",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://universcience.fr/",
+        "https://www.universcience.fr/",
+        "https://www.universcience.fr/fr/",
+        "https://www.universcience.fr/fr/accueil"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
