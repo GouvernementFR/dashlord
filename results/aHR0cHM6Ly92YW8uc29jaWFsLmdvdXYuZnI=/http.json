@@ -9,17 +9,18 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 19 Feb 2026 03:12:46 GMT",
       "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "last-modified": "Wed, 26 Nov 2025 15:44:27 GMT",
+      "date": "Fri, 27 Mar 2026 03:27:21 GMT",
+      "etag": "W/\"69a052dc-e61\"",
+      "last-modified": "Thu, 26 Feb 2026 14:04:12 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "vary": "Accept-Encoding",
-      "etag": "W/\"6927205b-efc\"",
+      "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-xss-protection": "1; mode=block",
-      "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -57,11 +58,11 @@
           "https:"
         ],
         "script-src": [
-          "'sha256-hrdpnqvmttk5fpqhtjc6xpeyr2opgbsfhk9gz0pqgie='",
-          "'sha256-ufkra/fup5noy4wf875ndemtys35o8voycoidrfuy4i='",
-          "'sha256-vsetgqhwbea+eruy8u0i9uoqowcs5i+hjjrxrekpmii='",
+          "'sha256-ioidpsi7mfqbuxh8yv04dzmwvagzi4tx/msn44zqb0w='",
+          "'sha256-irtcgzv3w3tftx98ca68j+anlv2ckcgfqrzz3p1isqy='",
+          "'sha256-oxajxhdgrcfbg4e3zfgayopmzanf85ya8itljvcij+i='",
           "'sha256-x57v/bzf7ppmz5tkmjzml6dqt9isvlogyyd8evbrymy='",
-          "'sha384-xyrtzouffbqpwm24xt6dxppil3pgmfp4cy5zn97eaaeaufgxnfa+yjg5/qytaxto'",
+          "'sha384-zw6l94suhw45jg0jcxorcwj6ocnt7qzbyqeyd0nmb4mirmln1a0x1boormfo5sng'",
           "'strict-dynamic'",
           "'unsafe-eval'"
         ],
@@ -128,10 +129,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
