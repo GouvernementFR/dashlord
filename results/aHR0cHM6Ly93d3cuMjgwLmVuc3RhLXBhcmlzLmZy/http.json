@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 19 Feb 2026 03:28:46 GMT",
+      "date": "Sun, 29 Mar 2026 03:23:54 GMT",
       "content-type": "text/html; charset=utf-8",
       "content-length": "148653",
       "connection": "close",
@@ -21,11 +21,11 @@
       "etag": "W/\"65add16835d7b8e8f0923cc171a7aebb\"",
       "cache-control": "max-age=0, private, must-revalidate",
       "set-cookie": [
-        "utm_data=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkludDlJZz09IiwiZXhwIjoiMjAyNy0wMi0xOVQwMzoyODo0Ni41NTlaIiwicHVyIjoiY29va2llLnV0bV9kYXRhIn19--b41bcd565767dbd366dcc9dcc363d3a8678f0a43; path=/; expires=Fri, 19 Feb 2027 03:28:46 GMT; secure; httponly"
+        "utm_data=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkludDlJZz09IiwiZXhwIjoiMjAyNy0wMy0yOVQwMzoyMzo1NC40NDFaIiwicHVyIjoiY29va2llLnV0bV9kYXRhIn19--ce42dbe0534ab92713cbf766885fdc965401f538; path=/; expires=Mon, 29 Mar 2027 03:23:54 GMT; secure; httponly"
       ],
-      "x-request-id": "2ab9e428cb45a161a86fd9fa377e184c",
-      "x-runtime": "0.116326",
-      "strict-transport-security": "max-age=15724800; includeSubDomains"
+      "x-request-id": "0068446dae6b0776bbe4fb65dcc283fb",
+      "x-runtime": "0.152314",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
   },
   "tests": {
@@ -48,7 +48,7 @@
       "data": {
         "utm_data": {
           "domain": "www.280.ensta-paris.fr",
-          "expires": "2027-02-19T03:28:46.000Z",
+          "expires": "2027-03-29T03:23:54.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -91,9 +91,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15724800; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains",
       "includeSubDomains": true,
-      "maxAge": 15724800,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
