@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "B-",
     "error": null,
-    "score": 25,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 19 Feb 2026 03:12:44 GMT",
+      "date": "Sun, 29 Mar 2026 03:22:30 GMT",
       "server": "Apache",
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=15768000",
@@ -48,12 +48,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.cppap.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://www.cppap.fr/",
+        "https://www.cppap.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -67,12 +70,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 15768000,
       "preload": false,
       "preloaded": false
     },
