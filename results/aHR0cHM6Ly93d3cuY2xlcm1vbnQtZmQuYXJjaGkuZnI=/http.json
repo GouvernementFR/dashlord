@@ -9,17 +9,17 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 19 Feb 2026 03:18:47 GMT",
+      "date": "Sun, 29 Mar 2026 03:31:51 GMT",
       "server": "Apache",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "pragma": "no-cache",
+      "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+      "vary": "Accept-Encoding,Host,User-Agent",
       "x-content-type-options": "nosniff",
       "strict-transport-security": "max-age=31536000",
       "referrer-policy": "no-referrer-when-downgrade",
       "x-frame-options": "SAMEORIGIN",
-      "last-modified": "Wed, 18 Feb 2026 21:54:20 GMT",
-      "vary": "Accept-Encoding,Host,User-Agent",
-      "cache-control": "max-age=0",
-      "expires": "Thu, 19 Feb 2026 03:18:47 GMT",
-      "content-length": "42731",
+      "content-length": "245771",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -54,12 +54,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://www.clermont-fd.archi.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://www.clermont-fd.archi.fr/",
+        "https://www.clermont-fd.archi.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -87,10 +90,6 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://www.googletagmanager.com/gtag/js?id=GT-NB9V8T7": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://www.google.com/recaptcha/api.js?render=6Lenvc4ZAAAAABYDEBAIowCa5igLqKbYjA4QkFcu&ver=3.0": {
           "crossorigin": null,
           "integrity": null
