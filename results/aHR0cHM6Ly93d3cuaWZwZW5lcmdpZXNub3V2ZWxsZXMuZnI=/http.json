@@ -1,21 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 5,
+    "score": 50,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Thu, 19 Feb 2026 03:25:59 GMT",
+      "date": "Tue, 31 Mar 2026 03:21:26 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "25264",
+      "content-length": "25692",
       "connection": "close",
       "cache-control": "max-age=21600, public",
-      "x-drupal-dynamic-cache": "UNCACHEABLE",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
@@ -23,8 +23,8 @@
       "vary": "Cookie,Accept-Encoding",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "last-modified": "Thu, 19 Feb 2026 02:00:38 GMT",
-      "etag": "\"1771466438-gzip\""
+      "last-modified": "Tue, 31 Mar 2026 01:00:38 GMT",
+      "etag": "\"1774918838-gzip\""
     }
   },
   "tests": {
@@ -90,18 +90,18 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "//static.addtoany.com/menu/page.js": {
+        "https://static.addtoany.com/menu/page.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "//cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js": {
+        "https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/js/bootstrap.min.js": {
           "crossorigin": "anonymous",
-          "integrity": "sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4="
+          "integrity": "sha256-3XV0ZwG+520tCQ6I0AOlrGAFpZioT/AyPuX0Zq2i8QY="
         },
-        "//cdn.jsdelivr.net/gh/jfeltkamp/cookiesjsr@1/dist/cookiesjsr-preloader.min.js": {
+        "https://cdn.jsdelivr.net/gh/jfeltkamp/cookiesjsr@1/dist/cookiesjsr-preloader.min.js": {
           "crossorigin": null,
           "integrity": null
         }
