@@ -3,20 +3,19 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:05:50 GMT",
+      "date": "Tue, 31 Mar 2026 03:31:34 GMT",
       "set-cookie": [
-        "PHPSESSID=tc4vr83a33o6ra31uun1e8jaj9; expires=Sat, 21 Feb 2026 13:05:50 GMT; Max-Age=36000; path=/; secure; httponly; samesite=lax",
-        "cookiedef=!E7PcU8yJR1AqCweecT1PYrEDAreRimsN16Xifu0htMVrT4ZInnDNlZTyCanN9sVoFOp1dVa7vjTwZA==; path=/; Httponly",
-        "BIGipServer~Tenant-Externe~application~pool-ubika=218263562.20480.0000; path=/; Httponly; Secure"
+        "PHPSESSID=1a3eaeddf6cb79b957c0a737cacabfb5; expires=Tue, 31 Mar 2026 13:31:34 GMT; Max-Age=36000; path=/; secure; httponly; samesite=lax",
+        "SESSIONID=!ZlQ8FhVMY+3pqSBXbgsyYa9QVNu6jNFW9DchIqWuJzwAr2b92cL0X1I3ajaCML+kvm0qOf6joMlyDQ==; path=/; Httponly; Secure"
       ],
       "cache-control": "max-age=0, must-revalidate, private",
-      "expires": "Sat, 21 Feb 2026 03:05:50 GMT",
+      "expires": "Tue, 31 Mar 2026 03:31:34 GMT",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=UTF-8",
       "referrer-policy": "strict-origin-when-cross-origin",
@@ -40,13 +39,13 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "PHPSESSID": {
           "domain": "www.reservistes.defense.gouv.fr",
-          "expires": "2026-02-21T13:05:50.000Z",
+          "expires": "2026-03-31T13:31:34.000Z",
           "httponly": true,
           "max-age": 36000,
           "path": "/",
@@ -54,13 +53,7 @@
           "samesite": "lax",
           "secure": true
         },
-        "cookiedef": {
-          "domain": "www.reservistes.defense.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+        "SESSIONID": {
           "domain": "www.reservistes.defense.gouv.fr",
           "httponly": true,
           "path": "/",
