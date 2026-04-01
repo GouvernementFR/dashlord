@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:05:51 GMT",
+      "date": "Wed, 01 Apr 2026 03:22:42 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.obshabitat.gers.developpement-durable.gouv.fr/local/cache-css/e5615836c65afdc3e2db82ee162ae900.css?1766414067>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.obshabitat.gers.developpement-durable.gouv.fr/local/cache-css/e5615836c65afdc3e2db82ee162ae900.css?1773308413>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sat, 21 Feb 2026 03:05:51 GMT",
+      "last-modified": "Wed, 01 Apr 2026 03:22:41 GMT",
       "set-cookie": [
-        "SRV=8eebe19e-61b4-41b5-9e77-fe2c86934e4d; path=/"
+        "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -62,15 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://www.obshabitat.gers.developpement-durable.gouv.fr/",
+      "destination": "http://www.obshabitat.gers.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://www.obshabitat.gers.developpement-durable.gouv.fr/",
-        "https://www.obshabitat.gers.developpement-durable.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
