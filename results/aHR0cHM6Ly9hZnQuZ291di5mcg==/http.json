@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:21:59 GMT",
+      "date": "Wed, 01 Apr 2026 03:28:56 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -22,18 +22,16 @@
       "origin-agent-cluster": "?1",
       "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9d131de1fc42216e\"",
+      "server-timing": "chlray;desc=\"9e5481b248d818f1\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-      "set-cookie": [
-        "__cf_bm=ZQKYW4S.sql0mKz.sTFUBnPcyYKT_xcswQDpcllggcU-1771644119-1.0.1.1-8l5nSnYf5pNAX3VyMQrrAkcMgjmoKpd.xorA4lwIhlyOun9myb93yUhIRw_jwvWAaJCwSXtmVxO2NU0Othv4klGKX0F8KndP80qMbwmDnuE; path=/; expires=Sat, 21-Feb-26 03:51:59 GMT; domain=.aft.gouv.fr; HttpOnly; Secure; SameSite=None"
-      ],
-      "vary": "Accept-Encoding",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "vary": "accept-encoding",
+      "set-cookie": [
+        "__cf_bm=7u_D1Aov97V_mrpWW0qlZ5dekLpvcq6x5pBu18qrkLA-1775014136.6891103-1.0.1.1-jVbfTap1l8TIjBbPF6O01hSlP0IiU82a1XV97NJ036Da.EZNJxC1J6Gw4hJW9jNnOheUYnjx9U3HnRKmn9MY.jvl5UJ4Lz8Q6c_9NB1tzXZ7J.QmaM_eMeDM5fz7jSyP; HttpOnly; Secure; Path=/; Domain=aft.gouv.fr; Expires=Wed, 01 Apr 2026 03:58:56 GMT"
+      ],
       "server": "cloudflare",
-      "cf-ray": "9d131de1fc42216e-MAD",
+      "cf-ray": "9e5481b248d818f1-FRA",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -52,20 +50,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "aft.gouv.fr",
-          "expires": "2026-02-21T03:51:59.000Z",
+          "expires": "2026-04-01T03:58:56.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
