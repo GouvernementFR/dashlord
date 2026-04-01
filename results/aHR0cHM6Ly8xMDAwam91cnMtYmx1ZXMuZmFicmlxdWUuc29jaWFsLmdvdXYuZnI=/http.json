@@ -9,17 +9,17 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:15:44 GMT",
       "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
+      "date": "Wed, 01 Apr 2026 03:29:34 GMT",
+      "etag": "\"3061-ln3w87B3JRWzID+yulcyVmGS3gc\"",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "x-frame-options": "DENY",
-      "x-xss-protection": "1; mode=block",
       "x-powered-by": "Next.js",
-      "etag": "\"3061-ln3w87B3JRWzID+yulcyVmGS3gc\"",
-      "vary": "Accept-Encoding",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -76,10 +76,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
