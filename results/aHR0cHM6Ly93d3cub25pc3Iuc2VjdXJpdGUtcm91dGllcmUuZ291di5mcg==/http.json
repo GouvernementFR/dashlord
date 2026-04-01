@@ -9,25 +9,23 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:05:20 GMT",
+      "date": "Wed, 01 Apr 2026 03:22:21 GMT",
       "set-cookie": [
-        "YOMe1h3tgHKNQxhV6V7n5g__=v1cfbOgwSDt-c; Expires=Sat, 21-Feb-2026 05:06:05 GMT; Path=/"
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1W-bOgwSDeiI; Expires=Wed, 01-Apr-2026 05:24:51 GMT; Path=/"
       ],
-      "x-content-type-options": "nosniff",
-      "content-language": "fr",
-      "x-frame-options": "sameorigin",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Fri, 20 Feb 2026 14:46:46 GMT",
-      "etag": "\"1771598806-gzip\"",
-      "vary": "Cookie,Accept-Encoding",
-      "x-xss-protection": "1; mode=block",
-      "expect-ct": "max-age=31536000, enforce",
+      "vary": "Cookie",
+      "content-language": "fr",
+      "content-length": "93139",
       "content-type": "text/html; charset=UTF-8",
-      "age": "44",
+      "etag": "\"1774981142\"",
+      "last-modified": "Tue, 31 Mar 2026 18:19:02 GMT",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "age": "149",
       "accept-ranges": "bytes",
       "x-cache": "HIT",
       "x-cache-hits": "1",
-      "content-length": "16919",
       "strict-transport-security": "max-age=2678400",
       "connection": "close"
     }
@@ -52,7 +50,7 @@
       "data": {
         "YOMe1h3tgHKNQxhV6V7n5g__": {
           "domain": "www.onisr.securite-routiere.gouv.fr",
-          "expires": "2026-02-21T05:06:05.000Z",
+          "expires": "2026-04-01T05:24:51.000Z",
           "path": "/",
           "port": null
         }
@@ -115,7 +113,7 @@
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "sameorigin"
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
