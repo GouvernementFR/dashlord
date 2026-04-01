@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:09:02 GMT",
+      "date": "Wed, 01 Apr 2026 03:27:15 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.saint-pierre-et-miquelon.developpement-durable.gouv.fr/local/cache-css/81410f2e4d68d4379bd3bda9a766e991.css?1765814848>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.saint-pierre-et-miquelon.developpement-durable.gouv.fr/local/cache-css/c4d2cc3b39481a71786302495a3f1f9e.css?1773308920>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sat, 21 Feb 2026 03:09:02 GMT",
+      "last-modified": "Wed, 01 Apr 2026 03:27:15 GMT",
       "set-cookie": [
-        "SRV=8eebe19e-61b4-41b5-9e77-fe2c86934e4d; path=/"
+        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -62,12 +62,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://www.saint-pierre-et-miquelon.developpement-durable.gouv.fr/",
+      "destination": "https://www.saint-pierre-et-miquelon.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://www.saint-pierre-et-miquelon.developpement-durable.gouv.fr/",
+        "https://www.saint-pierre-et-miquelon.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
