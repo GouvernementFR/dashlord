@@ -9,26 +9,26 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:22:00 GMT",
+      "date": "Fri, 03 Apr 2026 03:23:12 GMT",
       "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "f2a83d51-7b4e-4d0d-ba5e-99f4ecf0b20e",
+      "x-request-id": "a7ab70d2-8d1a-4a3b-8cf0-0c42b30bd1e6",
       "vary": "Accept-Encoding, Accept-Encoding",
       "x-robots-tag": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "age": "234",
-      "expires": "Sat, 21 Feb 2026 07:22:00 GMT",
-      "cache-control": "public, max-age=14400",
-      "cf-cache-status": "HIT",
-      "last-modified": "Sat, 21 Feb 2026 03:18:06 GMT",
-      "expect-ct": "max-age=86400, enforce",
-      "referrer-policy": "same-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "age": "1470",
+      "last-modified": "Fri, 03 Apr 2026 02:58:41 GMT",
+      "expires": "Fri, 03 Apr 2026 07:23:12 GMT",
+      "cache-control": "public, max-age=14400",
+      "cf-cache-status": "HIT",
       "x-xss-protection": "1; mode=block",
+      "expect-ct": "max-age=86400, enforce",
+      "referrer-policy": "same-origin",
       "server": "cloudflare",
-      "cf-ray": "9d131de8dbe62a16-CDG",
+      "cf-ray": "9e64f4086a4d9ed5-CDG",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -47,20 +47,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "agora.gouv.fr",
-          "expires": "2026-02-21T03:52:00.000Z",
+          "expires": "2026-04-03T03:53:11.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
