@@ -9,22 +9,22 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:25:48 GMT",
+      "date": "Fri, 03 Apr 2026 03:25:13 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "vary": "Accept-Encoding",
       "cache-control": "public, max-age=60",
-      "x-crisp-ray": "4418400f-c99d-424a-97f3-10420fbc2a62",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=11,cfOrigin;dur=446",
-      "x-page-cache-status": "HIT",
-      "x-page-cache-date": "Sat, 21 Feb 2026 03:25:48 GMT",
+      "x-crisp-ray": "6bc6ac20-4c79-4dbe-a3ab-29840d5b4340",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=27,cfOrigin;dur=295",
+      "x-page-cache-status": "EXPIRED",
+      "x-page-cache-date": "Fri, 03 Apr 2026 03:25:13 GMT",
       "strict-transport-security": "max-age=2592000",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UbPph9%2B%2B0s%2F6JD93zLwCGds%2BmPDTRAegCvg6Xx8nYXggqQyVXw1uuh4AyrQJDRv70Q4tbKPHHMgjZ%2B8hdTSwkooI1SteTEtXIc7r3OkWj69%2FV38nb4c9%2Fqt3aPyCimqs8Q%3D%3D\"}]}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=L1bmnGfUhPh8qjUT%2BMSrB30%2FCzn9dL5o1%2BSyaTfY%2BoNeYkPENjNtQkE0Gn2QHEy%2FN57c9LU88DMh9jQwFPQlS4n71vH2M1VKNJyaz051E20wmdl%2F4NIgAq6Q8iP8FvQyvGftr6%2FtDTnHGeQTFKvtF1AgQhU%3D\"}]}",
       "cf-cache-status": "DYNAMIC",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "cf-ray": "9d1323767be33117-SJC",
+      "cf-ray": "9e64f6fcd9669d2e-IAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -95,17 +95,17 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://static.crisp.help/javascripts/libs/libs.min.js?c7ced0299d1696d190a2f77f656099593": {
+        "https://static.crisp.help/javascripts/libs/libs.min.js?c693a0c4630a21eef3b44b7a62e25cef3": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.crisp.help/javascripts/site/common/common.min.js?ca6dd10150c6613c0de6a558f0c92000a": {
+        "https://static.crisp.help/javascripts/site/common/common.min.js?c16a6a9afb3fa1f170a65446d3acf8206": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
