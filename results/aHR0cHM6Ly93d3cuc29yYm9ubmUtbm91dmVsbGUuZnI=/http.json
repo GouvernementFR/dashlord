@@ -1,21 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 0,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:19:38 GMT",
+      "date": "Fri, 03 Apr 2026 03:23:01 GMT",
       "server": "Apache-Coyote/1.1",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "frame-ancestors 'self' https://www.sorbonne-nouvelle.fr;",
+      "referrer-policy": "same-origin",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-xss-protection": "1; mode=block",
       "content-type": "text/html",
       "vary": "Accept-Encoding",
       "set-cookie": [
-        "JSESSIONID=735E2537C82002DFEE7B2E7D4BB48405; Path=/"
+        "JSESSIONID=E95625AC0DF81B69AD41580FA630CD07; Path=/"
       ],
       "connection": "close",
       "transfer-encoding": "chunked"
@@ -25,19 +29,36 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "https://www.sorbonne-nouvelle.fr"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
       "data": {
         "JSESSIONID": {
           "domain": "www.sorbonne-nouvelle.fr",
@@ -70,21 +91,21 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -101,16 +122,16 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": null
     },
     "cross-origin-resource-policy": {
