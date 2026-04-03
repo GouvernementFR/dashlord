@@ -1,37 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "128",
+      "age": "3437",
       "cache-control": "max-age=3600, public",
       "content-language": "fr",
-      "content-length": "105897",
+      "content-length": "114697",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Sat, 21 Feb 2026 03:23:33 GMT",
-      "etag": "\"1771607684\"",
+      "date": "Fri, 03 Apr 2026 03:25:10 GMT",
+      "etag": "\"1775154239\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Fri, 20 Feb 2026 17:14:44 GMT",
-      "traceresponse": "00-1896250683d628deae05df90669b7db6-06c8743c3b2faa67-01",
+      "last-modified": "Thu, 02 Apr 2026 18:23:59 GMT",
+      "traceresponse": "00-18a2bae86cfe30097696edac9d4c90f0-059119f863dad491-01",
       "vary": "Cookie",
       "via": "1.1 varnish.0 (Varnish/7.3)",
       "x-content-type-options": "nosniff",
       "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
-      "x-drupal-cache": "MISS",
+      "x-drupal-cache": "HIT",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "x-frame-options": "SAMEORIGIN",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-platform-cluster": "sdswrrccnsh2q-prod-m5kk7fq",
       "x-platform-processor": "cclepa6qoc27wkohyqemgpfghe",
       "x-platform-router": "2cz4gcrao2smxteplq2gk4dadm",
-      "x-varnish": "761914 761806",
+      "x-varnish": "99148101 99147681",
       "connection": "close"
     }
   },
@@ -97,15 +97,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://admin-pipeline.upsun-fr-3.observability-pipeline.blackfire.io/js/probe.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
