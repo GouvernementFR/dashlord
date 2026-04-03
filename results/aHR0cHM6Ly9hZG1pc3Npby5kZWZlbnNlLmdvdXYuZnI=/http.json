@@ -9,24 +9,25 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:24:47 GMT",
+      "date": "Fri, 03 Apr 2026 03:25:18 GMT",
       "set-cookie": [
-        "JSESSIONID=3F29FE248D7C1ACC5872B51582A2444C; Path=/; Secure; HttpOnly",
-        "XSRF-TOKEN=a0d6ce77-b59e-44c4-99ac-802c9bcb6022; Path=/; Secure; HttpOnly",
-        "cookiedef=!WuXlNAw5o7QzP2KecT1PYrEDAreRimh4J7v7bKTHkaIOGeT6KEs2ADBly01ebS4wNDtwyo/XdTwLDQ==; path=/; Httponly",
-        "BIGipServer~Tenant-Externe~application~pool-ubika=218263562.20480.0000; path=/; Httponly; Secure"
+        "JSESSIONID=62A4ED2FDEDA6D75FE312CB0D4894961; Path=/; Secure; HttpOnly",
+        "XSRF-TOKEN=ab355c42-c6e8-4edf-abd2-4201caeff56a; Path=/; Secure; HttpOnly",
+        "cookiedef=!nodhAe83NzcJ9GKecT1PYrEDAreRir57KzjzYDKqgspc4gFd1jSy7tkz2uxmJn5FemuzYqcR4okEIA==; path=/; Httponly",
+        "SESSIONID=!Ty3sJHo7Rtbzi8VXbgsyYa9QVNu6jIvwxA8GD1BffjNMb+w5qLDzob+nTE+yfXLq8xxm7323zCuPww==; path=/; Httponly; Secure"
       ],
       "x-xss-protection": "0",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
       "pragma": "no-cache",
       "expires": "0",
       "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+      "vary": "accept-encoding",
       "content-type": "text/html;charset=UTF-8",
-      "content-length": "91413",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "connection": "close"
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -67,7 +68,7 @@
           "path": "/",
           "port": null
         },
-        "BIGipServer~Tenant-Externe~application~pool-ubika": {
+        "SESSIONID": {
           "domain": "admissio.defense.gouv.fr",
           "httponly": true,
           "path": "/",
