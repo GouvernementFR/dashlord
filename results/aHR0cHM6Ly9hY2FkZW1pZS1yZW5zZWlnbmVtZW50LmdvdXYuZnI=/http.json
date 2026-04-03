@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Feb 2026 03:19:28 GMT",
+      "date": "Fri, 03 Apr 2026 03:21:46 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=604800, public",
@@ -21,16 +21,18 @@
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie",
       "x-drupal-cache": "MISS",
-      "last-modified": "Sat, 21 Feb 2026 03:15:15 GMT",
-      "etag": "W/\"1771643715\"",
-      "x-varnish": "6177331 3786538",
-      "age": "252",
+      "last-modified": "Fri, 03 Apr 2026 03:18:15 GMT",
+      "etag": "W/\"1775186295\"",
+      "x-varnish": "67813786 63890892",
+      "age": "210",
       "x-cache": "HIT",
-      "x-cache-hits": "8",
+      "x-cache-hits": "4",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "content-security-policy": "base-uri 'self'; connect-src 'self' https://www.data.gouv.fr; default-src 'self'; font-src 'self' data: https://static.data.gouv.fr; frame-src 'self' https://www.youtube.com https://www.documentation-administrative.gouv.fr https://www.youtube-nocookie.com; img-src 'self' data: https://i.ytimg.com https://static.data.gouv.fr https://www.documentation-administrative.gouv.fr; manifest-src 'self'; media-src 'self' https://www.youtube.com https://www.documentation-administrative.gouv.fr; object-src 'none'; script-src 'report-sample' 'self' https://static.data.gouv.fr/static/oembed.js https://gva.et-gv.fr/; style-src 'report-sample' 'self' https://static.data.gouv.fr; worker-src 'none';",
       "x-xss-protection": "1; mode=block",
       "referrer-policy": "no-referrer",
+      "cross-origin-embedder-policy": "unsafe-none",
+      "cross-origin-resource-policy": "same-origin",
       "transfer-encoding": "chunked"
     }
   },
@@ -184,10 +186,10 @@
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
