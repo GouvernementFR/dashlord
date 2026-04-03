@@ -9,23 +9,22 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "etag": "\"ea4f42dd\"",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "32705",
-      "cache-control": "max-age=4523, public",
-      "expires": "Sat, 21 Feb 2026 04:36:09 GMT",
-      "date": "Sat, 21 Feb 2026 03:20:46 GMT",
+      "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
+      "cache-control": "max-age=7200, public",
+      "date": "Fri, 03 Apr 2026 03:21:51 GMT",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
+      "connection": "close",
       "set-cookie": [
-        "visid_incap_3172065=C35SArvbRi2WiJ76Wl7p+Y4kmWkAAAAAQUIPAAAAAAA6/t8+2tDvzi0VpCacFff6; expires=Sat, 20 Feb 2027 23:05:07 GMT; HttpOnly; path=/; Domain=.17cyber.gouv.fr",
-        "incap_ses_608_3172065=yMIFLYgJPH8uYUbY7AxwCI4kmWkAAAAAr7y4j+dO3zOovS2hUBcCuw==; path=/; Domain=.17cyber.gouv.fr"
+        "visid_incap_3172065=1/HV3rGqQ5aFRJ67KlgjSU4yz2kAAAAAQUIPAAAAAAAA785KRuz+4ABi+bEz190t; expires=Fri, 02 Apr 2027 06:16:53 GMT; HttpOnly; path=/; Domain=.17cyber.gouv.fr",
+        "incap_ses_197_3172065=0Ch1Ro06Dw6BFLZLk+K7Ak8yz2kAAAAA5c3Jcjx4RBq4dgM8C50LpA==; path=/; Domain=.17cyber.gouv.fr"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "53-325755667-0 0CNN RT(1771644047001 121) q(0 -1 -1 0) r(0 -1)"
+      "x-iinfo": "61-351326327-351325485 2NNN RT(1775186510922 19) q(0 0 0 1) r(7 7)"
     }
   },
   "tests": {
@@ -48,12 +47,12 @@
       "data": {
         "visid_incap_3172065": {
           "domain": "17cyber.gouv.fr",
-          "expires": "2027-02-20T23:05:07.000Z",
+          "expires": "2027-04-02T06:16:53.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_608_3172065": {
+        "incap_ses_197_3172065": {
           "domain": "17cyber.gouv.fr",
           "path": "/",
           "port": null
