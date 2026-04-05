@@ -1,26 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Feb 2026 03:23:37 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
-      "cache-control": "no-cache",
-      "expires": "-1",
+      "cache-control": "no-store",
+      "content-type": "text/html; charset=utf-8",
       "set-cookie": [
-        "VT_USER=6a7a24f27587f4f7087234e6dd51a418; expires=Tue, 03-Mar-2026 11:23:37 GMT; Max-Age=720000; path=/; secure",
-        "HAPROXYID=s02; path=/; HttpOnly; Secure; SameSite=Strict"
+        "techaro.lol-anubis-auth=; Path=/; Expires=Sun, 05 Apr 2026 03:27:21 GMT; Max-Age=0; Secure; SameSite=None",
+        "techaro.lol-anubis-cookie-verification=019d5baf-30d7-75a4-89a1-f3d63b6f8ea1; Path=/; Expires=Sun, 05 Apr 2026 03:58:21 GMT; Secure; SameSite=None"
       ],
-      "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-      "content-security-policy": "default-src  'self' 'unsafe-inline' 'unsafe-eval' ofpra-diffusion-admin.ligeo-archives.com data:   wiki-diffusion.ligeo-archives.com",
-      "x-frame-options": "SAMEORIGIN",
+      "date": "Sun, 05 Apr 2026 03:28:21 GMT",
+      "transfer-encoding": "chunked",
       "strict-transport-security": "max-age=63072000",
       "x-xss-protection": "1;mode=block",
       "x-content-type-options": "nosniff",
@@ -32,59 +28,39 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "data:",
-          "ofpra-diffusion-admin.ligeo-archives.com",
-          "wiki-diffusion.ligeo-archives.com"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
-        "VT_USER": {
+        "techaro.lol-anubis-auth": {
           "domain": "archives.ofpra.gouv.fr",
-          "expires": "2026-03-03T11:23:37.000Z",
-          "max-age": 720000,
+          "expires": "2026-04-05T03:27:21.000Z",
+          "max-age": 0,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         },
-        "HAPROXYID": {
+        "techaro.lol-anubis-cookie-verification": {
           "domain": "archives.ofpra.gouv.fr",
-          "httponly": true,
+          "expires": "2026-04-05T03:58:21.000Z",
           "path": "/",
           "port": null,
-          "samesite": "strict",
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -142,10 +118,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
