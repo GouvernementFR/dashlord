@@ -1,36 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "A+",
     "error": null,
-    "score": 60,
-    "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "score": 120,
+    "statusCode": 403,
+    "testsFailed": 0,
+    "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Feb 2026 03:28:09 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "7638",
-      "cache-control": "max-age=600, public",
-      "content-language": "fr",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Thu, 19 Feb 2026 10:49:20 GMT",
-      "etag": "\"1771498160-gzip\"",
-      "age": "225",
-      "accept-ranges": "bytes",
-      "x-cache": "HIT",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "access-control-allow-methods": "GET, POST, HEAD",
-      "access-control-allow-headers": "DNT, User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Range",
-      "x-frame-options": "same-origin",
-      "x-xss-protection": "1; mode=block",
+      "date": "Sun, 05 Apr 2026 03:27:41 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "content-security-policy": "default-src 'none'; script-src 'strict-dynamic' 'nonce-mclEdffqYZJReSdJUqS46ERmUKLPnK3K'; style-src 'nonce-6rsOzZ14tge6UE2EoyrTmafhRfGGMIHm'; frame-ancestors 'none'; base-uri 'none'; img-src data:; font-src data:; require-trusted-types-for 'script';",
       "x-content-type-options": "nosniff",
-      "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
-      "content-security-policy": "default-src 'self';script-src 'self' 'unsafe-inline' https://gvb.et-gv.fr https://hdge.diplomatie.gouv.fr https://ton.twimg.com https://platform.twitter.com;connect-src 'self' https://hdge.diplomatie.gouv.fr;object-src 'none';frame-src 'self' https://player.vimeo.com https://platform.twitter.com https://www.youtube.com https://www.youtube-nocookie.com;img-src 'self' data: https://media.diplomatie.gouv.fr;style-src 'self';font-src 'self' data:;",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), battery=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), speaker-selection=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), interest-cohort=()",
+      "cache-control": "no-cache, no-store, must-revalidate",
       "x-dns-prefetch-control": "off",
-      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=63072000",
       "connection": "close"
     }
@@ -38,60 +26,48 @@
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe-default-src-none",
+      "scoreModifier": 10,
       "data": {
         "default-src": [
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://gvb.et-gv.fr",
-          "https://hdge.diplomatie.gouv.fr",
-          "https://platform.twitter.com",
-          "https://ton.twimg.com"
-        ],
-        "connect-src": [
-          "'self'",
-          "https://hdge.diplomatie.gouv.fr"
-        ],
-        "object-src": [
           "'none'"
         ],
-        "frame-src": [
-          "'self'",
-          "https://platform.twitter.com",
-          "https://player.vimeo.com",
-          "https://www.youtube-nocookie.com",
-          "https://www.youtube.com"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "https://media.diplomatie.gouv.fr"
+        "script-src": [
+          "'nonce-mcledffqyzjresdjuqs46ermuklpnk3k'",
+          "'strict-dynamic'"
         ],
         "style-src": [
-          "'self'"
+          "'nonce-6rsozz14tge6ue2eoyrtmafhrfggmihm'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'none'"
+        ],
+        "img-src": [
+          "data:"
         ],
         "font-src": [
-          "'self'",
           "data:"
+        ],
+        "require-trusted-types-for": [
+          "'script'"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
+        "antiClickjacking": true,
+        "defaultNone": true,
+        "insecureBaseUri": false,
         "insecureFormAction": true,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
-        "strictDynamic": false,
+        "strictDynamic": true,
         "unsafeEval": false,
-        "unsafeInline": true,
+        "unsafeInline": false,
         "unsafeInlineStyle": false,
         "unsafeObjects": false
       },
@@ -124,7 +100,7 @@
         "https://bj.ambafrance.org/",
         "https://bj.diplomatie.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -149,7 +125,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
@@ -162,10 +138,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
-      "data": "same-origin"
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
