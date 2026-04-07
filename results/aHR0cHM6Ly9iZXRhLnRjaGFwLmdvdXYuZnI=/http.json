@@ -1,27 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C",
     "error": null,
-    "score": 65,
+    "score": 55,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Feb 2026 03:29:10 GMT",
+      "date": "Tue, 07 Apr 2026 03:24:16 GMT",
       "set-cookie": [
         "tchap_split_version=version_current; Path=/; Max-Age=31540000; SameSite=None; Secure",
-        "bZA_=v1+-POgw__p2D; Expires=Mon, 23-Feb-2026 05:29:10 GMT; Path=/"
+        "bZA_=v1+-POgw__p2D; Expires=Tue, 07-Apr-2026 05:24:16 GMT; Path=/"
       ],
       "content-type": "text/html",
-      "last-modified": "Tue, 10 Feb 2026 16:54:14 GMT",
-      "etag": "W/\"698b62b6-197b\"",
-      "expires": "Mon, 23 Feb 2026 03:29:10 GMT",
+      "last-modified": "Wed, 01 Apr 2026 07:38:34 GMT",
+      "etag": "W/\"69cccb7a-1847\"",
+      "expires": "Tue, 07 Apr 2026 03:24:16 GMT",
       "cache-control": "max-age=0, no-store",
       "referrer-policy": "no-referrer",
       "x-content-type-options": "nosniff",
-      "content-security-policy": "frame-ancestors 'self' https://mel.din.developpement-durable.gouv.fr",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=2678400",
@@ -33,54 +32,72 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": true,
-      "result": "csp-implemented-with-no-unsafe-default-src-none",
-      "scoreModifier": 10,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
       "data": {
-        "frame-ancestors": [
-          "'self'",
-          "https://mel.din.developpement-durable.gouv.fr"
-        ],
         "default-src": [
           "'none'"
         ],
         "style-src": [
-          "'none'"
+          "'self'",
+          "'unsafe-inline'",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "script-src": [
-          "'none'"
+          "'self'",
+          "'wasm-unsafe-eval'",
+          "https://integration.lasuite.numerique.gouv.fr/",
+          "https://www.gstatic.com/recaptcha/",
+          "https://www.recaptcha.net/recaptcha/"
         ],
         "img-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "connect-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "ipc:"
         ],
         "font-src": [
-          "'none'"
+          "'self'",
+          "data:",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "media-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "child-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "worker-src": [
-          "'none'"
+          "'self'",
+          "blob:",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "frame-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "form-action": [
-          "'none'"
+          "'self'",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "manifest-src": [
-          "'none'"
+          "'self'",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ]
       },
-      "http": true,
+      "http": false,
       "meta": true,
       "policy": {
-        "antiClickjacking": true,
+        "antiClickjacking": false,
         "defaultNone": true,
         "insecureBaseUri": true,
         "insecureFormAction": false,
@@ -89,10 +106,10 @@
         "strictDynamic": false,
         "unsafeEval": false,
         "unsafeInline": false,
-        "unsafeInlineStyle": false,
+        "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
-      "numPolicies": 2
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -102,7 +119,7 @@
       "data": {
         "bZA_": {
           "domain": "www.beta.tchap.gouv.fr",
-          "expires": "2026-02-23T05:29:10.000Z",
+          "expires": "2026-04-07T05:24:16.000Z",
           "path": "/",
           "port": null
         },
@@ -146,11 +163,11 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=2678400",
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 2678400,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -176,8 +193,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
