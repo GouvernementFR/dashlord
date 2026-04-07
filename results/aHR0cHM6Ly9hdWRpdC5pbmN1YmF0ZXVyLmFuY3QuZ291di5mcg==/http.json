@@ -1,26 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 10,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Feb 2026 03:29:22 GMT",
+      "date": "Tue, 07 Apr 2026 03:24:15 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "dd35cf08-d2d4-4719-a647-71b9fc7ee718",
+      "x-request-id": "68ff1054-8e99-4151-a8a4-9534224911ba",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-nextjs-cache": "HIT",
       "x-nextjs-prerender": "1, 1",
       "x-nextjs-stale-time": "300",
       "x-powered-by": "Next.js",
       "cache-control": "s-maxage=31536000",
-      "etag": "\"11u9qy09nssrzo\""
+      "etag": "\"ckcvw4ri6ryf\"",
+      "strict-transport-security": "max-age=31536000"
     }
   },
   "tests": {
@@ -52,13 +53,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://audit.incubateur.anct.gouv.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://audit.incubateur.anct.gouv.fr/",
+      "redirects": true,
       "route": [
-        "http://audit.incubateur.anct.gouv.fr/"
+        "http://audit.incubateur.anct.gouv.fr/",
+        "https://audit.incubateur.anct.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -73,12 +75,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
