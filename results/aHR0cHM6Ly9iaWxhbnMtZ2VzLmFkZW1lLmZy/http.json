@@ -1,37 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Feb 2026 03:34:16 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 07 Apr 2026 03:28:58 GMT",
+      "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "cloudflare",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains; preload",
-      "content-language": "fr",
+      "access-control-allow-origin": "*",
       "cache-control": "no-cache, no-store, must-revalidate",
-      "cf-cache-status": "DYNAMIC",
+      "content-security-policy": "frame-ancestors 'self' prod-bilansges.prod.ademe-scw.fr;",
       "set-cookie": [
-        "_395a2=969662dd1dd123d; Path=/; HttpOnly; Secure",
-        "__cf_bm=PuCLZ02cDiqgxEWUfc73s3kF3gzo1hl2ZGeRfxHjg5c-1771817655.4081132-1.0.1.1-69F8ofzH733I36nmqNym8h2SE5NlakYC5bPkbuBv9vRNHtkRu2VbkDNyPKgcXxgG7K9EhcV8AGFpLWW9NmFOC7waQAOzNrZIQNUaGV.hMmIB10BFs0r62GY2ieDzY4nM; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 23 Feb 2026 04:04:16 GMT"
+        "__cf_bm=VGSjx4ZJVixwqmn3L_HQThBwxPruHkFDk_0.sV4Eluo-1775532537.339895-1.0.1.1-85JjQFHB0rD7EpC2KFWLA0g7NFEFd8DylPbV1pf9XBKbRyd.cVyoiHNf.NxbdFs10Q0IZzM2OEtqnCmvSTLAiw6fddNIzzj.KWbAoIRhYElRy._zK9afWnZjoh0OpKQj; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 07 Apr 2026 03:58:58 GMT"
       ],
-      "content-security-policy": "default-src * data: 'unsafe-eval' 'unsafe-inline'",
       "expires": "0",
-      "last-modified": "Thu, 15 Jan 2026 08:53:18 GMT",
+      "last-modified": "Thu, 12 Mar 2026 10:09:48 GMT",
+      "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "pragma": "no-cache",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "vary": "Transfer-Encoding,Accept-Encoding",
+      "referrer-policy": "strict-origin",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+      "vary": "Origin",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
+      "x-frame-options": "sameorigin",
       "x-xss-protection": "1; mode=block",
-      "cf-ray": "9d23aa9a4e8deb0b-ORD"
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e85f1f65af6117f-ORD"
     }
   },
   "tests": {
@@ -41,24 +41,22 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
-        "default-src": [
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "*",
-          "data:"
+        "frame-ancestors": [
+          "'self'",
+          "prod-bilansges.prod.ademe-scw.fr"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": false,
+        "antiClickjacking": true,
         "defaultNone": false,
         "insecureBaseUri": true,
         "insecureFormAction": true,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": true
@@ -71,16 +69,9 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "_395a2": {
-          "domain": "bilans-ges.ademe.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-02-23T04:04:16.000Z",
+          "expires": "2026-04-07T03:58:58.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -92,9 +83,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -111,22 +102,22 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-header-invalid",
-      "scoreModifier": -20,
-      "data": "max-age=31536000; includeSubDomains; preload, max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -151,9 +142,9 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
