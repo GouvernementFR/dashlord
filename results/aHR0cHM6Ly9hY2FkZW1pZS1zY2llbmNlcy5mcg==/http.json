@@ -9,8 +9,11 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Feb 2026 03:22:02 GMT",
-      "server": "Apache",
+      "date": "Tue, 07 Apr 2026 03:24:12 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "cloudflare",
       "cache-control": "must-revalidate, no-cache, private",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
@@ -18,16 +21,18 @@
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "sozu-id": "01KNJZG5XADNZN23NGYG77AXCB",
       "x-drupal-cache": "UNCACHEABLE (response policy)",
       "vary": "Accept-Encoding",
-      "content-type": "text/html; charset=UTF-8",
-      "x-varnish": "595054",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Zg61L2DnNSza4gxF1pyG%2FTF9RvtE1JbU%2BfTR8F%2FDOndBO9j3iMxHVgAgewPY9Mpe%2BwoDWdQg2wnlgZ0gwrja0FF2paH%2FdHiCrqA8EPw5oyJysCPuptqbuqgo4BXvdV6BvWrO3zq%2Bkg%3D%3D\"}]}",
+      "x-varnish": "133007",
       "age": "0",
-      "accept-ranges": "bytes",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=7,cfOrigin;dur=1273",
       "x-varnish-cache": "MISS",
-      "connection": "close",
-      "transfer-encoding": "chunked",
-      "sozu-id": "01KJ4899Q5QAA8HGG9Z1HV02C9"
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e85eaf81d8ec034-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -93,9 +98,14 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
