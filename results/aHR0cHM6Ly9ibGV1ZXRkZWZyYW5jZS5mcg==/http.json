@@ -9,15 +9,20 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx/1.22.1",
-      "date": "Mon, 23 Feb 2026 03:25:45 GMT",
+      "date": "Tue, 07 Apr 2026 03:24:19 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "cache-control": "no-cache, max-age=1",
-      "wpo-cache-status": "cached",
-      "last-modified": "Sun, 22 Feb 2026 10:43:22 GMT",
-      "expires": "Mon, 23 Feb 2026 03:25:46 GMT",
+      "server": "cloudflare",
+      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+      "link": "<https://www.bleuetdefrance.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.bleuetdefrance.fr/wp-json/wp/v2/pages/581>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.bleuetdefrance.fr/>; rel=shortlink",
+      "set-cookie": [
+        "__wpdm_client=13a4c60bab751cc17b58a4b67d2b3776; path=/; domain=www.bleuetdefrance.fr; secure; HttpOnly"
+      ],
+      "cache-control": "max-age=1",
+      "expires": "Tue, 07 Apr 2026 03:24:17 GMT",
+      "vary": "Accept-Encoding,User-Agent",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QPqkl3yQC0VIuEvTgjhuPEfHN4oJl0GL7IDrRy3CfsErXAItr2Krg8%2FoKDI5%2F%2FfH7%2BkVCB6PXWdY3Mw5Z1QpGPEJq%2Fe%2BrfcnDmkCXUbRcJzVXiNMiZAkiGWrOs0rnSHuPkFQ6nmv4g%3D%3D\"}]}",
       "x-content-type-options": "nosniff",
       "x-frame-options": "sameorigin",
       "x-robots-tag": "index,follow,noarchive",
@@ -25,9 +30,14 @@
       "x-download-options": "noopen;",
       "x-permitted-cross-domain-policies": "none",
       "strict-transport-security": "max-age=63072000; includeSubdomains;",
-      "content-security-policy": "frame-ancestors 'self' https://ui.dev;",
-      "vary": "User-Agent",
-      "x-proxy-cache": "MISS"
+      "content-security-policy": "frame-ancestors 'self' https://ui.dev https://www.bleuetdefrance.fr https://boutique.bleuetdefrance.fr https://collecteur.bleuetdefrance.fr https://collecteur-dev.bleuetdefrance.fr https://depot-vente.bleuetdefrance.fr https://depot-vente-dev.bleuetdefrance.fr https://institution.bleuetdefrance.fr https://institution-dev.bleuetdefrance.fr https://revendeur.bleuetdefrance.fr https://revendeur-dev.bleuetdefrance.fr;",
+      "x-proxy-cache": "MISS",
+      "cf-cache-status": "DYNAMIC",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=3208",
+      "cf-ray": "9e85eb1a6f005b74-DFW",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -39,7 +49,17 @@
       "data": {
         "frame-ancestors": [
           "'self'",
-          "https://ui.dev"
+          "https://boutique.bleuetdefrance.fr",
+          "https://collecteur-dev.bleuetdefrance.fr",
+          "https://collecteur.bleuetdefrance.fr",
+          "https://depot-vente-dev.bleuetdefrance.fr",
+          "https://depot-vente.bleuetdefrance.fr",
+          "https://institution-dev.bleuetdefrance.fr",
+          "https://institution.bleuetdefrance.fr",
+          "https://revendeur-dev.bleuetdefrance.fr",
+          "https://revendeur.bleuetdefrance.fr",
+          "https://ui.dev",
+          "https://www.bleuetdefrance.fr"
         ]
       },
       "http": true,
@@ -62,9 +82,17 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "__wpdm_client": {
+          "domain": "www.bleuetdefrance.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -125,6 +153,10 @@
         "https://cdn.brevo.com/js/sdk-loader.js": {
           "crossorigin": null,
           "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
