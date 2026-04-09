@@ -10,28 +10,27 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 25 Feb 2026 03:14:31 GMT",
+      "date": "Thu, 09 Apr 2026 03:14:38 GMT",
       "content-type": "text/html; charset=UTF-8",
       "vary": "Accept-Encoding",
-      "set-cookie": [
-        "pll_language=fr; expires=Thu, 25 Feb 2027 03:14:30 GMT; Max-Age=31536000; path=/; domain=ceva-algues.com; secure; SameSite=Lax",
-        "WEBMO-VNU=4|aZ5pG|aZ5pG; path=/; HttpOnly; SameSite=Strict"
-      ],
       "link": "<https://www.ceva-algues.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.ceva-algues.com/wp-json/wp/v2/pages/29>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.ceva-algues.com/>; rel=shortlink",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "referrer-policy": "no-referrer-when-downgrade",
-      "x-cacheable": "NO:Got Cookie(s)",
-      "x-varnish": "966460979",
-      "age": "0",
+      "x-cacheable": ":perhaps:",
+      "cache-control": "public, max-age=60, stale-while-revalidate=120, stale-if-error=1800",
+      "x-varnish": "35422610 6523271",
+      "age": "786",
       "via": "1.1 varnish (Varnish/7.1)",
       "accept-ranges": "bytes",
       "x-varnutype": "5",
-      "x-cache": "MISS",
-      "x-cachettl": "120s",
-      "transfer-encoding": "chunked",
+      "x-cache": "HIT",
+      "content-length": "18952",
+      "set-cookie": [
+        "WEBMO-VNU=4|adccs|adccs; path=/; HttpOnly; SameSite=Strict"
+      ],
       "connection": "close"
     }
   },
@@ -59,15 +58,6 @@
           "path": "/",
           "port": null,
           "samesite": "strict"
-        },
-        "pll_language": {
-          "domain": "ceva-algues.com",
-          "expires": "2027-02-25T03:14:30.000Z",
-          "max-age": 31536000,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
         }
       },
       "sameSite": false
