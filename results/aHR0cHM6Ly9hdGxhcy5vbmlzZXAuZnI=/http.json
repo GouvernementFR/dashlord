@@ -5,18 +5,20 @@
     "error": null,
     "score": 35,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Feb 2026 03:14:30 GMT",
+      "date": "Sat, 11 Apr 2026 03:22:38 GMT",
       "server": "Apache",
       "x-frame-options": "SAMEORIGIN, sameorigin",
-      "x-xss-protection": "1; mode=block",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-xss-protection": "1; mode=block, 1; mode=block",
+      "x-content-type-options": "nosniff, nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin, strict-origin-when-cross-origin",
       "feature-policy": "geolocation 'self';fullscreen 'self';microphone 'none';camera 'none';autoplay 'none';payment 'none'",
       "x-robots-tag": "noindex",
+      "content-security-policy": "default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https: data: ms-word: ms-powerpoint: ms-excel: ms-visio: ms-access: ms-project: ms-publisher: ms-infopath: vnd.libreoffice.command:",
+      "permissions-policy": "accelerometer=(), autoplay=*, battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), usb=(), web-share=(), xr-spatial-tracking=()",
       "vary": "accept-encoding",
       "content-type": "text/html;charset=UTF-8",
       "content-language": "fr",
@@ -29,13 +31,56 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "data:",
+          "https:",
+          "ms-access:",
+          "ms-excel:",
+          "ms-infopath:",
+          "ms-powerpoint:",
+          "ms-project:",
+          "ms-publisher:",
+          "ms-visio:",
+          "ms-word:",
+          "vnd.libreoffice.command:"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -69,7 +114,7 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
+      "data": "strict-origin-when-cross-origin, strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
@@ -93,10 +138,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
