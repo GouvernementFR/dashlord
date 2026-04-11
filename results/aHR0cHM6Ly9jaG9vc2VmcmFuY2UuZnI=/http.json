@@ -3,23 +3,22 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-language": "fr",
+      "date": "Sat, 11 Apr 2026 03:22:34 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "etag": "W/\"1771972967\"",
+      "content-language": "fr",
+      "etag": "W/\"1775856088\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Tue, 24 Feb 2026 22:42:47 GMT",
+      "last-modified": "Fri, 10 Apr 2026 21:21:28 GMT",
       "link": "</themes/contrib/dsfr/dist/dsfr/favicon/apple-touch-icon.png>; rel=\"apple-touch-icon\", </themes/contrib/dsfr/dist/dsfr/favicon/favicon.svg>; rel=\"icon\"; type=\"image/svg+xml\", </themes/contrib/dsfr/dist/dsfr/favicon/favicon.ico>; rel=\"shortcut icon\"; type=\"image/x-icon\", </themes/contrib/dsfr/dist/dsfr/favicon/manifest.webmanifest>; rel=\"manifest\"; crossorigin=\"use-credentials\"",
-      "traceresponse": "00-1897528926bd160c9d7cd3456672e66d-919a54df3c19a395-01",
+      "traceresponse": "00-18a529ab7b2424b4b3fce1716d41d32c-08131d75761274d3-01",
       "x-content-type-options": "nosniff",
       "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
-      "x-debug-token": "020b4a",
-      "x-debug-token-link": "https://choosefrance.fr/fr/admin/reports/profiler/view/020b4a",
       "x-drupal-dynamic-cache": "MISS",
       "x-frame-options": "SAMEORIGIN",
       "x-platform-cache": "HIT",
@@ -27,13 +26,17 @@
       "x-platform-processor": "wn4n4bbbwhbfjx6c5lcu7taqlu",
       "x-platform-router": "yzad5or7jbhsnkq3hfcgydghzq",
       "accept-ranges": "bytes",
-      "date": "Wed, 25 Feb 2026 03:26:59 GMT",
-      "age": "14292",
-      "x-served-by": "cache-par-lfpg1960060-PAR",
+      "age": "6310",
+      "x-served-by": "cache-par-lfpg1960047-PAR",
       "x-cache": "HIT",
-      "x-cache-hits": "8",
+      "x-cache-hits": "2",
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), aria-notify=(), captured-surface-control=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), on-device-speech-recognition=(), summarizer=(), wildcards=(), private-state-token-issuance=(), private-state-token-redemption=(), ch-ua-high-entropy-values=(), gamepad=(), interest-cohort=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-dns-prefetch-control": "off",
+      "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+      "alt-svc": "h3=\":443\"; ma=86400",
       "strict-transport-security": "max-age=63072000",
       "transfer-encoding": "chunked",
       "connection": "close"
@@ -43,13 +46,35 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "object-src": [
+          "'none'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -82,10 +107,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -125,8 +150,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
