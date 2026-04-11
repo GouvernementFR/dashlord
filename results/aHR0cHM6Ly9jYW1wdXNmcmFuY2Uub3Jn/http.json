@@ -1,9 +1,9 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C-",
     "error": null,
-    "score": 30,
+    "score": 45,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
@@ -11,23 +11,21 @@
     "responseHeaders": {
       "content-type": "text/html; charset=UTF-8",
       "cache-control": "max-age=3600, public",
-      "date": "Wed, 25 Feb 2026 03:00:54 GMT",
+      "date": "Sat, 11 Apr 2026 03:26:30 GMT",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Wed, 25 Feb 2026 03:00:53 GMT",
-      "etag": "W/\"1771988453\"",
-      "x-backend": "server3",
+      "last-modified": "Sat, 11 Apr 2026 03:26:29 GMT",
+      "etag": "W/\"1775877989\"",
       "x-cacheable": "YES",
-      "x-storage": "ram",
       "vary": "Cookie, Accept-Encoding",
-      "age": "1613",
-      "x-cache": "HIT",
-      "x-cache-hits": "79",
+      "age": "14",
       "accept-ranges": "bytes",
-      "content-length": "28068",
+      "x-cache": "HIT",
+      "x-cache-hits": "2",
+      "content-length": "28032",
       "connection": "close"
     }
   },
@@ -45,16 +43,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "SERVERID": {
-          "domain": "www.campusfrance.org",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -66,14 +58,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.campusfrance.org/fr",
       "redirects": true,
       "route": [
         "http://campusfrance.org/",
-        "https://campusfrance.org/",
         "https://www.campusfrance.org/",
         "https://www.campusfrance.org/fr"
       ],
