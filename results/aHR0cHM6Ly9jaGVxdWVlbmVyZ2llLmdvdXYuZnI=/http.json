@@ -9,30 +9,30 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Feb 2026 03:27:51 GMT",
+      "date": "Sat, 11 Apr 2026 03:28:44 GMT",
       "server": "Apache",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "cache-control": "no-store, max-age=0, no-store",
       "pragma": "no-cache",
-      "content-security-policy": "default-src 'self' https://www.youtube-nocookie.com https://*.doubleclick.net https://*.adform.net https://jedonnemonavis.numerique.gouv.fr https://enovate.156th.com https://snap.licdn.com https://px.ads.linkedin.com https://secure.adnxs.com https://www.googletagmanager.com https://adservice.google.com https://connect.facebook.net https://www.facebook.com https://webstats.asp-public.fr/piwik/matomo.js https://webstats.asp-public.fr/piwik/matomo.php data:; style-src 'self' 'unsafe-inline'",
+      "content-security-policy": "default-src 'self'  https://i.ytimg.com https://www.google.com https://www.youtube-nocookie.com https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1/dist/ https://*.doubleclick.net https://*.adform.net https://jedonnemonavis.numerique.gouv.fr https://enovate.156th.com https://snap.licdn.com https://px.ads.linkedin.com https://secure.adnxs.com https://www.googletagmanager.com https://adservice.google.com https://connect.facebook.net https://www.facebook.com https://webstats.asp-public.fr/piwik/matomo.js https://webstats.asp-public.fr/piwik/matomo.php data:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1/dist/",
       "strict-transport-security": "max-age=2592000; includeSubDomains; preload",
       "referrer-policy": "origin",
       "permissions-policy": "geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(self),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()",
-      "last-modified": "Mon, 16 Feb 2026 21:45:26 GMT",
-      "etag": "\"7c8-64af7df783227-gzip\"",
+      "last-modified": "Thu, 09 Apr 2026 09:37:09 GMT",
+      "etag": "\"7c8-64f03c2a96192-gzip\"",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
       "connection": "close",
       "content-type": "text/html",
       "set-cookie": [
-        "visid_incap_2938081=fLDO2ECUS+2t/Q3+oqdrCzZsnmkAAAAAQUIPAAAAAABEDof+fYeH7gBEVfHvN6/H; expires=Wed, 24 Feb 2027 06:22:12 GMT; HttpOnly; path=/; Domain=.chequeenergie.gouv.fr; Secure; SameSite=None",
-        "incap_ses_79_2938081=+U8DebEP9jHAxE/hN6oYATdsnmkAAAAAu1a4sq7BAKoTwaV2EePLdA==; path=/; Domain=.chequeenergie.gouv.fr; Secure; SameSite=None"
+        "visid_incap_2938081=9BGEfdFUSUOl526SLi7F6Ou/2WkAAAAAQUIPAAAAAACj1hOj0Uo0MLTZth/r1ZuP; expires=Sat, 10 Apr 2027 06:14:52 GMT; HttpOnly; path=/; Domain=.chequeenergie.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1251_2938081=uHcVeM9SBgUF5CGH6HFcEey/2WkAAAAAKHYpD61056mOW4zLsfqo1w==; path=/; Domain=.chequeenergie.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "52-172822543-172822561 NNNN CT(143 150 0) RT(1771990071411 34) q(0 0 3 0) r(4 4) U12"
+      "x-iinfo": "7-4358768-4358770 NNNN CT(89 120 0) RT(1775878124515 12) q(0 0 2 0) r(3 3) U12"
     }
   },
   "tests": {
@@ -48,8 +48,10 @@
           "https://*.adform.net",
           "https://*.doubleclick.net",
           "https://adservice.google.com",
+          "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1/dist/",
           "https://connect.facebook.net",
           "https://enovate.156th.com",
+          "https://i.ytimg.com",
           "https://jedonnemonavis.numerique.gouv.fr",
           "https://px.ads.linkedin.com",
           "https://secure.adnxs.com",
@@ -57,12 +59,14 @@
           "https://webstats.asp-public.fr/piwik/matomo.js",
           "https://webstats.asp-public.fr/piwik/matomo.php",
           "https://www.facebook.com",
+          "https://www.google.com",
           "https://www.googletagmanager.com",
           "https://www.youtube-nocookie.com"
         ],
         "style-src": [
           "'self'",
-          "'unsafe-inline'"
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1/dist/"
         ]
       },
       "http": true,
@@ -90,14 +94,14 @@
       "data": {
         "visid_incap_2938081": {
           "domain": "chequeenergie.gouv.fr",
-          "expires": "2027-02-24T06:22:12.000Z",
+          "expires": "2027-04-10T06:14:52.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_79_2938081": {
+        "incap_ses_1251_2938081": {
           "domain": "chequeenergie.gouv.fr",
           "path": "/",
           "port": null,
