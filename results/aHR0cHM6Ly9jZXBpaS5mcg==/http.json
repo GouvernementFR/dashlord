@@ -1,21 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
-    "statusCode": 302,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-type": "text/html; charset=UTF-8",
-      "location": "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
+      "cache-control": "private",
+      "content-type": "text/html",
       "server": "Microsoft-IIS/10.0",
+      "set-cookie": [
+        "ASPSESSIONIDCECATTDB=LEDCFKBAAJILCNDGBMGMMKGG; secure; path=/"
+      ],
       "x-powered-by": "ASP.NET",
-      "date": "Wed, 25 Feb 2026 03:36:29 GMT",
+      "date": "Sat, 11 Apr 2026 03:24:34 GMT",
       "connection": "close",
-      "content-length": "180"
+      "content-length": "49452"
     }
   },
   "tests": {
@@ -32,10 +35,17 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
+      "data": {
+        "ASPSESSIONIDCECATTDB": {
+          "domain": "cepii.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -50,22 +60,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
+      "destination": "https://cepii.fr/",
       "redirects": true,
       "route": [
         "http://cepii.fr/",
-        "https://cepii.fr/",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
-        "https://www.cepii.fr/CEPII/ERROR.asp?type=500"
+        "https://cepii.fr/"
       ],
-      "statusCode": 302
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -89,10 +90,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//platform.linkedin.com/in.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
