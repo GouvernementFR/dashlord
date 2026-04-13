@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "D",
     "error": null,
-    "score": 65,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Feb 2026 03:12:54 GMT",
+      "date": "Mon, 13 Apr 2026 03:30:34 GMT",
       "set-cookie": [
-        "_collectif_objets_session=joNQc6CR90FDi561PMYN5%2B8hnygOL7WL0uf%2FTLWArPK%2FNS%2FBt4AtALjM5vRZJHX%2B82H9EAwGQ0EtNcwllpWlUXr6dfZMIcSJlK0KBWDJzfV0FlGj0NXYigj00W%2Ffx8kTcuwsPKTz8iYNzVdRk3C%2B7owijFN9kqjESXEZfhQ6zz%2B7LTe6I5fjNz8CZywF7rrB%2BfWSc17KgoeATezmTX0v2XywH3CF5D0B145IrCd3tWYkrGvTBricW%2BHirwlxN3owYHWvQOVvfKGjtdOzFyE3u6xgSwm%2Fndfvf5l4EU1eXLKb--WQ9NykvToVHO1wfq--oSVWXx3WS3EraWIL0BpgXA%3D%3D; path=/; secure; httponly; samesite=lax"
+        "_collectif_objets_session=SEIPt22ifynURfHqFGWFaD5tiqD2kwzvCrmIOl769zcDMCHciXw3RoegDlI%2B%2BMasBDLa1gYMOtpvKf7lAul14zUJw5nberPITzBuVKGeuZ61i1Zw%2BoeMstEn%2BZVjltlcjz89Mw1bTqHnf3Pq7HWWXNOfwfaYMdwSgffFCkqB450hcR0CUqIryfzI7UxUyLqJNCl3imE1JoOQrrHgAmPOyi%2B6ikfHxMwqIolkVSkkKt%2B4u5Zb%2B9VYot3E%2Fy%2BBa6F1Z7WDI4qxkXUuyHuG7eAry4F8XOSzOw3lfnfSVpd4IXqg--jKhlDlz9mUPyoU2a--IlX%2FOC0py1OIH%2FMf3VfUbQ%3D%3D; path=/; secure; httponly; samesite=lax"
       ],
       "content-type": "text/html; charset=utf-8",
       "x-frame-options": "SAMEORIGIN",
@@ -20,15 +20,15 @@
       "x-permitted-cross-domain-policies": "none",
       "referrer-policy": "strict-origin-when-cross-origin",
       "link": "<https://collectif-objets.culture.gouv.fr/vite/assets/application-8b8b216d.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/lightbox_component_controller-fd1f7fd7.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/miniatures_component_controller-2b5a3d7b.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/photo_upload_component_controller-2f4d8fd8.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/all-a730786d.css>; rel=preload; as=style; nopush,<https://collectif-objets.culture.gouv.fr/vite/assets/matomo_tracking-bab56819.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush",
-      "etag": "W/\"a5897df78a7190d655057d0978b1ab95-gzip\"",
+      "etag": "W/\"d481880bb2bcb2624f460037417f7b11-gzip\"",
       "cache-control": "max-age=0, private, must-revalidate",
-      "content-security-policy": "default-src 'self' https:; script-src 'self' https: 'nonce-d4+ZaLZuDV7exj2kgYk2oA=='; img-src 'self' data: blob: https://*.s3.gra.io.cloud.ovh.net https://*.s3.fr-par.scw.cloud https://s3.fr-par.scw.cloud https://*.culture.gouv.fr https://*.cloud.culture.fr https://stats.beta.gouv.fr https://s3.eu-west-3.amazonaws.com/pop-phototeque/ https://pop-perf-assets.s3.gra.io.cloud.ovh.net/ https://collectif-objets.beta.gouv.fr/; connect-src 'self' https://openmaptiles.geo.data.gouv.fr https://openmaptiles.data.gouv.fr https://*.s3.gra.io.cloud.ovh.net https://*.s3.fr-par.scw.cloud https://s3.fr-par.scw.cloud https://*.culture.gouv.fr https://*.cloud.culture.fr https://stats.beta.gouv.fr; object-src 'self'; font-src 'self' https: data:; child-src blob:; worker-src blob:; style-src 'self' https:; frame-src 'self' https://collectif-objets-metabase.osc-secnum-fr1.scalingo.io/ https://tube.numerique.gouv.fr/",
-      "x-request-id": "7d624e4d-4a7d-4ea7-bbc9-5f217e2f22db",
-      "x-runtime": "0.014475",
+      "content-security-policy": "default-src 'self' https:; script-src 'self' https: 'nonce-VXx0uUstWRpeiTrD+W65RA=='; img-src 'self' data: blob: https://*.s3.gra.io.cloud.ovh.net https://*.s3.fr-par.scw.cloud https://s3.fr-par.scw.cloud https://*.culture.gouv.fr https://*.cloud.culture.fr https://stats.beta.gouv.fr https://s3.eu-west-3.amazonaws.com/pop-phototeque/ https://pop-perf-assets.s3.gra.io.cloud.ovh.net/ https://collectif-objets.beta.gouv.fr/; connect-src 'self' https://openmaptiles.geo.data.gouv.fr https://openmaptiles.data.gouv.fr https://*.s3.gra.io.cloud.ovh.net https://*.s3.fr-par.scw.cloud https://s3.fr-par.scw.cloud https://*.culture.gouv.fr https://*.cloud.culture.fr https://stats.beta.gouv.fr; object-src 'self'; font-src 'self' https: data:; child-src blob:; worker-src blob:; style-src 'self' https:; frame-src 'self' https://collectif-objets-metabase.osc-secnum-fr1.scalingo.io/ https://tube.numerique.gouv.fr/",
+      "x-request-id": "8799fdca-5ad3-40fc-beb1-1998a276620c",
+      "x-runtime": "0.014430",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-forwarded-for": ";",
       "vary": "Accept-Encoding",
-      "x-cp-via": "C2-1ec9a889-0417cca2",
+      "x-cp-via": "C2-cb2f2c79-dcabe48e",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -45,7 +45,7 @@
           "https:"
         ],
         "script-src": [
-          "'nonce-d4+zalzudv7exj2kgyk2oa=='",
+          "'nonce-vxx0uustwrpeitrd+w65ra=='",
           "'self'",
           "https:"
         ],
@@ -142,15 +142,11 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://collectif-objets.culture.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://collectif-objets.beta.gouv.fr/",
-        "http://collectif-objets.culture.gouv.fr/",
-        "https://collectif-objets.culture.gouv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -164,12 +160,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
