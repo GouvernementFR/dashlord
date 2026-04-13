@@ -3,22 +3,22 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 30,
-    "statusCode": 301,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Feb 2026 03:19:10 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "location": "http://contrats-de-generation.gouv.fr/",
-      "content-length": "246",
-      "content-type": "text/html; charset=iso-8859-1",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab20000969c3b6e88e2c8db6f0d69725f7209c79690eb93a737d4e6777a35d8780654008c3d21cee113000ec07acd879f4f41d45f08fe0a3ca930c4c1a9d4118ef4e222a145d0a741746938042feeb60adc815347ff7f3787b792c; Secure; Path=/"
-      ]
+        "TSa1d3e6c3029=087dc22938ab2800a2cc63b76c59f7d30a09feb4dc40904dee891ca70c796bafa407beffd30cf424a2147dab6f470be6; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab2000da77082e98935c5bc545df5dd162b6b2370a495c274ef7c7fde6f00252ab70b20813a1b836113000b991555c52473b3a1b9a656fc1eb9b46b33bccb4183160eecd551d0ce434fd4cb9ec556b1a8b53265333295354426f32; Secure; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6900",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -39,17 +39,9 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+        "TSa1d3e6c3029": {
           "domain": "contrats-de-generation.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "TS01c71406": {
-          "domain": "contrats-de-generation.gouv.fr",
-          "httponly": true,
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
@@ -78,7 +70,7 @@
       "destination": "https://contrats-de-generation.gouv.fr/",
       "redirects": true,
       "route": [],
-      "statusCode": 301
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -103,16 +95,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
