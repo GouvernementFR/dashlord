@@ -1,27 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 25 Feb 2026 03:31:08 GMT",
+      "date": "Mon, 13 Apr 2026 03:26:10 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "34091",
+      "content-length": "34224",
       "connection": "close",
       "cache-control": "max-age=300, public",
       "x-drupal-dynamic-cache": "UNCACHEABLE",
       "content-language": "fr",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Wed, 25 Feb 2026 03:27:11 GMT",
-      "etag": "W/\"1771990031\"",
+      "last-modified": "Mon, 13 Apr 2026 03:24:48 GMT",
+      "etag": "W/\"1776050688\"",
       "access-control-allow-origin": "*",
-      "content-security-policy": "default-src * https: data: 'unsafe-inline' 'unsafe-eval';",
+      "content-security-policy": "default-src * https: data: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob: data:;",
       "referrer-policy": "strict-origin-when-cross-origin",
       "strict-transport-security": "max-age=31536000",
       "x-content-type-options": "nosniff",
@@ -33,11 +33,11 @@
       "x-cache-ttl": "300.000",
       "vary": "Cookie, Accept-Encoding",
       "x-cache": "HIT",
-      "x-cache-ttl-remaining": "62.926",
-      "x-cache-age": "237",
-      "x-cache-hits": "12",
-      "x-nginx-cache": "HIT",
-      "x-nginx-cache-date": "Wed, 25 Feb 2026 03:27:11 GMT",
+      "x-cache-ttl-remaining": "218.459",
+      "x-cache-age": "82",
+      "x-cache-hits": "3",
+      "x-nginx-cache": "MISS",
+      "x-nginx-cache-date": "Mon, 13 Apr 2026 03:24:48 GMT",
       "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=()",
       "accept-ranges": "bytes"
     }
@@ -55,6 +55,11 @@
           "*",
           "data:",
           "https:"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:",
+          "data:"
         ]
       },
       "http": true,
@@ -85,9 +90,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -113,12 +118,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
