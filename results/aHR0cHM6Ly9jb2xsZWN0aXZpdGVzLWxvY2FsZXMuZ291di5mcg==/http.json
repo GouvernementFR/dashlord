@@ -1,40 +1,87 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B+",
     "error": null,
-    "score": 50,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "etag": "\"1772117909\"",
-      "last-modified": "Thu, 26 Feb 2026 14:58:29 GMT",
+      "server": "nginx",
+      "date": "Mon, 13 Apr 2026 03:31:25 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "16868",
-      "cache-control": "max-age=0",
-      "date": "Fri, 27 Feb 2026 03:12:55 GMT",
-      "set-cookie": [
-        "visid_incap_3074951=Ltt/p85JQxWAKJs1a3J3VbcLoWkAAAAAQUIPAAAAAADQPIs50gcZgDDrywcrVCbu; expires=Fri, 26 Feb 2027 06:15:31 GMT; HttpOnly; path=/; Domain=.collectivites-locales.gouv.fr; Secure; SameSite=None",
-        "incap_ses_382_3074951=ki+qT/74wS0X5rHthyNNBbcLoWkAAAAAu1AApdALOZJzEPAOwn7AzQ==; path=/; Domain=.collectivites-locales.gouv.fr; Secure; SameSite=None"
-      ],
+      "connection": "close",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "last-modified": "Sun, 12 Apr 2026 20:11:20 GMT",
+      "etag": "\"1776024680\"",
+      "vary": "Cookie,Accept-Encoding",
+      "x-drupal-cache": "HIT",
+      "x-proxy-cache": "HIT",
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:;",
+      "referrer-policy": "same-origin",
+      "allow": "GET, POST, HEAD",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+      "access-control-expose-headers": "Content-Length,Content-Range",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-xss-protection": "1;mode=block",
+      "upgrade-insecure-requests": "1",
+      "set-cookie": [
+        "visid_incap_3074951=mJLLTtQHTPu6OdQNp+MWrotj3GkAAAAAQUIPAAAAAADHsrN2CdERbblFKHRb1ASp; expires=Mon, 12 Apr 2027 06:50:17 GMT; HttpOnly; path=/; Domain=.collectivites-locales.gouv.fr; Secure; SameSite=None",
+        "incap_ses_409_3074951=12v7Te3FpTrAuFWZ+g+tBYxj3GkAAAAAUMnii8Ibha080IV+0YE8aA==; path=/; Domain=.collectivites-locales.gouv.fr; Secure; SameSite=None"
+      ],
       "x-cdn": "Imperva",
-      "x-iinfo": "15-39327666-39321034 2CNN RT(1772161975992 7) q(0 0 0 1) r(0 0)"
+      "cache-control": "max-age=0",
+      "transfer-encoding": "chunked",
+      "x-iinfo": "15-49308456-49306325 2NYN RT(1776051084714 5) q(0 0 0 5) r(6 6)"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "object-src": [
+          "https:"
+        ],
+        "child-src": [
+          "https:",
+          "platform.twitter.com"
+        ],
+        "img-src": [
+          "data:",
+          "https:"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -44,14 +91,14 @@
       "data": {
         "visid_incap_3074951": {
           "domain": "collectivites-locales.gouv.fr",
-          "expires": "2027-02-26T06:15:31.000Z",
+          "expires": "2027-04-12T06:50:17.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_382_3074951": {
+        "incap_ses_409_3074951": {
           "domain": "collectivites-locales.gouv.fr",
           "path": "/",
           "port": null,
@@ -85,10 +132,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -111,17 +158,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
