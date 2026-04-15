@@ -9,19 +9,19 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Feb 2026 03:27:48 GMT",
+      "date": "Wed, 15 Apr 2026 03:30:44 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://contact.ecologie.gouv.fr/local/cache-css/0393751ea120dbd82ce903dc75614f53.css?1765812154>;rel=\"preload\";as=\"style\"",
+      "link": "<https://contact.ecologie.gouv.fr/local/cache-css/fe04316dec91d111db8c01c202a95ace.css?1773247733>;rel=\"preload\";as=\"style\"",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "pragma": "no-cache",
       "x-spip-cache": "3600",
-      "last-modified": "Fri, 27 Feb 2026 03:27:47 GMT",
+      "last-modified": "Wed, 15 Apr 2026 03:30:44 GMT",
       "set-cookie": [
-        "PHPSESSID=d53f2acdc2534792478a812ccfe66c74; path=/; secure",
-        "SRV=c24ad79d-b7fe-4480-8d22-0db8012d8461; path=/"
+        "PHPSESSID=722b2f6d3875bfcc27eec7f5de325ef8; path=/; secure",
+        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "no-store, no-cache, must-revalidate",
@@ -71,15 +71,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://contact.ecologie.gouv.fr/",
+      "destination": "http://contact.ecologie.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://contact.ecologie.gouv.fr/",
-        "https://contact.ecologie.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
