@@ -5,51 +5,59 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 27 Feb 2026 03:12:54 GMT",
+      "date": "Wed, 15 Apr 2026 03:24:44 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "vary": "Accept-Encoding, Accept-Encoding",
-      "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "referrer-policy": "origin-when-cross-origin"
+      "vary": "Accept-Encoding, Accept-Encoding,Cookie",
+      "content-security-policy": "upgrade-insecure-requests;",
+      "referrer-policy": "strict-origin-when-cross-origin, origin-when-cross-origin",
+      "strict-transport-security": "max-age=63072000, max-age=31536000; includeSubDomains; preload",
+      "x-content-security-policy": "default-src 'self'; img-src *; media-src * data:;",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-frame-options": "SAMEORIGIN"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "pll_language": {
-          "domain": "www.cnesco.fr",
-          "expires": "2027-02-27T03:12:54.000Z",
-          "httponly": true,
-          "max-age": 31536000,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -77,19 +85,19 @@
       "pass": false,
       "result": "referrer-policy-unsafe",
       "scoreModifier": -5,
-      "data": "origin-when-cross-origin",
+      "data": "strict-origin-when-cross-origin, origin-when-cross-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=63072000, max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -98,31 +106,7 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
-        "//cdn.unilim.fr/vendor/bootstrap/bootstrap-3.3.4/js/bootstrap.min.js?ver=6.6.4": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//cdn.unilim.fr/vendor/modernizr/modernizr-2.7.0.custom.js?ver=1.2": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//cdn.unilim.fr/vendor/slick/slick-1.4.1/slick/slick.min.js?ver=1.7": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//cdn.unilim.fr/vendor/holder/holder.js?ver=6.6.4": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.googletagmanager.com/gtag/js?id=G-FVK11CXFWB": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://widget.tagembed.com/embed.min.js?ver=6.4": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://my.hellobar.com/d30d652b8ba25243130fe077050f250c29013cf3.js": {
+        "//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js?ver=0.2.3": {
           "crossorigin": null,
           "integrity": null
         }
@@ -130,17 +114,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
