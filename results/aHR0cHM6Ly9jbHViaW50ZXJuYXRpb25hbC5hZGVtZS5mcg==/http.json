@@ -9,11 +9,11 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Feb 2026 03:20:50 GMT",
+      "date": "Wed, 15 Apr 2026 03:31:35 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "2c57b9b1-6824-4fb4-ac9b-06c9ade2617c",
+      "x-request-id": "84434488-b263-4415-ab78-1174f6d57f21",
       "x-frame-options": "DENY",
       "vary": "Accept-Language, Cookie, accept-encoding",
       "content-language": "fr",
@@ -22,11 +22,11 @@
       "cross-origin-opener-policy": "same-origin",
       "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "__cf_bm=RC5gaPQrp7siyHoxxsndrmsynBh6nmPAc89U3A0BlhM-1772162449.284769-1.0.1.1-b8eeh6XNC6acukliVhpuMoZXj.2tLb9IKmozqWtNi1wZ2fVdajqZ0fBKpsGvzMeLxz4BQ4k.bytCIx0CulQ2HuUh6SwsS47LFl1PjwtwCMXCtMVW4E1axKcdEfd0rNkE; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 27 Feb 2026 03:50:50 GMT"
+        "__cf_bm=gimmAhnrvJlVBcK1Z4wAH44qAoeuY6P6sDBU4eqgeF4-1776223894.7591903-1.0.1.1-mC0IKBQjeT1gEGsbWR8mdmyMCUhiYZn8frLabyeyNF8sWiy64eNpfaRpfnNDYwv4Zh0hFd5X8PJi8I4U8YmlMquP.TahokzbNAtRxa5b5TBpfh52zTHGqGkLOTnLoodJ; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 15 Apr 2026 04:01:35 GMT"
       ],
       "cf-cache-status": "DYNAMIC",
       "server": "cloudflare",
-      "cf-ray": "9d448c6c0e7acba0-LAX"
+      "cf-ray": "9ec7e0ce3825d658-IAD"
     }
   },
   "tests": {
@@ -49,7 +49,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-02-27T03:50:50.000Z",
+          "expires": "2026-04-15T04:01:35.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -105,6 +105,10 @@
       "scoreModifier": -5,
       "data": {
         "https://tarteaucitron.io/load.js?domain=clubinternational.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js": {
           "crossorigin": null,
           "integrity": null
         }
