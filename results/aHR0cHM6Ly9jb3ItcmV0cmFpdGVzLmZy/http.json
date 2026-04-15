@@ -4,32 +4,22 @@
     "grade": "B",
     "error": null,
     "score": 75,
-    "statusCode": 200,
+    "statusCode": 403,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Feb 2026 03:20:59 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "connection": "close",
-      "cache-control": "max-age=31536000, public",
-      "x-drupal-dynamic-cache": "HIT",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie",
-      "x-drupal-cache": "HIT",
+      "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
-      "last-modified": "Tue, 24 Feb 2026 15:32:05 GMT",
-      "etag": "W/\"1771947125\"",
-      "x-varnish": "3974194 4082508",
-      "age": "14",
-      "x-cache": "HIT",
-      "x-cache-hits": "1",
-      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
-      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; img-src 'self' data: https: http:; font-src 'self' data:; frame-ancestors 'self' https://www.cor-retraites.fr;",
-      "transfer-encoding": "chunked"
+      "x-content-type-options": "nosniff",
+      "cache-control": "no-cache",
+      "connection": "close",
+      "content-security-policy": "default-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
+      "content-type": "text/html; charset=utf-8",
+      "pragma": "no-cache",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-blocked": "yes",
+      "content-length": "9840"
     }
   },
   "tests": {
@@ -40,39 +30,28 @@
       "scoreModifier": -20,
       "data": {
         "default-src": [
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "https:"
-        ],
-        "img-src": [
           "'self'",
-          "data:",
-          "http:",
-          "https:"
+          "'unsafe-inline'"
         ],
-        "font-src": [
+        "style-src": [
           "'self'",
-          "data:"
-        ],
-        "frame-ancestors": [
-          "'self'",
-          "https://www.cor-retraites.fr"
+          "'unsafe-inline'"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": true,
+        "antiClickjacking": false,
         "defaultNone": false,
         "insecureBaseUri": true,
         "insecureFormAction": true,
         "insecureSchemeActive": false,
-        "insecureSchemePassive": true,
+        "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
-        "unsafeObjects": true
+        "unsafeObjects": false
       },
       "numPolicies": 1
     },
@@ -102,7 +81,7 @@
         "http://cor-retraites.fr/",
         "https://www.cor-retraites.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -118,16 +97,16 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubDomains; preload",
+      "data": "max-age=31536000; includeSubDomains",
       "includeSubDomains": true,
-      "maxAge": 63072000,
-      "preload": true,
+      "maxAge": 31536000,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
@@ -141,9 +120,9 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN, SAMEORIGIN"
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
