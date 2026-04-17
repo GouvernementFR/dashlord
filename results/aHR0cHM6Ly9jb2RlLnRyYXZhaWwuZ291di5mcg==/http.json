@@ -9,21 +9,21 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Feb 2026 03:26:45 GMT",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-security-policy": "default-src 'self'; img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.gouv.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com https://ad.doubleclick.net data:; script-src 'self' 'nonce-ZTMwMDRjYzktYzNlNi00N2QwLWJiZWYtOTg5NjhmNTExMTVi' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com ; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'self' https://www.urssaf.fr https://code.travail.gouv.fr https://www.aides-entreprises.fr https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com *.dailymotion.com https://*.doubleclick.net; connect-src 'self' https://geo.api.gouv.fr https://sentry2.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com https://www.google.com; worker-src 'self' blob:; upgrade-insecure-requests;",
       "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "x-content-type-options": "nosniff",
-      "x-robots-tag": "all",
-      "x-frame-options": "DENY",
-      "content-security-policy": "default-src 'self'; img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.gouv.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr https://www.googletagmanager.com https://ad.doubleclick.net data:; script-src 'self' 'nonce-ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com ; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'self' https://www.urssaf.fr https://code.travail.gouv.fr https://www.aides-entreprises.fr https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com *.dailymotion.com https://*.doubleclick.net; connect-src 'self' https://geo.api.gouv.fr https://sentry2.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr https://tally.so https://www.googletagmanager.com https://www.google.com; worker-src 'self' blob:; upgrade-insecure-requests;",
+      "date": "Fri, 17 Apr 2026 03:26:08 GMT",
+      "link": "</>; rel=preconnect; crossorigin=\"\", </_next/static/chunks/1672341679eed2f3.css>; rel=preload; as=\"style\"; nonce=\"ZTMwMDRjYzktYzNlNi00N2QwLWJiZWYtOTg5NjhmNTExMTVi\", </_next/static/chunks/b87287844d3aba6c.css>; rel=preload; as=\"style\"; nonce=\"ZTMwMDRjYzktYzNlNi00N2QwLWJiZWYtOTg5NjhmNTExMTVi\", </_next/static/chunks/40489027824d8058.css>; rel=preload; as=\"style\"; nonce=\"ZTMwMDRjYzktYzNlNi00N2QwLWJiZWYtOTg5NjhmNTExMTVi\"",
       "permissions-policy": "geolocation=(), microphone=(), camera=()",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
-      "link": "</>; rel=preconnect; crossorigin=\"\", </_next/static/chunks/2f145050735f0fd2.css>; rel=preload; as=\"style\"; nonce=\"ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi\", </_next/static/chunks/d9267a09e6bdae32.css>; rel=preload; as=\"style\"; nonce=\"ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi\", </_next/static/chunks/40489027824d8058.css>; rel=preload; as=\"style\"; nonce=\"ZjQwNWQ0ODktNWQwNC00OTIzLWI5YjMtNzg4Zjc3ZTM5MDFi\"",
-      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate"
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-robots-tag": "all",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -47,7 +47,7 @@
           "https://www.service-public.gouv.fr"
         ],
         "script-src": [
-          "'nonce-zjqwnwq0odktnwqwnc00otizlwi5yjmtnzg4zjc3ztm5mdfi'",
+          "'nonce-ztmwmdrjyzktyznlni00n2qwlwjizwytotg5njhmntexmtvi'",
           "'self'",
           "https://matomo.fabrique.social.gouv.fr",
           "https://mon-entreprise.urssaf.fr",
@@ -159,10 +159,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
