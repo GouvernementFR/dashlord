@@ -3,31 +3,30 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "3365",
+      "content-length": "3337",
       "connection": "close",
-      "date": "Fri, 27 Feb 2026 03:24:58 GMT",
-      "x-age": "2856",
+      "date": "Fri, 17 Apr 2026 03:26:09 GMT",
+      "x-age": "12230",
       "content-language": "en",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "accept-ranges": "bytes",
-      "x-fpfis": "2163668 294914",
+      "x-fpfis": "4244867897 4241195848",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
       "cache-control": "public, max-age=300, s-maxage=300",
       "vary": "Accept-Encoding",
-      "x-cache": "Hit from cloudfront",
-      "via": "1.1 c5298a869be79e45d81d584d2ebd6280.cloudfront.net (CloudFront)",
-      "x-amz-cf-pop": "ORD58-P5",
-      "x-amz-cf-id": "GmMor9jIifrtSNgzTj7hawW5_u1WvnrwIBwV5BLwVzAfO5DrCwH1ag==",
-      "age": "31"
+      "x-cache": "Miss from cloudfront",
+      "via": "1.1 5e6930ff15cb9ece8bd1c3b20d8103c0.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "IAD61-P1",
+      "x-amz-cf-id": "LN_v1AHC5iXxkOlfGPumpDaOIrWFzXYFyQhvEFq2ZU35NTHEXg1YUA=="
     }
   },
   "tests": {
@@ -93,15 +92,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.esm.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
