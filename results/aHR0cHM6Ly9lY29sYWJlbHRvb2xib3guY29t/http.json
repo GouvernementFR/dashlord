@@ -1,27 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
-    "statusCode": 403,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 10,
+    "statusCode": 301,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Mar 2026 03:32:51 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "date": "Sun, 19 Apr 2026 03:30:43 GMT",
+      "content-length": "0",
       "connection": "close",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-      "referrer-policy": "same-origin",
-      "x-frame-options": "SAMEORIGIN",
-      "set-cookie": [
-        "__cf_bm=yrgPsnX4lff7WBZH4JbIAELCBF8gN.rFw422YnZy760-1772335971.5428267-1.0.1.1-VHRTVrycSNzVi2gvjNDtV.M6W8TGRYqTogp78Tj9j8P2vPLcomLKDsSM7T2TPmLfmMEcw8eAWW2LtBpPsC5wJH_UuctR6xXZhHEaDYV8iVNefw9TralxH4xGRlXayQy_; HttpOnly; Secure; Path=/; Domain=ecolabeltoolbox.com; Expires=Sun, 01 Mar 2026 04:02:51 GMT"
-      ],
+      "location": "www.ecolabeltoolbox.com",
       "server": "cloudflare",
-      "cf-ray": "9d5518ce2f5ac38b-SJC"
+      "cf-ray": "9ee8d50b9f411647-DFW"
     }
   },
   "tests": {
@@ -39,18 +32,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "__cf_bm": {
-          "domain": "ecolabeltoolbox.com",
-          "expires": "2026-03-01T04:02:51.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -63,22 +47,32 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
+      "result": "redirection-not-to-https",
       "scoreModifier": -20,
-      "destination": "http://ecolabeltoolbox.com/",
-      "redirects": false,
+      "destination": "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+      "redirects": true,
       "route": [
-        "http://ecolabeltoolbox.com/"
+        "http://ecolabeltoolbox.com/",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com",
+        "http://ecolabeltoolbox.com/www.ecolabeltoolbox.com"
       ],
-      "statusCode": 403
+      "statusCode": 301
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "same-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -95,7 +89,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-response-not-html",
       "scoreModifier": 0,
       "data": {}
     },
@@ -108,10 +102,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
