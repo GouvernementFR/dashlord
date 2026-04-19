@@ -1,37 +1,64 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B+",
     "error": null,
-    "score": 50,
-    "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 80,
+    "statusCode": 401,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Mar 2026 03:19:01 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "link": "<https://djeddah.consulfrance.org/local/cache-css/f0fe2fae8a1f6eff1cba18b585cf5213.css?1740578117>;rel=\"stylesheet prefetch\"",
-      "x-spip-cache": "86400",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade",
-      "last-modified": "Sun, 01 Mar 2026 03:19:02 GMT",
-      "content-length": "13561",
+      "date": "Sun, 19 Apr 2026 03:26:06 GMT",
       "content-type": "text/html; charset=utf-8",
-      "strict-transport-security": "max-age=63072000"
+      "transfer-encoding": "chunked",
+      "expires": "0",
+      "cache-control": "no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "last-modified": "Sun, 19 Apr 2026 03:26:06 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-dns-prefetch-control": "off",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), aria-notify=(), captured-surface-control=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), on-device-speech-recognition=(), summarizer=(), wildcards=(), private-state-token-issuance=(), private-state-token-redemption=(), ch-ua-high-entropy-values=(), gamepad=(), interest-cohort=()",
+      "strict-transport-security": "max-age=63072000",
+      "connection": "close"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "object-src": [
+          "'none'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -59,15 +86,15 @@
         "http://djeddah.consulfrance.org/",
         "https://djeddah.consulfrance.org/"
       ],
-      "statusCode": 200
+      "statusCode": 401
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -84,23 +111,23 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
