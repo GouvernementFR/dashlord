@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Mar 2026 03:27:03 GMT",
+      "date": "Sun, 19 Apr 2026 03:26:00 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -20,20 +20,18 @@
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=(self)",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9d55104eea913651\", cfOrigin;dur=0,cfEdge;dur=8",
+      "server-timing": "chlray;desc=\"9ee8ce255e10d6fe\", cfEdge;dur=2,cfOrigin;dur=0",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-      "set-cookie": [
-        "__cf_bm=jpKkeYagK6JTnAd17yt3Vjd07T086jH2GXHJ1LGudcM-1772335623-1.0.1.1-kYEMbl3gwbHmh8TBNO56.7SZAc0rn91_yE6Pt_zpwKN.v9jwEOUy5lsiToNTdRHAfDJU04zno8SfO1x.bBPh4P5DtC1sM.2kuoaOOeO87Do; path=/; expires=Sun, 01-Mar-26 03:57:03 GMT; domain=.economie.gouv.fr; HttpOnly; Secure; SameSite=None"
-      ],
-      "vary": "Accept-Encoding",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "vary": "accept-encoding",
+      "set-cookie": [
+        "__cf_bm=6dq2YkEP2EEN8bzyZU3YIbK9hyZB28Zm_xSifjJa_MA-1776569160.5350285-1.0.1.1-ZSfdkf9NanR4_1caMoxY7qm6j9EgawJ4LgMpopqokHXU4WbAQvUqVR37qcTnFUnE.4e7_uFdm9VyceDYGB2H_nscAhaiFKCpsFCjdOpjEgp.PMKmpILPJMu7D9H.iOXF; HttpOnly; Secure; Path=/; Domain=economie.gouv.fr; Expires=Sun, 19 Apr 2026 03:56:00 GMT"
+      ],
       "server": "cloudflare",
-      "cf-ray": "9d55104eea913651-FRA",
+      "cf-ray": "9ee8ce255e10d6fe-CDG",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -52,20 +50,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "economie.gouv.fr",
-          "expires": "2026-03-01T03:57:03.000Z",
+          "expires": "2026-04-19T03:56:00.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -112,9 +109,9 @@
       "result": "sri-implemented-and-external-scripts-loaded-securely",
       "scoreModifier": 5,
       "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
