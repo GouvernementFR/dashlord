@@ -1,26 +1,19 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
-    "statusCode": 200,
+    "score": 10,
+    "statusCode": 403,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 01 Mar 2026 03:32:46 GMT",
+      "date": "Sun, 19 Apr 2026 03:29:07 GMT",
       "content-type": "text/html",
-      "content-length": "9350",
-      "connection": "close",
-      "last-modified": "Thu, 18 May 2017 08:06:42 GMT",
-      "etag": "\"591d5612-2486\"",
-      "strict-transport-security": "max-age=31536000; includeSubdomains, max-age=31536000; includeSubdomains",
-      "cache-control": "max-age=172800",
-      "age": "9429",
-      "x-cache": "HIT",
-      "accept-ranges": "bytes"
+      "content-length": "146",
+      "connection": "close"
     }
   },
   "tests": {
@@ -52,16 +45,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://e-agre.agriculture.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://e-agre.agriculture.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://e-agre.agriculture.gouv.fr/",
-        "https://e-agre.agriculture.gouv.fr/"
+        "http://e-agre.agriculture.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -75,9 +67,9 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-header-invalid",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
-      "data": "max-age=31536000; includeSubdomains, max-age=31536000; includeSubdomains",
+      "data": null,
       "includeSubDomains": false,
       "maxAge": null,
       "preload": false,
@@ -85,15 +77,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://opendatasoft.github.io/ods-widgets/dist/ods-widgets.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
