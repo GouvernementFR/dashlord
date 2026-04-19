@@ -5,18 +5,18 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 7,
+    "testsPassed": 3,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Mar 2026 03:19:09 GMT",
+      "date": "Sun, 19 Apr 2026 03:30:54 GMT",
       "content-type": "text/html;charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "content-language": "fr-FR",
       "set-cookie": [
-        "JSESSIONID=6D042EB4D677E7CEF15D06DCF532661E; Path=/; HttpOnly",
-        "TS01abd254=0144a133673644ce8a4f45d1ead4904cbf8c03f93945c830f3ca277ad067d836b5e16dae53d1bda8e502d38290b826a2ebdce9d901; Path=/; Secure; HttpOnly; SameSite=Strict;"
+        "JSESSIONID=97B34AABCB1CD7CF1FE2D4B3D0D0681B; Path=/; HttpOnly",
+        "TS01abd254=0144a13367e7fa8c482504c4e005bd94815026718c6366f23daf7b23417eca975313e063cc0c9f7020235cfd9e6c82a16942d144f7; Path=/; Secure; HttpOnly; SameSite=Strict;"
       ],
       "vary": "Accept-Encoding"
     }
@@ -98,10 +98,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://alteriade-clients.alwaysdata.net/prehome/FCN/2023-12/js/prehome.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
