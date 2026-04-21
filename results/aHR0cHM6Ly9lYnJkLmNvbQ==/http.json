@@ -9,7 +9,7 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cteonnt-length": "139258",
+      "cteonnt-length": "137402",
       "x-xss-protection": "1; mode=block",
       "content-security-policy": "img-src 'self' https: data: *.ebrd.com ;, frame-ancestors 'self' ;",
       "permissions-policy": "policy1=()",
@@ -18,22 +18,21 @@
       "x-frame-options": "SAMEORIGIN",
       "x-vhost": "www.ebrd.com",
       "x-forwarded-host": "www.ebrd.com",
-      "access-control-allow-origin": "www.ebrd.com,https://www.ebrd.com/",
       "content-type": "text/html;charset=utf-8",
       "x-content-type-options": "nosniff",
       "accept-ranges": "bytes",
-      "age": "493",
-      "date": "Sun, 01 Mar 2026 03:34:00 GMT",
-      "x-served-by": "cache-pdk-kfty8610036-PDK",
+      "date": "Tue, 21 Apr 2026 03:32:36 GMT",
+      "age": "134",
+      "x-served-by": "cache-pdk-kfty8610083-PDK",
       "x-cache": "HIT",
-      "x-timer": "S1772336041.520672,VS0,VS0,VE4",
+      "x-timer": "S1776742356.110897,VS0,VS0,VE2",
       "vary": "Accept-Encoding,Origin",
       "connection": "close",
       "x-cache-control-orig": "max-age=900, s-maxage=900, stale-while-revalidate=300, stale-if-error=300",
       "cache-control": "max-age=3, must-revalidate, private",
-      "x-expires-orig": "Sun, 01 Mar 2026 03:15:42 GMT",
+      "x-expires-orig": "Tue, 21 Apr 2026 03:04:05 GMT",
       "expires": "Mon, 26 Jul 1997 05:00:00 GMT",
-      "etag": "\"6794e8-5b7e594e7d7d\"",
+      "etag": "\"d131fc-358c7bc69fb7\"",
       "transfer-encoding": "chunked"
     }
   },
@@ -103,9 +102,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "www.ebrd.com,https://www.ebrd.com/"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
