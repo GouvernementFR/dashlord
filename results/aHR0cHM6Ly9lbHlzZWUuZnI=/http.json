@@ -9,27 +9,26 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Mar 2026 03:38:08 GMT",
+      "date": "Tue, 21 Apr 2026 03:35:47 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "cloudflare",
-      "server-timing": "cfCacheStatus;desc=\"HIT\", cfEdge;dur=11,cfOrigin;dur=0",
       "vary": "Accept-Encoding",
       "cache-control": "public, max-age=300, must-revalidate, s-maxage=300, stale-while-revalidate=600",
       "x-content-type-options": "nosniff",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
       "x-frame-options": "DENY",
-      "content-security-policy-report-only": "default-src 'self' https:; base-uri https://www.elysee.fr; block-all-mixed-content; child-src *; font-src 'self' data: https://fonts.gstatic.com https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr; form-action 'self'; frame-ancestors 'none'; img-src https://stats.g.doubleclick.net data: https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com; plugin-types video/*; script-src 'unsafe-inline' https://www.elysee.fr https://isho.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://platform.twitter.com https://www.instagram.com; style-src https://fonts.googleapis.com 'unsafe-inline' https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr",
-      "x-content-security-policy-report-only": "default-src 'self' https:; base-uri https://www.elysee.fr; block-all-mixed-content; child-src *; font-src 'self' data: https://fonts.gstatic.com https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr; form-action 'self'; frame-ancestors 'none'; img-src https://stats.g.doubleclick.net data: https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com; plugin-types video/*; script-src 'unsafe-inline' https://www.elysee.fr https://isho.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://platform.twitter.com https://www.instagram.com; style-src https://fonts.googleapis.com 'unsafe-inline' https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr",
+      "content-security-policy-report-only": "default-src 'self' https:; base-uri https://www.elysee.fr; block-all-mixed-content; child-src *; font-src 'self' data: https://fonts.gstatic.com https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr; form-action 'self'; frame-ancestors 'none'; img-src https://stats.g.doubleclick.net data: https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://*.tile.openstreetmap.org; plugin-types video/*; script-src 'unsafe-inline' https://www.elysee.fr https://isho.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://platform.twitter.com https://www.instagram.com; style-src https://fonts.googleapis.com 'unsafe-inline' https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr",
+      "x-content-security-policy-report-only": "default-src 'self' https:; base-uri https://www.elysee.fr; block-all-mixed-content; child-src *; font-src 'self' data: https://fonts.gstatic.com https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr; form-action 'self'; frame-ancestors 'none'; img-src https://stats.g.doubleclick.net data: https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://*.tile.openstreetmap.org; plugin-types video/*; script-src 'unsafe-inline' https://www.elysee.fr https://isho.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://platform.twitter.com https://www.instagram.com; style-src https://fonts.googleapis.com 'unsafe-inline' https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr",
       "content-security-policy": "upgrade-insecure-requests",
       "x-content-security-policy": "upgrade-insecure-requests",
       "x-xss-protection": "1; mode=block",
-      "age": "84",
-      "last-modified": "Sun, 01 Mar 2026 03:36:41 GMT",
+      "last-modified": "Tue, 21 Apr 2026 03:31:44 GMT",
+      "age": "242",
       "cf-cache-status": "HIT",
-      "cf-ray": "9d55208888a831f4-SJC"
+      "server": "cloudflare",
+      "cf-ray": "9ef957369f2580fd-SJC"
     }
   },
   "tests": {
@@ -111,14 +110,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
