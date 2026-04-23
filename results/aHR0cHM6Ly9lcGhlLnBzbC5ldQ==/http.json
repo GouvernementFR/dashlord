@@ -3,10 +3,10 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 55,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
@@ -15,7 +15,7 @@
       "vary": "Accept-Encoding",
       "x-powered-by": "PHP/8.3.30",
       "cache-control": "must-revalidate, no-cache, private",
-      "date": "Mon, 02 Mar 2026 23:00:20 GMT",
+      "date": "Thu, 23 Apr 2026 03:23:12 GMT",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
@@ -92,10 +92,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
