@@ -1,27 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
-    "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "score": 30,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx/1.18.0",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "668847",
-      "cache-control": "must-revalidate, no-cache, private",
-      "date": "Tue, 03 Mar 2026 02:48:46 GMT",
-      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "server": "squid",
+      "mime-version": "1.0",
+      "date": "Thu, 23 Apr 2026 03:36:26 GMT",
+      "content-type": "text/html;charset=utf-8",
+      "content-length": "3740",
+      "x-squid-error": "ERR_ACCESS_DENIED 0",
+      "vary": "Accept-Language",
       "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-generator": "Drupal 11 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "cache-status": "ENSOSPDSIC;detail=mismatch",
+      "cache-status": "ENSOSPDSIC",
       "via": "1.1 ENSOSPDSIC (squid)",
       "connection": "close"
     }
@@ -86,23 +82,23 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
