@@ -9,19 +9,20 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:16:56 GMT",
+      "date": "Thu, 23 Apr 2026 03:26:34 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "referrer-policy": "same-origin",
+      "server-timing": "cfEdge;dur=16,cfOrigin;dur=0",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=euq1VoUW6M0T0RuxyWkm30PJyfgL54br1yZxwiSQg6s-1772507816.4068182-1.0.1.1-nY_fD2gcNNFKKmMl7rGNkOIy58SWQubT_fFkWYztRTGRs9l77kepFcH3lxuGM0YRaKKblLOTypT7zH_YrC7U0CmCQ8bJTbjGSXn_jmitFTzDOLjyElV3n7jXZVkCiHoc; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 03 Mar 2026 03:46:56 GMT"
+        "__cf_bm=nQFwtcoTAPul_BVHoRApF1zDA6FrE6EzIzdDlJTTmcs-1776914794.0918722-1.0.1.1-TJ6IPhYPHOtBWN6592ZQ7xFOA_2BAR0m9ZY66tba7WjyRZJP6iou9ZvzpZZetCtF730uQ1FfDklBnFbGJLHYqygD7Ov9OQwqCzeb6rgyttc0V.0i.KlBs4AHmJVvX7wV; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 23 Apr 2026 03:56:34 GMT"
       ],
       "server": "cloudflare",
-      "cf-ray": "9d657c3c8b4ae5e7-IAD"
+      "cf-ray": "9f09c4771d34d705-IAD"
     }
   },
   "tests": {
@@ -44,7 +45,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-03T03:46:56.000Z",
+          "expires": "2026-04-23T03:56:34.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -95,7 +96,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
