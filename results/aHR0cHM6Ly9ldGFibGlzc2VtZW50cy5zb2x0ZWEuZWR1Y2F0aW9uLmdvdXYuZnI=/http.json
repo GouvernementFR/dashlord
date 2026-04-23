@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:16:59 GMT",
+      "date": "Thu, 23 Apr 2026 03:26:20 GMT",
       "content-type": "text/html",
       "last-modified": "Wed, 19 Nov 2025 09:33:56 GMT",
       "etag": "W/\"691d8f04-13788\"",
@@ -53,12 +53,17 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://etablissements.soltea.education.gouv.fr/",
+      "destination": "https://etablissements.soltea.education.gouv.fr/espace-prive/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://etablissements.soltea.education.gouv.fr/",
+        "https://etablissements.soltea.education.gouv.fr/",
+        "http://etablissements.soltea.education.gouv.fr/espace-prive/",
+        "https://etablissements.soltea.education.gouv.fr/espace-prive/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
