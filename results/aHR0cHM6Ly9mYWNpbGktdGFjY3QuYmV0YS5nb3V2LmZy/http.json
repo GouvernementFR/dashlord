@@ -1,129 +1,57 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "C-",
     "error": null,
-    "score": 80,
-    "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "score": 45,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:21:48 GMT",
-      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 23 Apr 2026 03:32:43 GMT",
+      "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "7fe2488b-da92-495d-8fa3-d24293d55c61, 7fe2488b-da92-495d-8fa3-d24293d55c61",
-      "content-security-policy": "default-src 'none'; connect-src * https://*.gouv.fr https://eu.posthog.com https://eu.i.posthog.com; font-src 'self'; media-src 'self'; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' blob: https://stats.beta.gouv.fr *.posthog.com; style-src 'self' 'unsafe-inline' https://eu.posthog.com; object-src 'self' data:; frame-ancestors https://metabase.facili-tacct.beta.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr; block-all-mixed-content ; upgrade-insecure-requests ; frame-src https://metabase.facili-tacct.beta.gouv.fr; worker-src 'self' blob:;",
-      "x-frame-options": "DENY",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
-      "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), geolocation=()",
-      "cross-origin-embedder-policy": "credentialless",
-      "cross-origin-opener-policy": "same-origin",
-      "cross-origin-resource-policy": "cross-origin",
-      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
-      "x-nextjs-cache": "HIT",
-      "x-nextjs-prerender": "1, 1",
-      "x-nextjs-stale-time": "300",
-      "cache-control": "s-maxage=31536000",
-      "etag": "\"r0wetv8bz0w5x\"",
-      "strict-transport-security": "max-age=31536000"
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "referrer-policy": "same-origin",
+      "server-timing": "cfEdge;dur=12,cfOrigin;dur=0",
+      "x-frame-options": "SAMEORIGIN",
+      "set-cookie": [
+        "__cf_bm=5cOv5opDKEPsxYCNFikgaS88baUd6_wrYobrE1KOtCU-1776915163.5342317-1.0.1.1-1XYoXqgk835iYmKm6XXf4MK0tMiWW3kVKW7FIhdwQ51JntmeOzwfTf2f0EwXIGhHxkOn8XJB9nHUe16EfFUDc_1gPSPqdTbJf3oaRXmhGRJ.EbF1S2BImG3uFWitV_Vn; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 23 Apr 2026 04:02:43 GMT"
+      ],
+      "server": "cloudflare",
+      "cf-ray": "9f09cd7c1e1fe8c5-IAD"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'none'"
-        ],
-        "connect-src": [
-          "*",
-          "https://*.gouv.fr",
-          "https://eu.i.posthog.com",
-          "https://eu.posthog.com"
-        ],
-        "font-src": [
-          "'self'"
-        ],
-        "media-src": [
-          "'self'"
-        ],
-        "img-src": [
-          "'self'",
-          "*",
-          "data:",
-          "https:"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "*.posthog.com",
-          "blob:",
-          "https://stats.beta.gouv.fr"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://eu.posthog.com"
-        ],
-        "object-src": [
-          "'self'",
-          "data:"
-        ],
-        "frame-ancestors": [
-          "https://metabase.facili-tacct.beta.gouv.fr"
-        ],
-        "base-uri": [
-          "'self'",
-          "https://*.gouv.fr"
-        ],
-        "form-action": [
-          "'self'",
-          "https://*.gouv.fr"
-        ],
-        "block-all-mixed-content": [
-          "'none'"
-        ],
-        "upgrade-insecure-requests": [
-          "'none'"
-        ],
-        "frame-src": [
-          "https://metabase.facili-tacct.beta.gouv.fr"
-        ],
-        "worker-src": [
-          "'self'",
-          "blob:"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": true,
-        "insecureBaseUri": false,
-        "insecureFormAction": false,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "__cf_bm": {
+          "domain": "ademe.fr",
+          "expires": "2026-04-23T04:02:43.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -135,65 +63,65 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://facili-tacct.beta.gouv.fr/",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://tacct.ademe.fr/",
       "redirects": true,
       "route": [
         "http://facili-tacct.beta.gouv.fr/",
-        "https://facili-tacct.beta.gouv.fr/"
+        "https://tacct.ademe.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "no-referrer, strict-origin-when-cross-origin",
+      "data": "same-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "DENY"
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-implemented-with-cross-origin",
+      "result": "corp-not-implemented",
       "scoreModifier": 0,
-      "data": "cross-origin",
-      "http": true,
+      "data": null,
+      "http": false,
       "meta": false
     }
   }
