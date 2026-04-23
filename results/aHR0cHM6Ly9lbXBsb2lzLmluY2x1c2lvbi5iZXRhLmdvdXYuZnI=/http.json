@@ -9,19 +9,19 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:17:00 GMT",
+      "date": "Thu, 23 Apr 2026 03:29:52 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "8601",
+      "content-length": "8368",
       "connection": "close",
-      "content-security-policy": "base-uri 'none'; connect-src 'self' *.sentry.io *.hotjar.com *.hotjar.io wss://*.hotjar.com https://data.geopf.fr https://matomo.inclusion.gouv.fr/; default-src 'self'; font-src 'self' data:; frame-ancestors https://pilotage.inclusion.beta.gouv.fr; frame-src https://app.livestorm.co *.hotjar.com https://tally.so https://stats.inclusion.beta.gouv.fr https://pilotage.inclusion.beta.gouv.fr https://communaute.inclusion.gouv.fr https://inclusion.beta.gouv.fr https://api.data.inclusion.gouv.fr blob: data:; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org *.hotjar.com https://cdn.redoc.ly https://par.cellar.clever-cloud.com/c1-prod/news-images/ https://matomo.inclusion.gouv.fr/; object-src 'none'; script-src 'self' 'nonce-ZRw4uJm428dDCbA2RCWokQ' https://stats.inclusion.beta.gouv.fr *.hotjar.com https://tally.so https://matomo.inclusion.gouv.fr/; script-src-elem 'self' 'nonce-ZRw4uJm428dDCbA2RCWokQ' https://stats.inclusion.beta.gouv.fr *.hotjar.com https://tally.so https://matomo.inclusion.gouv.fr/; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:",
+      "content-security-policy": "base-uri 'none'; connect-src 'self' *.sentry.io *.hotjar.com *.hotjar.io wss://*.hotjar.com https://data.geopf.fr https://matomo.inclusion.gouv.fr/; default-src 'self'; font-src 'self' data:; frame-ancestors https://pilotage.inclusion.beta.gouv.fr; frame-src https://app.livestorm.co *.hotjar.com https://tally.so https://stats.inclusion.beta.gouv.fr https://pilotage.inclusion.beta.gouv.fr https://inclusion.beta.gouv.fr https://api.data.inclusion.gouv.fr blob: data:; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org *.hotjar.com https://cdn.redoc.ly https://par.cellar.clever-cloud.com/c1-prod/news-images/ https://matomo.inclusion.gouv.fr/; object-src 'none'; script-src 'self' 'nonce-VokTy0cA8qQs64BGqscWag' https://stats.inclusion.beta.gouv.fr *.hotjar.com https://tally.so https://matomo.inclusion.gouv.fr/; script-src-elem 'self' 'nonce-VokTy0cA8qQs64BGqscWag' https://stats.inclusion.beta.gouv.fr *.hotjar.com https://tally.so https://matomo.inclusion.gouv.fr/; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:",
       "x-frame-options": "DENY",
       "vary": "Cookie, Accept-Encoding",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
-      "x-request-id": "8158de64-c3fc-4580-9c94-5f861144ef1a",
-      "sozu-id": "01KJRV5VWA10PHBZ9H3VBS92B5"
+      "x-request-id": "7534c31b-732d-4794-b3bc-e96918a9d745",
+      "sozu-id": "01KPW663NME4KYKXT9Z36Y6TBD"
     }
   },
   "tests": {
@@ -59,7 +59,6 @@
           "data:",
           "https://api.data.inclusion.gouv.fr",
           "https://app.livestorm.co",
-          "https://communaute.inclusion.gouv.fr",
           "https://inclusion.beta.gouv.fr",
           "https://pilotage.inclusion.beta.gouv.fr",
           "https://stats.inclusion.beta.gouv.fr",
@@ -79,7 +78,7 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-zrw4ujm428ddcba2rcwokq'",
+          "'nonce-vokty0ca8qqs64bgqscwag'",
           "'self'",
           "*.hotjar.com",
           "https://matomo.inclusion.gouv.fr/",
@@ -87,7 +86,7 @@
           "https://tally.so"
         ],
         "script-src-elem": [
-          "'nonce-zrw4ujm428ddcba2rcwokq'",
+          "'nonce-vokty0ca8qqs64bgqscwag'",
           "'self'",
           "*.hotjar.com",
           "https://matomo.inclusion.gouv.fr/",
