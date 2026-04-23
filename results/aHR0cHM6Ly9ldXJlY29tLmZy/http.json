@@ -10,12 +10,13 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.29.1",
-      "date": "Tue, 03 Mar 2026 03:19:30 GMT",
+      "date": "Thu, 23 Apr 2026 03:29:17 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
       "cache-control": "must-revalidate, no-cache, private",
+      "x-drupal-dynamic-cache": "HIT",
       "x-ua-compatible": "IE=edge",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
@@ -58,11 +59,12 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://www.eurecom.fr/",
+      "destination": "https://www.eurecom.fr/fr",
       "redirects": true,
       "route": [
         "http://eurecom.fr/",
-        "https://www.eurecom.fr/"
+        "https://www.eurecom.fr/",
+        "https://www.eurecom.fr/fr"
       ],
       "statusCode": 200
     },
