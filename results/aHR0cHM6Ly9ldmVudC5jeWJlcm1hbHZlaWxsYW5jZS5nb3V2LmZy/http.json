@@ -1,28 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
-    "statusCode": 200,
+    "score": 10,
+    "statusCode": 403,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-type": "text/html",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "via": "1.1 73e8a4e0d7a6505c14ca295a546bcf8e.cloudfront.net (CloudFront), 1.1 a77839329f887c5b9fb1ed92f48e49a2.cloudfront.net (CloudFront)",
-      "x-amz-cf-pop": "SFO5-P3, SFO53-P8",
       "server": "CloudFront",
-      "date": "Tue, 03 Mar 2026 03:17:00 GMT",
-      "cache-control": "public, must-revalidate, proxy-revalidate, max-age=3, stale-while-revalidate=3, stale-if-error=300",
-      "last-modified": "Tue, 03 Mar 2026 03:17:00 GMT",
-      "access-control-allow-origin": "https://event.cybermalveillance.gouv.fr",
-      "x-enhanced": "Took 513ms (html took 513ms, event took 239ms)",
-      "vary": "Accept-Encoding",
-      "x-cache": "Miss from cloudfront",
-      "x-amz-cf-id": "8dXkm16k8R1es2BVflgH2fC5vdyLdELg5qpEAwBhUDxjIZWdzrPDiw=="
+      "date": "Thu, 23 Apr 2026 03:26:37 GMT",
+      "content-type": "text/html",
+      "content-length": "915",
+      "connection": "close",
+      "x-cache": "Error from cloudfront",
+      "via": "1.1 575693ca51d2d9242d8177dfeb274d24.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "IAD12-P5",
+      "x-amz-cf-id": "6a2VPENo3uHhlpXDLYGK0_wP4TCCni3lQsnpQNiHT_0qEBsVGCU-oA=="
     }
   },
   "tests": {
@@ -54,16 +49,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://event.cybermalveillance.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://event.cybermalveillance.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://event.cybermalveillance.gouv.fr/",
-        "https://event.cybermalveillance.gouv.fr/"
+        "http://event.cybermalveillance.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -77,7 +71,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -87,15 +81,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.recaptcha.net/recaptcha/api.js?onload=recaptchaOnLoadCallback&render=explicit": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
