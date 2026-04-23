@@ -9,21 +9,21 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:22:14 GMT",
+      "date": "Thu, 23 Apr 2026 03:39:28 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "dfa77fc8-99f9-4d1d-880d-4139e3b5768e",
+      "x-request-id": "315e0420-7956-4bd5-989c-7b669dc2eb73",
       "x-frame-options": "DENY",
       "vary": "Cookie",
-      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.relay.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat; worker-src 'self' blob: https://*.crisp.chat; report-uri /csp/reports/",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.crisp.chat https://sentry.incubateur.net https://browser.sentry-cdn.com https://*.data.gouv.fr https://*.beta.gouv.fr; connect-src 'self' https://data.geopf.fr https://*.data.gouv.fr https://*.beta.gouv.fr https://sentry.incubateur.net https://*.crisp.chat wss://*.crisp.chat; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' https://data.geopf.fr https://*.s3.fr-par.scw.cloud data: https://*.crisp.chat https://static.demarches-simplifiees.fr; font-src 'self' https://*.crisp.chat; media-src 'self' https://*.s3.fr-par.scw.cloud https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.data.gouv.fr https://*.beta.gouv.fr; worker-src 'self' blob: https://*.crisp.chat; object-src 'none'; base-uri 'self'; form-action 'self'; report-uri /csp/reports/",
       "strict-transport-security": "max-age=60; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "visitorid=f22a4451-eb51-49a6-9a1f-bbae41e1e908; expires=Sun, 28 Mar 2027 03:22:14 GMT; Max-Age=33696000; Path=/; SameSite=Lax; Secure",
-        "csrftoken=nTvq37qgqA0go5YWa87ddy0OMTVOBi1N; expires=Tue, 02 Mar 2027 03:22:14 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "visitorid=61b5d525-b130-4387-9a85-8b8d53e45f71; expires=Tue, 18 May 2027 03:39:28 GMT; Max-Age=33696000; Path=/; SameSite=Lax; Secure",
+        "csrftoken=rQ4Vvff3Qcs89bLqryEy6pvba1ShivIj; expires=Thu, 22 Apr 2027 03:39:28 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ]
     }
   },
@@ -47,7 +47,7 @@
       "data": {
         "visitorid": {
           "domain": "envergo.beta.gouv.fr",
-          "expires": "2027-03-28T03:22:14.000Z",
+          "expires": "2027-05-18T03:39:28.000Z",
           "max-age": 33696000,
           "path": "/",
           "port": null,
@@ -56,7 +56,7 @@
         },
         "csrftoken": {
           "domain": "envergo.beta.gouv.fr",
-          "expires": "2027-03-02T03:22:14.000Z",
+          "expires": "2027-04-22T03:39:28.000Z",
           "httponly": true,
           "max-age": 31449600,
           "path": "/",
