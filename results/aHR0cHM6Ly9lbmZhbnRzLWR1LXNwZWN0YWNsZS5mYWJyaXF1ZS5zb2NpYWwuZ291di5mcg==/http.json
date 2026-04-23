@@ -9,18 +9,18 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:21:14 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "x-powered-by": "Next.js",
-      "etag": "\"pdjlpj90blseq\"",
-      "vary": "Accept-Encoding",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
       "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; media-src 'self'; font-src 'self' data:; img-src 'self' data:; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 23 Apr 2026 03:29:43 GMT",
+      "etag": "\"pdjlpj90blseq\"",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-xss-protection": "1; mode=block"
+      "x-powered-by": "Next.js",
+      "x-xss-protection": "1; mode=block",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -125,10 +125,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
