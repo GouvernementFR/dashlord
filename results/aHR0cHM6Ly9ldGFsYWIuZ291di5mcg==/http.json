@@ -9,16 +9,16 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:20:50 GMT",
+      "date": "Thu, 23 Apr 2026 03:26:02 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "4b64a115-8f42-44b5-9fe1-f8851a8cd47a",
+      "x-request-id": "0567fa8e-db1f-4004-8725-ced1a2235ea4",
       "x-frame-options": "DENY",
       "vary": "Accept-Language, Cookie",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
-      "referrer-policy": "same-origin",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "cross-origin-opener-policy": "same-origin",
       "strict-transport-security": "max-age=31536000"
     }
@@ -67,7 +67,7 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "same-origin",
+      "data": "strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
@@ -85,8 +85,8 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-all-scripts-loaded-securely",
-      "scoreModifier": 5,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
