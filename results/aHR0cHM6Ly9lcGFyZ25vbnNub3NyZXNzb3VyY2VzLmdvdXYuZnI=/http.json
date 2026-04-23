@@ -9,12 +9,16 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:26:16 GMT",
+      "date": "Thu, 23 Apr 2026 03:40:23 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "last-modified": "Fri, 27 Feb 2026 13:11:40 GMT",
+      "server": "cloudflare",
+      "last-modified": "Mon, 20 Apr 2026 15:35:37 GMT",
       "vary": "Accept-Encoding,User-Agent",
+      "set-cookie": [
+        "__cf_bm=n6JJHi95dLJpRHlImUkyiSNYoe6vImW9Y8rAnCBaoaY-1776915623.4126546-1.0.1.1-p2eCiy5Uy7TjHBR22cFfwBQf.LpiaAqf_yIrVN4VwAMNALYRH_.Oc30VFAlWON0Qh1cczpTwQuCIgkJAD1_gKo3q4KQRSrjoOSt6nz7yVcX.9DSYXKtJbW04X.S1Pc9e; HttpOnly; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Thu, 23 Apr 2026 04:10:23 GMT"
+      ],
       "x-front": "TEMPLATEDEBIAN11",
       "access-control-allow-origin": "https://epargnonsnosressources.gouv.fr",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -25,11 +29,7 @@
       "permissions-policy": "accelerometer=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
       "content-security-policy": "upgrade-insecure-requests",
       "cf-cache-status": "DYNAMIC",
-      "set-cookie": [
-        "__cf_bm=Fq3U7vh0qtaT1vv3x3nIZa_JIfOiMyo8m17LIojJ.gA-1772508376-1.0.1.1-JkAG40lB5eeLcOLbm08.Dxxxm0dmLRlpjBwJPLh8WWhMBsgY63g_pYK3ILAXr6zmpvAsX6mK84z_RuhC0EWlg2jPeSJfbRy.Q7PVqPdgMrQ; path=/; expires=Tue, 03-Mar-26 03:56:16 GMT; domain=.epargnonsnosressources.gouv.fr; HttpOnly; Secure; SameSite=None"
-      ],
-      "server": "cloudflare",
-      "cf-ray": "9d6589e92d043b41-IAD"
+      "cf-ray": "9f09d8b65dbbdae8-ORD"
     }
   },
   "tests": {
@@ -63,20 +63,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "epargnonsnosressources.gouv.fr",
-          "expires": "2026-03-03T03:56:16.000Z",
+          "expires": "2026-04-23T04:10:23.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
