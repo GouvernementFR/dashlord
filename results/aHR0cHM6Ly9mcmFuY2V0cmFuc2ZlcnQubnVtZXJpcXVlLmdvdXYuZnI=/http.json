@@ -9,11 +9,11 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:30:53 GMT",
+      "date": "Thu, 23 Apr 2026 03:39:15 GMT",
       "content-type": "text/html",
       "connection": "close",
-      "last-modified": "Thu, 12 Feb 2026 17:17:35 GMT",
-      "etag": "\"698e0b2f-597\"",
+      "last-modified": "Mon, 13 Apr 2026 09:52:41 GMT",
+      "etag": "\"69dcbce9-597\"",
       "accept-ranges": "bytes",
       "strict-transport-security": "\"max-age=31449600; includeSubDomains\" always;",
       "content-security-policy": "\"default-src 'self' https://integration.lasuite.numerique.gouv.fr https://auth.appseducation.fr https://client.crisp.chat ; connect-src *; script-src-elem 'self' https://integration.lasuite.numerique.gouv.fr https://auth.appseducation.fr https://client.crisp.chat 'unsafe-eval' 'unsafe-inline'; script-src 'self' https://integration.lasuite.numerique.gouv.fr https://auth.appseducation.fr https://client.crisp.chat 'unsafe-eval' ; font-src 'self' https://integration.lasuite.numerique.gouv.fr https://client.crisp.chat ; frame-ancestors 'self' https://integration.lasuite.numerique.gouv.fr https://auth.appseducation.fr https://client.crisp.chat; frame-src 'self' https://integration.lasuite.numerique.gouv.fr https://auth.appseducation.fr https://client.crisp.chat https://francetransfert.crisp.help ; style-src 'self' https://integration.lasuite.numerique.gouv.fr https://client.crisp.chat 'unsafe-inline'; img-src 'self' https://integration.lasuite.numerique.gouv.fr https://client.crisp.chat https://image.crisp.chat data: ;\" always;",
@@ -22,13 +22,13 @@
       "x-frame-options": "\"ALLOW-FROM https://integration.lasuite.numerique.gouv.fr https://auth.appseducation.fr\";",
       "x-xss-protection": "\"1; mode=block\";",
       "set-cookie": [
-        "visid_incap_3272860=aJmbQJwJRduGR/AbSpwT7+xVpmkAAAAAQUIPAAAAAABcXptEw5igaZlQVrYo6JNl; expires=Tue, 02 Mar 2027 07:18:45 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
-        "nlbi_3272860=wBYzYEIfDhqrc2UTexssrAAAAABS8EX3w1ei7t1JuTjD1XMh; HttpOnly; path=/; Domain=.numerique.gouv.fr",
-        "incap_ses_202_3272860=5QhQXydEGRwiqEjGa6bNAu1VpmkAAAAAgdfZZ00XeGaO4r44IcpJwA==; path=/; Domain=.numerique.gouv.fr"
+        "visid_incap_3272860=uU6UataSTJmkIAR/dRbZ12KU6WkAAAAAQUIPAAAAAAD6YLQ7Z0wgIlJ7X07vVgeR; expires=Thu, 22 Apr 2027 06:45:58 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
+        "nlbi_3272860=ESXVJ6kzfn4vYk4MexssrAAAAADSmXicr8OqaU4b5vkYgpMP; HttpOnly; path=/; Domain=.numerique.gouv.fr",
+        "incap_ses_329_3272860=p9zDebB040FqhdPDXdiQBGOU6WkAAAAAuTl8IBFEwdy0oNqAlZKf4Q==; path=/; Domain=.numerique.gouv.fr"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "18-79156285-79156288 NNYN CT(116 129 0) RT(1772508653348 17) q(0 0 2 0) r(4 4) U12"
+      "x-iinfo": "17-21316835-21316837 NNYN CT(95 102 0) RT(1776915555420 9) q(0 0 2 0) r(3 3) U12"
     }
   },
   "tests": {
@@ -122,7 +122,7 @@
       "data": {
         "visid_incap_3272860": {
           "domain": "numerique.gouv.fr",
-          "expires": "2027-03-02T07:18:45.000Z",
+          "expires": "2027-04-22T06:45:58.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -133,7 +133,7 @@
           "path": "/",
           "port": null
         },
-        "incap_ses_202_3272860": {
+        "incap_ses_329_3272860": {
           "domain": "numerique.gouv.fr",
           "path": "/",
           "port": null
