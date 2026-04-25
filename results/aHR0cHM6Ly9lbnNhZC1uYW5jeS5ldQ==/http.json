@@ -5,25 +5,21 @@
     "error": null,
     "score": 25,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 03 Mar 2026 03:30:37 GMT",
+      "date": "Sat, 25 Apr 2026 03:26:36 GMT",
       "server": "Apache",
-      "content-security-policy": "upgrade-insecure-requests;",
-      "vary": "Accept-Encoding,Cookie",
+      "expires": "Sat, 25 Apr 2026 04:26:36 GMT",
+      "pragma": "public",
+      "cache-control": "max-age=3600, public",
+      "vary": "Accept-Encoding",
       "upgrade": "h2,h2c",
       "connection": "Upgrade, close",
-      "last-modified": "Sat, 28 Feb 2026 20:24:43 GMT",
-      "etag": "\"509e-64be824e60b1b\"",
-      "accept-ranges": "bytes",
-      "content-length": "20638",
-      "cache-control": "max-age=0, public",
-      "expires": "Tue, 03 Mar 2026 03:30:37 GMT",
-      "retry-after": "60",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "pragma": "public",
+      "last-modified": "Sat, 25 Apr 2026 03:26:36 GMT",
+      "etag": "\"961d031ce5613170a52b303a2db48b32\"",
+      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -31,29 +27,13 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "upgrade-insecure-requests": [
-          "'none'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": true
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -85,11 +65,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -121,7 +101,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://unpkg.com/flickity-fullscreen@1/fullscreen.js?ver=6.9.1": {
+        "https://unpkg.com/flickity-fullscreen@1/fullscreen.js?ver=6.9.4": {
           "crossorigin": null,
           "integrity": null
         }
