@@ -1,30 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 0,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "accept-ranges": "bytes",
-      "age": "108299",
-      "content-length": "23659",
-      "content-type": "text/html;charset=utf-8",
-      "date": "Sun, 01 Mar 2026 21:30:09 GMT",
-      "etag": "W/\"1e9d852fadcb15e4f57cf312c56565fe--gzip\"",
-      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
-      "server": "Squarespace",
-      "set-cookie": [
-        "crumb=BVFumBXKGCYsMDMyNjRjZTRmYjNlNDU1YjEzODBlMTljMmQxOTBh;Secure;Path=/"
-      ],
-      "strict-transport-security": "max-age=15552000",
-      "vary": "Accept-Encoding",
-      "x-content-type-options": "nosniff",
-      "x-contextid": "jul4dI65/3F6VvKTO",
-      "connection": "close"
+      "access-control-allow-origin": "*",
+      "age": "283182",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sat, 25 Apr 2026 03:25:18 GMT",
+      "etag": "W/\"2eba1f9a6ed30f36d1716371e26fc0b7\"",
+      "last-modified": "Tue, 21 Apr 2026 20:45:35 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "sfo1::4t2rt-1777087518052-cfadd91879e4",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -42,16 +40,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "crumb": {
-          "domain": "www.frenchtechbarcelona.com",
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -63,14 +54,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://www.frenchtechbarcelona.com/",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://frenchtechbarcelona.com/",
       "redirects": true,
       "route": [
         "http://frenchtechbarcelona.com/",
-        "https://www.frenchtechbarcelona.com/"
+        "https://frenchtechbarcelona.com/"
       ],
       "statusCode": 200
     },
@@ -88,98 +79,25 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15552000",
+      "data": "max-age=63072000",
       "includeSubDomains": false,
-      "maxAge": 15552000,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//use.typekit.net/ik/cUtfiyzEqlllZZ73D_-8-V1tc8Nh0dJtI2VBZ1rsQ69fe0jBfFHN4UJLFRbh52jhWDmqFcmRZcwowDSaZQ6ow2M3wAB8jD9tjs78MkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0Z148dcFGiemR-e4yScF8deN0jPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OeZkZAoR-Ys8jhyKjW4RZAUzdcI0jhNlOeZkZAoR-Ys8jhyKjW4RZAUzdcI0SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80Zko0ZWbCiaiaOcBDOcu8OYiaikocScm0jhyXZAFGjcBkjhmCdhoyOcFzdPUaiaS0Z148dcFGiemR-e4yScF8deN0jPoDSWmyScmDSeBRZPoRdhXCiaiaO1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXKfcuTdc8zdKu3ScvKfAZuiYmkjPu3ifJ4ShNc-AIlSY4zJK4cZKu1dhNqOAy8jAsC-Ao8OWi8jKu3ScvljhN0Zem0ShmqH6qJGQ9bMg6IJMJ7fbKSFsMMeMS6MKG4fJsmIMIjgfMfH6qJxubbMs6BJMJ7fbRKpsMgeMj6MKG4fJBmIMIjgkMfH6qJyu9bMs6JJMJ7fbKBmsMgeMt6MKG4fJ4mIMIjIPMfH6GJa_vgIMJjMkMfH6GJt_vgIMJjgfMfH6GJtdvgIMJjgPMfH6GJh_vgIMJjgkMfH6GJtOvgIMJj2PMfH6GJaOvgIMJjIPMfH6qJ1IwbMU6IJMJ7fbK6bUM2eM96MKG4f4y2IMwjfPMfqMYFv4kLg6.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-0100d901e4e9a413-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-e86efab83c4196fe-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-fcd4c9082a977da2-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-82746be503f27cc5-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/common-vendors-a410efd088be7d80-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/common-8b1ba29cbec93ba4-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/commerce-a8c5a65cede35256-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "//assets.squarespace.com/universal/scripts-compressed/performance-2041d9c562dacd50-min.fr-FR.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/8055722a-129e-42b4-ac07-f49f4257a938_418/trigger-animation-runtime.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/8055722a-129e-42b4-ac07-f49f4257a938_418/818.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/8055722a-129e-42b4-ac07-f49f4257a938_418/website.components.button.visitor.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/8055722a-129e-42b4-ac07-f49f4257a938_418/block-animation-preview-manager.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/d68569a7-b161-44d8-8339-24b8eb70cda5_571/website.components.spacer.visitor.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://tag.clearbitscripts.com/v1/pk_7b6d8c62a2c25f7294d9dc6323487a70/tags.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/358/scripts/site-bundle.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
