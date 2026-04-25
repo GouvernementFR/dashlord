@@ -3,25 +3,26 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 20,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 05 Mar 2026 03:14:50 GMT",
+      "date": "Sat, 25 Apr 2026 03:33:13 GMT",
       "set-cookie": [
-        "dtCookie=v_4_srv_8_sn_2379BF1DE8B34854F5CCEA4B9C5BB6B7_perc_100000_ol_0_mul_1_app-3A055c37cbefb340c1_1; Path=/; Domain=.interieur.gouv.fr",
-        "YOMe1h3tgHKNQxhV6V7n5g__=v1affOgwSDd6+; Expires=Thu, 05-Mar-2026 05:14:50 GMT; Path=/"
+        "dtCookie=v_4_srv_12_sn_E364FB73F2A31F11DCA6F6736133AE55_perc_100000_ol_0_mul_1_app-3A055c37cbefb340c1_1; Path=/; Domain=.interieur.gouv.fr",
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1affOgwSDd6+; Expires=Sat, 25-Apr-2026 05:33:13 GMT; Path=/"
       ],
       "content-type": "text/html",
-      "etag": "W/\"69a00f73-31f:dtagent10323250822043923uEPf\"",
+      "etag": "W/\"69a00f73-31f:dtagent10333260303165926uZ8u\"",
       "x-oneagent-js-injection": "true",
       "x-ruxit-js-agent": "true",
       "last-modified": "Thu, 26 Feb 2026 09:16:34 GMT",
-      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"1233696425\"",
+      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"77014047\"",
       "x-robots-tag": "noindex, nofollow, nosnippet, noarchive",
       "cache-control": "no-cache",
+      "strict-transport-security": "max-age=2678400",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -51,7 +52,7 @@
         },
         "YOMe1h3tgHKNQxhV6V7n5g__": {
           "domain": "fourrieres.interieur.gouv.fr",
-          "expires": "2026-03-05T05:14:50.000Z",
+          "expires": "2026-04-25T05:33:13.000Z",
           "path": "/",
           "port": null
         }
@@ -90,11 +91,11 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2678400",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 2678400,
       "preload": false,
       "preloaded": false
     },
