@@ -9,24 +9,25 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "openresty",
-      "date": "Thu, 05 Mar 2026 03:20:10 GMT",
+      "date": "Mon, 27 Apr 2026 03:23:14 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "content-length": "21939",
       "connection": "close",
-      "vary": "Accept-Encoding",
+      "x-powered-by": "PHP/8.2.30",
       "set-cookie": [
-        "PHPSESSID=t6ug2n5pnjqvk9q1c29pkavbum; path=/; secure"
+        "PHPSESSID=13b487f8f069310454eb4dc624febb24; path=/; secure"
       ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "x-ua-compatible": "IE=edge",
+      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
       "link": "<https://gar.education.fr/wp-json/>; rel=\"https://api.w.org/\", <https://gar.education.fr/wp-json/wp/v2/pages/504>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://gar.education.fr/>; rel=shortlink",
-      "x-frame-options": "deny",
+      "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
       "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=15768000"
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
     }
   },
   "tests": {
@@ -66,12 +67,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://gar.education.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://gar.education.fr/",
+        "https://gar.education.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -87,10 +91,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15768000",
-      "includeSubDomains": false,
-      "maxAge": 15768000,
-      "preload": false,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -112,7 +116,7 @@
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "deny"
+      "data": "sameorigin"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
