@@ -3,15 +3,28 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
-    "statusCode": 403,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 05 Mar 2026 03:27:36 GMT",
-      "content-length": "239",
-      "content-type": "text/html; charset=iso-8859-1",
+      "date": "Mon, 27 Apr 2026 03:29:28 GMT",
+      "cache-control": "must-revalidate, no-cache, private",
+      "pragma": "no-cache",
+      "expires": "Mon, 27 Apr 2026 01:29:28 GMT",
+      "last-modified": "Mon, 27 Apr 2026 03:29:28 GMT",
+      "served-by": "www.haute-garonne.gouv.fr",
+      "content-language": "fr-FR",
+      "vary": "X-User-Hash,Accept-Encoding",
+      "content-type": "text/html; charset=utf-8",
+      "age": "0",
+      "x-cache": "Miss",
+      "accept-ranges": "bytes",
+      "set-cookie": [
+        "eZSESSID=2qimb4qtmq20vd162gp5i47ij6; path=/"
+      ],
+      "transfer-encoding": "chunked",
       "connection": "close"
     }
   },
@@ -29,30 +42,38 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "eZSESSID": {
+          "domain": "www.haute-garonne.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "null"
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://haute-garonne.gouv.fr/",
-      "redirects": false,
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.haute-garonne.gouv.fr/",
+      "redirects": true,
       "route": [
-        "http://haute-garonne.gouv.fr/"
+        "http://haute-garonne.gouv.fr/",
+        "http://www.haute-garonne.gouv.fr/",
+        "https://www.haute-garonne.gouv.fr/"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -77,7 +98,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
