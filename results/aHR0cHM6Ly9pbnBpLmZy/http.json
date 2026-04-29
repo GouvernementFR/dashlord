@@ -9,7 +9,7 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 06 Mar 2026 16:11:54 GMT",
+      "date": "Tue, 28 Apr 2026 01:15:10 GMT",
       "cache-control": "max-age=300, public, private",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
@@ -18,20 +18,20 @@
       "vary": "Cookie,Accept-Encoding",
       "content-security-policy-report-only": "object-src 'none'; script-src 'self' 'unsafe-inline' connect.facebook.net platform.linkedin.com platform.twitter.com cdn.matomo.cloud cdn.gtranslate.net translate.google.com translate.googleapis.com https://static.hotjar.com https://script.hotjar.com cdn.rawgit.com cdnjs.cloudflare.com https://cdn.ckeditor.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://www.google.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com",
       "content-security-policy": "object-src 'none'; frame-ancestors 'self'",
-      "last-modified": "Fri, 06 Mar 2026 16:11:54 GMT",
-      "etag": "\"1772813514-gzip\"",
+      "last-modified": "Tue, 28 Apr 2026 01:15:10 GMT",
+      "etag": "\"1777338910-gzip\"",
       "content-type": "text/html; charset=UTF-8",
       "x-ecritel-lb": "inpi-lb-01",
       "set-cookie": [
-        "SERVERID=s2; path=/; HttpOnly; Secure",
-        "visid_incap_2207353=RtjjYaDOTMud3vNnfFCcUa6Wq2kAAAAAQUIPAAAAAADF1nZPXbesijI9tuJ8hUE/; expires=Sat, 06 Mar 2027 21:01:33 GMT; HttpOnly; path=/; Domain=.inpi.fr",
-        "nlbi_2207353=2meJc1hGJm/eAwXNe6Nu9QAAAABPCd8buzCtuhHA20bVMaDa; HttpOnly; path=/; Domain=.inpi.fr",
-        "incap_ses_1842_2207353=nABfO0w9Qj2GtRH06RmQGa+Wq2kAAAAAkqHWozyRzJ8sk1g5UH6+2A==; path=/; Domain=.inpi.fr"
+        "SERVERID=s1; path=/; HttpOnly; Secure",
+        "visid_incap_2207353=wyrErVVeSGOZouIdkgYPODJ+8WkAAAAAQUIPAAAAAAB2+w+TD2FkWotJpVDFVR3G; expires=Wed, 28 Apr 2027 07:31:05 GMT; HttpOnly; path=/; Domain=.inpi.fr",
+        "nlbi_2207353=Q1uEHavd2htKtwIge6Nu9QAAAAAbFRxRVjBnx4bByBavsR8M; HttpOnly; path=/; Domain=.inpi.fr",
+        "incap_ses_1321_2207353=35b8AYR5Bzv1xcysFyNVEjN+8WkAAAAAVnl9MlAGs1JTpWGX0GorrA==; path=/; Domain=.inpi.fr"
       ],
       "connection": "close",
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "57-23312518-23312520 NNNN CT(92 98 0) RT(1772852910807 11) q(0 0 2 1) r(3 4) U24"
+      "x-iinfo": "10-35293479-35293480 NNNN CT(116 120 0) RT(1777434163323 19) q(0 0 2 0) r(3 5) U24"
     }
   },
   "tests": {
@@ -80,7 +80,7 @@
         },
         "visid_incap_2207353": {
           "domain": "inpi.fr",
-          "expires": "2027-03-06T21:01:33.000Z",
+          "expires": "2027-04-28T07:31:05.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -91,7 +91,7 @@
           "path": "/",
           "port": null
         },
-        "incap_ses_1842_2207353": {
+        "incap_ses_1321_2207353": {
           "domain": "inpi.fr",
           "path": "/",
           "port": null
