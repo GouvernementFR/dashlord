@@ -3,10 +3,10 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
@@ -28,11 +28,11 @@
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
       "link": "<https://www.inserm.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.inserm.fr/wp-json/wp/v2/pages/83257>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.inserm.fr/>; rel=shortlink",
-      "etag": "\"35799-1772836814;br\"",
+      "etag": "\"22896-1777389494;br\"",
       "x-litespeed-cache": "hit",
       "vary": "Accept-Encoding",
-      "content-length": "24593",
-      "date": "Sat, 07 Mar 2026 03:08:28 GMT",
+      "content-length": "24850",
+      "date": "Wed, 29 Apr 2026 03:30:21 GMT",
       "server": "LiteSpeed",
       "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
     }
@@ -82,13 +82,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.inserm.fr/",
       "redirects": true,
       "route": [
         "http://inserm.fr/",
+        "https://inserm.fr/",
         "https://www.inserm.fr/"
       ],
       "statusCode": 200
@@ -119,6 +120,10 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
+        "https://inserm.b-cdn.net/wp-content/uploads/bde632907f/pa-0ar4KZph5pQkrQ6fKFOtr.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
         "https://inserm.b-cdn.net/wp-content/plugins/litespeed-cache/assets/js/instant_click.min.js": {
           "crossorigin": null,
           "integrity": null
