@@ -3,22 +3,22 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 30,
-    "statusCode": 301,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:08:31 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "location": "http://info-familles.gouv.fr/",
-      "content-length": "237",
-      "content-type": "text/html; charset=iso-8859-1",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab2000a734c69d594caf4fc4605e20e3574abbec303718bcf6f09ed1b724f61a390d6008546e5b8111300039ce47862665cd963e3277f8a3c7e7b52105bb502bdb07edd2ae79feda233df342537511752e8581899bfc596be2299d; Secure; Path=/"
-      ]
+        "TSa1d3e6c3029=087dc22938ab2800de0342d1c9288d61737d2ad8499f5b48448f519a88c5bda05ad34648bbba9c542daaaa6a14df9917; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab20008ec31926729d6e13580595291fbcb342229dcac8798f3dc800a72902e39d4388083849bd6211300021e29d729fff4c95439fe17fe7d61f252e3099dea95e4e8e4234e06ff347fdf543936c7ca2d7b4a2bccd775e647d6436; Secure; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "5678",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -39,6 +39,19 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
+        "TSa1d3e6c3029": {
+          "domain": "info-familles.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc4ff0492027": {
+          "domain": "info-familles.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
           "domain": "info-familles.gouv.fr",
           "httponly": true,
@@ -50,12 +63,6 @@
         "TS01c71406": {
           "domain": "info-familles.gouv.fr",
           "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TSc4ff0492027": {
-          "domain": "info-familles.gouv.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -78,7 +85,7 @@
       "destination": "https://info-familles.gouv.fr/",
       "redirects": true,
       "route": [],
-      "statusCode": 301
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -103,16 +110,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
