@@ -9,15 +9,15 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:08:29 GMT",
+      "date": "Wed, 29 Apr 2026 03:26:47 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=3VU2AVUAPZIRTTNN7WP2EVBOICQOQJOKK7CHJSWPMNPIWPZWDAYABJA5TBANMLPB2DN2MKVTAICBVFDP3BR6NWR3WSFAHALNLP65SHFXHLRJGLIXENTQ====; Path=/"
+        "bot_mitigation_cookie=X5TPSY2PR7EW5Y5FVYX5G5CEV4MJO2DHQO7AI42L6VNCRTUQD62B3SRZMWWRYPEWVASLRMA6C2DZ666J6S5W7D7MSU35AI2V4AUH7YEPSAUCXODROCTQ====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C2-5850fd27-2df483b4",
+      "content-length": "202",
+      "x-cp-via": "C2-cb2f2c79-7a08840f",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "immatriculation.ants.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
