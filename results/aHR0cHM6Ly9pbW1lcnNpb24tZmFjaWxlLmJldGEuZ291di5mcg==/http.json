@@ -9,15 +9,15 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:08:26 GMT",
+      "date": "Wed, 29 Apr 2026 03:41:56 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "4cc1c09b-28f5-4619-add4-0ba7a7650ec9",
-      "last-modified": "Thu, 05 Mar 2026 14:44:03 GMT",
+      "x-request-id": "ea1e9848-8966-4d48-a37f-f8d57e32c478",
+      "last-modified": "Tue, 28 Apr 2026 10:14:53 GMT",
       "vary": "Accept-Encoding",
-      "etag": "W/\"69a996b3-8f2\"",
-      "content-security-policy": "default-src 'self' https://user-images.githubusercontent.com https://tally.so https://px.ads.linkedin.com https://snap.licdn.com https://metabase.immersion-facile.beta.gouv.fr https://matomo.inclusion.beta.gouv.fr https://sentry.gip-inclusion.cloud-ed.fr wss://client.relay.crisp.chat/w/9d/  https://client.crisp.chat data: blob: https://immersion.cellar-c2.services.clever-cloud.com https://immersion-dev.cellar-c2.services.clever-cloud.com https://immersion-staging.cellar-c2.services.clever-cloud.com *.openstreetmap.org 'unsafe-inline' 'unsafe-eval'",
+      "etag": "W/\"69f0889d-8f2\"",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://client.crisp.chat https://cdn.tagcommander.com https://tag.aticdn.net; connect-src 'self' data: https://sentry.gip-inclusion.cloud-ed.fr https://o4508405260615680.ingest.de.sentry.io https://client.crisp.chat wss://client.relay.crisp.chat https://hd.pe.fr; style-src 'self' 'unsafe-inline' https://client.crisp.chat; frame-src 'self' https://metabase.immersion-facile.beta.gouv.fr https://metabase-v2.immersion-facile.beta.gouv.fr; font-src 'self' https://client.crisp.chat; img-src 'self' data: blob: https://user-images.githubusercontent.com https://*.openstreetmap.org https://immersion.cellar-c2.services.clever-cloud.com https://immersion-dev.cellar-c2.services.clever-cloud.com https://immersion-staging.cellar-c2.services.clever-cloud.com; media-src 'self' https://immersion.cellar-c2.services.clever-cloud.com https://immersion-dev.cellar-c2.services.clever-cloud.com https://immersion-staging.cellar-c2.services.clever-cloud.com; worker-src 'self' blob:;",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000"
@@ -31,24 +31,58 @@
       "scoreModifier": -20,
       "data": {
         "default-src": [
+          "'self'"
+        ],
+        "script-src": [
           "'self'",
           "'unsafe-eval'",
           "'unsafe-inline'",
-          "*.openstreetmap.org",
-          "blob:",
+          "https://cdn.tagcommander.com",
+          "https://client.crisp.chat",
+          "https://tag.aticdn.net"
+        ],
+        "connect-src": [
+          "'self'",
           "data:",
           "https://client.crisp.chat",
+          "https://hd.pe.fr",
+          "https://o4508405260615680.ingest.de.sentry.io",
+          "https://sentry.gip-inclusion.cloud-ed.fr",
+          "wss://client.relay.crisp.chat"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://client.crisp.chat"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://metabase-v2.immersion-facile.beta.gouv.fr",
+          "https://metabase.immersion-facile.beta.gouv.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "https://client.crisp.chat"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://*.openstreetmap.org",
           "https://immersion-dev.cellar-c2.services.clever-cloud.com",
           "https://immersion-staging.cellar-c2.services.clever-cloud.com",
           "https://immersion.cellar-c2.services.clever-cloud.com",
-          "https://matomo.inclusion.beta.gouv.fr",
-          "https://metabase.immersion-facile.beta.gouv.fr",
-          "https://px.ads.linkedin.com",
-          "https://sentry.gip-inclusion.cloud-ed.fr",
-          "https://snap.licdn.com",
-          "https://tally.so",
-          "https://user-images.githubusercontent.com",
-          "wss://client.relay.crisp.chat/w/9d/"
+          "https://user-images.githubusercontent.com"
+        ],
+        "media-src": [
+          "'self'",
+          "https://immersion-dev.cellar-c2.services.clever-cloud.com",
+          "https://immersion-staging.cellar-c2.services.clever-cloud.com",
+          "https://immersion.cellar-c2.services.clever-cloud.com"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
         ]
       },
       "http": true,
