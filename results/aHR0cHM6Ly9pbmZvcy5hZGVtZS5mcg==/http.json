@@ -9,20 +9,21 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:12:06 GMT",
+      "date": "Wed, 29 Apr 2026 03:42:55 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "x-powered-by": "PHP/8.2.30, PleskLin",
       "vary": "User-Agent,Accept-Encoding",
-      "last-modified": "Fri, 06 Mar 2026 23:57:59 GMT",
+      "last-modified": "Tue, 28 Apr 2026 22:58:15 GMT",
       "set-cookie": [
-        "__cf_bm=sB5QoMNnwITnlJhI1RTKg8fidMa9_PBgYt935rY3MSI-1772853126.4511817-1.0.1.1-S.6wyIXk4l_5jxvOXnzu0OLdB.QFAMnRVf7hROskxyRMxQ7NK7XgoawZyQ0VmQcaJkq5cQWHHl_Dr8kKXyDBFd4d5QZzTgYAhVBqSzMcHiZpAS2CJ9W8B8JbVO3fA34J; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 07 Mar 2026 03:42:06 GMT"
+        "__cf_bm=utx7kD1I6aJAfr9hcxkt903Svb0W.1l2vZaL3uuT00s-1777434174.70572-1.0.1.1-Fjsaw0uHIu71mSf1LCPyDFNZ4LrnSLg9LDyATSvWUyOBcT_ajxcJdJXVL2dFY.uTIcslC_p.22dxNH4pnqfSyZC5kllZmtFDmhkYW40c0Q49EFh3oqBjKfMOrp4y16C.; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 29 Apr 2026 04:12:55 GMT"
       ],
       "x-cache-status": "MISS",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9d866aa84f316b51-DFW"
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=305,cfOrigin;dur=310",
+      "cf-ray": "9f3b4ca7e98b8bda-IAD"
     }
   },
   "tests": {
@@ -45,7 +46,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-07T03:42:06.000Z",
+          "expires": "2026-04-29T04:12:55.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -97,9 +98,14 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
