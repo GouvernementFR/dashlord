@@ -1,1 +1,218 @@
-{"error":"Site did respond with an unexpected HTTP status code 503."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B-",
+    "error": null,
+    "score": 65,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Wed, 29 Apr 2026 03:30:10 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "cache-control": "max-age=3600, must-revalidate",
+      "x-powered-by": "PHP/8.4",
+      "x-frame-options": "sameorigin",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000 ; preload",
+      "referrer-policy": "origin-when-cross-origin",
+      "permissions-policy": "accelerometer=(self), autoplay=(self), camera=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), usb=(self)",
+      "link": "<https://institutfrancais-congo.com/wp-json/>; rel=\"https://api.w.org/\", <https://institutfrancais-congo.com/wp-json/wp/v2/pages/118902>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://institutfrancais-congo.com/>; rel=shortlink",
+      "hummingbird-cache": "Served",
+      "set-cookie": [
+        "uncode_privacy[consent_types]=%5B%5D; expires=Thu, 29 Apr 2027 03:29:05 GMT; Max-Age=31536000; path=/; secure; SameSite=Strict"
+      ],
+      "age": "0",
+      "x-cdn-cache": "MISS",
+      "x-cdn-request-id": "518403087",
+      "x-cdn-pop": "bhs",
+      "accept-ranges": "bytes",
+      "transfer-encoding": "chunked",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "uncode_privacy[consent_types]": {
+          "domain": "institutfrancais-congo.com",
+          "expires": "2027-04-29T03:29:05.000Z",
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "strict",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://institutfrancais-congo.com/",
+      "redirects": true,
+      "route": [
+        "http://institutfrancais-congo.com/",
+        "https://institutfrancais-congo.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000 ; preload",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/59f2484c-01ad-41cc-9dd6-8f57a4ff7317.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/b1039ca4-8083-40f2-a7ec-b34086bc91c9.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/675d5640-75d3-441e-8500-127dd420eaae.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/75223dd8-71bf-4aec-89ef-e2a622f2be6b.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/896266ee-6906-473f-a4b0-8e8ac3a39263.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/ed63cda6-0d3f-4c51-9f11-d3948ee80e62.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/23661d78-94e9-4239-b3d3-e6f50e42a8f2.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/b31665cb-a7bb-48fa-91f0-feb9fd6a0a8e.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/1e154e1a-3879-45cd-8423-3e5f19bef7c4.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/aaaef3a2-3a42-4077-8b5b-e395e61bdcf1.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/09aaa464-9d3c-4525-8fcf-84feef7961ce.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/0dd3d515-1f0f-45ec-bd28-f0b9b5f8e42b.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/5c97c0bb-bfd1-46a4-8b9b-8e085b215888.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/1ba7cd67-6f96-4cd8-8617-0444f0e79731.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/cace2873-05b3-42a1-9faf-2dc0719bd7a9.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/535e6032-878b-4375-8eed-72611359a822.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/c9d4150b-c412-46c4-9160-57d34895482d.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/d6367cc5-444c-4aa6-9592-73b570215c6c.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/536ae89d-b2dc-48bc-8e21-02a88b98cfef.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://hb.wpmucdn.com/institutfrancais-congo.com/f04b8071-aa7b-49be-8c2d-afec94e659fe.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
