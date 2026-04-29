@@ -3,19 +3,26 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 20,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 05 Mar 2026 03:34:50 GMT",
-      "server": "Apache",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade, close",
-      "vary": "Accept-Encoding",
-      "content-length": "1308",
-      "content-type": "text/html"
+      "date": "Wed, 29 Apr 2026 03:30:07 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31536000",
+      "content-type": "text/html; charset=utf-8",
+      "composed-by": "SPIP @ www.spip.net",
+      "x-spip-cache": "86400",
+      "last-modified": "Wed, 29 Apr 2026 03:30:07 GMT",
+      "set-cookie": [
+        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
+      ],
+      "vary": "Cookie,Accept-Encoding",
+      "cache-control": "private",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -32,10 +39,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "SRV": {
+          "domain": "www.hctisn.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
