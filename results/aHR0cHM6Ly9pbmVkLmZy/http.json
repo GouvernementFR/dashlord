@@ -9,25 +9,27 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 02:45:17 GMT",
-      "cache-control": "must-revalidate, no-cache, private",
+      "date": "Tue, 28 Apr 2026 16:25:00 GMT",
+      "cache-control": "max-age=900, public",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
       "strict-transport-security": "max-age=31536000; includeSubdomains;",
       "x-xss-protection": "1;  mode=block",
+      "last-modified": "Tue, 28 Apr 2026 16:25:00 GMT",
+      "etag": "\"1777393500\"",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8",
       "set-cookie": [
-        "BNIS_vid=Pd95Kf8Ze3Vb/RBrYQsufCx8yddRPdeBTw/Jl4A6x9dDmqfQb9NcKO4LEknpv0mIxnbySr1ql17MiBvZmxxC9lS8n4SE41JxqkslcxKvAxQ0pwu7GDdd6t6f+Ltnr/q/zWyXp1Y6Wz4ssJw3xr2cqT4tRI77r0aa0raj5OOvKzEAEFrAIldtJc19g0/33QbAurxC5PDwj0U=; Path=/",
-        "BNIS___utm_is1=c8YaLsQY0pfUUnB8y8VNg0+Q0fazY3I+H1mauTHrj6zgJiR10xJwAnLQTXSvQiJ3bsYawymUi4U4eVr8ycCXbR99n+vfEuTIEaQhv31vwR0IxvOUJdv/fw==; Max-Age=31536000; Path=/",
-        "BNIS___utm_is2=wANlVXWT/B5uGJg/BhSkvsqRqCDSZ6KZ4kP79PdFNGx9DQEbg0v2T++wWRd7IGZCYbfu1RLvv9w=; Max-Age=10800; Path=/",
-        "BNIS___utm_is3=SibxprKI/YJ/fip6yGm0QxKkOnkeUAwuyW8Z+F1bkgjsOIePdt5zEk6tO/I14JbGMKoV7xgsxuEBf45W9fd2fK2r0o9dGI3YX9kmrYLlvYQ=;  Path=/",
-        "BNIS_x-bni-jas=MTo4FVQ3pnvoW/Yxda5/SMwRjSwnQVSKENcccjdEQ1o18vEZFIshCJAxIr8DSDgOBQWxNJ/n8wBnprldSKAIlq5FTcGbe2SaD/gyBMBD++5edDQus5vwFg==; Path=/"
+        "BNIS___utm_is1=D8R8Xx9BZqIDOG6uL3ILgddCRjed3E+vVz29JPGF5+h/1GUZKmPlCPGBk3j/Jh7seqznCOxY6bsVbnaSbQpPkHZE9YfTU52jqfu9R+azXhKgEvKaOQuL2g==; Max-Age=31536000; Path=/",
+        "BNIS___utm_is2=+miB9BRBzt12xOhx6iNiDPvkWriiePMyzI9h0X7BE+rcKz+uMioTUxGLJ0O0AEeRrmUQkAdCPhc=; Max-Age=10800; Path=/",
+        "BNIS___utm_is3=nkrRzcqjg2y+7Cwk0SUf//7SNtDGVJ3UQy5Ry3ZtcnC2E2PZAjvNBsMD6QMDa5v6pi526poSLVP1vrLOwWMNHK8OsGz/NWMn0DppW8iu/94=;  Path=/",
+        "BNIS_x-bni-jas=v709aYK6LKA2i4L80KRbv53aRMNwIADVzcuijDTM5MGTYsfciH9rP+SXqE263goUmdnTz1INqKM325u/VYKD1/ERInvbmcS2KCsptpaypSh322CqhxzO+g==; Path=/"
       ]
     }
   },
@@ -91,11 +93,12 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://www.ined.fr/",
+      "destination": "https://www.ined.fr/fr",
       "redirects": true,
       "route": [
         "http://ined.fr/",
-        "https://www.ined.fr/"
+        "https://www.ined.fr/",
+        "https://www.ined.fr/fr"
       ],
       "statusCode": 200
     },
