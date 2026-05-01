@@ -1,25 +1,35 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 10,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:30:45 GMT",
-      "content-type": "text/html",
+      "date": "Fri, 01 May 2026 03:32:34 GMT",
+      "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "last-modified": "Tue, 03 Feb 2026 16:58:58 GMT",
-      "cf-cache-status": "DYNAMIC",
-      "set-cookie": [
-        "__cf_bm=3IYjvh3KRJlFowKaYOCsT4z.0Sd_5xxi0JEQ3Z6daBk-1772854245-1.0.1.1-YMskywJ6ZJi._trCcitF9XNAiNK7JIKmluNN1pk0hm.w6YG7lXa6VCVn2qty1KcxTpBEY40C9nbJ8qSkDpncvaOX7g672Z8qEsQxrUPUaVg; path=/; expires=Sat, 07-Mar-26 04:00:45 GMT; domain=.mnhn.fr; HttpOnly; Secure; SameSite=None"
-      ],
       "server": "cloudflare",
-      "cf-ray": "9d8685f75eff2973-LAX"
+      "cache-control": "max-age=3600, public",
+      "content-language": "fr",
+      "cf-cache-status": "DYNAMIC",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Thu, 30 Apr 2026 09:21:12 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-drupal-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-powered-by": "PHP/8.3.30",
+      "set-cookie": [
+        "__cf_bm=P9w_f6L9Ig7ATiyK1mJ3_r.vL7_C8XmQuYiGAwWUlkk-1777606354.4064052-1.0.1.1-Cq_xFZgwMomfWIsYOD_fuIDOjwNTWfndbg4dP3lMYJJtmTBUpZvNDpi6rhBddz5ofDmSppLHpXr6KjuJb.7YOhWFmOfgHIt64WDtgkwa.pS0pTe1W04bJgto0sEdcUUc; HttpOnly; Secure; Path=/; Domain=mnhn.fr; Expires=Fri, 01 May 2026 04:02:34 GMT"
+      ],
+      "cf-ray": "9f4bb8430e6feb5c-ORD"
     }
   },
   "tests": {
@@ -37,20 +47,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "mnhn.fr",
-          "expires": "2026-03-07T04:00:45.000Z",
+          "expires": "2026-05-01T04:02:34.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -61,13 +70,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://cbnbp.mnhn.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://cbnbp.mnhn.fr/",
+      "redirects": true,
       "route": [
-        "http://cbnbp.mnhn.fr/"
+        "http://cbnbp.mnhn.fr/",
+        "https://cbnbp.mnhn.fr/"
       ],
       "statusCode": 200
     },
@@ -93,24 +103,33 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
