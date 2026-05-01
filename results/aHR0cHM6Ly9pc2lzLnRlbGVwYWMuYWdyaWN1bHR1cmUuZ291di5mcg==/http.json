@@ -9,11 +9,11 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:26:54 GMT",
+      "date": "Fri, 01 May 2026 03:26:19 GMT",
       "server": "Apache",
       "set-cookie": [
-        "SessionStatId=2738901d.64c66bdc3e339; path=/; expires=Tue, 04-Mar-36 03:26:54 GMT; domain=.telepac.agriculture.gouv.fr; HttpOnly; secure",
-        "JSESSIONID=fb4719ca211e90b9~3B8DA2E4FCE56F008C8DDA4A599BB97B.jvm-tomp055; Path=/telepac; Secure; HttpOnly"
+        "SessionStatId=506041d4.650b924edecc8; path=/; expires=Mon, 28-Apr-36 03:26:19 GMT; domain=.telepac.agriculture.gouv.fr; HttpOnly; secure",
+        "JSESSIONID=de5f4680da4c6afe~BEB79D2F53AA791000DE20972C126F7E.jvm-tomp113; Path=/telepac; Secure; HttpOnly"
       ],
       "cache-control": "private",
       "vary": "Accept-Encoding,User-Agent",
@@ -21,7 +21,7 @@
       "content-type": "text/html;charset=ISO-8859-15",
       "strict-transport-security": "max-age=15552000",
       "x-frame-options": "SAMEORIGIN",
-      "content-length": "12227"
+      "content-length": "12266"
     }
   },
   "tests": {
@@ -44,7 +44,7 @@
       "data": {
         "cookiesession1": {
           "domain": "isis.telepac.agriculture.gouv.fr",
-          "expires": "2027-03-07T03:26:49.000Z",
+          "expires": "2027-05-01T03:26:14.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -52,7 +52,7 @@
         },
         "SessionStatId": {
           "domain": "telepac.agriculture.gouv.fr",
-          "expires": "2036-03-04T03:26:54.000Z",
+          "expires": "2036-04-28T03:26:19.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -78,16 +78,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://isis.telepac.agriculture.gouv.fr/telepac/auth/accueil.action",
+      "destination": "https://isis.telepac.agriculture.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://isis.telepac.agriculture.gouv.fr/",
-        "https://isis.telepac.agriculture.gouv.fr/",
-        "https://isis.telepac.agriculture.gouv.fr/telepac/auth/accueil.action"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
