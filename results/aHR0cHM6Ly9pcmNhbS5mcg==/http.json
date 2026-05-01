@@ -1,25 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D+",
     "error": null,
-    "score": 55,
+    "score": 40,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 07 Mar 2026 03:22:40 GMT",
+      "date": "Fri, 01 May 2026 03:29:59 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "108689",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "x-frame-options": "ALLOW-FROM HTTPS://1.SHOP.IRCAM.FR/",
-      "vary": "Cookie, Accept-Language",
-      "content-language": "fr",
-      "set-cookie": [
-        "csrftoken=sDuKe2D8R2oNGtB1rVf4cSnqWqjenGCM45PM1HmZMmH8MTUgxXmh7YCiL07aoksl; expires=Sat, 06 Mar 2027 03:22:40 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
-      ],
+      "accept-ch": "Sec-CH-Prefers-Color-Scheme",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "critical-ch": "Sec-CH-Prefers-Color-Scheme",
+      "x-powered-by": "Next.js, Payload",
+      "link": "<https://www.ircam.fr/fr>; rel=\"alternate\"; hreflang=\"fr\", <https://www.ircam.fr/en>; rel=\"alternate\"; hreflang=\"en\", <https://www.ircam.fr/>; rel=\"alternate\"; hreflang=\"x-default\", </_next/static/chunks/0de8acf11f07d35a.css>; rel=preload; as=\"style\", </_next/static/chunks/720ab68e1405844b.css>; rel=preload; as=\"style\", </_next/static/chunks/c9f30333edc6f1de.css>; rel=preload; as=\"style\", </_next/static/chunks/b1369e99a7b32985.css>; rel=preload; as=\"style\", </_next/static/chunks/c10d9c55206c2bb1.css>; rel=preload; as=\"style\"",
+      "x-locale": "fr",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
       "strict-transport-security": "max-age=31536000"
     }
   },
@@ -41,10 +42,8 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "csrftoken": {
+        "NEXT_LOCALE": {
           "domain": "www.ircam.fr",
-          "expires": "2027-03-06T03:22:40.000Z",
-          "max-age": 31449600,
           "path": "/",
           "port": null,
           "samesite": "lax"
@@ -64,11 +63,12 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://www.ircam.fr/",
+      "destination": "https://www.ircam.fr/fr",
       "redirects": true,
       "route": [
         "http://ircam.fr/",
-        "https://www.ircam.fr/"
+        "https://www.ircam.fr/",
+        "https://www.ircam.fr/fr"
       ],
       "statusCode": 200
     },
@@ -94,23 +94,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyDqF2kIHtUASr67QP-1bXRd6FPELDS4FSs&libraries=geometry": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=white&tracking=1&always=1&hideDetailsBtn=1&showPolicyLink=1&privacyPage=https%3A%2F%2Fwww.ircam.fr%2Fmentions-legales%2F": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.googletagmanager.com/gtag/js?id=AW-784495553": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -121,10 +108,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-allow-from-origin",
-      "scoreModifier": 0,
-      "data": "ALLOW-FROM HTTPS://1.SHOP.IRCAM.FR/"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
