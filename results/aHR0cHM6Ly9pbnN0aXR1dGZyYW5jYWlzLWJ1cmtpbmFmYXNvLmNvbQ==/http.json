@@ -1,21 +1,31 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 20,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "sw",
-      "date": "Sat, 07 Mar 2026 03:31:50 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "57827",
+      "date": "Fri, 01 May 2026 03:33:34 GMT",
+      "content-type": "text/html",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "upgrade": "h2,h2c",
-      "vary": "Accept-Encoding"
+      "last-modified": "Wed, 07 Jan 2026 01:03:59 GMT",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=8,cfOrigin;dur=605",
+      "vary": "Accept-Encoding",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=d%2FD%2BZJ0rNBKZ8siByv6KMFEVbVKsUpFR93%2FqQ3BV7nWYjjK7ofGWxBGOrMGYbWLrVeHz%2BErzk1itvFv7gVrSpFPalNcHCeyilDCJZCXGhl8a9v5ZUlxy8Cl54Yzo91MOVpttxoYA4IDPMskoqFnq729T%2FA%3D%3D\"}]}",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "server": "cloudflare",
+      "cf-cache-status": "DYNAMIC",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "cf-ray": "9f4bb9b53af1a86e-DFW",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -47,14 +57,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://www.burritosbeer.com/menu.htm",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://institutfrancais-burkinafaso.com/",
       "redirects": true,
       "route": [
         "http://institutfrancais-burkinafaso.com/",
-        "https://www.burritosbeer.com/menu.htm"
+        "https://institutfrancais-burkinafaso.com/"
       ],
       "statusCode": 200
     },
@@ -80,17 +90,13 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
       "data": {
-        "https://assets.teepublic.com/assets/product_page-2af4d77ccb74974f4afec6972768b6abd2dca23b01d5b2e7380c8a38dff3c308.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://assets.teepublic.com/packs/js/product_page-c8d7a3eb618da10ad666.js": {
-          "crossorigin": null,
-          "integrity": null
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
