@@ -3,20 +3,21 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 5,
     "statusCode": 200,
     "testsFailed": 6,
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:29:29 GMT",
-      "server": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30",
-      "last-modified": "Sun, 19 Nov 2023 10:41:05 GMT",
-      "etag": "\"1443-60a7f01a55240\"",
-      "accept-ranges": "bytes",
-      "content-length": "5187",
+      "server": "nginx",
+      "date": "Fri, 01 May 2026 03:35:20 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "content-type": "text/html"
+      "x-powered-by": "Express",
+      "cache-control": "public, max-age=0",
+      "last-modified": "Wed, 08 Apr 2026 12:41:11 GMT",
+      "etag": "W/\"308-19d6d1c66d6\""
     }
   },
   "tests": {
@@ -49,13 +50,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https",
+      "result": "redirection-missing",
       "scoreModifier": -20,
-      "destination": "http://institutfrancais-madagascar.com/dashboard/",
-      "redirects": true,
+      "destination": "http://institutfrancais-madagascar.com/",
+      "redirects": false,
       "route": [
-        "http://institutfrancais-madagascar.com/",
-        "http://institutfrancais-madagascar.com/dashboard/"
+        "http://institutfrancais-madagascar.com/"
       ],
       "statusCode": 200
     },
@@ -71,7 +71,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented-no-https",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -82,10 +82,10 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "//code.jquery.com/jquery-1.10.2.min.js": {
+        "https://www.googletagmanager.com/gtag/js?id=G-41Q7QFE2RQ": {
           "crossorigin": null,
           "integrity": null
         }
