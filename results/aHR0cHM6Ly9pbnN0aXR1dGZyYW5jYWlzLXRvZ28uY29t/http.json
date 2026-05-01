@@ -1,20 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
+    "score": 0,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:21:14 GMT",
+      "date": "Fri, 01 May 2026 03:31:07 GMT",
       "server": "Apache",
       "x-powered-by": "PHP/8.0.30",
       "cache-control": "no-cache",
       "wpo-cache-status": "cached",
-      "last-modified": "Fri, 06 Mar 2026 14:00:28 GMT",
+      "last-modified": "Thu, 30 Apr 2026 15:58:42 GMT",
       "vary": "User-Agent",
       "connection": "close",
       "transfer-encoding": "chunked",
@@ -53,7 +53,7 @@
       "pass": true,
       "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "http://institutfrancais-togo.com/",
+      "destination": null,
       "redirects": true,
       "route": [],
       "statusCode": null
@@ -81,10 +81,14 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
       "data": {
         "https://www.googletagmanager.com/gtag/js?id=G-GWZ71YLPJS": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//www.googletagmanager.com/gtag/js?id=G-QY8GXEDQZK": {
           "crossorigin": null,
           "integrity": null
         }
