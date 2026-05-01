@@ -1,24 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B-",
     "error": null,
-    "score": 50,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 07 Mar 2026 03:23:23 GMT",
+      "date": "Fri, 01 May 2026 03:27:38 GMT",
       "content-type": "text/html",
       "content-length": "109621",
-      "last-modified": "Mon, 09 Feb 2026 09:55:15 GMT",
+      "last-modified": "Wed, 15 Apr 2026 12:31:14 GMT",
       "connection": "close",
-      "etag": "\"6989af03-1ac35\"",
+      "etag": "\"69df8512-1ac35\"",
+      "content-security-policy": "default-src 'self'; connect-src 'self' data: https://auth.monmaster.gouv.fr https://wa.phm.education.gouv.fr/mutu/; script-src 'self'; script-src-elem 'self' https://wa.phm.education.gouv.fr/mutu/ 'unsafe-inline'; script-src-attr 'self' 'unsafe-inline'; img-src 'self' data: http://www.w3.org/2000 *.tile.openstreetmap.fr https://jedonnemonavis.numerique.gouv.fr; style-src 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; style-src-attr 'self' 'unsafe-inline'; frame-src 'self' https://auth.monmaster.gouv.fr https://tube-institutionnel.apps.education.fr;",
       "accept-ranges": "bytes",
       "set-cookie": [
-        "BIGipServersSJ/N0htS4amrLzHZnDNIQ=!9HK9arOacIRAF/EcUuXzBVxHRHRyQ6P8SyIR5KFPMjHcqr8zzHy+qLAKUixzjMqbZLBRM/UF3tYpd1MO2GdEL2yKXTZopsuQ9hnIdVs=; path=/; Httponly; Secure"
+        "BIGipServersSJ/N0htS4amrLzHZnDNIQ=!1CslRDIgqpJ8kqIcUuXzBVxHRHRyQy2+f3/P5qicnJqlFzrSk2ONUIfrbkBc3qA5tpO58cmmvYc2BXM4p59KBINGBbdUr9FIWXch7qQ=; path=/; Httponly; Secure"
       ],
       "strict-transport-security": "max-age=63072000"
     }
@@ -26,14 +27,72 @@
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "pass": true,
+      "result": "csp-implemented-with-insecure-scheme-in-passive-content-only",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "connect-src": [
+          "'self'",
+          "data:",
+          "https://auth.monmaster.gouv.fr",
+          "https://wa.phm.education.gouv.fr/mutu/"
+        ],
+        "script-src": [
+          "'self'"
+        ],
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://wa.phm.education.gouv.fr/mutu/"
+        ],
+        "script-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "*.tile.openstreetmap.fr",
+          "data:",
+          "http://www.w3.org/2000",
+          "https://jedonnemonavis.numerique.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "style-src-elem": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "style-src-attr": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://auth.monmaster.gouv.fr",
+          "https://tube-institutionnel.apps.education.fr"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": true,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
