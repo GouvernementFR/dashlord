@@ -9,21 +9,16 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:22:03 GMT",
-      "x-spip-cache": "21600",
-      "x-frame-options": "SAMEORIGIN",
-      "last-modified": "Sat, 07 Mar 2026 03:22:03 GMT",
-      "vary": "Accept-Encoding",
-      "x-content-type-options": "nosniff",
-      "content-type": "text/html; charset=utf-8",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http=!SKdZwBH4igLPMa4XIkI7F7SI9ajmijrqqbIYisM9YY0vbkEGFOEEh919kDqiUIFL3aXDt6Tte/xIYy4nNO3eeJisVwXN; path=/; Httponly; Secure; SameSite=Lax;",
-        "TS01c71406=01352d3811461e14b7add03ce92e2e21b463303e4a818155b0a6b85c142154b8567ca39cdce5b1ac66c9f561facdb73b36f9f5fb30; Path=/; Secure; HttpOnly",
-        "TSc4ff0492027=087dc22938ab2000151737609febbf05e9c20d511099e8eae732be1707fd55968b36e74ff3b43bb108c8c91034113000233a34452a9af319243c65a7ce4ae7669b875a6165411257948deab88c05c0b7e5c28bc1a1a5ca1be606609ee9e5b17d; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab2800ab1c6a750bed76c9600c4eec29878c469e75118c1a4ee10ea4326504a7078088fb376a5605fac33e; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab20007efb47cbfcbbbbae6d2dcbeb6712002ddcfeec41f3070feffea3d054f0c004c1088a2b48d01130006a77366aa23e9c549babcafa76cf3d3971fbd90eb5125f976286cc107e8916a0fbd88d585f0504241298a204242073b7; Secure; Path=/"
       ],
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6136",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -44,6 +39,19 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
+        "TSa1d3e6c3029": {
+          "domain": "inspection-travail.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc4ff0492027": {
+          "domain": "inspection-travail.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
         "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
           "domain": "inspection-travail.gouv.fr",
           "httponly": true,
@@ -55,12 +63,6 @@
         "TS01c71406": {
           "domain": "inspection-travail.gouv.fr",
           "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TSc4ff0492027": {
-          "domain": "inspection-travail.gouv.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -80,12 +82,11 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://travail-emploi.gouv.fr/contacter-linspection-du-travail-ou-repondre-vos-questions-sur-le-droit-du-travail",
+      "destination": "https://travail-emploi.gouv.fr/ministere/contacter-inspection-du-travail/",
       "redirects": true,
       "route": [
         "http://inspection-travail.gouv.fr/",
-        "https://travail-emploi.gouv.fr/ministere/contacter-inspection-du-travail/",
-        "https://travail-emploi.gouv.fr/contacter-linspection-du-travail-ou-repondre-vos-questions-sur-le-droit-du-travail"
+        "https://travail-emploi.gouv.fr/ministere/contacter-inspection-du-travail/"
       ],
       "statusCode": 200
     },
