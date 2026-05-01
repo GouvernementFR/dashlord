@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 07 Mar 2026 03:31:17 GMT",
+      "date": "Fri, 01 May 2026 03:32:02 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=JIKFCVLU4VPAK3AOM7UKXHVAIUE72XNXC4Y4MG3WCGXUHK7DKXPLMRXCWPSMRNCB2DCGE55QYHRYVBUMCPS3T7IXDLN6KSKTC2MQSY34CLTGFAZTI3ZA====; Path=/"
+        "bot_mitigation_cookie=W26UT5SJGY44TFNQMMN3NAWBLLVGHSC7VRM4AJFCARBHTVARXXOWJQPM3QFSSZPU5SLFGAN5V7A4E4UPX4MGRORKJQHFYXFRWAIK5SITFWSBGLPAIB3A====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "201",
-      "x-cp-via": "C2-5850fd27-2b73893f",
+      "content-length": "202",
+      "x-cp-via": "C3-f46acecb-87e47c68",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "kibana.francearchives.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
