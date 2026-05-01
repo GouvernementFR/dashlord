@@ -9,14 +9,13 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Sat, 07 Mar 2026 03:28:23 GMT",
+      "date": "Fri, 01 May 2026 03:27:30 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "7697",
+      "content-length": "8346",
       "connection": "close",
       "cache-control": "max-age=0, must-revalidate, private",
       "pragma": "no-cache",
-      "expires": "Sat, 07 Mar 2026 03:28:23 GMT",
+      "expires": "Fri, 01 May 2026 03:27:30 GMT",
       "vary": "Accept-Encoding"
     }
   },
@@ -52,12 +51,12 @@
       "pass": false,
       "result": "redirection-not-to-https-on-initial-redirection",
       "scoreModifier": -10,
-      "destination": "https://www.itavi.asso.fr/",
+      "destination": "https://www.itavi.fr/",
       "redirects": true,
       "route": [
         "http://itavi.asso.fr/",
-        "http://www.itavi.asso.fr/",
-        "https://www.itavi.asso.fr/"
+        "http://www.itavi.fr/",
+        "https://www.itavi.fr/"
       ],
       "statusCode": 200
     },
