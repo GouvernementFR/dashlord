@@ -1,25 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "F",
     "error": null,
-    "score": 70,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 09 Mar 2026 03:17:50 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "date": "Sun, 03 May 2026 03:29:56 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "105418",
       "connection": "close",
-      "x-powered-by": "PHP/8.2.30, PleskLin",
-      "link": "<https://it2.fr/wp-json/>; rel=\"https://api.w.org/\", <https://it2.fr/wp-json/wp/v2/pages/6>; rel=\"alternate\"; type=\"application/json\", <https://it2.fr/>; rel=shortlink",
-      "x-frame-options": "sameorigin",
-      "x-xss-protection": "1; mode=block",
+      "set-cookie": [
+        "frontend_lang=fr_FR; Expires=Mon, 03 May 2027 03:24:35 GMT; Path=/",
+        "session_id=6f8h3O2Ik8qIyha9HT02M4wtyn6Lft2bgW0OUpm9UObZ9ZBnx3LyvOLlbfsm-m_iDAAAnRFYX0lYeAXCNpMv; Expires=Mon, 03 May 2027 03:24:35 GMT; Max-Age=604800; HttpOnly; Path=/",
+        "frontend_lang=fr_FR; Expires=Mon, 03 May 2027 03:29:56 GMT; Path=/",
+        "session_id=Oopu_H5ScQl9IMYHxbdfGzRfgiR2aXNzkvU8tvoloRl788ieUrKZOZ5C2jXm_a56tmu-nwO_O3qytn4tR582; Expires=Mon, 03 May 2027 03:29:56 GMT; Max-Age=604800; HttpOnly; Path=/"
+      ],
       "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "x-powered-by": "PleskLin"
     }
   },
   "tests": {
@@ -36,10 +38,25 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "frontend_lang": {
+          "domain": "it2.fr",
+          "expires": "2027-05-03T03:29:56.000Z",
+          "path": "/",
+          "port": null
+        },
+        "session_id": {
+          "domain": "it2.fr",
+          "expires": "2027-05-03T03:29:56.000Z",
+          "httponly": true,
+          "max-age": 604800,
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -73,12 +90,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -88,19 +105,11 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://www.googletagmanager.com/gtag/js?id=G-6Z4DXM8PSY": {
+        "https://cdn.botpress.cloud/webchat/v3.6/inject.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.googletagmanager.com/gtag/js?id=UA-54668367-1": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://unpkg.com/swiper@7/swiper-bundle.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js": {
+        "https://files.bpcontent.cloud/2026/03/25/01/20260325011131-CPVD75JR.js": {
           "crossorigin": null,
           "integrity": null
         }
@@ -115,10 +124,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "sameorigin"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
