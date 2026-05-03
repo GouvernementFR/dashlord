@@ -1,55 +1,110 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B",
     "error": null,
-    "score": 10,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:20:02 GMT",
+      "date": "Sun, 03 May 2026 03:14:38 GMT",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; object-src 'none'; frame-src 'self' https:; img-src 'self' https: data:; frame-ancestors 'self' https://*.diplomatie.gouv.fr; style-src 'self' 'unsafe-inline' https://*.ttwstatic.com; font-src 'self' data:;",
+      "access-control-allow-methods": "GET, POST, HEAD",
+      "access-control-allow-headers": "DNT,User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Range",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-xss-protection": "1; mode=block",
+      "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
+      "cache-control": "max-age=900, public",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Sun, 03 May 2026 02:40:16 GMT",
+      "etag": "\"1777776016-gzip\"",
       "vary": "Cookie,Accept-Encoding",
-      "link": "<https://www.diplomatie.gouv.fr/local/cache-css/ed7aaba820b8f020801f74caff27380a.css?1766409706>;rel=\"stylesheet prefetch\"",
-      "last-modified": "Mon, 09 Mar 2026 03:20:03 GMT",
-      "content-length": "32519",
+      "content-type": "text/html; charset=UTF-8",
+      "x-url": "/fr/le-ministere-en-action/contribuer-a-une-mondialisation-durable-et-equilibree/lutter-contre-les-inegalites-mondiales/les-financements-innovants-pour-le-developpement",
+      "age": "644",
+      "accept-ranges": "bytes",
+      "x-frame-options": "SAMEORIGIN",
+      "content-length": "20302",
       "connection": "close",
-      "content-type": "text/html; charset=utf-8",
       "set-cookie": [
-        "BIGipServerPOOL_DMZ01_80_FRANCE_DIPLO=756095404.20480.0000; path=/; Httponly; Secure",
-        "TS017a74ff=011854090801cdc52b5fbe036623687fb1d9eccdae304e45be66f5b962fa075e7303ce699f78a8b606fdd9e921243442884ab1feec387c29a60f725f321d1dedfaf6d229e5; Path=/; Domain=.www.diplomatie.gouv.fr"
-      ],
-      "x-xss-protection": "1",
-      "x-content-type-options": "nosniff"
+        "TS01b99713=01c34d537465a54e0ddb68f3c4b271b2d7970daf23b9cdf40ec0d8218608b45bac20fd898dbee4a4958f9b53ef6609bb0b233c2bac; Path=/; Domain=.www.diplomatie.gouv.fr"
+      ]
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "https://*.diplomatie.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.ttwstatic.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
-        "BIGipServerPOOL_DMZ01_80_FRANCE_DIPLO": {
-          "domain": "www.diplomatie.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS017a74ff": {
+        "TS01b99713": {
           "domain": "www.diplomatie.gouv.fr",
           "path": "/",
           "port": null
@@ -69,58 +124,41 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/les-financements-innovants-pour-le-developpement/",
+      "destination": "https://www.diplomatie.gouv.fr/fr/le-ministere-en-action/contribuer-a-une-mondialisation-durable-et-equilibree/lutter-contre-les-inegalites-mondiales/les-financements-innovants-pour-le-developpement",
       "redirects": true,
       "route": [
         "http://leadinggroup.org/",
         "https://leadinggroup.org/",
-        "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/les-financements-innovants-pour-le-developpement/"
+        "https://www.diplomatie.gouv.fr/fr/le-ministere-en-action/contribuer-a-une-mondialisation-durable-et-equilibree/lutter-contre-les-inegalites-mondiales/les-financements-innovants-pour-le-developpement"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.diplomatie.gouv.fr/local/cache-js/1f1c1ef105a5eb8dd4b9f905f7f2b08c.js?1766409706": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.diplomatie.gouv.fr/plugins/tarteaucitron_mae/lib/tarteaucitron/tarteaucitron.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.diplomatie.gouv.fr/local/cache-js/jsdyn-services_tac_services_mae_activation_js-6eb871ca.js?1772706986": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.diplomatie.gouv.fr/local/cache-js/jsdyn-javascript_fd_application_js-3ee027b7.js?1617282789": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -131,10 +169,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
