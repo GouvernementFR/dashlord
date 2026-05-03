@@ -3,22 +3,22 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 30,
-    "statusCode": 301,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:20:08 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "location": "http://lecontratdegeneration.gouv.fr/",
-      "content-length": "245",
-      "content-type": "text/html; charset=iso-8859-1",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab2000025bf132fb879b75834afbc6aeabc61d5c337eb43491710e825fb9ecc87ce91f0879fc29121130002a664af688bbb2f4d818f09af1ef718efe569fe06b63204dd74859e1ffbd3a89730748175fa6aaa2521141c3b2c2ff1d; Secure; Path=/"
-      ]
+        "TSa1d3e6c3029=087dc22938ab2800383c2b16dc1b04657d07a0f82c09b1a7897aea4658086b47d8ed21b917968cb893e6bcffed9bfe78; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab2000fcce20c6b1d4999a0daf0bfa804578e0dcf9adadd2d72a2a1dd73a6b77313735083f0082351130003e59fc5ace294311dce2c4901136ace8288735559ced525a9048de4486fff1265c6d5f348766665e39a6e7e7024d000b; Secure; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "5715",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -39,17 +39,9 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+        "TSa1d3e6c3029": {
           "domain": "lecontratdegeneration.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "TS01c71406": {
-          "domain": "lecontratdegeneration.gouv.fr",
-          "httponly": true,
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
@@ -78,7 +70,7 @@
       "destination": "https://lecontratdegeneration.gouv.fr/",
       "redirects": true,
       "route": [],
-      "statusCode": 301
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -103,16 +95,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
