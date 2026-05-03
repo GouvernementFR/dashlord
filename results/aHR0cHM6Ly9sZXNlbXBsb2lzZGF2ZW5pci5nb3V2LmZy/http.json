@@ -3,22 +3,22 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 30,
-    "statusCode": 301,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:26:14 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "location": "http://lesemploisdavenir.gouv.fr/",
-      "content-length": "241",
-      "content-type": "text/html; charset=iso-8859-1",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "TSc4ff0492027=087dc22938ab2000ce277ce2f318ab4fbf2d84216964a3d9c5cb96af4222131b2a3a7cdd0c43df64087f6b68b9113000ed3f9662141dbeb53e8d6ef142ca244b0e08a61f3ff03e7fc1348ad1cd0cb5bcfe1400a556774b5201ad97ad96ce8ef6; Secure; Path=/"
-      ]
+        "TSa1d3e6c3029=087dc22938ab2800adbac0a90ccd1fa7f72898d60ba064323d2f4a82be6f48f1d37322eb1ba5a38f637784bb667173e4; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab2000459a84c80ac0142b674ea29d7592b764d3a39e18b9f950a6040f91ed0332ac9c082a3b9183113000d4019e565f0adfb516c950a9cbf38928cda4086599a88a6d03302d5f1d6a56742e6370e7a07a06ec6c429f0b82866137; Secure; Path=/"
+      ],
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6810",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -39,17 +39,9 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+        "TSa1d3e6c3029": {
           "domain": "lesemploisdavenir.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "TS01c71406": {
-          "domain": "lesemploisdavenir.gouv.fr",
-          "httponly": true,
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
@@ -78,7 +70,7 @@
       "destination": "https://lesemploisdavenir.gouv.fr/",
       "redirects": true,
       "route": [],
-      "statusCode": 301
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -103,16 +95,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
