@@ -9,7 +9,7 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:21:56 GMT",
+      "date": "Sun, 03 May 2026 03:25:21 GMT",
       "server": "Apache",
       "content-length": "199",
       "connection": "close",
@@ -46,14 +46,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
+      "result": "redirection-invalid-cert",
       "scoreModifier": -20,
-      "destination": "http://lab-egalite-citoyennete.cget.gouv.fr/",
-      "redirects": false,
-      "route": [
-        "http://lab-egalite-citoyennete.cget.gouv.fr/"
-      ],
-      "statusCode": 200
+      "destination": "https://lab-egalite-citoyennete.cget.gouv.fr/",
+      "redirects": true,
+      "route": [],
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
