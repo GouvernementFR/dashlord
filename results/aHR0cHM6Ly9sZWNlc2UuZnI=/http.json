@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:20:05 GMT",
+      "date": "Sun, 03 May 2026 03:30:22 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -17,19 +17,19 @@
       "cache-control": "max-age=43200, public",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
-      "x-content-type-options": "nosniff",
+      "x-content-type-options": "nosniff, nosniff",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "content-security-policy": "frame-ancestors 'self'",
-      "cf-cache-status": "DYNAMIC",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GEw5vX2%2BRaxkk%2Bgek90MBQ7S%2Faj38bU7cR3I5A%2FVqbahGywyg0LFPqGfTzesiQTJ0d1hKvwAifDrx5iz8OBJ55hP5HTF%2BJcQaxkAYfw%3D\"}]}",
-      "last-modified": "Sun, 08 Mar 2026 22:27:32 GMT",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=4,cfOrigin;dur=341",
+      "content-security-policy": "frame-ancestors 'self';",
+      "last-modified": "Sat, 02 May 2026 12:50:11 GMT",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=218",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ksC9E5RT92RJZVkzpOHfRUyfBRVTdDmRzXPoWSENi0T%2FsSwXPIeXATAsFYwFuGyXaI1SZYsLHLDmcXSM7say5%2FMWP1O90wke7JN%2F6dN6vFCTXUV04VNK%2FUHNbII%2Fi6%2Fy\"}]}",
       "x-xss-protection": "0",
+      "cf-cache-status": "DYNAMIC",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "cf-ray": "9d96f1173c4faf0d-SJC",
+      "cf-ray": "9f5c2fcb0a88e81c-ORD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -78,13 +78,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.lecese.fr/",
       "redirects": true,
       "route": [
         "http://lecese.fr/",
+        "https://lecese.fr/",
         "http://www.lecese.fr/",
         "https://www.lecese.fr/"
       ],
@@ -128,10 +129,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
