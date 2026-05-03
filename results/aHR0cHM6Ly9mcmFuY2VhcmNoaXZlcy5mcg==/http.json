@@ -9,15 +9,15 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:20:04 GMT",
+      "date": "Sun, 03 May 2026 03:25:21 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=TYJPWRFGSXTKGSJBO2OCKY24GRSYJZP4YWECUI6UXM57DTC7ZDBXMOFVKCJZDN5GESROTAK5333KEVHPEUV4IBJ66YEWN4NYXGHOYRANJYHXGF2BNYIA====; Path=/"
+        "bot_mitigation_cookie=CNH5BN4LQMVYNWVBFHNW52YOVOHFL7F66QH7YDYND4ZOJQSS5X3476EMWU2TXIKJ4CFQNRCDC6BTALNHHN7YVKFCE5PYDDKEWJJRYOW5DOANMD5NPMSQ====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "201",
-      "x-cp-via": "C3-a936e61b-21ac4e0d",
+      "content-length": "200",
+      "x-cp-via": "C3-4b456445-87e47c68",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "francearchives.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
