@@ -1,37 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Mar 2026 03:15:45 GMT",
+      "date": "Tue, 05 May 2026 03:31:57 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "cache-control": "max-age=0, must-revalidate, public, s-maxage=71740",
+      "server": "cloudflare",
+      "cache-control": "max-age=0, must-revalidate, public, s-maxage=67322",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Wed, 11 Mar 2026 23:00:01 GMT",
-      "last-modified": "Wed, 11 Mar 2026 03:04:20 GMT",
+      "expires": "Tue, 05 May 2026 22:00:00 GMT",
+      "last-modified": "Tue, 05 May 2026 03:17:58 GMT",
+      "cache-tags": "HIT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: t.contentsquare.net contentsquare.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self' https://www.mnhn.fr http://www.museedelhomme.fr https://www.museedelhomme.fr http://www.harmasjeanhenrifabre.fr https://www.harmasjeanhenrifabre.fr http://www.jardindesplantesdeparis.fr https://www.jardindesplantesdeparis.fr http://www.vigienature.fr https://www.vigienature.fr http://pzp.preprod.mnhn.insite.coop https://pzp.preprod.mnhn.insite.coop http://www.parczoologiquedeparis.fr https://www.parczoologiquedeparis.fr http://vn.preprod.mnhn.insite.coop https://vn.preprod.mnhn.insite.coop http://menton.preprod.mnhn.insite.coop https://menton.preprod.mnhn.insite.coop http://www.jardinbotaniquevalrahmehmenton.fr https://www.jardinbotaniquevalrahmehmenton.fr http://ht.preprod.mnhn.insite.coop https://ht.preprod.mnhn.insite.coop http://www.zoodelahautetouche.fr https://www.zoodelahautetouche.fr; frame-ancestors 'self' *.mnhn.fr; report-uri https://www.mnhn.fr/fr/report-uri/enforce",
       "x-drupal-cache": "MISS",
       "x-varnish-cacheable": "YES",
       "vary": "Cookie, Accept-Encoding",
-      "x-varnish": "168098351 171546824",
-      "age": "683",
+      "x-varnish": "3253270 695171",
+      "age": "838",
       "via": "1.1 varnish (Varnish/7.1)",
-      "cache-tags": "HIT",
       "cf-cache-status": "DYNAMIC",
-      "server": "cloudflare",
-      "cf-ray": "9da7657d6d37f842-ORD"
+      "cf-ray": "9f6cacd93b96ed79-LAX"
     }
   },
   "tests": {
@@ -113,20 +113,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "result": "cookies-secure-with-httponly-sessions",
+      "scoreModifier": 0,
       "data": {
         "__cf_bm": {
           "domain": "mnhn.fr",
-          "expires": "2026-03-11T03:45:44.000Z",
+          "expires": "2026-05-05T04:01:56.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
-          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -137,13 +136,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.mnhn.fr/fr",
       "redirects": true,
       "route": [
         "http://mnhn.fr/",
+        "https://mnhn.fr/",
         "https://www.mnhn.fr/",
         "https://www.mnhn.fr/fr"
       ],
