@@ -1,76 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D",
     "error": null,
-    "score": 75,
-    "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "score": 30,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Wed, 11 Mar 2026 03:15:41 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "vary": "Accept-Encoding",
-      "cache-control": "max-age=0, private, must-revalidate",
-      "content-security-policy": "",
-      "etag": "W/\"0009de789150055d31a3cfbdf0ed52ab\"",
-      "nel": "{\"max_age\": 0}",
-      "permissions-policy": "interest-cohort=()",
-      "set-cookie": [
-        "preferred_language=en; path=/; Secure; SameSite=None",
-        "_gitlab_session=660d552b113532eddcbb808d0ac45b60; path=/; secure; HttpOnly; SameSite=None"
-      ],
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "x-gitlab-meta": "{\"correlation_id\":\"01KKDE97M5PXNQHRBKFC670EEJ\",\"version\":\"1\"}",
-      "x-permitted-cross-domain-policies": "none",
-      "x-request-id": "01KKDE97M5PXNQHRBKFC670EEJ",
-      "x-runtime": "0.055444",
-      "x-ua-compatible": "IE=edge",
-      "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=63072000",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "connection": "close"
+      "cache-control": "no-cache",
+      "content-type": "text/html"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-header-invalid",
+      "result": "csp-not-implemented",
       "scoreModifier": -25,
       "data": null,
       "http": false,
       "meta": false,
       "policy": null,
-      "numPolicies": 1
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "preferred_language": {
-          "domain": "mcpn-git.gendarmerie.interieur.gouv.fr",
-          "path": "/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
-        },
-        "_gitlab_session": {
-          "domain": "mcpn-git.gendarmerie.interieur.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -92,43 +53,43 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
