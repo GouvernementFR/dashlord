@@ -9,18 +9,18 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Mar 2026 03:15:42 GMT",
+      "date": "Tue, 05 May 2026 03:25:31 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "5697",
+      "content-length": "6974",
       "connection": "close",
-      "x-request-id": "a1fea504-d09c-40bc-a5db-11868e3ecd44",
+      "x-request-id": "926f0760-b7f0-45fd-8d7c-0b4f28c4f8af",
       "vary": "origin, Cookie, Accept-Encoding",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
-      "referrer-policy": "same-origin",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=XwxOwL3z4pNlK0xUBaTOAekUlkV5mXen; expires=Wed, 10 Mar 2027 03:15:42 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+        "csrftoken=NlQtq9H4tii6H8EZIwLoeY58D5a8cKeH; expires=Tue, 04 May 2027 03:25:31 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
       ],
       "strict-transport-security": "max-age=31536000"
     }
@@ -45,7 +45,7 @@
       "data": {
         "csrftoken": {
           "domain": "mondiagartif.beta.gouv.fr",
-          "expires": "2027-03-10T03:15:42.000Z",
+          "expires": "2027-05-04T03:25:31.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
@@ -79,7 +79,7 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "same-origin",
+      "data": "strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
