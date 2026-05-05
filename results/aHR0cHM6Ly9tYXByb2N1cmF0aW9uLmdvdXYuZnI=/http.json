@@ -1,35 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "A-",
     "error": null,
-    "score": 55,
-    "statusCode": 403,
+    "score": 85,
+    "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Mar 2026 03:16:58 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 05 May 2026 03:31:25 GMT",
+      "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-      "cf-mitigated": "challenge",
-      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-      "cross-origin-embedder-policy": "require-corp",
-      "cross-origin-opener-policy": "same-origin",
-      "cross-origin-resource-policy": "same-origin",
-      "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
-      "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9da76748afa6f5f3\", cfOrigin;dur=0,cfEdge;dur=8",
-      "x-content-type-options": "nosniff",
+      "x-request-id": "99343fb6-6e7d-4b2b-9c36-ac9aa05c143b, 99343fb6-6e7d-4b2b-9c36-ac9aa05c143b",
+      "content-security-policy": "default-src 'self' https://www.maprocuration.gouv.fr https://www.maprocuration.gouv.fr https://fsi.maprocuration.gouv.fr https://mairie.maprocuration.gouv.fr https://fsi.maprocuration.gouv.fr;base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' https://voxusagers.numerique.gouv.fr https://logs4.xiti.com https://haqt.maprocuration.gouv.fr;object-src 'none';script-src 'self' 'unsafe-eval' https://haqt.maprocuration.gouv.fr;script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "x-dns-prefetch-control": "off",
+      "expect-ct": "max-age=0",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "x-download-options": "noopen",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "origin-when-cross-origin",
+      "x-xss-protection": "0",
+      "access-control-allow-origin": "*, https://maprocuration.gouv.fr",
+      "x-nextjs-cache": "HIT",
+      "cache-control": "s-maxage=31536000, stale-while-revalidate",
       "vary": "Accept-Encoding",
+      "cf-cache-status": "DYNAMIC",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfOrigin;dur=41,cfEdge;dur=11",
       "server": "cloudflare",
-      "cf-ray": "9da76748afa6f5f3-AMS",
+      "cf-ray": "9f6cac12ba583572-WAW",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -37,13 +39,71 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'",
+          "https://fsi.maprocuration.gouv.fr",
+          "https://mairie.maprocuration.gouv.fr",
+          "https://www.maprocuration.gouv.fr"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "block-all-mixed-content": [
+          "'none'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://haqt.maprocuration.gouv.fr",
+          "https://logs4.xiti.com",
+          "https://voxusagers.numerique.gouv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "https://haqt.maprocuration.gouv.fr"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -56,9 +116,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*, https://maprocuration.gouv.fr"
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -72,25 +132,25 @@
         "https://maprocuration.gouv.fr/",
         "https://www.maprocuration.gouv.fr/"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "same-origin",
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "origin-when-cross-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
@@ -116,17 +176,17 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-implemented-with-same-origin",
-      "scoreModifier": 10,
-      "data": "same-origin",
-      "http": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     }
   }
