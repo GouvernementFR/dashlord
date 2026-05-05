@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Mar 2026 03:22:10 GMT",
+      "date": "Tue, 05 May 2026 03:33:44 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=C5F7TIGLY4IHM6PA74KYNYWLXXPAT74IDXKGSGUZSUX5XO6RDDHL66QMJ6TJPTJMCE46LL7I2EHZJOG7ZEDK3TSDBCQWUVWUW6HLHRNRDMBBBEC4UVBA====; Path=/"
+        "bot_mitigation_cookie=LKC2GPSOQ2MRC2EWFRMF2R4R2UOMU5EIXFOJDS2WP26B3LQCQ7ID3YPNCBY4KZNWRTK6R4PGGRHF7X4RC3TT4KT5H5EU5WUZPBTNV34I7VJZ3MHZYWXA====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "202",
-      "x-cp-via": "C2-c4212e52-3905671a",
+      "content-length": "201",
+      "x-cp-via": "C3-d30a75a3-ad252ec9",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "museedesplansreliefs.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
