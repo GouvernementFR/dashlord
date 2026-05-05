@@ -9,7 +9,7 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 09 Mar 2026 03:32:34 GMT",
+      "date": "Tue, 05 May 2026 03:25:30 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -17,11 +17,12 @@
       "link": "<https://lesgenerateurs.ademe.fr/wp-json/>; rel=\"https://api.w.org/\", <https://lesgenerateurs.ademe.fr/wp-json/wp/v2/pages/502>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://lesgenerateurs.ademe.fr/>; rel=shortlink",
       "vary": "User-Agent,Accept-Encoding",
       "set-cookie": [
-        "__cf_bm=TIi3oCgh.7DZER_vqvioEoEVDNosgD6pPcBwmKMlHzQ-1773027152.7353473-1.0.1.1-6SOjwp_kqxvSxlPlXyerZHFh21wbWMXeOM3XfbEJdBR8T4JBvzTMVSRiQblXsvu_q6mROQ0W2kdnd5RAcKeP.vEV0Mzo2YHyhhHbU49aGLKeYETsauTMun9OWYd.sES8; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 09 Mar 2026 04:02:34 GMT"
+        "__cf_bm=qmxOnGBxyu04bmYLkZ34wXRZndwLIopP.WqTKd3v654-1777951529.0269861-1.0.1.1-0ahb.VzV8grDWJSEg_5pboUhFIKoVUQxMZGVmIF7TORdifvVTGMTAdF8Sby.LEAOqMpFe0dOza5e5b1wdFBvs9eY7SgrMBTvDbtW3T2vxf2E9ex9ewTjRW7ttPUraPBf; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 05 May 2026 03:55:30 GMT"
       ],
       "x-powered-by": "PleskLin",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9d9703589fb9e617-IAD"
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=225,cfOrigin;dur=1730",
+      "cf-ray": "9f6ca3606e4a05b0-IAD"
     }
   },
   "tests": {
@@ -44,7 +45,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-09T04:02:34.000Z",
+          "expires": "2026-05-05T03:55:30.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -106,6 +107,10 @@
         "https://kit.fontawesome.com/fcdc3d2919.js": {
           "crossorigin": "anonymous",
           "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
