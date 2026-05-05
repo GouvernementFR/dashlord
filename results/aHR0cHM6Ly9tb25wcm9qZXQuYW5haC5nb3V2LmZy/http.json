@@ -1,37 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "D",
     "error": null,
-    "score": 65,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "x-download-options": "noopen",
-      "x-permitted-cross-domain-policies": "none",
-      "cache-control": "no-store",
-      "pragma": "no-cache",
-      "expires": "2025-03-11 04:18:19 +0100",
-      "link": "</assets/dynatrace.min-c7ed1ff95408f1f6cbc47437f13776f6565e119a402743007f2cc286aa76762c.js>; rel=preload; as=script; nopush,</assets/application-3a477ed087869f43e3580ca586b0cb9b5f7ccd36df6f2c8f45fc7441307a2e29.css>; rel=preload; as=style; nopush,</assets/jquery_import-8eb09f31704a9fd0a1ee697c39f86f3c62e8966137ae42b4bcf1a696746a4cc1.js>; rel=preload; as=script; nopush,</assets/cookies-baad90052d7c0d5113486a4f3f6a7072321d4e51d3d3eb78efb8a56f97f999f7.js>; rel=preload; as=script; nopush,</assets/application-00569cecef8e9c0898b8436bc2a11b147c3e6a1fe65b9e9837043e439f7e8af7.js>; rel=preload; as=script; nopush,</assets/shared/eulerian_tag_prod-a7ea2c7b13164d5ecae46b40ae67eb76fb5a32b80b143b38c88587603e93e629.js>; rel=preload; as=script; nopush,</assets/utils/dsfr.override-a691a7a9b8b97b56631cab433d0124a915e82e009db67d27b25b9e100c35ee67.css>; rel=preload; as=style; nopush,</assets/utils/dsfr.compat-9d5ea010a1d4136334f02faf61a2975d8754f5522a63501052fe3aa280af29e4.css>; rel=preload; as=style; nopush,</assets/dsfr.min-ac080aa8024453b6531e212e9ec1f75b341428eb79adedfa43bf7129b18bb0ab.css>; rel=preload; as=style; nopush,</assets/utility/utility.min-698e49497bef2d71f9dd1b4a57f49d4d1638f889be9357748993f000c01b20be.css>; rel=preload; as=style; nopush,</assets/dsfr.module-276f47407d4d82232a8b8cfc9ddbf865dc97d5a70ebff1c9e8382e97bc704cd6.js>; rel=preload; as=script; nopush,</assets/dsfr.nomodule.min-c19eac74da0d38e27dc3399731353aee04d5eeaea152e65224fbc26e29cb6a29.js>; rel=preload; as=script; nopush,</assets/shared/eulerian-e9ba1ff2651709150fca0e122bafb4dd061f86b4d351dc5541b83d1cfb714e82.js>; rel=preload; as=script; nopush,</assets/shared/eulerian_lib-2b8df39164edb75cc2821750213956e3852c1a5ee6afed767fdfb49982db0998.js>; rel=preload; as=script; nopush",
-      "content-type": "text/html; charset=utf-8",
-      "etag": "W/\"d80a3a166f604a8c8f5174293d01f495\"",
-      "set-cookie": [
-        "_mpal_session=cb38e8121a054118f30874cc1056b8d8; path=/; expires=Thu, 12 Mar 2026 03:18:19 GMT; secure; HttpOnly; SameSite=Lax",
-        "PASS5=1; Path=/;Max-Age=1800; HttpOnly; SameSite=Lax",
-        "SERVERID_hds=s3; path=/"
-      ],
-      "x-request-id": "e98be9f8-df0a-411e-97a9-98275149894b",
-      "x-runtime": "0.022398",
-      "content-length": "39963",
-      "x-debug": "bk=monprojet Nbtotal=64/900 give_pass=1 ip=20.169.77.232",
-      "strict-transport-security": "max-age=16000000;includeSubDomains;",
-      "x-frame-options": "SAMEORIGIN",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "x-xss-protection": "1 ;mode=block",
-      "connection": "close"
+      "cache-control": "no-cache",
+      "content-type": "text/html"
     }
   },
   "tests": {
@@ -48,33 +27,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
-      "data": {
-        "_mpal_session": {
-          "domain": "monprojet.anah.gouv.fr",
-          "expires": "2026-03-12T03:18:19.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "PASS5": {
-          "domain": "monprojet.anah.gouv.fr",
-          "httponly": true,
-          "max-age": 1800,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "SERVERID_hds": {
-          "domain": "monprojet.anah.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -89,31 +45,32 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://monprojet.anah.gouv.fr/",
+      "destination": "https://monprojet.anah.gouv.fr/shield?u=/",
       "redirects": true,
       "route": [
         "http://monprojet.anah.gouv.fr/",
-        "https://monprojet.anah.gouv.fr/"
+        "https://monprojet.anah.gouv.fr/",
+        "https://monprojet.anah.gouv.fr/shield?u=/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=16000000;includeSubDomains;",
-      "includeSubDomains": true,
-      "maxAge": 16000000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -126,17 +83,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
