@@ -1,37 +1,35 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 15,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "openresty",
-      "date": "Wed, 11 Mar 2026 03:25:22 GMT",
+      "date": "Thu, 07 May 2026 03:31:56 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "content-length": "76629",
       "connection": "close",
-      "vary": "Accept-Encoding",
-      "cache-control": "must-revalidate, no-cache, private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "link": "<https://meteofrance.fr/>; rel=\"shortlink\", <https://meteofrance.fr/>; rel=\"canonical\", <https://meteofrance.fr/page-daccueil-test>; rel=\"alternate\"; hreflang=\"fr\", <https://meteofrance.fr/page-daccueil-test>; rel=\"revision\", </sites/meteofrance.fr/files/css/css_IDuhMecX_eT7Nr-Qq613xKchiC3RVA1RamgUxoBjrp4.css>; rel=preload; as=style, </sites/meteofrance.fr/files/css/css_h_M4l0oKulJ1Z3IJYSvMOHTxC5K6lHlOdEVoEzmERzI.css>; rel=preload; as=style, </sites/meteofrance.fr/files/js/js_u9OepQzrrEOHEGWAPerUE6rwsqzO0JtU-p2KahRYgmU.js>; rel=preload; as=script, </sites/meteofrance.fr/files/js/js_4PTvoa3OwhowGh-rsBxbnu6tGfUA5qq_WtWW9ZfHU-k.js>; rel=preload; as=script",
-      "x-ua-compatible": "IE=edge",
+      "cache-control": "max-age=3600, public",
       "content-language": "fr",
-      "x-content-type-options": "nosniff, nosniff",
+      "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "set-cookie": [
-        "mfsession=rlWwoTSmplV6VzyhqTIlozI0VvjvLJkaVwbvFSZlAGLvYPW0rKNvBvWXI1DvsD.rlWdqTxvBvWyAJR5ZQZlZzHjMJIvA2AwZ2WvAmxkLGR3A2V2Awt4AvVfVzyuqPV6ZGp3ZmR5BGHlZa0.k70qvdg66DLsHVUYvm6WznU6c14-dYzAU_v0HgvaZjf; Path=/; Max-Age=3600; SameSite=None; Secure"
-      ],
-      "x-core-variant": "Modern",
-      "x-loc-where": "Modern",
-      "x-this-proto": "https",
-      "x-server-name": "meteofrance.fr",
-      "x-xss-protection": "1; mode=block",
+      "last-modified": "Thu, 07 May 2026 03:00:06 GMT",
+      "etag": "\"1778122806\"",
+      "vary": "Accept-Encoding",
       "x-cache-status": "HIT",
-      "x-request-id": "10fba81d9a1df52b47bc6bb1c76a2d56"
+      "x-search-req": "0",
+      "x-cache-key": "/  meteofrance.fr",
+      "x-proxy-host": "meteofrance.fr",
+      "server": "MF",
+      "x-debug-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImNsYXNzIjoiaW50ZXJuZXQifQ.eyJqdGkiOiIwN2YzNDVkMWIzODBhODBjMzUwYzFhMmM1MWY0OGM4NCIsImlhdCI6MTc3ODEyNDk3M30.FszDlqX98RVOyzWgbouPcbw4Kq_SU_l5qgKCABANv18",
+      "set-cookie": [
+        "mfsession=rlW0rKNvBvWXI1DvYPWuoTpvBvWVHmV1AvVfVzAfLKAmVwbvnJ50MKWhMKDvsD.rlWdqTxvBvVjA2LmAQIxZJVmBQOuBQOwZmHjLmSuZzZ1ZJL0BTZ4APVfVzyuqPV6ZGp3BQRlAQx3Z30.SfmQydK98EIBlmJtobhCpoj4Xd_FH_y5dtXPNONAi18; Path=/; Max-Age=3600; SameSite=None; Secure"
+      ]
     }
   },
   "tests": {
@@ -105,26 +103,17 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.jsdelivr.net/npm/vue@2.6.0": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://unpkg.com/vuex@3.5.1/dist/vuex.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-header-invalid",
-      "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
