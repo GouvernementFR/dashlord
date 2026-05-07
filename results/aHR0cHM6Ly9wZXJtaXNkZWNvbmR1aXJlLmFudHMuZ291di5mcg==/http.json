@@ -9,15 +9,15 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Mar 2026 03:22:25 GMT",
+      "date": "Thu, 07 May 2026 03:26:14 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=2LPLJD6FQHW43GDMJ7NHVLJEZQVD5HC5KD5VZM4CSDXVBI2SOUYMD5PCWY4PEQWVNNQB4RLNCZAI5YMMDFSNCRNJ6FJ6KJRUYNUJF3ICZDZLKUSXXMAQ====; Path=/"
+        "bot_mitigation_cookie=HQW7KPJ7J4DYQ37DFQ7LYAQ74TSDFH56LCIL4ASHTUZRTFEWTQEDEAI7H3GR7MONCCWL7K54YIX4MHFLOJUL56KOQZKFS2NECFTVS6P55GZ7PB7UG6KQ====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C3-b650023d-1c4a535f",
+      "content-length": "201",
+      "x-cp-via": "C3-592891fc-9969a0b4",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "permisdeconduire.ants.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
