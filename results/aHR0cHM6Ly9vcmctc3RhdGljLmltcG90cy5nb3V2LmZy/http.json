@@ -4,15 +4,16 @@
     "grade": "F",
     "error": null,
     "score": 10,
-    "statusCode": 403,
+    "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 13 Mar 2026 03:16:05 GMT",
+      "strict-transport-security": "max-age=34560000; includeSubDomains",
+      "date": "Thu, 07 May 2026 03:30:35 GMT",
       "server": "Apache",
-      "last-modified": "Tue, 08 Mar 2016 18:18:30 GMT",
-      "etag": "\"20205-b91-52d8d9bc79ab7\"",
+      "last-modified": "Thu, 24 Feb 2022 12:14:08 GMT",
+      "etag": "\"b91-5d8c284dec400-gzip\"",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding,User-Agent",
       "access-control-allow-origin": "https://cfspart.impots.gouv.fr",
@@ -51,13 +52,11 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
+      "result": "redirection-invalid-cert",
       "scoreModifier": -20,
-      "destination": "http://org-static.impots.gouv.fr/",
-      "redirects": false,
-      "route": [
-        "http://org-static.impots.gouv.fr/"
-      ],
+      "destination": "https://org-static.impots.gouv.fr/",
+      "redirects": true,
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
