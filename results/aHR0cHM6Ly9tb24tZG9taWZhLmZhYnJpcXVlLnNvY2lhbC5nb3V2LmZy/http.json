@@ -9,20 +9,21 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 11 Mar 2026 03:18:21 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "last-modified": "Wed, 04 Mar 2026 20:10:23 GMT",
-      "vary": "Accept-Encoding",
-      "etag": "W/\"69a891af-8be\"",
-      "x-frame-options": "deny",
-      "x-xss-protection": "0",
-      "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
       "cache-control": "no-store",
       "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr https://api.tally.so https://*.tally.so; font-src 'self' https://fonts.gstatic.com https://tally.so https://*.tally.so; img-src 'self' https://tally.so https://*.tally.so data:; script-src 'self' https://*.gouv.fr https://tally.so https://*.tally.so; frame-src 'self' https://*.gouv.fr https://tally.so https://*.tally.so; style-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so https://*.tally.so",
-      "referrer-policy": "strict-origin-when-cross-origin"
+      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 07 May 2026 03:26:11 GMT",
+      "etag": "W/\"69fb536d-8be\"",
+      "last-modified": "Wed, 06 May 2026 14:42:53 GMT",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-xss-protection": "0",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -136,10 +137,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
