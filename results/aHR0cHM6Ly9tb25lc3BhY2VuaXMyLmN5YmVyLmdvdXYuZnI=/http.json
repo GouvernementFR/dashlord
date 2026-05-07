@@ -1,39 +1,121 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "A+",
     "error": null,
-    "score": 25,
+    "score": 120,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "accept-ranges": "bytes",
-      "cache-control": "public, max-age=0",
-      "content-length": "1540",
-      "content-type": "text/html; charset=UTF-8",
-      "date": "Wed, 11 Mar 2026 03:25:23 GMT",
-      "etag": "W/\"604-19c9e804b19\"",
-      "last-modified": "Fri, 27 Feb 2026 09:48:53 GMT",
-      "sozu-id": "01KKDETZSWAKRSRAQ9F8QQVQ15",
-      "x-ratelimit-limit": "100",
-      "x-ratelimit-remaining": "99",
-      "x-ratelimit-reset": "1773199584",
-      "connection": "close"
+      "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+      "content-security-policy": "script-src 'self' https://stats.beta.gouv.fr https://browser.sentry-cdn.com https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com;img-src 'self' https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com https://storage.crisp.chat https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/ data:;connect-src 'self' https://stats.beta.gouv.fr https://sentry.incubateur.net;media-src 'self' https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com https://ressources-mac.cellar-c2.services.clever-cloud.com https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/;style-src 'self' 'nonce-7LIxIExs62fxQN2UTYp+ow==' https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests",
+      "content-type": "text/html; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Thu, 07 May 2026 03:26:15 GMT",
+      "etag": "W/\"6a6a-2yFl5Gy+j56Wm5+yh/viWXUH0kM\"",
+      "expires": "0",
+      "origin-agent-cluster": "?1",
+      "pragma": "no-cache",
+      "referrer-policy": "no-referrer",
+      "sozu-id": "01KR07HFPAHX4T66QPH70KE5S8",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "surrogate-control": "no-store",
+      "vary": "Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-ratelimit-limit": "600",
+      "x-ratelimit-remaining": "599",
+      "x-ratelimit-reset": "1778124436",
+      "x-xss-protection": "0",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe",
+      "scoreModifier": 5,
+      "data": {
+        "script-src": [
+          "'self'",
+          "https://browser.sentry-cdn.com",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
+          "https://stats.beta.gouv.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
+          "https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
+          "https://storage.crisp.chat"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://sentry.incubateur.net",
+          "https://stats.beta.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
+          "https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com",
+          "https://ressources-mac.cellar-c2.services.clever-cloud.com"
+        ],
+        "style-src": [
+          "'nonce-7lixiexs62fxqn2utyp+ow=='",
+          "'self'",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com"
+        ],
+        "default-src": [
+          "'self'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -55,31 +137,32 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://monespacenis2.cyber.gouv.fr/",
+      "destination": "https://messervices.cyber.gouv.fr/nis2",
       "redirects": true,
       "route": [
         "http://monespacenis2.cyber.gouv.fr/",
-        "https://monespacenis2.cyber.gouv.fr/"
+        "https://monespacenis2.cyber.gouv.fr/",
+        "https://messervices.cyber.gouv.fr/nis2"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "no-referrer",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -89,7 +172,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.28.0/lab-anssi-ui-kit.iife.js": {
+        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.50.0/lab-anssi-ui-kit.iife.js": {
           "crossorigin": null,
           "integrity": null
         }
@@ -97,25 +180,25 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
