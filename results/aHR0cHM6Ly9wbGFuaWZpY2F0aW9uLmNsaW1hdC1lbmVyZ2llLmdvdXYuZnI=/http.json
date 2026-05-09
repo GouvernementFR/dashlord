@@ -9,12 +9,13 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Mar 2026 03:30:10 GMT",
+      "date": "Sat, 09 May 2026 03:33:42 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "38879",
+      "content-length": "39790",
       "connection": "close",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
+      "access-control-allow-origin": "self",
       "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdn.datatables.net unpkg.com macarte.ign.fr *.enedis.fr *.gouv.fr audience-sites.din.developpement-durable.gouv.fr; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdn.datatables.net unpkg.com; img-src 'self' data: cdn.jsdelivr.net jedonnemonavis.numerique.gouv.fr; font-src 'self' 'unsafe-inline' data: cdn.jsdelivr.net; connect-src 'self' *.gouv.fr; frame-src 'self' blob: macarte.ign.fr *.enedis.fr",
       "vary": "Cookie",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
@@ -103,9 +104,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "self"
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -150,15 +151,15 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://unpkg.com/htmx.org@1.9.10": {
+        "https://unpkg.com/htmx.org@2.0.8": {
           "crossorigin": "anonymous",
-          "integrity": "sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+          "integrity": null
         },
         "https://cdn.datatables.net/v/dt/dt-2.2.0/datatables.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.21.0/tarteaucitron.min.js": {
+        "https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.27.1/tarteaucitron.min.js": {
           "crossorigin": null,
           "integrity": null
         },
