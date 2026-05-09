@@ -9,13 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx/1.26.1",
+      "date": "Sat, 09 May 2026 03:24:11 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "server": "cloudflare",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "vary": "Accept-Encoding",
       "cache-control": "must-revalidate, no-cache, private",
-      "date": "Fri, 13 Mar 2026 03:17:14 GMT",
       "x-drupal-dynamic-cache": "UNCACHEABLE",
       "x-ua-compatible": "IE=edge",
       "content-language": "fr",
@@ -25,7 +26,12 @@
       "x-generator": "Drupal 9 (https://www.drupal.org)",
       "strict-transport-security": "max-age=63072000",
       "x-xss-protection": "1; mode=block",
-      "x-permitted-cross-domain-policies": "master-only"
+      "x-permitted-cross-domain-policies": "master-only",
+      "cf-cache-status": "DYNAMIC",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=18,cfOrigin;dur=1033",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=LZfYP9%2FrqaHMNKu5aSoH5aU%2BlOT1wnX7btPCBSu6%2FvbDTBqrC3HL8mvaNpEdMcbTZ5crpOX%2BzdOr4Oq5sddoNB%2BCV0UN60PtLQGATN5zFthWQfrhfbgBsCwIwj4nTWZdrSpPr%2Fq%2B\"}]}",
+      "cf-ray": "9f8d96f508e3e54a-DFW",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -91,9 +97,14 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
