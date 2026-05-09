@@ -9,15 +9,15 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Mar 2026 03:21:54 GMT",
+      "date": "Sat, 09 May 2026 03:24:16 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=AB7W52ZTIGDHPZCS2IBUALPX3ORO2N75CELZAVK5VYLXYRQWDBAUA6ZSW6V7TXXD2Y473M3RK7EJYBY54H62ROR2NXVP23NQIGY7SRYCXBYQT2527T4Q====; Path=/"
+        "bot_mitigation_cookie=PNZU6VXKOJPCRCQQHAOJUQICPVTFNZSZBUZBIVZR6R4ESQISX42YAI5LUFYL6LI3UHQYDMQQJSWGRYWYWVA7YPQKJWMZBLSEHF35WQFFLT4BTN424VNQ====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "202",
-      "x-cp-via": "C2-d3a36f2a-9ac3f7ef",
+      "content-length": "200",
+      "x-cp-via": "C2-de71ea77-7c72df0e",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "pha.ants.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
