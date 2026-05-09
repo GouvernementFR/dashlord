@@ -9,24 +9,26 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Mar 2026 03:25:50 GMT",
+      "date": "Sat, 09 May 2026 03:25:55 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "vary": "Accept-Encoding, Accept-Encoding, Accept-Language, Origin, Access-Control-Request-Headers, Access-Control-Request-Method",
+      "cache-control": "max-age=0, must-revalidate, private, s-maxage=60",
+      "expires": "Sat, 09 May 2026 03:25:55 GMT",
       "permissions-policy": "xr-spatial-tracking=(self), geolocation=(self), midi=(), sync-xhr=(), microphone=(self), camera=(self), magnetometer=(), gyroscope=(), fullscreen=(self), payment=()",
       "referrer-policy": "no-referrer-when-downgrade",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
-      "content-security-policy": "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * data: https://* 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ;frame-ancestors 'self'; style-src * data: https://* 'unsafe-inline';",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=353",
-      "x-varnish": "1049744",
+      "content-security-policy": "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * data: blob: https://* 'unsafe-inline' 'unsafe-eval'; worker-src blob:; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ;frame-ancestors 'self'; style-src * data: https://* 'unsafe-inline';",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=14,cfOrigin;dur=511",
+      "x-varnish": "501696",
       "age": "0",
       "strict-transport-security": "max-age=15768000",
       "x-permitted-cross-domain-policies": "none",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9dc869c65e951b04-ORD",
+      "cf-ray": "9f8d99844be3c65e-SJC",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -46,8 +48,12 @@
           "'unsafe-eval'",
           "'unsafe-inline'",
           "*",
+          "blob:",
           "data:",
           "https://*"
+        ],
+        "worker-src": [
+          "blob:"
         ],
         "connect-src": [
           "'unsafe-inline'",
