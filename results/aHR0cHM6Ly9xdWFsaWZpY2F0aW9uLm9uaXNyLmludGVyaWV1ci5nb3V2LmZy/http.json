@@ -9,19 +9,19 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 15 Mar 2026 03:28:00 GMT",
+      "date": "Sat, 09 May 2026 03:28:41 GMT",
       "set-cookie": [
-        "bZA_=v1P4vHgw__+oX; Expires=Sun, 15-Mar-2026 05:28:00 GMT; Path=/"
+        "bZA_=v1PIvHgw__bGB; Expires=Sat, 09-May-2026 05:28:41 GMT; Path=/"
       ],
-      "last-modified": "Mon, 02 Mar 2026 13:23:38 GMT",
-      "etag": "\"659-64c0a7e9f0a80-gzip\"",
+      "last-modified": "Tue, 31 Mar 2026 14:34:12 GMT",
+      "etag": "\"5e3-64e52dc682d0f\"",
       "accept-ranges": "bytes",
-      "vary": "Accept-Encoding,User-Agent",
+      "content-length": "1507",
+      "vary": "User-Agent",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
       "expect-ct": "max-age=31536000, enforce",
-      "content-security-policy": "default-src 'self' https://qualification.onisr.interieur.gouv.fr/BOE/BI; connect-src 'self' https://data.geopf.fr https://api-dscr.ign.fr https://api-adresse.data.gouv.fr/; style-src 'unsafe-inline' 'self'; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://data.geopf.fr https://*.arcgisonline.com http://*.arcgisonline.com; object-src 'none'; script-src 'self' 'unsafe-eval' blob: cdnjs.cloudflare.com; font-src 'self' data:; frame-src 'self' blob:",
-      "content-length": "900",
+      "content-security-policy": "default-src 'self' https://qualification.onisr.interieur.gouv.fr/BOE/BI; connect-src 'self' https://wxs.ign.fr  https://data.geopf.fr https://api-dscr.ign.fr https://api-adresse.data.gouv.fr/; style-src 'unsafe-inline' 'self'; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://wxs.ign.fr  https://data.geopf.fr https://*.arcgisonline.com http://*.arcgisonline.com; object-src 'none'; script-src 'self' 'unsafe-eval' blob: cdnjs.cloudflare.com; font-src 'self' data:; frame-src 'self' blob:",
       "content-type": "text/html",
       "strict-transport-security": "max-age=31536000",
       "connection": "close"
@@ -42,7 +42,8 @@
           "'self'",
           "https://api-adresse.data.gouv.fr/",
           "https://api-dscr.ign.fr",
-          "https://data.geopf.fr"
+          "https://data.geopf.fr",
+          "https://wxs.ign.fr"
         ],
         "style-src": [
           "'self'",
@@ -55,7 +56,8 @@
           "https://*.arcgisonline.com",
           "https://*.tile.openstreetmap.org",
           "https://data.geopf.fr",
-          "https://tile.openstreetmap.org"
+          "https://tile.openstreetmap.org",
+          "https://wxs.ign.fr"
         ],
         "object-src": [
           "'none'"
@@ -100,7 +102,7 @@
       "data": {
         "bZA_": {
           "domain": "qualification.onisr.interieur.gouv.fr",
-          "expires": "2026-03-15T05:28:00.000Z",
+          "expires": "2026-05-09T05:28:41.000Z",
           "path": "/",
           "port": null
         }
@@ -147,7 +149,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
