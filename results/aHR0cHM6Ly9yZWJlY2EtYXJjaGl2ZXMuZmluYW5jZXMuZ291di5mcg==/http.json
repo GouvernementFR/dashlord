@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "C",
     "error": null,
-    "score": 100,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Mar 2026 03:18:44 GMT",
+      "date": "Mon, 11 May 2026 03:26:27 GMT",
       "server": "",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "referrer-policy": "strict-origin-when-cross-origin",
@@ -102,15 +102,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://rebeca-archives.finances.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://rebeca-archives.finances.gouv.fr/",
-        "https://rebeca-archives.finances.gouv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -124,13 +121,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
