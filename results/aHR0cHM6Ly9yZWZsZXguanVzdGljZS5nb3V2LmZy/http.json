@@ -1,27 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 50,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Mar 2026 03:24:46 GMT",
-      "server": "EphotoDam",
-      "x-powered-by": "EphotoDam",
+      "date": "Mon, 11 May 2026 03:33:30 GMT",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "set-cookie": [
-        "session=mih6mm9tgnf73semjp0e0smo0j; expires=Tue, 17-Mar-2026 06:24:46 GMT; Max-Age=10800; path=/; secure; HttpOnly"
+        "session=g5f7d5htq83vbo6j6d5kl8pj58; expires=Mon, 11-May-2026 06:33:30 GMT; Max-Age=10800; path=/; secure; HttpOnly"
       ],
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8",
+      "server": "Ephoto",
       "connection": "close"
     }
   },
@@ -45,7 +44,7 @@
       "data": {
         "session": {
           "domain": "reflex.justice.gouv.fr",
-          "expires": "2026-03-17T06:24:46.000Z",
+          "expires": "2026-05-11T06:33:30.000Z",
           "httponly": true,
           "max-age": 10800,
           "path": "/",
@@ -64,15 +63,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://reflex.justice.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://reflex.justice.gouv.fr/",
-        "https://reflex.justice.gouv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -87,7 +83,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
