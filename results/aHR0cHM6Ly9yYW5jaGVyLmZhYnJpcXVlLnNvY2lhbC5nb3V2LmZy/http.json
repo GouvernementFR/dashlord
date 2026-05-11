@@ -9,17 +9,17 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Mar 2026 03:21:36 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "content-length": "1067",
-      "connection": "close",
       "accept-ranges": "bytes",
       "cache-control": "no-cache, no-store, must-revalidate",
+      "content-length": "1067",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Mon, 11 May 2026 03:26:23 GMT",
       "last-modified": "Wed, 26 Feb 2025 19:35:03 GMT",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "x-api-cattle-auth": "false",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "connection": "close"
     }
   },
   "tests": {
@@ -77,10 +77,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
