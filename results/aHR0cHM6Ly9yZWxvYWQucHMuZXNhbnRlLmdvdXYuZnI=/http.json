@@ -1,22 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.26.0 (Ubuntu)",
-      "date": "Tue, 17 Mar 2026 03:25:58 GMT",
+      "date": "Mon, 11 May 2026 03:34:57 GMT",
       "content-type": "text/html",
-      "last-modified": "Mon, 16 Mar 2026 18:47:59 GMT",
+      "last-modified": "Tue, 27 Jan 2026 14:15:50 GMT",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "etag": "W/\"69b8505f-39e\"",
-      "cache-control": "no-store, no-cache, must-revalidate"
+      "vary": "Accept-Encoding",
+      "etag": "W/\"6978c896-9a6\"",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN"
     }
   },
   "tests": {
@@ -87,17 +92,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
