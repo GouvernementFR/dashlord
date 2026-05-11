@@ -9,16 +9,16 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Mar 2026 03:18:44 GMT",
+      "date": "Mon, 11 May 2026 03:25:16 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "max-age=0, must-revalidate, private",
       "set-cookie": [
-        "__cf_bm=6.qaZYqW.QxGlWL12sOosWTBjwPyNTc74_z7.MNrg0s-1773717523.6370773-1.0.1.1-0lbv052e63_Ahyi6NFYtYIQxvbgSR43ATMMBGd3aOlUjO2QmRaZzT_Mq3swwpeSH.IIhEjbDTP5c5RVbirVH3vuo0pWdf_TyyQp57zq0BM3Y_tIZDRlvCc6pDZVEtWYW; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 17 Mar 2026 03:48:44 GMT"
+        "__cf_bm=eWHJKzQ7qIsQWzM6wUz8xnrfFaUWNPotyYoLtMqCct0-1778469915.7557755-1.0.1.1-PO3bM0Qddl7GxuqcD9jq8y8XEAVoDhwLGE5XvNRf6Am56L_ZDgg4_H7uUjhQDTs4yZvNktjHTeD44q04UJusmCfLJSWKBXhRBkcB2ubmzUUJMi2H.QUUb_tlXjFQ9fJC; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 11 May 2026 03:55:16 GMT"
       ],
       "content-security-policy": "frame-ancestors 'self';",
-      "expires": "Tue, 17 Mar 2026 03:18:44 GMT",
+      "expires": "Mon, 11 May 2026 03:25:16 GMT",
       "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "referrer-policy": "strict-origin",
       "server": "cloudflare",
@@ -29,7 +29,8 @@
       "x-powered-by": "PHP/8.1.31",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9dd8da1ab92dd6df-IAD"
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=215,cfOrigin;dur=379",
+      "cf-ray": "9f9e134d7e31e601-IAD"
     }
   },
   "tests": {
@@ -68,7 +69,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-17T03:48:44.000Z",
+          "expires": "2026-05-11T03:55:16.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -126,6 +127,10 @@
         "https://tarteaucitron.io/load.js?domain=renovfriches.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
           "crossorigin": null,
           "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
