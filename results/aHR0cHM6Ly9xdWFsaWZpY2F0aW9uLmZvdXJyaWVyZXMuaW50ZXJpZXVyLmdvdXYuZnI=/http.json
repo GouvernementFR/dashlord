@@ -3,21 +3,22 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 20,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 17 Mar 2026 03:18:37 GMT",
+      "date": "Mon, 11 May 2026 03:26:29 GMT",
       "set-cookie": [
-        "YOMe1h3tgHKNQxhV6V7n5g__=v1w-HOgwSD7Ob; Expires=Tue, 17-Mar-2026 05:18:36 GMT; Path=/"
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1F-XOgwSDi9F; Expires=Mon, 11-May-2026 05:26:29 GMT; Path=/"
       ],
       "content-type": "text/html",
       "last-modified": "Wed, 25 Feb 2026 14:18:33 GMT",
       "etag": "W/\"699f04b9-31f\"",
       "x-robots-tag": "noindex, nofollow, nosnippet, noarchive",
       "cache-control": "no-cache",
+      "strict-transport-security": "max-age=2678400",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -42,7 +43,7 @@
       "data": {
         "YOMe1h3tgHKNQxhV6V7n5g__": {
           "domain": "qualification.fourrieres.interieur.gouv.fr",
-          "expires": "2026-03-17T05:18:36.000Z",
+          "expires": "2026-05-11T05:26:29.000Z",
           "path": "/",
           "port": null
         }
@@ -81,11 +82,11 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2678400",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 2678400,
       "preload": false,
       "preloaded": false
     },
