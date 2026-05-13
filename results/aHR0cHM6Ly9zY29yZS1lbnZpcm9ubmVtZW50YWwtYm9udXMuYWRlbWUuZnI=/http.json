@@ -9,21 +9,22 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 19 Mar 2026 03:26:33 GMT",
+      "date": "Wed, 13 May 2026 03:28:18 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "cache-control": "no-cache, private",
-      "cf-cache-status": "DYNAMIC",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=490,cfOrigin;dur=672",
+      "vary": "Accept-Encoding,User-Agent",
       "set-cookie": [
         "_97e76=352b01d020cd7af0; Path=/; HttpOnly; Secure",
-        "__cf_bm=n2ozdDYjnhqTjFiPRnZbojOceeQg36nML_mIbKTr9eo-1773890792.4297798-1.0.1.1-ia4UA7pSWueDXGGtPUjrGmLvfr_E1Wk0ciIMz9FkfTdIbNgSY2fBqUSROZMGr0bdcEgus8XgdtCxO6o8MT8HIWdAULuTsqJz5VNMIyImopsaXQhUO414PDsIBSxqjG7X; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 19 Mar 2026 03:56:33 GMT"
+        "__cf_bm=.mS2RipDjaVzZ_ODVlNlNibEQFhMHEAkQad98YdGlSs-1778642897.267522-1.0.1.1-ATawnXEPhNyojLHhdIOP0s3A86NXa34KR33LSve84sAuPK2BF0WnAF1zbd38QWFd5.zo8MGKt6k9ndBDKJDEkHGEIbNznuEBrrfMqxNzIaEigxKZpBFsid5v0BclTsOu; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 13 May 2026 03:58:18 GMT"
       ],
-      "vary": "Accept-Encoding,User-Agent",
       "content-language": "fr",
-      "cf-ray": "9de9604caad77ce0-ORD"
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9fae927becea6701-DFW"
     }
   },
   "tests": {
@@ -53,10 +54,11 @@
         },
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-19T03:56:33.000Z",
+          "expires": "2026-05-13T03:58:18.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
@@ -110,6 +112,10 @@
         "https://tarteaucitron.io/load.js?domain=score-environnemental-bonus.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
           "crossorigin": null,
           "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         }
       }
     },
