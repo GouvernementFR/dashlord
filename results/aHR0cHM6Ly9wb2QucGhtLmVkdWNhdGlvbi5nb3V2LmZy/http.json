@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Thu, 19 Mar 2026 03:19:34 GMT",
+      "date": "Wed, 13 May 2026 03:25:21 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -19,9 +19,6 @@
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
-      "set-cookie": [
-        "BIGipServerXnXNVAyo0oXb8g6eBl2ieg=!BZcC9a5Cq9PtwU8cUuXzBVxHRHRyQ1kOAEoUomkTqpYtfmnQ5FyPA1z9fLIsbw5zGTgjQgu/wxPIfkOgXsIcnOZk5tQqULe1+Sg8I+c=; path=/; Httponly; Secure"
-      ],
       "strict-transport-security": "max-age=63072000"
     }
   },
@@ -40,17 +37,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "BIGipServerXnXNVAyo0oXb8g6eBl2ieg": {
-          "domain": "pod.phm.education.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
