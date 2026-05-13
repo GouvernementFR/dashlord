@@ -11,21 +11,21 @@
     "responseHeaders": {
       "cache-control": "max-age=0, private, must-revalidate",
       "connection": "close",
-      "content-length": "6550",
-      "content-security-policy": "connect-src * ;default-src 'none' ;font-src * ;frame-ancestors 'none' ;frame-src https://*.dailymotion.com ;img-src 'self' https: data: https://demo-static.data.gouv.fr https://demo.data.gouv.fr;report-uri  https://o1140487.ingest.sentry.io/api/6197733/security/?sentry_key=ee95fa9a50c747ec93b1467ed9377251&sentry_environment=staging;script-src 'self' 'unsafe-eval' 'unsafe-inline' https://stats.data.gouv.fr/matomo.js ;style-src 'self' 'nonce-BhUrMO97eWuXDQ' 'sha256-9uoGUaZm3j6W7+Fh2wfvjI8P7zXcclRw5tVUu3qKZa0=' 'sha256-MmUum7+PiN7Rz79EUMm0OmUFWjCx6NZ97rdjoIbTnAg='",
+      "content-length": "6565",
+      "content-security-policy": "connect-src * ;default-src 'none' ;font-src * ;frame-ancestors 'none' ;frame-src https://*.dailymotion.com http://metabase.transport.data.gouv.fr ;img-src 'self' https: data: https://demo-static.data.gouv.fr https://demo.data.gouv.fr;report-uri  https://o1140487.ingest.sentry.io/api/6197733/security/?sentry_key=ee95fa9a50c747ec93b1467ed9377251&sentry_environment=staging;script-src 'self' 'unsafe-eval' 'unsafe-inline' https://stats.data.gouv.fr/matomo.js https://metabase.transport.data.gouv.fr/app/embed.js ;style-src 'self' 'nonce-EooEB9eVLBvTdA' 'sha256-9uoGUaZm3j6W7+Fh2wfvjI8P7zXcclRw5tVUu3qKZa0=' 'sha256-MmUum7+PiN7Rz79EUMm0OmUFWjCx6NZ97rdjoIbTnAg='",
       "content-type": "text/html; charset=utf-8",
-      "date": "Tue, 17 Mar 2026 03:22:53 GMT",
+      "date": "Wed, 13 May 2026 03:24:03 GMT",
       "referrer-policy": "strict-origin-when-cross-origin",
       "server": "Cowboy",
       "vary": "accept-encoding",
       "x-content-type-options": "nosniff",
       "x-frame-options": "DENY",
       "x-permitted-cross-domain-policies": "none",
-      "x-request-id": "GJ2C6wk9tivGia0ACXaC",
+      "x-request-id": "GK8CD54HNywEin0ACZYi",
       "set-cookie": [
-        "_transport_key=SFMyNTY.g3QAAAADbQAAAAtfY3NyZl90b2tlbm0AAAAYOVZHb3NFeWxJOXBwblNXQWFrVjBRcWZTbQAAAA9jc3Bfbm9uY2VfdmFsdWVtAAAADkJoVXJNTzk3ZVd1WERRbQAAAAZsb2NhbGVtAAAAAmZy.125LQnb4P6fbX4eCchHbAXUUhpgc4wVcE-UlblyovQU; path=/; expires=Wed, 01 Apr 2026 03:22:54 GMT; max-age=1296000; HttpOnly; SameSite=Lax"
+        "_transport_key=SFMyNTY.g3QAAAADbQAAAAtfY3NyZl90b2tlbm0AAAAYaUpwem5kQUtPaFhUVVcxYjNVbVlOTHlfbQAAAA9jc3Bfbm9uY2VfdmFsdWVtAAAADkVvb0VCOWVWTEJ2VGRBbQAAAAZsb2NhbGVtAAAAAmZy.EM1YIIZyRjC028t9p40yaQ8FWJLdXMcVKNEl5UBLrGQ; path=/; expires=Thu, 28 May 2026 03:24:03 GMT; max-age=1296000; HttpOnly; SameSite=Lax"
       ],
-      "sozu-id": "01KKWX2QRDKJ6KG47W2959ME38"
+      "sozu-id": "01KRFNSTT5VBWGVT35GQ9V4TM9"
     }
   },
   "tests": {
@@ -48,6 +48,7 @@
           "'none'"
         ],
         "frame-src": [
+          "http://metabase.transport.data.gouv.fr",
           "https://*.dailymotion.com"
         ],
         "img-src": [
@@ -63,10 +64,11 @@
           "'self'",
           "'unsafe-eval'",
           "'unsafe-inline'",
+          "https://metabase.transport.data.gouv.fr/app/embed.js",
           "https://stats.data.gouv.fr/matomo.js"
         ],
         "style-src": [
-          "'nonce-bhurmo97ewuxdq'",
+          "'nonce-eooeb9evlbvtda'",
           "'self'",
           "'sha256-9uoguazm3j6w7+fh2wfvji8p7zxcclrw5tvuu3qkza0='",
           "'sha256-mmuum7+pin7rz79eumm0omufwjcx6nz97rdjoibtnag='"
@@ -79,7 +81,7 @@
         "defaultNone": true,
         "insecureBaseUri": true,
         "insecureFormAction": true,
-        "insecureSchemeActive": false,
+        "insecureSchemeActive": true,
         "insecureSchemePassive": false,
         "strictDynamic": false,
         "unsafeEval": true,
@@ -97,7 +99,7 @@
       "data": {
         "_transport_key": {
           "domain": "prochainement.transport.data.gouv.fr",
-          "expires": "2026-04-01T03:22:54.000Z",
+          "expires": "2026-05-28T03:24:03.000Z",
           "httponly": true,
           "max-age": 1296000,
           "path": "/",
