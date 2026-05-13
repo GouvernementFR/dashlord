@@ -9,28 +9,28 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 19 Mar 2026 03:22:17 GMT",
+      "date": "Wed, 13 May 2026 03:25:15 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "vary": "Accept-Encoding, Accept-Encoding, Accept-Language, Origin, Access-Control-Request-Headers, Access-Control-Request-Method",
       "cache-control": "max-age=0, must-revalidate, private, s-maxage=60",
-      "expires": "Thu, 19 Mar 2026 03:22:17 GMT",
+      "expires": "Wed, 13 May 2026 03:25:15 GMT",
       "permissions-policy": "xr-spatial-tracking=(self), geolocation=(self), midi=(), sync-xhr=(), microphone=(self), camera=(self), magnetometer=(), gyroscope=(), fullscreen=(self), payment=()",
       "referrer-policy": "no-referrer-when-downgrade",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
-      "content-security-policy": "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * data: https://* 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ;frame-ancestors 'self'; style-src * data: https://* 'unsafe-inline';",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=X3bN9Fnh7yvjXSMl2GCXpXMXWPNkByPy2GdaPyr%2FxEvvQzikBvokKJfMHIw2lSq2ssi0THsKsTTPiNoOeMhI8m%2FWdbJaWEIHviyADzXhk4X77nHQMfXVZhdoFw%3D%3D\"}]}",
-      "x-varnish": "5080148",
+      "content-security-policy": "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * data: blob: https://* 'unsafe-inline' 'unsafe-eval'; worker-src blob:; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ;frame-ancestors 'self'; style-src * data: https://* 'unsafe-inline';",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PQSUphOchObbXnNJNAbaXByTudOHMyblFIMwA%2BwTa7Ezc%2BzwXxx9hu2IfryfOw83g6bjZPzVA5rxVYBE5fqn1sliC4EkDkZwajIihzevq%2FyI6ztUHBZqxoaccoOJkQ9qB8u7AOysj%2B7jVVKtEhM%3D\"}]}",
+      "x-varnish": "4596926",
       "age": "0",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=22,cfOrigin;dur=392",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=41,cfOrigin;dur=572",
       "strict-transport-security": "max-age=2592000; preload",
       "x-permitted-cross-domain-policies": "none",
       "cf-cache-status": "DYNAMIC",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "cf-ray": "9de95a0fda6d12fc-IAD",
+      "cf-ray": "9fae8e08bc08b8d4-LAX",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -50,8 +50,12 @@
           "'unsafe-eval'",
           "'unsafe-inline'",
           "*",
+          "blob:",
           "data:",
           "https://*"
+        ],
+        "worker-src": [
+          "blob:"
         ],
         "connect-src": [
           "'unsafe-inline'",
