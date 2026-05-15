@@ -1,26 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 0,
+    "score": 45,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Mar 2026 03:21:01 GMT",
+      "date": "Fri, 15 May 2026 03:31:37 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "public, max-age=0",
-      "last-modified": "Wed, 25 Feb 2026 10:01:37 GMT",
+      "last-modified": "Tue, 14 Apr 2026 12:06:39 GMT",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "referrer-policy": "no-referrer-when-downgrade",
       "set-cookie": [
-        "BIGipServerpool-sirano-production.cegedim.cloud-tcp3000=!7G6Ckbx8wSn48qEXIkI7F7SI9ajmigDTH2tAeQAcaZRCft3y6TnQYlyy9ysRWlblZh2D7SdvkyjakoeDTToU/aedHGYj; path=/; Httponly; Secure; SameSite=Strict",
-        "TS01ac8ac8=01352d3811ab5a85d95798abb113402c8ab5879b821149c49e2e1f1a012b01fe977b332e5fd7b62f1135693dd0156b621253e0d0e4; Path=/; Secure; HttpOnly"
+        "BIGipServerpool-sirano-production.cegedim.cloud-tcp3000=!YmauiV/9/uZn/rN3Zj8tcwec1SnosydM9K1e0PKLj3jMfTDW8K+jt4hFWvg5wNnzDL6w1s+ZrZmGlXVP+M4HaNAz8Dui; path=/; Httponly; Secure; SameSite=Strict",
+        "TS01ac8ac8=01352d3811df91d187de47cba6752640dfad1ca01bc48fe701617ebcc0c4ca6925ad7a0ee188f5ac6010bdc978749081754c4beb9c; Path=/; Secure; HttpOnly"
       ],
       "transfer-encoding": "chunked"
     }
@@ -104,13 +104,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "http://localhost:8097/": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://tally.so/widgets/embed.js": {
           "crossorigin": null,
           "integrity": null
