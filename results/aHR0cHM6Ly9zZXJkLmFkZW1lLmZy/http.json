@@ -9,19 +9,20 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Mar 2026 03:11:56 GMT",
+      "date": "Fri, 15 May 2026 03:32:55 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "x-powered-by": "PHP/8.3.30, PleskLin",
-      "vary": "User-Agent,Accept-Encoding",
-      "last-modified": "Fri, 20 Mar 2026 22:32:48 GMT",
+      "x-powered-by": "PHP/8.3.31, PleskLin",
+      "vary": "User-Agent,Accept-Encoding,Referer",
+      "last-modified": "Thu, 14 May 2026 17:48:40 GMT",
       "set-cookie": [
-        "__cf_bm=LIB8Sbyov0tG7uJcELr7cssx14phU2YYoh7zdC2qLyc-1774062716.6092286-1.0.1.1-b5esMjWwI6aljNDDTP3UzYSzv3IvSLBknPT_3xYHZzL4dgKfB8019XxWXwV3ZIxt0o_VLSvBF7DmrcHVOqwm4QIQufRttbr_f5IhYpaTsjPIH5Ob9mMXgJzihfeus6h0; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 21 Mar 2026 03:41:56 GMT"
+        "__cf_bm=JRawdYLVyG1R2NCoNYaA4Xpf70cuwXSWr2RCnwFfgQc-1778815974.9175668-1.0.1.1-eZCV1hQntAKsAGtzSHQeKbVEr1XEb6OG2yLv9rD6bE2qYqItPfHV271iQV79CmHfHmv7S0fZg.PGb_IlyAgeoAA7OLqCOI8BJuY8sXAWdz.QFalYfr34iaE6PFBUqhLC; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 15 May 2026 04:02:55 GMT"
       ],
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9df9c5aacca0edc5-ORD"
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=514",
+      "cf-ray": "9fbf14033c6634bd-SJC"
     }
   },
   "tests": {
@@ -39,19 +40,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-21T03:41:56.000Z",
+          "expires": "2026-05-15T04:02:55.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -102,6 +104,10 @@
         "https://cdntag.tarteaucitron.io/load.js?domain=serd.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
           "crossorigin": null,
           "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
