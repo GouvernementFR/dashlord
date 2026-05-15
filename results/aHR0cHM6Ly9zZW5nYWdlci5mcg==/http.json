@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 35,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Mar 2026 03:14:26 GMT",
+      "date": "Fri, 15 May 2026 03:32:26 GMT",
       "content-type": "text/html",
       "connection": "close",
       "vary": "Accept-Encoding, Origin, Accept-Encoding",
-      "etag": "W/\"f755e1d666d075a84ec8ba1b7b1f45a5\"",
-      "last-modified": "Fri, 20 Mar 2026 10:52:54 GMT",
+      "etag": "W/\"f5bc7d257d1de985cd0f5dc542163e49\"",
+      "last-modified": "Wed, 13 May 2026 13:36:41 GMT",
       "strict-transport-security": "max-age=16070400; includeSubDomains",
       "x-amz-bucket-region": "us-east-1",
-      "x-amz-id-2": "c639e4fb8270d70ab45a045505d35fa129361832e25325631d77a0cd4a32a089",
-      "x-amz-request-id": "189EBCC720AC723E",
+      "x-amz-id-2": "39bf00a73747d99d94391fc2534ed1e03212f09d1608b4d28a781bee8de7256c",
+      "x-amz-request-id": "18AF9FADC4373429",
       "x-content-type-options": "nosniff",
       "x-ratelimit-limit": "601",
       "x-ratelimit-remaining": "601",
@@ -89,23 +89,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-implemented-but-external-scripts-not-loaded-securely",
-      "scoreModifier": -20,
-      "data": {
-        "//cdn.tagcommander.com/3941/tc_ArmeedeTerre_28.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-Ei3RpkFTSSl7GLV55tyu4u+EZ3l2mPTyM8B33BRkRWrRkxCqN7XpWugSVBo5ea1WnKFy11StIW1XXl+U+PrxJg=="
-        },
-        "//cdn.tagcommander.com/3941/tc_ArmeedeTerre_26.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-wd+eqhaDlnHdRvHy0GQYE8J2Q59/eqcYMszRls5rf989Xu4JwA6l4Lt3brznhMhL3s4cZBMFXHX54FyZNnuMdA==  "
-        },
-        "https://scripts.polaria.ai/sengager.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-OnH3hBJh7cy2x6ZD1RvMktM/ILQszBWVSM5qzBEJByPjxMR6cfO9LXM8dLHclDTRvOl/hYVkFf4yXHplXXHtyw=="
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
