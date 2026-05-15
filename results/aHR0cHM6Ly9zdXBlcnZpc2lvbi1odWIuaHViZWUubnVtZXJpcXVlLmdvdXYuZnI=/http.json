@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 15,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "x-content-type-options": "nosniff",
@@ -17,7 +17,7 @@
       "content-type": "text/html; charset=utf-8",
       "cache-control": "private, no-cache, no-store, must-revalidate",
       "vary": "accept-encoding",
-      "date": "Mon, 23 Mar 2026 03:22:08 GMT",
+      "date": "Fri, 15 May 2026 03:31:55 GMT",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -76,16 +76,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https",
-      "scoreModifier": -20,
-      "destination": "http://supervision-hub.hubee.numerique.gouv.fr/login?next=%2F",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://supervision-hub.hubee.numerique.gouv.fr/",
-        "http://supervision-hub.hubee.numerique.gouv.fr/login?next=%2F"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
