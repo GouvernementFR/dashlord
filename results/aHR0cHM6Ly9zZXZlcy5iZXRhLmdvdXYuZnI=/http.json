@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Mar 2026 03:16:16 GMT",
+      "date": "Fri, 15 May 2026 03:35:38 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "d934db66-6dd4-4d70-9171-c5e649ce8a4d",
-      "content-security-policy": "style-src 'self' cdn.jsdelivr.net; script-src 'self' cdn.jsdelivr.net; connect-src 'self' geo.api.gouv.fr api.insee.fr data.economie.gouv.fr api-adresse.data.gouv.fr fichiers-publics.agriculture.gouv.fr; font-src 'self' cdn.jsdelivr.net; default-src 'self'; img-src 'self' data: s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; report-uri https://sentry.incubateur.net/api/160/security/?sentry_key=3df27b8b317e41adba25806482b15574?sentry_environment=prod",
+      "x-request-id": "b354e06b-5fc7-4722-83e0-529b4d8ddaae",
+      "content-security-policy": "default-src 'self'; script-src 'self' cdn.jsdelivr.net; style-src 'self' cdn.jsdelivr.net; font-src 'self' cdn.jsdelivr.net; img-src 'self' data: s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; object-src s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; frame-src s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; connect-src 'self' geo.api.gouv.fr api.insee.fr data.economie.gouv.fr api-adresse.data.gouv.fr fichiers-publics.agriculture.gouv.fr openmaptiles.data.gouv.fr data.geopf.fr; worker-src blob:; report-uri https://sentry.incubateur.net/api/160/security/?sentry_key=3df27b8b317e41adba25806482b15574?sentry_environment=prod",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "x-content-type-options": "nosniff",
@@ -30,34 +30,47 @@
       "result": "csp-implemented-with-no-unsafe",
       "scoreModifier": 5,
       "data": {
-        "style-src": [
-          "'self'",
-          "cdn.jsdelivr.net"
+        "default-src": [
+          "'self'"
         ],
         "script-src": [
           "'self'",
           "cdn.jsdelivr.net"
         ],
-        "connect-src": [
+        "style-src": [
           "'self'",
-          "api-adresse.data.gouv.fr",
-          "api.insee.fr",
-          "data.economie.gouv.fr",
-          "fichiers-publics.agriculture.gouv.fr",
-          "geo.api.gouv.fr"
+          "cdn.jsdelivr.net"
         ],
         "font-src": [
           "'self'",
           "cdn.jsdelivr.net"
-        ],
-        "default-src": [
-          "'self'"
         ],
         "img-src": [
           "'self'",
           "data:",
           "s3.eu-west-par.io.cloud.ovh.net",
           "s3.rbx.io.cloud.ovh.net"
+        ],
+        "object-src": [
+          "s3.eu-west-par.io.cloud.ovh.net",
+          "s3.rbx.io.cloud.ovh.net"
+        ],
+        "frame-src": [
+          "s3.eu-west-par.io.cloud.ovh.net",
+          "s3.rbx.io.cloud.ovh.net"
+        ],
+        "connect-src": [
+          "'self'",
+          "api-adresse.data.gouv.fr",
+          "api.insee.fr",
+          "data.economie.gouv.fr",
+          "data.geopf.fr",
+          "fichiers-publics.agriculture.gouv.fr",
+          "geo.api.gouv.fr",
+          "openmaptiles.data.gouv.fr"
+        ],
+        "worker-src": [
+          "blob:"
         ],
         "report-uri": [
           "https://sentry.incubateur.net/api/160/security/?sentry_key=3df27b8b317e41adba25806482b15574?sentry_environment=prod"
