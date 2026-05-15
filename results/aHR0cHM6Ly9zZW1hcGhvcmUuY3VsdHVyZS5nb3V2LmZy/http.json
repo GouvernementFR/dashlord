@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Mar 2026 03:13:22 GMT",
+      "date": "Fri, 15 May 2026 03:27:14 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=BW3FGJJN6A66RRSJ6DFJVXLKI7E567NOIRIGXJQWY2DC5FAOFQGU5KUYGYEDLBUMWGIMXF2QOEHFXDUHYHOJVJIXKDT2U6M2WBCERR7XBWL4TQQ7ORGQ====; Path=/"
+        "bot_mitigation_cookie=XLXQZRRFACH4IZOQ2F5MR5DRHVHI477TCOVCYYXNISWJWTVYW2C54RZNTLFZTZILYAT4BT24KATDPPKH7PVMLD2PCX7FR4HE6YDRMHOLIAPL4E7QKYPA====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "201",
-      "x-cp-via": "C2-4899bc79-17ed9572",
+      "content-length": "202",
+      "x-cp-via": "C2-9d167049-b3401677",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "semaphore.culture.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
