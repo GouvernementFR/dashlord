@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 21 Mar 2026 03:13:13 GMT",
+      "date": "Fri, 15 May 2026 03:27:20 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=31536000; includeSubDomains;",
       "last-modified": "Mon, 06 Nov 2023 10:20:02 GMT",
@@ -59,12 +59,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://secours17.pp.gendarmerie.interieur.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://secours17.pp.gendarmerie.interieur.gouv.fr/",
+        "https://secours17.pp.gendarmerie.interieur.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
