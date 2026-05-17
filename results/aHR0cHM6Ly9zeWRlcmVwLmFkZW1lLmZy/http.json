@@ -9,16 +9,17 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Mar 2026 03:27:36 GMT",
+      "date": "Sun, 17 May 2026 03:20:42 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
       "access-control-allow-origin": "*",
       "set-cookie": [
-        "__cf_bm=rBHIR8idmAov.fra_SmYisd31z.cVkRy52tG1XQRxFM-1774236455.4558737-1.0.1.1-UIqkaWx_m3pzoqx4tgpeW2HWpBS8msnCsH9AkDApeDR0ZYtmrdPsGJ7Zw0SED86HL_FGNNosJDkgfSKkLAvKqQxBllq_c1iQm.VAImg7e1HGBkBBV.HBuxtWNJGLKI0o; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 23 Mar 2026 03:57:36 GMT"
+        "__cf_bm=EQjqCxU4T.ElVEtOF2LCZkDs2jNUleQaNBVVDIC3z_c-1778988042.2518842-1.0.1.1-dvBSI1TiZ9OEcL4USgRWC_.W.SIzTALA_ubfMK.noN8vg8rT_r.E71SvDQdFjZNxaxMyxmc8BCdowDVPKGeP0LEcnhK6AoFrGdX9RESqmXB59KpMuHglzmt_aIpNWfDg; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sun, 17 May 2026 03:50:42 GMT"
       ],
       "content-security-policy": "frame-ancestors 'self' prod-syderepv2.direct.prod.ademe-scw.fr prod-syderepv2.prod.ademe-scw.fr syderep.ademe.fr;",
-      "last-modified": "Tue, 10 Mar 2026 08:05:48 GMT",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=12,cfOrigin;dur=343",
+      "last-modified": "Tue, 12 May 2026 07:28:09 GMT",
       "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "referrer-policy": "strict-origin",
       "server": "cloudflare",
@@ -28,7 +29,7 @@
       "x-frame-options": "sameorigin",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9e0a57569cc6c99d-IAD"
+      "cf-ray": "9fcf7ce01c227a4d-IAD"
     }
   },
   "tests": {
@@ -65,19 +66,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-03-23T03:57:36.000Z",
+          "expires": "2026-05-17T03:50:42.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -125,17 +127,9 @@
       "result": "sri-implemented-and-external-scripts-loaded-securely",
       "scoreModifier": 5,
       "data": {
-        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.21.0/tarteaucitron.min.js": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-dzXi8iqqAJNuSDIPQE8alRwc17oxfn8N31sOE6Bc+iuDUp4dgrQp5O2vSL/Op63c+ZzHady1ccmdzIKOeRnP9A=="
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.21.0/tarteaucitron.services.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-mY90xajdZG4usf5d+d0tktGcOIPDc+sD7fD2pNNgy1QnrgeCsvaKpaFBOpGCsLotmj6VwVq3WqAAQ9azXZ44Gw=="
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.21.0/lang/tarteaucitron.fr.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-UmRJbofjTXDDcClRanV9SHr5VZvELdYEhlo+d55aGBpTr8uL4i0jHUD0G6HeJTAgi7/m2+d4zPJ79vRVZIXe0A=="
+          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
