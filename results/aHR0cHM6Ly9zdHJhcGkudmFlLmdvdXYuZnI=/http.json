@@ -9,11 +9,11 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Mar 2026 03:25:20 GMT",
+      "date": "Sun, 17 May 2026 03:20:47 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "content-security-policy": "script-src https://cdn.ckeditor.com https://grateful-event-39c5178d33.strapiapp.com https://strapi.vae.gouv.fr;connect-src 'self' https:;img-src 'self' data: blob: https://healing-nature-bb0384846f.media.strapiapp.com https://healing-nature-bb0384846f.fra1.digitaloceanspaces.com https://healing-nature-bb0384846f.nyc3.digitaloceanspaces.com *.strapi.io;media-src 'self' data: blob: https://healing-nature-bb0384846f.media.strapiapp.com https://healing-nature-bb0384846f.fra1.digitaloceanspaces.com https://healing-nature-bb0384846f.nyc3.digitaloceanspaces.com *.strapi.io;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'",
+      "content-security-policy": "script-src 'self' https://cdn.ckeditor.com https://grateful-event-39c5178d33.strapiapp.com https://healing-nature-bb0384846f.media.strapiapp.com https://strapi.vae.gouv.fr;connect-src 'self' https:;img-src 'self' data: blob: https://healing-nature-bb0384846f.media.strapiapp.com https://healing-nature-bb0384846f.fra1.digitaloceanspaces.com https://healing-nature-bb0384846f.nyc3.digitaloceanspaces.com *.strapi.io;media-src 'self' data: blob: https://healing-nature-bb0384846f.media.strapiapp.com https://healing-nature-bb0384846f.fra1.digitaloceanspaces.com https://healing-nature-bb0384846f.nyc3.digitaloceanspaces.com *.strapi.io;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'",
       "referrer-policy": "no-referrer",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-content-type-options": "nosniff",
@@ -28,9 +28,9 @@
       "x-koyeb-backend": "fra",
       "server": "cloudflare",
       "x-koyeb-brand": "strapi",
-      "x-koyeb-glb": "sfo",
+      "x-koyeb-glb": "was",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9e0a54079d2f939b-SJC",
+      "cf-ray": "9fcf7d02680274d1-IAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -42,8 +42,10 @@
       "scoreModifier": 0,
       "data": {
         "script-src": [
+          "'self'",
           "https://cdn.ckeditor.com",
           "https://grateful-event-39c5178d33.strapiapp.com",
+          "https://healing-nature-bb0384846f.media.strapiapp.com",
           "https://strapi.vae.gouv.fr"
         ],
         "connect-src": [
