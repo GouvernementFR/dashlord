@@ -1,25 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Mar 2026 03:21:02 GMT",
+      "date": "Sun, 17 May 2026 03:26:15 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "49251",
+      "content-length": "49562",
       "connection": "close",
       "link": "<https://srias.paca.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://srias.paca.gouv.fr/wp-json/wp/v2/pages/7>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://srias.paca.gouv.fr/>; rel=shortlink",
       "vary": "Accept-Encoding",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-blackswift-cluster": "bseufr01",
-      "x-request-id": "14fe0f3be9f192dba5f0d6030f491a46",
-      "x-request-start": "1774236062.432",
-      "x-request-time": "1.523"
+      "x-request-id": "9defd9f555553bec7ffa85ed07b8fa9a",
+      "x-request-start": "1778988375.834",
+      "x-request-time": "1.576"
     }
   },
   "tests": {
@@ -84,10 +84,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
