@@ -9,13 +9,13 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:17:10 GMT",
+      "date": "Sun, 17 May 2026 03:29:50 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "379ae4cc-7c94-485b-8ead-1579e196d2b6",
+      "x-request-id": "434182e8-5175-45e6-a49e-71dbc9ea0448",
       "referrer-policy": "same-origin",
-      "content-security-policy": "img-src 'self' data:; default-src 'self' 'nonce-1yJ00RHclB/OOBVQzZNDLQ=='; script-src 'self' 'sha256-S224CRpfYnCBAVoljX2SN+CahpmlrffdOD64sprE9aM=' https://stats.beta.gouv.fr/; connect-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A='",
+      "content-security-policy": "connect-src 'self' https://stats.beta.gouv.fr; style-src 'self' 'sha256-Eyt3MCqJJqqqUJzUlVq9BLYX+kVGQZVLpJ4toZz4mb8=' 'sha256-d//Lck7pNf/OY9MPfGYaIOTmqjEzvwlSukK3UObI08A='; default-src 'self' 'nonce-aVeaX8/2Tpd+CSJHLuLQcg=='; img-src 'self' data:; script-src 'self' 'sha256-S224CRpfYnCBAVoljX2SN+CahpmlrffdOD64sprE9aM=' https://stats.beta.gouv.fr/",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "strict-transport-security": "max-age=2592000; includeSubDomains",
@@ -29,19 +29,6 @@
       "result": "csp-implemented-with-no-unsafe",
       "scoreModifier": 5,
       "data": {
-        "img-src": [
-          "'self'",
-          "data:"
-        ],
-        "default-src": [
-          "'nonce-1yj00rhclb/oobvqzzndlq=='",
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'sha256-s224crpfyncbavoljx2sn+cahpmlrffdod64spre9am='",
-          "https://stats.beta.gouv.fr/"
-        ],
         "connect-src": [
           "'self'",
           "https://stats.beta.gouv.fr"
@@ -50,6 +37,19 @@
           "'self'",
           "'sha256-d//lck7pnf/oy9mpfgyaiotmqjezvwlsukk3uobi08a='",
           "'sha256-eyt3mcqjjqqqujzulvq9blyx+kvgqzvlpj4tozz4mb8='"
+        ],
+        "default-src": [
+          "'nonce-aveax8/2tpd+csjhlulqcg=='",
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "data:"
+        ],
+        "script-src": [
+          "'self'",
+          "'sha256-s224crpfyncbavoljx2sn+cahpmlrffdod64spre9am='",
+          "https://stats.beta.gouv.fr/"
         ]
       },
       "http": true,
