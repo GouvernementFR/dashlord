@@ -3,26 +3,26 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 20,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:20:12 GMT",
+      "date": "Sun, 17 May 2026 03:28:32 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
       "x-ua-compatible": "IE=edge",
       "link": "<https://www.toulon-clubnautiquemarine.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.toulon-clubnautiquemarine.fr/wp-json/wp/v2/pages/45>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.toulon-clubnautiquemarine.fr/>; rel=shortlink",
-      "x-litespeed-tag": "d10_front,d10_URL.6666cd76f96956469e7be39d750cc7d9,d10_F,d10_Po.45,d10_PGS,d10_,d10_MIN.9afc35a9938a431d17645f190dbf2a2c.css",
+      "x-litespeed-tag": "d10_front,d10_URL.6666cd76f96956469e7be39d750cc7d9,d10_F,d10_Po.45,d10_PGS,d10_,d10_MIN..css,d10_MIN.edd949b7f918153b08d66241f6c70544.js",
       "server": "cloudflare",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=w1xSzNOMtrd0ZocY0yphq5%2BWaoWO9eQ2W%2BM4B856Ukfxv6JKUNjFR7cO0bz7m6Rezr1hf0oKJeHqvcWaPDnoODT4VeLwMKD6J8LIah5EuitnghMRf9LKoGMkQJzxzHBdKDMpkj5JTtxUMK0B3T1curOLJQ%3D%3D\"}]}",
       "cf-cache-status": "DYNAMIC",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=12,cfOrigin;dur=2764",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6t9nO7ILVUZK1wNjiAyQZUFFtzI2Sf2f8ojXNNhfG1fHQ6xLKoT3x4LzqMxfyC9tIyKXul4U8dxk0wZlhGjUhUEWE1rsdt3gisd24x%2B%2BxYn9j1xMNS1qrpsHKgOJ5gbo\"}]}",
-      "cf-ray": "9e1ac7356fb67a72-DFW",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=1844",
+      "cf-ray": "9fcf884dedb3f4d9-SJC",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -55,13 +55,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-not-needed-no-http",
-      "scoreModifier": 0,
-      "destination": "http://toulon-clubnautiquemarine.fr/",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.toulon-clubnautiquemarine.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://toulon-clubnautiquemarine.fr/",
+        "https://www.toulon-clubnautiquemarine.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -86,24 +89,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
         "https://www.googletagmanager.com/gtag/js?id=G-PYN12FYGM7": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://jxxfz6rfvcpeab6pt.ay.delivery/manager/jxxFZ6RfvcpEAb6pt": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//www.toulon-clubnautiquemarine.fr/?wordfence_syncAttackData=1774408809.3966": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
