@@ -1,21 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 0,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Mar 2026 03:25:38 GMT",
+      "date": "Sun, 17 May 2026 03:21:57 GMT",
       "server": "Apache",
       "vary": "Accept-Encoding,Cookie",
       "cache-control": "max-age=3, must-revalidate",
       "upgrade": "h2,h2c",
       "connection": "Upgrade, close",
-      "content-length": "12113",
+      "content-length": "15272",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -82,15 +82,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//gc.zgo.at/count.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
