@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-type": "text/html",
-      "last-modified": "Wed, 04 Mar 2026 18:00:40 GMT",
+      "last-modified": "Thu, 26 Mar 2026 12:02:35 GMT",
       "accept-ranges": "bytes",
-      "etag": "\"054c4cf0acdc1:0\"",
+      "etag": "\"e689476f18bddc1:0\"",
       "vary": "Accept-Encoding",
       "server": "Microsoft-IIS/10.0",
       "x-powered-by": "ASP.NET",
-      "date": "Mon, 23 Mar 2026 03:22:30 GMT",
+      "date": "Sun, 17 May 2026 03:20:46 GMT",
       "connection": "close",
-      "content-length": "1663"
+      "content-length": "1936"
     }
   },
   "tests": {
@@ -50,15 +50,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://sve.derogationbio.inao.gouv.fr/",
-      "redirects": false,
-      "route": [
-        "http://sve.derogationbio.inao.gouv.fr/"
-      ],
-      "statusCode": 200
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
