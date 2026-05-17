@@ -1,26 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A-",
+    "grade": "A+",
     "error": null,
-    "score": 85,
+    "score": 100,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 23 Mar 2026 03:22:16 GMT",
+      "date": "Sun, 17 May 2026 03:20:53 GMT",
       "set-cookie": [
         "tchap_split_version=version_current; Path=/; Max-Age=31540000; SameSite=None; Secure"
       ],
       "content-type": "text/html",
-      "last-modified": "Thu, 19 Mar 2026 08:42:07 GMT",
-      "etag": "W/\"69bbb6df-1847\"",
-      "expires": "Mon, 23 Mar 2026 03:22:16 GMT",
+      "last-modified": "Thu, 07 May 2026 10:21:47 GMT",
+      "etag": "W/\"69fc67bb-17a5\"",
+      "expires": "Sun, 17 May 2026 03:20:53 GMT",
       "cache-control": "max-age=0, no-store",
       "referrer-policy": "no-referrer",
       "x-content-type-options": "nosniff",
-      "content-security-policy": "frame-ancestors 'self' https://mel.din.developpement-durable.gouv.fr",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=2678400",
@@ -32,54 +31,72 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": true,
-      "result": "csp-implemented-with-no-unsafe-default-src-none",
-      "scoreModifier": 10,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
       "data": {
-        "frame-ancestors": [
-          "'self'",
-          "https://mel.din.developpement-durable.gouv.fr"
-        ],
         "default-src": [
           "'none'"
         ],
         "style-src": [
-          "'none'"
+          "'self'",
+          "'unsafe-inline'",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "script-src": [
-          "'none'"
+          "'self'",
+          "'wasm-unsafe-eval'",
+          "https://integration.lasuite.numerique.gouv.fr/",
+          "https://www.gstatic.com/recaptcha/",
+          "https://www.recaptcha.net/recaptcha/"
         ],
         "img-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "connect-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "ipc:"
         ],
         "font-src": [
-          "'none'"
+          "'self'",
+          "data:",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "media-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "child-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "worker-src": [
-          "'none'"
+          "'self'",
+          "blob:",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "frame-src": [
-          "'none'"
+          "*",
+          "blob:",
+          "data:"
         ],
         "form-action": [
-          "'none'"
+          "'self'",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ],
         "manifest-src": [
-          "'none'"
+          "'self'",
+          "https://integration.lasuite.numerique.gouv.fr/"
         ]
       },
-      "http": true,
+      "http": false,
       "meta": true,
       "policy": {
-        "antiClickjacking": true,
+        "antiClickjacking": false,
         "defaultNone": true,
         "insecureBaseUri": true,
         "insecureFormAction": false,
@@ -88,10 +105,10 @@
         "strictDynamic": false,
         "unsafeEval": false,
         "unsafeInline": false,
-        "unsafeInlineStyle": false,
+        "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
-      "numPolicies": 2
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -149,15 +166,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://integration.lasuite.numerique.gouv.fr/api/v1/gaufre.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -169,8 +181,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
