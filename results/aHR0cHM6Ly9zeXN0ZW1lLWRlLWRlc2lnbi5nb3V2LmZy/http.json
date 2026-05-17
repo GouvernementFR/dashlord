@@ -3,33 +3,32 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 50,
+    "score": 55,
     "statusCode": 403,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:20:02 GMT",
+      "date": "Sun, 17 May 2026 03:29:36 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-LezONcvecMr5TKPsJKAggJ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "server": "cloudflare",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=(self)",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9e1ac709fa6e22b7\"",
+      "server-timing": "chlray;desc=\"9fcf89e9098efeb0\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-      "vary": "Accept-Encoding",
-      "server": "cloudflare",
-      "cf-ray": "9e1ac709fa6e22b7-CDG",
+      "vary": "accept-encoding",
+      "cf-ray": "9fcf89e9098efeb0-AMS",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -37,13 +36,68 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
-      "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-lezoncvecmr5tkpsjkaggj'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
