@@ -9,21 +9,24 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:20:02 GMT",
+      "date": "Sun, 17 May 2026 03:26:59 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "52a4b56a-09af-42ac-bcf8-7fe7d9258d3d",
-      "content-security-policy": "default-src 'self'; frame-src 'self' https://tube.numerique.gouv.fr https://toutes-tous-connectes-metabase.osc-secnum-fr1.scalingo.io; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://matomo.incubateur.anct.gouv.fr; worker-src 'self' blob:; connect-src *; img-src * blob: data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; form-action 'self'; base-uri 'self'",
+      "x-request-id": "d3e0c087-9a8e-4770-9156-329f7c5b5338",
+      "content-security-policy": "default-src 'self'; frame-src 'self' https://tube.numerique.gouv.fr https://toutes-tous-connectes-metabase.osc-secnum-fr1.scalingo.io; frame-ancestors 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' blob: https://matomo.incubateur.anct.gouv.fr; script-src-attr 'unsafe-inline'; worker-src 'self' blob:; connect-src 'self' https://matomo.incubateur.anct.gouv.fr https://sentry.incubateur.anct.gouv.fr https://api-adresse.data.gouv.fr https://geo.api.gouv.fr https://data.geopf.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://lannuaire.service-public.fr https://api-lannuaire.service-public.fr https://fcp.integ01.dev-agentconnect.fr https://auth.agentconnect.gouv.fr; img-src 'self' data: blob: https://data.geopf.fr https://openmaptiles.geo.data.gouv.fr https://openmaptiles.github.io https://images.unsplash.com https://matomo.incubateur.anct.gouv.fr; style-src 'self' 'unsafe-inline'; font-src 'self' data:; form-action 'self'; base-uri 'self'; object-src 'none'",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
       "x-powered-by": "Next.js",
-      "cache-control": "s-maxage=31536000, stale-while-revalidate",
-      "etag": "\"dilp0fukdi2hey\"",
-      "strict-transport-security": "max-age=31536000"
+      "cache-control": "s-maxage=31536000",
+      "etag": "\"2yfu0c0tmv11ku\""
     }
   },
   "tests": {
@@ -51,17 +54,36 @@
           "blob:",
           "https://matomo.incubateur.anct.gouv.fr"
         ],
+        "script-src-attr": [
+          "'unsafe-inline'"
+        ],
         "worker-src": [
           "'self'",
           "blob:"
         ],
         "connect-src": [
-          "*"
+          "'self'",
+          "https://api-adresse.data.gouv.fr",
+          "https://api-lannuaire.service-public.fr",
+          "https://auth.agentconnect.gouv.fr",
+          "https://data.geopf.fr",
+          "https://fcp.integ01.dev-agentconnect.fr",
+          "https://geo.api.gouv.fr",
+          "https://lannuaire.service-public.fr",
+          "https://matomo.incubateur.anct.gouv.fr",
+          "https://openmaptiles.geo.data.gouv.fr",
+          "https://openmaptiles.github.io",
+          "https://sentry.incubateur.anct.gouv.fr"
         ],
         "img-src": [
-          "*",
+          "'self'",
           "blob:",
-          "data:"
+          "data:",
+          "https://data.geopf.fr",
+          "https://images.unsplash.com",
+          "https://matomo.incubateur.anct.gouv.fr",
+          "https://openmaptiles.geo.data.gouv.fr",
+          "https://openmaptiles.github.io"
         ],
         "style-src": [
           "'self'",
@@ -76,6 +98,9 @@
         ],
         "base-uri": [
           "'self'"
+        ],
+        "object-src": [
+          "'none'"
         ]
       },
       "http": true,
@@ -137,10 +162,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
