@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 55,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 25 Mar 2026 03:20:09 GMT",
+      "date": "Sun, 17 May 2026 03:30:06 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -19,7 +19,7 @@
       "strict-transport-security": "max-age=63072000",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "BIGipServerbu/aPWRDnn/srDK5TSO+LQ=!W2Hu1jzm7zQeE60cUuXzBVxHRHRyQzSzKBzsP9MNJEQORF0SCjCW3gAdPpavcSQYKgynxXx/Z9zqYHb6E7j4caZLXViWv1ap6llJw/k=; path=/; Httponly; Secure"
+        "BIGipServerbu/aPWRDnn/srDK5TSO+LQ=!zsl2l0eSWGwfeMocUuXzBVxHRHRyQxkrlKH1rPSWLjJLZaS04WtxWhkXDW8yV18VXLjoM8BAsxFe7pk9ltniO9Ep3uBqLRxEq0HdnuA=; path=/; Httponly; Secure"
       ]
     }
   },
@@ -79,12 +79,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
