@@ -1,27 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "B",
     "error": null,
-    "score": 40,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:20:11 GMT",
+      "date": "Tue, 19 May 2026 03:22:51 GMT",
       "server": "Apache",
-      "x-powered-by": "PHP/8.3.29",
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate",
-      "pragma": "no-cache",
-      "link": "<https://www.telecom-sudparis.eu/wp-json/>; rel=\"https://api.w.org/\", <https://www.telecom-sudparis.eu/wp-json/wp/v2/pages/262>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.telecom-sudparis.eu/>; rel=shortlink",
-      "set-cookie": [
-        "PHPSESSID=m052085b90crpo2dobdlk590bg; path=/"
-      ],
+      "x-powered-by": "PHP/8.3.31",
       "x-frame-options": "DENY",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
+      "last-modified": "Tue, 19 May 2026 03:20:02 GMT",
+      "cache-control": "max-age=0",
+      "expires": "Tue, 19 May 2026 03:22:51 GMT",
       "vary": "Accept-Encoding,User-Agent",
       "access-control-allow-origin": "https://www.virtual-tour-360.online/visite-virtuelle/telecom-sudparis/",
       "connection": "close",
@@ -43,16 +39,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-httponly-flag",
-      "scoreModifier": -30,
-      "data": {
-        "PHPSESSID": {
-          "domain": "www.telecom-sudparis.eu",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
