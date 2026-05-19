@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 10,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-type": "text/html; charset=utf-8",
@@ -14,7 +14,7 @@
       "last-modified": "Mon, 08 Dec 2025 08:55:21 GMT",
       "server": "Caddy",
       "vary": "Accept-Encoding",
-      "date": "Fri, 27 Mar 2026 03:26:20 GMT",
+      "date": "Tue, 19 May 2026 03:29:20 GMT",
       "content-length": "655",
       "strict-transport-security": "max-age=31536000;",
       "connection": "close"
@@ -49,12 +49,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://vizagreste.agriculture.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://vizagreste.agriculture.gouv.fr/",
+        "https://vizagreste.agriculture.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -68,12 +71,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000;",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
