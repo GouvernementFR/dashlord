@@ -3,25 +3,24 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:17:06 GMT",
-      "server": "Apache",
-      "vary": "Accept-Encoding,Cookie",
-      "cache-control": "max-age=3, must-revalidate, max-age=3600, private",
-      "last-modified": "Wed, 25 Mar 2026 03:11:34 GMT",
-      "accept-ranges": "none",
-      "expires": "Wed, 25 Mar 2026 04:17:06 GMT",
-      "connection": "close",
-      "transfer-encoding": "chunked",
+      "cache-control": "max-age=3, must-revalidate",
+      "content-length": "57044",
       "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 19 May 2026 03:22:44 GMT",
+      "last-modified": "Tue, 19 May 2026 02:50:29 GMT",
+      "server": "Apache/2.4.66 (Debian)",
       "set-cookie": [
-        "pweb-10505=back04; path=/"
-      ]
+        "sticky-pweb=b55116d27a4d2b20; Path=/"
+      ],
+      "vary": "Accept-Encoding,Cookie",
+      "x-powered-by": "PHP/8.3.30",
+      "connection": "close"
     }
   },
   "tests": {
@@ -42,7 +41,7 @@
       "result": "cookies-without-secure-flag",
       "scoreModifier": -20,
       "data": {
-        "pweb-10505": {
+        "sticky-pweb": {
           "domain": "www.univ-lorraine.fr",
           "path": "/",
           "port": null
@@ -93,15 +92,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//www.univ-lorraine.fr/wp-content/uploads/pum/pum-site-scripts-1.js?defer&generated=1768381049&ver=1.21.5": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
