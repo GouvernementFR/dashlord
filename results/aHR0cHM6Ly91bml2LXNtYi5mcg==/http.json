@@ -1,31 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "D",
     "error": null,
-    "score": 45,
-    "statusCode": 200,
+    "score": 30,
+    "statusCode": 403,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 25 Mar 2026 03:21:30 GMT",
-      "server": "Apache",
-      "x-xss-protection": "1; mode=block",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "origin-when-cross-origin",
-      "upgrade": "h2",
-      "connection": "Upgrade",
-      "last-modified": "Tue, 24 Mar 2026 15:17:51 GMT",
-      "cache-control": "max-age=0",
-      "expires": "Wed, 25 Mar 2026 03:21:30 GMT",
-      "vary": "Accept-Encoding",
-      "strict-transport-security": "max-age=31536000",
-      "content-length": "23976",
-      "content-type": "text/html; charset=UTF-8",
-      "set-cookie": [
-        "SRVNAME=s1; path=/"
-      ]
+      "cache-control": "no-cache",
+      "content-type": "text/html"
     }
   },
   "tests": {
@@ -42,16 +27,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
-      "data": {
-        "SRVNAME": {
-          "domain": "www.univ-smb.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -66,48 +45,47 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.univ-smb.fr/",
+      "destination": "https://univ-smb.fr/",
       "redirects": true,
       "route": [
         "http://univ-smb.fr/",
-        "https://univ-smb.fr/",
-        "https://www.univ-smb.fr/"
+        "https://univ-smb.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "origin-when-cross-origin",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
