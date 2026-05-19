@@ -1,37 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 35,
+    "score": 10,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Mar 2026 03:27:00 GMT",
-      "server": "nginx",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "20346",
-      "cache-control": "max-age=900, public,no-transform",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "cross-origin-embedder-policy": "unsafe-none",
-      "cross-origin-resource-policy": "unsafe-none",
-      "cross-origin-opener-policy": "unsafe-none",
-      "content-security-policy-report-only": "report-uri /report-csp-violation",
-      "strict-transport-security": "max-age=1000",
-      "from-origin": "same",
-      "referrer-policy": "no-referrer, no-referrer-when-downgrade",
-      "expect-ct": "max-age=86400",
-      "last-modified": "Fri, 27 Mar 2026 03:00:37 GMT",
-      "etag": "\"1774580437-gzip\"",
+      "date": "Tue, 19 May 2026 03:32:02 GMT",
+      "set-cookie": [
+        "bot_mitigation_cookie=PLOUIT4SYEMSVXFVABTK4FKMSC3FHLD6CRV6ZRIXUFJJ2PV4JGIHL4T4XCKUE7NXZSEQRFIGZZXTKF2AF3JK2S75BJYK53VLO7IDLNH6ZKWJS2LFG2NQ====; Path=/; SameSite=lax"
+      ],
+      "content-type": "text/html",
+      "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "x-xss-protection": "1; mode=block",
-      "access-control-allow-origin": "*",
-      "x-cp-via": "C3-d4139478-78bfb750",
+      "content-length": "201",
+      "x-cp-via": "C3-49b6a4bd-76a95742",
       "connection": "close"
     }
   },
@@ -39,7 +25,7 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented-but-reporting-enabled",
+      "result": "csp-not-implemented",
       "scoreModifier": -25,
       "data": null,
       "http": false,
@@ -53,10 +39,11 @@
       "result": "cookies-without-secure-flag",
       "scoreModifier": -20,
       "data": {
-        "dtCookiezqmpvejo": {
+        "bot_mitigation_cookie": {
           "domain": "vie-publique.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
@@ -64,42 +51,40 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.vie-publique.fr/",
+      "destination": "https://vie-publique.fr/",
       "redirects": true,
       "route": [
         "http://vie-publique.fr/",
-        "https://vie-publique.fr/",
-        "http://www.vie-publique.fr/",
-        "https://www.vie-publique.fr/"
+        "https://vie-publique.fr/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer, no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=1000",
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 1000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -112,25 +97,25 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
-      "pass": false,
-      "result": "corp-header-invalid",
-      "scoreModifier": -5,
-      "data": "unsafe-none",
-      "http": true,
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     }
   }
