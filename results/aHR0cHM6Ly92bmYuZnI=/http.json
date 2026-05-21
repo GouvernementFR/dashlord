@@ -9,15 +9,15 @@
     "testsPassed": 3,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Mar 2026 03:26:34 GMT",
-      "last-modified": "Thu, 26 Mar 2026 14:39:23 GMT",
+      "date": "Thu, 21 May 2026 03:28:54 GMT",
+      "last-modified": "Wed, 20 May 2026 22:54:37 GMT",
       "vary": "Accept-Encoding",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8",
       "set-cookie": [
-        "Persist=!rrfZtYnUxOw6dH8C3jPlc7w2ZmDUZIMbybOVjUWt4/NNchuewOPtijA6rVYdsE0XgP/UPqjBXHBXRTU=; path=/; Httponly; Secure",
-        "f5avraaaaaaaaaaaaaaaa_session_=KPEDGOEBGIFIAHDFAFFOMDINMFBDCDBOHCFGJPCDNBAJBMBMCDIJKIPAOGEGAMMNMKODNCIDPIJCCFEFDPKAGFBDJPKKHIHOBGCLGEODFONGKOCKLDCFMBFLHJBHGNLN; HttpOnly; secure;",
-        "TS017fc20b=01b14d1a069f515f778bb60c07fd986ec62a504cc8bb8d91803aa521cf25ef4977013c2ceb1a25b9b65be15c250d8285eb2dd5de72; Path=/"
+        "Persist=!zP0Q9KQhxYIu4BwC3jPlc7w2ZmDUZJy60itzcuQkEz7WaFUahC/0N14Wqgs27y/kekKa1D2bM/mwzY8=; path=/; Httponly; Secure",
+        "f5avraaaaaaaaaaaaaaaa_session_=PIBLIJCKMOEDHNGLFJGGIMDHIBBBMJLBDLHLIOJAOIMPHIGCBKPNGAHONIMDNOPPNBIDNMIJLLCLLODGLGCAPAMIKHJJFCAOOEHHDBHBJDAAMHJBPAGGBOEPGBDEPCIA; HttpOnly; secure;",
+        "TS017fc20b=01b14d1a06802bb42b806890e6fc3385844b9a882d9ce88bc0f9f083e5623bb0c26e45d7a41b74a4e7782c8bc37c88eb483fb14e6e; Path=/"
       ],
       "transfer-encoding": "chunked"
     }
@@ -107,8 +107,8 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
       "data": {
         "https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.19.0/tarteaucitron.min.js": {
           "crossorigin": null,
@@ -119,6 +119,10 @@
           "integrity": null
         },
         "https://unpkg.com/aos@2.3.1/dist/aos.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//www.juicer.io/embed/vnf-fr/wp-plugin-1-12.js?nojquery=true&per=9&pages=1": {
           "crossorigin": null,
           "integrity": null
         }
