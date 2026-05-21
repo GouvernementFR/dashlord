@@ -1,30 +1,31 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Mar 2026 13:17:14 GMT",
+      "date": "Wed, 20 May 2026 04:11:30 GMT",
+      "set-cookie": [
+        "cookiedef=!sTPekm9CAOuZE4GecT1PYrEDAreRiot49eczd8LAcW3dxKq0Wg1JsasZKKSM9N4UMud0bw4iaBGcTko=; path=/; Httponly",
+        "SESSIONID=!90QrygIak0WRo8tXbgsyYa9QVNu6jCnJFAvpR9W/QY4e1IxAsHeF1LZ+x5Xr+J8PHNs/HN+Bp/2SUw==; path=/; Httponly; Secure"
+      ],
       "cache-control": "must-revalidate, no-cache, private",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "content-length": "45006",
+      "content-length": "45122",
       "content-type": "text/html; charset=UTF-8",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "DENY",
-      "connection": "close",
-      "set-cookie": [
-        "SESSIONID=!sskXZCuY4Q/jgQlXbgsyYa9QVNu6jOrZS+ArkzTcSCloIdpbkyNiHyDrzD18nMBbrW1m+tM1csvVUg==; path=/; Httponly; Secure"
-      ]
+      "connection": "close"
     }
   },
   "tests": {
@@ -41,10 +42,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
+        "cookiedef": {
+          "domain": "www.le-smv.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
         "SESSIONID": {
           "domain": "www.le-smv.gouv.fr",
           "httponly": true,
