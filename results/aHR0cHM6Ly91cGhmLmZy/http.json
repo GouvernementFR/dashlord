@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Mar 2026 03:20:15 GMT",
-      "server": "Apache/2.4.66 (Debian)",
+      "date": "Thu, 21 May 2026 03:24:52 GMT",
+      "server": "Apache/2.4.67 (Debian)",
       "x-content-type-options": "nosniff, nosniff",
       "cache-control": "must-revalidate, no-cache, private",
       "x-drupal-dynamic-cache": "MISS",
@@ -58,11 +58,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://uphf.fr/",
+      "destination": "https://www.uphf.fr/",
       "redirects": true,
       "route": [
         "http://uphf.fr/",
-        "https://uphf.fr/"
+        "https://uphf.fr/",
+        "https://www.uphf.fr/"
       ],
       "statusCode": 200
     },
@@ -88,10 +89,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
