@@ -1,41 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D",
     "error": null,
-    "score": 70,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 28 Mar 2026 15:06:46 GMT",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "strict-transport-security": "max-age=16070400; includeSubDomains",
-      "last-modified": "Sat, 28 Mar 2026 15:06:45 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "x-url": "/annuaire",
-      "x-host": "www.justice.gouv.fr",
-      "x-cacheable": "YES",
-      "x-cache-ttl": "86400.000",
-      "etag": "W/\"1774710405\"",
-      "vary": "Cookie,Accept-Encoding",
-      "x-cache": "HIT",
-      "x-cache-ttl-remaining": "42333.586",
-      "x-cache-age": "44066",
-      "x-cache-hits": "819",
-      "cache-control": "max-age=120, public",
-      "accept-ranges": "bytes",
-      "content-length": "12673",
-      "set-cookie": [
-        "ROUTEID=.route1; path=/; Domain=.jug.intranet.justice.gouv.fr; max-age=3600",
-        "TS01509fcf=01a6efdeadd36da2be716c6c9ecdda1a0b664f0ed163daae2a61b95de2c776a409874438fb4f6d23d0b46569a0276e53424a3ca06aa66c20c42119a6cd0df99c164bd9dc59; Path=/",
-        "TS01c6e65a=01a6efdeade39ca667725a257f32f77f7cfec04b0563daae2a61b95de2c776a409874438fb4f6d23d0b46569a0276e53424a3ca06a1e92451a86573d24ac7b2eef06ee8d531cbb601c9f924cea3981884a01182732; path=/; domain=.jug.intranet.justice.gouv.fr"
-      ],
-      "connection": "close"
+      "server": "BigIP",
+      "connection": "close",
+      "content-length": "15891"
     }
   },
   "tests": {
@@ -52,23 +28,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
-      "data": {
-        "BIGipServerE9qpQewFM5y8ZfZBvsQP+A": {
-          "domain": "www.justice.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS01509fcf": {
-          "domain": "www.justice.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -83,13 +46,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.justice.gouv.fr/annuaire",
+      "destination": "https://www.annuaires.justice.gouv.fr/",
       "redirects": true,
       "route": [
         "http://www.annuaires.justice.gouv.fr/",
-        "https://www.annuaires.justice.gouv.fr/",
-        "https://www.justice.gouv.fr/annuaire/",
-        "https://www.justice.gouv.fr/annuaire"
+        "https://www.annuaires.justice.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -104,35 +65,35 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=16070400; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 16070400,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-response-not-html",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
