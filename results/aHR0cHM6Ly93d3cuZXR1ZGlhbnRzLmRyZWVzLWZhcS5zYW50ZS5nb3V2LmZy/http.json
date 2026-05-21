@@ -4,12 +4,12 @@
     "grade": "B",
     "error": null,
     "score": 75,
-    "statusCode": 200,
+    "statusCode": 403,
     "testsFailed": 1,
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 20 Mar 2026 23:30:43 GMT",
+      "date": "Wed, 06 May 2026 02:35:19 GMT",
       "cache-control": "must-revalidate, no-cache, private",
       "x-drupal-dynamic-cache": "HIT",
       "content-language": "fr",
@@ -17,13 +17,12 @@
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "vary": "Accept-Encoding",
-      "content-length": "3297",
+      "x-drupal-cache": "MISS",
+      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-drees-faq2.cegedim.cloud-http=!HHvzZiYXYkZpRncDckz+I3ZLEj8G8jntuwhwgYmj8Fx/pv04949EuhHh7PzIz7OSDZk/RVL5B4UPaYmbA0ksvH0+uxA=; path=/; Httponly; Secure"
+        "BIGipServerpool-drees-faq2.cegedim.cloud-http=!Vz8PKvmC/Kg7+tp3Zj8tcwec1Snos5jY+SJEE3SShDxq14Uyk6BfOU1yoWM13G+Iy7aIX7DBhawGB3wxKxOaF6RtH0A=; path=/; Httponly; Secure"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -74,7 +73,7 @@
         "http://www.etudiants.drees-faq.sante.gouv.fr/",
         "https://www.etudiants.drees-faq.sante.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
