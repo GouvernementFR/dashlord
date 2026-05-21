@@ -10,21 +10,21 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 29 Mar 2026 03:26:28 GMT",
+      "date": "Thu, 21 May 2026 03:35:36 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "max-age=600",
-      "x-drupal-dynamic-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 29 Mar 2026 03:36:28 GMT",
-      "last-modified": "Mon, 23 Mar 2026 09:21:11 GMT",
-      "etag": "\"1774257671-gzip\"",
+      "expires": "Thu, 21 May 2026 03:45:36 GMT",
+      "last-modified": "Mon, 11 May 2026 08:31:03 GMT",
+      "etag": "\"1778488263-gzip\"",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "HIT",
-      "x-proxy-cache": "EXPIRED",
+      "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:;",
       "referrer-policy": "same-origin",
       "allow": "GET, POST, HEAD",
@@ -36,11 +36,11 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3059895=Vye8AOjiSdqhl5ICcneH+OObyGkAAAAAQUIPAAAAAADTu83rOksRIv5UxVFgY9el; expires=Sun, 28 Mar 2027 06:38:05 GMT; HttpOnly; path=/; Domain=.bibliotheque-initiatives.fonction-publique.gouv.fr; Secure; SameSite=None",
-        "incap_ses_363_3059895=ihaRKIGMiAvTdbxOwqIJBeSbyGkAAAAABjcEMosFa9lcf6BxXN2IzQ==; path=/; Domain=.bibliotheque-initiatives.fonction-publique.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3059895=9vYvbtLqSeGWijZ1mhXQPYZ9DmoAAAAAQUIPAAAAAAD00lmx+CQgdtO5gVw2o/Pj; expires=Thu, 20 May 2027 06:34:09 GMT; HttpOnly; path=/; Domain=.bibliotheque-initiatives.fonction-publique.gouv.fr; Secure; SameSite=None",
+        "incap_ses_363_3059895=0JX1OVU+jSwmTQnnzaIJBYd9DmoAAAAAe6x6hlGYxP7A5MmQgti7Gw==; path=/; Domain=.bibliotheque-initiatives.fonction-publique.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "47-90406593-90406594 NNNN CT(170 350 0) RT(1774754787810 8) q(0 0 5 2) r(8 8) U12"
+      "x-iinfo": "51-69362083-69362088 NNNN CT(171 351 0) RT(1779334535652 6) q(0 0 5 1) r(7 7) U12"
     }
   },
   "tests": {
@@ -92,7 +92,7 @@
       "data": {
         "visid_incap_3059895": {
           "domain": "bibliotheque-initiatives.fonction-publique.gouv.fr",
-          "expires": "2027-03-28T06:38:05.000Z",
+          "expires": "2027-05-20T06:34:09.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
