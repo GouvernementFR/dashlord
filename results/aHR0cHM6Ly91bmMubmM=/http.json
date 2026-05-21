@@ -9,20 +9,21 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 27 Mar 2026 03:20:18 GMT",
-      "server": "Apache",
-      "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000; includeSubDomains",
+      "server": "nginx",
+      "date": "Thu, 21 May 2026 03:24:36 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
       "x-pingback": "https://www.unc.nc/xmlrpc.php",
       "link": "<https://www.unc.nc/wp-json/>; rel=\"https://api.w.org/\", <https://www.unc.nc/wp-json/wp/v2/pages/2>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.unc.nc/>; rel=shortlink",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "sameorigin",
-      "content-type": "text/html; charset=UTF-8",
-      "content-security-policy": "frame-ancestors 'self' *.unc.nc *.univ-nc.nc *.qa.lfk.nc",
       "set-cookie": [
-        "pll_language=fr; expires=Sat, 27 Mar 2027 03:20:19 GMT; Max-Age=31536000; secure; SameSite=Lax; HttpOnly; Secure; HttpOnly"
+        "pll_language=fr; expires=Fri, 21 May 2027 03:24:35 GMT; Max-Age=31536000; secure; SameSite=Lax"
       ],
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-frame-options": "sameorigin",
+      "content-security-policy": "frame-ancestors 'self' *.unc.nc *.univ-nc.nc *.qa.lfk.nc *.cresica.nc",
+      "referrer-policy": "strict-origin-when-cross-origin"
     }
   },
   "tests": {
@@ -34,6 +35,7 @@
       "data": {
         "frame-ancestors": [
           "'self'",
+          "*.cresica.nc",
           "*.qa.lfk.nc",
           "*.unc.nc",
           "*.univ-nc.nc"
@@ -64,8 +66,7 @@
       "data": {
         "pll_language": {
           "domain": "www.unc.nc",
-          "expires": "2027-03-27T03:20:19.000Z",
-          "httponly": true,
+          "expires": "2027-05-21T03:24:35.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -84,13 +85,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.unc.nc/",
       "redirects": true,
       "route": [
         "http://unc.nc/",
+        "https://unc.nc/",
         "https://www.unc.nc/"
       ],
       "statusCode": 200
@@ -98,10 +100,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -121,7 +123,7 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
-        "//platform-api.sharethis.com/js/sharethis.js?ver=8.5.3#property=63924ff5abfd230012e66b7d&product=gdpr-compliance-tool-v2&source=simple-share-buttons-adder-wordpress": {
+        "//platform-api.sharethis.com/js/sharethis.js?ver=8.5.4#property=63924ff5abfd230012e66b7d&product=gdpr-compliance-tool-v2&source=simple-share-buttons-adder-wordpress": {
           "crossorigin": null,
           "integrity": null
         },
@@ -133,10 +135,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
