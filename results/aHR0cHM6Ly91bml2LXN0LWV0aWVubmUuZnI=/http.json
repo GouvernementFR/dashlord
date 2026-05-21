@@ -1,29 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "B",
     "error": null,
-    "score": 80,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 27 Mar 2026 03:24:27 GMT",
+      "date": "Thu, 21 May 2026 03:24:30 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "13032",
+      "content-length": "13969",
       "connection": "close",
-      "last-modified": "Fri, 27 Mar 2026 01:00:10 GMT",
-      "etag": "\"1114f-64df705d50a1b-gzip\"",
+      "content-security-policy": "default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https: data: ms-word: ms-powerpoint: ms-excel: ms-visio: ms-access: ms-project: ms-publisher: ms-infopath: vnd.libreoffice.command:, frame-ancestors 'self' https://mydrive.univ-st-etienne.fr https://mydrive-ng.univ-st-etienne.fr https://laboratoirehubertcurien.univ-st-etienne.fr",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-frame-options": "ALLOW-FROM https://docs.ametys.org, SAMEORIGIN",
+      "x-xss-protection": "1; mode=block, 1; mode=block",
+      "x-content-type-options": "nosniff, nosniff",
+      "permissions-policy": "accelerometer=(), autoplay=*, battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), usb=(), web-share=(), xr-spatial-tracking=()",
+      "last-modified": "Thu, 21 May 2026 01:00:05 GMT",
+      "etag": "\"12cad-652496ed05028-gzip\"",
       "accept-ranges": "bytes",
+      "cache-control": "max-age=0",
+      "expires": "Thu, 21 May 2026 03:24:30 GMT",
       "vary": "Accept-Encoding",
       "content-language": "fr",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "x-frame-options": "SAMEORIGIN",
-      "content-security-policy": "frame-ancestors 'self' https://mydrive.univ-st-etienne.fr https://mydrive-ng.univ-st-etienne.fr https://laboratoirehubertcurien.univ-st-etienne.fr",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block"
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
     }
   },
   "tests": {
@@ -33,24 +37,51 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
-        "frame-ancestors": [
+        "default-src": [
           "'self'",
-          "https://laboratoirehubertcurien.univ-st-etienne.fr",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "frame-src": [
+          "'self'",
+          "data:",
+          "frame-ancestors",
+          "https:",
           "https://mydrive-ng.univ-st-etienne.fr",
-          "https://mydrive.univ-st-etienne.fr"
+          "https://mydrive.univ-st-etienne.fr",
+          "ms-access:",
+          "ms-excel:",
+          "ms-infopath:",
+          "ms-powerpoint:",
+          "ms-project:",
+          "ms-publisher:",
+          "ms-visio:",
+          "ms-word:",
+          "vnd.libreoffice.command:,"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": true,
+        "antiClickjacking": false,
         "defaultNone": false,
         "insecureBaseUri": true,
         "insecureFormAction": true,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": false,
+        "unsafeEval": true,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": true
@@ -83,6 +114,7 @@
         "http://univ-st-etienne.fr/",
         "https://univ-st-etienne.fr/",
         "https://www.univ-st-etienne.fr/",
+        "http://www.univ-st-etienne.fr/fr/index.html",
         "https://www.univ-st-etienne.fr/fr/index.html"
       ],
       "statusCode": 200
@@ -90,10 +122,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -116,17 +148,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "result": "x-frame-options-allow-from-origin",
+      "scoreModifier": 0,
+      "data": "ALLOW-FROM https://docs.ametys.org, SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
