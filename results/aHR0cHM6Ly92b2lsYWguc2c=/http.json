@@ -1,27 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
-    "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 0,
+    "statusCode": 202,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 29 Mar 2026 03:22:30 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "date": "Thu, 21 May 2026 03:29:06 GMT",
+      "content-type": "text/html",
+      "content-length": "170",
       "connection": "close",
-      "vary": "Accept-Encoding",
-      "x-cache-enabled": "True",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "link": "<https://www.voilah.sg/wp-json/>; rel=\"https://api.w.org/\", <https://www.voilah.sg/wp-json/wp/v2/pages/7>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.voilah.sg/>; rel=shortlink",
-      "x-httpd-modphp": "1",
+      "sg-captcha": "challenge",
+      "x-robots-tag": "noindex",
+      "set-cookie": [
+        "nevercache-b39818=Y;Max-Age=-1"
+      ],
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "cache-control": "no-store,no-cache,max-age=0",
       "host-header": "8441280b0c35cbc1147f8ba998a563a7",
-      "x-proxy-cache": "HIT"
+      "x-proxy-cache-info": "DT:1"
     }
   },
   "tests": {
@@ -38,10 +39,17 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "nevercache-b39818": {
+          "domain": "voilah.sg",
+          "max-age": -1,
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -53,17 +61,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://www.voilah.sg/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://voilah.sg/",
+      "redirects": false,
       "route": [
-        "http://voilah.sg/",
-        "https://voilah.sg/",
-        "https://www.voilah.sg/"
+        "http://voilah.sg/"
       ],
-      "statusCode": 200
+      "statusCode": 202
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -87,26 +93,17 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-113057058-1": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.google.com/recaptcha/api.js?hl=en&ver=6.9.4&render=explicit": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
