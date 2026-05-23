@@ -9,25 +9,25 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
+      "date": "Sat, 23 May 2026 03:21:27 GMT",
       "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
-      "last-modified": "Mon, 21 Jul 2025 15:03:42 GMT",
+      "last-modified": "Thu, 21 May 2026 10:40:37 GMT",
       "accept-ranges": "bytes",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "0",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
       "pragma": "no-cache",
       "expires": "0",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-frame-options": "DENY",
       "content-security-policy": "default-src 'self' 'nonce-dsfr-index' 'nonce-javascript-index' 'nonce-roboto-index' 'nonce-icons-index' 'nonce-fontsgstatic'; object-src 'none';img-src 'self' data:; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' data: fonts.gstatic.com; connect-src 'self' https://api-adresse.data.gouv.fr/ https://geo.api.gouv.fr/ https://agadir-app.rct01.kleegroup.com/ https://*.auth.integ-app.daccord-ssg.net https://*.auth.valid-app.daccord-ssg.net; script-src 'self' 'nonce-dsfr-index' 'nonce-javascript-index' 'nonce-roboto-index' 'nonce-icons-index' 'nonce-fontsgstatic'",
       "content-type": "text/html;charset=UTF-8",
       "content-language": "en-US",
-      "date": "Tue, 31 Mar 2026 03:30:09 GMT",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-accords-depot-prod.cegedim.cloud-tcp8080=!YJR4Fw6ipgjBM24Dckz+I3ZLEj8G8odZAlQyWKV3j2YiGDz6CNovrd8xuGFpU/2fn/0kLxzKV9NuR+MIYhJQnMYGXb0W; path=/; Httponly; Secure",
-        "TS01ac8ac8=01352d38114ed685a772f4716ca4ddbd8e2668808a0f4ce25f0524f7f4ad2cd7eb2121ebd745d28099b487aa21a588c5ad5a7a6525; Path=/; Secure; HttpOnly"
+        "BIGipServerpool-accords-depot-prod2.cegedim.cloud-tcp80=!Xuj2usuGg98UMZN3Zj8tcwec1Snosy42Qo7+DmX/aTJ6QKMurSvs/B1yJUL87lQHB0rbeK2ixyeqePdhonKlCpWyzc4=; path=/; Httponly; Secure",
+        "TS01ac8ac8=01352d38119ffe8159b765e8edeca9c49a1b82e12366f126cc2adcf72acc4c175d8d7eeb14472bf49458fa5f6e0b01354d1b088035; Path=/; Secure; HttpOnly"
       ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
       "transfer-encoding": "chunked"
     }
   },
@@ -102,7 +102,7 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-accords-depot-prod.cegedim.cloud-tcp8080": {
+        "BIGipServerpool-accords-depot-prod2.cegedim.cloud-tcp80": {
           "domain": "accords-depot.travail.gouv.fr",
           "httponly": true,
           "path": "/",
