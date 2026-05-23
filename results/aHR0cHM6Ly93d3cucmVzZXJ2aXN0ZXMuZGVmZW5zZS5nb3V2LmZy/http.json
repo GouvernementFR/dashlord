@@ -3,19 +3,20 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 31 Mar 2026 03:31:34 GMT",
+      "date": "Sat, 23 May 2026 03:21:32 GMT",
       "set-cookie": [
-        "PHPSESSID=1a3eaeddf6cb79b957c0a737cacabfb5; expires=Tue, 31 Mar 2026 13:31:34 GMT; Max-Age=36000; path=/; secure; httponly; samesite=lax",
-        "SESSIONID=!ZlQ8FhVMY+3pqSBXbgsyYa9QVNu6jNFW9DchIqWuJzwAr2b92cL0X1I3ajaCML+kvm0qOf6joMlyDQ==; path=/; Httponly; Secure"
+        "PHPSESSID=f227150703dcc0474e6503b6c62032e1; expires=Sat, 23 May 2026 13:21:32 GMT; Max-Age=36000; path=/; secure; httponly; samesite=lax",
+        "cookiedef=!mvNUr1wcsGVz2oOecT1PYrEDAreRinWDn1XudBUvKwvQZcfKcl39DYChOrMqK6+rfyGnwddDqy2EYQ==; path=/; Httponly",
+        "SESSIONID=!HzvqtN1q7MEXwhBXbgsyYa9QVNu6jP/OA5wJasraGfcqS9Pl7g04HH8hGuQBUTbZrXC9zqMV8R13rw==; path=/; Httponly; Secure"
       ],
       "cache-control": "max-age=0, must-revalidate, private",
-      "expires": "Tue, 31 Mar 2026 03:31:34 GMT",
+      "expires": "Sat, 23 May 2026 03:21:32 GMT",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=UTF-8",
       "referrer-policy": "strict-origin-when-cross-origin",
@@ -39,19 +40,25 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "PHPSESSID": {
           "domain": "www.reservistes.defense.gouv.fr",
-          "expires": "2026-03-31T13:31:34.000Z",
+          "expires": "2026-05-23T13:21:32.000Z",
           "httponly": true,
           "max-age": 36000,
           "path": "/",
           "port": null,
           "samesite": "lax",
           "secure": true
+        },
+        "cookiedef": {
+          "domain": "www.reservistes.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
         },
         "SESSIONID": {
           "domain": "www.reservistes.defense.gouv.fr",
