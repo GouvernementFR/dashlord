@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 29 Mar 2026 03:32:06 GMT",
+      "date": "Sat, 23 May 2026 03:20:24 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
       "link": "<https://www.cne.developpement-durable.gouv.fr/local/cache-css/a5e871158030e5b81b3d819bd876b7e0.css?1773314519>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sun, 29 Mar 2026 03:32:05 GMT",
+      "last-modified": "Sat, 23 May 2026 03:20:23 GMT",
       "set-cookie": [
-        "SRV=f5943c2e-a768-4306-bf9c-16f5c3b17c9c; path=/"
+        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -62,15 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://www.cne.developpement-durable.gouv.fr/",
+      "destination": "http://www.cne.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://www.cne.developpement-durable.gouv.fr/",
-        "https://www.cne.developpement-durable.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
