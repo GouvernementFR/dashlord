@@ -11,11 +11,14 @@
     "responseHeaders": {
       "cache-control": "private",
       "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "ASP.NET_SessionId=olpnad4tydikjebhag2t4ka0; HttpOnly; path=/; HttpOnly; SameSite=Lax; Secure"
+      ],
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "date": "Tue, 31 Mar 2026 03:29:53 GMT",
-      "content-length": "2501",
+      "date": "Sat, 23 May 2026 03:20:12 GMT",
+      "content-length": "18527",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -61,15 +64,14 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx",
+      "destination": "https://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
       "redirects": true,
       "route": [
         "http://www.retraite-sup-collecte.sante.gouv.fr/",
         "https://www.retraite-sup-collecte.sante.gouv.fr/",
         "http://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
         "https://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
-        "https://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
-        "https://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx"
+        "https://www.retraite-sup-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f"
       ],
       "statusCode": 200
     },
@@ -96,7 +98,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
