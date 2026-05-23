@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 31 Mar 2026 03:22:12 GMT",
+      "date": "Sat, 23 May 2026 03:20:23 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
       "link": "<https://www.seam.polynesie-francaise.mer.gouv.fr/local/cache-css/ef5ed3733d0e7be5df97683d0c5904a6.css?1773308906>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Tue, 31 Mar 2026 03:22:09 GMT",
+      "last-modified": "Sat, 23 May 2026 03:20:22 GMT",
       "set-cookie": [
-        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
+        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -62,16 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://www.seam.polynesie-francaise.mer.gouv.fr/",
+      "destination": "https://www.sam.polynesie-francaise.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://www.sam.polynesie-francaise.developpement-durable.gouv.fr/",
-        "https://www.sam.polynesie-francaise.developpement-durable.gouv.fr/",
-        "https://www.seam.polynesie-francaise.mer.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
