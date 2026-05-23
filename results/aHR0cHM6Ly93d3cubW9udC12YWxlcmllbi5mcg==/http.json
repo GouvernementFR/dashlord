@@ -9,15 +9,15 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 31 Mar 2026 03:21:30 GMT",
+      "date": "Sat, 23 May 2026 03:21:37 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=P7AUQZAM4VAQMGOKOLPE6G5COBF4JD4UIMB4DYJQIY7I6LVQXNUDYUCYRK5WYRA7VWYXP5T3PIR5PP2HPFOTZGDLJDLF236PDYLFLIA4WNWA7AWQOJ5A====; Path=/"
+        "bot_mitigation_cookie=DBXITBKLTMHEKSHSVCU234YYZQQZNJI25ZBLLGH5CJW3NENIJPC5Y3RQZ7PISXDUV4LF2M2JZGMJGKWY2LSAHAJN72JUOVSD6IFHPHDODJEKW3JZTRRA====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "242",
-      "x-cp-via": "C2-14c18700-821a75a4",
+      "content-length": "243",
+      "x-cp-via": "C2-d3a36f2a-def92804",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "www.onac-vg.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
