@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "F",
     "error": null,
-    "score": 45,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 31 Mar 2026 03:24:12 GMT",
+      "date": "Sat, 23 May 2026 03:21:39 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.dre.paca.developpement-durable.gouv.fr/local/cache-css/c68c5fcd12ceee116d2b0896cc33499e.css?1773309210>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.dre.paca.developpement-durable.gouv.fr/local/cache-css/c68c5fcd12ceee116d2b0896cc33499e.css?1776751811>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Tue, 31 Mar 2026 03:24:11 GMT",
+      "last-modified": "Sat, 23 May 2026 03:21:36 GMT",
       "set-cookie": [
-        "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
+        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -41,8 +41,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "SRV": {
           "domain": "www.dre.paca.developpement-durable.gouv.fr",
@@ -62,12 +62,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://www.dre.paca.developpement-durable.gouv.fr/",
+      "destination": "https://www.dre.paca.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://www.dre.paca.developpement-durable.gouv.fr/",
+        "https://www.dre.paca.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -80,12 +83,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
