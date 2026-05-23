@@ -1,35 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 30 Mar 2026 20:26:08 GMT",
-      "x-content-type-options": "nosniff, nosniff",
-      "cache-control": "max-age=86400, public",
-      "x-drupal-dynamic-cache": "UNCACHEABLE",
-      "link": "<https://www.tribunal-de-paris.justice.fr/75>; rel=\"canonical\"",
-      "x-ua-compatible": "IE=edge",
-      "content-language": "fr",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Mon, 30 Mar 2026 20:24:43 GMT",
-      "etag": "\"1774902283\"",
-      "vary": "Cookie",
-      "x-drupal-cache": "HIT",
-      "content-type": "text/html; charset=UTF-8",
-      "x-varnish": "215711241 215670219",
-      "age": "25360",
-      "via": "1.1 varnish-v4",
-      "cache-tags": "HIT",
-      "content-length": "101870",
-      "accept-ranges": "bytes",
-      "connection": "close"
+      "server": "BigIP",
+      "connection": "close",
+      "content-length": "15891"
     }
   },
   "tests": {
@@ -46,22 +28,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "BIGipServerPOOL_tribunal-de-paris.justice.fr_TCP_8080": {
-          "domain": "www.tribunal-de-paris.justice.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "TS0199e987": {
-          "domain": "www.tribunal-de-paris.justice.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -76,13 +46,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.tribunal-de-paris.justice.fr/75",
+      "destination": "https://www.tribunal-de-paris.justice.fr/",
       "redirects": true,
       "route": [
         "http://www.tribunal-de-paris.justice.fr/",
-        "https://www.tribunal-de-paris.justice.fr/",
-        "http://www.tribunal-de-paris.justice.fr/75",
-        "https://www.tribunal-de-paris.justice.fr/75"
+        "https://www.tribunal-de-paris.justice.fr/"
       ],
       "statusCode": 200
     },
@@ -108,29 +76,24 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://unpkg.com/leaflet@1.0.3/dist/leaflet.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-response-not-html",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
       "pass": false,
-      "result": "x-content-type-options-header-invalid",
+      "result": "x-content-type-options-not-implemented",
       "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
