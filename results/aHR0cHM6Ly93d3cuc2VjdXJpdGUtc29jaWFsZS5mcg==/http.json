@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "C+",
     "error": null,
-    "score": 40,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Apr 2026 03:27:21 GMT",
+      "date": "Mon, 25 May 2026 03:25:31 GMT",
       "server": "Apache",
       "expires": "Wed, 1 Jan 2025 00:00:00 GMT",
       "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
@@ -76,12 +76,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.securite-sociale.fr/accueil",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://www.securite-sociale.fr/",
+        "https://www.securite-sociale.fr/",
+        "https://www.securite-sociale.fr/accueil"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -96,7 +100,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
