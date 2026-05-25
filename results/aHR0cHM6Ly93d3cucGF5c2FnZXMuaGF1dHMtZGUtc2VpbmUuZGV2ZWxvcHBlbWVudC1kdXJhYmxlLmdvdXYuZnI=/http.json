@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Apr 2026 03:23:52 GMT",
+      "date": "Mon, 25 May 2026 03:26:46 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
       "link": "<https://www.paysages.hauts-de-seine.developpement-durable.gouv.fr/local/cache-css/4a016c29f15b849aad6edae12c74b8d0.css?1773309784>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Wed, 01 Apr 2026 03:23:51 GMT",
+      "last-modified": "Mon, 25 May 2026 03:26:46 GMT",
       "set-cookie": [
-        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
+        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -62,12 +62,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://www.paysages.hauts-de-seine.developpement-durable.gouv.fr/",
+      "destination": "https://www.paysages.hauts-de-seine.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://www.paysages.hauts-de-seine.developpement-durable.gouv.fr/",
+        "https://www.paysages.hauts-de-seine.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
