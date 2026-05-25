@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 10,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Apr 2026 03:27:59 GMT",
+      "date": "Mon, 25 May 2026 03:29:44 GMT",
       "server": "Microsoft-IIS/10.0",
       "strict-transport-security": "max-age=63072000; includeSubdomains; preload",
       "content-type": "text/html",
@@ -18,7 +18,7 @@
       "etag": "\"011a3467737dc1:0\"",
       "vary": "Accept-Encoding",
       "content-length": "2823",
-      "via": "dpapusx010",
+      "via": "dpapusx003",
       "connection": "close"
     }
   },
@@ -51,12 +51,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://adel.impots.gouv.fr/PAGE-ADEL.html",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://adel.impots.gouv.fr/",
+        "https://adel.impots.gouv.fr/",
+        "https://adel.impots.gouv.fr/PAGE-ADEL.html"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -70,13 +74,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubdomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
