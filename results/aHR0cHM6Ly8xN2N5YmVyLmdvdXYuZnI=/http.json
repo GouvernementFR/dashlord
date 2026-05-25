@@ -13,18 +13,19 @@
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
       "cache-control": "max-age=7200, public",
-      "date": "Fri, 03 Apr 2026 03:21:51 GMT",
+      "date": "Mon, 25 May 2026 03:39:48 GMT",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
       "connection": "close",
       "set-cookie": [
-        "visid_incap_3172065=1/HV3rGqQ5aFRJ67KlgjSU4yz2kAAAAAQUIPAAAAAAAA785KRuz+4ABi+bEz190t; expires=Fri, 02 Apr 2027 06:16:53 GMT; HttpOnly; path=/; Domain=.17cyber.gouv.fr",
-        "incap_ses_197_3172065=0Ch1Ro06Dw6BFLZLk+K7Ak8yz2kAAAAA5c3Jcjx4RBq4dgM8C50LpA==; path=/; Domain=.17cyber.gouv.fr"
+        "visid_incap_3330574=yiHUHzqHTzmmvB+ricsLe4LEE2oAAAAAQUIPAAAAAADD9Urg3bsPSAjYyDyKiFxK; expires=Mon, 24 May 2027 06:17:17 GMT; HttpOnly; path=/; Domain=.17cyber.gouv.fr",
+        "nlbi_3330574=h/UvALlzq0AnUPX2FGO7WAAAAACql1HvHbFYF4HBlAKZFuYe; HttpOnly; path=/; Domain=.17cyber.gouv.fr",
+        "incap_ses_102_3330574=Ncu5KwwuVFStTq3wqGBqAYPEE2oAAAAAs4Vgv3qLKvFKb3dZbKpUoA==; path=/; Domain=.17cyber.gouv.fr"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "61-351326327-351325485 2NNN RT(1775186510922 19) q(0 0 0 1) r(7 7)"
+      "x-iinfo": "43-47475679-47475683 NNNN CT(155 313 0) RT(1779680387402 16) q(0 0 5 0) r(7 7) U12"
     }
   },
   "tests": {
@@ -45,14 +46,20 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "visid_incap_3172065": {
+        "visid_incap_3330574": {
           "domain": "17cyber.gouv.fr",
-          "expires": "2027-04-02T06:16:53.000Z",
+          "expires": "2027-05-24T06:17:17.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_197_3172065": {
+        "nlbi_3330574": {
+          "domain": "17cyber.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_102_3330574": {
           "domain": "17cyber.gouv.fr",
           "path": "/",
           "port": null
@@ -70,15 +77,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://17cyber.gouv.fr/",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://17cyber.gouv.fr/",
-        "https://17cyber.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
