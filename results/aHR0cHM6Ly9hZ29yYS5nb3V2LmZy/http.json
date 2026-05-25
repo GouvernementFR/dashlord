@@ -9,26 +9,26 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Apr 2026 03:23:12 GMT",
+      "date": "Mon, 25 May 2026 03:30:09 GMT",
       "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "a7ab70d2-8d1a-4a3b-8cf0-0c42b30bd1e6",
+      "x-request-id": "b92cddb2-988d-4c1e-96e9-6d3d5ae99e2d",
       "vary": "Accept-Encoding, Accept-Encoding",
       "x-robots-tag": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "age": "1470",
-      "last-modified": "Fri, 03 Apr 2026 02:58:41 GMT",
-      "expires": "Fri, 03 Apr 2026 07:23:12 GMT",
+      "age": "3410",
+      "last-modified": "Mon, 25 May 2026 02:33:19 GMT",
+      "expires": "Mon, 25 May 2026 07:30:09 GMT",
       "cache-control": "public, max-age=14400",
       "cf-cache-status": "HIT",
       "x-xss-protection": "1; mode=block",
       "expect-ct": "max-age=86400, enforce",
       "referrer-policy": "same-origin",
       "server": "cloudflare",
-      "cf-ray": "9e64f4086a4d9ed5-CDG",
+      "cf-ray": "a01175bbae607026-CDG",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -47,19 +47,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "agora.gouv.fr",
-          "expires": "2026-04-03T03:53:11.000Z",
+          "expires": "2026-05-25T04:00:09.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
