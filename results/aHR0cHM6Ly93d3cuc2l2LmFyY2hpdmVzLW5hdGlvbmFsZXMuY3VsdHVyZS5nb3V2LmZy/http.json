@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C+",
     "error": null,
-    "score": 65,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Apr 2026 03:25:17 GMT",
+      "date": "Mon, 25 May 2026 03:32:55 GMT",
       "server": "XXX",
       "x-frame-options": "SAMEORIGIN",
       "content-type": "text/html;charset=UTF-8",
@@ -17,7 +17,7 @@
       "via": "1.1 www.siv.archives-nationales.culture.gouv.fr",
       "vary": "Accept-Encoding,User-Agent",
       "strict-transport-security": "max-age=63072000",
-      "x-cp-via": "C2-b1cd852e-0e1275da",
+      "x-cp-via": "C2-e018f45f-881c6088",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -93,10 +93,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://www.googletagmanager.com/gtag/js?id=UA-131820496-1": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
