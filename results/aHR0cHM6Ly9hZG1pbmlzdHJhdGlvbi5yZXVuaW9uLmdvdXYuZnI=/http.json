@@ -1,69 +1,43 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 35,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 03 Apr 2026 03:29:00 GMT",
+      "date": "Wed, 27 May 2026 03:25:55 GMT",
       "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "vary": "Accept-Encoding, Accept-Encoding",
+      "vary": "Accept-Encoding",
       "set-cookie": [
-        "_htsma.ckimstr=3195b9ed0eb33894f4f66830dd49f14936906b2e744f963c79a13df279be0dd6-16e511955d8e78a2b286e649719c7bd7abad99839e5ce1deeb6484cde2812677fd399a5aeb0de144ab8d9b5b1819c30585c788aaf2d6324532333b368e11d31e538703e99e2c72e732234123bec9008c6cf0232ab7028fd7096708534672365b389849b1bda79b9161712243a89eb717dc320335ac8086011ea79e9530f5d8dc780dbb09a3e70c92ec81086f0bb22b2ff8bd9e82f5a6fe9a208f50fb09ac4ae24daef8ee7490a282fb19da870efe66fe064b67e424c973c4f31fd11c1f5b0b3930ac8816c4e82fc85ed7e86a816ed54f158eee27a9f23d20eef187cc6ef01cae66a9cc4e6ef77ac16f8708a54e5f5f3a706d99803e1db181bf5c64c093082d19; Max-Age=34560000; Domain=hotel-zil-maurice.re; Path=/; HttpOnly; Secure"
+        "_htsma.ckimstr=35032d35807426e80c7d20408d5f698360e5231dee9b38c0a7edd8eb7eccbc3c-16e511955d8e78a2b286e649719c7bd7abad99839e5ce1deeb6484cde2812677fd399a5aeb0de144ab8d9b5b1819c30585c788aaf2d6324532333b368e11d31e538703e99e2c72e732234123bec9008c6cf0232ab7028fd7096708534672365b389849b1bda79b9161712243a89eb717dc320335ac8086011ea79e9530f5d8dc780dbb09a3e70c92ec81086f0bb22b2ff8bd9e82f5a6fe9a208f50fb09ac4ae24daef8ee7490a282fb19da870efe66fe064b67e424c973c4f31fd11c1f5b0b3930ac8816c4e82fc85ed7e86a816ed54fa21eeeb894a7cbc3aa87cf9d7410de80bf2732f06f99ee40d7884fcb7be6aa94dc1ae7ae0a6d4d29e09a507e2b3e0349; Max-Age=34560000; Domain=hotel-zil-maurice.re; Path=/; HttpOnly; Secure"
       ],
       "x-powered-by": "Nuxt",
-      "x-xss-protection": "1; mode=block",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "content-security-policy": "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';",
-      "permissions-policy": "interest-cohort=()",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-cache-status": "MISS"
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-xss-protection": "1; mode=block, 1; mode=block",
+      "x-content-type-options": "nosniff, nosniff",
+      "referrer-policy": "no-referrer-when-downgrade, no-referrer-when-downgrade",
+      "content-security-policy": "default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';, default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';",
+      "permissions-policy": "interest-cohort=(), interest-cohort=()",
+      "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000; includeSubDomains"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "blob:",
-          "data:",
-          "http:",
-          "https:",
-          "ws:",
-          "wss:"
-        ],
-        "frame-ancestors": [
-          "'self'"
-        ]
-      },
-      "http": true,
+      "result": "csp-header-invalid",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": true,
-        "insecureSchemePassive": true,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": true
-      },
+      "policy": null,
       "numPolicies": 1
     },
     "cookies": {
@@ -98,7 +72,7 @@
       "pass": false,
       "result": "referrer-policy-unsafe",
       "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
+      "data": "no-referrer-when-downgrade, no-referrer-when-downgrade",
       "http": true,
       "meta": false
     },
@@ -122,16 +96,16 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
       "data": null
     },
     "cross-origin-resource-policy": {
