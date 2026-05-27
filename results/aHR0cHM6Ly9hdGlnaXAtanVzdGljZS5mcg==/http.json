@@ -1,33 +1,52 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "C-",
     "error": null,
-    "score": 25,
+    "score": 45,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Apr 2026 03:22:37 GMT",
+      "date": "Wed, 27 May 2026 03:32:00 GMT",
       "server": "Apache/2.4.52 (Ubuntu)",
-      "vary": "Cookie,Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "frame-ancestors 'self';",
+      "link": "<https://atigip.justice.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://atigip.justice.gouv.fr/wp-json/wp/v2/pages/9>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://atigip.justice.gouv.fr/>; rel=shortlink",
+      "vary": "Accept-Encoding",
+      "content-length": "19353",
       "connection": "close",
-      "transfer-encoding": "chunked",
-      "content-type": "text/html; charset=utf-8"
+      "content-type": "text/html; charset=UTF-8"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -49,11 +68,12 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://www.atigip-justice.fr/",
+      "destination": "https://atigip.justice.gouv.fr/",
       "redirects": true,
       "route": [
         "http://atigip-justice.fr/",
-        "https://www.atigip-justice.fr/"
+        "https://atigip.justice.gouv.fr//",
+        "https://atigip.justice.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -79,13 +99,81 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "https://code.jquery.com/jquery-3.6.0.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        "https://atigip.justice.gouv.fr/wp-content/plugins/cookie-notice/js/front.min.js?ver=3.0.5": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/themes/atigip/assets/js/header.js?ver=1773762531": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.6": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/friendly-captcha/public/vendor/v1/widget.module.min.js?ver=0.9.19": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/friendly-captcha/public/vendor/v1/widget.polyfilled.min.js?ver=0.9.19": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/friendly-captcha/modules/contact-form-7/script.js?ver=1.17.0": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/themes/atigip/assets/js/contact-form.js?ver=1773762531": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/themes/atigip/assets/js/megamenu-integration.js?ver=1773762531": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/themes/wp-dsfr-theme/dist-dsfr/dsfr.module.min.js?ver=1.11.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/themes/wp-dsfr-theme/dist/app-min.js?ver=2b654ca114af02cf1c9f": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.6.7": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-includes/js/hoverIntent.min.js?ver=1.10.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://atigip.justice.gouv.fr/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=3.10.3": {
+          "crossorigin": null,
+          "integrity": null
         }
       }
     },
@@ -98,10 +186,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
