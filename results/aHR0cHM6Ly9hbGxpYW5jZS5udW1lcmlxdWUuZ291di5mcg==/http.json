@@ -3,17 +3,17 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Apr 2026 03:22:42 GMT",
+      "date": "Wed, 27 May 2026 03:35:33 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "5c19aa8e-ad1c-449a-8f57-dd496b9a0eab",
+      "x-request-id": "3776517b-99e7-41b3-83d6-df7c912babb7",
       "x-frame-options": "DENY",
       "vary": "Accept-Language, Cookie",
       "content-language": "fr",
@@ -52,14 +52,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://alliance.numerique.gouv.fr/",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://ia.numerique.gouv.fr/",
       "redirects": true,
       "route": [
         "http://alliance.numerique.gouv.fr/",
-        "https://alliance.numerique.gouv.fr/"
+        "https://ia.numerique.gouv.fr/"
       ],
       "statusCode": 200
     },
