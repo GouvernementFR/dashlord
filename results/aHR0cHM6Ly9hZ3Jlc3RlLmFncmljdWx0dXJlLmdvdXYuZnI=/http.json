@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Apr 2026 03:27:50 GMT",
+      "date": "Wed, 27 May 2026 03:27:08 GMT",
       "server": "Apache",
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=63072000;includeSubDomains; preload",
       "x-ua-compatible": "IE=edge",
       "content-type": "text/html;charset=UTF-8",
       "set-cookie": [
-        "JSESSIONID=usP03T77BeIu51RN89jzpSZOKJI-E59hICg1mJFn.stats-prod-wildfly-5-zsg-cdpagri-fr-20200; path=/agreste-web;HttpOnly;Secure"
+        "JSESSIONID=pqNRr8ZfDlAgNrGqYONag_aZs8cL-hp2LN36IAmR.stats-prod-wildfly-5-zsg-cdpagri-fr-20200; path=/agreste-web;HttpOnly;Secure"
       ],
       "x-xss-protection": "1; mode=block",
       "connection": "close",
@@ -79,13 +79,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000;includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
