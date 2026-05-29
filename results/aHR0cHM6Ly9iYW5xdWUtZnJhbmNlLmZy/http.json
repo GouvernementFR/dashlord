@@ -1,30 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "D+",
     "error": null,
-    "score": 60,
-    "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 40,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "x-drupal-dynamic-cache": "MISS",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "x-consumer-id": "default_consumer",
-      "x-drupal-cache": "HIT",
-      "last-modified": "Tue, 07 Apr 2026 02:46:48 GMT",
-      "etag": "\"1775530008-gzip\"",
-      "content-length": "34223",
-      "content-type": "text/html; charset=UTF-8",
-      "cache-control": "public, max-age=900",
-      "expires": "Tue, 07 Apr 2026 03:38:00 GMT",
-      "date": "Tue, 07 Apr 2026 03:23:00 GMT",
+      "mime-version": "1.0",
+      "content-type": "text/html",
+      "content-length": "370",
+      "expires": "Fri, 29 May 2026 03:27:32 GMT",
+      "cache-control": "max-age=0, no-cache, no-store",
+      "pragma": "no-cache",
+      "date": "Fri, 29 May 2026 03:27:32 GMT",
       "connection": "close",
-      "vary": "Accept-Encoding",
       "alt-svc": "h3=\":443\"; ma=93600",
       "strict-transport-security": "max-age=600"
     }
@@ -61,15 +53,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.banque-france.fr/fr",
+      "destination": "https://banque-france.fr/",
       "redirects": true,
       "route": [
         "http://banque-france.fr/",
-        "https://banque-france.fr/",
-        "https://www.banque-france.fr/",
-        "https://www.banque-france.fr/fr"
+        "https://banque-france.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -93,33 +83,24 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.trustcommander.net/privacy/5322/privacy_v2_14.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
