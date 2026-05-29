@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 07 Apr 2026 03:24:26 GMT",
+      "date": "Fri, 29 May 2026 03:26:26 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=BMQY6XSVLSAYSJ4UIAT7FQNRECXWAO4VZCQY44OHRMGLH63JY3IV7I7ERF2BHJUOE7RS32XLYK7UY7OQSETINDHXARKP22U6VVJBUUCXIMPXO5S5I42Q====; Path=/"
+        "bot_mitigation_cookie=GKYQ343XVHHXYRRXIUV4DQCHO5OXWWEI23XISB5O7ACCE5MXHGWWK6JB5O6IO5FC5V6HUECYXUP4Q5ULXGBTLA6E2AHV2MKFYUK4PXWSTK2DNRI6Q47A====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C3-22228d2a-837271f9",
+      "content-length": "201",
+      "x-cp-via": "C2-1ec9a889-60fe9a6d",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "www.archives-nationales.culture.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
