@@ -9,15 +9,15 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 07 Apr 2026 03:28:33 GMT",
+      "date": "Fri, 29 May 2026 03:30:38 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=36NCF7CNHDRZP6E43IKWJNGSEVU7FPKYCB5Q3CNBYG6ZWE2R3E3I3LXTECLZT563HIMHLQXRADCHTKA5M52STNN5EESUJPYH7F4BKSW3QWEHKPDMIDDQ====; Path=/"
+        "bot_mitigation_cookie=CX47IQVPBMKVFOFTDPJHKBM5VTWDJ7GXIUGCBFM64NFD6PKIPVUZMTYQIZCBVFDLLOYSHT2T72VBBU6TUJDYSIJNQRKP45Z2LWDPSE5LPCKCVEG57FMQ====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C2-b4a8d510-fb106e76",
+      "content-length": "201",
+      "x-cp-via": "C2-b1cd852e-2b89425c",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "autoecole.ants.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
