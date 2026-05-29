@@ -13,15 +13,15 @@
       "transfer-encoding": "chunked",
       "connection": "close",
       "set-cookie": [
-        "__uzma=0b9b1d21-c5e5-4c22-bc34-76481f74999f; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmb=1775704989; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzme=5893; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmc=341281047848; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmd=1775704989; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax",
-        "__uzmf=7f90000b9b1d21-c5e5-4c22-bc34-76481f74999f1-17757049894440-0034e0fc3aed938088310; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax",
-        "uzmx=7f90006500a047-65a8-4bbc-b637-416d001bd7721-17757049894440-bbe295a7662f793d10; Domain=.caf.fr; HttpOnly; path=/; Expires=Thu, 08-Oct-26 03:23:09 GMT; Max-Age=15724800; SameSite=Lax"
+        "__uzma=1537bc9f-e1a1-4857-af45-37c6967d7765; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmb=1780025467; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzme=5135; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmc=298991038098; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmd=1780025467; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax",
+        "__uzmf=7f90001537bc9f-e1a1-4857-af45-37c6967d77651-17800254677240-0030d3f97a17ef4558310; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax",
+        "uzmx=7f900054a90840-8354-4df7-82b2-13ca2380c49f1-17800254677240-da231a38e3f13e9210; Domain=.caf.fr; HttpOnly; path=/; Expires=Fri, 27-Nov-26 03:31:07 GMT; Max-Age=15724800; SameSite=Lax"
       ],
-      "date": "Wed, 08 Apr 2026 17:14:54 GMT",
+      "date": "Fri, 29 May 2026 03:01:07 GMT",
       "x-drupal-dynamic-cache": "HIT",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
@@ -34,9 +34,9 @@
       "location": "/",
       "access-control-allow-headers": "x-csrf-token, authorization, content-type, accept, origin, x-requested-with",
       "access-control-allow-methods": "GET",
-      "server-timing": "dtSInfo;desc=\"0\", dtRpid;desc=\"815393817\"",
+      "server-timing": "dtTrId;desc=\"9f4c0b6623888bd1cf7174765ca1b969\", dtSInfo;desc=\"0\", dtRpid;desc=\"1353433397\"",
       "vary": "Origin, Accept-Encoding",
-      "age": "392"
+      "age": "891"
     }
   },
   "tests": {
@@ -75,7 +75,7 @@
       "data": {
         "__uzma": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -84,7 +84,7 @@
         },
         "__uzmb": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -93,7 +93,7 @@
         },
         "__uzme": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -102,7 +102,7 @@
         },
         "__uzmc": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -111,7 +111,7 @@
         },
         "__uzmd": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -120,7 +120,7 @@
         },
         "__uzmf": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -129,7 +129,7 @@
         },
         "uzmx": {
           "domain": "caf.fr",
-          "expires": "2026-10-08T03:23:09.000Z",
+          "expires": "2026-11-27T03:31:07.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -151,12 +151,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://validate.perfdrive.com/268e6b2c898b10722b1602b1314611d6/?ssa=fa9d5e03-e436-466d-a5f9-56acdf413621&ssb=42487334130&ssc=https%3A%2F%2Fcaf.fr%2F&ssi=6a06869d-cpt7-467c-b662-40d5402feaae&ssk=botmanager_support@radware.com&ssm=14282823385714938102519575985887&ssn=31cbbdecd66df8259580f5ddca5c092bec7fbcb0de16-7cc7-48a1-a2c050&sso=59c947a1-8a5ef59ea32f3d69f427a774ed0f4f4e64183f219d1123cc&ssp=93018445311775722911177579559900244&ssq=06042090498974137799004989592414018327011&ssr=MTcyLjIwOC4xNTMuMjEx&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.15;%20rv:133.0)%20Gecko/20100101%20Firefox/133.0%20-%20dashlord,&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBiY2IwZGUxNi03Y2M3LTQ4YTEtYTdhMS04YTVlZjU5ZWEzMmYxLTE3NzU3MDQ5ODk5OTQwLTAwM2I3MWU2MDdiZjQzM2FmOTQxMCIsInV6bXgiOiI3ZjkwMDAwNTZkMWY1MS04OTE4LTQ2YjktODA3Ni1mNjg3YTlhM2ViNTExLTE3NzU3MDQ5ODk5OTQwLWI4MWVmYmI4OTZiZTM1NzcxMCIsInJkIjoiY2FmLmZyIn0=",
+      "destination": "https://validate.perfdrive.com/268e6b2c898b10722b1602b1314611d6/?ssa=b8d8d721-b646-4ac8-9113-0740cc7a11ea&ssb=44473324140&ssc=https%3A%2F%2Fcaf.fr%2F&ssi=51683c0c-cpt7-4920-8986-ea584fbaefc6&ssk=botmanager_support@radware.com&ssm=39871517969407209100979595826180&ssn=8df33809ea91277c8e796b54797548e290910e49e0ff-7573-4e4a-95975c&sso=bc7c8215-cf4cf53f00be6698396edc3a95edff5f0ee2ef6a59e71e50&ssp=55041088901780000343178001749511508&ssq=29362512546871998972525468015861032093554&ssr=NC4yNDYuMTM1LjY2&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.15;%20rv:133.0)%20Gecko/20100101%20Firefox/133.0%20-%20dashlord,&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhZi5mciIsInV6bXgiOiI3ZjkwMDBlNDViZWVlOC1iNDI5LTRmZTMtODY3Zi0yZGY5ZWZjNWFmYzQxLTE3ODAwMjU0NjgxMDYwLTY1NTUzNTIzNGExNzZmZTUxMCIsIl9fdXptZiI6IjdmOTAwMDBlNDllMGZmLTc1NzMtNGU0YS05MjE1LWNmNGNmNTNmMDBiZTEtMTc4MDAyNTQ2ODEwNjAtMDAzZjgwN2NhZGU5YWNhNWM3MjEwIn0=",
       "redirects": true,
       "route": [
         "http://caf.fr/",
         "https://caf.fr/",
-        "https://validate.perfdrive.com/268e6b2c898b10722b1602b1314611d6/?ssa=fa9d5e03-e436-466d-a5f9-56acdf413621&ssb=42487334130&ssc=https%3A%2F%2Fcaf.fr%2F&ssi=6a06869d-cpt7-467c-b662-40d5402feaae&ssk=botmanager_support@radware.com&ssm=14282823385714938102519575985887&ssn=31cbbdecd66df8259580f5ddca5c092bec7fbcb0de16-7cc7-48a1-a2c050&sso=59c947a1-8a5ef59ea32f3d69f427a774ed0f4f4e64183f219d1123cc&ssp=93018445311775722911177579559900244&ssq=06042090498974137799004989592414018327011&ssr=MTcyLjIwOC4xNTMuMjEx&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.15;%20rv:133.0)%20Gecko/20100101%20Firefox/133.0%20-%20dashlord,&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBiY2IwZGUxNi03Y2M3LTQ4YTEtYTdhMS04YTVlZjU5ZWEzMmYxLTE3NzU3MDQ5ODk5OTQwLTAwM2I3MWU2MDdiZjQzM2FmOTQxMCIsInV6bXgiOiI3ZjkwMDAwNTZkMWY1MS04OTE4LTQ2YjktODA3Ni1mNjg3YTlhM2ViNTExLTE3NzU3MDQ5ODk5OTQwLWI4MWVmYmI4OTZiZTM1NzcxMCIsInJkIjoiY2FmLmZyIn0="
+        "https://validate.perfdrive.com/268e6b2c898b10722b1602b1314611d6/?ssa=b8d8d721-b646-4ac8-9113-0740cc7a11ea&ssb=44473324140&ssc=https%3A%2F%2Fcaf.fr%2F&ssi=51683c0c-cpt7-4920-8986-ea584fbaefc6&ssk=botmanager_support@radware.com&ssm=39871517969407209100979595826180&ssn=8df33809ea91277c8e796b54797548e290910e49e0ff-7573-4e4a-95975c&sso=bc7c8215-cf4cf53f00be6698396edc3a95edff5f0ee2ef6a59e71e50&ssp=55041088901780000343178001749511508&ssq=29362512546871998972525468015861032093554&ssr=NC4yNDYuMTM1LjY2&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.15;%20rv:133.0)%20Gecko/20100101%20Firefox/133.0%20-%20dashlord,&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhZi5mciIsInV6bXgiOiI3ZjkwMDBlNDViZWVlOC1iNDI5LTRmZTMtODY3Zi0yZGY5ZWZjNWFmYzQxLTE3ODAwMjU0NjgxMDYwLTY1NTUzNTIzNGExNzZmZTUxMCIsIl9fdXptZiI6IjdmOTAwMDBlNDllMGZmLTc1NzMtNGU0YS05MjE1LWNmNGNmNTNmMDBiZTEtMTc4MDAyNTQ2ODEwNjAtMDAzZjgwN2NhZGU5YWNhNWM3MjEwIn0="
       ],
       "statusCode": 200
     },
