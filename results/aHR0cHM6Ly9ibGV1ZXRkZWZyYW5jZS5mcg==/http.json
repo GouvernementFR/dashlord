@@ -1,42 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C+",
     "error": null,
-    "score": 75,
-    "statusCode": 200,
+    "score": 60,
+    "statusCode": 403,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 07 Apr 2026 03:24:19 GMT",
+      "date": "Fri, 29 May 2026 03:30:55 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-f1PoHFv6Ez5j9xG5y8n8GO' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
-      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
-      "link": "<https://www.bleuetdefrance.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.bleuetdefrance.fr/wp-json/wp/v2/pages/581>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.bleuetdefrance.fr/>; rel=shortlink",
-      "set-cookie": [
-        "__wpdm_client=13a4c60bab751cc17b58a4b67d2b3776; path=/; domain=www.bleuetdefrance.fr; secure; HttpOnly"
-      ],
-      "cache-control": "max-age=1",
-      "expires": "Tue, 07 Apr 2026 03:24:17 GMT",
-      "vary": "Accept-Encoding,User-Agent",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QPqkl3yQC0VIuEvTgjhuPEfHN4oJl0GL7IDrRy3CfsErXAItr2Krg8%2FoKDI5%2F%2FfH7%2BkVCB6PXWdY3Mw5Z1QpGPEJq%2Fe%2BrfcnDmkCXUbRcJzVXiNMiZAkiGWrOs0rnSHuPkFQ6nmv4g%3D%3D\"}]}",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "camera=(), microphone=(), geolocation=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "server-timing": "chlray;desc=\"a0326c58689f0f07\"",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "sameorigin",
-      "x-robots-tag": "index,follow,noarchive",
-      "x-xss-protection": "1; mode=block",
-      "x-download-options": "noopen;",
-      "x-permitted-cross-domain-policies": "none",
-      "strict-transport-security": "max-age=63072000; includeSubdomains;",
-      "content-security-policy": "frame-ancestors 'self' https://ui.dev https://www.bleuetdefrance.fr https://boutique.bleuetdefrance.fr https://collecteur.bleuetdefrance.fr https://collecteur-dev.bleuetdefrance.fr https://depot-vente.bleuetdefrance.fr https://depot-vente-dev.bleuetdefrance.fr https://institution.bleuetdefrance.fr https://institution-dev.bleuetdefrance.fr https://revendeur.bleuetdefrance.fr https://revendeur-dev.bleuetdefrance.fr;",
-      "x-proxy-cache": "MISS",
-      "cf-cache-status": "DYNAMIC",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "x-frame-options": "SAMEORIGIN",
       "speculation-rules": "\"/cdn-cgi/speculation\"",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=3208",
-      "cf-ray": "9e85eb1a6f005b74-DFW",
+      "vary": "accept-encoding",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YKZ%2BMgP17LGKkhHpiI96JeDqpta1YY1oIxqDlK9BUG7w7MHmNB4Ofal25eas7hAWPAjZGB6O8hNQ1f7SAsbcZsghD3i3Fr2KME%2B1y9Q2O%2FpUYx6STvSXf9QCW%2FATCzazJqDZ\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "cf-ray": "a0326c58689f0f07-IAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -44,55 +39,75 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
+      "result": "csp-implemented-with-insecure-scheme",
       "scoreModifier": -20,
       "data": {
-        "frame-ancestors": [
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-f1pohfv6ez5j9xg5y8n8go'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
           "'self'",
-          "https://boutique.bleuetdefrance.fr",
-          "https://collecteur-dev.bleuetdefrance.fr",
-          "https://collecteur.bleuetdefrance.fr",
-          "https://depot-vente-dev.bleuetdefrance.fr",
-          "https://depot-vente.bleuetdefrance.fr",
-          "https://institution-dev.bleuetdefrance.fr",
-          "https://institution.bleuetdefrance.fr",
-          "https://revendeur-dev.bleuetdefrance.fr",
-          "https://revendeur.bleuetdefrance.fr",
-          "https://ui.dev",
-          "https://www.bleuetdefrance.fr"
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
         ]
       },
       "http": true,
-      "meta": false,
+      "meta": true,
       "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
         "insecureFormAction": true,
-        "insecureSchemeActive": false,
+        "insecureSchemeActive": true,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
+        "unsafeEval": true,
+        "unsafeInline": false,
         "unsafeInlineStyle": true,
-        "unsafeObjects": true
+        "unsafeObjects": false
       },
-      "numPolicies": 1
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "__wpdm_client": {
-          "domain": "www.bleuetdefrance.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -107,58 +122,40 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.bleuetdefrance.fr/",
+      "destination": "https://bleuetdefrance.fr/",
       "redirects": true,
       "route": [
         "http://bleuetdefrance.fr/",
-        "https://bleuetdefrance.fr/",
-        "https://www.bleuetdefrance.fr/"
+        "https://bleuetdefrance.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubdomains;",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn-cookieyes.com/client_data/2eb1ca9b10e1fdb4c0252a6b/script.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.googletagmanager.com/gtag/js?id=GT-NF7NN4C": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.brevo.com/js/sdk-loader.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -170,17 +167,17 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "sameorigin"
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
