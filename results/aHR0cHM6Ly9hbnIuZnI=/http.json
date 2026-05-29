@@ -1,21 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "openresty/1.27.1.1",
-      "date": "Tue, 07 Apr 2026 03:27:37 GMT",
-      "content-length": "11923",
+      "server": "nginx",
+      "date": "Fri, 29 May 2026 03:27:23 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "content-type": "text/html",
-      "cache-control": "private, no-cache, no-store, must-revalidate, max-age=0",
-      "cf-edge-cache": "no-cache"
+      "content-language": "fr",
+      "cache-control": "private, no-store",
+      "vary": "Accept-Encoding",
+      "x-cache-status": "MISS",
+      "x-powered-by": "PleskLin"
     }
   },
   "tests": {
@@ -47,13 +50,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://anr.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://anr.fr/",
+      "redirects": true,
       "route": [
-        "http://anr.fr/"
+        "http://anr.fr/",
+        "https://anr.fr/"
       ],
       "statusCode": 200
     },
