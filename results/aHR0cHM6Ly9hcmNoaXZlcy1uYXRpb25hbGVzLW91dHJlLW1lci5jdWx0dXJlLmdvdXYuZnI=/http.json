@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 07 Apr 2026 03:28:53 GMT",
+      "date": "Fri, 29 May 2026 03:31:01 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=SXZSNDPPPJEFTZ47K3MVKROR4UTWQNBFQUAVIZQBANXQSMIJ6CBTF4ZY6ZDQZALOZ6UX6QATZJEJD2VNR2NT2WTVLIQRP4B5E6OHUDHUQPMCVGRQ3FZQ====; Path=/"
+        "bot_mitigation_cookie=ZU6SBQKK5I4AVPZKGWNAVUGBHVFRRRCDH24FH2RVXQCZPNUJ46QU4AAZHLJUEV2AA7CWDWEH4MQACTXNF5KNF3ZHOC3B24QGRVEHUNUBXC5UPOMQSTTA====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "201",
-      "x-cp-via": "C3-807bb453-9954bd8b",
+      "content-length": "200",
+      "x-cp-via": "C2-15b7e578-8fba4730",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "archives-nationales-outre-mer.culture.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
