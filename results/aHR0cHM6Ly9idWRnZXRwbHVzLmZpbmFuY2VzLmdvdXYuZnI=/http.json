@@ -1,28 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B-",
     "error": null,
-    "score": 0,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Apr 2026 03:24:22 GMT",
+      "date": "Sun, 31 May 2026 03:26:48 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "set-cookie": [
-        "PHPSESSID=0c6673e48808bb15001c7ac23f11c498; expires=Sat, 18-Jul-2026 03:24:22 GMT; Max-Age=8640000; path=/; domain=.budgetplus.finances.gouv.fr; HttpOnly",
-        "PHPSESSID=0c6673e48808bb15001c7ac23f11c498; expires=Sat, 18 Jul 2026 03:24:22 GMT; Max-Age=8640000; path=/; domain=.budgetplus.finances.gouv.fr; httponly"
+        "PHPSESSID=988d1be3372202da51e837772604387e; expires=Tue, 08 Sep 2026 03:26:47 GMT; Max-Age=8640000; path=/; domain=.budgetplus.finances.gouv.fr; HttpOnly",
+        "PHPSESSID=988d1be3372202da51e837772604387e; expires=Tue, 08 Sep 2026 03:26:48 GMT; Max-Age=8640000; path=/; domain=.budgetplus.finances.gouv.fr; httponly"
       ],
       "pragma": "no-cache, no-cache",
       "strict-transport-security": "max-age=15724800; includeSubDomains",
       "x-frame-options": "SAMEORIGIN;, SAMEORIGIN;",
       "content-security-policy": "frame-ancestors 'self';, frame-ancestors 'self';",
       "cache-control": "no-cache, no-store, no-cache, no-store, private",
-      "expires": "2026-04-09 05:24:22",
+      "expires": "2026-05-31 05:26:47",
       "x-robots-tag": "noindex"
     }
   },
@@ -61,12 +61,12 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
       "data": {
         "PHPSESSID": {
           "domain": "budgetplus.finances.gouv.fr",
-          "expires": "2026-07-18T03:24:22.000Z",
+          "expires": "2026-09-08T03:26:48.000Z",
           "httponly": true,
           "max-age": 8640000,
           "path": "/",
@@ -84,12 +84,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://budgetplus.finances.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://budgetplus.finances.gouv.fr/",
+        "https://budgetplus.finances.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -103,12 +106,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15724800; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 15724800,
       "preload": false,
       "preloaded": false
     },
