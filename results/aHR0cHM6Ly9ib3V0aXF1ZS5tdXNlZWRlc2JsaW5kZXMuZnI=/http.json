@@ -9,19 +9,19 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Apr 2026 03:24:23 GMT",
-      "server": "Apache/2.4.41 (Ubuntu)",
+      "server": "openresty/1.29.2.3",
+      "date": "Sun, 31 May 2026 03:26:44 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "5261",
+      "connection": "close",
+      "set-cookie": [
+        "queue_id=17801980042609503; Path=/; HttpOnly",
+        "PHPSESSID=bf2tp4381pqapkqif5ot4o3sac; path=/"
+      ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
-      "set-cookie": [
-        "PHPSESSID=c1ieimr08ch2ivf6rab3n606n4; path=/"
-      ],
-      "upgrade": "h2",
-      "connection": "Upgrade, close",
-      "vary": "Accept-Encoding",
-      "content-length": "5232",
-      "content-type": "text/html; charset=UTF-8"
+      "vary": "Accept-Encoding"
     }
   },
   "tests": {
@@ -42,6 +42,12 @@
       "result": "cookies-session-without-secure-flag",
       "scoreModifier": -40,
       "data": {
+        "queue_id": {
+          "domain": "boutique.museedesblindes.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
         "PHPSESSID": {
           "domain": "boutique.museedesblindes.fr",
           "path": "/",
