@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 30,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Apr 2026 03:24:28 GMT",
+      "date": "Sun, 31 May 2026 03:26:44 GMT",
       "server": "Apache",
       "content-language": "fr-FR",
       "cache-control": "private, no-store, max-age=0",
@@ -18,11 +18,11 @@
       "x-content-type-options": "nosniff, nosniff",
       "upgrade": "h2",
       "connection": "Upgrade, close",
-      "expires": "Thu, 09 Apr 2026 03:24:28 GMT",
+      "expires": "Sun, 31 May 2026 03:26:44 GMT",
       "vary": "Accept-Encoding",
       "x-xss-protection": "1; mode=block",
       "x-ua-compatible": "IE=edge,chrome=1",
-      "content-length": "14625",
+      "content-length": "14810",
       "content-type": "text/html; charset=utf-8"
     }
   },
@@ -55,12 +55,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://bea.aero/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://bea.aero/",
+        "https://bea.aero/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -74,12 +77,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
