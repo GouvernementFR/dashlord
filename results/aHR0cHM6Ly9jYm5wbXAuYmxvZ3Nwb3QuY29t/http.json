@@ -3,15 +3,18 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 15,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
+      "content-security-policy": "upgrade-insecure-requests",
+      "content-security-policy-report-only": "default-src https: blob: data: 'unsafe-inline' 'unsafe-eval'; report-to blogspot; report-uri https://www.blogger.com/cspreport",
+      "report-to": "{\"group\":\"blogspot\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://www.blogger.com/cspreport\"}]}",
       "content-type": "text/html; charset=UTF-8",
-      "expires": "Sat, 11 Apr 2026 03:22:33 GMT",
-      "date": "Sat, 11 Apr 2026 03:22:33 GMT",
+      "expires": "Sun, 31 May 2026 03:28:06 GMT",
+      "date": "Sun, 31 May 2026 03:28:06 GMT",
       "cache-control": "private, max-age=0",
       "last-modified": "Fri, 13 Mar 2026 01:19:02 GMT",
       "etag": "W/\"16d76e025d301f046dc697ae0834448a4215bb351688beed7ef8d550e7bbf076\"",
@@ -27,13 +30,29 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -92,7 +111,7 @@
           "crossorigin": "anonymous",
           "integrity": "sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
         },
-        "https://www.blogger.com/static/v1/widgets/344097953-widgets.js": {
+        "https://www.blogger.com/static/v1/widgets/654365252-widgets.js": {
           "crossorigin": null,
           "integrity": null
         }
