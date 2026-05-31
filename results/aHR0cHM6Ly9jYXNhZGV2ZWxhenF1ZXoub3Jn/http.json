@@ -3,24 +3,24 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Apr 2026 03:28:17 GMT",
+      "date": "Sun, 31 May 2026 03:30:58 GMT",
       "server": "Apache",
       "content-language": "fr-FR",
       "cache-control": "private, no-store, max-age=0",
       "x-xss-protection": "1; mode=block",
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "expires": "Thu, 09 Apr 2026 03:28:17 GMT",
+      "expires": "Sun, 31 May 2026 03:30:58 GMT",
       "vary": "Accept-Encoding",
       "x-ua-compatible": "IE=edge",
       "x-content-type-options": "nosniff",
-      "content-length": "22713",
+      "content-length": "23715",
       "connection": "close",
       "content-type": "text/html; charset=utf-8"
     }
@@ -84,15 +84,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.bugherd.com/sidebarv2.js?apikey=f4cjbjhnbzsuwmx63toxza": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
