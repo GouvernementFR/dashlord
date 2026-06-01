@@ -1,27 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 50,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "age": "2196",
-      "cache-control": "public, max-age=0, must-revalidate",
+      "server": "nginx/1.22.1",
+      "date": "Mon, 01 Jun 2026 03:40:06 GMT",
       "content-type": "text/html; charset=utf-8",
-      "date": "Mon, 13 Apr 2026 02:49:26 GMT",
-      "etag": "W/\"x8idqs3sbma91w\"",
-      "server": "Vercel",
-      "strict-transport-security": "max-age=63072000",
-      "x-matched-path": "/fr",
-      "x-powered-by": "Next.js",
-      "x-vercel-cache": "STALE",
-      "x-vercel-id": "iad1::iad1::rwbcp-1776050762731-2aa0d05c92cf",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "transfer-encoding": "chunked"
+      "vary": "Accept-Encoding, Accept-Encoding",
+      "x-nextjs-cache": "STALE",
+      "cache-control": "s-maxage=5, stale-while-revalidate=31535995",
+      "x-powered-by": "Next.js",
+      "etag": "W/\"1728esj37ps3uwt\"",
+      "x-request-id": "16036daf7b53bd3b41702ad56909ac4f"
     }
   },
   "tests": {
@@ -47,21 +45,20 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.comitehistoirepolville.fr/",
+      "destination": "https://comitehistoirepolville.fr/",
       "redirects": true,
       "route": [
         "http://comitehistoirepolville.fr/",
-        "https://comitehistoirepolville.fr/",
-        "https://www.comitehistoirepolville.fr/"
+        "https://comitehistoirepolville.fr/"
       ],
       "statusCode": 200
     },
@@ -76,12 +73,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
