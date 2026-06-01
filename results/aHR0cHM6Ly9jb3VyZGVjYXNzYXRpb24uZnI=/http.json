@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Apr 2026 03:30:27 GMT",
+      "date": "Mon, 01 Jun 2026 03:40:43 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=ZWNCKI6NB2TX26ZTI4XJGKQ6NVIKMNNQ43EQYI5IIKHNMOQXWQZM2RJLQTP3SIRCX6HXFPLV45UCXKECAPQPZH55C5TMG7WPOHWL64MCNMKTP6MXRUGA====; Path=/"
+        "bot_mitigation_cookie=5FSP5AMKJOHDV3E3GYQDY5B2FFEBMLYVL2SCFEQTVUBOTJX2LL33OHO6RALVGJJ5GS5HOJTIFXTKTIIL3JLH5HB43A4NEZIEAX5FHIRICV6QOKI4AV4A====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C2-bf8fb33e-98b138bc",
+      "content-length": "201",
+      "x-cp-via": "C2-e018f45f-bba1b366",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "courdecassation.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
