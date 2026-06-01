@@ -1,24 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "B+",
     "error": null,
-    "score": 120,
-    "statusCode": 403,
-    "testsFailed": 0,
-    "testsPassed": 10,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Apr 2026 03:24:44 GMT",
+      "date": "Mon, 01 Jun 2026 03:26:58 GMT",
       "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "content-security-policy": "default-src 'none'; script-src 'strict-dynamic' 'nonce-3wwrigQcmNhjdA9J9DLmRQ0YsZfarT1C'; style-src 'nonce-caY4rwl9sQvGkNI94PD7vvWRFfFue1n2'; frame-ancestors 'none'; base-uri 'none'; img-src data:; font-src data:; require-trusted-types-for 'script';",
-      "x-content-type-options": "nosniff",
+      "content-length": "14178",
+      "vary": "Cookie,Accept-Encoding",
+      "link": "<https://cd-geneve.delegfrance.org/local/cache-css/716357bf76c6d2db120e42bb831ee363.css?1777887407>;rel=\"stylesheet prefetch\"",
+      "x-spip-cache": "86400",
+      "last-modified": "Mon, 01 Jun 2026 03:26:58 GMT",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), battery=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), speaker-selection=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), interest-cohort=()",
-      "cache-control": "no-cache, no-store, must-revalidate",
       "x-dns-prefetch-control": "off",
+      "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), aria-notify=(), captured-surface-control=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), on-device-speech-recognition=(), summarizer=(), wildcards=(), private-state-token-issuance=(), private-state-token-redemption=(), ch-ua-high-entropy-values=(), gamepad=(), local-network=(), local-network-access=(), loopback-network=(), interest-cohort=()",
+      "alt-svc": "h3=\":443\"; ma=86400",
       "strict-transport-security": "max-age=63072000",
       "connection": "close"
     }
@@ -26,49 +30,33 @@
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": true,
-      "result": "csp-implemented-with-no-unsafe-default-src-none",
-      "scoreModifier": 10,
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
       "data": {
-        "default-src": [
+        "object-src": [
           "'none'"
         ],
-        "script-src": [
-          "'nonce-3wwrigqcmnhjda9j9dlmrq0yszfart1c'",
-          "'strict-dynamic'"
-        ],
-        "style-src": [
-          "'nonce-cay4rwl9sqvgkni94pd7vvwrfffue1n2'"
+        "form-action": [
+          "'self'"
         ],
         "frame-ancestors": [
-          "'none'"
-        ],
-        "base-uri": [
-          "'none'"
-        ],
-        "img-src": [
-          "data:"
-        ],
-        "font-src": [
-          "data:"
-        ],
-        "require-trusted-types-for": [
-          "'script'"
+          "'self'"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
         "antiClickjacking": true,
-        "defaultNone": true,
-        "insecureBaseUri": false,
-        "insecureFormAction": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": false,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
-        "strictDynamic": true,
+        "strictDynamic": false,
         "unsafeEval": false,
-        "unsafeInline": false,
-        "unsafeInlineStyle": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
       "numPolicies": 1
@@ -99,7 +87,7 @@
         "http://cd-geneve.delegfrance.org/",
         "https://cd-geneve.delegfrance.org/"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -124,7 +112,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
