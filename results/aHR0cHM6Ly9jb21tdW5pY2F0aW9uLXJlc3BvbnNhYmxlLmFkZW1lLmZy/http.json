@@ -9,19 +9,20 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Apr 2026 03:31:41 GMT",
+      "date": "Mon, 01 Jun 2026 03:32:40 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "referrer-policy": "same-origin",
+      "server-timing": "cfEdge;dur=14,cfOrigin;dur=0",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=3TQDYhcLCjKL6ZR43D29e9rpLtXuryl9SzQdKvX8ejw-1776051101.5441818-1.0.1.1-_rvjYbvzeblbFpSUas7cxYcHaAKdohqTcfArfp9QU7kcJimjffDsrc22fopmJIEC68gkkXNeJYZWhd7gsysdrkhzfnE8.WRmPetFuFIbUtytT7yLHyi1qCwGF7sY4ZoX; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 13 Apr 2026 04:01:41 GMT"
+        "__cf_bm=nsHrZ0Q9RbHreqRS4rdJJOxnKgCAx0A.kYlMHaWEUMI-1780284760.842789-1.0.1.1-ipkbEyCf1WzrYwZ1cmHCfRQQmk5Xlw2ciU6j8c9oYyys_pLjYKVehzbjqQlKlYvYyQt3enlW6_59aBO56wtB.5XVBQLY07gY7cBSx5Ubivsz7LVdqGD8J7zezbu71200; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 01 Jun 2026 04:02:40 GMT"
       ],
       "server": "cloudflare",
-      "cf-ray": "9eb76638a8ba2964-ORD"
+      "cf-ray": "a04b270b4ad0f06e-DFW"
     }
   },
   "tests": {
@@ -39,19 +40,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-04-13T04:01:41.000Z",
+          "expires": "2026-06-01T04:02:40.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -95,7 +97,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
