@@ -3,25 +3,26 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 7,
+    "testsPassed": 3,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Apr 2026 03:30:56 GMT",
-      "server": "Apache",
+      "date": "Mon, 01 Jun 2026 03:41:47 GMT",
+      "server": "Apache/2.4.58 (Ubuntu)",
+      "upgrade": "h2",
+      "connection": "Upgrade, close",
+      "set-cookie": [
+        "CNAMP_Session=m4t5jr67v8mqa7adn9stpc00o7; expires=Tue, 02-Jun-2026 03:41:47 GMT; Max-Age=86400; path=/",
+        "CNAMP_Session=62gf7clc69a39m0jh5t2bvdf2p; expires=Tue, 02-Jun-2026 03:41:47 GMT; Max-Age=86400; path=/",
+        "CNAMP_Session=62gf7clc69a39m0jh5t2bvdf2p; expires=Tue, 02-Jun-2026 03:41:47 GMT; Max-Age=86400; path=/"
+      ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
-      "set-cookie": [
-        "CNAMP_Session=a963njeqc1qi63mt6dn8jqfgmu; expires=Tue, 14-Apr-2026 03:30:56 GMT; Max-Age=86400; path=/"
-      ],
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "upgrade": "h2",
-      "connection": "Upgrade, close",
       "vary": "Accept-Encoding",
-      "content-length": "21389",
+      "content-length": "21274",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -40,12 +41,12 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-httponly-flag",
-      "scoreModifier": -30,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
       "data": {
         "CNAMP_Session": {
           "domain": "cnam-nouvelle-aquitaine.fr",
-          "expires": "2026-04-14T03:30:56.000Z",
+          "expires": "2026-06-02T03:41:47.000Z",
           "max-age": 86400,
           "path": "/",
           "port": null
@@ -84,13 +85,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
