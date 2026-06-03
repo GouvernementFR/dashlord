@@ -1,29 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 5,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Apr 2026 03:24:43 GMT",
+      "date": "Wed, 03 Jun 2026 03:37:05 GMT",
       "server": "Unknown",
-      "set-cookie": [
-        "JSESSIONID=CF71CA2AF04B60F0C48D1C981BFDAAA9; Path=/; HttpOnly",
-        "COOKIE_SUPPORT=true; Expires=Thu, 15-Apr-2027 03:24:43 GMT; Path=/; HttpOnly"
-      ],
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1",
       "content-type": "text/html;charset=UTF-8",
-      "age": "0",
+      "age": "78",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
       "cache-control": "max-age=0, no-store",
-      "content-length": "23412",
+      "content-length": "23461",
       "connection": "close"
     }
   },
@@ -41,24 +37,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "JSESSIONID": {
-          "domain": "www.cnc.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "COOKIE_SUPPORT": {
-          "domain": "www.cnc.fr",
-          "expires": "2027-04-15T03:24:43.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
