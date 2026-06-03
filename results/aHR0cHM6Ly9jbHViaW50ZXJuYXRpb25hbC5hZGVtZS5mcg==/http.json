@@ -9,24 +9,26 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Apr 2026 03:31:35 GMT",
+      "date": "Wed, 03 Jun 2026 03:28:34 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "84434488-b263-4415-ab78-1174f6d57f21",
-      "x-frame-options": "DENY",
-      "vary": "Accept-Language, Cookie, accept-encoding",
       "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "strict-origin-when-cross-origin",
       "cross-origin-opener-policy": "same-origin",
-      "strict-transport-security": "max-age=31536000",
-      "set-cookie": [
-        "__cf_bm=gimmAhnrvJlVBcK1Z4wAH44qAoeuY6P6sDBU4eqgeF4-1776223894.7591903-1.0.1.1-mC0IKBQjeT1gEGsbWR8mdmyMCUhiYZn8frLabyeyNF8sWiy64eNpfaRpfnNDYwv4Zh0hFd5X8PJi8I4U8YmlMquP.TahokzbNAtRxa5b5TBpfh52zTHGqGkLOTnLoodJ; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 15 Apr 2026 04:01:35 GMT"
-      ],
-      "cf-cache-status": "DYNAMIC",
+      "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "server": "cloudflare",
-      "cf-ray": "9ec7e0ce3825d658-IAD"
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+      "vary": "Accept-Language, Cookie",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-xss-protection": "1; mode=block",
+      "cf-cache-status": "DYNAMIC",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=417",
+      "set-cookie": [
+        "__cf_bm=RaRIkfYdzMPr8Y3eTLz3fvjIdgyBXDggF.LRZeZGrog-1780457314.4808881-1.0.1.1-_xhY1DRcILg1eIb2CRPaZ0QFaHN15S8ZnGIRkNdChjtV4fQyaDHUuEiJccVdS0sjX0sM9D8h5PlW0sdLWuQ5h5N0XPq6wOKax8EmQ.j9FmAQX.YiDxNXBPxLPnflKJgm; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 03 Jun 2026 03:58:34 GMT"
+      ],
+      "cf-ray": "a05b9bc78931abc2-IAD"
     }
   },
   "tests": {
@@ -44,19 +46,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-04-15T04:01:35.000Z",
+          "expires": "2026-06-03T03:58:34.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -92,10 +95,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
-      "preload": false,
+      "data": "max-age=16070400; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -111,6 +114,10 @@
         "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js": {
           "crossorigin": null,
           "integrity": null
+        },
+        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
