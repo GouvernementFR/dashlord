@@ -9,10 +9,6 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Apr 2026 03:25:52 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
       "x-dns-prefetch-control": "off",
       "expect-ct": "max-age=0",
       "x-frame-options": "SAMEORIGIN",
@@ -23,17 +19,16 @@
       "referrer-policy": "no-referrer",
       "x-xss-protection": "0",
       "access-control-allow-origin": "*",
+      "accept-ranges": "bytes",
       "cache-control": "public, max-age=0",
-      "last-modified": "Fri, 27 Feb 2026 10:10:46 GMT",
+      "last-modified": "Fri, 22 May 2026 15:17:40 GMT",
+      "etag": "W/\"2cb7-19e50437db5\"",
+      "content-type": "text/html; charset=UTF-8",
       "vary": "Accept-Encoding",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=6,cfOrigin;dur=291",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0Ya0qpGEVi%2Fl%2FqWjhorNtbKVIdqZ6v1ZF%2FKonKuObDF%2BCWqRTvcnXVwOyewapWb%2BIQQGV4fi2WNsLe646jYWWXmdrSRPqHmoDxwRzgYz1Cx8o%2FN4YmSb%2BuszLAuVBkGil%2FQ%2BEIeSYN6HF6qdoenGEvFqOAs%3D\"}]}",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "sozu-id": "01KP7JS0DQ9JFNGNAVJB6P5KX3",
-      "cf-cache-status": "DYNAMIC",
-      "server": "cloudflare",
-      "cf-ray": "9ec7d86e9ef1cdc0-ORD",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "date": "Wed, 03 Jun 2026 03:28:29 GMT",
+      "connection": "close",
+      "transfer-encoding": "chunked",
+      "sozu-id": "01KT5RD0QEF6MSE62H6H6QE19Z"
     }
   },
   "tests": {
@@ -99,14 +94,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
-        }
-      }
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
