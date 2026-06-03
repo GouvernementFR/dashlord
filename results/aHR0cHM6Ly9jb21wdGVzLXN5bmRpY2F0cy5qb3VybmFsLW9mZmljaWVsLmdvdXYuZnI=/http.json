@@ -1,17 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 30,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "BigIP",
+      "date": "Wed, 03 Jun 2026 03:33:55 GMT",
+      "x-cocoon-version": "2.1.11",
+      "content-type": "text/html;charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "content-length": "2973",
       "connection": "close",
-      "content-length": "874"
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
     }
   },
   "tests": {
@@ -46,11 +50,14 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://comptes-syndicats.journal-officiel.gouv.fr/",
+      "destination": "https://comptes-syndicats.journal-officiel.gouv.fr/depotcomptespartenairessociaux/index.html",
       "redirects": true,
       "route": [
         "http://comptes-syndicats.journal-officiel.gouv.fr/",
-        "https://comptes-syndicats.journal-officiel.gouv.fr/"
+        "https://comptes-syndicats.journal-officiel.gouv.fr/",
+        "http://comptes-syndicats.journal-officiel.gouv.fr/depotcomptespartenairessociaux/",
+        "https://comptes-syndicats.journal-officiel.gouv.fr/depotcomptespartenairessociaux/",
+        "https://comptes-syndicats.journal-officiel.gouv.fr/depotcomptespartenairessociaux/index.html"
       ],
       "statusCode": 200
     },
@@ -65,19 +72,19 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-response-not-html",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
