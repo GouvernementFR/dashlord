@@ -9,7 +9,7 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Apr 2026 03:30:44 GMT",
+      "date": "Wed, 03 Jun 2026 03:28:38 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
@@ -18,10 +18,10 @@
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "pragma": "no-cache",
       "x-spip-cache": "3600",
-      "last-modified": "Wed, 15 Apr 2026 03:30:44 GMT",
+      "last-modified": "Wed, 03 Jun 2026 03:28:37 GMT",
       "set-cookie": [
-        "PHPSESSID=722b2f6d3875bfcc27eec7f5de325ef8; path=/; secure",
-        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
+        "PHPSESSID=1e320411da29c25b66c74829ea100896; path=/; secure",
+        "SRV=52696967-2676-464a-b1a3-0c4be5f98167; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "no-store, no-cache, must-revalidate",
@@ -71,12 +71,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://contact.ecologie.gouv.fr/",
+      "destination": "https://contact.ecologie.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://contact.ecologie.gouv.fr/",
+        "https://contact.ecologie.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
