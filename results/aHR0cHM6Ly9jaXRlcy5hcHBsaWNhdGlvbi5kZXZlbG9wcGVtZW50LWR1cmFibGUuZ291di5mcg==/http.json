@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Apr 2026 03:31:50 GMT",
+      "date": "Wed, 03 Jun 2026 03:38:48 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=31536000",
       "pragma": "no-cache",
@@ -23,8 +23,8 @@
       "content-type": "text/html;charset=UTF-8",
       "vary": "Accept-Encoding",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
-      "content-length": "5066",
-      "connection": "close"
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -114,12 +114,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://cites.application.developpement-durable.gouv.fr/accueil.do;jsessionid=24A1FE56B4F31354B3D2EEC12A8DACC5.tc_cites_172_150",
+      "destination": "https://cites.application.developpement-durable.gouv.fr/accueil.do;jsessionid=65EBAEEC60BB6710D6BC0AB322C613FD.tc_cites_172_150",
       "redirects": true,
       "route": [
         "http://cites.application.developpement-durable.gouv.fr/",
         "https://cites.application.developpement-durable.gouv.fr/",
-        "https://cites.application.developpement-durable.gouv.fr/accueil.do;jsessionid=24A1FE56B4F31354B3D2EEC12A8DACC5.tc_cites_172_150"
+        "https://cites.application.developpement-durable.gouv.fr/accueil.do;jsessionid=65EBAEEC60BB6710D6BC0AB322C613FD.tc_cites_172_150"
       ],
       "statusCode": 200
     },
