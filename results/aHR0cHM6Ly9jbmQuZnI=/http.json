@@ -9,14 +9,14 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Apr 2026 03:25:45 GMT",
+      "date": "Wed, 03 Jun 2026 03:28:51 GMT",
       "server": "Apache/2.4.10 (Debian)",
       "cache-control": "no-cache, private",
       "set-cookie": [
-        "preferred_language=fr; expires=Fri, 15-May-2026 03:25:45 GMT; Max-Age=2591998; path=/; httponly"
+        "preferred_language=fr; expires=Fri, 03-Jul-2026 03:28:51 GMT; Max-Age=2591997; path=/; httponly"
       ],
       "vary": "Accept-Encoding",
-      "content-length": "7541",
+      "content-length": "7573",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -41,9 +41,9 @@
       "data": {
         "preferred_language": {
           "domain": "www.cnd.fr",
-          "expires": "2026-05-15T03:25:45.000Z",
+          "expires": "2026-07-03T03:28:51.000Z",
           "httponly": true,
-          "max-age": 2591998,
+          "max-age": 2591997,
           "path": "/",
           "port": null
         }
@@ -79,7 +79,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
