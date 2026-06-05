@@ -1,21 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D+",
     "error": null,
-    "score": 20,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 17 Apr 2026 03:30:41 GMT",
+      "date": "Fri, 05 Jun 2026 03:27:21 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=63072000, max-age=31536000; includeSubDomains",
       "upgrade": "h2",
       "connection": "Upgrade, close",
       "set-cookie": [
-        "GCSESSID_P_data-drihl_developpement-durable_gouv_fr=dep62ulej7j0o1kloih1u0e221; expires=Fri, 17 Apr 2026 07:30:41 GMT; Max-Age=14400; path=/; domain=data-drihl.developpement-durable.gouv.fr; secure; HttpOnly; SameSite=Strict"
+        "GCSESSID_P_data-drihl_developpement-durable_gouv_fr=ifkalkudffa3uufe96p04verk1; expires=Fri, 05 Jun 2026 07:27:21 GMT; Max-Age=14400; path=/; domain=data-drihl.developpement-durable.gouv.fr; secure; HttpOnly; SameSite=Strict"
       ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "public, must-revalidate",
@@ -112,7 +112,7 @@
       "data": {
         "GCSESSID_P_data-drihl_developpement-durable_gouv_fr": {
           "domain": "data-drihl.developpement-durable.gouv.fr",
-          "expires": "2026-04-17T07:30:41.000Z",
+          "expires": "2026-06-05T07:27:21.000Z",
           "httponly": true,
           "max-age": 14400,
           "path": "/",
@@ -132,12 +132,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://data-drihl.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://data-drihl.developpement-durable.gouv.fr/",
+        "https://data-drihl.developpement-durable.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -152,9 +155,9 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-header-invalid",
       "scoreModifier": -20,
-      "data": null,
+      "data": "max-age=63072000, max-age=31536000; includeSubDomains",
       "includeSubDomains": false,
       "maxAge": null,
       "preload": false,
