@@ -11,31 +11,31 @@
     "responseHeaders": {
       "content-type": "text/html; charset=UTF-8",
       "link": "<https://static.parastorage.com/>; rel=preconnect; crossorigin;,<https://static.parastorage.com/>; rel=preconnect;,<https://static.wixstatic.com/>; rel=preconnect; crossorigin;,<https://static.wixstatic.com/>; rel=preconnect;,<https://siteassets.parastorage.com>; rel=preconnect; crossorigin;,",
-      "etag": "W/\"358c2a1d3924e2b05df27566422afd4f\"",
+      "etag": "W/\"f69da2a628d11c7d2dfe797fe2c50b54\"",
       "content-language": "en",
       "strict-transport-security": "max-age=31556952",
       "x-cache-status": "HIT",
-      "x-wix-request-id": "1776569162.06543925274893610516",
       "cache-control": "public,max-age=0,must-revalidate",
       "server": "Pepyaka",
       "x-content-type-options": "nosniff",
       "accept-ranges": "bytes",
-      "age": "280859",
-      "date": "Sun, 19 Apr 2026 03:26:02 GMT",
-      "x-served-by": "cache-den-kden1300029-DEN",
-      "x-cache": "MISS",
+      "date": "Fri, 05 Jun 2026 03:30:26 GMT",
+      "age": "628706",
+      "x-served-by": "cache-iad-kcgs7200034-IAD",
+      "x-cache": "HIT",
       "vary": "Accept-Encoding",
-      "server-timing": "cache;desc=hit, varnish;desc=hit_miss, dc;desc=fastly_sea1_g",
+      "server-timing": "cache;desc=hit, varnish;desc=hit_hit_stale, dc;desc=fastly_g",
       "set-cookie": [
-        "sec-fetch-unsupported=1; Path=/; Secure; SameSite=Lax;",
-        "ssr-caching=cache#desc=hit#varnish=hit_miss#dc#desc=fastly_sea1_g; max-age=20"
+        "ssr-caching=cache#desc=hit#varnish=hit_hit_stale#dc#desc=fastly_g; max-age=20",
+        "sec-fetch-unsupported=1; Path=/; Secure; SameSite=Lax;"
       ],
-      "x-seen-by": "yvSunuo/8ld62ehjr5B7kA==,9WD8GAcpJgs/Ng1WkD2i0h9slopJdhD+WySraMrpIY8=,dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=,m0j2EEknGIVUW/liY8BLLqPXpcX6IEGf7sG3D7kVVb5oPgwuwRhTrzeWemEC6UKw,2d58ifebGbosy5xc+FRaluFeWOvUjz2TcKHBcy1Jl2nZ3mMJFpXEjug279ruiNmrUtJ5CtLU+V6xGP7hmvcP/g==,2UNV7KOq4oGjA5+PKsX47HqjR+6CNmn/ng3r7CWVjR4=,2UNV7KOq4oGjA5+PKsX47EcNVZxMrnxWFErTxnFN3IM=",
+      "x-wix-request-id": "1780630226.979707853944090839",
+      "x-seen-by": "yvSunuo/8ld62ehjr5B7kA==",
+      "content-length": "136771",
       "via": "1.1 google",
       "glb-x-seen-by": "bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=",
-      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "alt-svc": "h3=\":443\"; ma=2592000",
+      "connection": "close"
     }
   },
   "tests": {
@@ -56,18 +56,18 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
+        "ssr-caching": {
+          "domain": "www.definspace.fr",
+          "max-age": 20,
+          "path": "/",
+          "port": null
+        },
         "sec-fetch-unsupported": {
           "domain": "www.definspace.fr",
           "path": "/",
           "port": null,
           "samesite": "lax",
           "secure": true
-        },
-        "ssr-caching": {
-          "domain": "www.definspace.fr",
-          "max-age": 20,
-          "path": "/",
-          "port": null
         }
       },
       "sameSite": false
@@ -143,11 +143,11 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.1282f23b.bundle.min.js": {
+        "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.8a79fac6.bundle.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.parastorage.com/services/wix-thunderbolt/dist/main.9c060692.bundle.min.js": {
+        "https://static.parastorage.com/services/wix-thunderbolt/dist/main.4af3a3b4.bundle.min.js": {
           "crossorigin": null,
           "integrity": null
         },
@@ -159,7 +159,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.parastorage.com/services/tag-manager-client/1.1028.0/siteTags.bundle.min.js": {
+        "https://static.parastorage.com/services/tag-manager-client/1.1066.0/siteTags.bundle.min.js": {
           "crossorigin": null,
           "integrity": null
         }
