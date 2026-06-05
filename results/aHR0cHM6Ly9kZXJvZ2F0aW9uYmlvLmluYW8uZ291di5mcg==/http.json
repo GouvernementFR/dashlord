@@ -5,8 +5,8 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "private",
@@ -21,9 +21,9 @@
       "access-control-allow-headers": "accept,authorization,AuthorizationOperator,AgenceBioSynchronize,content-type,cache-control,content-disposition",
       "access-control-allow-methods": "*",
       "access-control-expose-headers": "Content-Disposition",
-      "date": "Fri, 17 Apr 2026 03:26:20 GMT",
+      "date": "Fri, 05 Jun 2026 03:26:23 GMT",
       "connection": "close",
-      "content-length": "2562"
+      "content-length": "2564"
     }
   },
   "tests": {
@@ -71,16 +71,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https",
-      "scoreModifier": -20,
-      "destination": "http://derogationbio.inao.gouv.fr/Fwamework/Users/Login.aspx?ReturnUrl=%2f",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://derogationbio.inao.gouv.fr/",
-        "http://derogationbio.inao.gouv.fr/Fwamework/Users/Login.aspx?ReturnUrl=%2f"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
