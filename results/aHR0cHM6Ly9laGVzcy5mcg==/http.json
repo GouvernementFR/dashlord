@@ -1,26 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 55,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 21 Apr 2026 03:23:47 GMT",
+      "date": "Sun, 07 Jun 2026 03:29:55 GMT",
       "server": "Secure_Server",
-      "last-modified": "Mon, 13 Apr 2026 12:08:20 GMT",
-      "accept-ranges": "bytes",
-      "content-length": "11",
-      "x-frame-options": "SAMEORIGIN",
-      "x-xss-protection": "1;mode=block",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
+      "permissions-policy": "accelerometer=(), autoplay=(), camera=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=*, midi=(), payment=(), usb=()",
+      "feature-policy": "accelerometer 'none'; autoplay 'none'; camera *; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone *; midi 'none'; payment 'none'; usb 'none';",
+      "x-xss-protection": "1;mode=block",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "content-type": "text/html;charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
       "content-security-policy": "default-src https://* gap-iab://* wss://* data: blob: 'unsafe-inline' 'unsafe-eval'",
+      "set-cookie": [
+        "JSESSIONID=A2C3B71756EAA34FD5CA2A51A9720013; Path=/; Secure; HttpOnly;HttpOnly;Secure"
+      ],
       "strict-transport-security": "max-age=15552000; includeSubdomains; preload",
       "connection": "close",
-      "content-type": "text/html"
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -60,9 +68,17 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "JSESSIONID": {
+          "domain": "www.ehess.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -88,27 +104,27 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552000; includeSubdomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 15552000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
