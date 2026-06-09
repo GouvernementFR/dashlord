@@ -1,1 +1,188 @@
-{"error":"Site did respond with an unexpected HTTP status code 404."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Tue, 09 Jun 2026 03:05:48 GMT",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; object-src 'none'; frame-src 'self' https:; img-src 'self' https: data:; frame-ancestors 'self' https://*.diplomatie.gouv.fr; style-src 'self' 'unsafe-inline' https://*.ttwstatic.com; font-src 'self' data:;",
+      "access-control-allow-methods": "GET, POST, HEAD",
+      "access-control-allow-headers": "DNT,User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Range",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-xss-protection": "1; mode=block",
+      "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
+      "cache-control": "max-age=1800, public",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Tue, 09 Jun 2026 03:05:48 GMT",
+      "etag": "\"1780974348-gzip\"",
+      "vary": "Cookie,Accept-Encoding",
+      "content-type": "text/html; charset=UTF-8",
+      "x-url": "/fr/le-ministere-en-action/assurer-la-presence-de-la-culture-francaise/defendre-la-francophonie-et-la-langue-francaise",
+      "age": "1606",
+      "accept-ranges": "bytes",
+      "x-frame-options": "SAMEORIGIN",
+      "content-length": "13196",
+      "connection": "close",
+      "set-cookie": [
+        "TS01b99713=01c34d53745f56f096eff25e4a387482f7199d8df7a0916901b80e2fea0753f1ea7ed58c943dc3f6feb195cbfdbc161b7d7e07e3db; Path=/; Domain=.www.diplomatie.gouv.fr"
+      ]
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "'self'",
+          "https:"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https:"
+        ],
+        "frame-ancestors": [
+          "'self'",
+          "https://*.diplomatie.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.ttwstatic.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "TS01b99713": {
+          "domain": "www.diplomatie.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.diplomatie.gouv.fr/fr/le-ministere-en-action/assurer-la-presence-de-la-culture-francaise/defendre-la-francophonie-et-la-langue-francaise",
+      "redirects": true,
+      "route": [
+        "http://festivalfrancophonie2024.org/",
+        "https://festivalfrancophonie2024.org/",
+        "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/francophonie-et-langue-francaise/la-france-accueille-le-xixe-sommet-de-la-francophonie-sous-le-signe-de-la/",
+        "https://www.diplomatie.gouv.fr/fr/le-ministere-en-action/assurer-la-presence-de-la-culture-francaise/defendre-la-francophonie-et-la-langue-francaise"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
