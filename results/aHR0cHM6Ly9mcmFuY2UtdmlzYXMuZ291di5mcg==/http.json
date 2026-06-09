@@ -1,39 +1,39 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "B",
     "error": null,
-    "score": 80,
-    "statusCode": 200,
+    "score": 75,
+    "statusCode": 403,
     "testsFailed": 1,
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 23 Apr 2026 03:35:53 GMT",
-      "content-type": "text/html;charset=UTF-8",
+      "date": "Tue, 09 Jun 2026 03:32:24 GMT",
+      "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "x-content-type-options": "nosniff",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
-      "cache-control": "private, max-age=120, must-revalidate",
-      "pragma": "no-cache",
-      "vary": "Accept-Encoding,User-Agent",
-      "content-security-policy": "script-src 'unsafe-inline' 'unsafe-eval' *.france-visas.interieur.rie.gouv.fr *.france-visas.gouv.fr france-visas.gouv.fr static.cloudflareinsights.com; object-src 'none'; worker-src 'self' blob:",
-      "x-ua-compatible": "IE=Edge",
-      "via": "Frontal-vers-usagers",
+      "server": "cloudflare",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "age": "34",
-      "last-modified": "Thu, 23 Apr 2026 03:35:19 GMT",
-      "cf-cache-status": "HIT",
-      "x-xss-protection": "1; mode=block",
+      "server-timing": "chlray;desc=\"a08d11a6aca19ec0\"",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "vary": "accept-encoding",
       "set-cookie": [
-        "__cf_bm=ku3FdS.u_ft7ks042uVZUcCV8dUCXlV687.ZxWJo0qk-1776915353.6337886-1.0.1.1-NBegsIxHf3C6OrglLnpJCTEEzBpCqtb1hq3xBsTBRqBQwT21hCHF6AY1MHwvN0ds69GCOk.uUy0nXEo0UrUeiFX_oI57nvR6KRbX2gIHI9cW6KYaaXI4ToTCUJfRXK_S; HttpOnly; Secure; Path=/; Domain=france-visas.gouv.fr; Expires=Thu, 23 Apr 2026 04:05:53 GMT"
+        "__cf_bm=ZWUuRxb8p1FAFvddudUhv2G5lhNByeOJYB2KXDWjbwU-1780975944.7421925-1.0.1.1-w_iaCffUemh80v7TcSZTIIfd7y4awbE9TpHsFlg8Bb.WkSikVGisNpNq4aEcFOcrrZzTvyBp1Ep03NBlK8.ABJUvtU2JfmkA07DtHhGK0Z6_3Ea6nKR_l9pNyqBkVtqd; HttpOnly; SameSite=None; Secure; Path=/; Domain=france-visas.gouv.fr; Expires=Tue, 09 Jun 2026 04:02:24 GMT"
       ],
       "expect-ct": "max-age=86400, enforce",
-      "server": "cloudflare",
-      "cf-ray": "9f09d2203d0702e1-CDG",
+      "x-xss-protection": "1; mode=block",
+      "cf-ray": "a08d11a6aca19ec0-CDG",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -41,58 +41,31 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "script-src": [
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "*.france-visas.gouv.fr",
-          "*.france-visas.interieur.rie.gouv.fr",
-          "france-visas.gouv.fr",
-          "static.cloudflareinsights.com"
-        ],
-        "object-src": [
-          "'none'"
-        ],
-        "worker-src": [
-          "'self'",
-          "blob:"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "france-visas.gouv.fr",
-          "expires": "2026-04-23T04:05:53.000Z",
+          "expires": "2026-06-09T04:02:24.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -112,7 +85,7 @@
         "http://france-visas.gouv.fr/",
         "https://france-visas.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -158,10 +131,10 @@
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
