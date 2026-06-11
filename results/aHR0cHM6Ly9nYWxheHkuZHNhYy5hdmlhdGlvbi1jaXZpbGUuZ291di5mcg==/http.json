@@ -1,22 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 0,
-    "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "score": 30,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Apr 2026 03:29:46 GMT",
-      "set-cookie": [
-        "BWFSESSID_hzxf693a55n75cexzmk4j2egkn=vwltse4gjybjdklcsuvwven37j02mpn4j9w5quqlw3a2jjelect2h7tfmgadbmwhxbvam2w9yxwexv3cy4esr5m5cpbsrl2qcy6uzgzqek4rjgg893bf5fs8aa7qek95am9ftmxpf32zxerhvm5r89h9dluxw999pwntjul5cn9pp8nsmw7th8b6rb9f5h5a6b99bdxf9cku88wrvy76djsjtq553ce575kk5menuldem3w8shabjen2nfj7kfmltyxmlpzvvupfacpwu348bj38jlmxrcvx5ru5n79ht4azlgsfgf98fhruyb6cw3hljj; Secure"
-      ],
+      "date": "Thu, 11 Jun 2026 03:35:48 GMT",
       "content-type": "text/html",
-      "content-length": "925",
-      "cache-control": "private, max-age=0",
-      "pragma": "no-cache",
+      "content-length": "502",
       "connection": "close"
     }
   },
@@ -34,17 +29,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-httponly-flag",
-      "scoreModifier": -30,
-      "data": {
-        "BWFSESSID_hzxf693a55n75cexzmk4j2egkn": {
-          "domain": "galaxy.dsac.aviation-civile.gouv.fr",
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
