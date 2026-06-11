@@ -1,29 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
-    "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "score": 30,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 22 Apr 2026 10:01:34 GMT",
-      "cache-control": "must-revalidate, no-cache, private",
-      "x-drupal-dynamic-cache": "MISS",
-      "link": "</themes/custom/expertisefrance_theme/favicon.ico>; rel=\"icon\"; type=\"image/x-icon\"",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-drupal-cache": "HIT",
+      "date": "Thu, 11 Jun 2026 03:28:00 GMT",
+      "accept-ranges": "bytes",
+      "content-type": "text/html",
       "vary": "Accept-Encoding",
-      "content-length": "14134",
-      "content-type": "text/html; charset=UTF-8",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-cp-via": "C2-39ab91db-6206bca3",
-      "connection": "close"
+      "x-cp-via": "C3-035a6c6d-48b88a17",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -41,17 +33,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "BIGipServerpool-afd-prod.cegedim.cloud-tcp80": {
-          "domain": "www.expertisefrance.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -66,15 +50,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.expertisefrance.fr/fr",
+      "destination": "https://expertisefrance.fr/",
       "redirects": true,
       "route": [
         "http://expertisefrance.fr/",
-        "https://expertisefrance.fr/",
-        "https://www.expertisefrance.fr/",
-        "https://www.expertisefrance.fr/fr"
+        "https://expertisefrance.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -87,44 +69,35 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "https://cdn.tagcommander.com/7338/tc_AFDsitesinstitutionnels_28.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//tag.aticdn.net/piano-analytics.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
