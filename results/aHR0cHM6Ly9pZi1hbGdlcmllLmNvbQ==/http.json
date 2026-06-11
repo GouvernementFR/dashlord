@@ -1,24 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 5,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-type": "text/html",
-      "last-modified": "Tue, 22 Oct 2024 18:19:26 GMT",
+      "last-modified": "Sun, 31 May 2026 00:36:46 GMT",
       "accept-ranges": "bytes",
-      "etag": "\"5631caedae24db1:0\"",
+      "etag": "\"dfc9e8f95f0dc1:0\"",
       "vary": "Accept-Encoding",
       "server": "Microsoft-IIS/10.0",
       "x-powered-by": "ASP.NET",
-      "date": "Sat, 25 Apr 2026 01:46:52 GMT",
+      "strict-transport-security": "max-age=0; includeSubDomains; preload",
+      "date": "Thu, 11 Jun 2026 03:34:21 GMT",
       "connection": "close",
-      "content-length": "904"
+      "content-length": "814"
     }
   },
   "tests": {
@@ -50,13 +51,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://if-algerie.com/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://if-algerie.com/",
+      "redirects": true,
       "route": [
-        "http://if-algerie.com/"
+        "http://if-algerie.com/",
+        "https://if-algerie.com/"
       ],
       "statusCode": 200
     },
@@ -72,12 +74,12 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=0; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 0,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
