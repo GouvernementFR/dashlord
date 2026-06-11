@@ -9,17 +9,17 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Apr 2026 03:25:19 GMT",
+      "date": "Thu, 11 Jun 2026 03:36:42 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "x-powered-by": "PHP/8.1.34, PleskLin",
-      "vary": "User-Agent,Accept-Encoding",
-      "last-modified": "Fri, 24 Apr 2026 23:05:05 GMT",
+      "vary": "User-Agent,Accept-Encoding,Referer",
+      "last-modified": "Thu, 11 Jun 2026 02:06:57 GMT",
       "x-cache-status": "BYPASS",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f1a3d5d084f7ac7-SJC"
+      "cf-ray": "a09d92afffbeeb36-SJC"
     }
   },
   "tests": {
@@ -37,19 +37,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "eve-transport-logistique.fr",
-          "expires": "2026-04-25T03:55:18.000Z",
+          "expires": "2026-06-11T04:06:42.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
