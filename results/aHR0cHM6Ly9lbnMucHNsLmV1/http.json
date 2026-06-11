@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B-",
     "error": null,
-    "score": 15,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 23 Apr 2026 03:30:41 GMT",
-      "server": "Apache/2.4.66",
+      "date": "Thu, 11 Jun 2026 03:27:52 GMT",
+      "server": "Apache/2.4.67 (Debian)",
       "strict-transport-security": "max-age=15768000; includeSubDomains",
       "x-content-type-options": "nosniff, nosniff",
       "cache-control": "max-age=3600, public",
@@ -18,10 +18,10 @@
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Wed, 22 Apr 2026 14:05:55 GMT",
-      "etag": "\"1776866755-gzip\"",
+      "last-modified": "Thu, 11 Jun 2026 02:44:30 GMT",
+      "etag": "\"1781145870-gzip\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-generator": "Drupal 11 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
       "content-type": "text/html; charset=UTF-8",
       "via": "1.1 www.ens.psl.eu",
@@ -101,17 +101,13 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
       "data": {
-        "//platform.twitter.com/widgets.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/js/bootstrap.js": {
+        "https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.8/dist/js/bootstrap.min.js": {
           "crossorigin": "anonymous",
-          "integrity": "sha256-DSHWUwfs+dyvqNBAlaN3fBLYhXtZgMDSoNiXIPCv+E4="
+          "integrity": "sha256-3XV0ZwG+520tCQ6I0AOlrGAFpZioT/AyPuX0Zq2i8QY="
         }
       }
     },
