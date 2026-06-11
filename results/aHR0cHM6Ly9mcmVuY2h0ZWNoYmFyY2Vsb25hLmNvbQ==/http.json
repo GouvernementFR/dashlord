@@ -1,26 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "access-control-allow-origin": "*",
-      "age": "283182",
+      "age": "1076658",
       "cache-control": "public, max-age=0, must-revalidate",
       "content-disposition": "inline",
       "content-type": "text/html; charset=utf-8",
-      "date": "Sat, 25 Apr 2026 03:25:18 GMT",
-      "etag": "W/\"2eba1f9a6ed30f36d1716371e26fc0b7\"",
-      "last-modified": "Tue, 21 Apr 2026 20:45:35 GMT",
+      "cross-origin-opener-policy": "same-origin",
+      "date": "Thu, 11 Jun 2026 03:30:18 GMT",
+      "etag": "W/\"77385c67eb8e49eb628d6bb04de1d447\"",
+      "permissions-policy": "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "server": "Vercel",
-      "strict-transport-security": "max-age=63072000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-matched-path": "/",
+      "x-nextjs-prerender": "1",
+      "x-nextjs-stale-time": "300",
       "x-vercel-cache": "HIT",
-      "x-vercel-id": "sfo1::4t2rt-1777087518052-cfadd91879e4",
+      "x-vercel-id": "cle1::mslfd-1781148618359-fa7f8319940c",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -48,30 +56,31 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://frenchtechbarcelona.com/",
+      "destination": "https://www.frenchtechbarcelona.com/",
       "redirects": true,
       "route": [
         "http://frenchtechbarcelona.com/",
-        "https://frenchtechbarcelona.com/"
+        "https://frenchtechbarcelona.com/",
+        "https://www.frenchtechbarcelona.com/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -79,10 +88,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
       "maxAge": 63072000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -94,17 +103,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
