@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "B-",
     "error": null,
-    "score": 45,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "must-revalidate, no-cache, private",
       "content-language": "fr",
-      "content-length": "107916",
+      "content-length": "108647",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Sat, 25 Apr 2026 03:25:16 GMT",
+      "date": "Thu, 11 Jun 2026 03:36:02 GMT",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "traceresponse": "00-18a97bae31c347596dcd36bfc25210e2-62f7515ecbb1763e-01",
+      "traceresponse": "00-18b7e98b5bf872ca749d9e20f5431da1-e400656b2b8fe61a-01",
       "x-content-type-options": "nosniff",
       "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
       "x-drupal-cache": "HIT",
@@ -59,12 +59,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
       "destination": "https://www.entpe.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://entpe.fr/",
+        "https://entpe.fr/",
+        "https://www.entpe.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -81,10 +85,10 @@
       "pass": true,
       "result": "hsts-preloaded",
       "scoreModifier": 5,
-      "data": null,
+      "data": "max-age=31536000; includeSubDomains; preload",
       "includeSubDomains": true,
-      "maxAge": null,
-      "preload": false,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": true
     },
     "subresource-integrity": {
