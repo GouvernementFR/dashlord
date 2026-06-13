@@ -3,20 +3,20 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Apr 2026 03:35:10 GMT",
+      "date": "Sat, 13 Jun 2026 03:29:27 GMT",
       "content-type": "text/html",
       "last-modified": "Fri, 09 Dec 2022 15:49:47 GMT",
       "connection": "close",
       "etag": "W/\"6393591b-689\"",
       "set-cookie": [
-        "Current_Session=!qvCr42Da4GYtp4+1Iy6bOvFfaGSqw2h2CFra4LcU9654zvKOYZ88KoFfB32OEeBDEE1VYQNxzEglhQA=; path=/; Httponly; Secure",
-        "TS01298773=015b1cc83721d8dd0059d6836f85512409d2af3feacc9d76f03697c33b4d3c077767c6bcaaad953c630cc5eb5d880bb761edbbe14b2ad285c65c686847a7f26dc77d97722f; Path=/"
+        "Current_Session=!ni3iS6RzWg+H0purjoPjCnAtdcUm05t/avMnZda8RfAeTbJtHOH0JQFLBX6SvBBIWH3ZrcvSzQ4rrv4=; path=/; Httponly; Secure",
+        "TS01298773=015b1cc83763a2e5e53363b49178be56353943fc517ec183cb119ae2c825bcd3e548b093ff138dcf1436aa6873a1fe384ff901e89af1b403019ba18caeb14cf2f123c23a71; Path=/"
       ],
       "transfer-encoding": "chunked"
     }
@@ -63,12 +63,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://honorabilite-depose.pp.social.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://honorabilite-depose.pp.social.gouv.fr/",
+        "https://honorabilite-depose.pp.social.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -83,7 +86,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
