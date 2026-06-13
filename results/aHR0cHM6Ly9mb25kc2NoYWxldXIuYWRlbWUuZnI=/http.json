@@ -9,12 +9,12 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Apr 2026 03:26:48 GMT",
+      "date": "Sat, 13 Jun 2026 03:29:07 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=27,cfOrigin;dur=1646",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=16,cfOrigin;dur=1491",
       "link": "<https://fondschaleur.ademe.fr/wp-json/>; rel=\"https://api.w.org/\", <https://fondschaleur.ademe.fr/wp-json/wp/v2/pages/170>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://fondschaleur.ademe.fr/>; rel=shortlink",
       "refresh": "0",
       "vary": "X-Forwarded-For",
@@ -23,9 +23,9 @@
       "cf-cache-status": "DYNAMIC",
       "set-cookie": [
         "target_audience=company; path=/",
-        "__cf_bm=uuszohFofFaFv0y08Axjh1lMKA4BIbx2z7DPSnZ61mw-1777260407.022831-1.0.1.1-BYUIl4X4lLAhqnBrJ0O0A6bJsInXwdsovE8rc.tRHpfqNT9Xu4fXcF7Rbp6E9zPpZUDYP4eRh6NpFBSf0hTPvsHoeBfBppFFaTCjiuDoTE.b82ATHWGpuQ3fVhRkd6gn; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 27 Apr 2026 03:56:48 GMT"
+        "__cf_bm=drek9VpgZQecz_ccyq5aMA6G5Wigc3jWHnCWSZFxXHg-1781321346.2417512-1.0.1.1-hmBLLSx66rAOqP1dSZjKSuvpnRt8X_MoMo9vuHU9qCV41rmMqR0nLY4fetKroDkcnY5eCnkQKf1.386.5y7Oc20e2_r4IkP.zmnBkmPsxh3imCDY3T2OlWHcERjga8NV; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 13 Jun 2026 03:59:07 GMT"
       ],
-      "cf-ray": "9f2aba47dc7433ad-LAX"
+      "cf-ray": "a0ae024e09302ade-IAD"
     }
   },
   "tests": {
@@ -53,10 +53,11 @@
         },
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-04-27T03:56:48.000Z",
+          "expires": "2026-06-13T03:59:07.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
