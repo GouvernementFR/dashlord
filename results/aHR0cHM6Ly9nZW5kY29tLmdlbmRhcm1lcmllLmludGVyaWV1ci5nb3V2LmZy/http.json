@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Apr 2026 03:26:38 GMT",
+      "date": "Sat, 13 Jun 2026 03:31:13 GMT",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "vary": "Accept-Encoding, Accept",
@@ -18,15 +18,19 @@
       "x-content-type-options": "nosniff",
       "x-permitted-cross-domain-policies": "none",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "x-discourse-route": "static/show",
-      "cross-origin-opener-policy": "same-origin-allow-popups",
+      "x-discourse-route": "home_page/blank",
       "discourse-no-onebox": "1",
+      "cross-origin-opener-policy": "same-origin-allow-popups",
       "cache-control": "no-cache, no-store",
-      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-HdJrTI5LPuuVsFo8yAHSkYqFG' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'",
-      "x-request-id": "2c36eb17-9189-4a1d-b809-1a76f70316d2",
-      "x-runtime": "0.027675",
+      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-CZ1sKYBkYt40IfJr7sf28cnzC' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'",
+      "x-request-id": "347962c4-2af7-43fc-9469-f81c9eaebddc",
+      "x-runtime": "0.019970",
       "x-discourse-trackview": "1",
       "strict-transport-security": "max-age=31536000",
+      "set-cookie": [
+        "SESSION-RP=30172170.47873.0000; path=/; Httponly; Secure",
+        "TS014d4b06=0161bc9718bd6a1211b8e2a1188192896ace0b349b54faff2daf7c450307f7a0930b6864eaf1311e7ce4134b158eac8ded173af3a8fae908b7cf972a74ff833b76dbd21546; Path=/; Domain=.gendcom.gendarmerie.interieur.gouv.fr"
+      ],
       "transfer-encoding": "chunked"
     }
   },
@@ -47,7 +51,7 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-hdjrti5lpuuvsfo8yahskyqfg'",
+          "'nonce-cz1skybkyt40ifjr7sf28cnzc'",
           "'strict-dynamic'"
         ],
         "frame-ancestors": [
@@ -80,12 +84,6 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "destination_url": {
-          "domain": "gendcom.gendarmerie.interieur.gouv.fr",
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
         "SESSION-RP": {
           "domain": "gendcom.gendarmerie.interieur.gouv.fr",
           "httponly": true,
@@ -113,12 +111,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://gendcom.gendarmerie.interieur.gouv.fr/login",
+      "destination": "https://gendcom.gendarmerie.interieur.gouv.fr/",
       "redirects": true,
       "route": [
         "http://gendcom.gendarmerie.interieur.gouv.fr/",
-        "https://gendcom.gendarmerie.interieur.gouv.fr/",
-        "https://gendcom.gendarmerie.interieur.gouv.fr/login"
+        "https://gendcom.gendarmerie.interieur.gouv.fr/"
       ],
       "statusCode": 200
     },
