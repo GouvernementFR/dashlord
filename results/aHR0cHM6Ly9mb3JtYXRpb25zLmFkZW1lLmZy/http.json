@@ -9,27 +9,27 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Apr 2026 03:35:10 GMT",
+      "date": "Sat, 13 Jun 2026 03:27:00 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "vary": "Accept-Encoding",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=31,cfOrigin;dur=495",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=30,cfOrigin;dur=620",
       "referrer-policy": "strict-origin-when-cross-origin",
       "permissions-policy": "camera=(), microphone=(), geolocation=()",
       "x-robots-tag": "noindex, nofollow",
       "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://t.screeb.app https://cdntag.tarteaucitron.io https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.youtube.com https://tarteaucitron.io https://cdn.tarteaucitron.io https://cdntag.tarteaucitron.io https://tag.aticdn.net https://www.google.com https://www.gstatic.com https://itkz.formations.ademe.fr; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdn.tarteaucitron.io https://itkz.formations.ademe.fr; font-src 'self' data: blob: https://t.screeb.app https://fonts.gstatic.com; connect-src 'self' wss://centipede.screeb.app https://rpc.screeb.app https://t.screeb.app https://www.google.com ademe.elmg.net https://www.google-analytics.com https://www.googletagmanager.com https://tarteaucitron.io https://cdn.tarteaucitron.io https://logs.tarteaucitron.io https://itkz.formations.ademe.fr; img-src 'self' data: https://* https://itkz.formations.ademe.fr; frame-src 'self' https://www.youtube.com https://www.google.com https://itkz.formations.ademe.fr https://www.iorad.com; frame-ancestors 'self';",
       "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "set-cookie": [
-        "__Host-PHPSESSID=qvpukg5sj0drrmjs95tnoervmbh7vfa6; path=/; secure; HttpOnly; SameSite=Lax",
-        "__cf_bm=dBm80CmMBiENYsqVDu1Tng_VxHG73hc0pAY03T4H0sE-1777088110.2130713-1.0.1.1-td6lcqR4aFEkt6DrkqtzrpFQSLt_wh4xEYHnNKj72l6JnxXLMZo5aGm_2ND0ZSCC6Xh2MQUJRThk2QH5Tf1voiqd4bqLXhE6rBUExs5E6uYQTBFB8zt72gtzmdSEQ4jH; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 25 Apr 2026 04:05:10 GMT"
+        "__Host-PHPSESSID=3t8n3b9ga29p9c144te8a22vgk37kpjm; path=/; secure; HttpOnly; SameSite=Lax",
+        "__cf_bm=ho1v6k8V_OWp3ly5Frdin9GDjZuJeMQFCLOvUF_0tfI-1781321219.9757855-1.0.1.1-PWemAV09HUZWrgm_wH1tFU9SKwqar6azNI3MZdXcHwjPgMqyTMMYgSsSaexu3rz3QyaEMd.fKBqTmOVtKQLk6Va6LecAEEkoWM1nqDoi3HWKLBBh6IN6.XJy2FaoUn81; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 13 Jun 2026 03:57:00 GMT"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f1a4bd0de154e62-IAD"
+      "cf-ray": "a0adff38d84072d4-IAD"
     }
   },
   "tests": {
@@ -124,8 +124,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__Host-PHPSESSID": {
           "domain": "formations.ademe.fr",
@@ -137,14 +137,15 @@
         },
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-04-25T04:05:10.000Z",
+          "expires": "2026-06-13T03:57:00.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -196,9 +197,9 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
