@@ -1,26 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 7,
+    "testsPassed": 3,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Wed, 29 Apr 2026 03:26:48 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 15 Jun 2026 03:37:04 GMT",
+      "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "link": "<https://ifv.vn/wp-json/>; rel=\"https://api.w.org/\", <https://ifv.vn/wp-json/wp/v2/pages/714>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://ifv.vn/>; rel=shortlink",
-      "x-f-cache": "BYPASS",
-      "x-signature": "KUSANAGI",
-      "x-xss-protection": "1; mode=block",
-      "x-frame-options": "SAMEORIGIN",
-      "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=31536000; includeSubDomains;preload;"
+      "set-cookie": [
+        "cl-bypass-cache=yes; Expires=Mon, 15-Jun-26 04:37:04 GMT; Domain=ifv.vn; Path=/; HttpOnly; SameSite=Lax"
+      ],
+      "server": "imunify360-webshield/1.18",
+      "last-modified": "Monday, 15-Jun-2026 03:37:04 GMT",
+      "cache-control": "private, no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0, s-maxage=0",
+      "cf-edge-cache": "no-cache",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT"
     }
   },
   "tests": {
@@ -37,10 +37,19 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "cl-bypass-cache": {
+          "domain": "ifv.vn",
+          "expires": "2026-06-15T04:37:06.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -52,14 +61,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://ifv.vn/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://ifv.vn/",
+      "redirects": false,
       "route": [
-        "http://ifv.vn/",
-        "https://ifv.vn/"
+        "http://ifv.vn/"
       ],
       "statusCode": 200
     },
@@ -74,34 +82,30 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains;preload;",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-121076098-1": {
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js": {
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://vietnam.extranet-aec.com/js/aec-webapp.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.google.com/recaptcha/api.js?render=6LfI7TQgAAAAAK_BW0D5uLcUEQqyV38FlvTuSW_P&ver=3.0": {
+        "https://www.google.com/recaptcha/api.js?hl=en": {
           "crossorigin": null,
           "integrity": null
         }
@@ -109,17 +113,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
