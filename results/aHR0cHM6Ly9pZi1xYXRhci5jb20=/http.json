@@ -1,22 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 0,
+    "score": 25,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Apr 2026 03:26:45 GMT",
+      "date": "Mon, 15 Jun 2026 03:29:21 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "OVHcloud",
+      "server": "Apache",
       "x-powered-by": "PHP/7.4",
+      "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+      "cache-control": "no-cache, must-revalidate, max-age=0",
       "link": "<https://if-qatar.com/wp-json/>; rel=\"https://api.w.org/\", <https://if-qatar.com/wp-json/wp/v2/pages/7173>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://if-qatar.com/>; rel=shortlink",
-      "accept-ranges": "none",
       "vary": "Accept-Encoding"
     }
   },
@@ -83,13 +84,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "//www.googletagmanager.com/gtag/js?id=G-RCG7E0ZCMF": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://platform.twitter.com/widgets.js": {
           "crossorigin": null,
           "integrity": null
