@@ -1,23 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
-    "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 35,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Apr 2026 03:36:46 GMT",
+      "date": "Mon, 15 Jun 2026 03:28:05 GMT",
       "server": "Apache",
-      "link": "<https://fondation-cnrs.org/wp-json/>; rel=\"https://api.w.org/\", <https://fondation-cnrs.org/wp-json/wp/v2/pages/12305>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://fondation-cnrs.org/>; rel=shortlink",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
       "content-security-policy": "frame-ancestors 'self'",
-      "last-modified": "Mon, 27 Apr 2026 03:36:51 GMT",
       "vary": "Accept-Encoding",
       "x-xss-protection": "0",
+      "content-length": "228",
       "connection": "close",
-      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -66,16 +67,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://fondation-cnrs.org/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://fondation-cnrs.org/",
+      "redirects": false,
       "route": [
-        "http://fondation-cnrs.org/",
-        "https://fondation-cnrs.org/"
+        "http://fondation-cnrs.org/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -100,7 +100,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
