@@ -1,19 +1,19 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Apr 2026 03:30:04 GMT",
+      "date": "Mon, 15 Jun 2026 03:29:15 GMT",
       "content-type": "text/html",
-      "content-length": "8816",
+      "content-length": "1317",
       "connection": "close",
-      "server": "OVHcloud",
+      "server": "Apache",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding"
     }
@@ -80,35 +80,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=G-8NRDN8L7CB": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://kit.fontawesome.com/be8097b1cf.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://www.jasonlusk.com/scroll/jcs/animate-scroll.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
