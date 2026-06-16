@@ -17,7 +17,9 @@ Exemples :
 
 Vous devez éditer le fichier [./dashlord.yml](./dashlord.yml) et ajouter une entrée pour votre URL.
 
-💡 Bonne pratique : enlever les slashs à la fin des urls
+[!TIP]
+### Bonne pratique :
+>  enlever les slashs à la fin des urls
 
 ### Déployer sa propre version de DashLord :
 
