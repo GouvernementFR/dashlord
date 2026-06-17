@@ -3,10 +3,10 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
@@ -28,12 +28,14 @@
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
       "link": "<https://www.inserm.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.inserm.fr/wp-json/wp/v2/pages/83257>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.inserm.fr/>; rel=shortlink",
-      "etag": "\"22896-1777389494;br\"",
+      "etag": "\"16447-1781621263;br\"",
       "x-litespeed-cache": "hit",
       "vary": "Accept-Encoding",
-      "content-length": "24850",
-      "date": "Wed, 29 Apr 2026 03:30:21 GMT",
+      "content-length": "24269",
+      "date": "Wed, 17 Jun 2026 03:28:08 GMT",
       "server": "LiteSpeed",
+      "x-hosted-by": "Hosterra",
+      "carbontxt-location": "https://hosterra.eu/.well-known/carbon.txt",
       "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
     }
   },
@@ -82,14 +84,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.inserm.fr/",
       "redirects": true,
       "route": [
         "http://inserm.fr/",
-        "https://inserm.fr/",
         "https://www.inserm.fr/"
       ],
       "statusCode": 200
