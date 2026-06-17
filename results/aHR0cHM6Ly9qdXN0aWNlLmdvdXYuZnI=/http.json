@@ -9,32 +9,31 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 30 Apr 2026 10:03:03 GMT",
+      "date": "Tue, 16 Jun 2026 18:03:13 GMT",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "strict-transport-security": "max-age=16070400; includeSubDomains",
-      "last-modified": "Thu, 30 Apr 2026 10:03:02 GMT",
+      "last-modified": "Tue, 16 Jun 2026 18:03:12 GMT",
       "content-type": "text/html; charset=UTF-8",
       "x-url": "/",
       "x-host": "www.justice.gouv.fr",
       "x-cacheable": "YES",
       "x-cache-ttl": "86400.000",
-      "etag": "W/\"1777543382\"",
+      "etag": "W/\"1781632992\"",
       "vary": "Cookie,Accept-Encoding",
       "x-cache": "HIT",
-      "x-cache-ttl-remaining": "45413.944",
-      "x-cache-age": "40986",
-      "x-cache-hits": "3547",
+      "x-cache-ttl-remaining": "52281.608",
+      "x-cache-age": "34118",
+      "x-cache-hits": "3075",
       "cache-control": "max-age=120, public",
       "accept-ranges": "bytes",
-      "content-length": "10629",
+      "content-length": "10593",
       "set-cookie": [
         "ROUTEID=.route1; path=/; Domain=.jug.intranet.justice.gouv.fr; max-age=3600",
-        "BIGipServerE9qpQewFM5y8ZfZBvsQP+A=!ZbzsGcsc7l+1aJFIwQcRQVWm13u/1zyvgHAnEjoESMrQxbvXqAuWMcWLGeoGpwopbPuue3HVK66jxw==; path=/; Httponly; Secure",
-        "TS01509fcf=01a6efdeade8e649545fa9c7fabb72532322dc2353c471ee030a592e6b375d01f47d5e82059835c50ec9473d5e385545588779c75cbd1ed079fe1300a3156fced4378ad41d; Path=/",
-        "TS01c6e65a=01a6efdeadf3a82e77ad8c6e0227042cdabe2c9bd3c471ee030a592e6b375d01f47d5e8205b8b516f3ce5c19ab04b54cf9a3369a8af9120ecba8c893ec3e56c2c6dbb901c3; path=/; domain=.jug.intranet.justice.gouv.fr"
+        "mj_rsid=!dwRrX15VgZ7ifgyU1C2jf1u4JVD3v+pZoHHLCOd7G4Oti4/OJdyaiOsDPw811nFJWfcnbumGM48wTQ==; path=/; Httponly; Secure",
+        "TS010468b1=01a6efdead78e52a4c9132dccd449207d79d1f5f4b78c2427a7c0b49febfec2b7309de07855fdae6f70c271f972421dd133942d3558c2ff8b29377d61c9b8d4d42e749bcdb22e4a094e125d04005335eddd836d48a; Path=/; Domain=.www.justice.gouv.fr"
       ],
       "connection": "close"
     }
@@ -57,14 +56,14 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "BIGipServerE9qpQewFM5y8ZfZBvsQP+A": {
+        "mj_rsid": {
           "domain": "www.justice.gouv.fr",
           "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
         },
-        "TS01509fcf": {
+        "TS010468b1": {
           "domain": "www.justice.gouv.fr",
           "path": "/",
           "port": null
