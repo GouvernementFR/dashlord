@@ -1,23 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 5,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Apr 2026 03:33:35 GMT",
+      "date": "Wed, 17 Jun 2026 03:29:12 GMT",
       "server": "Apache",
+      "x-ua-compatible": "IE=edge",
+      "link": "<https://www.imt-bs.eu/wp-json/>; rel=\"https://api.w.org/\", <https://www.imt-bs.eu/wp-json/wp/v2/pages/80323>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.imt-bs.eu/>; rel=shortlink",
+      "server-timing": "wp-before-template;dur=772.03",
       "vary": "Accept-Encoding,X-FORWARDED-PROTO",
       "strict-transport-security": "max-age=16000000",
       "upgrade": "h2",
       "connection": "Upgrade",
-      "last-modified": "Wed, 29 Apr 2026 03:27:29 GMT",
       "cache-control": "max-age=0",
-      "expires": "Wed, 29 Apr 2026 03:33:35 GMT",
+      "expires": "Wed, 17 Jun 2026 03:29:12 GMT",
       "access-control-allow-origin": "*",
       "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
@@ -46,18 +48,22 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.imt-bs.eu/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://imt-bs.eu/",
+        "https://imt-bs.eu/",
+        "https://www.imt-bs.eu/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -71,12 +77,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 16000000,
       "preload": false,
       "preloaded": false
     },
