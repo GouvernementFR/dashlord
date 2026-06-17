@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:32:34 GMT",
+      "date": "Wed, 17 Jun 2026 03:37:29 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -18,7 +18,7 @@
       "content-language": "fr",
       "cf-cache-status": "DYNAMIC",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Thu, 30 Apr 2026 09:21:12 GMT",
+      "last-modified": "Tue, 09 Jun 2026 07:20:16 GMT",
       "vary": "Cookie,Accept-Encoding",
       "x-content-type-options": "nosniff",
       "x-drupal-cache": "HIT",
@@ -27,9 +27,9 @@
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-powered-by": "PHP/8.3.30",
       "set-cookie": [
-        "__cf_bm=P9w_f6L9Ig7ATiyK1mJ3_r.vL7_C8XmQuYiGAwWUlkk-1777606354.4064052-1.0.1.1-Cq_xFZgwMomfWIsYOD_fuIDOjwNTWfndbg4dP3lMYJJtmTBUpZvNDpi6rhBddz5ofDmSppLHpXr6KjuJb.7YOhWFmOfgHIt64WDtgkwa.pS0pTe1W04bJgto0sEdcUUc; HttpOnly; Secure; Path=/; Domain=mnhn.fr; Expires=Fri, 01 May 2026 04:02:34 GMT"
+        "__cf_bm=llYjYpbgRjyhfrWDNxum4YSRTk_I1znhCKTShqiRWnQ-1781667449.0552313-1.0.1.1-UvqrxjdDm.OeErP9caFWoyIhHferovexFZuSm3Bj_OySHkGHjHP6ueRJGgJwdvFQLzY92V1VjuIeaSqjaP1asQGdnIRas1eMkZ6adBV5ePmumMRFlvL9A0q2CI2EjyUO; HttpOnly; SameSite=None; Secure; Path=/; Domain=mnhn.fr; Expires=Wed, 17 Jun 2026 04:07:29 GMT"
       ],
-      "cf-ray": "9f4bb8430e6feb5c-ORD"
+      "cf-ray": "a0cf04149bc0ccff-LAX"
     }
   },
   "tests": {
@@ -47,19 +47,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "mnhn.fr",
-          "expires": "2026-05-01T04:02:34.000Z",
+          "expires": "2026-06-17T04:07:29.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
