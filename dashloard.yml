@@ -1,0 +1,60 @@
+title: DashLord Gouvernement
+
+description: >
+Tableau de bord des bonnes pratiques techniques des services numériques gouvernementaux.
+
+entity: Gouvernement
+
+footer: >
+Données collectées automatiquement par DashLord.
+
+tools:
+screenshot: true
+lighthouse: true
+testssl: true
+nuclei: true
+thirdparties: true
+wappalyzer: true
+stats: true
+updownio: true
+dependabot: true
+codescan: true
+nmap: false
+trivy: false
+
+urls:
+
+* url: https://www.gouvernement.fr
+  title: Gouvernement.fr
+
+* url: https://www.service-public.fr
+  title: Service Public
+
+* url: https://www.data.gouv.fr
+  title: data.gouv.fr
+  repository: etalab/data.gouv.fr
+
+* url: https://www.legifrance.gouv.fr
+  title: Légifrance
+
+* url: https://www.franceconnect.gouv.fr
+  title: FranceConnect
+  repository: france-connect
+
+* url: https://beta.gouv.fr
+  title: beta.gouv.fr
+  repository: betagouv/beta.gouv.fr
+
+* url: https://www.info.gouv.fr
+  title: Info.gouv.fr
+
+* url: https://api.gouv.fr
+  title: API Gouv
+
+* url: https://www.moncompteformation.gouv.fr
+  title: Mon Compte Formation
+
+* url: https://www.impots.gouv.fr
+  title: Impots.gouv.fr
+
+customCss: ""
