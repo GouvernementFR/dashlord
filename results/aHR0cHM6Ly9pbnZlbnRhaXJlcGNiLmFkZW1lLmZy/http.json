@@ -9,20 +9,20 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:26:10 GMT",
+      "date": "Wed, 17 Jun 2026 03:36:32 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "referrer-policy": "same-origin",
-      "server-timing": "cfEdge;dur=12,cfOrigin;dur=0",
+      "server-timing": "cfEdge;dur=51,cfOrigin;dur=0",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=JJxRLNVQ696V8mkluvnxwdY20Cxh6NfJP2Yeu5iCCnA-1777605970.1577075-1.0.1.1-RPugBHANPSf_D7zh7f0uXP_xrpOQgGTw.X55WNq1nVTbYqiSPRTtaTwuQeF3YfRTDKt4cED.9wK5jSGdTiE.x95XkxHc3CfR1vVcRdelGBBFJMS4LnLQ03eLEIspGqlf; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 01 May 2026 03:56:10 GMT"
+        "__cf_bm=Xln2svIBTNg0c6a_1esjbcIBC6Abu9ZgVR2252VrZNU-1781667392.3153923-1.0.1.1-L2QmWaXO0vDPSUlSGxukkjtvMmmpUIPcFm_fg4KWPzHRdj8vWP1nK2lpXiG_JOf5ymbr04dEfUFfNvQRbDMcnAa2XtKnmOoc89t6rkBhJ.imVedUiLvm4qFnSByJGAr1; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 17 Jun 2026 04:06:32 GMT"
       ],
       "server": "cloudflare",
-      "cf-ray": "9f4baee17b6b07e8-SJC"
+      "cf-ray": "a0cf02b1fbd31744-IAD"
     }
   },
   "tests": {
@@ -40,19 +40,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-05-01T03:56:10.000Z",
+          "expires": "2026-06-17T04:06:32.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
