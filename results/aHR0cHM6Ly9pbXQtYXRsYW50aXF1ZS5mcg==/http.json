@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 0,
+    "score": 45,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 28 Apr 2026 18:01:34 GMT",
+      "date": "Tue, 16 Jun 2026 18:34:03 GMT",
       "server": "Apache",
       "cache-control": "max-age=10800, public",
       "x-drupal-dynamic-cache": "MISS",
@@ -18,13 +18,13 @@
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "x-generator": "Drupal 11 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "content-security-policy": "default-src 'self' 'unsafe-inline' region1.google-analytics.com stats.g.doubleclick.net www.google-analytics.com https://www.youtube.com https://www.youtube-nocookie.com https://platform.twitter.com https://www.linkedin.com https://indd.adobe.com https://syndication.twitter.com/; connect-src *; font-src *; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.youtube-nocookie.com https://imtcast.imt.fr/ https://haltools.archives-ouvertes.fr/ https://indd.adobe.com/ https://barometredelascienceouverte.esr.gouv.fr/ https://www.rcf.fr https://platform.twitter.com https://www.linkedin.com https://syndication.twitter.com/ https://v.calameo.com/ https://player.vimeo.com; img-src * data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.google.com www.gstatic.com www.googletagmanager.com region1.google-analytics.com stats.g.doubleclick.net google-analytics.com www.youtube.com www.youtube-nocookie.com https://cdn.jsdelivr.net https://platform.linkedin.com https://www.linkedin.com googletagmanager.com cdnjs.cloudflare.com https://cdnjs.cloudflare.com https://platform.twitter.com https://polyfill-fastly.io https://www.google.com localhost:35729 yui.yahooapis.com; script-src-elem * 'unsafe-inline' localhost:35729; style-src 'self' 'unsafe-inline' fonts.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com *.typekit.net https://cdnjs.cloudflare.com; style-src-elem 'self' 'unsafe-inline' fonts.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com *.typekit.net https://cdnjs.cloudflare.com; frame-ancestors 'self';",
-      "last-modified": "Tue, 28 Apr 2026 18:01:34 GMT",
-      "etag": "\"1777399294-gzip\"",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' region1.google-analytics.com stats.g.doubleclick.net www.google-analytics.com https://www.youtube.com https://www.youtube-nocookie.com https://platform.twitter.com https://www.linkedin.com https://indd.adobe.com https://syndication.twitter.com/; connect-src *; font-src *; frame-src 'self' https://www.google.com/ https://www.youtube.com/ https://www.youtube-nocookie.com https://imtcast.imt.fr/ https://haltools.archives-ouvertes.fr/ https://indd.adobe.com/ https://barometredelascienceouverte.esr.gouv.fr/ https://www.rcf.fr https://platform.twitter.com https://www.linkedin.com https://syndication.twitter.com/ https://v.calameo.com/ https://player.vimeo.com; img-src * data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.google.com www.gstatic.com www.googletagmanager.com region1.google-analytics.com stats.g.doubleclick.net google-analytics.com www.youtube.com www.youtube-nocookie.com https://cdn.jsdelivr.net https://platform.linkedin.com https://www.linkedin.com googletagmanager.com cdnjs.cloudflare.com https://cdnjs.cloudflare.com https://platform.twitter.com https://www.google.com localhost:35729 yui.yahooapis.com; script-src-elem * 'unsafe-inline' localhost:35729; style-src 'self' 'unsafe-inline' fonts.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com *.typekit.net https://cdnjs.cloudflare.com; style-src-elem 'self' 'unsafe-inline' fonts.googleapis.com https://cdn.jsdelivr.net https://www.googletagmanager.com *.typekit.net https://cdnjs.cloudflare.com; frame-ancestors 'self';",
+      "last-modified": "Tue, 16 Jun 2026 18:34:03 GMT",
+      "etag": "\"1781634843-gzip\"",
       "x-xss-protection": "0",
-      "content-length": "28407",
+      "content-length": "26188",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close"
     }
@@ -86,7 +86,6 @@
           "https://cdnjs.cloudflare.com",
           "https://platform.linkedin.com",
           "https://platform.twitter.com",
-          "https://polyfill-fastly.io",
           "https://www.google.com",
           "https://www.linkedin.com",
           "localhost:35729",
@@ -196,10 +195,10 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "//cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js": {
+        "https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js": {
           "crossorigin": null,
           "integrity": null
         }
