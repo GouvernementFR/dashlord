@@ -1,24 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Apr 2026 03:41:27 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "7696",
+      "date": "Wed, 17 Jun 2026 03:28:03 GMT",
+      "server": "Apache",
+      "last-modified": "Thu, 31 Mar 2022 16:34:25 GMT",
+      "etag": "\"50ca-6a-5db863c2c47d6\"",
+      "accept-ranges": "bytes",
+      "vary": "Accept-Encoding",
+      "content-length": "86",
       "connection": "close",
-      "server": "OVHcloud",
-      "x-powered-by": "PHP/7.2",
-      "set-cookie": [
-        "CAKEPHP=885f2b7f75dc67c8925e002baa58e924; expires=Wed, 29-Apr-2026 07:41:28 GMT; Max-Age=14400; path=/; secure; HttpOnly"
-      ],
-      "vary": "Accept-Encoding"
+      "content-type": "text/html"
     }
   },
   "tests": {
@@ -36,19 +35,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "CAKEPHP": {
-          "domain": "institut-francais-tchad.org",
-          "expires": "2026-04-29T07:41:28.000Z",
-          "httponly": true,
-          "max-age": 14400,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -60,14 +49,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://institut-francais-tchad.org/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://institut-francais-tchad.org/",
+      "redirects": false,
       "route": [
-        "http://institut-francais-tchad.org/",
-        "https://institut-francais-tchad.org/"
+        "http://institut-francais-tchad.org/"
       ],
       "statusCode": 200
     },
@@ -83,7 +71,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -94,7 +82,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
