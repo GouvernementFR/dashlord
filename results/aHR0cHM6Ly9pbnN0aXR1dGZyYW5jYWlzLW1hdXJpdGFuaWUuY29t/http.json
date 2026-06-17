@@ -3,19 +3,19 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Apr 2026 03:38:32 GMT",
+      "date": "Wed, 17 Jun 2026 03:28:12 GMT",
       "server": "Apache",
-      "x-powered-by": "PHP/7.4.33",
-      "link": "<https://institutfrancais-mauritanie.com/wp-json/>; rel=\"https://api.w.org/\"",
+      "content-type": "text/html",
+      "cache-control": "private, no-cache, no-store, must-revalidate, max-age=0",
+      "cf-edge-cache": "no-cache",
       "connection": "close",
-      "transfer-encoding": "chunked",
-      "content-type": "text/html; charset=UTF-8"
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -47,14 +47,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://institutfrancais-mauritanie.com/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://institutfrancais-mauritanie.com/",
+      "redirects": false,
       "route": [
-        "http://institutfrancais-mauritanie.com/",
-        "https://institutfrancais-mauritanie.com/"
+        "http://institutfrancais-mauritanie.com/"
       ],
       "statusCode": 200
     },
@@ -80,15 +79,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
