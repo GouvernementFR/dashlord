@@ -9,29 +9,25 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
+      "date": "Wed, 17 Jun 2026 03:29:16 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "24410",
+      "content-length": "24022",
       "connection": "close",
-      "date": "Wed, 29 Apr 2026 03:41:43 GMT",
-      "set-cookie": [
-        "frz-referrer=; HTTPOnly; Secure",
-        "frz_referrer_unique_id=paf1evr9UjZ_42jtZeBW7lOZiuJyplWpm4ugWpODqVz4NxEGvZNznA==; Max-Age=20; HTTPOnly; Secure"
-      ],
+      "server-timing": "cdnEdge;dur=47, cdnWorker;dur=0, cdnOrigin;dur=248",
       "access-control-allow-origin": "https://pw-matomo.igesa.fr",
       "cache-control": "private, no-cache, must-revalidate",
       "content-security-policy": "frame-ancestors 'self'",
-      "etag": "W/\"1edc7-3IUA7ruattyHI00JBuxQHMV+Kn4-frz-sc\"",
-      "last-modified": "Wed, 29 Apr 2026 03:30:32 GMT",
+      "etag": "W/\"1de4b-YZ+Vr5rgABBqtXGlJOsRr8MWmrg-frz-sc\"",
+      "last-modified": "Wed, 17 Jun 2026 03:25:12 GMT",
       "x-content-type-options": "nosniff",
       "x-fstrz": "o,sc,c",
       "x-xss-protection": "0",
-      "x-gen-id": "Tg-EZoOTi6gMDHcTPqxZnU5A26Dxp8MHCAwzFTXO1kbjq0TX2Ab4Xw==",
-      "server": "fasterize",
-      "x-unique-id": "paf1evr9UjZ_42jtZeBW7lOZiuJyplWpm4ugWpODqVz4NxEGvZNznA==",
-      "x-cache": "Miss from cloudfront",
-      "via": "1.1 081bf13eb62524432344903c8901ed1e.cloudfront.net (CloudFront)",
-      "x-amz-cf-pop": "IAD55-P10",
-      "x-amz-cf-id": "paf1evr9UjZ_42jtZeBW7lOZiuJyplWpm4ugWpODqVz4NxEGvZNznA=="
+      "x-gen-id": "a0cef217abf12d72-ATL",
+      "server": "cloudflare",
+      "x-unique-id": "a0cef80bca002909-IAD",
+      "cf-cache-status": "DYNAMIC",
+      "vary": "accept-encoding",
+      "cf-ray": "a0cef80bca002909-IAD"
     }
   },
   "tests": {
@@ -65,25 +61,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "frz-referrer": {
-          "domain": "www.igesa.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "frz_referrer_unique_id": {
-          "domain": "www.igesa.fr",
-          "httponly": true,
-          "max-age": 20,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
