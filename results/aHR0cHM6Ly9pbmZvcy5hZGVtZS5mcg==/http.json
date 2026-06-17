@@ -9,21 +9,21 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Apr 2026 03:42:55 GMT",
+      "date": "Wed, 17 Jun 2026 03:32:52 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "x-powered-by": "PHP/8.2.30, PleskLin",
-      "vary": "User-Agent,Accept-Encoding",
-      "last-modified": "Tue, 28 Apr 2026 22:58:15 GMT",
+      "x-powered-by": "PHP/8.2.31, PleskLin",
+      "vary": "User-Agent,Accept-Encoding,Referer",
+      "last-modified": "Tue, 16 Jun 2026 23:58:05 GMT",
       "set-cookie": [
-        "__cf_bm=utx7kD1I6aJAfr9hcxkt903Svb0W.1l2vZaL3uuT00s-1777434174.70572-1.0.1.1-Fjsaw0uHIu71mSf1LCPyDFNZ4LrnSLg9LDyATSvWUyOBcT_ajxcJdJXVL2dFY.uTIcslC_p.22dxNH4pnqfSyZC5kllZmtFDmhkYW40c0Q49EFh3oqBjKfMOrp4y16C.; HttpOnly; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 29 Apr 2026 04:12:55 GMT"
+        "__cf_bm=lWhSw5ab6M.sCZ8ba1JFFssub2QVhEkVsVLB7A5y9Zs-1781667171.8375692-1.0.1.1-FZS26gKBp3b4YJ_T7i9IjcHF9iMvsGZBD6M_Io0mcQRnvbKXOalQmiW_3DZuc4lEiqSGkGcySqxOjxAVUz_gAVhM0NLDZeaedEmlOGjO5Ua_FxYSWb_WXYsO74ag9dSa; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 17 Jun 2026 04:02:52 GMT"
       ],
       "x-cache-status": "MISS",
       "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=305,cfOrigin;dur=310",
-      "cf-ray": "9f3b4ca7e98b8bda-IAD"
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=210,cfOrigin;dur=280",
+      "cf-ray": "a0cefd4ffe7cd67b-IAD"
     }
   },
   "tests": {
@@ -41,19 +41,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-04-29T04:12:55.000Z",
+          "expires": "2026-06-17T04:02:52.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -101,9 +102,9 @@
       "result": "sri-implemented-and-external-scripts-loaded-securely",
       "scoreModifier": 5,
       "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
