@@ -1,21 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "B+",
     "error": null,
-    "score": 100,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 0,
-    "testsPassed": 10,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:27:32 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "accept-ranges": "bytes",
-      "x-xss-protection": "1; mode=block",
-      "content-security-policy": "default-src 'self'; style-src 'self' 'nonce-674141a65e789981b6478a2485123a0f'; style-src-attr 'unsafe-inline'; font-src 'self' data:; script-src 'self' https://pdcw.internet-signalement.gouv.fr 'nonce-674141a65e789981b6478a2485123a0f';  worker-src 'self' blob:; img-src data: https: http:; frame-ancestors 'none'",
-      "referrer-policy": "same-origin",
-      "x-content-type-options": "nosniff",
+      "date": "Wed, 17 Jun 2026 03:29:58 GMT",
+      "content-type": "text/html",
+      "content-security-policy": "default-src 'self'; style-src 'self' 'nonce-87e58eb05aa2e95ba9c6890793f7325c'; style-src-attr 'unsafe-inline'; font-src 'self' data:; script-src 'self' https://pdcw.internet-signalement.gouv.fr 'nonce-87e58eb05aa2e95ba9c6890793f7325c';  worker-src 'self' blob:; img-src data: https: http:; frame-ancestors 'none'",
+      "x-xss-protection": "1; mode=block;",
+      "referrer-policy": "same-origin;",
+      "x-content-type-options": "nosniff;",
       "strict-transport-security": "max-age=31536000",
       "connection": "close",
       "transfer-encoding": "chunked"
@@ -32,7 +31,7 @@
           "'self'"
         ],
         "style-src": [
-          "'nonce-674141a65e789981b6478a2485123a0f'",
+          "'nonce-87e58eb05aa2e95ba9c6890793f7325c'",
           "'self'"
         ],
         "style-src-attr": [
@@ -43,7 +42,7 @@
           "data:"
         ],
         "script-src": [
-          "'nonce-674141a65e789981b6478a2485123a0f'",
+          "'nonce-87e58eb05aa2e95ba9c6890793f7325c'",
           "'self'",
           "https://pdcw.internet-signalement.gouv.fr"
         ],
@@ -104,10 +103,10 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "same-origin",
+      "pass": false,
+      "result": "referrer-policy-header-invalid",
+      "scoreModifier": -5,
+      "data": "same-origin;",
       "http": true,
       "meta": false
     },
@@ -131,10 +130,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff;"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
