@@ -9,12 +9,12 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:31:07 GMT",
+      "date": "Fri, 19 Jun 2026 07:20:18 GMT",
       "server": "Apache",
       "x-powered-by": "PHP/8.0.30",
       "cache-control": "no-cache",
       "wpo-cache-status": "cached",
-      "last-modified": "Thu, 30 Apr 2026 15:58:42 GMT",
+      "last-modified": "Thu, 18 Jun 2026 15:52:33 GMT",
       "vary": "User-Agent",
       "connection": "close",
       "transfer-encoding": "chunked",
@@ -51,12 +51,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://institutfrancais-togo.com/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://institutfrancais-togo.com/",
+        "https://institutfrancais-togo.com/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -70,7 +73,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
