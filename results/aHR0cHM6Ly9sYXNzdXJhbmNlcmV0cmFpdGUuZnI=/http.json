@@ -1,26 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:25:25 GMT",
+      "date": "Fri, 19 Jun 2026 07:28:53 GMT",
       "set-cookie": [
-        "JSESSIONID=34952D601BAF04F957E4598F1B2949F3; Path=/; Secure; HttpOnly"
+        "JSESSIONID=AC7F8924709CD7552C164931BCCDB090; Path=/; Secure; HttpOnly"
       ],
       "pragma": "no-cache",
       "vary": "accept-encoding",
       "content-type": "text/html;charset=UTF-8",
-      "cache-control": "no-cache, no-store",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
+      "content-security-policy": "connect-src 'self' https://*.lassuranceretraite.fr/ https://platform.twitter.com/ https://*.sibforms.com/ https://sibforms.com/ https://static.brevo.com/ https://translate.googleapis.com/ https://*.inbenta.io/ https://www.google.com/recaptcha/ https://fra-col.eum-appdynamics.com/ https://logs1409.xiti.com/ https://ddjhjpv.pa-cd.com; font-src 'self' data: https://*.lassuranceretraite.fr/ https://assets.brevo.com/ https://*.inbenta.io/ https://fonts.gstatic.com/; manifest-src 'self'; media-src 'self' data:; object-src 'self'; worker-src 'self'; style-src-elem 'self' 'unsafe-inline' https://*.lassuranceretraite.fr/ https://sibforms.com/ https://www.gstatic.com/ https://fonts.googleapis.com/ https://sdk.inbenta.io/; style-src 'self' 'unsafe-inline' https://*.lassuranceretraite.fr/ https://sibforms.com/ https://www.gstatic.com/ https://sdk.inbenta.io/ https://fonts.googleapis.com/; frame-src 'self' blob: lassuranceretraite.fr https://*.lassuranceretraite.fr/ https://*.sibforms.com/ https://demander-ma-retraite.info-retraite.fr https://lassuranceretraite.esii-orion.com/ https://esii-orion.com/ https://www.youtube-nocookie.com/ https://platform.twitter.com/ https://www.google.com/ https://fonts.googleapis.com/ https://app.pandasuite.com/ https://www.youtube.com/ https://www.icope.fr/; default-src 'self' lassuranceretraite.fr https://*.lassuranceretraite.fr/; script-src blob: 'self' 'unsafe-inline' 'unsafe-eval' https://*.lassuranceretraite.fr/ https://sibforms.com/ https://f1-eu.readspeaker.com/ https://tag.aticdn.net/ https://platform.twitter.com/ https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://sdk.inbenta.io/ https://ajax.googleapis.com/ https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://*.lassuranceretraite.fr/ https://static.brevo.com/ https://fonts.gstatic.com/ https://translate.google.com/ https://*.ytimg.com/ https://data.geopf.fr/ https://voxusagers.numerique.gouv.fr/ https://fra-col.eum-appdynamics.com/ *.inbenta.io https://*.inbenta.com/ https://platform.twitter.com/ https://logs1409.xiti.com/;",
+      "cache-control": "no-cache, no-store",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -29,13 +30,134 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "connect-src": [
+          "'self'",
+          "https://*.inbenta.io/",
+          "https://*.lassuranceretraite.fr/",
+          "https://*.sibforms.com/",
+          "https://ddjhjpv.pa-cd.com",
+          "https://fra-col.eum-appdynamics.com/",
+          "https://logs1409.xiti.com/",
+          "https://platform.twitter.com/",
+          "https://sibforms.com/",
+          "https://static.brevo.com/",
+          "https://translate.googleapis.com/",
+          "https://www.google.com/recaptcha/"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://*.inbenta.io/",
+          "https://*.lassuranceretraite.fr/",
+          "https://assets.brevo.com/",
+          "https://fonts.gstatic.com/"
+        ],
+        "manifest-src": [
+          "'self'"
+        ],
+        "media-src": [
+          "'self'",
+          "data:"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "worker-src": [
+          "'self'"
+        ],
+        "style-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.lassuranceretraite.fr/",
+          "https://fonts.googleapis.com/",
+          "https://sdk.inbenta.io/",
+          "https://sibforms.com/",
+          "https://www.gstatic.com/"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.lassuranceretraite.fr/",
+          "https://fonts.googleapis.com/",
+          "https://sdk.inbenta.io/",
+          "https://sibforms.com/",
+          "https://www.gstatic.com/"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://*.lassuranceretraite.fr/",
+          "https://*.sibforms.com/",
+          "https://app.pandasuite.com/",
+          "https://demander-ma-retraite.info-retraite.fr",
+          "https://esii-orion.com/",
+          "https://fonts.googleapis.com/",
+          "https://lassuranceretraite.esii-orion.com/",
+          "https://platform.twitter.com/",
+          "https://www.google.com/",
+          "https://www.icope.fr/",
+          "https://www.youtube-nocookie.com/",
+          "https://www.youtube.com/",
+          "lassuranceretraite.fr"
+        ],
+        "default-src": [
+          "'self'",
+          "https://*.lassuranceretraite.fr/",
+          "lassuranceretraite.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "blob:",
+          "https://*.lassuranceretraite.fr/",
+          "https://ajax.googleapis.com/",
+          "https://cdnjs.cloudflare.com",
+          "https://f1-eu.readspeaker.com/",
+          "https://platform.twitter.com/",
+          "https://sdk.inbenta.io/",
+          "https://sibforms.com/",
+          "https://tag.aticdn.net/",
+          "https://www.google.com/recaptcha/",
+          "https://www.gstatic.com/recaptcha/"
+        ],
+        "img-src": [
+          "'self'",
+          "*.inbenta.io",
+          "blob:",
+          "data:",
+          "https://*.inbenta.com/",
+          "https://*.lassuranceretraite.fr/",
+          "https://*.ytimg.com/",
+          "https://data.geopf.fr/",
+          "https://fonts.gstatic.com/",
+          "https://fra-col.eum-appdynamics.com/",
+          "https://logs1409.xiti.com/",
+          "https://platform.twitter.com/",
+          "https://static.brevo.com/",
+          "https://translate.google.com/",
+          "https://voxusagers.numerique.gouv.fr/"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
