@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 01 May 2026 03:29:59 GMT",
+      "date": "Fri, 19 Jun 2026 07:20:43 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -18,9 +18,13 @@
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "critical-ch": "Sec-CH-Prefers-Color-Scheme",
       "x-powered-by": "Next.js, Payload",
-      "link": "<https://www.ircam.fr/fr>; rel=\"alternate\"; hreflang=\"fr\", <https://www.ircam.fr/en>; rel=\"alternate\"; hreflang=\"en\", <https://www.ircam.fr/>; rel=\"alternate\"; hreflang=\"x-default\", </_next/static/chunks/0de8acf11f07d35a.css>; rel=preload; as=\"style\", </_next/static/chunks/720ab68e1405844b.css>; rel=preload; as=\"style\", </_next/static/chunks/c9f30333edc6f1de.css>; rel=preload; as=\"style\", </_next/static/chunks/b1369e99a7b32985.css>; rel=preload; as=\"style\", </_next/static/chunks/c10d9c55206c2bb1.css>; rel=preload; as=\"style\"",
+      "link": "<https://www.ircam.fr/fr>; rel=\"alternate\"; hreflang=\"fr\", <https://www.ircam.fr/en>; rel=\"alternate\"; hreflang=\"en\", <https://www.ircam.fr/>; rel=\"alternate\"; hreflang=\"x-default\"",
       "x-locale": "fr",
-      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1",
+      "x-nextjs-stale-time": "300",
+      "cache-control": "s-maxage=300, stale-while-revalidate=31535700",
+      "etag": "\"wqse7snk8kcz4j\"",
       "strict-transport-security": "max-age=31536000"
     }
   },
