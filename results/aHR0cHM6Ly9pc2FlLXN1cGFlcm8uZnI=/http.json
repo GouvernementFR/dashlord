@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:30:58 GMT",
+      "date": "Fri, 19 Jun 2026 07:21:01 GMT",
       "server": "Apache/2.4.57 (Debian)",
       "link": "<https://www.isae-supaero.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.isae-supaero.fr/wp-json/wp/v2/pages/5>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.isae-supaero.fr/>; rel=shortlink",
       "set-cookie": [
-        "pll_language=fr; expires=Sat, 01 May 2027 03:30:58 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+        "pll_language=fr; expires=Sat, 19 Jun 2027 07:21:01 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
       ],
       "vary": "Accept-Encoding",
-      "content-length": "34132",
+      "content-length": "34080",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -41,7 +41,7 @@
       "data": {
         "pll_language": {
           "domain": "www.isae-supaero.fr",
-          "expires": "2027-05-01T03:30:58.000Z",
+          "expires": "2027-06-19T07:21:01.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -60,13 +60,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-not-needed-no-http",
-      "scoreModifier": 0,
-      "destination": null,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
+      "destination": "https://www.isae-supaero.fr/",
       "redirects": true,
       "route": [],
-      "statusCode": null
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
