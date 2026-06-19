@@ -9,20 +9,19 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:29:53 GMT",
+      "date": "Fri, 19 Jun 2026 07:20:59 GMT",
       "server": "Apache",
-      "set-cookie": [
-        "JSESSIONID=6CA0704FEE9821DB285AB176A82C769F; Path=/; Secure; HttpOnly",
-        "hst=server2; path=/"
-      ],
       "x-magnolia-registration": "Registered",
       "pragma": "no-cache",
       "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
       "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
-      "last-modified": "Fri, 01 May 2026 03:15:05 GMT",
+      "last-modified": "Fri, 19 Jun 2026 07:15:06 GMT",
       "content-type": "text/html;charset=UTF-8",
-      "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
+      "set-cookie": [
+        "hst_web4=server2; path=/"
+      ],
+      "transfer-encoding": "chunked",
       "connection": "close"
     }
   },
@@ -44,14 +43,7 @@
       "result": "cookies-without-secure-flag",
       "scoreModifier": -20,
       "data": {
-        "JSESSIONID": {
-          "domain": "www.inrs.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "hst": {
+        "hst_web4": {
           "domain": "www.inrs.fr",
           "path": "/",
           "port": null
@@ -106,7 +98,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js": {
+        "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js": {
           "crossorigin": null,
           "integrity": null
         }
