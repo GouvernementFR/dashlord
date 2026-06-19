@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "F",
     "error": null,
-    "score": 40,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "strict-transport-security": "max-age=63072000; includeSubdomains",
-      "date": "Fri, 01 May 2026 03:42:27 GMT",
+      "date": "Fri, 19 Jun 2026 07:22:01 GMT",
       "server": "Apache",
       "cache-control": "max-age=0, must-revalidate, private",
-      "expires": "Fri, 01 May 2026 03:42:27 GMT",
+      "expires": "Fri, 19 Jun 2026 07:22:01 GMT",
       "set-cookie": [
-        "PHPSESSID=i1vh9kkfe74moghcmdnd5p9srj; path=/; httponly; samesite=lax"
+        "PHPSESSID=24kmor4tjn9tv5n5su7vi45anq; path=/; httponly; samesite=lax"
       ],
       "vary": "Accept-Encoding",
-      "content-length": "6333",
+      "content-length": "6316",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -38,8 +38,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -10,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
       "data": {
         "PHPSESSID": {
           "domain": "je-teste-ma-professiondefoi.interieur.gouv.fr",
@@ -82,12 +82,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubdomains",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
