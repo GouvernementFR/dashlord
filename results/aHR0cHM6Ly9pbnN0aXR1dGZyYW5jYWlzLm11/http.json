@@ -1,23 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "D+",
     "error": null,
-    "score": 45,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 01 May 2026 03:26:11 GMT",
+      "date": "Fri, 19 Jun 2026 07:20:46 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-powered-by": "PHP/8.0.28, PleskLin",
+      "x-powered-by": "PHP/8.4.20, PleskLin",
       "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
       "link": "<https://www.institutfrancais.mu/wp-json/>; rel=\"https://api.w.org/\", <https://www.institutfrancais.mu/wp-json/wp/v2/pages/3280>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.institutfrancais.mu/>; rel=shortlink",
       "vary": "Accept-Encoding,User-Agent",
+      "referrer-policy": "no-referrer-when-downgrade",
       "content-security-policy": "frame-ancestors 'self' *.aec-app.com *.aec.app",
       "x-frame-options": "SAMEORIGIN"
     }
@@ -82,11 +83,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "pass": false,
+      "result": "referrer-policy-unsafe",
+      "scoreModifier": -5,
+      "data": "no-referrer-when-downgrade",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
