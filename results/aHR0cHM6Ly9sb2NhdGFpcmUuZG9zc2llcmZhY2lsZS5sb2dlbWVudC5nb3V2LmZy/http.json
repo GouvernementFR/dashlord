@@ -9,15 +9,15 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:26:38 GMT",
+      "date": "Fri, 19 Jun 2026 07:31:00 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "ce064bf8-ab99-46b8-bdf8-b062fbac44f8",
-      "last-modified": "Thu, 23 Apr 2026 13:08:37 GMT",
+      "x-request-id": "aa9b091e-4987-42dd-a3a6-021ebf31979e",
+      "last-modified": "Thu, 11 Jun 2026 06:56:41 GMT",
       "vary": "Accept-Encoding",
-      "etag": "W/\"69ea19d5-3ff\"",
-      "content-security-policy": "script-src 'self' *.dossierfacile.fr *.dossierfacile.logement.gouv.fr https://stats.beta.gouv.fr https://beacon-v2.helpscout.net 'unsafe-inline' 'unsafe-eval' blob: https://client.crisp.chat; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline' https://client.crisp.chat; img-src 'self' https://cdn.dossierfacile.logement.gouv.fr https://fonts.gstatic.com https://voxusagers.numerique.gouv.fr *.helpscout.net *.cloudfront.net *.gitbook.com data: client.crisp.chat image.crisp.chat; font-src 'self' https://cdn.jsdelivr.net fonts.google.com https://fonts.gstatic.com fonts.googleapis.com data: https://client.crisp.chat; object-src 'none'; connect-src https://sentry.incubateur.net https://stats.beta.gouv.fr https://sso.dossierfacile.fr https://sso.dossierfacile.logement.gouv.fr *.cloudfront.net *.dossierfacile.fr *.dossierfacile.logement.gouv.fr 'unsafe-eval' *.helpscout.net wss://ws-helpscout.pusher.com https://sockjs-helpscout.pusher.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com blob: client.crisp.chat wss://client.relay.crisp.chat; frame-src *.dossierfacile.fr *.dossierfacile.logement.gouv.fr dossierfacile.crisp.help; child-src blob: *.dossierfacile.fr *.dossierfacile.logement.gouv.fr; worker-src *.dossierfacile.logement.gouv.fr blob: 'self' 'unsafe-inline' 'unsafe-eval'",
+      "etag": "W/\"6a2a5c29-3ff\"",
+      "content-security-policy": "script-src 'self' *.dossierfacile.fr *.dossierfacile.logement.gouv.fr https://stats.beta.gouv.fr https://beacon-v2.helpscout.net https://embed.typeform.com 'unsafe-inline' 'unsafe-eval' blob: https://client.crisp.chat; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://embed.typeform.com 'unsafe-inline' https://client.crisp.chat; img-src 'self' https://cdn.dossierfacile.logement.gouv.fr https://fonts.gstatic.com https://voxusagers.numerique.gouv.fr *.helpscout.net *.cloudfront.net *.gitbook.com *.typeform.com data: client.crisp.chat image.crisp.chat; font-src 'self' https://cdn.jsdelivr.net fonts.google.com https://fonts.gstatic.com fonts.googleapis.com data: https://client.crisp.chat; object-src 'none'; connect-src https://sentry.incubateur.net https://stats.beta.gouv.fr https://sso.dossierfacile.fr https://sso.dossierfacile.logement.gouv.fr *.cloudfront.net *.dossierfacile.fr *.dossierfacile.logement.gouv.fr 'unsafe-eval' *.helpscout.net wss://ws-helpscout.pusher.com https://sockjs-helpscout.pusher.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com https://*.typeform.com blob: client.crisp.chat wss://client.relay.crisp.chat; frame-src *.dossierfacile.fr *.dossierfacile.logement.gouv.fr https://*.typeform.com dossierfacile.crisp.help; child-src blob: *.dossierfacile.fr *.dossierfacile.logement.gouv.fr; worker-src *.dossierfacile.logement.gouv.fr blob: 'self' 'unsafe-inline' 'unsafe-eval'",
       "x-frame-options": "deny",
       "x-content-type-options": "nosniff",
       "x-robots-tag": "noindex, nofollow",
@@ -40,6 +40,7 @@
           "blob:",
           "https://beacon-v2.helpscout.net",
           "https://client.crisp.chat",
+          "https://embed.typeform.com",
           "https://stats.beta.gouv.fr"
         ],
         "style-src": [
@@ -47,6 +48,7 @@
           "'unsafe-inline'",
           "https://cdn.jsdelivr.net",
           "https://client.crisp.chat",
+          "https://embed.typeform.com",
           "https://fonts.googleapis.com"
         ],
         "img-src": [
@@ -54,6 +56,7 @@
           "*.cloudfront.net",
           "*.gitbook.com",
           "*.helpscout.net",
+          "*.typeform.com",
           "client.crisp.chat",
           "data:",
           "https://cdn.dossierfacile.logement.gouv.fr",
@@ -81,6 +84,7 @@
           "*.helpscout.net",
           "blob:",
           "client.crisp.chat",
+          "https://*.typeform.com",
           "https://api.iconify.design",
           "https://api.simplesvg.com",
           "https://api.unisvg.com",
@@ -95,7 +99,8 @@
         "frame-src": [
           "*.dossierfacile.fr",
           "*.dossierfacile.logement.gouv.fr",
-          "dossierfacile.crisp.help"
+          "dossierfacile.crisp.help",
+          "https://*.typeform.com"
         ],
         "child-src": [
           "*.dossierfacile.fr",
