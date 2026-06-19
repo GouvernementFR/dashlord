@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 10,
+    "score": 25,
     "statusCode": 403,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:25:20 GMT",
+      "date": "Fri, 19 Jun 2026 07:28:33 GMT",
       "server": "Apache",
       "content-length": "199",
       "connection": "close",
@@ -46,12 +46,16 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
-      "destination": "https://lab-innovation.cget.gouv.fr/",
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://anct.gouv.fr/ressources/cartotheque",
       "redirects": true,
-      "route": [],
-      "statusCode": 403
+      "route": [
+        "http://lab-innovation.cget.gouv.fr/",
+        "https://cartotheque.anct.gouv.fr/",
+        "https://anct.gouv.fr/ressources/cartotheque"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
