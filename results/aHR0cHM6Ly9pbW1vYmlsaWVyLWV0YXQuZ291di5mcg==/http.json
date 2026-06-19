@@ -1,19 +1,19 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 30,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 01 May 2026 03:26:07 GMT",
+      "date": "Fri, 19 Jun 2026 07:19:46 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "3200d73c-f518-448e-bc39-9759de36d4ae",
+      "x-request-id": "8ea1b2c6-a793-4e57-984b-4391ef9757a6",
       "x-frame-options": "DENY",
       "vary": "Accept-Language, Cookie",
       "content-language": "fr",
@@ -52,12 +52,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://immobilier-etat.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://immobilier-etat.gouv.fr/",
+        "https://immobilier-etat.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -71,12 +74,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
