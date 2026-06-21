@@ -3,26 +3,23 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:26:08 GMT",
+      "date": "Sun, 21 Jun 2026 07:11:10 GMT",
       "server": "Apache",
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate",
-      "pragma": "no-cache",
-      "set-cookie": [
-        "PHPSESSID=k9dg3ll5571pm002k4394gqcll; path=/"
-      ],
       "vary": "User-Agent,Accept-Encoding",
       "upgrade": "h2,h2c",
       "connection": "Upgrade, close",
+      "last-modified": "Thu, 25 Apr 2024 14:51:24 GMT",
+      "etag": "\"200-616ecebcdd9e7-gzip\"",
+      "accept-ranges": "bytes",
       "x-powered-by": "PleskLin",
-      "content-length": "10557",
-      "content-type": "text/html; charset=UTF-8"
+      "content-length": "275",
+      "content-type": "text/html"
     }
   },
   "tests": {
@@ -39,16 +36,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "PHPSESSID": {
-          "domain": "maison-legionnaire.com",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -60,14 +51,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://maison-legionnaire.com/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://maison-legionnaire.com/",
+      "redirects": false,
       "route": [
-        "http://maison-legionnaire.com/",
-        "https://maison-legionnaire.com/"
+        "http://maison-legionnaire.com/"
       ],
       "statusCode": 200
     },
@@ -83,7 +73,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -93,10 +83,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://media.haisoft.fr/defaultpage_files/default-server-index.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
