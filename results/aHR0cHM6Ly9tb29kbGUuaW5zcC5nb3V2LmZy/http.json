@@ -1,20 +1,19 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D+",
     "error": null,
-    "score": 15,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 05 May 2026 03:25:22 GMT",
+      "date": "Sun, 21 Jun 2026 07:13:01 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "8179",
+      "content-length": "8143",
       "connection": "close",
-      "x-powered-by": "PHP/8.3.30",
       "expires": "Mon, 20 Aug 1969 09:23:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate, no-transform",
       "pragma": "no-cache",
@@ -22,10 +21,14 @@
       "content-script-type": "text/javascript",
       "content-style-type": "text/css",
       "x-ua-compatible": "IE=edge",
-      "last-modified": "Tue, 05 May 2026 03:25:22 GMT",
+      "last-modified": "Sun, 21 Jun 2026 07:13:01 GMT",
       "accept-ranges": "none",
       "vary": "Accept-Encoding",
-      "strict-transport-security": "max-age=63072000"
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "geolocation=(), microphone=(), camera=()"
     }
   },
   "tests": {
@@ -78,10 +81,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -89,10 +92,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
       "maxAge": 63072000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -109,17 +112,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
