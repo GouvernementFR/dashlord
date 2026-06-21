@@ -9,17 +9,17 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 05 May 2026 03:26:43 GMT",
+      "date": "Sun, 21 Jun 2026 07:13:12 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "referrer-policy": "same-origin",
-      "server-timing": "cfEdge;dur=12,cfOrigin;dur=0",
+      "server-timing": "cfEdge;dur=11,cfOrigin;dur=0",
       "x-frame-options": "SAMEORIGIN",
       "server": "cloudflare",
-      "cf-ray": "9f6ca5335b79e7f5-ORD"
+      "cf-ray": "a0f13593af01771e-ORD"
     }
   },
   "tests": {
@@ -37,19 +37,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-05-05T03:56:41.000Z",
+          "expires": "2026-06-21T07:43:10.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
