@@ -1,27 +1,35 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "C+",
     "error": null,
-    "score": 80,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:30:12 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "content-length": "14893",
+      "date": "Sun, 21 Jun 2026 07:06:37 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "7371",
+      "cache-control": "max-age=600, public",
+      "content-language": "fr",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "link": "<https://lk.ambafrance.org/local/cache-css/ad0ef6d5860254a19ede4dfb07118bbc.css?1777011751>;rel=\"stylesheet prefetch\"",
-      "x-spip-cache": "86400",
-      "last-modified": "Sun, 03 May 2026 03:30:12 GMT",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), aria-notify=(), captured-surface-control=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), on-device-speech-recognition=(), summarizer=(), wildcards=(), private-state-token-issuance=(), private-state-token-redemption=(), ch-ua-high-entropy-values=(), gamepad=(), interest-cohort=()",
+      "last-modified": "Thu, 18 Jun 2026 10:03:33 GMT",
+      "etag": "\"1781777013-gzip\"",
+      "age": "216",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
       "referrer-policy": "strict-origin-when-cross-origin",
+      "access-control-allow-methods": "GET, POST, HEAD",
+      "access-control-allow-headers": "DNT, User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Range",
+      "x-frame-options": "same-origin",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
+      "content-security-policy": "default-src 'self';script-src 'self' 'unsafe-inline' https://gvb.et-gv.fr https://hdge.diplomatie.gouv.fr https://ton.twimg.com https://platform.twitter.com;connect-src 'self' https://hdge.diplomatie.gouv.fr;object-src 'none';frame-src 'self' https://player.vimeo.com https://platform.twitter.com https://www.youtube.com https://www.youtube-nocookie.com;img-src 'self' data: https://media.diplomatie.gouv.fr;style-src 'self';font-src 'self' data:;",
       "x-dns-prefetch-control": "off",
-      "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
       "alt-svc": "h3=\":443\"; ma=86400",
       "strict-transport-security": "max-age=63072000",
       "connection": "close"
@@ -34,29 +42,57 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://gvb.et-gv.fr",
+          "https://hdge.diplomatie.gouv.fr",
+          "https://platform.twitter.com",
+          "https://ton.twimg.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://hdge.diplomatie.gouv.fr"
+        ],
         "object-src": [
           "'none'"
         ],
-        "form-action": [
+        "frame-src": [
+          "'self'",
+          "https://platform.twitter.com",
+          "https://player.vimeo.com",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://media.diplomatie.gouv.fr"
+        ],
+        "style-src": [
           "'self'"
         ],
-        "frame-ancestors": [
-          "'self'"
+        "font-src": [
+          "'self'",
+          "data:"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": true,
+        "antiClickjacking": false,
         "defaultNone": false,
         "insecureBaseUri": true,
-        "insecureFormAction": false,
+        "insecureFormAction": true,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
         "unsafeEval": false,
         "unsafeInline": true,
-        "unsafeInlineStyle": true,
+        "unsafeInlineStyle": false,
         "unsafeObjects": false
       },
       "numPolicies": 1
@@ -81,11 +117,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://lk.ambafrance.org/",
+      "destination": "https://lk.diplomatie.gouv.fr/fr",
       "redirects": true,
       "route": [
         "http://lk.ambafrance.org/",
-        "https://lk.ambafrance.org/"
+        "https://lk.ambafrance.org/",
+        "https://lk.diplomatie.gouv.fr/",
+        "https://lk.diplomatie.gouv.fr/fr"
       ],
       "statusCode": 200
     },
@@ -125,10 +163,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "same-origin"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
