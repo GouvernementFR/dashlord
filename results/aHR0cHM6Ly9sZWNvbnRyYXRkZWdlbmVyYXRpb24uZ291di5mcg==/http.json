@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "TSa1d3e6c3029=087dc22938ab2800383c2b16dc1b04657d07a0f82c09b1a7897aea4658086b47d8ed21b917968cb893e6bcffed9bfe78; Secure; Max-Age=30; Path=/",
-        "TSc4ff0492027=087dc22938ab2000fcce20c6b1d4999a0daf0bfa804578e0dcf9adadd2d72a2a1dd73a6b77313735083f0082351130003e59fc5ace294311dce2c4901136ace8288735559ced525a9048de4486fff1265c6d5f348766665e39a6e7e7024d000b; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab28000186b00bc7af9f0cc3319de2ea1576e88579640ac6b05ff2cc47c04ce37a9fe5563c8bc7ca90b3e5; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab20001c39db2f5570c8eeb2fe754c7daea1af058c35ee6d744595343b76d87ed789bd0814ad691c113000fc5bf4da7ac8ff185557a407d8d6f7b392ab3224aaad2cbc686ff7e82041780e13722434ab6caeeb1568f2114088d022; Secure; Path=/"
       ],
       "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
       "content-type": "text/html",
-      "content-length": "5715",
+      "content-length": "5125",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff"
@@ -48,6 +48,21 @@
         },
         "TSc4ff0492027": {
           "domain": "lecontratdegeneration.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "lecontratdegeneration.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
+          "domain": "lecontratdegeneration.gouv.fr",
+          "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
