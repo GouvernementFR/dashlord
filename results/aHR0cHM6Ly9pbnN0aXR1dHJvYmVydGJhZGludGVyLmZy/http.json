@@ -9,13 +9,14 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:29:35 GMT",
-      "server": "Apache",
+      "server": "nginx",
+      "date": "Sun, 21 Jun 2026 07:11:33 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "44742",
+      "connection": "close",
       "link": "<https://institutrobertbadinter.fr/fr/wp-json/>; rel=\"https://api.w.org/\", <https://institutrobertbadinter.fr/fr/wp-json/wp/v2/pages/217>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://institutrobertbadinter.fr/fr/>; rel=shortlink",
       "vary": "Accept-Encoding",
-      "content-length": "42830",
-      "connection": "close",
-      "content-type": "text/html; charset=UTF-8"
+      "x-powered-by": "PleskLin"
     }
   },
   "tests": {
@@ -54,6 +55,7 @@
       "redirects": true,
       "route": [
         "http://institutrobertbadinter.fr/",
+        "https://institutrobertbadinter.fr/",
         "https://institutrobertbadinter.fr/fr/"
       ],
       "statusCode": 200
