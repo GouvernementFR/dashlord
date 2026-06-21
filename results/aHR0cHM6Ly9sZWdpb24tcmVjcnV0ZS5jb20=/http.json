@@ -10,16 +10,16 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
-      "content-length": "230179",
+      "content-length": "230715",
       "cache-control": "max-age=3600, public",
       "content-language": "fr",
-      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.trustcommander.net https://static.addtoany.com https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com https://www.youtube.com/ https://www.google.com https://www.gstatic.com https://consent.cookiebot.com https://www.googletagmanager.com https://consentcdn.cookiebot.com/ https://genii-script.tolk.ai; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net https://genii-script.tolk.ai https://storage.googleapis.com; img-src 'self' data: https: https://static.addtoany.com; media-src 'self' data: https: https://www.youtube.com/; frame-src 'self' https://static.addtoany.com https://www.youtube.com https://www.google.com https://consentcdn.cookiebot.com; frame-ancestors 'self'; child-src 'self'; font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net; connect-src 'self' https://www.google.com https://region1.analytics.google.com https://stats.g.doubleclick.net https://consentcdn.cookiebot.com https://region1.google-analytics.com https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai; report-uri /report-csp-violation",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.trustcommander.net https://static.addtoany.com https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com https://www.youtube.com/ https://www.google.com https://www.gstatic.com https://consent.cookiebot.com https://www.googletagmanager.com https://consentcdn.cookiebot.com/; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net https://storage.googleapis.com; img-src 'self' data: https: https://static.addtoany.com; media-src 'self' data: https: https://www.youtube.com/; frame-src 'self' https://static.addtoany.com https://www.youtube.com https://www.google.com https://consentcdn.cookiebot.com; frame-ancestors 'self'; child-src 'self'; font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net; connect-src 'self' https://www.google.com https://region1.analytics.google.com https://stats.g.doubleclick.net https://consentcdn.cookiebot.com https://region1.google-analytics.com; report-uri /report-csp-violation",
       "content-type": "text/html; charset=UTF-8",
-      "etag": "\"1777303800\"",
+      "etag": "\"1781618079\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "fastly-drupal-html": "YES",
-      "last-modified": "Mon, 27 Apr 2026 15:30:00 GMT",
-      "traceresponse": "00-18ab36690c5b01d04d742cfb89aba67b-60b9901cbb6a6b00-01",
+      "last-modified": "Tue, 16 Jun 2026 13:54:39 GMT",
+      "traceresponse": "00-18b9943a2422d30c0fde8eb51d086064-d785fd11487786b1-01",
       "x-content-type-options": "nosniff",
       "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
       "x-drupal-cache": "HIT",
@@ -31,11 +31,11 @@
       "x-platform-router": "xz564ehjbu2gj5sdjnnkygkq4i",
       "via": "1.1 varnish, 1.1 varnish",
       "accept-ranges": "bytes",
-      "date": "Sun, 03 May 2026 03:29:51 GMT",
-      "age": "2933",
-      "x-served-by": "cache-par-lfpb1150068-PAR, cache-chi-kigq8000031-CHI",
+      "age": "367",
+      "date": "Sun, 21 Jun 2026 07:06:40 GMT",
+      "x-served-by": "cache-par-lfpb1150068-PAR, cache-chi-kmdw8640075-CHI",
       "x-cache": "HIT, HIT",
-      "x-cache-hits": "4861, 1",
+      "x-cache-hits": "10012, 0",
       "vary": "Cookie"
     }
   },
@@ -58,7 +58,6 @@
           "https://cdnjs.cloudflare.com",
           "https://consent.cookiebot.com",
           "https://consentcdn.cookiebot.com/",
-          "https://genii-script.tolk.ai",
           "https://static.addtoany.com",
           "https://unpkg.com",
           "https://www.google.com",
@@ -74,7 +73,6 @@
           "'unsafe-inline'",
           "https://cdn.jsdelivr.net",
           "https://fonts.googleapis.com",
-          "https://genii-script.tolk.ai",
           "https://storage.googleapis.com",
           "https://unpkg.com"
         ],
@@ -112,13 +110,10 @@
         "connect-src": [
           "'self'",
           "https://consentcdn.cookiebot.com",
-          "https://genii-api.tolk.ai",
-          "https://genii-messages.tolk.ai",
           "https://region1.analytics.google.com",
           "https://region1.google-analytics.com",
           "https://stats.g.doubleclick.net",
-          "https://www.google.com",
-          "wss://genii-messages.tolk.ai"
+          "https://www.google.com"
         ],
         "report-uri": [
           "/report-csp-violation"
@@ -196,10 +191,6 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://genii-script.tolk.ai/lightchat.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://consent.cookiebot.com/uc.js": {
           "crossorigin": null,
           "integrity": null
