@@ -9,15 +9,15 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 03 May 2026 03:30:01 GMT",
+      "date": "Sun, 21 Jun 2026 07:06:29 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "last-modified": "Tue, 28 Apr 2026 09:00:36 GMT",
+      "last-modified": "Fri, 19 Jun 2026 07:44:03 GMT",
       "vary": "Accept-Encoding,User-Agent",
       "set-cookie": [
-        "__cf_bm=FUSvJgQltTE9EJrKC.8bhVrbBsx5vc9BhUCWEM663I0-1777779001.1212337-1.0.1.1-S_BOP5xmo2TATshRUTRJHPOC3hLdfB1VPL6fL1qFQU9yX3g93fL0xICP6VOaMaHHXr37aj.983cFjb58y2saf0ymELv4QNgqSprp9R.jMtsAYbXtF6_XIJe9hG7p8Lpe; HttpOnly; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Sun, 03 May 2026 04:00:01 GMT"
+        "__cf_bm=kBt0FKLRtqQyx6Fdn._g5qL1SWnOkd1gQWNtf6Tl2b8-1782025588.718217-1.0.1.1-VU2tAfIQd9ekFDi6DOQamzFSpzXiTGmGdKi_HaE6hsSVlu8HipYWl4QPZkB9eI.Y7U8AorEkvAOkErm3aCgT7mZcl6uIynYoHv30BbT2a_u.3VZLv9k2ZKi.eo8dbBvX; HttpOnly; SameSite=None; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Sun, 21 Jun 2026 07:36:29 GMT"
       ],
       "x-front": "TEMPLATEDEBIAN11",
       "access-control-allow-origin": "https://epargnonsnosressources.gouv.fr",
@@ -29,7 +29,7 @@
       "permissions-policy": "accelerometer=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
       "content-security-policy": "upgrade-insecure-requests",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f5c2f44fac7f0a2-DFW"
+      "cf-ray": "a0f12bb97b26e5e8-IAD"
     }
   },
   "tests": {
@@ -63,19 +63,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "epargnonsnosressources.gouv.fr",
-          "expires": "2026-05-03T04:00:01.000Z",
+          "expires": "2026-06-21T07:36:29.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
