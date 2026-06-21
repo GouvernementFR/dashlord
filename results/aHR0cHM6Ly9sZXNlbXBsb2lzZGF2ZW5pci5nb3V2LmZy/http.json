@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "TSa1d3e6c3029=087dc22938ab2800adbac0a90ccd1fa7f72898d60ba064323d2f4a82be6f48f1d37322eb1ba5a38f637784bb667173e4; Secure; Max-Age=30; Path=/",
-        "TSc4ff0492027=087dc22938ab2000459a84c80ac0142b674ea29d7592b764d3a39e18b9f950a6040f91ed0332ac9c082a3b9183113000d4019e565f0adfb516c950a9cbf38928cda4086599a88a6d03302d5f1d6a56742e6370e7a07a06ec6c429f0b82866137; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab2800ee18a73a72d82d0ccc2cfe08d50a8181862201243a806cffe4308a601c990fd4e49857da7b43dc18; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab20005211b283e06fb937e2f4d60493804619f945c51e290efc738d42f250dfd0e8b3085237560b1130009fe05c1a61ee14dec974fa2a7ea479cd59fd52937c32d606db893e8d13939f859fcff5eee6d135a39306e84346c592f0; Secure; Path=/"
       ],
       "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
       "content-type": "text/html",
-      "content-length": "6810",
+      "content-length": "6826",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff"
@@ -48,6 +48,21 @@
         },
         "TSc4ff0492027": {
           "domain": "lesemploisdavenir.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "lesemploisdavenir.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        },
+        "TS01c71406": {
+          "domain": "lesemploisdavenir.gouv.fr",
+          "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
