@@ -1,113 +1,110 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "D+",
     "error": null,
-    "score": 45,
-    "statusCode": 200,
+    "score": 40,
+    "statusCode": 403,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 05 May 2026 03:25:32 GMT",
-      "content-type": "text/html;charset=utf-8",
+      "date": "Sun, 21 Jun 2026 07:10:48 GMT",
+      "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "cache-control": "no-store, must-revalidate, max-age=0",
-      "content-language": "fr",
-      "referrer-policy": "no-referrer",
-      "x-robots-tag": "none",
-      "content-security-policy": "default-src 'self'; img-src 'self' data: analytics.authent.permisdeconduire.interieur.gouv.fr; style-src 'self' 'unsafe-inline'; object-src 'none'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com cdn.trustcommander.net analytics.authent.permisdeconduire.interieur.gouv.fr cdn.tagcommander.com; frame-src 'self' https://challenges.cloudflare.com cdn.trustcommander.net moncompte.permisdeconduire.gouv.fr authent.permisdeconduire.interieur.gouv.fr *.permisdeconduire.gouv.fr; frame-ancestors 'self' moncompte.permisdeconduire.gouv.fr/compte-usager authent.permisdeconduire.interieur.gouv.fr/compte-usager *.permisdeconduire.gouv.fr; connect-src 'self' privacy.trustcommander.net privacy.commander1.com analytics.authent.permisdeconduire.interieur.gouv.fr",
-      "x-frame-options": "SAMEORIGIN",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=31536000",
-      "cf-cache-status": "DYNAMIC",
-      "set-cookie": [
-        "AUTH_SESSION_ID=YTUxMmU0YTAtMGNlYS00YjlhLTk5OTUtZTczNzAwZWRiOTlkLlBPZ25vWjFjM2hKbmtNd0hHX0pfRkFCVHJDczNzN2c1UEZyQjJxRGNoTXFjUTVoR2czNUhNaW1qSjVVVDlWRFhSSmg2T3I1OXR3OGNCNzFhczdBdWZ3.authent-45637; Version=1; Path=/auth/realms/usager/; Secure; HttpOnly; SameSite=None",
-        "KC_AUTH_SESSION_HASH=\"vEAm+purUcIthFgrSgjnrYtmjiUYBe6s3OVcaTm/2a8\"; Version=1; Path=/auth/realms/usager/; Max-Age=60; Secure; SameSite=Strict",
-        "KC_RESTART=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..y3bTvEzgwLrPbxq6XUF0ZQ.F0KYPjUFegjlAtXYDjlumM4g3Mmefj3tgE3QOmofPyI4681G3IULJjs-A6vLTUaYLdzzSIXa32wZYtwDDj9TmWY7tTvfLJhR-gaojX61kZFzcnAX9YKb3A_QmnafFL03W_khIoRJesBIuuXBUMK27j1ncBmB4zXjDXkW4zaw-usPRVntXwi_uVukBnV7rCYs3MOHho1S1N_4QYOtLD4PyOlJb_JjDrfTOcT7hcR7qiu27gPM13ipDN3oz7OlYtKWdKf79pUHZG6MtElqQS0Zd5u3hzT7GbAxcvDl_7Q6CLIGrcBGonoAyd7ltL3r9hUPnndvFNy_aDP3PhMo-ySZNJbLmvD1EbyKdXHH9DemhHG151khfC6iTE8DlYtmn0MUaj48glTIkRqTtR9jsxYELoDzLiTjQZxzUAj8fkO3sJXkp6sVqkXtwRKNWuXr4ni8pH_D6g5LrMy27jnNL6seYg8nDaEo4W3TeNcExCpICC7NETMN2p3wCD37NE9NWupk32sK2T7Ca6Ugplv0uE67k5JnaejL-j75zjSHH-p-PytLgLiGwB7cGvaeBdEpl95XZcslsz7k_esX8WCqFOhMe03K_PIPaprEqPk8h5ZAhAJJperg9cGVCiZY3BwRkmAcjDeEZ9ibGthcMaabWKjQXKjZFRiOxOQruhQo3HZKnfNA-nmlzuZVK_l0FyAzjiBuHwYlzp4ZUuJKlepyO2dUUj4OtuvG0QwKcDKs0HSGbe7509aVcMFS_aN1g2NZSzK-kEZek7CsZAxpiNQhj57Y-9pH_8iK63qgZ5tD7G53ehylyVt_MxyARJ-dpmloedopV3HB-OBg5kgKk1dTq9ZfdWHhiLGyeIppnZh39RuQEar59aPJCW7O5oR64OT2RwJggkdwGtqlOMoTJPSNP4Wl8P7X_kyU0PPiAkwdKv2Nti2oBzTDBUJcOhhC3pPi29bQ9AQdKfpU8vUCeKP-pyy1A7kRnGr1jPyAQ9uomIyFRwonvvPwNudI7zn7-1VmYSLBedFhxYYFzTRl9Kgna-ltNsFlvdfrNO5wH7mqV4xsTzdffQxJhC5ayKrs0irTGQmXu82kLpaGvnIBqgNANBZ3sVJiCnML3Fv0Ah8dXrDyR_4.0U2feLyviKljFwtBq5dtDQ; Version=1; Path=/auth/realms/usager/; Secure; HttpOnly; SameSite=None",
-        "bZA_=v1YNHOgw__II4; Expires=Tue, 05-May-2026 05:25:32 GMT; Path=/",
-        "__cf_bm=zPjQQwtS_YjkIo05jVfwC7bW5JAWOdz8kizhzZiZ0Ng-1777951531.8074155-1.0.1.1-Q93AH86pxJ2C91vHzixON_3edX6fdpr1MMfB7sgKxb1acZGt06fjJjsRWSRnz9pyuMtvObEAvRk6oz370aFaqC1OWMnQjyltG1lJspImtf84_u0zZkvv2W4u72kAMJPE; HttpOnly; Secure; Path=/; Domain=permisdeconduire.gouv.fr; Expires=Tue, 05 May 2026 03:55:32 GMT",
-        "_cfuvid=nmYpLrOmgvh828RaXcaFJ71WTnaF2OG1tZ0wLvFi24g-1777951531.8074155-1.0.1.1-PCs9RWC7uFOrZF62nZSHEimsYwxor4RX1MiVm_GGwn4; HttpOnly; SameSite=None; Secure; Path=/; Domain=permisdeconduire.gouv.fr"
-      ],
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-d6eMFRKEEkBb5VqIqM12es' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
-      "cf-ray": "9f6ca371cf45f095-DFW"
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"a0f132113e805fe3\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "set-cookie": [
+        "__cf_bm=ez5ldx33WHZkXiXgKb1c9EIRolo8r._nY6i90Pf1TPI-1782025848.5192783-1.0.1.1-03WC5oiKsKYUbrQHDIyoC7lb1Ss48YLIkWVRpRGnFF7N64Ln.YBC2b9i14bpikKGSsNvl_7r8SKJKnKyxrNTTkC8k0XKmpIRjdOF9nq_kB9weSjU11xwHki7fMpmPaCJ; HttpOnly; SameSite=None; Secure; Path=/; Domain=permisdeconduire.gouv.fr; Expires=Sun, 21 Jun 2026 07:40:48 GMT"
+      ],
+      "cf-ray": "a0f132113e805fe3-SJC"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
+      "result": "csp-implemented-with-insecure-scheme",
       "scoreModifier": -20,
       "data": {
         "default-src": [
-          "'self'"
-        ],
-        "img-src": [
-          "'self'",
-          "analytics.authent.permisdeconduire.interieur.gouv.fr",
-          "data:"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ],
-        "object-src": [
           "'none'"
         ],
         "script-src": [
+          "'nonce-d6emfrkeekbb5vqiqm12es'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
           "'self'",
-          "'unsafe-inline'",
-          "analytics.authent.permisdeconduire.interieur.gouv.fr",
-          "cdn.tagcommander.com",
-          "cdn.trustcommander.net",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
           "https://challenges.cloudflare.com"
         ],
         "frame-src": [
           "'self'",
-          "*.permisdeconduire.gouv.fr",
-          "authent.permisdeconduire.interieur.gouv.fr",
-          "cdn.trustcommander.net",
-          "https://challenges.cloudflare.com",
-          "moncompte.permisdeconduire.gouv.fr"
+          "blob:",
+          "https://challenges.cloudflare.com"
         ],
-        "frame-ancestors": [
+        "child-src": [
           "'self'",
-          "*.permisdeconduire.gouv.fr",
-          "authent.permisdeconduire.interieur.gouv.fr/compte-usager",
-          "moncompte.permisdeconduire.gouv.fr/compte-usager"
+          "blob:",
+          "https://challenges.cloudflare.com"
         ],
-        "connect-src": [
-          "'self'",
-          "analytics.authent.permisdeconduire.interieur.gouv.fr",
-          "privacy.commander1.com",
-          "privacy.trustcommander.net"
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
         ]
       },
       "http": true,
-      "meta": false,
+      "meta": true,
       "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
         "insecureFormAction": true,
-        "insecureSchemeActive": false,
+        "insecureSchemeActive": true,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
+        "unsafeEval": true,
+        "unsafeInline": false,
         "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
-      "numPolicies": 1
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-httponly-flag",
-      "scoreModifier": -30,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "XSRF-TOKEN": {
           "domain": "mespoints.permisdeconduire.gouv.fr",
@@ -124,47 +121,24 @@
           "secure": true
         },
         "bZA_": {
-          "domain": "moncompte.permisdeconduire.gouv.fr",
-          "expires": "2026-05-05T05:25:32.000Z",
+          "domain": "mespoints.permisdeconduire.gouv.fr",
+          "expires": "2026-06-21T09:10:47.000Z",
           "path": "/",
           "port": null
         },
         "__cf_bm": {
           "domain": "permisdeconduire.gouv.fr",
-          "expires": "2026-05-05T03:55:32.000Z",
+          "expires": "2026-06-21T07:40:48.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         },
         "_cfuvid": {
-          "domain": "permisdeconduire.gouv.fr",
+          "domain": "mespoints.permisdeconduire.gouv.fr",
           "httponly": true,
           "path": "/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
-        },
-        "AUTH_SESSION_ID": {
-          "domain": "moncompte.permisdeconduire.gouv.fr",
-          "httponly": true,
-          "path": "/auth/realms/usager/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
-        },
-        "KC_AUTH_SESSION_HASH": {
-          "domain": "moncompte.permisdeconduire.gouv.fr",
-          "max-age": 60,
-          "path": "/auth/realms/usager/",
-          "port": null,
-          "samesite": "strict",
-          "secure": true
-        },
-        "KC_RESTART": {
-          "domain": "moncompte.permisdeconduire.gouv.fr",
-          "httponly": true,
-          "path": "/auth/realms/usager/",
           "port": null,
           "samesite": "none",
           "secure": true
@@ -184,13 +158,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=-5MlIO4ZKQSlafgpYlCjuH4cOXfCuA3nqBCllQOGwig%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=fWkJ4AJqkN3ASlmqNzBeJPZLYi_wS8WzNYX32rM0CVg",
+      "destination": "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=T1ISHomn57SAp_rmrPZjVMUQ2KaoF5QXkiUadO_4pp8%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=l0uU8j8uW3RsRrURs880y2aaJuJPrCp1tBbQyUPaCks",
       "redirects": true,
       "route": [
         "http://mespoints.permisdeconduire.gouv.fr/",
         "https://mespoints.permisdeconduire.gouv.fr/",
         "https://mespoints.permisdeconduire.gouv.fr/oauth2/authorization/mes-points-permis",
-        "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=-5MlIO4ZKQSlafgpYlCjuH4cOXfCuA3nqBCllQOGwig%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=fWkJ4AJqkN3ASlmqNzBeJPZLYi_wS8WzNYX32rM0CVg"
+        "https://moncompte.permisdeconduire.gouv.fr/auth/realms/usager/protocol/openid-connect/auth?response_type=code&client_id=gndc-mes-points-permis&scope=openid&state=T1ISHomn57SAp_rmrPZjVMUQ2KaoF5QXkiUadO_4pp8%3D&redirect_uri=https://mespoints.permisdeconduire.gouv.fr/login/oauth2/code/mes-points-permis&nonce=l0uU8j8uW3RsRrURs880y2aaJuJPrCp1tBbQyUPaCks"
       ],
       "statusCode": 403
     },
@@ -199,36 +173,27 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "no-referrer",
+      "data": "same-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://challenges.cloudflare.com/turnstile/v0/api.js?compat=recaptcha": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.tagcommander.com/3602/tc_SecuriteRoutiere_2.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -240,17 +205,17 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
