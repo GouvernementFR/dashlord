@@ -1,36 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "C-",
     "error": null,
-    "score": 60,
-    "statusCode": 200,
+    "score": 45,
+    "statusCode": 403,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 05 May 2026 03:30:00 GMT",
+      "date": "Tue, 23 Jun 2026 06:23:17 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "set-cookie": [
-        "__wadp_clearance_sid=1777951800274_atp9vtj0g; Path=/; Max-Age=21600; Expires=Tue, 05 May 2026 09:30:00 GMT; Max-Age=21600"
-      ],
-      "cache-control": "max-age=900, public",
-      "content-language": "fr",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "referrer-policy": "same-origin",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "HIT",
-      "last-modified": "Tue, 05 May 2026 03:27:30 GMT",
-      "strict-transport-security": "max-age=15768000",
-      "age": "0",
-      "x-content-type-options": "nosniff",
-      "x-clara-wadp": "1256568165",
+      "set-cookie": [
+        "__cf_bm=0118yiYr8GpwN2ZdGGRE_URa3aQZ4dXM4kV_6mdJipQ-1782195797.412519-1.0.1.1-MPSpR2DRW3H2zuoUwUJcc8IB5c8I6HRJHaeHaoTRnQW4uw4LvvB15L1jea_D.6LCyAk.vlCsBRuFXwYKRLdM02oIwvVuvJFIhYxn13JA4YVhqALcps4TS9fWJidd9IsH; HttpOnly; SameSite=None; Secure; Path=/; Domain=musee-orsay.fr; Expires=Tue, 23 Jun 2026 06:53:17 GMT"
+      ],
       "server": "cloudflare",
-      "x-wadp-cache": "MISS",
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f6ca9fefd81f3d5-ORD"
+      "cf-ray": "a1016735ddbfaa0b-ORD"
     }
   },
   "tests": {
@@ -47,27 +38,21 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "musee-orsay.fr",
-          "expires": "2026-05-05T04:00:00.000Z",
+          "expires": "2026-06-23T06:53:17.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
-        },
-        "__wadp_clearance_sid": {
-          "domain": "www.musee-orsay.fr",
-          "expires": "2026-05-05T09:30:00.000Z",
-          "max-age": 21600,
-          "path": "/",
-          "port": null
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -81,53 +66,47 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://www.musee-orsay.fr/fr",
+      "destination": "https://www.musee-orsay.fr/",
       "redirects": true,
       "route": [
         "http://musee-orsay.fr/",
-        "https://www.musee-orsay.fr/",
-        "https://www.musee-orsay.fr/fr"
+        "https://www.musee-orsay.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=15768000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 15768000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://webchat.askmonastudio.com/scripts/embed.mjs": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
