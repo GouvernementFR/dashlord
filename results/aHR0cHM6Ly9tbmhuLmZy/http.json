@@ -3,35 +3,35 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 50,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 05 May 2026 03:31:57 GMT",
+      "date": "Tue, 23 Jun 2026 06:22:00 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "cache-control": "max-age=0, must-revalidate, public, s-maxage=67322",
+      "cache-control": "max-age=0, must-revalidate, public, s-maxage=56505",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Tue, 05 May 2026 22:00:00 GMT",
-      "last-modified": "Tue, 05 May 2026 03:17:58 GMT",
+      "expires": "Tue, 23 Jun 2026 22:00:00 GMT",
+      "last-modified": "Tue, 23 Jun 2026 06:18:14 GMT",
       "cache-tags": "HIT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: t.contentsquare.net contentsquare.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self' https://www.mnhn.fr http://www.museedelhomme.fr https://www.museedelhomme.fr http://www.harmasjeanhenrifabre.fr https://www.harmasjeanhenrifabre.fr http://www.jardindesplantesdeparis.fr https://www.jardindesplantesdeparis.fr http://www.vigienature.fr https://www.vigienature.fr http://pzp.preprod.mnhn.insite.coop https://pzp.preprod.mnhn.insite.coop http://www.parczoologiquedeparis.fr https://www.parczoologiquedeparis.fr http://vn.preprod.mnhn.insite.coop https://vn.preprod.mnhn.insite.coop http://menton.preprod.mnhn.insite.coop https://menton.preprod.mnhn.insite.coop http://www.jardinbotaniquevalrahmehmenton.fr https://www.jardinbotaniquevalrahmehmenton.fr http://ht.preprod.mnhn.insite.coop https://ht.preprod.mnhn.insite.coop http://www.zoodelahautetouche.fr https://www.zoodelahautetouche.fr; frame-ancestors 'self' *.mnhn.fr; report-uri https://www.mnhn.fr/fr/report-uri/enforce",
+      "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: t.contentsquare.net contentsquare.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self' https://www.mnhn.fr http://www.museedelhomme.fr https://www.museedelhomme.fr http://www.harmasjeanhenrifabre.fr https://www.harmasjeanhenrifabre.fr http://www.jardindesplantesdeparis.fr https://www.jardindesplantesdeparis.fr http://www.vigienature.fr https://www.vigienature.fr http://pzp.preprod.mnhn.insite.coop https://pzp.preprod.mnhn.insite.coop http://www.parczoologiquedeparis.fr https://www.parczoologiquedeparis.fr http://vn.preprod.mnhn.insite.coop https://vn.preprod.mnhn.insite.coop http://menton.preprod.mnhn.insite.coop https://menton.preprod.mnhn.insite.coop http://www.jardinbotaniquevalrahmehmenton.fr https://www.jardinbotaniquevalrahmehmenton.fr http://ht.preprod.mnhn.insite.coop https://ht.preprod.mnhn.insite.coop http://www.zoodelahautetouche.fr https://www.zoodelahautetouche.fr http://bibliotheques.preprod.mnhn.insite.coop https://bibliotheques.preprod.mnhn.insite.coop http://bibliotheques.mnhn.fr https://bibliotheques.mnhn.fr; frame-ancestors 'self' *.mnhn.fr; report-uri https://www.mnhn.fr/fr/report-uri/enforce",
       "x-drupal-cache": "MISS",
       "x-varnish-cacheable": "YES",
       "vary": "Cookie, Accept-Encoding",
-      "x-varnish": "3253270 695171",
-      "age": "838",
+      "x-varnish": "758949437 757920837",
+      "age": "225",
       "via": "1.1 varnish (Varnish/7.1)",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f6cacd93b96ed79-LAX"
+      "cf-ray": "a10165559cfae5b6-IAD"
     }
   },
   "tests": {
@@ -61,6 +61,8 @@
         ],
         "form-action": [
           "'self'",
+          "http://bibliotheques.mnhn.fr",
+          "http://bibliotheques.preprod.mnhn.insite.coop",
           "http://ht.preprod.mnhn.insite.coop",
           "http://menton.preprod.mnhn.insite.coop",
           "http://pzp.preprod.mnhn.insite.coop",
@@ -72,6 +74,8 @@
           "http://www.parczoologiquedeparis.fr",
           "http://www.vigienature.fr",
           "http://www.zoodelahautetouche.fr",
+          "https://bibliotheques.mnhn.fr",
+          "https://bibliotheques.preprod.mnhn.insite.coop",
           "https://ht.preprod.mnhn.insite.coop",
           "https://menton.preprod.mnhn.insite.coop",
           "https://pzp.preprod.mnhn.insite.coop",
@@ -113,19 +117,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "mnhn.fr",
-          "expires": "2026-05-05T04:01:56.000Z",
+          "expires": "2026-06-23T06:52:00.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -171,15 +176,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
