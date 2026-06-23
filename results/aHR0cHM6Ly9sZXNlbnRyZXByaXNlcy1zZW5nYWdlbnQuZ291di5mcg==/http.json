@@ -9,22 +9,22 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 05 May 2026 03:26:47 GMT",
+      "date": "Tue, 23 Jun 2026 06:23:22 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "b1146ee4-c9cf-462a-a212-95c2e34e9616",
+      "x-request-id": "70793684-1f17-4ba0-8d34-9b4d1e2af197",
       "referrer-policy": "no-referrer",
       "x-frame-options": "DENY",
       "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "content-security-policy": "default-src 'self' data:; script-src 'self' 'nonce-YTgwMmNhYmMtMWY1NS00MmE4LTk0MWUtZDliMzNlNDNlNjMz' tag.aticdn.net www.googletagmanager.com gva.et-gv.fr *.gouv.fr snap.licdn.com 'sha256-A+Na0UD9JyZvXLepJqUfQMWfcn9nOlpTllAwDx45MIE=' rpwg.lesentreprises-sengagent.gouv.fr; frame-src form.typeform.com itou.typeform.com *.doubleclick.net *.youtube.com *.gouv.fr *.service-public.fr lesentreprises-sengagent-data-warehouse.osc-fr1.scalingo.io; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: *.xiti.com *.doubleclick.net *.gouv.fr *.graphassets.com *.ads.linkedin.com www.google.com; connect-src 'self' *.google-analytics.com *.xiti.com api-adresse.data.gouv.fr https://openmaptiles.geo.data.gouv.fr/ https://openmaptiles.github.io https://*.ingest.de.sentry.io https://www.google.com *.ads.linkedin.com; frame-ancestors 'self' manifesteinclusion.org agefiph.fr fiphfp.fr handicap.gouv.fr travail-emploi.gouv.fr; worker-src blob:;",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "content-security-policy": "default-src 'self' data:; script-src 'self' 'nonce-ODhkMTE0OWUtN2UwOS00ZWQ2LTkxMmYtM2JkM2U3ZmZkMDlj' tag.aticdn.net www.googletagmanager.com gva.et-gv.fr *.gouv.fr snap.licdn.com 'sha256-A+Na0UD9JyZvXLepJqUfQMWfcn9nOlpTllAwDx45MIE=' rpwg.lesentreprises-sengagent.gouv.fr; frame-src form.typeform.com itou.typeform.com *.doubleclick.net *.youtube.com *.gouv.fr *.service-public.fr lesentreprises-sengagent-data-warehouse.osc-fr1.scalingo.io; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: *.xiti.com *.doubleclick.net *.gouv.fr *.graphassets.com *.ads.linkedin.com www.google.com; connect-src 'self' *.google-analytics.com *.xiti.com api-adresse.data.gouv.fr https://openmaptiles.geo.data.gouv.fr/ https://openmaptiles.data.gouv.fr/ https://openmaptiles.github.io https://*.ingest.de.sentry.io https://www.google.com *.ads.linkedin.com; frame-ancestors 'self' manifesteinclusion.org agefiph.fr fiphfp.fr handicap.gouv.fr travail-emploi.gouv.fr; worker-src blob:;",
       "x-nextjs-cache": "HIT",
       "cache-control": "s-maxage=31536000",
       "x-powered-by": "Next.js",
-      "etag": "\"bpdiusc83d4926\"",
-      "vary": "Accept-Encoding",
-      "strict-transport-security": "max-age=31536000"
+      "etag": "\"6hm4ynuspk4cy1\"",
+      "vary": "Accept-Encoding"
     }
   },
   "tests": {
@@ -39,7 +39,7 @@
           "data:"
         ],
         "script-src": [
-          "'nonce-ytgwmmnhymmtmwy1ns00mme4ltk0mwutzdlimznlndnlnjmz'",
+          "'nonce-odhkmte0owutn2uwos00zwq2ltkxmmytm2jkm2u3zmzkmdlj'",
           "'self'",
           "'sha256-a+na0ud9jyzvxlepjqufqmwfcn9nolptllawdx45mie='",
           "*.gouv.fr",
@@ -80,6 +80,7 @@
           "*.xiti.com",
           "api-adresse.data.gouv.fr",
           "https://*.ingest.de.sentry.io",
+          "https://openmaptiles.data.gouv.fr/",
           "https://openmaptiles.geo.data.gouv.fr/",
           "https://openmaptiles.github.io",
           "https://www.google.com"
@@ -155,9 +156,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
