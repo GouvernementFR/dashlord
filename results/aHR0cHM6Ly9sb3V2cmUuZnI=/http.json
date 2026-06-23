@@ -9,9 +9,9 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 05 May 2026 03:25:38 GMT",
+      "date": "Tue, 23 Jun 2026 06:23:13 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "365937",
+      "content-length": "374725",
       "connection": "close",
       "link": "<https://api-www.louvre.fr>; rel=\"preconnect\"",
       "cache-control": "s-maxage=1800, public, max-age=5, stale-while-revalidate=60",
@@ -20,7 +20,7 @@
       "document-policy": "document-write=?0",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "content-security-policy": "default-src 'self' https://api-www.louvre.fr;base-uri 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;script-src 'self' 'strict-dynamic' 'unsafe-inline' https://tag.aticdn.net https://www.youtube.com 'nonce-ef801688-36f5-4ed0-9c03-d3c350cfb552';img-src 'self' data: https://api-www.louvre.fr https://i.ytimg.com https://i.vimeocdn.com;media-src 'self' https://api-www.louvre.fr https://*.ausha.co https://*.radiofrance-podcast.net;connect-src 'self' https://api-www.louvre.fr fxxslpn.pa-cd.com https://*.clarity.ms;frame-src https://www.youtube.com https://player.vimeo.com https://livemap.getwemap.com https://embed.radiofrance.fr/;frame-ancestors 'none';form-action 'self' https://api-www.louvre.fr;manifest-src 'self';font-src 'self' https://fonts.gstatic.com;object-src 'none';upgrade-insecure-requests",
+      "content-security-policy": "default-src 'self' https://api-www.louvre.fr;base-uri 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;script-src 'self' 'strict-dynamic' 'unsafe-inline' https://tag.aticdn.net https://www.youtube.com 'nonce-39f5e0c2-5fe7-4db6-83c1-c4a1cb31bf4b';img-src 'self' data: https://api-www.louvre.fr https://i.ytimg.com https://i.vimeocdn.com;media-src 'self' https://api-www.louvre.fr https://*.ausha.co https://*.radiofrance-podcast.net;connect-src 'self' https://api-www.louvre.fr fxxslpn.pa-cd.com https://*.clarity.ms;frame-src https://www.youtube.com https://player.vimeo.com https://livemap.getwemap.com https://embed.radiofrance.fr/;frame-ancestors 'none';form-action 'self' https://api-www.louvre.fr;manifest-src 'self';font-src 'self' https://fonts.gstatic.com;object-src 'none';upgrade-insecure-requests",
       "x-dns-prefetch-control": "off",
       "expect-ct": "max-age=0",
       "x-frame-options": "DENY",
@@ -29,18 +29,18 @@
       "x-permitted-cross-domain-policies": "none",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-xss-protection": "0",
-      "etag": "W/\"8lfmsd36bx7ty7\"",
+      "etag": "W/\"ziq2en52wm80r0\"",
       "x-cache": "HIT",
-      "x-cache-hits": "1",
+      "x-cache-hits": "33",
       "access-control-allow-origin": "https://www.louvre.fr",
       "access-control-allow-methods": "GET, OPTIONS",
       "access-control-allow-headers": "Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Authorization, Access-Control-Allow-Origin, Req.Http.Origin, Cors",
-      "age": "1268",
+      "age": "586",
       "accept-ranges": "bytes",
-      "x-wadp-age": "1265.605",
-      "x-wadp-ttl": "531.259",
+      "x-wadp-age": "541.127",
+      "x-wadp-ttl": "1213.703",
       "x-content-type-options": "nosniff",
-      "x-clara-wadp": "43328912 44368220",
+      "x-clara-wadp": "6804417 12160209",
       "server": "wadp2",
       "x-wadp-cache": "HIT"
     }
@@ -65,7 +65,7 @@
           "https://fonts.googleapis.com"
         ],
         "script-src": [
-          "'nonce-ef801688-36f5-4ed0-9c03-d3c350cfb552'",
+          "'nonce-39f5e0c2-5fe7-4db6-83c1-c4a1cb31bf4b'",
           "'strict-dynamic'"
         ],
         "img-src": [
@@ -142,9 +142,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "https://www.louvre.fr"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -157,7 +157,7 @@
         "http://louvre.fr/",
         "https://www.louvre.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 429
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
