@@ -3,13 +3,13 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 30 Apr 2026 12:53:48 GMT",
+      "date": "Sun, 14 Jun 2026 17:25:57 GMT",
       "server": "Apache/2.4.10 (Debian)",
       "cache-control": "max-age=1800, public",
       "x-drupal-dynamic-cache": "HIT",
@@ -22,9 +22,9 @@
       "vary": "Cookie,Accept-Encoding",
       "x-generator": "Drupal 8 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "last-modified": "Tue, 05 May 2026 06:42:07 GMT",
-      "etag": "\"1777963327-gzip\"",
-      "content-length": "7073",
+      "last-modified": "Thu, 18 Jun 2026 14:47:05 GMT",
+      "etag": "\"1781794025-gzip\"",
+      "content-length": "7007",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -58,12 +58,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://mycs.centralesupelec.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://mycs.centralesupelec.fr/",
+        "https://mycs.centralesupelec.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -78,7 +81,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
