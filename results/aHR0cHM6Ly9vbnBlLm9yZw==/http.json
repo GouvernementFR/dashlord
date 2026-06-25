@@ -9,28 +9,28 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 07 May 2026 03:31:14 GMT",
+      "date": "Thu, 25 Jun 2026 06:20:15 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cf-mitigated": "challenge",
-      "content-security-policy": "default-src 'none'; script-src 'nonce-SYA2MRVUk0AO5zktWG6537' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-uEqwvv7oNl9JoaWyiuAmXv' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=(self)",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9f7d268d5e8269d0\"",
+      "server-timing": "chlray;desc=\"a111dd8569582552\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=ZhVtc0a376rGBe0DsBDV62MRGLbXotc3OYwmVCDQFoc-1778124674.1324973-1.0.1.1-Qk.Ns_EFR9uQihSuFbVMGI.lkxIvorkdqnS_BlN_aHPiszUKKMCAIwVm_9FtoEcAykwdZ1B_ahA1QFnh.yGs.R1ctmLV7KD8dYNFtqNOQ_7wt7dA_apPO3urS0QhfhSy; HttpOnly; Secure; Path=/; Domain=onpe.org; Expires=Thu, 07 May 2026 04:01:14 GMT"
+        "__cf_bm=jeo5hpFv_JR9PoUWE3oTxD5Oh4QIp5mXvKUF6J8worQ-1782368415.5821328-1.0.1.1-nk4zR94F3bmLkBBr1fBxvNvKXUsWhugs9QgtXdt2iXrMz86g6md8rjdWQSLzXCHdMhXtj875TiDGlMFp5EzszfYa8NIHCsgmYx0VqgNolv6K73QgJ4WVgh7oOf.h4n7r; HttpOnly; SameSite=None; Secure; Path=/; Domain=onpe.org; Expires=Thu, 25 Jun 2026 06:50:15 GMT"
       ],
-      "cf-ray": "9f7d268d5e8269d0-DFW"
+      "cf-ray": "a111dd8569582552-IAD"
     }
   },
   "tests": {
@@ -44,7 +44,7 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-sya2mrvuk0ao5zktwg6537'",
+          "'nonce-ueqwvv7onl9joawyiuamxv'",
           "'unsafe-eval'",
           "https://challenges.cloudflare.com"
         ],
@@ -103,19 +103,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "onpe.org",
-          "expires": "2026-05-07T04:01:14.000Z",
+          "expires": "2026-06-25T06:50:15.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
