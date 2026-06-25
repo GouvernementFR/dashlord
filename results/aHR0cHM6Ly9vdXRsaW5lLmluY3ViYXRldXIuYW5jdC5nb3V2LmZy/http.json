@@ -1,86 +1,44 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "D-",
     "error": null,
-    "score": 80,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 07 May 2026 03:27:17 GMT",
-      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 25 Jun 2026 06:19:26 GMT",
+      "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "a2e7d349-f427-4631-8297-72d0491f61e3",
-      "content-security-policy": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' gist.github.com www.googletagmanager.com cdn.zapier.com;style-src 'self' 'unsafe-inline' github.githubassets.com cdn.zapier.com;img-src * data: blob:;frame-src * data:;connect-src *",
-      "x-dns-prefetch-control": "on",
-      "expect-ct": "max-age=0",
-      "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=15552000; includeSubDomains",
-      "x-download-options": "noopen",
+      "x-request-id": "270c5d18-6bf1-466e-bbe7-80b30752b657",
+      "vary": "Accept-Encoding, Cookie",
+      "cache-control": "max-age=1728000, public",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
       "x-content-type-options": "nosniff",
-      "x-permitted-cross-domain-policies": "none",
-      "referrer-policy": "no-referrer",
-      "x-xss-protection": "0",
-      "timing-allow-origin": "https://outline.incubateur.anct.gouv.fr",
-      "vary": "Accept-Encoding"
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Mon, 22 Jun 2026 17:24:57 GMT",
+      "etag": "W/\"1782149097\"",
+      "x-generator": "Drupal 11 (https://www.drupal.org)",
+      "x-drupal-cache": "HIT",
+      "strict-transport-security": "max-age=31536000"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "cdn.zapier.com",
-          "gist.github.com",
-          "www.googletagmanager.com"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "cdn.zapier.com",
-          "github.githubassets.com"
-        ],
-        "img-src": [
-          "*",
-          "blob:",
-          "data:"
-        ],
-        "frame-src": [
-          "*",
-          "data:"
-        ],
-        "connect-src": [
-          "*"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -102,21 +60,23 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://outline.incubateur.anct.gouv.fr/",
+      "destination": "https://anct.gouv.fr/",
       "redirects": true,
       "route": [
         "http://outline.incubateur.anct.gouv.fr/",
-        "https://outline.incubateur.anct.gouv.fr/"
+        "https://outline.incubateur.anct.gouv.fr/",
+        "https://incubateur.anct.gouv.fr/",
+        "https://anct.gouv.fr/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "no-referrer",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -124,18 +84,23 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15552000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 15552000,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
+      "scoreModifier": -50,
+      "data": {
+        "//cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
