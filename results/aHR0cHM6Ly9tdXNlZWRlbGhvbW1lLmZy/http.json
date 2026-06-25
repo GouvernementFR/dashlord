@@ -3,35 +3,35 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 50,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 07 May 2026 03:32:22 GMT",
+      "date": "Thu, 25 Jun 2026 06:23:37 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "cache-control": "max-age=0, must-revalidate, public, s-maxage=66459",
+      "cache-control": "max-age=0, must-revalidate, public, s-maxage=56420",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Thu, 07 May 2026 22:00:01 GMT",
-      "last-modified": "Thu, 07 May 2026 03:32:21 GMT",
-      "cache-tags": "MISS",
+      "expires": "Thu, 25 Jun 2026 22:00:00 GMT",
+      "last-modified": "Thu, 25 Jun 2026 06:19:40 GMT",
+      "cache-tags": "HIT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: t.contentsquare.net contentsquare.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self' https://www.mnhn.fr; frame-ancestors 'self' *.mnhn.fr; report-uri https://www.museedelhomme.fr/fr/report-uri/enforce",
       "x-drupal-cache": "MISS",
       "x-varnish-cacheable": "YES",
       "vary": "Cookie, Accept-Encoding",
-      "x-varnish": "2442193",
-      "age": "0",
+      "x-varnish": "775588797 772003226",
+      "age": "236",
       "via": "1.1 varnish (Varnish/7.1)",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f7d2832cfe7e250-ORD"
+      "cf-ray": "a111e27359f605e3-IAD"
     }
   },
   "tests": {
@@ -91,19 +91,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "museedelhomme.fr",
-          "expires": "2026-05-07T04:02:21.000Z",
+          "expires": "2026-06-25T06:53:37.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -148,15 +149,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
