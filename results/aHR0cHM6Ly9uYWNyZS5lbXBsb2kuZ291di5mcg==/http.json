@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "B+",
     "error": null,
-    "score": 40,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 07 May 2026 03:34:17 GMT",
+      "date": "Thu, 25 Jun 2026 06:20:31 GMT",
       "last-modified": "Mon, 02 Jun 2014 11:30:48 GMT",
       "etag": "\"6ca-4fad8ba0aea00\"",
       "accept-ranges": "bytes",
@@ -23,8 +23,8 @@
       "content-language": "fr",
       "connection": "close",
       "set-cookie": [
-        "BIGipServernacre-prod=1829904044.55839.0000; path=/; Httponly; Secure",
-        "TS01c21b21=01b74c0fddf7e5f6a59417830c0b32351b6dd6f04c11dc8515987c127b259c1256c9adf4c172dbc2e91043d335dab456525842e04a; Path=/; Secure; HttpOnly"
+        "BIGipServernacre-prod=2937200300.55839.0000; path=/; Httponly; Secure",
+        "TS01c21b21=01b74c0fdd31ae37028738cf6b582168afd9d9f835b8f23ed31429d612886164ce0bbdf64e7d70f9f8d9cf26b4c3dd83d8d17680cf; Path=/; Secure; HttpOnly"
       ],
       "strict-transport-security": "max-age=31536000"
     }
@@ -138,12 +138,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://nacre.emploi.gouv.fr/nacre/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://nacre.emploi.gouv.fr/",
+        "https://nacre.emploi.gouv.fr/",
+        "https://nacre.emploi.gouv.fr/nacre/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -157,12 +161,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
