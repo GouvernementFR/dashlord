@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 09 May 2026 03:30:35 GMT",
+      "date": "Sat, 27 Jun 2026 06:11:45 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -50,16 +50,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://www.ecologie.gouv.fr/prime-conversion-chaudieres",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": "http://primealaconversion-chaudieres.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://primealaconversion-chaudieres.gouv.fr/",
-        "https://www.ecologie.gouv.fr/prime-conversion-chaudieres"
-      ],
-      "statusCode": 404
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
