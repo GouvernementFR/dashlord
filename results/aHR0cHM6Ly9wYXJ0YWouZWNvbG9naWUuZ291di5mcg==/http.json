@@ -9,20 +9,20 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 09 May 2026 03:26:16 GMT",
+      "date": "Sat, 27 Jun 2026 06:08:58 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "5b059758-96df-4f5b-813a-297676488b97",
+      "x-request-id": "752581ab-acb0-48c8-97fb-c41db5174de5",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "0",
-      "content-security-policy": "default-src 'self'; connect-src 'self' *.partaj.incubateur.net ws: *.crisp.chat; style-src 'self' 'unsafe-inline' *.crisp.chat *.partaj.incubateur.net; img-src 'self' *.din.developpement-durable.gouv.fr *.crisp.chat data:; script-src 'self' 'unsafe-inline' *.crisp.chat *.partaj.incubateur.net cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.js;font-src 'self' *.crisp.chat; frame-src *.partaj.incubateur.net partaj-metabase-masaf.osc-secnum-fr1.scalingo.io blob:",
+      "content-security-policy": "default-src 'self'; connect-src 'self' *.partaj.incubateur.net ws: *.crisp.chat; style-src 'self' 'unsafe-inline' *.crisp.chat *.partaj.incubateur.net; img-src 'self' *.din.developpement-durable.gouv.fr *.numerique.gouv.fr *.crisp.chat data:; script-src 'self' 'unsafe-inline' *.crisp.chat *.partaj.incubateur.net cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.js;font-src 'self' *.crisp.chat; frame-src *.partaj.incubateur.net partaj-metabase-masaf.osc-secnum-fr1.scalingo.io blob:",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "referrer-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=A4uO4dMzqds4og0Jp27AiJs0EY9jYQrl; expires=Sat, 08 May 2027 03:26:16 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "csrftoken=lcL5F3F67DkX7JxSYWHWZDzxjvtwFeiC; expires=Sat, 26 Jun 2027 06:08:58 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ],
       "strict-transport-security": "max-age=31536000"
     }
@@ -53,6 +53,7 @@
           "'self'",
           "*.crisp.chat",
           "*.din.developpement-durable.gouv.fr",
+          "*.numerique.gouv.fr",
           "data:"
         ],
         "script-src": [
@@ -97,7 +98,7 @@
       "data": {
         "csrftoken": {
           "domain": "partaj.ecologie.gouv.fr",
-          "expires": "2027-05-08T03:26:16.000Z",
+          "expires": "2027-06-26T06:08:58.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
