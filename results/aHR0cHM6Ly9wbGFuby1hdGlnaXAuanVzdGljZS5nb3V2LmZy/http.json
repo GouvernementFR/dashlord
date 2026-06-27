@@ -3,17 +3,18 @@
     "algorithmVersion": 4,
     "grade": "D",
     "error": null,
-    "score": 30,
+    "score": 35,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.18.0",
-      "date": "Sat, 09 May 2026 03:30:24 GMT",
+      "date": "Sat, 27 Jun 2026 06:11:03 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "content-security-policy": "default-src justice.gouv.fr https://plano-atigip.justice.gouv.fr/cdn https://plano-atigip.justice.gouv.fr/static/  https://plano-atigip.justice.gouv.fr/zipper/ https://plano-atigip.justice.gouv.fr/api.files/ https://plano-atigip.justice.gouv.fr/ wss://plano-atigip.justice.gouv.fr/ https://plano-atigip.justice.gouv.fr/office https://plano-atigip.justice.gouv.fr/api  https://plano-atigip.justice.gouv.fr/webmail/ https:/// subscribe.justice.gouv.fr *.ogone.com *.gocardless.com *.giphy.com s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/; font-src justice.gouv.fr https://plano-atigip.justice.gouv.fr/cdn https://plano-atigip.justice.gouv.fr/static/  https://plano-atigip.justice.gouv.fr/zipper/ https://plano-atigip.justice.gouv.fr/api.files/ https://plano-atigip.justice.gouv.fr/ wss://plano-atigip.justice.gouv.fr/ https://plano-atigip.justice.gouv.fr/office https://plano-atigip.justice.gouv.fr/api  https://plano-atigip.justice.gouv.fr/webmail/ https:/// subscribe.justice.gouv.fr *.ogone.com *.gocardless.com *.giphy.com s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/ data:; img-src justice.gouv.fr https://plano-atigip.justice.gouv.fr/cdn https://plano-atigip.justice.gouv.fr/static/  https://plano-atigip.justice.gouv.fr/zipper/ https://plano-atigip.justice.gouv.fr/api.files/ https://plano-atigip.justice.gouv.fr/ wss://plano-atigip.justice.gouv.fr/ https://plano-atigip.justice.gouv.fr/office https://plano-atigip.justice.gouv.fr/api  https://plano-atigip.justice.gouv.fr/webmail/ https:/// subscribe.justice.gouv.fr *.ogone.com *.gocardless.com *.giphy.com s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/ *.justice.gouv.fr data: blob:; connect-src justice.gouv.fr https://plano-atigip.justice.gouv.fr/cdn https://plano-atigip.justice.gouv.fr/static/  https://plano-atigip.justice.gouv.fr/zipper/ https://plano-atigip.justice.gouv.fr/api.files/ https://plano-atigip.justice.gouv.fr/ wss://plano-atigip.justice.gouv.fr/ https://plano-atigip.justice.gouv.fr/office https://plano-atigip.justice.gouv.fr/api  https://plano-atigip.justice.gouv.fr/webmail/ https:/// subscribe.justice.gouv.fr *.ogone.com *.gocardless.com *.giphy.com s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/ blob:; script-src justice.gouv.fr https://plano-atigip.justice.gouv.fr/cdn https://plano-atigip.justice.gouv.fr/static/  https://plano-atigip.justice.gouv.fr/zipper/ https://plano-atigip.justice.gouv.fr/api.files/ https://plano-atigip.justice.gouv.fr/ wss://plano-atigip.justice.gouv.fr/ https://plano-atigip.justice.gouv.fr/office https://plano-atigip.justice.gouv.fr/api  https://plano-atigip.justice.gouv.fr/webmail/ https:/// subscribe.justice.gouv.fr *.ogone.com *.gocardless.com *.giphy.com s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/ 'unsafe-inline' 'unsafe-eval'; style-src justice.gouv.fr https://plano-atigip.justice.gouv.fr/cdn https://plano-atigip.justice.gouv.fr/static/  https://plano-atigip.justice.gouv.fr/zipper/ https://plano-atigip.justice.gouv.fr/api.files/ https://plano-atigip.justice.gouv.fr/ wss://plano-atigip.justice.gouv.fr/ https://plano-atigip.justice.gouv.fr/office https://plano-atigip.justice.gouv.fr/api  https://plano-atigip.justice.gouv.fr/webmail/ https:/// subscribe.justice.gouv.fr *.ogone.com *.gocardless.com *.giphy.com s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/ 'unsafe-inline' 'unsafe-eval'",
       "access-control-allow-headers": "X-Requested-With,Authorization,X-Wimi-Name,X-API-Version,X-Request-ID,Content-Type,X-Wimi-WApi,X-Wimi-DeviceToken",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
@@ -25,13 +26,131 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "*.giphy.com",
+          "*.gocardless.com",
+          "*.ogone.com",
+          "https:///",
+          "https://plano-atigip.justice.gouv.fr/",
+          "https://plano-atigip.justice.gouv.fr/cdn",
+          "https://plano-atigip.justice.gouv.fr/office",
+          "https://plano-atigip.justice.gouv.fr/static/",
+          "https://plano-atigip.justice.gouv.fr/webmail/",
+          "https://plano-atigip.justice.gouv.fr/zipper/",
+          "justice.gouv.fr",
+          "s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/",
+          "subscribe.justice.gouv.fr",
+          "wss://plano-atigip.justice.gouv.fr/"
+        ],
+        "font-src": [
+          "*.giphy.com",
+          "*.gocardless.com",
+          "*.ogone.com",
+          "data:",
+          "https:///",
+          "https://plano-atigip.justice.gouv.fr/",
+          "https://plano-atigip.justice.gouv.fr/cdn",
+          "https://plano-atigip.justice.gouv.fr/office",
+          "https://plano-atigip.justice.gouv.fr/static/",
+          "https://plano-atigip.justice.gouv.fr/webmail/",
+          "https://plano-atigip.justice.gouv.fr/zipper/",
+          "justice.gouv.fr",
+          "s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/",
+          "subscribe.justice.gouv.fr",
+          "wss://plano-atigip.justice.gouv.fr/"
+        ],
+        "img-src": [
+          "*.giphy.com",
+          "*.gocardless.com",
+          "*.justice.gouv.fr",
+          "*.ogone.com",
+          "blob:",
+          "data:",
+          "https:///",
+          "https://plano-atigip.justice.gouv.fr/",
+          "https://plano-atigip.justice.gouv.fr/cdn",
+          "https://plano-atigip.justice.gouv.fr/office",
+          "https://plano-atigip.justice.gouv.fr/static/",
+          "https://plano-atigip.justice.gouv.fr/webmail/",
+          "https://plano-atigip.justice.gouv.fr/zipper/",
+          "justice.gouv.fr",
+          "s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/",
+          "subscribe.justice.gouv.fr",
+          "wss://plano-atigip.justice.gouv.fr/"
+        ],
+        "connect-src": [
+          "*.giphy.com",
+          "*.gocardless.com",
+          "*.ogone.com",
+          "blob:",
+          "https:///",
+          "https://plano-atigip.justice.gouv.fr/",
+          "https://plano-atigip.justice.gouv.fr/cdn",
+          "https://plano-atigip.justice.gouv.fr/office",
+          "https://plano-atigip.justice.gouv.fr/static/",
+          "https://plano-atigip.justice.gouv.fr/webmail/",
+          "https://plano-atigip.justice.gouv.fr/zipper/",
+          "justice.gouv.fr",
+          "s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/",
+          "subscribe.justice.gouv.fr",
+          "wss://plano-atigip.justice.gouv.fr/"
+        ],
+        "script-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.giphy.com",
+          "*.gocardless.com",
+          "*.ogone.com",
+          "https:///",
+          "https://plano-atigip.justice.gouv.fr/",
+          "https://plano-atigip.justice.gouv.fr/cdn",
+          "https://plano-atigip.justice.gouv.fr/office",
+          "https://plano-atigip.justice.gouv.fr/static/",
+          "https://plano-atigip.justice.gouv.fr/webmail/",
+          "https://plano-atigip.justice.gouv.fr/zipper/",
+          "justice.gouv.fr",
+          "s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/",
+          "subscribe.justice.gouv.fr",
+          "wss://plano-atigip.justice.gouv.fr/"
+        ],
+        "style-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*.giphy.com",
+          "*.gocardless.com",
+          "*.ogone.com",
+          "https:///",
+          "https://plano-atigip.justice.gouv.fr/",
+          "https://plano-atigip.justice.gouv.fr/cdn",
+          "https://plano-atigip.justice.gouv.fr/office",
+          "https://plano-atigip.justice.gouv.fr/static/",
+          "https://plano-atigip.justice.gouv.fr/webmail/",
+          "https://plano-atigip.justice.gouv.fr/zipper/",
+          "justice.gouv.fr",
+          "s3.amazonaws.com/giphyscripts/react-giphy-brand/fonts/",
+          "subscribe.justice.gouv.fr",
+          "wss://plano-atigip.justice.gouv.fr/"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -88,35 +207,35 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/_common/lang/wimi/lang.en-us.2a2f0955a491849f2b55.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/_common/lang/wimi/lang.en-us.a968543cd1b06dd64bb7.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/runtime.bundle.19e70532b5895c59b0b8.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/runtime.bundle.1f71d3bac324e53d56e8.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/vendor.bundle.824a63f85e0ec753bfc3.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/vendor.bundle.b88c8b4aeaa5e9c2eada.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/main.bundle.0dd37ec263f4ae45b744.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/main.bundle.a3932a31b2f3a8761c2b.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/init.bundle.01887fb56f7c64bf2318.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/init.bundle.33abae9634eae36bea6c.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/common.bundle.a31daf188ae1f2da7d88.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/common.bundle.af6aa8a51ec71247d4d7.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/login.app.bundle.96e3219806b287a9bee4.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/login.app.bundle.99f0e3822a00941b933f.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.wimi.pro/dist/versions/v8/login/ptnb.custom.app.bundle.17d0a6cffcf62a088068.min.js": {
+        "https://cdn.wimi.pro/dist/versions/v8/login/ptnb.custom.app.bundle.e60c533b734a4a49fce9.min.js": {
           "crossorigin": null,
           "integrity": null
         }
