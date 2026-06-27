@@ -1,21 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "D+",
     "error": null,
-    "score": 30,
+    "score": 40,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.29.5",
-      "date": "Sat, 09 May 2026 03:25:23 GMT",
+      "date": "Sat, 27 Jun 2026 06:07:48 GMT",
       "content-type": "text/html",
       "last-modified": "Fri, 27 Mar 2026 13:30:11 GMT",
       "transfer-encoding": "chunked",
       "etag": "W/\"69c68663-3b6a\"",
       "cache-control": "public, max-age=0, must-revalidate",
+      "strict-transport-security": "max-age=86400; includeSubDomains; preload;",
       "connection": "close"
     }
   },
@@ -71,12 +72,12 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=86400; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 86400,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
