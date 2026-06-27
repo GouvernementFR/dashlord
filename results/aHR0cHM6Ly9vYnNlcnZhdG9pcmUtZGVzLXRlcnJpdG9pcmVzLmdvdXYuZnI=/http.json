@@ -1,44 +1,59 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C-",
     "error": null,
-    "score": 65,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 08 May 2026 20:55:10 GMT",
+      "date": "Fri, 26 Jun 2026 18:36:46 GMT",
       "server": "Apache",
-      "x-powered-by": "PHP/8.0.30",
       "cache-control": "must-revalidate, no-cache, private",
-      "x-drupal-dynamic-cache": "UNCACHEABLE",
-      "x-ua-compatible": "IE=edge",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
-      "x-content-type-options": "nosniff",
+      "x-content-type-options": "nosniff, nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-generator": "Drupal 9 (https://www.drupal.org)",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "strict-transport-security": "max-age=15768000",
+      "content-security-policy": "frame-ancestors 'self';",
       "vary": "Accept-Encoding",
-      "content-length": "10844",
-      "connection": "close",
-      "content-type": "text/html; charset=UTF-8"
+      "x-xss-protection": "0",
+      "content-length": "12147",
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -64,7 +79,6 @@
       "redirects": true,
       "route": [
         "http://observatoire-des-territoires.gouv.fr/",
-        "https://www.observatoire-des-territoires.gouv.fr//",
         "https://www.observatoire-des-territoires.gouv.fr/"
       ],
       "statusCode": 200
@@ -80,12 +94,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=15768000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 15768000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -95,7 +109,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-20741491-1": {
+        "https://www.googletagmanager.com/gtag/js?id=G-J08DEC6W0N": {
           "crossorigin": null,
           "integrity": null
         },
@@ -103,24 +117,24 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js": {
+        "https://cdn.jsdelivr.net/npm/entreprise7pro-bootstrap@3.4.5/dist/js/bootstrap.min.js": {
           "crossorigin": "anonymous",
-          "integrity": "sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4="
+          "integrity": "sha256-zJRQeph5njBAX9gZ3Bscm6lAc0AfE5QWO0ZkvJoC8jg="
         }
       }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
