@@ -9,14 +9,14 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 09 May 2026 03:33:42 GMT",
+      "date": "Sat, 27 Jun 2026 06:08:54 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "39790",
+      "content-length": "41742",
       "connection": "close",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "access-control-allow-origin": "self",
-      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdn.datatables.net unpkg.com macarte.ign.fr *.enedis.fr *.gouv.fr audience-sites.din.developpement-durable.gouv.fr; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdn.datatables.net unpkg.com; img-src 'self' data: cdn.jsdelivr.net jedonnemonavis.numerique.gouv.fr; font-src 'self' 'unsafe-inline' data: cdn.jsdelivr.net; connect-src 'self' *.gouv.fr; frame-src 'self' blob: macarte.ign.fr *.enedis.fr",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdn.datatables.net cdn.matomo.cloud unpkg.com macarte.ign.fr *.enedis.fr *.gouv.fr audience-sites.din.developpement-durable.gouv.fr; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net cdn.datatables.net unpkg.com; img-src 'self' data: cdn.jsdelivr.net jedonnemonavis.numerique.gouv.fr; font-src 'self' 'unsafe-inline' data: cdn.jsdelivr.net; connect-src 'self' *.gouv.fr; frame-src 'self' blob: macarte.ign.fr *.enedis.fr",
       "vary": "Cookie",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -40,6 +40,7 @@
           "audience-sites.din.developpement-durable.gouv.fr",
           "cdn.datatables.net",
           "cdn.jsdelivr.net",
+          "cdn.matomo.cloud",
           "macarte.ign.fr",
           "unpkg.com"
         ],
@@ -159,6 +160,10 @@
           "crossorigin": null,
           "integrity": null
         },
+        "https://macarte.ign.fr/carte/MapIFrameAPI.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
         "https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.27.1/tarteaucitron.min.js": {
           "crossorigin": null,
           "integrity": null
@@ -171,7 +176,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr-chart@2.0.4/dist/DSFRChart/DSFRChart.js": {
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr-chart@2.1.1/dist/DSFRChart/DSFRChart.js": {
           "crossorigin": null,
           "integrity": null
         }
