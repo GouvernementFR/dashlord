@@ -9,29 +9,29 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 09 May 2026 03:24:09 GMT",
+      "date": "Sat, 27 Jun 2026 06:07:49 GMT",
       "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "4eb2e300-e2a7-4133-9c34-543b84d638a9",
+      "x-request-id": "38f8429a-36ea-48e0-9d70-aaac54415331",
       "vary": "Accept-Encoding, Accept-Encoding",
       "x-robots-tag": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "set-cookie": [
-        "__cf_bm=ltZfgbrUJxyg4nlQdGe7LHMzuLVR0mH1Eh29qkD0CMc-1778297049.373988-1.0.1.1-PsQnHIE_VlPhGGDxnG.9JU_SxWyw9mnxLJCixr1YQEVT1Vj9hoqKm7KSE5iutFl6aLmobpOa1LqmWaVLvjDKGpPl33uQCHmix.9L_7Ea2O5G6eO3ypd8jTWRnEmDrlwE; HttpOnly; Secure; Path=/; Domain=agora.gouv.fr; Expires=Sat, 09 May 2026 03:54:09 GMT"
+        "__cf_bm=i7zODgLF3LgTUCxIXjbEv.CGtQuWk1UvolDyZ.xYpRA-1782540469.011204-1.0.1.1-JI.Ctw2Z8OwgxRNERQvoLl_2.QscM5PLFD3gcgJtUsvtm6jRlHGMvRT6WYlv4FBGJYmNTb5KvtYiF8BilKqd1BWZFwsacQkwFSvqgsD29pZCyo2bzFCLKa9GJEWr6bC1; HttpOnly; SameSite=None; Secure; Path=/; Domain=agora.gouv.fr; Expires=Sat, 27 Jun 2026 06:37:49 GMT"
       ],
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "age": "996",
-      "last-modified": "Sat, 09 May 2026 03:07:32 GMT",
-      "expires": "Sat, 09 May 2026 07:24:09 GMT",
+      "x-xss-protection": "1; mode=block",
+      "age": "2747",
+      "last-modified": "Sat, 27 Jun 2026 05:54:11 GMT",
+      "expires": "Sat, 27 Jun 2026 10:07:49 GMT",
       "cache-control": "public, max-age=14400",
       "cf-cache-status": "HIT",
-      "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
       "expect-ct": "max-age=86400, enforce",
       "referrer-policy": "same-origin",
       "server": "cloudflare",
-      "cf-ray": "9f8d96ee99732a3f-CDG",
+      "cf-ray": "a122460b492732e8-MAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -50,19 +50,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "agora.gouv.fr",
-          "expires": "2026-05-09T03:54:09.000Z",
+          "expires": "2026-06-27T06:37:49.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
