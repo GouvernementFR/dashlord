@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 09 May 2026 03:33:13 GMT",
+      "date": "Sat, 27 Jun 2026 06:13:35 GMT",
       "content-type": "text/html",
-      "last-modified": "Mon, 27 Apr 2026 09:21:32 GMT",
+      "last-modified": "Fri, 26 Jun 2026 12:16:02 GMT",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "etag": "W/\"69ef2a9c-8c1a\"",
+      "etag": "W/\"6a3e6d82-81a49\"",
       "strict-transport-security": "max-age=15768000; includeSubDomains; preload;",
       "referrer-policy": "no-referrer",
       "x-content-type-options": "nosniff",
@@ -57,12 +57,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.peren.gouv.fr/",
+      "destination": "https://www.peren.gouv.fr/fr/",
       "redirects": true,
       "route": [
         "http://peren.gouv.fr/",
         "https://peren.gouv.fr/",
-        "https://www.peren.gouv.fr/"
+        "https://www.peren.gouv.fr/",
+        "https://www.peren.gouv.fr/fr/"
       ],
       "statusCode": 200
     },
