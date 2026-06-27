@@ -1,29 +1,39 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 35,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 09 May 2026 03:25:46 GMT",
-      "server": "Apache",
-      "last-modified": "Tue, 22 Nov 2016 14:39:04 GMT",
-      "etag": "\"54-541e4bbe3b829\"",
-      "accept-ranges": "bytes",
-      "vary": "Accept-Encoding",
-      "x-content-type-options": "nosniff",
       "connection": "close",
-      "content-type": "text/html; charset=ISO-8859-1",
-      "set-cookie": [
-        "BIGipServerpool-ars.cegedim.cloud-http=834951434.49431.0000; path=/; Httponly; Secure",
-        "TS86bc51b0029=087dc22938ab280097a64f45fc717094c321ccbfbe0d6a2d90822bd4c647575b2b50b5afeeda1d765b1353749757b99c; Secure; Max-Age=30; Path=/",
-        "TS0814ac91027=087dc22938ab2000d8da9f086a55d6a1c2c6c8815275dbe71613f31ee6df8559abb13f3016a0283b08d0eef623113000ea79f71c979159e7d5e8abc4342dfd8a8b508d6bab7f842b00eb5f3bac63e1de62ebb7437170ec294deb1f89c73009aa; Secure; Path=/"
-      ],
-      "transfer-encoding": "chunked"
+      "content-length": "5524",
+      "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
+      "x-platform-processor": "r2iqejqq3gqumbaruj27vwpcpm",
+      "traceresponse": "00-18b82702ff45a30f6dc4214cc91d8294-38b88f85b1b9ff8a-01",
+      "last-modified": "Thu, 11 Jun 2026 22:14:53 GMT",
+      "etag": "\"1781216093\"",
+      "content-language": "fr",
+      "x-platform-router": "wk5ki7hadjek4ysij6he4qkgfm",
+      "x-content-type-options": "nosniff",
+      "content-type": "text/html; charset=UTF-8",
+      "x-drupal-dynamic-cache": "MISS",
+      "x-frame-options": "SAMEORIGIN",
+      "x-platform-cluster": "zr2kfkfb72zck-main-bvxea6i",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "x-timer": "S1781216546.438067,VS0,VE63",
+      "accept-ranges": "bytes",
+      "date": "Sat, 27 Jun 2026 06:08:53 GMT",
+      "age": "1323987",
+      "x-served-by": "cache-mrs10532-MRS, cache-mrs10532-MRS, cache-mrs10557-MRS, cache-iad-kcgs7200170-IAD",
+      "x-cache": "MISS, HIT, HIT",
+      "x-cache-hits": "0, 35, 1",
+      "vary": "Cookie, Accept-Encoding",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "strict-transport-security": "max-age=31557600"
     }
   },
   "tests": {
@@ -41,30 +51,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "BIGipServerpool-ars.cegedim.cloud-http": {
-          "domain": "paps.sante.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS86bc51b0029": {
-          "domain": "paps.sante.fr",
-          "max-age": 30,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS0814ac91027": {
-          "domain": "paps.sante.fr",
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -79,11 +68,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://paps.sante.fr/",
+      "destination": "https://www.paps.sante.fr/",
       "redirects": true,
       "route": [
         "http://paps.sante.fr/",
-        "https://paps.sante.fr/"
+        "https://paps.sante.fr/",
+        "https://www.paps.sante.fr/"
       ],
       "statusCode": 200
     },
@@ -98,21 +88,30 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31557600",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31557600,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tag.aticdn.net/piano-analytics.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://admin-pipeline.upsun-fr-3.observability-pipeline.blackfire.io/js/probe.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -123,10 +122,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
