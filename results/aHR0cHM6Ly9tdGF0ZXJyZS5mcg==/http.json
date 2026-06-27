@@ -9,22 +9,22 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 09 May 2026 03:28:20 GMT",
+      "date": "Sat, 27 Jun 2026 06:13:31 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "x-powered-by": "PHP/8.3.30, PleskLin",
-      "vary": "User-Agent,Accept-Encoding",
-      "last-modified": "Sat, 09 May 2026 02:45:06 GMT",
+      "x-powered-by": "PHP/8.3.31, PleskLin",
+      "vary": "User-Agent,Accept-Encoding,Referer",
+      "last-modified": "Sat, 27 Jun 2026 05:44:51 GMT",
       "set-cookie": [
-        "__cf_bm=yTv_Iy7qGz_PoWSKO.6aI0pbbKijYOMhtnbw5La0LzY-1778297300.2176254-1.0.1.1-U51GvpF.89wip3gqsGeamvbCLLgyufth8rFRp9G2Q9xHanhGuOJ_Hyl5AHDM.ZhztTQ7EaKIQ5moRwNca.E_Zl.uXl9Zd6ou00ksa7Tcwu6uMk9GuPz7D_vuoPuilFL9; HttpOnly; Secure; Path=/; Domain=mtaterre.fr; Expires=Sat, 09 May 2026 03:58:20 GMT"
+        "__cf_bm=hR6lOcURPKGerNKHy8pUWNiKHrfatz1njxW420bplBE-1782540810.8033552-1.0.1.1-tYxmTQkIpnHOwWErPsxsLrMvImPeAm.fVIDQqpJRKErJbRXLUR_QowquYdwkorTuenc8MyWopbUi4p_Cpl0iWNjQtO9eLxfP3kDi6NpR6HdiEjizi_fzr5yNeGjX3mMZ; HttpOnly; SameSite=None; Secure; Path=/; Domain=mtaterre.fr; Expires=Sat, 27 Jun 2026 06:43:31 GMT"
       ],
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f8d9d0e5a58f09d-DFW"
+      "cf-ray": "a1224e638b678183-SJC"
     }
   },
   "tests": {
@@ -42,19 +42,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "mtaterre.fr",
-          "expires": "2026-05-09T03:58:20.000Z",
+          "expires": "2026-06-27T06:43:31.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
