@@ -1,20 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 30,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 11 May 2026 03:33:30 GMT",
+      "date": "Mon, 29 Jun 2026 03:30:18 GMT",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "set-cookie": [
-        "session=g5f7d5htq83vbo6j6d5kl8pj58; expires=Mon, 11-May-2026 06:33:30 GMT; Max-Age=10800; path=/; secure; HttpOnly"
+        "session=u4g1bq211t6ma9ajl3m7ma887e; expires=Mon, 29-Jun-2026 06:30:18 GMT; Max-Age=10800; path=/; secure; HttpOnly"
       ],
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
@@ -44,7 +44,7 @@
       "data": {
         "session": {
           "domain": "reflex.justice.gouv.fr",
-          "expires": "2026-05-11T06:33:30.000Z",
+          "expires": "2026-06-29T06:30:18.000Z",
           "httponly": true,
           "max-age": 10800,
           "path": "/",
@@ -63,12 +63,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://reflex.justice.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://reflex.justice.gouv.fr/",
+        "https://reflex.justice.gouv.fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -83,7 +86,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
