@@ -1,9 +1,9 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 10,
+    "score": 25,
     "statusCode": 403,
     "testsFailed": 5,
     "testsPassed": 5,
@@ -11,9 +11,9 @@
     "responseHeaders": {
       "mime-version": "1.0",
       "content-type": "text/html",
-      "content-length": "384",
-      "expires": "Mon, 11 May 2026 03:26:24 GMT",
-      "date": "Mon, 11 May 2026 03:26:24 GMT",
+      "content-length": "386",
+      "expires": "Mon, 29 Jun 2026 03:27:03 GMT",
+      "date": "Mon, 29 Jun 2026 03:27:03 GMT",
       "connection": "close"
     }
   },
@@ -47,11 +47,14 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.portail-immo.gouv.fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://portail-immo.gouv.fr/",
+        "https://www.portail-immo.gouv.fr/"
+      ],
       "statusCode": 403
     },
     "referrer-policy": {
@@ -66,7 +69,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
