@@ -1,24 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 70,
-    "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "score": 50,
+    "statusCode": 403,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 11 May 2026 03:29:08 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
+      "date": "Mon, 29 Jun 2026 03:26:18 GMT",
+      "content-type": "text/html",
+      "content-length": "162",
       "connection": "close",
-      "set-cookie": [
-        "CGISESSID=10cc5efd5012b566c9ec0eaf5526b87a; path=/; secure; HttpOnly; SameSite=Lax"
-      ],
-      "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=63072000"
+      "strict-transport-security": "max-age=63072000; includeSubDomains"
     }
   },
   "tests": {
@@ -36,19 +32,10 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "CGISESSID": {
-          "domain": "pro.bibliotheque.sgdsn.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -68,7 +55,7 @@
         "http://pro.bibliotheque.sgdsn.gouv.fr/",
         "https://pro.bibliotheque.sgdsn.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -84,8 +71,8 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
       "maxAge": 63072000,
       "preload": false,
       "preloaded": false
@@ -93,7 +80,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
@@ -106,10 +93,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
