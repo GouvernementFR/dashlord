@@ -1,32 +1,32 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "B",
     "error": null,
-    "score": 105,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 11 May 2026 03:33:44 GMT",
+      "date": "Mon, 29 Jun 2026 03:30:25 GMT",
       "cache-control": "max-age=0, must-revalidate, private",
       "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-frame-options": "SAMEORIGIN",
-      "content-security-policy": "default-src 'self'; base-uri 'self'; connect-src 'self' https://api-adresse.data.gouv.fr https://presaje.sga.defense.gouv.fr https://api.openrouteservice.org https://data.geopf.fr https://geo.api.gouv.fr; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; report-uri /logs/violation/csp-endpoint",
-      "expires": "Mon, 11 May 2026 03:33:44 GMT",
-      "x-xss-protection": "1; mode=block, 0; mode=block",
+      "content-security-policy": "default-src 'self'; base-uri 'self'; connect-src 'self' https://api-adresse.data.gouv.fr https://presaje.sga.defense.gouv.fr https://api.openrouteservice.org https://data.geopf.fr https://geo.api.gouv.fr https://miuz.espacecandidat.gendarmerie.interieur.gouv.fr https://www.facebook.com https://*.adform.net https://googleads.g.doubleclick.net https://ad.doubleclick.net https://www.google.com/ccm/collect https://www.google.fr/ccm/collect https://www.google.com/rmkt/collect/; font-src 'self' data:; form-action 'self'; frame-ancestors 'none'; frame-src https://*.fls.doubleclick.net https://*.adform.net; img-src 'self' data: https://www.facebook.com https://ad.doubleclick.net https://*.adform.net https://*.seadform.net https://*.avads.net https://www.google.com/ccm/collect https://www.google.fr/ccm/collect https://www.google.com/rmkt/collect/ https://www.google.com/pagead/ https://www.google.fr/pagead/; object-src 'none'; script-src 'self' 'unsafe-inline' https://miuz.espacecandidat.gendarmerie.interieur.gouv.fr https://connect.facebook.net https://www.googletagmanager.com https://static.avads.net https://*.adform.net https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline'; report-uri /logs/violation/csp-endpoint",
+      "expires": "Mon, 29 Jun 2026 03:30:25 GMT",
+      "x-xss-protection": "1; mode=block, 0",
       "x-permitted-cross-domain-policies": "none",
       "expect-ct": "enforce, max-age=604800",
       "upgrade": "h2",
       "connection": "Upgrade, close",
       "vary": "Accept-Encoding",
-      "content-length": "3145",
+      "content-length": "3779",
       "content-type": "text/html; charset=UTF-8",
       "set-cookie": [
         "SESSION-RP=30368778.47873.0000; path=/; Httponly; Secure",
-        "TS01109d80=0161bc97189777eefc58cd277642e583b5c705c9d01ff7c67790afbf830623e0893bc26dfa6e122ec44a89d0cf901e06ccced33b127762b9cf5bdf9715f089bc6d6b9e597a; Path=/; Domain=.espacecandidat.gendarmerie.interieur.gouv.fr"
+        "TS01109d80=0161bc97186a1fbcf1770d3e6cf7be38f68541929d16ea80332c77655dae117531ae6d6a150f69069e194b37e7546e045f21bfca6ec169d7cb4bcac6e6831af5cf5367d8d6; Path=/; Domain=.espacecandidat.gendarmerie.interieur.gouv.fr"
       ],
       "strict-transport-security": "max-age=63072000; includeSubdomains"
     }
@@ -34,9 +34,9 @@
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": true,
-      "result": "csp-implemented-with-no-unsafe",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
       "data": {
         "default-src": [
           "'self'"
@@ -46,11 +46,23 @@
         ],
         "connect-src": [
           "'self'",
+          "https://*.adform.net",
+          "https://ad.doubleclick.net",
           "https://api-adresse.data.gouv.fr",
           "https://api.openrouteservice.org",
           "https://data.geopf.fr",
           "https://geo.api.gouv.fr",
-          "https://presaje.sga.defense.gouv.fr"
+          "https://googleads.g.doubleclick.net",
+          "https://miuz.espacecandidat.gendarmerie.interieur.gouv.fr",
+          "https://presaje.sga.defense.gouv.fr",
+          "https://www.facebook.com",
+          "https://www.google.com/ccm/collect",
+          "https://www.google.com/rmkt/collect/",
+          "https://www.google.fr/ccm/collect"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
         ],
         "form-action": [
           "'self'"
@@ -59,14 +71,39 @@
           "'none'"
         ],
         "frame-src": [
-          "'none'"
+          "https://*.adform.net",
+          "https://*.fls.doubleclick.net"
         ],
         "img-src": [
           "'self'",
-          "data:"
+          "data:",
+          "https://*.adform.net",
+          "https://*.avads.net",
+          "https://*.seadform.net",
+          "https://ad.doubleclick.net",
+          "https://www.facebook.com",
+          "https://www.google.com/ccm/collect",
+          "https://www.google.com/pagead/",
+          "https://www.google.com/rmkt/collect/",
+          "https://www.google.fr/ccm/collect",
+          "https://www.google.fr/pagead/"
         ],
         "object-src": [
           "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.adform.net",
+          "https://connect.facebook.net",
+          "https://googleads.g.doubleclick.net",
+          "https://miuz.espacecandidat.gendarmerie.interieur.gouv.fr",
+          "https://static.avads.net",
+          "https://www.googletagmanager.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
         ],
         "report-uri": [
           "/logs/violation/csp-endpoint"
@@ -83,8 +120,8 @@
         "insecureSchemePassive": false,
         "strictDynamic": false,
         "unsafeEval": false,
-        "unsafeInline": false,
-        "unsafeInlineStyle": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
       "numPolicies": 1
