@@ -12,18 +12,23 @@
       "cache-control": "private",
       "content-type": "text/html; charset=utf-8",
       "set-cookie": [
-        "ASP.NET_SessionId=r11gkfkwakkt4k5dl3srlal3; path=/; HttpOnly; SameSite=Lax",
-        "BNI_persistence=59HT3y-4i3POS4QrA5Y5AJP2dT4ilMnh4zrHBr8lPt_mQyQ_xzrtu2-C67wph-VLuf2VXSmhT4dSRQJ-K3oUHA=="
+        "ASP.NET_SessionId=nolvhoxnn0i0bs5ifgtvqyyx; path=/; HttpOnly; SameSite=Lax",
+        "BIGipServerP-IIS_pool=1689888960.47873.0000; expires=Wed, 01-Jul-2026 09:26:41 GMT; path=/; Httponly; Secure",
+        "TS01afc703=016e60d0e5ec315a5cdc7c20418e2bb4d9cd5e1b9fe6da4907e70b1e2f9a3a8b8c4ac97ae49d8ce8ab02cf1939d83f585bd1141ede906ff5e255cbe88e1e5d696337552714903c522cf7acf8b6da71feb1de7fc420; Path=/; Domain=.sanctionsfinancieres.dgtresor.gouv.fr",
+        "TS01afc703028=01a09cbeb9cb6668622d7d4fccc7f2f48ad0f0b9219cfbb0bfe096305f546eafa3cfe381ad388ccc7231c7d2b205dd55a805b84dfa; Path=/; Domain=.sanctionsfinancieres.dgtresor.gouv.fr",
+        "TSe7068a16029=083162354fab28005766464edeba43a0a5536f1d916e7e931cdc58779dc8969cd2efd500b067180c3a18f8401e1f2ddf; Max-Age=30; Path=/",
+        "TS9248c179027=083162354fab20008b9b61d450cf4beff90682b1c8f05117b379b32913a4d36537d765e2a277d1ef089dc205d3113000235efcff56a7e653ecb36e41889ad526e25e14553d15a8545158319ebf0860777edaca77d7aee967dd2d37901271779d; Path=/"
       ],
-      "x-aspnetmvc-version": "5.2",
       "x-frame-options": "SAMEORIGIN",
       "referrer-policy": "same-origin",
       "strict-transport-security": "max-age=34560000; includeSubdomains; preload;",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "x-ua-compatible": "IE=Edge",
-      "date": "Wed, 13 May 2026 03:30:13 GMT",
-      "connection": "close"
+      "date": "Wed, 01 Jul 2026 03:26:41 GMT",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -51,7 +56,31 @@
           "port": null,
           "samesite": "lax"
         },
-        "BNI_persistence": {
+        "BIGipServerP-IIS_pool": {
+          "domain": "sanctionsfinancieres.dgtresor.gouv.fr",
+          "expires": "2026-07-01T09:26:41.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01afc703": {
+          "domain": "sanctionsfinancieres.dgtresor.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "TS01afc703028": {
+          "domain": "sanctionsfinancieres.dgtresor.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "TSe7068a16029": {
+          "domain": "sanctionsfinancieres.dgtresor.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        },
+        "TS9248c179027": {
           "domain": "sanctionsfinancieres.dgtresor.gouv.fr",
           "path": "/",
           "port": null
