@@ -1,30 +1,30 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "B",
     "error": null,
-    "score": 80,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 13 May 2026 03:30:45 GMT",
-      "server": "Apache",
-      "last-modified": "Mon, 25 Mar 2024 11:08:08 GMT",
-      "etag": "\"0-6147a3045a3cc\"",
+      "date": "Wed, 01 Jul 2026 03:26:27 GMT",
+      "server": "",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "58364",
+      "last-modified": "Sat, 26 Oct 1985 08:15:00 GMT",
+      "etag": "\"1dc09d84-e3fc\"",
+      "strict-transport-security": "max-age=63072000",
       "accept-ranges": "bytes",
-      "content-length": "0",
       "x-frame-options": "Sameorigin",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=63072000",
-      "content-security-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval' https://wa.phm.education.gouv.fr/mutu/",
-      "connection": "close",
-      "content-type": "text/html; charset=UTF-8",
+      "content-security-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval' https://wa.phm.education.gouv.fr/mutu/ https://rni.phm.education.gouv.fr",
       "set-cookie": [
-        "BIGipServerc7OqOCGlDapZEWue3hVmKg=!Udwhvhzm2imXrLgcUuXzBVxHRHRyQxCaidT38YT4frmTbmVIhTaQA5JuqiMF/pzWHFbE/ydlFfeH/CTzSIjNqTGfkoH3QX4wpw4iE+A=; path=/; Httponly; Secure"
-      ]
+        "BALANCER_ROUTE_ID_lb_moncompte=.2; path=/; HttpOnly"
+      ],
+      "connection": "close"
     }
   },
   "tests": {
@@ -39,6 +39,7 @@
           "'unsafe-eval'",
           "'unsafe-inline'",
           "data:",
+          "https://rni.phm.education.gouv.fr",
           "https://wa.phm.education.gouv.fr/mutu/"
         ]
       },
@@ -61,9 +62,9 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "BIGipServerc7OqOCGlDapZEWue3hVmKg": {
           "domain": "rni.phm.education.gouv.fr",
@@ -71,6 +72,12 @@
           "path": "/",
           "port": null,
           "secure": true
+        },
+        "BALANCER_ROUTE_ID_lb_moncompte": {
+          "domain": "rni.phm.education.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
         }
       },
       "sameSite": false
@@ -115,7 +122,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
