@@ -1,28 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 13 May 2026 03:24:03 GMT",
-      "content-type": "text/html",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "server": "cloudflare",
-      "last-modified": "Thu, 30 Apr 2026 09:30:16 GMT",
+      "date": "Wed, 01 Jul 2026 03:26:46 GMT",
+      "server": "Apache",
+      "last-modified": "Fri, 05 Jun 2026 12:37:24 GMT",
+      "etag": "\"412-65380ec39750a-gzip\"",
+      "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=240",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iTeO2OR7io9DK%2BEOw58t3aG59ujKKNWV%2F3%2F%2Fa%2FuloiYGDawjVyZHeM7reE42Z6wmxRyCcl6teIJSPVbu5o5%2FplSsrIlB2blV8S%2B4zuuClKvFv84kVrltvbwA3l%2FyXhAsbnJ48mWu6%2BDqRH1ie%2BVRufYPI1AUn1k9\"}]}",
-      "sozu-id": "01KRFNSTHNKXEBP6GSN31AFGQK",
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9fae8c491fc0b506-IAD",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "content-length": "521",
+      "connection": "close",
+      "content-type": "text/html",
+      "sozu-id": "01KWDVE1099FCP6CVCSGD6ZT2M"
     }
   },
   "tests": {
@@ -54,14 +50,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://pilotage.conseiller-numerique.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://pilotage.conseiller-numerique.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://pilotage.conseiller-numerique.gouv.fr/",
-        "https://pilotage.conseiller-numerique.gouv.fr/"
+        "http://pilotage.conseiller-numerique.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -88,14 +83,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
