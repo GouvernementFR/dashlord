@@ -1,29 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 0,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 11 May 2026 03:25:11 GMT",
+      "date": "Wed, 01 Jul 2026 03:25:24 GMT",
       "server": "Apache",
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate",
-      "pragma": "no-cache",
-      "content-language": "fr",
-      "set-cookie": [
-        "PHPSESSID=8on1od4mjv2qh0ao4dq55gp2q5; path=/"
-      ],
-      "vary": "Accept-Encoding",
-      "x-ua-compatible": "IE=edge",
-      "x-content-type-options": "nosniff",
-      "content-length": "16390",
+      "last-modified": "Fri, 26 Jun 2026 09:05:59 GMT",
+      "etag": "\"0-655246acead65\"",
+      "accept-ranges": "bytes",
+      "content-length": "0",
       "connection": "close",
-      "content-type": "text/html; charset=utf-8"
+      "content-type": "text/html"
     }
   },
   "tests": {
@@ -40,16 +33,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "PHPSESSID": {
-          "domain": "www.paris-est-sup.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -94,22 +81,17 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-5775961-1": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
