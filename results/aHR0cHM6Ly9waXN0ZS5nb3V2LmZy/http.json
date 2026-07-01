@@ -9,13 +9,13 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 11 May 2026 03:31:33 GMT",
+      "date": "Wed, 01 Jul 2026 03:25:42 GMT",
       "set-cookie": [
-        "8db00a4d3c022eb432915bb75cb1324f=7slku1grq0rj2ta60hkqbvlvio; path=/; secure; HttpOnly; SameSite=Strict",
-        "4642bfbfb6d37db1ab34ba9a8ce8be02=f49c952bb68525b19fa4c222749be35d; path=/; HttpOnly; Secure; SameSite=None"
+        "8db00a4d3c022eb432915bb75cb1324f=klfn80ultb0msepdibg5tn4143; path=/; secure; HttpOnly; SameSite=Strict",
+        "4642bfbfb6d37db1ab34ba9a8ce8be02=916e2ebca3943d31c954a43a305a98d7; path=/; HttpOnly; Secure; SameSite=None"
       ],
       "expires": "Wed, 17 Aug 2005 00:00:00 GMT",
-      "last-modified": "Mon, 11 May 2026 03:25:16 GMT",
+      "last-modified": "Wed, 01 Jul 2026 03:19:39 GMT",
       "cache-control": "no-cache",
       "pragma": "no-cache",
       "etag": "\"e5edf9ee0cad0e1ab2329092b8fa2acf-gzip\"",
@@ -27,7 +27,7 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "transfer-encoding": "chunked",
-      "x-iplb-request-id": "14A94A12:6C10_894A7DE9:01BB_6A014D95_6BBD7D3:3D6DF5",
+      "x-iplb-request-id": "34998272:3C10_894A7DE9:01BB_6A4488B6_115D8EB:1AE1AD",
       "x-iplb-instance": "65572",
       "connection": "close"
     }
@@ -53,6 +53,10 @@
           "'nonce-kg51bgwp'",
           "'unsafe-eval'"
         ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
         "style-src": [
           "'self'",
           "'unsafe-inline'",
@@ -63,7 +67,8 @@
         "font-src": [
           "'self'",
           "*.piste.aife",
-          "*.piste.gouv.fr"
+          "*.piste.gouv.fr",
+          "data:"
         ],
         "img-src": [
           "'self'",
@@ -72,6 +77,12 @@
           "*.piste.gouv.fr",
           "data:",
           "https://localhost/"
+        ],
+        "media-src": [
+          "'self'",
+          "*.piste.aife",
+          "*.piste.gouv.fr",
+          "blob:"
         ],
         "form-action": [
           "'self'"
