@@ -3,35 +3,35 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 50,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 11 May 2026 03:25:18 GMT",
+      "date": "Wed, 01 Jul 2026 03:25:26 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "cache-control": "max-age=0, must-revalidate, public, s-maxage=67328",
+      "cache-control": "max-age=0, must-revalidate, public, s-maxage=67251",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Mon, 11 May 2026 22:01:06 GMT",
-      "last-modified": "Mon, 11 May 2026 03:18:58 GMT",
+      "expires": "Wed, 01 Jul 2026 22:00:00 GMT",
+      "last-modified": "Wed, 01 Jul 2026 03:19:09 GMT",
       "cache-tags": "HIT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: t.contentsquare.net contentsquare.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self' https://www.mnhn.fr; frame-ancestors 'self' *.mnhn.fr; report-uri https://www.parczoologiquedeparis.fr/fr/report-uri/enforce",
       "x-drupal-cache": "MISS",
       "x-varnish-cacheable": "YES",
       "vary": "Cookie, Accept-Encoding",
-      "x-varnish": "21106286 20684291",
-      "age": "379",
+      "x-varnish": "812940750 817836090",
+      "age": "377",
       "via": "1.1 varnish (Varnish/7.1)",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "9f9e135959a96ad1-SJC"
+      "cf-ray": "a1424db08e79eaf0-ORD"
     }
   },
   "tests": {
@@ -91,19 +91,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "__cf_bm": {
           "domain": "parczoologiquedeparis.fr",
-          "expires": "2026-05-11T03:55:17.000Z",
+          "expires": "2026-07-01T03:55:26.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -148,15 +149,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
