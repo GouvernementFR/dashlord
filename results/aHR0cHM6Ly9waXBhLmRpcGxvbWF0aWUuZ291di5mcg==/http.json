@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 11 May 2026 03:33:56 GMT",
+      "date": "Wed, 01 Jul 2026 03:26:22 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
@@ -19,14 +19,8 @@
       "pragma": "no-cache",
       "set-cookie": [
         "sessver=0; path=/; secure; HttpOnly",
-        "AFLang=fr; expires=Tue, 11-May-2027 03:33:56 GMT; Max-Age=31536000; path=/; secure"
+        "AFLang=en; expires=Thu, 01-Jul-2027 03:26:22 GMT; Max-Age=31536000; path=/; secure"
       ],
-      "x-frame-options": "DENY",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "strict-transport-policy": "max-age=63072000; includeSubDomains; preload",
-      "x-correlation-id": "9cb6ac7b-c9fb-4176-a285-d9961192bfd7",
       "strict-transport-security": "max-age=63072000; includeSubdomains; preload",
       "connection": "close"
     }
@@ -46,12 +40,12 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "AFSESSID": {
           "domain": "pipa.diplomatie.gouv.fr",
-          "expires": "2026-06-01T03:33:56.000Z",
+          "expires": "2026-07-22T03:26:22.000Z",
           "httponly": true,
           "max-age": 1814400,
           "path": "/",
@@ -67,7 +61,7 @@
         },
         "sdid": {
           "domain": "pipa.diplomatie.gouv.fr",
-          "expires": "2036-05-08T03:33:56.000Z",
+          "expires": "2036-06-28T03:26:22.000Z",
           "httponly": true,
           "max-age": 315360000,
           "path": "/",
@@ -75,7 +69,7 @@
         },
         "AFLang": {
           "domain": "pipa.diplomatie.gouv.fr",
-          "expires": "2027-05-11T03:33:56.000Z",
+          "expires": "2027-07-01T03:26:22.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -105,22 +99,22 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubdomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -149,17 +143,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "DENY"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
