@@ -1,28 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 13 May 2026 03:29:18 GMT",
-      "server": "Apache",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade",
-      "last-modified": "Fri, 23 Aug 2024 17:55:45 GMT",
-      "etag": "\"bca-6205d7c10034e-gzip\"",
       "accept-ranges": "bytes",
-      "vary": "Accept-Encoding",
-      "content-length": "994",
-      "content-type": "text/html",
+      "content-length": "7725",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Wed, 01 Jul 2026 03:30:08 GMT",
+      "etag": "\"69fb552f-1e2d\"",
+      "last-modified": "Wed, 06 May 2026 14:50:23 GMT",
+      "server": "nginx/1.25.1",
       "strict-transport-security": "max-age=16000000;includeSubDomains;",
       "x-content-type-options": "nosniff",
       "referrer-policy": "no-referrer-when-downgrade",
-      "x-xss-protection": "1 ;mode=block"
+      "x-xss-protection": "1 ;mode=block",
+      "connection": "close"
     }
   },
   "tests": {
@@ -57,11 +55,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://sare.anah.gouv.fr/",
+      "destination": "https://sprh.anah.gouv.fr/",
       "redirects": true,
       "route": [
         "http://sare.anah.gouv.fr/",
-        "https://sare.anah.gouv.fr/"
+        "https://sare.anah.gouv.fr/",
+        "https://sprh.anah.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -87,10 +86,19 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@latest/dist/dsfr.module.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@latest/dist/dsfr.nomodule.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
