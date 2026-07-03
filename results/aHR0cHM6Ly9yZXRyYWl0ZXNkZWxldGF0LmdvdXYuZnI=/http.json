@@ -10,20 +10,19 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 15 May 2026 03:24:26 GMT",
+      "date": "Fri, 03 Jul 2026 03:23:11 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "max-age=600",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Fri, 15 May 2026 03:34:26 GMT",
-      "last-modified": "Fri, 15 May 2026 03:16:56 GMT",
-      "etag": "\"1778815016-gzip\"",
+      "expires": "Fri, 03 Jul 2026 03:33:11 GMT",
+      "last-modified": "Thu, 02 Jul 2026 08:17:11 GMT",
+      "etag": "\"1782980231\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "MISS",
+      "x-drupal-cache": "HIT",
       "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:; font-src 'self' data: https:; script-src-elem 'self' data: https: 'unsafe-inline'; style-src-elem 'self' data: https: 'unsafe-inline';",
       "referrer-policy": "same-origin",
@@ -36,12 +35,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3211280=Wn+HD5wLRfGykHHgDfi7VemRBmoAAAAAQUIPAAAAAADIBTA5U2UYYkObH3jLDkEv; expires=Fri, 14 May 2027 12:06:30 GMT; HttpOnly; path=/; Domain=.retraitesdeletat.gouv.fr; Secure; SameSite=None",
-        "nlbi_3211280=u61jEfDMxyx9MjSkMLDQwAAAAAAycsN93ZBsEAAtdkiq+T6U; HttpOnly; path=/; Domain=.retraitesdeletat.gouv.fr; Secure; SameSite=None",
-        "incap_ses_1700_3211280=VtEUcDQMDSHYmqU6xJ2XF+mRBmoAAAAAqZXcna5DFnZALZ1WddeyeQ==; path=/; Domain=.retraitesdeletat.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3211280=MtfZsXWfSxufFQ92Y9dwSB4rR2oAAAAAQUIPAAAAAADfYTcUd7g+kFVsUEW5lUHi; expires=Fri, 02 Jul 2027 07:51:33 GMT; HttpOnly; path=/; Domain=.retraitesdeletat.gouv.fr; Secure; SameSite=None",
+        "nlbi_3211280=a4MuQQfxLwBS2UIgMLDQwAAAAABtwWGS6u+dS4qf8rMESRaU; HttpOnly; path=/; Domain=.retraitesdeletat.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1847_3211280=batJSgbwtntsFyzZdd2hGR4rR2oAAAAAoNUuRi0btsd1bYDsAhc8Ig==; path=/; Domain=.retraitesdeletat.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "59-76674100-76674112 NNNN CT(128 250 0) RT(1778815465997 5) q(0 0 4 17) r(5 5) U12"
+      "transfer-encoding": "chunked",
+      "x-iinfo": "51-65307032-65307046 NNYN CT(111 256 0) RT(1783048990742 10) q(0 0 3 6) r(5 6) U12"
     }
   },
   "tests": {
@@ -110,7 +110,7 @@
       "data": {
         "visid_incap_3211280": {
           "domain": "retraitesdeletat.gouv.fr",
-          "expires": "2027-05-14T12:06:30.000Z",
+          "expires": "2027-07-02T07:51:33.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -125,7 +125,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_1700_3211280": {
+        "incap_ses_1847_3211280": {
           "domain": "retraitesdeletat.gouv.fr",
           "path": "/",
           "port": null,
