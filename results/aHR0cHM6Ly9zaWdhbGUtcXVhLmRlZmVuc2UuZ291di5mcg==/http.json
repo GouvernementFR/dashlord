@@ -1,23 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B-",
     "error": null,
-    "score": 50,
+    "score": 65,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 15 May 2026 03:27:19 GMT",
+      "date": "Fri, 03 Jul 2026 03:23:49 GMT",
+      "set-cookie": [
+        "bZA_=v1cpPOgw__L5O; Expires=Fri, 03-Jul-2026 05:23:49 GMT; Path=/"
+      ],
       "content-type": "text/html; charset=UTF-8",
       "content-length": "3752",
       "access-control-allow-methods": "*",
       "access-control-allow-credentials": "true",
       "access-control-allow-headers": "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding, Access-Control-Allow-Origin, Origin, X-Requested-With, Content-Type, Accept, SigaleUser, CodeAccreditation, EmailContact, OperateurId, ProxyOperateurId, ProxyOperateurRacineId, OperateurRacineId, idDossierLiu, Body-Stream-Req-Type, File-Upload-Req-Type, File-Sync-Req-Type, Referencement",
       "x-frame-options": "SAMEORIGIN",
-      "x-correlation-id": "3ca20830-ea70-4ec6-bd98-cbef67a36f61",
+      "x-correlation-id": "56d044f1-938e-4cc1-b971-6865edf1a3b5",
       "vary": "Origin,User-Agent",
+      "strict-transport-security": "max-age=31536000",
       "connection": "close"
     }
   },
@@ -35,10 +39,17 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "bZA_": {
+          "domain": "sigale-qua.defense.gouv.fr",
+          "expires": "2026-07-03T05:23:49.000Z",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -69,12 +80,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
