@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 35,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "no-cache, no-store",
@@ -15,18 +15,18 @@
       "expires": "-1",
       "vary": "Accept-Encoding",
       "strict-transport-security": "max-age=31536000",
-      "traceparent": "00-5db31727ca5f5f18ad95b32f45fdb8fe-c016edff0ae03ca0-01",
-      "tracestate": "d4240e8f-a7623821@dt=fw4;1;48e5d8b;267403;2;0;0;10c;7d4d;2h01;3h048e5d8b;4h267403;5h01;7hdc4fc0a96e4eb7eb",
+      "traceparent": "00-033255451efc0146ec4d5d2276a5cf93-3b48584a1a0d9370-01",
+      "tracestate": "d4240e8f-a7623821@dt=fw4;8;d4c97fff;2166ff;2;0;0;13c;1e0e;2h01;3hd4c97fff;4h2166ff;5h01;7hbacb5417083fef81",
       "p3p": "CP=CAO PSA OUR",
       "x-route-name": "/Pages/General/accueil.aspx",
       "content-security-policy": "frame-ancestors https://ademe.talent-soft.com https://ademe-hr.talent-soft.com;",
       "set-cookie": [
-        "ASP.NET_SessionId=dkzb522fl3ch1yfqh2pojfqn; path=/; secure; HttpOnly; SameSite=None",
-        "__AntiXsrfToken=755eef92170f47539a4b61e9d09254f7; path=/; secure; HttpOnly; SameSite=None"
+        "ASP.NET_SessionId=r3s3guan1kgmahbi4mrvxi41; path=/; secure; HttpOnly; SameSite=None",
+        "__AntiXsrfToken=f6ba5da7f0f24e008fc7d3d8506a481c; path=/; secure; HttpOnly; SameSite=None"
       ],
       "x-content-type-options": "nosniff",
-      "date": "Wed, 13 May 2026 03:33:31 GMT",
-      "content-length": "15009",
+      "date": "Fri, 03 Jul 2026 03:23:16 GMT",
+      "content-length": "14336",
       "connection": "close",
       "referrer-policy": "strict-origin-when-cross-origin"
     }
@@ -110,12 +110,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://recrutement.ademe.fr/accueil.aspx?LCID=1036",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://recrutement.ademe.fr/",
+        "https://recrutement.ademe.fr/",
+        "https://recrutement.ademe.fr/accueil.aspx?LCID=1036"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -129,12 +133,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
