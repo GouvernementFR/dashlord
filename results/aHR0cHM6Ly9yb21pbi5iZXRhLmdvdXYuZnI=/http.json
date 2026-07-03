@@ -21,15 +21,15 @@
       "cross-origin-resource-policy": "same-origin",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-embedder-policy": "unsafe-none",
-      "content-security-policy": "base-uri 'none'; default-src 'none'; connect-src 'self' https://romin-justice.directus.app https://stats.beta.gouv.fr; font-src 'self'; form-action 'self'; frame-ancestors 'self' https://romin-justice.directus.app; frame-src 'self' https://stats.beta.gouv.fr https://tally.so; img-src 'self' data: https://romin-justice.directus.app/assets/; manifest-src 'self'; media-src 'self' https://romin-justice.directus.app/assets/; object-src 'none'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; script-src 'strict-dynamic' 'nonce-2NsNrbDSpCm/ujkA3oXwBHCZ' 'wasm-unsafe-eval'; upgrade-insecure-requests; worker-src 'self';",
+      "content-security-policy": "base-uri 'none'; default-src 'none'; connect-src 'self' https://romin-justice.directus.app https://stats.beta.gouv.fr; font-src 'self'; form-action 'self'; frame-ancestors 'self' https://romin-justice.directus.app; frame-src 'self' https://stats.beta.gouv.fr https://tally.so https://tube.numerique.gouv.fr; img-src 'self' data: https://romin-justice.directus.app/assets/; manifest-src 'self'; media-src 'self' https://romin-justice.directus.app/assets/; object-src 'none'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; script-src 'strict-dynamic' 'nonce-98aOKuxwnUSCU+lH/cTnuwmm' 'wasm-unsafe-eval'; upgrade-insecure-requests; worker-src 'self';",
       "origin-agent-cluster": "?1",
       "x-dns-prefetch-control": "off",
       "permissions-policy": "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=('self' https://romin-justice.directus.app/assets/), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(), xr-spatial-tracking=()",
       "content-type": "text/html;charset=utf-8",
-      "date": "Fri, 15 May 2026 03:27:18 GMT",
+      "date": "Fri, 03 Jul 2026 03:29:33 GMT",
       "connection": "close",
-      "content-length": "29343",
-      "sozu-id": "01KRMTS71QGZ3ZGSH9ZCZ1KGBQ"
+      "content-length": "28617",
+      "sozu-id": "01KWK0CH92HNQ3Y3N0BQG3FHC0"
     }
   },
   "tests": {
@@ -63,7 +63,8 @@
         "frame-src": [
           "'self'",
           "https://stats.beta.gouv.fr",
-          "https://tally.so"
+          "https://tally.so",
+          "https://tube.numerique.gouv.fr"
         ],
         "img-src": [
           "'self'",
@@ -88,7 +89,7 @@
           "'unsafe-inline'"
         ],
         "script-src": [
-          "'nonce-2nsnrbdspcm/ujka3oxwbhcz'",
+          "'nonce-98aokuxwnuscu+lh/ctnuwmm'",
           "'strict-dynamic'",
           "'wasm-unsafe-eval'"
         ],
@@ -136,11 +137,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://romin.beta.gouv.fr/",
+      "destination": "https://romin.justice.gouv.fr/",
       "redirects": true,
       "route": [
         "http://romin.beta.gouv.fr/",
-        "https://romin.beta.gouv.fr/"
+        "https://romin.beta.gouv.fr/",
+        "https://romin.justice.gouv.fr/"
       ],
       "statusCode": 200
     },
