@@ -9,28 +9,28 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 15 May 2026 03:29:32 GMT",
+      "date": "Fri, 03 Jul 2026 03:32:13 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cf-mitigated": "challenge",
-      "content-security-policy": "default-src 'none'; script-src 'nonce-vxS2Yzb13KUHz2pW0qSdLh' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-12AQrfyhDYbDV2b5fqe0iC' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=(self)",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"9fbf0f126deefca9\"",
+      "server-timing": "chlray;desc=\"a152d25e985fed35\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=8_AfJ5MFJTDhEBddQzh0wS5M8O6oiCzLMeaXnc698gc-1778815772.5477595-1.0.1.1-5F29NhziMFY8N6rSImCgXMGDofney107fwl06taWONBTp5Ps_RsMzIOsLJrlGlHaRNuSOqVITP.WX2Pb.3UNCsp0UMSqXEqeE3Bnkr4jgBNa9vHrix9gCnOOeLQXuLiB; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Fri, 15 May 2026 03:59:32 GMT"
+        "__cf_bm=88bb3eyJtyoiaPPQcUJWQfkdvWOQDYHXfmYLLYn9bC4-1783049533.214361-1.0.1.1-KmJ08XWlwftcjgfJcJIKzK2IWBKYGMaV03BcxcGfbeam6ti2Nznv_Pg24wUgcYef2BmKM.7JuupewXq3G4zkijDXz3IVakh3XLRcVnzeJKUCPTybQAmRNg2xneJOIiqF; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Fri, 03 Jul 2026 04:02:13 GMT"
       ],
-      "cf-ray": "9fbf0f126deefca9-SJC"
+      "cf-ray": "a152d25e985fed35-SJC"
     }
   },
   "tests": {
@@ -44,7 +44,7 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-vxs2yzb13kuhz2pw0qsdlh'",
+          "'nonce-12aqrfyhdybdv2b5fqe0ic'",
           "'unsafe-eval'",
           "https://challenges.cloudflare.com"
         ],
@@ -108,7 +108,7 @@
       "data": {
         "__cf_bm": {
           "domain": "selecdepol.fr",
-          "expires": "2026-05-15T03:59:32.000Z",
+          "expires": "2026-07-03T04:02:13.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
