@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 15 May 2026 03:35:38 GMT",
+      "date": "Sun, 05 Jul 2026 03:21:40 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "b354e06b-5fc7-4722-83e0-529b4d8ddaae",
-      "content-security-policy": "default-src 'self'; script-src 'self' cdn.jsdelivr.net; style-src 'self' cdn.jsdelivr.net; font-src 'self' cdn.jsdelivr.net; img-src 'self' data: s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; object-src s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; frame-src s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; connect-src 'self' geo.api.gouv.fr api.insee.fr data.economie.gouv.fr api-adresse.data.gouv.fr fichiers-publics.agriculture.gouv.fr openmaptiles.data.gouv.fr data.geopf.fr; worker-src blob:; report-uri https://sentry.incubateur.net/api/160/security/?sentry_key=3df27b8b317e41adba25806482b15574?sentry_environment=prod",
+      "x-request-id": "76176a30-9ce7-4eb0-8153-2ca2ba951d84",
+      "content-security-policy": "default-src 'self'; script-src 'self' cdn.jsdelivr.net; style-src 'self' cdn.jsdelivr.net; font-src 'self' cdn.jsdelivr.net; img-src 'self' data: s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; object-src s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; frame-src s3.rbx.io.cloud.ovh.net s3.eu-west-par.io.cloud.ovh.net; connect-src 'self' geo.api.gouv.fr api.insee.fr data.economie.gouv.fr fichiers-publics.agriculture.gouv.fr openmaptiles.data.gouv.fr data.geopf.fr; worker-src blob:; report-uri https://sentry.incubateur.net/api/160/security/?sentry_key=3df27b8b317e41adba25806482b15574?sentry_environment=prod",
       "x-frame-options": "DENY",
       "vary": "Cookie",
       "x-content-type-options": "nosniff",
@@ -61,7 +61,6 @@
         ],
         "connect-src": [
           "'self'",
-          "api-adresse.data.gouv.fr",
           "api.insee.fr",
           "data.economie.gouv.fr",
           "data.geopf.fr",
