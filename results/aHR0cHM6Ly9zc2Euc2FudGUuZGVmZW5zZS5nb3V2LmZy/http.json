@@ -10,13 +10,13 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 15 May 2026 03:34:43 GMT",
+      "date": "Sun, 05 Jul 2026 03:21:31 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
       "permissions-policy": "accelerometer=(), geolocation=(), fullscreen=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=()",
-      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.youtube.com analytics.santearmees.fr googletagmanager.com connect.facebook.net; script-src-elem 'self' 'unsafe-inline' www.youtube.com data: analytics.santearmees.fr googletagmanager.com connect.facebook.net fonts.bunny.net api.myjobglasses.com; script-src-attr 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.bunny.net; style-src-elem 'self' 'unsafe-inline' fonts.bunny.net fonts.googleapis.com; style-src-attr 'self' 'unsafe-inline'; img-src 'self' data: b.tile.openstreetmap.org a.tile.openstreetmap.org secure.gravatar.com blob: analytics.santearmees.fr assets.myjobglasses.com hermes-user-uploads.myjobglasses.com; font-src 'self' data: fonts.bunny.net assets.merci-app.com fonts.gstatic.com; connect-src 'self' analytics.santearmees.fr api.myjobglasses.com; frame-src 'self' www.youtube.com; frame-ancestors 'self' *.defense.gouv.fr *.soigner-servir-autrement.fr *.devenez-medecin-militaire.fr; media-src 'self' data:; manifest-src 'self'; worker-src 'self'; object-src 'none'; report-uri https://sentry.beapi.fr/api/74/security/?sentry_key=cfff50b16aaa35fcedd9ea8ef52cd536; report-to csp-endpoint;",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.youtube.com analytics.santearmees.fr googletagmanager.com connect.facebook.net; script-src-elem 'self' 'unsafe-inline' www.youtube.com data: analytics.santearmees.fr googletagmanager.com connect.facebook.net fonts.bunny.net api.myjobglasses.com; script-src-attr 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.bunny.net; style-src-elem 'self' 'unsafe-inline' fonts.bunny.net fonts.googleapis.com; style-src-attr 'self' 'unsafe-inline'; img-src 'self' data: c.tile.openstreetmap.org b.tile.openstreetmap.org a.tile.openstreetmap.org secure.gravatar.com blob: analytics.santearmees.fr assets.myjobglasses.com hermes-user-uploads.myjobglasses.com; font-src 'self' data: fonts.bunny.net assets.merci-app.com fonts.gstatic.com; connect-src 'self' analytics.santearmees.fr api.myjobglasses.com; frame-src 'self' www.youtube.com; frame-ancestors 'self' *.defense.gouv.fr *.soigner-servir-autrement.fr *.devenez-medecin-militaire.fr; media-src 'self' data:; manifest-src 'self'; worker-src 'self'; object-src 'none'; report-uri https://sentry.beapi.fr/api/74/security/?sentry_key=cfff50b16aaa35fcedd9ea8ef52cd536; report-to csp-endpoint;",
       "link": "<https://ssa.sante.defense.gouv.fr/wp/wp-json/>; rel=\"https://api.w.org/\"",
       "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
       "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
@@ -25,9 +25,9 @@
       "referrer-policy": "no-referrer-when-downgrade",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-server": "prd1",
-      "x-varnish": "318412437",
+      "x-varnish": "24356116",
       "age": "0",
-      "via": "1.1 varnish (Varnish/7.1)",
+      "via": "1.1 beapi-webssa-prod01 (Varnish/7.7)",
       "accept-ranges": "bytes"
     }
   },
@@ -88,6 +88,7 @@
           "assets.myjobglasses.com",
           "b.tile.openstreetmap.org",
           "blob:",
+          "c.tile.openstreetmap.org",
           "data:",
           "hermes-user-uploads.myjobglasses.com",
           "secure.gravatar.com"
