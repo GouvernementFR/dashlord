@@ -9,7 +9,7 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 15 May 2026 03:28:42 GMT",
+      "date": "Sun, 05 Jul 2026 03:20:36 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -20,10 +20,10 @@
       "x-xss-protection": "0",
       "referrer-policy": "same-origin",
       "cache-control": "max-age=15, public, stale-while-revalidate=30, stale-if-error=86400",
-      "etag": "W/\"fec8de3993486ece99e5bf0f64a3eab6\"",
-      "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://social.numerique.gouv.fr; img-src 'self' data: blob: https://social.numerique.gouv.fr; media-src 'self' data: https://social.numerique.gouv.fr; manifest-src 'self' https://social.numerique.gouv.fr; form-action 'none'; child-src 'self' blob: https://social.numerique.gouv.fr; worker-src 'self' blob: https://social.numerique.gouv.fr; connect-src 'self' data: blob: https://social.numerique.gouv.fr wss://social.numerique.gouv.fr; script-src 'self' https://social.numerique.gouv.fr 'wasm-unsafe-eval'; frame-src 'self' https:; style-src 'self' https://social.numerique.gouv.fr 'nonce-t0DsRLkCw9pNZbwZQujINg=='",
-      "x-request-id": "b876bde9-b94b-4536-a738-14aef78e4e27",
-      "x-runtime": "0.027749",
+      "etag": "W/\"776aa41c13d3702b7b052e4a05c628ef\"",
+      "content-security-policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://social.numerique.gouv.fr; img-src 'self' data: blob: https://social.numerique.gouv.fr; media-src 'self' data: https://social.numerique.gouv.fr; manifest-src 'self' https://social.numerique.gouv.fr; form-action 'none'; child-src 'self' blob: https://social.numerique.gouv.fr; worker-src 'self' blob: https://social.numerique.gouv.fr; connect-src 'self' data: blob: https://social.numerique.gouv.fr wss://social.numerique.gouv.fr; frame-src 'self' https:; style-src 'self' https://social.numerique.gouv.fr 'nonce-B0Qc5t6zbTS1wZgT0VaiXQ=='; script-src 'self' https://social.numerique.gouv.fr 'wasm-unsafe-eval' 'sha256-Z5KW83D+6/pygIQS3h9XDpF52xW3l3BHc7JL9tj3uMs='",
+      "x-request-id": "9637c0d5-ac76-41f9-9112-a88719a9a7b3",
+      "x-runtime": "0.023414",
       "strict-transport-security": "max-age=63072000; includeSubDomains",
       "x-cached": "EXPIRED"
     }
@@ -83,18 +83,19 @@
           "https://social.numerique.gouv.fr",
           "wss://social.numerique.gouv.fr"
         ],
-        "script-src": [
-          "'self'",
-          "'wasm-unsafe-eval'",
-          "https://social.numerique.gouv.fr"
-        ],
         "frame-src": [
           "'self'",
           "https:"
         ],
         "style-src": [
-          "'nonce-t0dsrlkcw9pnzbwzqujing=='",
+          "'nonce-b0qc5t6zbts1wzgt0vaixq=='",
           "'self'",
+          "https://social.numerique.gouv.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'sha256-z5kw83d+6/pygiqs3h9xdpf52xw3l3bhc7jl9tj3ums='",
+          "'wasm-unsafe-eval'",
           "https://social.numerique.gouv.fr"
         ]
       },
