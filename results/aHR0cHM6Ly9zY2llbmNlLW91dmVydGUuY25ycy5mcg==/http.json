@@ -3,16 +3,16 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 15 May 2026 03:32:11 GMT",
+      "date": "Sun, 05 Jul 2026 03:25:29 GMT",
       "set-cookie": [
-        "PHPSESSID=1d658cfab38d046793abd90b1cf059bb; path=/",
-        "pll_language=fr; expires=Sat, 15 May 2027 03:32:13 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+        "PHPSESSID=fb8502d8504d581f07fd3539824e9e10; path=/",
+        "pll_language=fr; expires=Mon, 05 Jul 2027 03:25:30 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
       ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
@@ -49,7 +49,7 @@
       "data": {
         "pll_language": {
           "domain": "www.science-ouverte.cnrs.fr",
-          "expires": "2027-05-15T03:32:13.000Z",
+          "expires": "2027-07-05T03:25:30.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -57,7 +57,7 @@
           "secure": true
         },
         "PHPSESSID": {
-          "domain": "science-ouverte.cnrs.fr",
+          "domain": "www.science-ouverte.cnrs.fr",
           "path": "/",
           "port": null
         }
@@ -73,12 +73,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.science-ouverte.cnrs.fr/fr/",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://science-ouverte.cnrs.fr/",
+        "https://science-ouverte.cnrs.fr/",
+        "https://www.science-ouverte.cnrs.fr/fr/"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -93,7 +97,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -107,7 +111,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://cdn.jsdelivr.net/wp/wp-slimstat/tags/5.4.12/wp-slimstat.min.js": {
+        "https://cdn.jsdelivr.net/wp/wp-slimstat/tags/5.5.0/wp-slimstat.min.js": {
           "crossorigin": null,
           "integrity": null
         }
