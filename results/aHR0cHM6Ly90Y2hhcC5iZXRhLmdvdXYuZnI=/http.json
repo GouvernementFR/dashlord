@@ -1,26 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "F",
     "error": null,
-    "score": 70,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 17 May 2026 03:20:48 GMT",
+      "etag": "\"d65537f0\"",
       "content-type": "text/html; charset=utf-8",
+      "cache-control": "max-age=300, public",
+      "expires": "Sun, 05 Jul 2026 03:32:16 GMT",
+      "date": "Sun, 05 Jul 2026 03:27:16 GMT",
+      "set-cookie": [
+        "visid_incap_3339936=ssfvh2elTMWWQcFK7MWWfhXPSWoAAAAAQUIPAAAAAADYKGXqp3sxMCPuLJBqGRmg; expires=Sun, 04 Jul 2027 10:17:04 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr",
+        "incap_ses_1840_3339936=I7VJAGntr35w/Kz/A/+IGRXPSWoAAAAAd0ST499TAEOs9duRjvRCDQ==; path=/; Domain=.numerique.gouv.fr"
+      ],
+      "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "connection": "close",
-      "x-request-id": "da11d59c-02c3-48e5-a6d7-b9fb6edceb67",
-      "x-frame-options": "DENY",
-      "vary": "Accept-Language, Cookie",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "cross-origin-opener-policy": "same-origin",
-      "strict-transport-security": "max-age=31536000"
+      "x-iinfo": "58-54910911-54898528 2CNN RT(1783222037664 13) q(0 0 0 0) r(0 0)"
     }
   },
   "tests": {
@@ -37,10 +37,23 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "visid_incap_3339936": {
+          "domain": "numerique.gouv.fr",
+          "expires": "2027-07-04T10:17:04.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_1840_3339936": {
+          "domain": "numerique.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -66,20 +79,20 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -92,17 +105,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "DENY"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
