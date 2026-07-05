@@ -1,26 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 15 May 2026 03:31:37 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Sun, 05 Jul 2026 03:21:27 GMT",
+      "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "cache-control": "public, max-age=0",
-      "last-modified": "Tue, 14 Apr 2026 12:06:39 GMT",
+      "last-modified": "Mon, 29 Jun 2026 08:32:23 GMT",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "referrer-policy": "no-referrer-when-downgrade",
       "set-cookie": [
-        "BIGipServerpool-sirano-production.cegedim.cloud-tcp3000=!YmauiV/9/uZn/rN3Zj8tcwec1SnosydM9K1e0PKLj3jMfTDW8K+jt4hFWvg5wNnzDL6w1s+ZrZmGlXVP+M4HaNAz8Dui; path=/; Httponly; Secure; SameSite=Strict",
-        "TS01ac8ac8=01352d3811df91d187de47cba6752640dfad1ca01bc48fe701617ebcc0c4ca6925ad7a0ee188f5ac6010bdc978749081754c4beb9c; Path=/; Secure; HttpOnly"
+        "BIGipServerpool-sirano-production.cegedim.cloud-tcp3000=!TnpugM3kQkDFhf6IuV0oqLPgQB/HDDxTCVAnTs3UoJoEqzVTfAw7WR4I7IDXqGaSDBV7YqHYFdqWYwOo8rpUYA8bBAci; path=/; Httponly; Secure; SameSite=Strict",
+        "TS01ac8ac8=01352d38110122685c536b2fca6cd6f543bb9d4a4167dcf89a5a0d3c7c23234a14f4ca2f5b3c1954b40becdb2e569406a9b6007cb6; Path=/; Secure; HttpOnly"
       ],
       "transfer-encoding": "chunked"
     }
@@ -103,15 +103,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://tally.so/widgets/embed.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
