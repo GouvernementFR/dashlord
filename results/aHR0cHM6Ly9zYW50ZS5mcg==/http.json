@@ -9,18 +9,19 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "etag": "W/\"1778814969\"",
-      "last-modified": "Fri, 15 May 2026 03:16:09 GMT",
+      "etag": "W/\"1783217675\"",
+      "last-modified": "Sun, 05 Jul 2026 02:14:35 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "10799",
-      "cache-control": "max-age=0",
-      "date": "Fri, 15 May 2026 03:28:48 GMT",
+      "age": "560",
+      "date": "Sun, 05 Jul 2026 03:21:30 GMT",
       "set-cookie": [
-        "visid_incap_3307490=X66bt1zKQPKGE4jN5YQ/b/CSBmoAAAAAQUIPAAAAAABr2oSL+P2gPl8m+AMzBGmR; expires=Fri, 14 May 2027 12:14:15 GMT; HttpOnly; path=/; Domain=.sante.fr",
-        "incap_ses_1844_3307490=9PJBXaCMOzRiTDr18jSXGfCSBmoAAAAABfOJ5aZ2T60TG6ckXILZ8g==; path=/; Domain=.sante.fr"
+        "visid_incap_3307490=p621KXRbSMuQwMYfGASvprrNSWoAAAAAQUIPAAAAAAAB74qvZTCvor7XMUEjlSdZ; expires=Sun, 04 Jul 2027 07:51:47 GMT; HttpOnly; path=/; Domain=.sante.fr",
+        "incap_ses_1211_3307490=85qCCT28WGlb5F9iRlbOELrNSWoAAAAAr2HHUT63qbpIN9EzpMV0oQ==; path=/; Domain=.sante.fr"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "49-41806353-0 0CNN RT(1778815729327 5) q(0 -1 -1 0) r(0 -1)"
+      "cache-control": "max-age=0",
+      "transfer-encoding": "chunked",
+      "x-iinfo": "0-11576477-11567741 2CNN RT(1783221690907 7) q(0 0 0 0) r(0 0)"
     }
   },
   "tests": {
@@ -43,12 +44,12 @@
       "data": {
         "visid_incap_3307490": {
           "domain": "sante.fr",
-          "expires": "2027-05-14T12:14:15.000Z",
+          "expires": "2027-07-04T07:51:47.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_1844_3307490": {
+        "incap_ses_1211_3307490": {
           "domain": "sante.fr",
           "path": "/",
           "port": null
