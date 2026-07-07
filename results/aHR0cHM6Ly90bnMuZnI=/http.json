@@ -9,11 +9,11 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 17 May 2026 03:20:45 GMT",
+      "date": "Tue, 07 Jul 2026 03:23:11 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "cache-control": "max-age=3600, public",
+      "cache-control": "max-age=3600, public, no-store, no-cache, must-revalidate, max-age=0",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
@@ -23,13 +23,14 @@
       "x-generator": "Drupal 11 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
       "strict-transport-security": "max-age=7776000",
-      "last-modified": "Sat, 16 May 2026 22:10:26 GMT",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NP%2Bm8BfZUWSATNFmJNTmOVbSSDeBNRsn70lsuG7k02R6moJKzzmRr1oEs1jlAeLBa6YE2EiX8%2BJFgOZVYQLTXr8pv3Ho7npMA4OnzsG70o0qHoNw8s%2BZ4HI%3D\"}]}",
+      "last-modified": "Tue, 07 Jul 2026 00:10:43 GMT",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=E%2FGo6B1RwlmuTs4iAa1Vfj%2BQbZwRQIMhGoQFYriNXtcRAVb1H3zoYweO7pDoGvZxRx%2Faly7o7PQhy%2FSZNp%2B1PVn8fJnw545TMwt3%2BPBwf1bvsDJJgxT3M28%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "pragma": "no-cache",
       "server": "cloudflare",
       "cf-cache-status": "DYNAMIC",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=11,cfOrigin;dur=432",
-      "cf-ray": "9fcf7cf31fc4e619-IAD",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=11,cfOrigin;dur=424",
+      "cf-ray": "a173baa1ccc83c60-IAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -111,9 +112,9 @@
           "crossorigin": "anonymous",
           "integrity": null
         },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
         }
       }
     },
