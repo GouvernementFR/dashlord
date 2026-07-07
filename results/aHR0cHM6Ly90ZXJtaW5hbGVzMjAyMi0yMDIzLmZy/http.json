@@ -1,32 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 20,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 17 May 2026 03:26:32 GMT",
+      "date": "Tue, 07 Jul 2026 03:23:05 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "server": "cloudflare",
       "vary": "Accept-Encoding",
       "x-ua-compatible": "IE=edge",
       "link": "<https://www.terminales.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.terminales.fr/wp-json/wp/v2/pages/3575>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.terminales.fr/>; rel=shortlink",
-      "server": "cloudflare",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mn9rA5sRdQM0lHN0ZnPjUX0dY3elBUhCoBvsMv%2FGcaugx99oBkTYgWJ9wpjZWKgE4CTiZVBkACbWIO8sZMsBRA%2B3fJYc5L5eW2WP4OyFbInWQDWlRWeAMeJz%2BBmRKuIuT80kTQ%3D%3D\"}]}",
-      "age": "278",
-      "last-modified": "Sun, 17 May 2026 03:21:53 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "x-permitted-cross-domain-policies": "master-only",
+      "referrer-policy": "same-origin",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "age": "3698",
+      "last-modified": "Tue, 07 Jul 2026 02:21:26 GMT",
       "cache-control": "max-age=31536000",
       "cf-cache-status": "HIT",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "speculation-rules": "\"/cdn-cgi/speculation\"",
-      "server-timing": "cfCacheStatus;desc=\"HIT\", cfEdge;dur=17,cfOrigin;dur=0",
-      "cf-ray": "9fcf856c3e5b69ce-LAX",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "server-timing": "cfCacheStatus;desc=\"HIT\", cfEdge;dur=11,cfOrigin;dur=0",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3lxbUVM73%2F7d3xcAw7CV3V1qoM6Lw%2B9tuLnMgINUqlTVm%2F0bfHaCv2k3unbLeqldiV1n672fGwZKWlZPq016Xyp0GdIC9zYmAJHy37ESTQhs5aF%2Fo7surtP38egoaY2lA7HjOg%3D%3D\"}]}",
+      "cf-ray": "a173ba7ca93e2c2d-SJC"
     }
   },
   "tests": {
@@ -73,10 +78,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -100,11 +105,11 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-includes/js/jquery/jquery.js?ver=3.7.1": {
+        "https://www.terminales.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1": {
+        "https://www.terminales.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1": {
           "crossorigin": null,
           "integrity": null
         },
@@ -124,15 +129,15 @@
           "crossorigin": "anonymous",
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/plugins/gp-premium/menu-plus/functions/js/offside.js?ver=2.5.5": {
+        "https://www.terminales.fr/wp-content/plugins/gp-premium/menu-plus/functions/js/offside.min.js?ver=2.5.6": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-includes/js/dist/hooks.js?ver=220ff17f5667d013d468": {
+        "https://www.terminales.fr/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-includes/js/dist/i18n.js?ver=6b3ae5bd3b8d9598492d": {
+        "https://www.terminales.fr/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec": {
           "crossorigin": null,
           "integrity": null
         },
@@ -144,11 +149,11 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/plugins/gp-premium/general/js/smooth-scroll.js?ver=2.5.5": {
+        "https://www.terminales.fr/wp-content/plugins/gp-premium/general/js/smooth-scroll.min.js?ver=2.5.6": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/plugins/secupress-pro/assets/admin/js/secupress-antispam.js?ver=1778988112": {
+        "https://www.terminales.fr/wp-content/plugins/secupress-pro/assets/admin/js/secupress-antispam.min.js?ver=2.6.2": {
           "crossorigin": null,
           "integrity": null
         },
@@ -156,11 +161,11 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/themes/generatepress/assets/js/menu.js?ver=3.6.1": {
+        "https://www.terminales.fr/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.6.1": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/themes/generatepress/assets/js/navigation-search.js?ver=3.6.1": {
+        "https://www.terminales.fr/wp-content/themes/generatepress/assets/js/navigation-search.min.js?ver=3.6.1": {
           "crossorigin": null,
           "integrity": null
         },
@@ -168,33 +173,33 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/plugins/perfmatters/js/lazyload.min.js?ver=2.6.0": {
+        "https://www.terminales.fr/wp-content/plugins/perfmatters/js/lazyload.min.js?ver=2.6.5": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.terminales.fr/wp-content/plugins/generateblocks-pro/dist/tabs.js?ver=2.5.0": {
+        "https://www.terminales.fr/wp-content/plugins/generateblocks-pro/dist/tabs.js?ver=2.6.1": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
         }
       }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
