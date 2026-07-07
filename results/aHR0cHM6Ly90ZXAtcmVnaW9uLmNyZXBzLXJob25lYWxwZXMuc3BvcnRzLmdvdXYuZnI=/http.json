@@ -3,17 +3,17 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 17 May 2026 03:27:38 GMT",
+      "date": "Tue, 07 Jul 2026 03:27:26 GMT",
       "server": "Apache",
       "set-cookie": [
-        "CFID=2382714; Expires=Tue, 09 May 2056 03:27:38 GMT; Path=/; HttpOnly",
-        "CFTOKEN=d4ebdaa8bb76694f-07C0585D-EBA9-05A6-DB8138B968CFBC85; Expires=Tue, 09 May 2056 03:27:38 GMT; Path=/; HttpOnly"
+        "CFID=2525288; Expires=Thu, 29 Jun 2056 03:27:26 GMT; Path=/; HttpOnly",
+        "CFTOKEN=9ada82cae3fef781-4A29ADF0-B687-875F-FF08B8E68CBFFCFB; Expires=Thu, 29 Jun 2056 03:27:26 GMT; Path=/; HttpOnly"
       ],
       "content-language": "fr-FR",
       "vary": "Accept-Encoding",
@@ -42,14 +42,14 @@
       "data": {
         "CFID": {
           "domain": "tep-region.creps-rhonealpes.sports.gouv.fr",
-          "expires": "2056-05-09T03:27:38.000Z",
+          "expires": "2056-06-29T03:27:26.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
         "CFTOKEN": {
           "domain": "tep-region.creps-rhonealpes.sports.gouv.fr",
-          "expires": "2056-05-09T03:27:38.000Z",
+          "expires": "2056-06-29T03:27:26.000Z",
           "httponly": true,
           "path": "/",
           "port": null
@@ -66,13 +66,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://tep-region.creps-rhonealpes.sports.gouv.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://tep-region.creps-rhonealpes.sports.gouv.fr/",
+      "redirects": true,
       "route": [
-        "http://tep-region.creps-rhonealpes.sports.gouv.fr/"
+        "http://tep-region.creps-rhonealpes.sports.gouv.fr/",
+        "https://tep-region.creps-rhonealpes.sports.gouv.fr/"
       ],
       "statusCode": 200
     },
