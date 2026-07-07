@@ -10,17 +10,17 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 17 May 2026 03:28:24 GMT",
+      "date": "Tue, 07 Jul 2026 03:28:09 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=600",
-      "x-drupal-dynamic-cache": "MISS",
+      "x-drupal-dynamic-cache": "HIT",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 17 May 2026 03:38:24 GMT",
-      "last-modified": "Mon, 11 May 2026 12:08:41 GMT",
-      "etag": "\"1778501321\"",
+      "expires": "Tue, 07 Jul 2026 03:38:09 GMT",
+      "last-modified": "Thu, 02 Jul 2026 00:07:46 GMT",
+      "etag": "\"1782950866\"",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "MISS",
       "x-proxy-cache": "HIT",
@@ -35,13 +35,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3064996=fE4AT4rDToCfKegGduDkeNc1CWoAAAAAQUIPAAAAAABwpscoX3gcO7I3Ql87weCf; expires=Sun, 16 May 2027 12:08:01 GMT; HttpOnly; path=/; Domain=.transformation.gouv.fr; Secure; SameSite=None",
-        "nlbi_3064996=13Mge4UN1TNV2CeqFm/dNgAAAAAZKnLg5aVMzTBldEkprbhz; HttpOnly; path=/; Domain=.transformation.gouv.fr; Secure; SameSite=None",
-        "incap_ses_1847_3064996=ZhaMUZiHIxfDBcabZd2hGdc1CWoAAAAA9Weyp0iALTeC8dcsp+I66w==; path=/; Domain=.transformation.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3064996=VYJ8Ka1qR8+kjWnRKMgoNUtyTGoAAAAAQUIPAAAAAAAzv018sRsJ8CFxRVpblr98; expires=Tue, 06 Jul 2027 07:56:57 GMT; HttpOnly; path=/; Domain=.transformation.gouv.fr; Secure; SameSite=None",
+        "nlbi_3064996=WHmnVBtjWhBuQn6GFm/dNgAAAAA9VhzVLCAKNMzJqQFSKjuA; HttpOnly; path=/; Domain=.transformation.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1214_3064996=tyKKEjOkvyOEhgddSf/YEExyTGoAAAAAy8xleX8WHLbd1c3NBwP49A==; path=/; Domain=.transformation.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "52-133146012-133146014 NNYN CT(133 239 0) RT(1778988503838 5) q(0 0 3 1) r(5 6) U12"
+      "x-iinfo": "3-29740313-29740314 NNYN CT(116 464 0) RT(1783394891394 9) q(0 0 6 0) r(7 8) U12"
     }
   },
   "tests": {
@@ -93,7 +93,7 @@
       "data": {
         "visid_incap_3064996": {
           "domain": "transformation.gouv.fr",
-          "expires": "2027-05-16T12:08:01.000Z",
+          "expires": "2027-07-06T07:56:57.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -108,7 +108,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_1847_3064996": {
+        "incap_ses_1214_3064996": {
           "domain": "transformation.gouv.fr",
           "path": "/",
           "port": null,
