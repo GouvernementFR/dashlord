@@ -9,29 +9,30 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 17 May 2026 03:23:27 GMT",
+      "date": "Tue, 07 Jul 2026 03:23:14 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "cf-ray": "a173bab7ce60ebf3-SJC",
+      "cf-cache-status": "REVALIDATED",
       "access-control-allow-origin": "*",
       "cache-control": "max-age=30, public",
-      "cf-cache-status": "REVALIDATED",
-      "link": "<https://bump.sh/packs/css/portal-f0d64a1d.css>; rel=preload; as=style; nopush",
-      "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=Vh%2FjuZ7e7cWXNuLDuqPHSXpogRXjUk%2Fx5n245k76LKY%3D\\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\\u0026ts=1778646971\"}],\"max_age\":3600}",
-      "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=Vh%2FjuZ7e7cWXNuLDuqPHSXpogRXjUk%2Fx5n245k76LKY%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1778646971\"",
+      "etag": "W/\"8363b361f400f572464354b11ecb8177\"",
+      "link": "<https://bump.sh/packs/css/portal-471a0930.css>; rel=preload; as=style; nopush",
       "server": "cloudflare",
       "strict-transport-security": "max-age=0; includeSubDomains",
       "vary": "Accept-Encoding",
       "via": "2.0 heroku-router",
+      "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=tZg01DQbB8G5GCQT4UTETS%2BRcCyZuOSwZX%2BXBjNqWqc%3D\\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\\u0026ts=1782317838\"}],\"max_age\":3600}",
+      "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=tZg01DQbB8G5GCQT4UTETS%2BRcCyZuOSwZX%2BXBjNqWqc%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1782317838\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
-      "x-request-id": "dee7580d-80ea-5cfa-3d37-ab18e2137521",
-      "x-runtime": "0.086453",
-      "x-xss-protection": "0",
-      "cf-ray": "9fcf80e598a0eabe-ORD"
+      "x-request-id": "8eca68ba-30b2-2956-2434-a51b27fa5d0b",
+      "x-runtime": "0.102342",
+      "x-xss-protection": "0"
     }
   },
   "tests": {
@@ -100,7 +101,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://bump.sh/packs/js/runtime-a88d8354bf79ef31cdf5.js": {
+        "https://bump.sh/packs/js/runtime-abdd1c34b8d8e99dd42a.js": {
           "crossorigin": null,
           "integrity": null
         },
@@ -108,7 +109,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://bump.sh/packs/js/190-802215aff8cad6fc96ce.js": {
+        "https://bump.sh/packs/js/190-009c327e9adddedab995.js": {
           "crossorigin": null,
           "integrity": null
         },
@@ -116,15 +117,15 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://bump.sh/packs/js/4540-713487e345ac395880ec.js": {
+        "https://bump.sh/packs/js/4540-fd7bbbf82c43595324e5.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://bump.sh/packs/js/917-d245a880d9e94390dc34.js": {
+        "https://bump.sh/packs/js/917-3ba04ed4f087a63c55eb.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://bump.sh/packs/js/portal-192c45c343024866d008.js": {
+        "https://bump.sh/packs/js/portal-1e9073076d319af13f94.js": {
           "crossorigin": null,
           "integrity": null
         },
