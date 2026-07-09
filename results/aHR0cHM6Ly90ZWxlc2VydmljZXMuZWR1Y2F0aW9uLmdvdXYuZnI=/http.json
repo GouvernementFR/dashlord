@@ -9,17 +9,17 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 19 May 2026 03:22:53 GMT",
+      "date": "Thu, 09 Jul 2026 03:24:03 GMT",
       "server": "",
-      "last-modified": "Tue, 27 Jan 2026 13:33:03 GMT",
-      "etag": "\"2051-6495ea9b89592\"",
+      "last-modified": "Mon, 29 Jun 2026 12:14:55 GMT",
+      "etag": "\"2051-6556367fd7217\"",
       "accept-ranges": "bytes",
       "content-length": "8273",
       "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
       "strict-transport-security": "max-age=63072000",
-      "content-security-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval' blob: *",
+      "content-security-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval' blob: * https://assets.queue-it.net https://static.queue-it.net https://education.queue-it.net https://wa.phm.education.gouv.fr https://fileattente.teleservices.phm.education.gouv.fr https://queue-it.phm.education.gouv.fr *.education.gouv.fr",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close"
     }
@@ -37,7 +37,13 @@
           "'unsafe-inline'",
           "*",
           "blob:",
-          "data:"
+          "data:",
+          "https://assets.queue-it.net",
+          "https://education.queue-it.net",
+          "https://fileattente.teleservices.phm.education.gouv.fr",
+          "https://queue-it.phm.education.gouv.fr",
+          "https://static.queue-it.net",
+          "https://wa.phm.education.gouv.fr"
         ]
       },
       "http": true,
