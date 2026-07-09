@@ -1,23 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 30,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Tue, 19 May 2026 03:27:43 GMT",
-      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 09 Jul 2026 03:23:52 GMT",
+      "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "x-powered-by": "Express",
-      "etag": "W/\"349a-PLOOfa8HPBxZUJ7wc3hVIt0dusA\"",
-      "referrer-policy": "no-referrer"
+      "last-modified": "Wed, 08 Jul 2026 13:07:01 GMT",
+      "etag": "W/\"6a4e4b75-721\"",
+      "cache-control": "no-cache, no-store, must-revalidate",
+      "pragma": "no-cache",
+      "expires": "0",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
   },
   "tests": {
@@ -43,40 +45,41 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "https://http-observatory.security.mozilla.org"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://webconf.numerique.gouv.fr/",
+      "destination": "https://visio.numerique.gouv.fr/",
       "redirects": true,
       "route": [
         "http://webconf.numerique.gouv.fr/",
-        "https://webconf.numerique.gouv.fr/"
+        "https://webconf.numerique.gouv.fr/",
+        "https://visio.numerique.gouv.fr/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "no-referrer",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
