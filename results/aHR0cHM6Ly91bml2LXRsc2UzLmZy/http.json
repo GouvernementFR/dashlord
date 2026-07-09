@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D",
     "error": null,
-    "score": 70,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 19 May 2026 03:22:51 GMT",
+      "date": "Thu, 09 Jul 2026 03:27:44 GMT",
       "server": "Apache",
       "upgrade": "h2",
       "connection": "Upgrade",
@@ -18,7 +18,7 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "sameorigin",
       "set-cookie": [
-        "JSESSIONID=F2F02B6C2005E75E6C30FC154B1D28B0.prod-ksup2-front1.private.univ-tlse3.fr; Path=/; Secure; HttpOnly;HttpOnly;Secure",
+        "JSESSIONID=6CD9A179E16DBB5859761EEDC83A100E.prod-ksup2-front1.private.univ-tlse3.fr; Path=/; Secure; HttpOnly;HttpOnly;Secure",
         "SERVERID=front1; path=/"
       ],
       "x-xss-protection": "1; mode=block",
@@ -43,8 +43,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "JSESSIONID": {
           "domain": "www.univ-tlse3.fr",
@@ -93,12 +93,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains;",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
