@@ -3,23 +3,23 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 19 May 2026 03:22:51 GMT",
+      "date": "Thu, 09 Jul 2026 03:23:51 GMT",
       "server": "Apache",
-      "x-powered-by": "PHP/8.3.31",
+      "x-powered-by": "PHP/8.3.32",
       "x-frame-options": "DENY",
+      "content-security-policy": "frame-ancestors 'self' https://www.virtual-tour-360.online",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
-      "last-modified": "Tue, 19 May 2026 03:20:02 GMT",
+      "last-modified": "Thu, 09 Jul 2026 02:20:39 GMT",
       "cache-control": "max-age=0",
-      "expires": "Tue, 19 May 2026 03:22:51 GMT",
+      "expires": "Thu, 09 Jul 2026 03:23:51 GMT",
       "vary": "Accept-Encoding,User-Agent",
-      "access-control-allow-origin": "https://www.virtual-tour-360.online/visite-virtuelle/telecom-sudparis/",
       "connection": "close",
       "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
@@ -29,13 +29,30 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "https://www.virtual-tour-360.online"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -48,9 +65,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "https://www.virtual-tour-360.online/visite-virtuelle/telecom-sudparis/"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -112,8 +129,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "DENY"
     },
     "cross-origin-resource-policy": {
