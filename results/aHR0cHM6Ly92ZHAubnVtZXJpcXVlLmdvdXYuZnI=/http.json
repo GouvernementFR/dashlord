@@ -10,11 +10,11 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 19 May 2026 03:34:27 GMT",
+      "date": "Sat, 11 Jul 2026 03:20:28 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding, Cookie",
-      "content-security-policy": "script-src 'self'; font-src 'self'; default-src 'none'; connect-src 'self'; form-action 'self'; img-src 'self' data: https://storage.vulnerability-disclosure.com; frame-ancestors 'none'; style-src 'self' 'unsafe-inline'; frame-src 'none'; media-src data:; block-all-mixed-content",
+      "content-security-policy": "frame-src 'none'; font-src 'self'; connect-src 'self'; img-src 'self' data: https://storage.vulnerability-disclosure.com; block-all-mixed-content; style-src 'self' 'unsafe-inline'; default-src 'none'; form-action 'self'; frame-ancestors 'none'; media-src 'self' data:; script-src 'self'",
       "referrer-policy": "same-origin",
       "strict-transport-security": "includeSubDomains;max-age=31536000;preload;",
       "cache-control": "no-cache,max-age=60",
@@ -31,19 +31,13 @@
       "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
       "scoreModifier": 0,
       "data": {
-        "script-src": [
-          "'self'"
+        "frame-src": [
+          "'none'"
         ],
         "font-src": [
           "'self'"
         ],
-        "default-src": [
-          "'none'"
-        ],
         "connect-src": [
-          "'self'"
-        ],
-        "form-action": [
           "'self'"
         ],
         "img-src": [
@@ -51,21 +45,28 @@
           "data:",
           "https://storage.vulnerability-disclosure.com"
         ],
-        "frame-ancestors": [
+        "block-all-mixed-content": [
           "'none'"
         ],
         "style-src": [
           "'self'",
           "'unsafe-inline'"
         ],
-        "frame-src": [
+        "default-src": [
+          "'none'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "frame-ancestors": [
           "'none'"
         ],
         "media-src": [
+          "'self'",
           "data:"
         ],
-        "block-all-mixed-content": [
-          "'none'"
+        "script-src": [
+          "'self'"
         ]
       },
       "http": true,
