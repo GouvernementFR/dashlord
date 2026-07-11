@@ -1,24 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "access-control-allow-origin": "*",
       "alt-svc": "h3=\":443\"; ma=2592000",
       "cache-control": "max-age=86400, public",
       "content-language": "fr",
+      "content-security-policy": "frame-ancestors 'self'",
       "content-security-policy-report-only": "object-src 'none'; script-src 'self' 'report-sample' 'unsafe-eval' https://unpkg.com 'unsafe-inline' https://webomat.unistra.fr/; script-src-elem 'self' 'report-sample' 'unsafe-eval' https://unpkg.com; style-src 'self' 'report-sample'; webrtc 'block'; worker-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Thu, 21 May 2026 00:00:44 GMT",
-      "etag": "W/\"1779321643\"",
+      "date": "Fri, 10 Jul 2026 19:00:39 GMT",
+      "etag": "W/\"1783710038\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Thu, 21 May 2026 00:00:43 GMT",
+      "last-modified": "Fri, 10 Jul 2026 19:00:38 GMT",
       "permissions-policy": "geolocation=(),midi=(),syncxhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()",
       "referrer-policy": "strict-origin",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -37,13 +38,29 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented-but-reporting-enabled",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -111,9 +128,9 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN, SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
