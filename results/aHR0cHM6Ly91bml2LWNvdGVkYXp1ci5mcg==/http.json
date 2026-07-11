@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "D+",
     "error": null,
-    "score": 35,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "JSESSIONID=4BA0E6A5E00167F1FA71487B629BA1AD.ksupapp1.univ-cotedazur.fr; Path=/; HttpOnly",
-        "SERVERID=tc1; path=/"
+        "JSESSIONID=801A63D34CA5EE9FEDE1CE3451629CEC.ksupapp2.univ-cotedazur.fr; Path=/; HttpOnly",
+        "SERVERID=tc2; path=/"
       ],
       "content-type": "text/html;charset=UTF-8",
       "content-language": "fr-FR",
       "transfer-encoding": "chunked",
-      "date": "Mon, 18 May 2026 23:24:18 EDT",
+      "date": "Sat, 11 Jul 2026 00:20:20 BRT",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
       "connection": "close"
     }
@@ -95,33 +95,13 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
       "data": {
         "https://code.jquery.com/jquery-3.7.1.min.js": {
           "crossorigin": "anonymous",
           "integrity": "sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        },
-        "https://cdn-univ.fr/ksup/scripts.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn-univ.fr/ksup/affluences/webapi_latest.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://webapi.affluences.com/js/webapi_latest.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://webapi.affluences.com/js/timetable_api_latest.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn-univ.fr/ksup/ksup_v7/js/site_ksup-min.js": {
-          "crossorigin": null,
-          "integrity": null
         }
       }
     },
