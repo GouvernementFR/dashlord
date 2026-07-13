@@ -1,23 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "D",
     "error": null,
-    "score": 45,
-    "statusCode": 200,
+    "score": 30,
+    "statusCode": 403,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 21 May 2026 03:34:39 GMT",
+      "mime-version": "1.0",
       "content-type": "text/html",
-      "content-length": "2665",
-      "last-modified": "Wed, 20 May 2026 12:17:45 GMT",
-      "etag": "\"6a0da669-a69\"",
-      "accept-ranges": "bytes",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-lb": "ha1-2;ha3",
-      "connection": "close"
+      "content-length": "389",
+      "expires": "Mon, 13 Jul 2026 03:23:09 GMT",
+      "cache-control": "max-age=0, no-cache, no-store",
+      "pragma": "no-cache",
+      "date": "Mon, 13 Jul 2026 03:23:09 GMT",
+      "connection": "close",
+      "alt-svc": "h3=\":443\"; ma=93600"
     }
   },
   "tests": {
@@ -58,7 +58,7 @@
         "http://www.handiguide.sports.gouv.fr/",
         "https://www.handiguide.sports.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -71,34 +71,21 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyDrLTnu4q0NyGaGwTK7ikdDjuVlRP_U3NY&libraries=places&callback=Function.prototype": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://platform.twitter.com/widgets.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.numanis.net/accessedition.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
