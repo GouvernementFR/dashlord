@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-security-policy": "default-src 'self' data:; connect-src 'self' https://*.gouv.fr https://metrics.articulate.com; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
       "content-type": "text/html; charset=utf-8",
-      "date": "Sat, 23 May 2026 03:20:16 GMT",
+      "date": "Mon, 13 Jul 2026 03:32:43 GMT",
       "etag": "W/\"692d6bf0-44df\"",
       "last-modified": "Mon, 01 Dec 2025 10:20:32 GMT",
       "server": "nginx",
@@ -96,16 +96,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://1000jours.fabrique.social.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://1000jours.fabrique.social.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://1000jours.fabrique.social.gouv.fr/",
-        "https://1000jours.fabrique.social.gouv.fr/"
+        "http://1000jours.fabrique.social.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 503
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
