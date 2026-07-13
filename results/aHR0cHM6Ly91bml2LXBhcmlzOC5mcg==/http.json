@@ -1,26 +1,29 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "B-",
     "error": null,
-    "score": 70,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 21 May 2026 03:24:30 GMT",
+      "date": "Mon, 13 Jul 2026 03:22:01 GMT",
       "server": "Apache",
       "vary": "Cookie,Accept-Encoding",
       "composed-by": "SPIP @ www.spip.net",
       "x-spip-cache": "86400",
-      "last-modified": "Thu, 21 May 2026 03:24:30 GMT",
+      "last-modified": "Mon, 13 Jul 2026 03:22:01 GMT",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
-      "content-length": "17412",
+      "content-length": "13530",
       "content-type": "text/html; charset=utf-8",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "set-cookie": [
+        "ROUTEID=.2; path=/"
+      ],
       "connection": "close"
     }
   },
@@ -38,10 +41,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "ROUTEID": {
+          "domain": "univ-paris8.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -90,23 +99,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/brands.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ILOQokRQNF0S8SKV6fnaLNj02CmZnDWmYUr3zlH4jwToep0lWc7twuTzF+Mm0cKPdszi0xe8KymVi2y7mAweVQ=="
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-j12pXc2gXZL/JZw5Mhi6LC7lkiXL0e2h+9ZWpqhniz0DkDrO01VNlBrG3LkPBn6DgG2b8CDjzJT+lxfocsS1Vw=="
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/solid.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-H/FYzgm63CLJLwSgCNv7zmAHWnbw7GwOrnCjE15CD969yHWj7fGDiHHLZuZJLO9ZGIkBR/JL91/p/ddbtUUgQQ=="
-        },
-        "https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js": {
+        "https://code.jquery.com/jquery-1.12.4.js": {
           "crossorigin": null,
           "integrity": null
         }
