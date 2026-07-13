@@ -1,20 +1,31 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "B",
     "error": null,
-    "score": 65,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 21 May 2026 03:29:10 GMT",
-      "server": "Apache",
-      "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=15768000",
-      "link": "<https://www.cppap.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.cppap.fr/wp-json/wp/v2/pages/1084>; rel=\"alternate\"; type=\"application/json\", <https://www.cppap.fr/>; rel=shortlink",
+      "date": "Mon, 13 Jul 2026 03:22:04 GMT",
       "content-type": "text/html; charset=UTF-8",
+      "cache-control": "max-age=600, public",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "x-content-type-options": "nosniff",
+      "content-language": "fr",
+      "x-frame-options": "SAMEORIGIN",
+      "last-modified": "Fri, 10 Jul 2026 13:27:51 GMT",
+      "etag": "\"1783690071-gzip\"",
+      "age": "295",
+      "x-cache": "HIT",
+      "x-cache-hits": "3",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-forwarded-for": ";",
+      "x-cp-via": "C2-e61668d3-8e1240fe",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -51,11 +62,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.cppap.fr/",
+      "destination": "https://www.cppap.fr/fr",
       "redirects": true,
       "route": [
         "http://www.cppap.fr/",
-        "https://www.cppap.fr/"
+        "https://www.cppap.fr/",
+        "https://www.cppap.fr/fr"
       ],
       "statusCode": 200
     },
@@ -73,9 +85,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15768000",
-      "includeSubDomains": false,
-      "maxAge": 15768000,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -85,7 +97,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-110311563-3": {
+        "https://cdntag.tarteaucitron.io/load.js?domain=www.cppap.fr&uuid=cb6c31eaf0d65c6f8768c5734dd1a8df6bfd7780": {
           "crossorigin": null,
           "integrity": null
         }
@@ -93,10 +105,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
