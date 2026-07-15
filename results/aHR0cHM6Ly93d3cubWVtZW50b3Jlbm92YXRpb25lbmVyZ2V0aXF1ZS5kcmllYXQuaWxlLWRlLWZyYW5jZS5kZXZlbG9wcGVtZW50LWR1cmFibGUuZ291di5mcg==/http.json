@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "F",
     "error": null,
-    "score": 45,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 23 May 2026 03:21:37 GMT",
+      "date": "Wed, 15 Jul 2026 03:20:35 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
       "link": "<https://www.mementorenovationenergetique.drieat.ile-de-france.developpement-durable.gouv.fr/local/cache-css/a47bce5ac4f106086e1dbc483dbc1a59.css?1773310113>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sat, 23 May 2026 03:21:37 GMT",
+      "last-modified": "Wed, 15 Jul 2026 03:20:34 GMT",
       "set-cookie": [
-        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
+        "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -41,8 +41,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "SRV": {
           "domain": "www.mementorenovationenergetique.drieat.ile-de-france.developpement-durable.gouv.fr",
@@ -83,12 +83,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
