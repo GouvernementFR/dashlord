@@ -1,33 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 23 May 2026 01:15:43 GMT",
+      "date": "Tue, 14 Jul 2026 19:54:05 GMT",
       "cache-control": "max-age=10800, public",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Sat, 23 May 2026 02:00:43 GMT",
+      "last-modified": "Tue, 14 Jul 2026 22:38:10 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "age": "0",
-      "etag": "W/\"1779501643-gzip\"",
-      "x-cache": "MISS",
-      "x-cache-hits": "0",
+      "age": "273",
+      "etag": "W/\"1784068690-gzip\"",
+      "x-cache": "HIT",
+      "x-cache-hits": "5",
       "accept-ranges": "bytes",
       "connection": "close",
       "set-cookie": [
         "BIGipServerpool-handicap-v2.cegedim.cloud-http=3485751562.20480.0000; path=/; Httponly; Secure",
-        "TS24c133e9029=087dc22938ab28000af27cc8a44976821448ca79dbec40493a0dcdce6875ae6443e90cbd754a162d175c74d8ec5d4dcd; Secure; Max-Age=30; Path=/",
-        "TSe7b29e8c027=087dc22938ab2000be0eb0046daa9b0ca671dd5af43457ee3bbee90a490b5d5ecda967d477804f9808dcb81c0f1130005dbc05f4b60ffb9242442a3745e1cfcc3f77a5dc004651fcc8f637042ed1fe12a8bf75bfea79b1d00b3f49cf654f6e28; Secure; Path=/"
+        "TS24c133e9029=087dc22938ab2800e334ee1507c1f0968e620097129e08ebe50942545fe3c082267b59b829bcdead5add9e9dafc766d6; Secure; Max-Age=30; Path=/",
+        "TSe7b29e8c027=087dc22938ab20005c7b7f02db86df8703aba6b8835a750404b5a0cfcfba69fae792d0addf6f5ec50802f135fe113000c6bf5db6e3deb00d6fbb581e7bfc2e3114ecd2806646792ec9657d0633db61a37627b67f919ddb8f3ed78652a745b56f; Secure; Path=/"
       ],
       "transfer-encoding": "chunked"
     }
@@ -82,16 +82,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://solidarites.gouv.fr/adopter-un-enfant",
       "redirects": true,
-      "route": [
-        "http://adoption.gouv.fr/",
-        "https://adoption.gouv.fr/",
-        "https://solidarites.gouv.fr/adopter-un-enfant"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -106,7 +102,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
