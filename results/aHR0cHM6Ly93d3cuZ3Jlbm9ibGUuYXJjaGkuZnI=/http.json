@@ -9,14 +9,13 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 23 May 2026 03:26:51 GMT",
+      "date": "Wed, 15 Jul 2026 03:21:17 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "OVHcloud",
+      "server": "Apache",
       "x-powered-by": "PHP/8.5",
       "link": "<https://www.grenoble.archi.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.grenoble.archi.fr/wp-json/wp/v2/pages/25>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.grenoble.archi.fr/>; rel=shortlink",
-      "accept-ranges": "none",
       "vary": "Accept-Encoding"
     }
   },
@@ -86,6 +85,10 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
+        "https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
         "https://forms.sbc30.net/form.js": {
           "crossorigin": null,
           "integrity": null
