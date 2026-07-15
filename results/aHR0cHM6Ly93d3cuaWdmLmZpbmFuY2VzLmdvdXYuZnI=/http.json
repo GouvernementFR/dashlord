@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 23 May 2026 03:21:31 GMT",
+      "date": "Wed, 15 Jul 2026 03:15:35 GMT",
       "server": "",
       "content-security-policy": "default-src https: data: 'unsafe-eval' 'unsafe-inline';upgrade-insecure-requests;frame-ancestors 'none'",
       "strict-transport-security": "max-age=34560000; includeSubDomains; preload, max-age=0",
@@ -23,7 +23,12 @@
       "content-type": "text/html;charset=UTF-8",
       "connection": "close",
       "transfer-encoding": "chunked",
-      "content-language": "fr"
+      "content-language": "fr",
+      "set-cookie": [
+        "incap_ses_605_3344260=YIzVH2b19nn/F/gCj2RlCFj7VmoAAAAABHJDCC15bzyF8csnoLsyYA==; path=/; Domain=.igf.finances.gouv.fr"
+      ],
+      "x-cdn": "Imperva",
+      "x-iinfo": "30-3019626-3019627 NNYN CT(168 179 0) RT(1784085336283 4) q(0 0 3 11) r(5 6) U12"
     }
   },
   "tests": {
@@ -65,9 +70,9 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "JSESSIONID": {
           "domain": "www.igf.finances.gouv.fr",
@@ -76,9 +81,26 @@
           "port": null,
           "samesite": "strict",
           "secure": true
+        },
+        "visid_incap_3344260": {
+          "domain": "igf.finances.gouv.fr",
+          "expires": "2027-07-14T07:53:20.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_176_3344260": {
+          "domain": "igf.finances.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_605_3344260": {
+          "domain": "igf.finances.gouv.fr",
+          "path": "/",
+          "port": null
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
