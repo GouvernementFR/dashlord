@@ -1,29 +1,32 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "B",
     "error": null,
-    "score": 45,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 03:25:35 GMT",
+      "date": "Thu, 16 Jul 2026 14:22:44 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
-      "content-type": "text/html; charset=utf-8",
-      "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.reseaunationalamenageurs.logement.gouv.fr/local/cache-css/e0d1590de15776a95eba4195317d42b5.css?1773313598>;rel=\"preload\";as=\"style\"",
-      "x-spip-cache": "3600",
-      "last-modified": "Mon, 25 May 2026 03:25:35 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Thu, 16 Jul 2026 14:22:42 GMT",
+      "etag": "W/\"1784211762\"",
+      "x-micro-cache": "EXPIRED",
       "set-cookie": [
-        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
+        "SRV=0660dc3f-863f-43b7-83b8-ab43c5f4a702; path=/"
       ],
-      "vary": "Cookie,Accept-Encoding",
-      "cache-control": "private",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "vary": "Accept-Encoding,Cookie",
+      "cache-control": "max-age=86400, private",
+      "content-length": "27773",
+      "connection": "close"
     }
   },
   "tests": {
@@ -45,7 +48,7 @@
       "scoreModifier": -5,
       "data": {
         "SRV": {
-          "domain": "www.reseaunationalamenageurs.logement.gouv.fr",
+          "domain": "amenagement-durable.ecologie.gouv.fr",
           "path": "/",
           "port": null
         }
@@ -64,11 +67,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.reseaunationalamenageurs.logement.gouv.fr/",
+      "destination": "https://amenagement-durable.ecologie.gouv.fr/reseau-national-amenageurs",
       "redirects": true,
       "route": [
         "http://www.reseaunationalamenageurs.logement.gouv.fr/",
-        "https://www.reseaunationalamenageurs.logement.gouv.fr/"
+        "https://www.reseaunationalamenageurs.logement.gouv.fr/",
+        "https://amenagement-durable.ecologie.gouv.fr/reseau-national-amenageurs"
       ],
       "statusCode": 200
     },
@@ -101,17 +105,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
