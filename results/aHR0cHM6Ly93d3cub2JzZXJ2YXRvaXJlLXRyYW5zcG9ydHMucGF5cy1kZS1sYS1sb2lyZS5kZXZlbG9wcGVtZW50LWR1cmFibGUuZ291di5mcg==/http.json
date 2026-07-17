@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 03:26:41 GMT",
+      "date": "Fri, 17 Jul 2026 03:27:50 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.observatoire-transports.pays-de-la-loire.developpement-durable.gouv.fr/local/cache-css/6f7f1370f2c7facdcfe87840a6f372aa.css?1778502116>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.observatoire-transports.pays-de-la-loire.developpement-durable.gouv.fr/local/cache-css/6f7f1370f2c7facdcfe87840a6f372aa.css?1784214923>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Mon, 25 May 2026 03:26:41 GMT",
+      "last-modified": "Fri, 17 Jul 2026 03:27:49 GMT",
       "set-cookie": [
-        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
+        "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -62,15 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://www.observatoire-transports.pays-de-la-loire.developpement-durable.gouv.fr/",
+      "destination": "http://www.observatoire-transports.pays-de-la-loire.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://www.observatoire-transports.pays-de-la-loire.developpement-durable.gouv.fr/",
-        "https://www.observatoire-transports.pays-de-la-loire.developpement-durable.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
