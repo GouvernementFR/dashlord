@@ -1,1 +1,199 @@
-{"error":"The site seems to be down."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "A+",
+    "error": null,
+    "score": 110,
+    "statusCode": 403,
+    "testsFailed": 0,
+    "testsPassed": 10,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 17 Jul 2026 03:22:15 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' https://matomo.fabrique.social.gouv.fr; script-src-attr 'unsafe-hashes' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://jedonnemonavis.numerique.gouv.fr https://matomo.fabrique.social.gouv.fr https://backend.mars.doca-easi.fr https://backend.elections-professionnelles.travail.gouv.fr; font-src 'self' data:; connect-src 'self' https://backend.mars.doca-easi.fr https://backend.elections-professionnelles.travail.gouv.fr https://fca.integ01.dev-agentconnect.fr https://auth.agentconect.gouv.fr https://matomo.fabrique.social.gouv.fr; media-src 'self' blob: data:; worker-src 'self' blob:; frame-src 'self' https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://matomo.fabrique.social.gouv.fr; form-action 'self' https://identite-sandbox.proconnect.gouv.fr https://fca.integ01.dev-agentconnect.fr https://auth.agentconnect.gouv.fr https://code.travail.gouv.fr; upgrade-insecure-requests;",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": true,
+      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
+      "scoreModifier": 0,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "https://matomo.fabrique.social.gouv.fr"
+        ],
+        "script-src-attr": [
+          "'unsafe-hashes'",
+          "'unsafe-inline'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://backend.elections-professionnelles.travail.gouv.fr",
+          "https://backend.mars.doca-easi.fr",
+          "https://jedonnemonavis.numerique.gouv.fr",
+          "https://matomo.fabrique.social.gouv.fr"
+        ],
+        "font-src": [
+          "'self'",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://auth.agentconect.gouv.fr",
+          "https://backend.elections-professionnelles.travail.gouv.fr",
+          "https://backend.mars.doca-easi.fr",
+          "https://fca.integ01.dev-agentconnect.fr",
+          "https://matomo.fabrique.social.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "blob:",
+          "data:"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://matomo.fabrique.social.gouv.fr",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com",
+          "https://youtube.com"
+        ],
+        "form-action": [
+          "'self'",
+          "https://auth.agentconnect.gouv.fr",
+          "https://code.travail.gouv.fr",
+          "https://fca.integ01.dev-agentconnect.fr",
+          "https://identite-sandbox.proconnect.gouv.fr"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.elections-professionnelles.travail.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://www.elections-professionnelles.travail.gouv.fr/",
+        "https://www.elections-professionnelles.travail.gouv.fr/"
+      ],
+      "statusCode": 403
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
