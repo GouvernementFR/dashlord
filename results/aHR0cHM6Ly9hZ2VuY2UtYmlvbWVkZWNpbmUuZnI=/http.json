@@ -1,29 +1,29 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "D-",
     "error": null,
-    "score": 30,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
       "content-type": "text/html; charset=utf-8",
-      "date": "Mon, 25 May 2026 03:31:08 GMT",
-      "host": "agence-biomedecine.fr",
+      "date": "Fri, 17 Jul 2026 03:23:02 GMT",
+      "host": "www.agence-biomedecine.fr",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:133.0) Gecko/20100101 Firefox/133.0 - dashlord,",
       "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
-      "x-forwarded-for": "20.57.206.150",
-      "x-forwarded-host": "agence-biomedecine.fr",
+      "x-forwarded-for": "74.235.151.0",
+      "x-forwarded-host": "www.agence-biomedecine.fr",
       "x-forwarded-port": "443",
       "x-forwarded-proto": "https",
       "x-forwarded-server": "steamulo-traefik-f75979566-npqjm",
       "x-locale": "fr",
       "x-powered-by": "Next.js",
-      "x-real-ip": "20.57.206.150",
+      "x-real-ip": "74.235.151.0",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -57,16 +57,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://agence-biomedecine.fr/fr",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.agence-biomedecine.fr/fr",
       "redirects": true,
       "route": [
         "http://agence-biomedecine.fr/",
-        "https://agence-biomedecine.fr/",
-        "https://agence-biomedecine.fr/fr/",
-        "https://agence-biomedecine.fr/fr"
+        "https://www.agence-biomedecine.fr/",
+        "https://www.agence-biomedecine.fr/fr/",
+        "https://www.agence-biomedecine.fr/fr"
       ],
       "statusCode": 200
     },
@@ -82,7 +82,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
