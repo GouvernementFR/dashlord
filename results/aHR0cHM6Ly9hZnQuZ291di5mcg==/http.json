@@ -9,30 +9,30 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 03:22:50 GMT",
+      "date": "Fri, 17 Jul 2026 03:22:50 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cf-mitigated": "challenge",
-      "content-security-policy": "default-src 'none'; script-src 'nonce-Kpe8HLMRv0JpE8WxbYlMau' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-5QuEIPup1EYiFSj8QDDmTt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=(self)",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"a0116aff2ef62171\"",
+      "server-timing": "chlray;desc=\"a1c61fe1ed058bf8\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
       "vary": "accept-encoding",
       "set-cookie": [
-        "__cf_bm=gOtgwDuLX0PV3P_2s8BjIuOLPL7b15g.sSvIDSPElz8-1779679370.1050224-1.0.1.1-_LBmduOlugFwKGPIzmunXI21EQWRzvA_SJYbmL9hwzH3BtcwgO2bS0_0_g5959QQYiJwDAbuvxGq9GWPY7W7Vc1MYHwJ9EPxfn8AmDf2.ePHzbmYBn8UC.Lpdal.YmMA; HttpOnly; SameSite=None; Secure; Path=/; Domain=aft.gouv.fr; Expires=Mon, 25 May 2026 03:52:50 GMT"
+        "__cf_bm=h9if_JT.IOKb6hpoLeitalEgZLvcne8fKtk84ASDf8I-1784258570.547935-1.0.1.1-khrn3lzpu1GL6aMu3.Ra6WYr45RZMXSnp5UsR7K37S.VBNMDZXJkEECYd8TV87l8gcpIAmg5Fzxo_PDHtZbCNF2A9FYDxgAbLpZCUksJFBAzB7om.qVta7O3iZqvMS6l; HttpOnly; SameSite=None; Secure; Path=/; Domain=aft.gouv.fr; Expires=Fri, 17 Jul 2026 03:52:50 GMT"
       ],
-      "cf-ray": "a0116aff2ef62171-MAD",
+      "cf-ray": "a1c61fe1ed058bf8-HAM",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -47,7 +47,7 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-kpe8hlmrv0jpe8wxbylmau'",
+          "'nonce-5queipup1eyifsj8qddmtt'",
           "'unsafe-eval'",
           "https://challenges.cloudflare.com"
         ],
@@ -111,7 +111,7 @@
       "data": {
         "__cf_bm": {
           "domain": "aft.gouv.fr",
-          "expires": "2026-05-25T03:52:50.000Z",
+          "expires": "2026-07-17T03:52:50.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
