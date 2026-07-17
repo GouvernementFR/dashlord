@@ -9,23 +9,18 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 03:35:50 GMT",
+      "server": "nginx",
+      "date": "Fri, 17 Jul 2026 03:26:33 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "cloudflare",
       "vary": "Accept-Encoding",
       "cache-control": "public, max-age=60",
-      "x-crisp-ray": "ec7399db-cd88-4492-ade5-de3a0c08c3f8",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=294",
-      "x-page-cache-status": "HIT",
-      "x-page-cache-date": "Mon, 25 May 2026 03:35:49 GMT",
-      "strict-transport-security": "max-age=2592000",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dU4NUWqgELymPE9vRyHDVcR2NvU%2FAMWPdKY4xuhro%2B2pUQkm66LTdV0gQh5xZMWu4%2BP17R2PJGfY5DG93Cs%2F56I8H%2BVig5A0ph7HSnLLRoBIxyTglpOpKId8GEGrsM4NWIQpqchvGXo9LMVAPINx9UqxYio%3D\"}]}",
-      "cf-cache-status": "DYNAMIC",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "cf-ray": "a0117e085cb2251b-ORD",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "x-crisp-ray": "4e3477d7-3a83-4318-b783-49944a00246c",
+      "etag": "W/\"7276-8vq19OwE/plKGmuNPWerW8HPeXM\"",
+      "x-page-cache-status": "EXPIRED",
+      "x-page-cache-date": "Fri, 17 Jul 2026 03:26:33 GMT",
+      "strict-transport-security": "max-age=2592000"
     }
   },
   "tests": {
@@ -95,17 +90,13 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://static.crisp.help/javascripts/libs/libs.min.js?c03a6ea8bfbb9da3620ba21085c7c8b65": {
+        "https://static.crisp.help/javascripts/libs/libs.min.js?c47df346a6767f8c4494c51a4b874e836": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.crisp.help/javascripts/site/common/common.min.js?c75e5f1993e871a6c20762fdcebc90e10": {
+        "https://static.crisp.help/javascripts/site/common/common.min.js?c795c0eaf92409232310768f737f82099": {
           "crossorigin": null,
           "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
