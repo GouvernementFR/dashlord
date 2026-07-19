@@ -5,23 +5,23 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 7,
-    "testsPassed": 3,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 03:39:40 GMT",
+      "date": "Sun, 19 Jul 2026 03:21:04 GMT",
       "server": "Apache/2.4.66 (Debian)",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "set-cookie": [
-        "PHPSESSID=de941e0dad664f558943fdd92daf4364; path=/"
+        "PHPSESSID=326741688467a89b01ad5ac722071a7a; path=/"
       ],
       "strict-transport-security": "max-age=0",
       "upgrade": "h2",
       "connection": "Upgrade, close",
       "vary": "Accept-Encoding,User-Agent",
-      "content-length": "5788",
+      "content-length": "5770",
       "content-type": "text/html; charset=utf-8"
     }
   },
@@ -60,13 +60,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://apij.justice.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://apij.justice.fr/",
+      "redirects": true,
       "route": [
-        "http://apij.justice.fr/"
+        "http://apij.justice.fr/",
+        "https://apij.justice.fr/"
       ],
       "statusCode": 200
     },
