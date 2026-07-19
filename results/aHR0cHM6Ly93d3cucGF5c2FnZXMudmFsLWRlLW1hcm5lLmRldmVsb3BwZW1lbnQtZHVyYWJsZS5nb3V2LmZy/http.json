@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 03:35:01 GMT",
+      "date": "Sun, 19 Jul 2026 03:22:08 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.paysages.val-de-marne.developpement-durable.gouv.fr/local/cache-css/40b43da6cfc3291bcef36d7e3a3da5fa.css?1773309490>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.paysages.val-de-marne.developpement-durable.gouv.fr/local/cache-css/40b43da6cfc3291bcef36d7e3a3da5fa.css?1784216094>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Mon, 25 May 2026 03:35:01 GMT",
+      "last-modified": "Sun, 19 Jul 2026 03:22:07 GMT",
       "set-cookie": [
         "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
       ],
@@ -62,15 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://www.paysages.val-de-marne.developpement-durable.gouv.fr/",
+      "destination": "http://www.paysages.val-de-marne.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://www.paysages.val-de-marne.developpement-durable.gouv.fr/",
-        "https://www.paysages.val-de-marne.developpement-durable.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
