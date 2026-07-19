@@ -9,16 +9,16 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 27 May 2026 03:27:08 GMT",
+      "date": "Sun, 19 Jul 2026 03:21:10 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "8164",
+      "content-length": "8093",
       "cache-control": "max-age=600, public",
       "content-language": "fr",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Mon, 25 May 2026 09:19:07 GMT",
-      "etag": "\"1779700747-gzip\"",
-      "age": "66",
+      "last-modified": "Fri, 17 Jul 2026 07:53:23 GMT",
+      "etag": "\"1784274803-gzip\"",
+      "age": "295",
       "accept-ranges": "bytes",
       "x-cache": "HIT",
       "referrer-policy": "strict-origin-when-cross-origin",
@@ -115,17 +115,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://ae.diplomatie.gouv.fr/fr",
+      "destination": "https://ae.diplomatie.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://ae.ambafrance.org/",
-        "https://ae.ambafrance.org/",
-        "https://ae.diplomatie.gouv.fr/",
-        "https://ae.diplomatie.gouv.fr/fr"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
