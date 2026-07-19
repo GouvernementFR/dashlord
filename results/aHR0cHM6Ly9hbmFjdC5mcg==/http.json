@@ -11,15 +11,15 @@
     "responseHeaders": {
       "cache-control": "no-store",
       "set-cookie": [
-        "techaro.lol-anubis-auth=; Path=/; Expires=Wed, 27 May 2026 03:32:26 GMT; Max-Age=0; Secure; SameSite=None",
-        "techaro.lol-anubis-cookie-verification=019e677e-899c-71c4-adb3-5d72aa2fc672; Path=/; Expires=Wed, 27 May 2026 04:03:26 GMT; Secure; SameSite=None"
+        "techaro.lol-anubis-auth=; Path=/; Expires=Sun, 19 Jul 2026 03:24:15 GMT; Max-Age=0; Secure; SameSite=None",
+        "techaro.lol-anubis-cookie-verification=019f7868-16bb-70bd-96cf-646250e7c7df; Path=/; Expires=Sun, 19 Jul 2026 03:55:15 GMT; Secure; SameSite=None"
       ],
-      "date": "Wed, 27 May 2026 03:33:26 GMT",
-      "content-length": "2004",
+      "date": "Sun, 19 Jul 2026 03:25:15 GMT",
       "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
       "x-boost-step1": "haproxy-external; ssl-frontend; frontend=external-11-60",
       "x-boost-server": "ebizproduction-lb02",
-      "x-request-id": "15484868-5412-41f1-bc63-fc6e36405e2b",
+      "x-request-id": "bdb39495-f489-42a6-a485-708f728a88b0",
       "connection": "close"
     }
   },
@@ -43,7 +43,7 @@
       "data": {
         "techaro.lol-anubis-auth": {
           "domain": "anact.fr",
-          "expires": "2026-05-27T03:32:26.000Z",
+          "expires": "2026-07-19T03:24:15.000Z",
           "max-age": 0,
           "path": "/",
           "port": null,
@@ -52,7 +52,7 @@
         },
         "techaro.lol-anubis-cookie-verification": {
           "domain": "anact.fr",
-          "expires": "2026-05-27T04:03:26.000Z",
+          "expires": "2026-07-19T03:55:15.000Z",
           "path": "/",
           "port": null,
           "samesite": "none",
