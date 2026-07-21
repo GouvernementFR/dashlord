@@ -1,32 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D-",
     "error": null,
-    "score": 50,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "content-type": "text/html; charset=UTF-8",
+      "cache-control": "no-store",
+      "set-cookie": [
+        "techaro.lol-anubis-auth=; Path=/; Expires=Tue, 21 Jul 2026 03:23:19 GMT; Max-Age=0; Secure; SameSite=None",
+        "techaro.lol-anubis-cookie-verification=019f82b3-f673-7aed-84b1-e717173b16d4; Path=/; Expires=Tue, 21 Jul 2026 03:54:19 GMT; Secure; SameSite=None"
+      ],
+      "date": "Tue, 21 Jul 2026 03:24:19 GMT",
+      "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
-      "cache-control": "max-age=10800, public",
-      "date": "Tue, 26 May 2026 12:03:41 GMT",
-      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Tue, 26 May 2026 12:03:40 GMT",
-      "etag": "W/\"1779797020\"",
-      "vary": "Cookie",
-      "x-generator": "Drupal 11 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
       "x-boost-step1": "haproxy-external; ssl-frontend; frontend=external-11-86",
       "x-boost-server": "ebizproduction-lb02",
-      "x-request-id": "8becfd23-63a9-45f9-a6ea-69b535267435",
+      "x-request-id": "f55c1362-088f-4a99-83eb-697c11a7a169",
       "connection": "close"
     }
   },
@@ -45,10 +38,28 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "techaro.lol-anubis-auth": {
+          "domain": "www.agreenium.fr",
+          "expires": "2026-07-21T03:23:19.000Z",
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "techaro.lol-anubis-cookie-verification": {
+          "domain": "www.agreenium.fr",
+          "expires": "2026-07-21T03:54:19.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -99,17 +110,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
