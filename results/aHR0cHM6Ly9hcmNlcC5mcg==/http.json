@@ -1,32 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "B+",
     "error": null,
-    "score": 75,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 27 May 2026 03:36:30 GMT",
-      "server": "Unknown",
-      "accept-ranges": "bytes",
-      "age": "0",
-      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "date": "Tue, 21 Jul 2026 03:21:10 GMT",
       "content-language": "fr-FR",
-      "content-length": "10747",
-      "content-security-policy": "frame-ancestors 'self' https://www.arcep.fr https://en.arcep.fr;",
-      "content-type": "text/html; charset=utf-8",
-      "expires": "0",
-      "pragma": "no-cache",
       "vary": "Accept-Encoding",
+      "x-ua-compatible": "IE=edge",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "x-ua-compatible": "IE=edge",
+      "content-security-policy": "frame-ancestors 'self' https://www.arcep.fr https://en.arcep.fr;",
       "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=63072000; includeSubDomains; preload;",
-      "connection": "close"
+      "content-length": "10927",
+      "content-type": "text/html; charset=utf-8",
+      "accept-ranges": "bytes",
+      "expires": "0",
+      "pragma": "no-cache",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      "age": "0",
+      "connection": "close",
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+      "set-cookie": [
+        "TSb5d1917d027=087dc22938ab2000588d3686ace8070dda01462dbf358e4c5dd24adb738614fcc28f2a9bc2845b4f086a272e8e1130006b56a6ef888e44492f352f958583d7ca4e5b523f83c920c18d882eb96116d8c1db33de88620e9035502ddafae3596342; Secure; Path=/"
+      ]
     }
   },
   "tests": {
@@ -62,9 +64,16 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "TSb5d1917d027": {
+          "domain": "www.arcep.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -76,13 +85,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.arcep.fr/",
       "redirects": true,
       "route": [
         "http://arcep.fr/",
+        "https://arcep.fr/",
         "https://www.arcep.fr/"
       ],
       "statusCode": 200
@@ -101,9 +111,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubDomains; preload;",
+      "data": "max-age=16070400; includeSubDomains; preload",
       "includeSubDomains": true,
-      "maxAge": 63072000,
+      "maxAge": 16070400,
       "preload": true,
       "preloaded": false
     },
