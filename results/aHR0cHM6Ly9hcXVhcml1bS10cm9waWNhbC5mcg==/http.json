@@ -1,25 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "1075",
+      "age": "1121",
       "cache-control": "max-age=3600, public",
       "content-language": "fr",
-      "content-length": "128393",
+      "content-length": "144144",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Wed, 27 May 2026 03:25:50 GMT",
-      "etag": "\"1779825798\"",
+      "date": "Tue, 21 Jul 2026 03:24:11 GMT",
+      "etag": "\"1784595874\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Tue, 26 May 2026 20:03:18 GMT",
-      "traceresponse": "00-18b34e487b2ce19bc01c860ffe9baacb-c8cca5286f344f25-01",
+      "last-modified": "Tue, 21 Jul 2026 01:04:34 GMT",
+      "traceresponse": "00-18c4301c79ebbbb4cae173c162023fd6-5b54d98d899f2e96-01",
       "vary": "Cookie",
       "via": "1.1 varnish.0 (Varnish/7.3)",
       "x-content-type-options": "nosniff",
@@ -31,7 +31,7 @@
       "x-platform-cluster": "sdswrrccnsh2q-prod-m5kk7fq",
       "x-platform-processor": "cclepa6qoc27wkohyqemgpfghe",
       "x-platform-router": "2cz4gcrao2smxteplq2gk4dadm",
-      "x-varnish": "2642567 6461712",
+      "x-varnish": "10748378 9328589",
       "connection": "close"
     }
   },
@@ -97,10 +97,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://admin-pipeline.upsun-fr-3.observability-pipeline.blackfire.io/js/probe.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
