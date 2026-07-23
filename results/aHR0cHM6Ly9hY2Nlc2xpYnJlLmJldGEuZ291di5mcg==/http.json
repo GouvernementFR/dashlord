@@ -3,25 +3,22 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 29 May 2026 03:27:28 GMT",
+      "date": "Thu, 23 Jul 2026 03:25:15 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "b6545cf9-5520-4c49-8b27-c3f82c751337",
+      "x-request-id": "a7eefa9c-554a-4b90-9f85-ce544d15ac10",
       "x-frame-options": "DENY",
       "vary": "Cookie, origin, Accept-Language",
       "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "same-origin",
-      "cross-origin-opener-policy": "same-origin",
       "set-cookie": [
-        "csrftoken=Qw6i192LZaLe0pdDzyDF5jbHDbpjDWNM; expires=Fri, 28 May 2027 03:27:28 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+        "csrftoken=B2jUifehUWzh30SuunAYzxK5myKPG2C1; expires=Thu, 22 Jul 2027 03:25:15 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
       ],
       "strict-transport-security": "max-age=31536000"
     }
@@ -46,7 +43,7 @@
       "data": {
         "csrftoken": {
           "domain": "acceslibre.beta.gouv.fr",
-          "expires": "2027-05-28T03:27:28.000Z",
+          "expires": "2027-07-22T03:25:15.000Z",
           "httponly": true,
           "max-age": 31449600,
           "path": "/",
@@ -80,10 +77,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "same-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -106,10 +103,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
