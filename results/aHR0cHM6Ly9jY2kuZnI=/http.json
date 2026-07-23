@@ -9,29 +9,29 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 29 May 2026 03:32:49 GMT",
+      "date": "Thu, 23 Jul 2026 03:21:31 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cf-mitigated": "challenge",
-      "content-security-policy": "default-src 'none'; script-src 'nonce-PF6ule5B35tXOQc9l43re0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-WgmcQqXwCp7FKr5s0AsFq6' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
       "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
       "cross-origin-embedder-policy": "require-corp",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
-      "permissions-policy": "accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=(self)",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
       "referrer-policy": "same-origin",
-      "server-timing": "chlray;desc=\"a0326f1faf3d5e56\"",
+      "server-timing": "chlray;desc=\"a1f78e361d31ddab\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "vary": "accept-encoding",
       "set-cookie": [
-        "__cf_bm=nO5DwtRXxa9bnF715Wm6g6nMhAvRURu.I_pFl_C5hE8-1780025569.2233098-1.0.1.1-e7kUCBR9RDano15oz_Vmk8qwdfPJqeXRlSR3ChL9W2vZQYko1ksw00LfYHmb_8kHOXyanluMr8dW8ydurX.0KIpvmP5Q22C_nUAodu8zdWrkhqAaDy7SS47maLE8B4GK; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.cci.fr; Expires=Fri, 29 May 2026 04:02:49 GMT"
+        "__cf_bm=DYPCeX8IxBiIJYCAeg6TJuv93MEz_9P_t6C4iZxL4mE-1784776891.8595424-1.0.1.1-Hvly6Mal0GzgM8T8HZYM9rWotEhTkDXMvLE7V8TtPeK6A5B3PHvZwSR5nOuvdbtH8ke1mIZ0HVe_nRrR0jstCWBR8_e79LuOS80HwMkiUQYQmoSwjf2jFiLZWW9BnOfh; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.cci.fr; Expires=Thu, 23 Jul 2026 03:51:31 GMT"
       ],
-      "cf-ray": "a0326f1faf3d5e56-SJC",
+      "cf-ray": "a1f78e361d31ddab-DFW",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -46,7 +46,7 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-pf6ule5b35txoqc9l43re0'",
+          "'nonce-wgmcqqxwcp7fkr5s0asfq6'",
           "'unsafe-eval'",
           "https://challenges.cloudflare.com"
         ],
@@ -110,7 +110,7 @@
       "data": {
         "__cf_bm": {
           "domain": "www.cci.fr",
-          "expires": "2026-05-29T04:02:49.000Z",
+          "expires": "2026-07-23T03:51:31.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
