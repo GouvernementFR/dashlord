@@ -1,27 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "C-",
     "error": null,
-    "score": 25,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "18594",
+      "age": "0",
       "cache-control": "public,max-age=0,must-revalidate",
-      "cache-status": "\"Netlify Edge\"; hit",
-      "content-length": "4651",
+      "cache-status": "\"Netlify Edge\"; fwd=miss",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Fri, 29 May 2026 03:33:04 GMT",
-      "etag": "\"f8dc3f0da9dfca0030fb7fbdc5739493-ssl-df\"",
+      "date": "Thu, 23 Jul 2026 03:22:20 GMT",
+      "etag": "\"3a506a89eae42014e96d6e0399a5040a-ssl-df\"",
       "server": "Netlify",
       "strict-transport-security": "max-age=31536000",
       "vary": "Accept-Encoding",
-      "x-nf-request-id": "01KSRWNTPASMRMR0X7371PP1XY",
-      "connection": "close"
+      "x-nf-request-id": "01KY6FXPPEF1MECH27E5A855S9",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -75,12 +75,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented-no-https",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
