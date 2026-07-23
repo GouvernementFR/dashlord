@@ -1,23 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B",
     "error": null,
-    "score": 10,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 29 May 2026 03:31:01 GMT",
-      "set-cookie": [
-        "bot_mitigation_cookie=ZU6SBQKK5I4AVPZKGWNAVUGBHVFRRRCDH24FH2RVXQCZPNUJ46QU4AAZHLJUEV2AA7CWDWEH4MQACTXNF5KNF3ZHOC3B24QGRVEHUNUBXC5UPOMQSTTA====; Path=/; SameSite=lax"
-      ],
-      "content-type": "text/html",
-      "cache-control": "no-store",
-      "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C2-15b7e578-8fba4730",
+      "date": "Thu, 23 Jul 2026 03:21:34 GMT",
+      "server": "nginx",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "16085",
+      "cache-control": "max-age=31536000, public",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "content-security-policy-report-only": "object-src 'none'; script-src 'self' https://tarteaucitron.io cdn.jsdelivr.net https://cdnjs.cloudflare.com https://livemap.getwemap.com https://webchat.wikit.ai; script-src-attr 'self'; style-src 'self' https://tarteaucitron.io cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src-attr 'self'; frame-ancestors 'self'",
+      "content-security-policy": "object-src 'none'; frame-ancestors 'self'; report-uri https://archives-nationales-outre-mer.culture.gouv.fr/report-uri/enforce",
+      "last-modified": "Mon, 20 Jul 2026 15:11:54 GMT",
+      "etag": "\"1784560314-gzip\"",
+      "age": "215897",
+      "x-cache": "HIT",
+      "x-cache-hits": "16524",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=63072000",
+      "x-cp-via": "C2-01c15064-f6307447",
       "connection": "close"
     }
   },
@@ -25,27 +36,42 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "object-src": [
+          "'none'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "report-uri": [
+          "https://archives-nationales-outre-mer.culture.gouv.fr/report-uri/enforce"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "bot_mitigation_cookie": {
-          "domain": "archives-nationales-outre-mer.culture.gouv.fr",
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -79,35 +105,44 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdntag.tarteaucitron.io/load.js?domain=archives-nationales-outre-mer.culture.gouv.fr&uuid=cb6c31eaf0d65c6f8768c5734dd1a8df6bfd7780": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://webchat.wikit.ai/webchat-embed.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
