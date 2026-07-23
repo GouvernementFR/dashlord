@@ -9,19 +9,18 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 29 May 2026 03:30:24 GMT",
+      "date": "Thu, 23 Jul 2026 03:22:22 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=177,cfOrigin;dur=339",
       "access-control-allow-origin": "*",
       "cache-control": "no-cache, no-store, must-revalidate",
       "content-security-policy": "frame-ancestors 'self' prod-bilansges.prod.ademe-scw.fr;",
       "set-cookie": [
-        "__cf_bm=OIt8xtK7ZCuwpLLliSFoJ8CeHUefG2CkPlvRZyexsdw-1780025423.9833374-1.0.1.1-egu9a3pR3CElOAaTCYFzq9XrzW2v2JDt_0NYnAzYXJw4mHGFdbY4kydrxXA83POR6qYd8FL3i_mD5hp3erDwdfCOZxACzi98EwiWhWL1axhDB5rj8f.Fi0.GlGXGCDKJ; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 29 May 2026 04:00:24 GMT"
+        "__cf_bm=X4VkdpOfzPHTqa2_7X_leEXTvO9JklK_pkOMEsvEn24-1784776941.3661237-1.0.1.1-pWvkskrHam4vtlUtFRvehZPu6PNl2xKZmwgdB1nLAbxGAo45u8mP03_d3ljDPbQ7NpB3J1Q2lFdDCjp5zyJZfYwM2or_pP_yKfDfoVjZy6LXWaCyOR59E2iLJmQaiE6X; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 23 Jul 2026 03:52:22 GMT"
       ],
       "expires": "0",
-      "last-modified": "Wed, 20 May 2026 09:24:01 GMT",
+      "last-modified": "Wed, 22 Jul 2026 03:34:21 GMT",
       "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "pragma": "no-cache",
       "referrer-policy": "strict-origin",
@@ -32,7 +31,7 @@
       "x-frame-options": "sameorigin",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a0326b93ee76316d-IAD"
+      "cf-ray": "a1f78f6b8d7f4ca8-MSP"
     }
   },
   "tests": {
@@ -72,7 +71,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-05-29T04:00:24.000Z",
+          "expires": "2026-07-23T03:52:22.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -131,10 +130,6 @@
         "https://tarteaucitron.io/load.js?domain=bilans-ges.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
           "crossorigin": null,
           "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
