@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 29 May 2026 03:27:13 GMT",
+      "date": "Thu, 23 Jul 2026 03:21:12 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=600",
@@ -18,11 +18,11 @@
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Fri, 29 May 2026 03:37:13 GMT",
-      "last-modified": "Thu, 21 May 2026 09:40:34 GMT",
-      "etag": "\"1779356434\"",
+      "expires": "Thu, 23 Jul 2026 03:31:12 GMT",
+      "last-modified": "Tue, 16 Jun 2026 03:05:24 GMT",
+      "etag": "\"1781579124\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "HIT",
+      "x-drupal-cache": "MISS",
       "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:; font-src 'self' data: https:;frame-ancestors 'self' https://*.safire.fonction-publique.gouv.fr;",
       "referrer-policy": "same-origin",
@@ -35,13 +35,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3065004=rNmXNOcDRe6d0INJ+exuZpAHGWoAAAAAQUIPAAAAAAD+6DzkmvqMPzXPZsX+vVuD; expires=Fri, 28 May 2027 06:27:28 GMT; HttpOnly; path=/; Domain=.bercynumerique.finances.gouv.fr; Secure; SameSite=None",
-        "nlbi_3065004=MSE8OPk4MSxsGZwyN44ROwAAAAATmyeWsI4xHMIeBHD8Kg7F; HttpOnly; path=/; Domain=.bercynumerique.finances.gouv.fr; Secure; SameSite=None",
-        "incap_ses_1814_3065004=ZQ49OsE6XGismdihG6AsGZEHGWoAAAAAsCmYz6FghCgvyxF4Ur+G/w==; path=/; Domain=.bercynumerique.finances.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3065004=4UWWuq5QSYCVTMxCvTRsN6eIYWoAAAAAQUIPAAAAAAA0+gClDdTylWB10bOMsN71; expires=Thu, 22 Jul 2027 09:32:31 GMT; HttpOnly; path=/; Domain=.bercynumerique.finances.gouv.fr; Secure; SameSite=None",
+        "nlbi_3065004=+EjDZnTliwPN9e5bN44ROwAAAACUId5EFZTrSL2zZq0MPCtc; HttpOnly; path=/; Domain=.bercynumerique.finances.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1847_3065004=7JcIHEZgihwak16uet2hGaeIYWoAAAAAgbfWki9IewmYbMX14xhbDQ==; path=/; Domain=.bercynumerique.finances.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "49-31474574-31474579 NNYN CT(127 265 0) RT(1780025233370 20) q(0 0 4 2) r(5 6) U12"
+      "x-iinfo": "23-16901401-16901402 NNYN CT(117 242 0) RT(1784776871876 8) q(0 0 4 1) r(5 6) U12"
     }
   },
   "tests": {
@@ -102,7 +102,7 @@
       "data": {
         "visid_incap_3065004": {
           "domain": "bercynumerique.finances.gouv.fr",
-          "expires": "2027-05-28T06:27:28.000Z",
+          "expires": "2027-07-22T09:32:31.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -117,7 +117,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_1814_3065004": {
+        "incap_ses_1847_3065004": {
           "domain": "bercynumerique.finances.gouv.fr",
           "path": "/",
           "port": null,
