@@ -5,21 +5,20 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 29 May 2026 03:36:22 GMT",
+      "date": "Thu, 23 Jul 2026 03:21:21 GMT",
       "server": "Apache",
       "set-cookie": [
-        "PHPSESSID=duaji6oj06l67c48obt0kebic8; path=/",
-        "lang_select=fr; expires=Fri, 29 May 2026 05:36:22 GMT; Max-Age=7200; path=/"
+        "PHPSESSID=p46o1kas6k9199sqsg5lfjfiqp; path=/"
       ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "vary": "Accept-Encoding",
-      "content-length": "2543",
+      "content-length": "2725",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -46,13 +45,6 @@
           "domain": "cbnmed.fr",
           "path": "/",
           "port": null
-        },
-        "lang_select": {
-          "domain": "cbnmed.fr",
-          "expires": "2026-05-29T05:36:22.000Z",
-          "max-age": 7200,
-          "path": "/",
-          "port": null
         }
       },
       "sameSite": false
@@ -66,14 +58,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https",
-      "scoreModifier": -20,
-      "destination": "http://cbnmed.fr/src/home/index.php",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://cbnmed.fr/src/home/index.php",
       "redirects": true,
       "route": [
         "http://cbnmed.fr/",
-        "http://cbnmed.fr/src/home/index.php"
+        "https://cbnmed.fr/",
+        "https://cbnmed.fr/src/home/index.php"
       ],
       "statusCode": 200
     },
@@ -89,7 +82,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
