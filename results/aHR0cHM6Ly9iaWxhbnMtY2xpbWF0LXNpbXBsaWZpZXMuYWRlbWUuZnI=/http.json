@@ -1,27 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 50,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
       "age": "1",
       "cache-control": "public,max-age=0,must-revalidate",
       "cache-status": "\"Netlify Edge\"; fwd=miss",
-      "content-length": "1649",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Sun, 31 May 2026 03:26:48 GMT",
-      "etag": "\"e19bc085b6e77d43302302a8714f0c25-ssl-df\"",
+      "date": "Sat, 25 Jul 2026 03:24:53 GMT",
+      "etag": "\"00f2047ac7e01d78ae5f4bed5c49bde3-ssl-df\"",
       "server": "Netlify",
       "strict-transport-security": "max-age=31536000",
       "vary": "Accept-Encoding",
-      "x-nf-request-id": "01KSY13RKYEN2P0KJPPD6JEN9K",
-      "connection": "close"
+      "x-nf-request-id": "01KYBMVSF1EYE8GP74WPPR2Z23",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -75,12 +75,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
