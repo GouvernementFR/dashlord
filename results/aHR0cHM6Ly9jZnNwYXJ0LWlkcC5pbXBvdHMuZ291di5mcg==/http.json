@@ -10,11 +10,11 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "strict-transport-security": "max-age=34560000; includeSubDomains",
-      "date": "Sun, 31 May 2026 03:31:12 GMT",
+      "date": "Sat, 25 Jul 2026 03:24:37 GMT",
       "server": "Apache",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "cache-control": "no-cache, no-store, must-revalidate, max-age=8640000, public",
+      "cache-control": "no-cache, no-store, must-revalidate, max-age=60, public",
       "pragma": "no-cache",
       "expires": "0",
       "access-control-allow-origin": "*",
@@ -26,17 +26,17 @@
       "x-frame-options": "SAMEORIGIN",
       "content-security-policy": "default-src 'self';img-src 'self' https://www.integration.impots.gouv.fr data:;style-src 'self' 'unsafe-inline';font-src 'self' https://fonts.googleapis.com;connect-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval';form-action * ;frame-ancestors 'self';",
       "set-cookie": [
-        "ctxcfs=602e97ddc396e93882246ab0679c5bbc6e293c2cbc0c28e870ff967951df0af5; path=/; HttpOnly=1; SameSite=Lax; secure",
-        "fidgfippartpdata=%7B%22issuerTs%22%3A1780198272%7D; path=/; HttpOnly=1; SameSite=Lax; secure",
-        "__uzma=4d07a976-a316-0028-8912-d7ecc7d8fd9f; Max-Age=15724800; Expires=Sun, 29-Nov-2026 03:31:12 GMT; SameSite=Lax; Path=/; HttpOnly",
-        "__uzmb=1780198272; Max-Age=15724800; Expires=Sun, 29-Nov-2026 03:31:12 GMT; SameSite=Lax; Path=/; HttpOnly",
-        "__uzmc=494881015113; Max-Age=15724800; Expires=Sun, 29-Nov-2026 03:31:12 GMT; SameSite=Lax; Path=/; HttpOnly",
-        "__uzmd=1780198272; Max-Age=15724800; Expires=Sun, 29-Nov-2026 03:31:12 GMT; SameSite=Lax; Path=/; HttpOnly",
-        "__uzme=7766; Max-Age=15724800; Expires=Sun, 29-Nov-2026 03:31:12 GMT; SameSite=Lax; Path=/; HttpOnly",
-        "SL_ClassKey=0.1.1;Expires=Mon, 01 Jun 2026 15:31:12 GMT;Path=/"
+        "ctxcfs=9b6e3655361bec92dd04883cad3a6d8fa641874e28bb76faaa90bf20b0381188; path=/; HttpOnly=1; SameSite=Lax; secure",
+        "fidgfippartpdata=%7B%22issuerTs%22%3A1784949877%7D; path=/; HttpOnly=1; SameSite=Lax; secure",
+        "__uzma=6ae6a13b-f7cb-19ff-d668-a0545f5ffb23; Max-Age=15724800; Expires=Sat, 23-Jan-2027 03:24:37 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzmb=1784949877; Max-Age=15724800; Expires=Sat, 23-Jan-2027 03:24:37 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzmc=934191087462; Max-Age=15724800; Expires=Sat, 23-Jan-2027 03:24:37 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzmd=1784949877; Max-Age=15724800; Expires=Sat, 23-Jan-2027 03:24:37 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "__uzme=1531; Max-Age=15724800; Expires=Sat, 23-Jan-2027 03:24:37 GMT; SameSite=Lax; Path=/; HttpOnly",
+        "SL_ClassKey=0.1.1;Expires=Sun, 26 Jul 2026 15:24:37 GMT;Path=/"
       ],
       "vary": "Accept-Encoding,User-Agent",
-      "via": "dpapusa204",
+      "via": "dpapusa213",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked"
@@ -121,7 +121,7 @@
         },
         "__uzma": {
           "domain": "cfspart-idp.impots.gouv.fr",
-          "expires": "2026-11-29T03:31:12.000Z",
+          "expires": "2027-01-23T03:24:37.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -130,7 +130,7 @@
         },
         "__uzmb": {
           "domain": "cfspart-idp.impots.gouv.fr",
-          "expires": "2026-11-29T03:31:12.000Z",
+          "expires": "2027-01-23T03:24:37.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -139,7 +139,7 @@
         },
         "__uzmc": {
           "domain": "cfspart-idp.impots.gouv.fr",
-          "expires": "2026-11-29T03:31:12.000Z",
+          "expires": "2027-01-23T03:24:37.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -148,7 +148,7 @@
         },
         "__uzmd": {
           "domain": "cfspart-idp.impots.gouv.fr",
-          "expires": "2026-11-29T03:31:12.000Z",
+          "expires": "2027-01-23T03:24:37.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -157,7 +157,7 @@
         },
         "__uzme": {
           "domain": "cfspart-idp.impots.gouv.fr",
-          "expires": "2026-11-29T03:31:12.000Z",
+          "expires": "2027-01-23T03:24:37.000Z",
           "httponly": true,
           "max-age": 15724800,
           "path": "/",
@@ -166,7 +166,7 @@
         },
         "SL_ClassKey": {
           "domain": "cfspart-idp.impots.gouv.fr",
-          "expires": "2026-06-01T15:31:12.000Z",
+          "expires": "2026-07-26T15:24:37.000Z",
           "path": "/",
           "port": null
         }
