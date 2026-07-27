@@ -1,27 +1,18 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 0,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 31 May 2026 03:34:56 GMT",
-      "server": "Apache-Coyote/1.1",
-      "x-powered-by": "Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0",
-      "partialrefresh": "true",
-      "content-type": "text/html;charset=UTF-8",
-      "set-cookie": [
-        "PORTALSESSIONID=25782A892E8146D9AD4828A6D5748099.jbossx; Path=/",
-        "ROUTEID=.prcartjbp2; path=/"
-      ],
-      "cache-control": "max-age=0",
-      "expires": "Sun, 31 May 2026 03:34:56 GMT",
+      "content_type": "text/html; charset=utf-8",
+      "server": "BigIP",
       "connection": "close",
-      "transfer-encoding": "chunked"
+      "content-length": "38052"
     }
   },
   "tests": {
@@ -38,28 +29,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "BIGipServer~prod~cartoweb": {
-          "domain": "cartoun.education.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "PORTALSESSIONID": {
-          "domain": "cartoun.education.fr",
-          "path": "/",
-          "port": null
-        },
-        "ROUTEID": {
-          "domain": "cartoun.education.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -72,16 +45,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://cartoun.education.fr/portail",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://cartoun.education.fr/",
-        "https://cartoun.education.fr/",
-        "https://cartoun.education.fr/portail"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -106,7 +75,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-response-not-html",
       "scoreModifier": 0,
       "data": {}
     },
