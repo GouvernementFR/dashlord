@@ -9,21 +9,17 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 01 Jun 2026 03:31:17 GMT",
-      "content-type": "text/html",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "server": "cloudflare",
-      "last-modified": "Tue, 26 May 2026 13:09:15 GMT",
+      "date": "Mon, 27 Jul 2026 03:30:58 GMT",
+      "server": "Apache",
+      "last-modified": "Wed, 15 Jul 2026 08:07:55 GMT",
+      "etag": "\"b61-656a1d22a0320-gzip\"",
+      "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=337",
       "cache-control": "max-age=60, private, proxy-revalidate",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dub4ZDPn3merjsgmhP3qrao%2BVNnCBGeBP7OCWGyK9Rgep5RLLjpsio1APeJ4VM7GO5uVNCnn%2BnP67j273gNdZjsQmzZ0NoEbCNiDAFNkJM1wB81o%2FwdJJhM6rHux0B6dgUhb2%2Bzp9pSeVnNwlhKT\"}]}",
-      "sozu-id": "01KT0KRQ4BP4HH1Q32B1471N70",
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a04b24ffcc915823-DFW",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "content-length": "1114",
+      "connection": "close",
+      "content-type": "text/html",
+      "sozu-id": "01KYGT0CSTX6D7JKP55NG7WYH5"
     }
   },
   "tests": {
@@ -95,10 +91,6 @@
         "https://challenges.cloudflare.com/turnstile/v0/api.js": {
           "crossorigin": null,
           "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
