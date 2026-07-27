@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 10,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 31 May 2026 03:27:06 GMT",
+      "date": "Mon, 27 Jul 2026 03:26:34 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://atlas-paysages.jura.developpement-durable.gouv.fr/local/cache-css/c5226838d301b37e72824e5a767abc14.css?1773315765>;rel=\"preload\";as=\"style\"",
+      "link": "<https://atlas-paysages.jura.developpement-durable.gouv.fr/local/cache-css/c5226838d301b37e72824e5a767abc14.css?1784218892>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sun, 31 May 2026 03:27:06 GMT",
+      "last-modified": "Mon, 27 Jul 2026 03:26:34 GMT",
       "set-cookie": [
-        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
+        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -41,8 +41,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "SRV": {
           "domain": "atlas-paysages.jura.developpement-durable.gouv.fr",
@@ -83,12 +83,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented-no-https",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
