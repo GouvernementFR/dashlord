@@ -5,20 +5,20 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "private",
       "content-type": "text/html",
       "server": "Microsoft-IIS/10.0",
       "set-cookie": [
-        "ASPSESSIONIDCEBDTSCA=IEDBAKFCBBAKHONNKDENKDGA; secure; path=/"
+        "ASPSESSIONIDQWDTBDBA=OHENNAFABCACOKBPIHDFGPIC; secure; path=/"
       ],
       "x-powered-by": "ASP.NET",
-      "date": "Mon, 01 Jun 2026 03:26:03 GMT",
+      "date": "Wed, 29 Jul 2026 03:25:33 GMT",
       "connection": "close",
-      "content-length": "50114"
+      "content-length": "8329"
     }
   },
   "tests": {
@@ -39,8 +39,8 @@
       "result": "cookies-session-without-httponly-flag",
       "scoreModifier": -30,
       "data": {
-        "ASPSESSIONIDCEBDTSCA": {
-          "domain": "cepii.fr",
+        "ASPSESSIONIDQWDTBDBA": {
+          "domain": "www.cepii.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -60,11 +60,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://cepii.fr/",
+      "destination": "https://www.cepii.fr/CEPII/ERROR.asp?type=500",
       "redirects": true,
       "route": [
         "http://cepii.fr/",
-        "https://cepii.fr/"
+        "https://cepii.fr/",
+        "https://www.cepii.fr/CEPII/ERROR.asp?type=500"
       ],
       "statusCode": 200
     },
@@ -90,15 +91,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//platform.linkedin.com/in.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
