@@ -1,32 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "F",
     "error": null,
-    "score": 70,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 01 Jun 2026 03:37:50 GMT",
-      "server": "WebServer2",
+      "date": "Wed, 29 Jul 2026 03:25:12 GMT",
       "set-cookie": [
-        "ASP.NET_SessionId=phgqgjyvukz4kfwrkxaxqdvp; path=/; HttpOnly; SameSite=Lax",
-        "BWROUTEID=3ddbb54ff84f9a8db100e8cb35c25ae2.backend2; Path=/; Secure"
+        "BWROUTEID=EXPIRED; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
       ],
-      "cache-control": "private",
-      "content-type": "text/html; charset=utf-8",
-      "vary": "Accept-Encoding",
-      "x-aspnetmvc-version": "5.2",
-      "x-aspnet-version": "4.0.30319",
-      "x-frame-options": "SAMEORIGIN",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "referrer-policy": "same-origin",
-      "content-security-policy": "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self'; img-src 'self' 'unsafe-inline' voxusagers.numerique.gouv.fr; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests ; frame-ancestors 'none'",
-      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
-      "content-length": "2371",
+      "content-type": "text/html",
+      "content-length": "33586",
       "connection": "close"
     }
   },
@@ -34,71 +22,25 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'none'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'"
-        ],
-        "connect-src": [
-          "'self'"
-        ],
-        "img-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "voxusagers.numerique.gouv.fr"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ],
-        "upgrade-insecure-requests": [
-          "'none'"
-        ],
-        "frame-ancestors": [
-          "'none'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": true,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -10,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
-        "ASP.NET_SessionId": {
-          "domain": "concours.dgccrf.finances.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
         "BWROUTEID": {
           "domain": "concours.dgccrf.finances.gouv.fr",
+          "expires": "1970-01-01T00:00:00.000Z",
           "path": "/",
-          "port": null,
-          "secure": true
+          "port": null
         }
       },
       "sameSite": false
@@ -126,43 +68,43 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "same-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubdomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
