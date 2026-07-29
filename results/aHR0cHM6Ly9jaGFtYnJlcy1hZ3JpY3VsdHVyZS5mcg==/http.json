@@ -9,17 +9,22 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 01 Jun 2026 03:41:18 GMT",
-      "content-language": "fr",
-      "x-typo3-debug-cache": "Cached page generated 31-05-26 12:05. Expires 01-06-26 12:05",
-      "cache-control": "private, no-store",
+      "date": "Wed, 29 Jul 2026 03:31:12 GMT",
+      "content-language": "fr-FR",
+      "x-typo3-debug-cache": "Cached page generated 2026-07-28 18:22. Expires 2026-07-29 18:22",
+      "expires": "Wed, 29 Jul 2026 16:22:21 GMT",
+      "cache-control": "max-age=46269",
+      "pragma": "public",
       "x-typo3-parsetime": "0ms",
+      "set-cookie": [
+        "fe_typo_user=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGlmaWVyIjoiMjM5NWE0ZWRiZDc3MzQ2OGU1MzNkZjI4ZDEwNGIyOWQiLCJ0aW1lIjoiMjAyNi0wNy0yOVQwNTozMToxMyswMjowMCIsInNjb3BlIjp7ImRvbWFpbiI6ImNoYW1icmVzLWFncmljdWx0dXJlLmZyIiwiaG9zdE9ubHkiOnRydWUsInBhdGgiOiIvIn19.rb5hjJRgoAUqTEO_IYEVJUcD8vja-M4q_KaAd2RJE28; path=/; secure; httponly; samesite=lax"
+      ],
       "strict-transport-security": "max-age=15552001; includeSubDomains;",
       "vary": "Accept-Encoding",
       "x-ua-compatible": "IE=edge",
       "x-content-type-options": "nosniff",
       "opus-server": "2",
-      "content-length": "46349",
+      "content-length": "46386",
       "content-type": "text/html; charset=utf-8",
       "server": "DNSI",
       "connection": "close"
@@ -40,10 +45,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "fe_typo_user": {
+          "domain": "chambres-agriculture.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
