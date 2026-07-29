@@ -1,28 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "B",
     "error": null,
-    "score": 40,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 16 May 2026 15:11:57 GMT",
+      "date": "Wed, 24 Jun 2026 14:33:15 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000, max-age=63072000",
+      "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=UTF-8",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Sat, 16 May 2026 15:11:56 GMT",
-      "etag": "W/\"1778944316\"",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "content-security-policy": "upgrade-insecure-requests",
-      "x-xss-protection": "1; mode=block",
-      "x-micro-cache": "HIT",
+      "last-modified": "Wed, 24 Jun 2026 14:33:14 GMT",
+      "etag": "W/\"1782311594\"",
+      "x-micro-cache": "EXPIRED",
       "set-cookie": [
         "SRV=58fe7e32-9e54-4006-80f3-b277c92b2f06; path=/"
       ],
@@ -36,35 +33,19 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "upgrade-insecure-requests": [
-          "'none'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": true
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "SRV": {
           "domain": "www.cigeo.gouv.fr",
@@ -98,20 +79,20 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-header-invalid",
-      "scoreModifier": -20,
-      "data": "max-age=31536000, max-age=63072000",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
