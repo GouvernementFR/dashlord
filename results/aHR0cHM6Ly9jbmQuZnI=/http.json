@@ -1,24 +1,32 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B-",
     "error": null,
-    "score": 10,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 03 Jun 2026 03:28:51 GMT",
-      "server": "Apache/2.4.10 (Debian)",
-      "cache-control": "no-cache, private",
-      "set-cookie": [
-        "preferred_language=fr; expires=Fri, 03-Jul-2026 03:28:51 GMT; Max-Age=2591997; path=/; httponly"
-      ],
-      "vary": "Accept-Encoding",
-      "content-length": "7573",
-      "connection": "close",
-      "content-type": "text/html; charset=UTF-8"
+      "content-type": "text/html; charset=UTF-8",
+      "cache-control": "max-age=3600, public",
+      "date": "Fri, 31 Jul 2026 02:04:14 GMT",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Fri, 31 Jul 2026 02:04:13 GMT",
+      "etag": "W/\"1785463453\"",
+      "vary": "Cookie, Accept-Encoding",
+      "age": "1580",
+      "x-cache": "HIT",
+      "x-cache-hits": "9",
+      "accept-ranges": "bytes",
+      "content-length": "11303",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload;",
+      "connection": "close"
     }
   },
   "tests": {
@@ -36,14 +44,11 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
-        "preferred_language": {
+        "SERVERID": {
           "domain": "www.cnd.fr",
-          "expires": "2026-07-03T03:28:51.000Z",
-          "httponly": true,
-          "max-age": 2591997,
           "path": "/",
           "port": null
         }
@@ -78,40 +83,40 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        "https://unpkg.com/orejime@2.3.2/dist/orejime.js": {
+          "crossorigin": null,
+          "integrity": null
         }
       }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
