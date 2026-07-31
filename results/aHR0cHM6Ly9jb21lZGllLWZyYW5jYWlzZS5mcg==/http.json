@@ -1,1 +1,130 @@
-{"error":"The site seems to be down."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C",
+    "error": null,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Fri, 24 Jul 2026 00:42:07 GMT",
+      "server": "Apache",
+      "cache-control": "max-age=2764800, public",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN, sameorigin",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "x-generator": "Drupal 10 (https://www.drupal.org)",
+      "cache-tags": "config:block_list config:block.block.cf_theme_messages config:block.block.cf_theme_content config:block.block.cf_theme_breadcrumbs config:block.block.cf_theme_local_tasks config:block.block.cf_theme_local_actions config:block.block.cf_theme_tools config:matomo.settings node:5632 node:9014 config:system.menu.footer config:webform.webform.contact webform:contact config:webform.settings node:11548 node:5828 node:11827 node:5824 config:system.menu.mini-footer config:easy_breadcrumb.settings block_view node_view paragraph_view paragraph:188849 config:paragraphs.settings paragraph:305050 paragraph:305049 media_view media:47455 config:image.style.420x280 file:25548 paragraph:304803 media:47256 file:25320 paragraph:304802 media:47189 file:25319 paragraph:188839 paragraph:188838 node:11849 config:flag.flag.content media:47503 config:responsive_image.styles.event_season config:image.style.420x600 config:image.style.235x240 config:image.style.340x240 config:filter.format.full_html taxonomy_term:271 user:30 node:11847 media:47509 taxonomy_term:272 node:11844 media:47498 taxonomy_term:642 paragraph:304885 paragraph:305052 paragraph:304884 paragraph:304226 media:47508 config:image.style.386x551 file:25616 user:1 config:system.site config_pages_view config_pages:13 paragraph:305128 CACHE_MISS_IF_UNCACHEABLE_HTTP_METHOD:form config:search_api_autocomplete.search.mini_search node:5829 node:11840 node:11878 node:11882 node:11785 node:11786 node:11784 node:5810 node:5797 node:11835 node:11801 node:11802 node:11803 node:11804 node:11805 node:11806 node:11807 node:11800 node:5796 node:11793 node:11828 node:11792 node:11795 node:11829 node:5783 node:11815 node:11816 node:11817 node:11809 node:11794 node:11890 node:5805 node:11783 node:11787 node:11789 node:11892 node:11886 node:11781 node:11883 node:11791 node:11836 node:11837 node:11838 node:11780 node:11889 node:5793 node:11898 node:5808 node:8948 node:11899 node:11790 config:system.menu.main config:configurable_language_list node:11895 node:5806 node:11896 node:5819 node:11798 node:11897 node:5802 config:system.menu.top-menu rendered http_response config:user.role.anonymous",
+      "x-drupal-cache": "HIT",
+      "last-modified": "Fri, 24 Jul 2026 00:42:07 GMT",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=15768000; preload",
+      "content-length": "13375",
+      "content-type": "text/html; charset=UTF-8",
+      "x-cache-backend": "BACKEND->DELIVER OK Cacheable",
+      "x-varnish": "5641837 65555",
+      "age": "604043",
+      "via": "1.1 varnish (Varnish/7.1)",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-frontend": "RECV->HASH OK Cacheable",
+      "x-cache-hash": "OK with Accept+Accept-Encoding",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://comedie-francaise.fr/",
+      "redirects": true,
+      "route": [
+        "http://comedie-francaise.fr/",
+        "https://comedie-francaise.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000; preload",
+      "includeSubDomains": false,
+      "maxAge": 15768000,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
