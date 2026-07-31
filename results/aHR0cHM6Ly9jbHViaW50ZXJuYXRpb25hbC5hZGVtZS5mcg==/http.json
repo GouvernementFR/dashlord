@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 03 Jun 2026 03:28:34 GMT",
+      "date": "Fri, 31 Jul 2026 03:29:31 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -24,11 +24,10 @@
       "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=417",
       "set-cookie": [
-        "__cf_bm=RaRIkfYdzMPr8Y3eTLz3fvjIdgyBXDggF.LRZeZGrog-1780457314.4808881-1.0.1.1-_xhY1DRcILg1eIb2CRPaZ0QFaHN15S8ZnGIRkNdChjtV4fQyaDHUuEiJccVdS0sjX0sM9D8h5PlW0sdLWuQ5h5N0XPq6wOKax8EmQ.j9FmAQX.YiDxNXBPxLPnflKJgm; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 03 Jun 2026 03:58:34 GMT"
+        "__cf_bm=x95_D97zvupEM7yE3ki_tS1FQVh9NHjsEdtVmHlY9X0-1785468570.9200754-1.0.1.1-09MRg3XtXhA.U802IpApS34.iae_2CXghM7zbU25AfL1IViix1IkLVa4HItdncdxf13JsemCXB9MC8ywXUGddzgcnHzi0A0JpyL5vZ07uxx43RQM4aTIrRrw0QHfnrNB; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 31 Jul 2026 03:59:31 GMT"
       ],
-      "cf-ray": "a05b9bc78931abc2-IAD"
+      "cf-ray": "a23984e83ef075e8-SEA"
     }
   },
   "tests": {
@@ -51,7 +50,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-06-03T03:58:34.000Z",
+          "expires": "2026-07-31T03:59:31.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -114,10 +113,6 @@
         "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js": {
           "crossorigin": null,
           "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
         }
       }
     },
