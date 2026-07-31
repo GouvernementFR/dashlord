@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "TSa1d3e6c3029=087dc22938ab2800df91d6242718bf485cc34867abf8053bac96121300461037ab29e9dba044690658b73b44becc3400; Secure; Max-Age=30; Path=/",
-        "TSc4ff0492027=087dc22938ab20002eb5a4212967da5a190c489c91e58415a41385f9b95c36d693860f8bc1561b6908521b326711300058c4dcf2b3dca6ebd560ef507cf11e695c5c7f8406cb3944599544eab06ca2e49321259ca5462b09f8af10658e7fa457; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab280021b5797cb00352bfa0fe2eb7f36b9af94593765b06a869b0e84e66cf2cf3d91ef48086d5b2e9ad17; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab2000a45649f5dbcfe908b121703da0712b765cebcc17008c8bc18c13cebd6533dd0c08a1c2c58411300093a0005959328085dd5f62a47f68a4c72d2e257b67023a6bd771149b893c5c14bb6bf6cc266ed04b0c16ef80342f64f1; Secure; Path=/"
       ],
       "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
       "content-type": "text/html",
-      "content-length": "5632",
+      "content-length": "5231",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff"
@@ -48,6 +48,20 @@
         },
         "TSc4ff0492027": {
           "domain": "contrats-de-generation.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "contrats-de-generation.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01373bda": {
+          "domain": "contrats-de-generation.gouv.fr",
+          "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
