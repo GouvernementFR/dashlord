@@ -1,25 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 55,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 03 Jun 2026 03:37:05 GMT",
+      "date": "Sat, 01 Aug 2026 03:16:13 GMT",
       "server": "Unknown",
+      "strict-transport-security": "max-age=3600; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1",
       "content-type": "text/html;charset=UTF-8",
-      "age": "78",
+      "age": "619",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
       "cache-control": "max-age=0, no-store",
-      "content-length": "23461",
+      "content-length": "23124",
       "connection": "close"
     }
   },
@@ -75,12 +76,12 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=3600; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 3600,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
