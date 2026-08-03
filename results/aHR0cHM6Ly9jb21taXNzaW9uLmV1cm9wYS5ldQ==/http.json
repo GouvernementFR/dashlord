@@ -1,23 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 30,
-    "statusCode": 403,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "CloudFront",
-      "date": "Fri, 05 Jun 2026 03:30:41 GMT",
-      "content-type": "text/html",
-      "content-length": "919",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "23325",
       "connection": "close",
-      "x-cache": "Error from cloudfront",
-      "via": "1.1 f8e39b59dd045139140ce58fd7a75258.cloudfront.net (CloudFront)",
+      "date": "Mon, 03 Aug 2026 03:25:04 GMT",
+      "x-age": "632",
+      "content-language": "en",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "accept-ranges": "bytes",
+      "x-fpfis": "426810 458810",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
+      "cache-control": "public, max-age=300, s-maxage=300",
+      "vary": "Accept-Encoding",
+      "x-cache": "Hit from cloudfront",
+      "via": "1.1 2ea7f302d33babb724de99a42c1cb5e2.cloudfront.net (CloudFront)",
       "x-amz-cf-pop": "DFW57-P9",
-      "x-amz-cf-id": "4y3r5LUkv6hCljoE7UI_dnnL4kKTngmIs6ZwZQn0rFiMMU5U6s-bxA=="
+      "x-amz-cf-id": "CwHpgJsa7V54eEYKJTQJ7G9Jk9E7Ys1sFSlM4xKdlyMVTKPC06Y_Ow==",
+      "age": "36"
     }
   },
   "tests": {
@@ -52,13 +62,14 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://commission.europa.eu/",
+      "destination": "https://commission.europa.eu/index_en",
       "redirects": true,
       "route": [
         "http://commission.europa.eu/",
-        "https://commission.europa.eu/"
+        "https://commission.europa.eu/",
+        "https://commission.europa.eu/index_en"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -71,35 +82,35 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
