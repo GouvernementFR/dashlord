@@ -1,29 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 25 May 2026 00:04:07 GMT",
-      "cache-control": "must-revalidate, no-cache, private",
-      "x-drupal-dynamic-cache": "HIT",
-      "content-language": "fr",
+      "date": "Mon, 03 Aug 2026 03:25:25 GMT",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "vary": "Accept-Encoding",
-      "content-length": "2656",
+      "content-length": "0",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-drees-faq2.cegedim.cloud-http=!1jZrLLFZsqR0BxR3Zj8tcwec1Snos3z5Mf7b+GtkBp9l/tdaAUr8TEKIjcNKtgN+bXhH4SgvZvZWRMV0WfEvmx/Sul8=; path=/; Httponly; Secure"
+        "BIGipServerpool-drees-faq2.cegedim.cloud-http=!W1a19hPlLVURKK+IuV0oqLPgQB/HDML832Ez9x4U1LeFz9iN8/vWPaiAGTonvVLcu0YUQ5qRxhxHJnaTiJjgZL+tbzE=; path=/; Httponly; Secure"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -112,10 +104,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
