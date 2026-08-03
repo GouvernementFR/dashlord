@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 50,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 05 Jun 2026 03:29:12 GMT",
+      "date": "Mon, 03 Aug 2026 03:25:34 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -26,7 +26,7 @@
       "referrer-policy": "no-referrer",
       "x-xss-protection": "0",
       "x-powered-by": "Next.js",
-      "etag": "\"12xk81z0g4g4pi\"",
+      "etag": "\"ayht46wbtc4p6\"",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
       "vary": "Accept-Encoding"
     }
@@ -60,15 +60,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://ecoscore.esante.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://ecoscore.esante.gouv.fr/",
-        "https://ecoscore.esante.gouv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -83,9 +80,9 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-header-invalid",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
-      "data": "max-age=15552000; includeSubDomains, max-age=31536000",
+      "data": null,
       "includeSubDomains": false,
       "maxAge": null,
       "preload": false,
