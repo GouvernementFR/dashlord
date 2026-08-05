@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 07 Jun 2026 03:31:22 GMT",
+      "date": "Wed, 05 Aug 2026 03:23:38 GMT",
       "server": "-",
       "content-security-policy": "default-src 'self' 'unsafe-inline' https://egide.alize.finances.rie.gouv.fr/ https://egide-imin.alize.finances.rie.gouv.fr/ https://egide.finances.gouv.fr/ https://egide-visiteur.finances.gouv.fr/ https://egide-inscription.finances.gouv.fr/ https://auth.egide.finances.gouv.fr/ https://localhost:9895/ https://localhost:9895/nexu-info ; connect-src 'self' https://localhost:9895/ https://localhost:9895/nexu-info ; upgrade-insecure-requests; frame-ancestors 'none'",
       "strict-transport-security": "max-age=34560000; includeSubDomains; preload",
@@ -22,6 +22,9 @@
       "cache-control": "no-cache, no-store",
       "content-type": "text/html;charset=UTF-8",
       "content-language": "fr,fr-fr",
+      "set-cookie": [
+        "JSESSIONID=6E92E0A4327D671A3297894E37B3711E; Path=/; Secure; HttpOnly;HttpOnly;Secure;SameSite=None"
+      ],
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -101,12 +104,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://egide-visiteur.finances.gouv.fr/sessionOverflow/index",
+      "destination": "https://egide-visiteur.finances.gouv.fr/",
       "redirects": true,
       "route": [
         "http://egide-visiteur.finances.gouv.fr/",
-        "https://egide-visiteur.finances.gouv.fr/",
-        "https://egide-visiteur.finances.gouv.fr/sessionOverflow/index"
+        "https://egide-visiteur.finances.gouv.fr/"
       ],
       "statusCode": 200
     },
