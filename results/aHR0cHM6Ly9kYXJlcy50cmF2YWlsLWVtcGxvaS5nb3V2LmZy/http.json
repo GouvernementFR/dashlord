@@ -10,12 +10,13 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "TS709b5258029=087dc22938ab280095cc3db0006ae5c1e3ba709ec3d3c96fb1e12089fc0857d2592e1e325ca9336fd8bfef5ab3c17f22; Secure; Max-Age=30; Path=/",
-        "TS15b7b009027=087dc22938ab2000ee319984c922209044826c59e64a008c0cd4055b0a1e1c9af5b0f44f3b0ef1b408c8c69b681130009e06c3526a038d4e1def4046c0133e3b0d55b6f16a9ccffc0429fbfba6a99764e51669031109e9e37cb2332e7281e6ce; Secure; Path=/"
+        "TS709b5258029=087dc22938ab28009ba8b77830dcf414514ee4832dc053e0b387d93baaedfce92d725dbbaf3c2f311f957ad2e84641a4; Secure; Max-Age=30; Path=/",
+        "TS709b5258078=087dc22938ab20007cb8f0138eaab8fb7793204a693935ff9b65a13ac20553487def12a6845ea49208ec17752a1850017581d82904f6c852f77c523ffaaf6941f98754f350a5c9889db9a9ed2bbffd98f0e30c98e4aebec64a8db53a5b8d70b8ad0da1e911dff05f345d32b992b40390c2a6747d7a229a72410ebd7505efd0bb4960c8f2fbe2c6c490338791f098778aec58372d71a5ba34c42a0f3a216cff8a202d04cfd773ffe301a45ba885f573a08a6153ee9548d692cf54926c8b7ec85b202a329a9dbe9c34a999e288e8f8ec5f89dda3c0c2481f29914c3bf716c8ee2f1394c1bf9092f063a40b04ce15c4747f91b4ed3abc74e4b5a2b05581e2b573da991a026a0143bbfee008975f44354bb120fa44a6254c3d1e6b671d5808ae0ebedee82bb3dbe1bff3e9624d0e826c64953f480e14e5c51b492ff6ec66298d6573c20dfe8b3cef3905a49c23ca613ef3f04cec93cae9051aa44bc9fcc9d1cb31881bc6898e42aebcb5d14cbe525e483950cb7d3e2e99f794f32a8c01605b3a34a2; Secure; Max-Age=30; Path=/",
+        "TS15b7b009027=087dc22938ab2000e27a9d8636742f213e29b3ad8b297ad640c736e925c0f09147163f43d326dc3f08db40ad59113000929adc99c89c74f7179d7b39d4563332abf6bec694f104e4d55c5f8b4131e71757f2112dfa676f0a5af58fdeb2963267; Secure; Path=/"
       ],
       "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
       "content-type": "text/html",
-      "content-length": "6277",
+      "content-length": "6130",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff"
@@ -40,6 +41,13 @@
       "scoreModifier": 0,
       "data": {
         "TS709b5258029": {
+          "domain": "dares.travail-emploi.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS709b5258078": {
           "domain": "dares.travail-emploi.gouv.fr",
           "max-age": 30,
           "path": "/",
