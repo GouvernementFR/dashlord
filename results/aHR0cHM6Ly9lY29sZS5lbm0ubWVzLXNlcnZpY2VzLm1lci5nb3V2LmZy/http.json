@@ -9,20 +9,20 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 07 Jun 2026 03:27:06 GMT",
+      "date": "Wed, 05 Aug 2026 03:22:11 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000",
       "content-type": "text/html",
-      "last-modified": "Tue, 02 Jun 2026 16:07:05 GMT",
-      "etag": "\"6a1effa9-5ae-gzip\"",
+      "last-modified": "Mon, 27 Jul 2026 09:40:57 GMT",
+      "etag": "\"6a6727a9-5ae-gzip\"",
       "x-frame-options": "DENY",
       "x-content-type-options": "nosniff",
       "content-security-policy": "default-src 'self' https://portail-du-marin-site-ecole.din.developpement-durable.gouv.fr https://audience-sites.din.developpement-durable.gouv.fr; frame-src https://portail-du-marin-site-ecole.din.developpement-durable.gouv.fr blob:; img-src 'self' data: https://audience-sites.din.developpement-durable.gouv.fr https://jedonnemonavis.numerique.gouv.fr/static/bouton-bleu.svg ; object-src 'none'; script-src 'self' 'unsafe-inline' https://audience-sites.din.developpement-durable.gouv.fr; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action https://rdv.smgda.fr/pro/dgampa-recette/rendez-vous/ 'self';",
       "referrer-policy": "origin",
       "x-xss-protection": "1; mode=block",
       "vary": "Accept-Encoding",
-      "content-length": "644",
-      "connection": "close"
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -134,9 +134,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
+      "data": "max-age=63072000",
       "includeSubDomains": false,
-      "maxAge": 31536000,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
