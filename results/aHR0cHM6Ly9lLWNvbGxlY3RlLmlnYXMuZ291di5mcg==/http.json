@@ -9,14 +9,14 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 07 Jun 2026 03:28:11 GMT",
+      "date": "Wed, 05 Aug 2026 03:21:53 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
       "x-frame-options": "DENY",
       "vary": "Cookie",
-      "content-security-policy": "default-src 'self' 'frame-src youtube.com www.youtube.com;'; style-src 'self' 'unsafe-inline' https://static.piste.gouv.fr; img-src 'self' https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://code.jquery.com",
+      "content-security-policy": "default-src 'self' 'frame-src youtube.com www.youtube.com;'; style-src 'self' 'unsafe-inline' https://static.piste.gouv.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://code.jquery.com; img-src 'self' https:",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
@@ -44,15 +44,15 @@
           "'unsafe-inline'",
           "https://static.piste.gouv.fr"
         ],
-        "img-src": [
-          "'self'",
-          "https:"
-        ],
         "script-src": [
           "'self'",
           "'unsafe-eval'",
           "'unsafe-inline'",
           "https://code.jquery.com"
+        ],
+        "img-src": [
+          "'self'",
+          "https:"
         ]
       },
       "http": true,
