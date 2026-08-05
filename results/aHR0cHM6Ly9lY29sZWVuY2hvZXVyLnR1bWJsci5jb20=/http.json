@@ -1,1 +1,122 @@
-{"error":"Site did respond with an unexpected HTTP status code 404."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "server": "nginx",
+      "date": "Wed, 05 Aug 2026 03:21:51 GMT",
+      "content-type": "text/html",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "set-cookie": [
+        "_hcc=NGQ1MmUwYjJhNGZiZWM2MGUxZjE2NWJiYzMzZmMxZDZiMzRhMjZmMmRhMDk4NzQ1NWNmZWIzZjkyOTlhN2M2OQ==:MjAuMTE4LjM4LjEwMnwxNzg1OTAwMTExfFRqXEp7dnh1d1lHe0l6e1RzVHN7eUtHZnh7dFV6cklkfDE=; Max-Age=30; Path=/"
+      ],
+      "x-nc": "MISS"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "_hcc": {
+          "domain": "ecoleenchoeur.tumblr.com",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-all-redirects-preloaded",
+      "scoreModifier": 0,
+      "destination": "https://ecoleenchoeur.tumblr.com/",
+      "redirects": true,
+      "route": [
+        "http://ecoleenchoeur.tumblr.com/",
+        "https://ecoleenchoeur.tumblr.com/"
+      ],
+      "statusCode": 403
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-preloaded",
+      "scoreModifier": 5,
+      "data": null,
+      "includeSubDomains": true,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": true
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
