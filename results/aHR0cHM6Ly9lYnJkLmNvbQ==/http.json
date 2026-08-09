@@ -1,19 +1,19 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B",
     "error": null,
-    "score": 20,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cteonnt-length": "138135",
+      "cteonnt-length": "143806",
       "x-xss-protection": "1; mode=block",
       "content-security-policy": "img-src 'self' https: data: *.ebrd.com ;, frame-ancestors 'self' ;",
-      "permissions-policy": "policy1=()",
-      "referrer-policy": "no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading",
+      "permissions-policy": "camera=(), geolocation=(), bluetooth=(), gyroscope=(), microphone=(), payment=(),  usb=(), xr-spatial-tracking=(), idle-detection=(), hid=(), serial=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-frame-options": "SAMEORIGIN",
       "x-vhost": "www.ebrd.com",
@@ -21,18 +21,22 @@
       "content-type": "text/html;charset=utf-8",
       "x-content-type-options": "nosniff",
       "accept-ranges": "bytes",
-      "date": "Tue, 09 Jun 2026 03:26:53 GMT",
-      "age": "262",
-      "x-served-by": "cache-lga21963-LGA",
+      "age": "586",
+      "date": "Sun, 09 Aug 2026 03:07:34 GMT",
+      "x-served-by": "cache-lga21989-LGA",
       "x-cache": "HIT",
-      "x-timer": "S1780975613.341253,VS0,VS0,VE37",
+      "x-timer": "S1786244854.084501,VS0,VS0,VE2",
       "vary": "Accept-Encoding,Origin",
       "connection": "close",
+      "set-cookie": [
+        "waf_mgt_id=AAA79e53ajswFA4AAAAAADubZiQFBAMM6_UzO7gHJdt0w6LDhUDEQ9U4dWIHBP7xOw==evJ3ag==yiD20iDoQGm3ixo5oTqwz3cWpkw=; Domain=.ebrd.com; Path=/",
+        "waf_mgt_id_.ebrd.com_%2F_wat=AAAAAAWpJ7gA-KC2WuIJuIY4TxEeM--lRRmCXg_AsDt6iBWXT9CQ5j6dA0di4LR8HYp1_s3qUtx77iDeUGQTQ5H1oXR3&; Domain=.ebrd.com; Path=/"
+      ],
       "x-cache-control-orig": "max-age=900, s-maxage=900, stale-while-revalidate=300, stale-if-error=300",
       "cache-control": "max-age=3, must-revalidate, private",
-      "x-expires-orig": "Tue, 09 Jun 2026 03:11:04 GMT",
+      "x-expires-orig": "Sun, 09 Aug 2026 03:02:47 GMT",
       "expires": "Mon, 26 Jul 1997 05:00:00 GMT",
-      "etag": "\"11b1c8-aa24b79aa4fd\"",
+      "etag": "\"b791be-764e5a0cdbd7\"",
       "transfer-encoding": "chunked"
     }
   },
@@ -77,7 +81,19 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
+        "affinity": {
+          "domain": "ebrd.com",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
         "waf_mgt_id": {
+          "domain": "ebrd.com",
+          "path": "/",
+          "port": null
+        },
+        "waf_mgt_id_.ebrd.com_%2F_wat": {
           "domain": "ebrd.com",
           "path": "/",
           "port": null
@@ -95,19 +111,23 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://www.ebrd.com/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://ebrd.com/",
+        "https://ebrd.com/",
+        "https://www.ebrd.com/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-header-invalid",
-      "scoreModifier": -5,
-      "data": "no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
@@ -125,10 +145,10 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "//assets.adobedtm.com/84e4c56632dd/b0347c80e37d/launch-7b27ff139622.min.js": {
+        "https://universal-editor-service.adobe.io/cors.js": {
           "crossorigin": null,
           "integrity": null
         }
