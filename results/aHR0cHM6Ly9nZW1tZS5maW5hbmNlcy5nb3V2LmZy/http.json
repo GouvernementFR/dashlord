@@ -1,16 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 10,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 09 Jun 2026 03:31:27 GMT",
+      "date": "Sun, 09 Aug 2026 03:03:27 GMT",
       "server": "Apache",
+      "strict-transport-security": "max-age=16070401",
       "last-modified": "Wed, 23 Sep 2020 15:23:22 GMT",
       "etag": "\"2afe-5affcaa053754-gzip\"",
       "accept-ranges": "bytes",
@@ -49,15 +50,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://gemme.finances.gouv.fr/",
-      "redirects": false,
-      "route": [
-        "http://gemme.finances.gouv.fr/"
-      ],
-      "statusCode": 200
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
+      "redirects": true,
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -70,12 +69,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070401",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 16070401,
       "preload": false,
       "preloaded": false
     },
