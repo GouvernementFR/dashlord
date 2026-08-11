@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 11 Jun 2026 03:29:06 GMT",
+      "date": "Tue, 11 Aug 2026 03:07:42 GMT",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000",
       "content-type": "text/html; charset=UTF-8",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "pragma": "no-cache",
       "set-cookie": [
-        "PHPSESSID=c5e60c9763a203060674efad1f57a077; path=/; secure",
+        "PHPSESSID=767ca601fc78ec2044ffd43e7628ba8f; path=/; secure",
         "SRV=0d626fbb-5871-416e-b903-35fb2f3d2a5b; path=/"
       ],
       "vary": "Accept-Encoding",
@@ -67,15 +67,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://enquetes-en-ligne.logement.gouv.fr/",
+      "destination": "http://enquetes-en-ligne.logement.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://enquetes-en-ligne.logement.gouv.fr/",
-        "https://enquetes-en-ligne.logement.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
