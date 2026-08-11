@@ -1,54 +1,95 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C+",
     "error": null,
-    "score": 70,
+    "score": 60,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 09 Jun 2026 03:36:17 GMT",
-      "set-cookie": [
-        "BWROUTEID=1714ecb9ec7680ec56f30caff50c4d1a.2; Path=/"
-      ],
-      "accept-ranges": "bytes",
-      "etag": "W/\"119-1710862038000\"",
-      "last-modified": "Tue, 19 Mar 2024 15:27:18 GMT",
-      "content-type": "text/html;charset=utf-8",
-      "content-length": "119",
-      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://matomo.esante.gouv.fr; style-src 'self' 'unsafe-inline' https://p.typekit.net; font-src 'self' https://use.typekit.net; img-src 'self' data:; connect-src 'self' https://matomo.esante.gouv.fr https://cdnjs.cloudflare.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';",
+      "content-type": "text/html",
+      "date": "Tue, 11 Aug 2026 03:06:41 GMT",
+      "etag": "W/\"6a7065f2-dad9\"",
+      "last-modified": "Mon, 03 Aug 2026 09:57:06 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=31536000",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "DENY",
-      "strict-transport-security": "max-age=31536000; includesubdomains; preload",
-      "connection": "close"
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://matomo.esante.gouv.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://p.typekit.net"
+        ],
+        "font-src": [
+          "'self'",
+          "https://use.typekit.net"
+        ],
+        "img-src": [
+          "'self'",
+          "data:"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://cdnjs.cloudflare.com",
+          "https://matomo.esante.gouv.fr"
+        ],
+        "frame-src": [
+          "'none'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
-      "data": {
-        "BWROUTEID": {
-          "domain": "finess.esante.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -61,20 +102,23 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://finess.esante.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://finess.esante.gouv.fr/",
+        "https://finess.esante.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -82,16 +126,16 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includesubdomains; preload",
-      "includeSubDomains": true,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
       "maxAge": 31536000,
-      "preload": true,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
@@ -104,10 +148,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "DENY"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
