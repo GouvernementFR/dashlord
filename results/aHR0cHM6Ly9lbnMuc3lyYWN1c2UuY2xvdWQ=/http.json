@@ -16,17 +16,18 @@
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "_syrSessGuid=844c426d-9877-4c2f-9544-d6cbaead1a37; expires=Thu, 11-Jun-2026 03:57:55 GMT; path=/; secure; HttpOnly; SameSite=Lax",
-        "_syrPrefsGuid=1721299a-1c88-43a3-b207-25109d8f7f3a; expires=Fri, 11-Jun-2027 03:27:55 GMT; path=/; secure; HttpOnly; SameSite=Lax",
-        "InstanceST=ENS=000405ThGiyauyWjijAM9l08CUy0YLu1EPl_4Ld9KZy7Yq54eSFgoxRCp7ehXBT/wTifM4/1JJQHfakYSEAfrABQ=; path=/; secure; HttpOnly; SameSite=None",
-        "InstanceCI=ENS=1q3ATmtYjnvEkrW-5q5FqMdzcIhrz1oFs7tKKD9i; path=/; secure; HttpOnly; SameSite=None"
+        "_syrSessGuid=8b729d98-621c-4711-874c-d4854ea4a98d; expires=Thu, 13-Aug-2026 03:49:35 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "_syrPrefsGuid=515877f6-50b6-404c-ab5c-9d400e96fc98; expires=Fri, 13-Aug-2027 03:19:35 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "InstanceST=ENS=00040B_asZRc3ER2icW_bEOkvXcH8XVEmK5D8-H4Kpr2dHL16ZiSXLK/eS9odYlUTIPdgpboTSyOmfs0s83rRRBw=; path=/; secure; HttpOnly; SameSite=None",
+        "InstanceCI=ENS=pETvnP_1mUInl454AwuWpaRHkooM9UekbC8p5W69; path=/; secure; HttpOnly; SameSite=None"
       ],
       "referrer-policy": "strict-origin-when-cross-origin",
       "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
-      "date": "Thu, 11 Jun 2026 03:27:56 GMT",
+      "x-xss-protection": "0",
+      "date": "Thu, 13 Aug 2026 03:19:36 GMT",
       "connection": "close",
-      "content-length": "35669"
+      "content-length": "35702"
     }
   },
   "tests": {
@@ -111,7 +112,7 @@
       "data": {
         "_syrSessGuid": {
           "domain": "ens.syracuse.cloud",
-          "expires": "2026-06-11T03:57:55.000Z",
+          "expires": "2026-08-13T03:49:35.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -120,7 +121,7 @@
         },
         "_syrPrefsGuid": {
           "domain": "ens.syracuse.cloud",
-          "expires": "2027-06-11T03:27:55.000Z",
+          "expires": "2027-08-13T03:19:35.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
