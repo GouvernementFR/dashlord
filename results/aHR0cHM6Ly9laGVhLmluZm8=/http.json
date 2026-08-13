@@ -1,23 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D",
     "error": null,
-    "score": 25,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx/1.14.1",
-      "date": "Thu, 11 Jun 2026 03:27:57 GMT",
+      "date": "Thu, 13 Aug 2026 03:21:51 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "x-powered-by": "PHP/8.4.11",
-      "last-modified": "Wed, 10 Jun 2026 18:02:33 GMT",
+      "last-modified": "Wed, 12 Aug 2026 18:02:24 GMT",
       "cache-control": "max-age=0",
-      "expires": "Thu, 11 Jun 2026 03:27:57 GMT",
+      "expires": "Thu, 13 Aug 2026 03:21:51 GMT",
       "vary": "Accept-Encoding"
     }
   },
@@ -83,15 +83,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=G-BL8XCYLGTX": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
