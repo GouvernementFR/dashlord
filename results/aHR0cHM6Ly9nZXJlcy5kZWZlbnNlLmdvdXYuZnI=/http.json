@@ -9,13 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 11 Jun 2026 03:36:49 GMT",
-      "set-cookie": [
-        "JSESSIONID=67D8D396219E04685181EF197B5DC9AD; Path=/; Secure; HttpOnly",
-        "XSRF-TOKEN=953142c9-abcf-4dea-ba34-b84b5ae7a421; Path=/; Secure; HttpOnly",
-        "cookiedef=!K8/bpErUqrDL2zLZZglwFy2v7q8+/empP6/CEJ/LZKJWcjalfYAQQw38lMPVNQKiptdqqYxcdwcT; path=/; Httponly",
-        "SESSIONID=!srFxV7nW30AuLizzfGC5GdS5eqKZc7o3h7ZHqS/ACF4tvmdeDMUM+ifBwAksP4FGuTZPbKik3NTazA==; path=/; Httponly; Secure"
-      ],
+      "date": "Thu, 13 Aug 2026 03:19:37 GMT",
       "x-xss-protection": "0",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
       "pragma": "no-cache",
@@ -55,13 +49,6 @@
           "port": null,
           "secure": true
         },
-        "XSRF-TOKEN": {
-          "domain": "geres.defense.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
         "cookiedef": {
           "domain": "geres.defense.gouv.fr",
           "httponly": true,
@@ -90,11 +77,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://geres.defense.gouv.fr/",
+      "destination": "https://geres.defense.gouv.fr/pages/module_commun/public/index.xhtml",
       "redirects": true,
       "route": [
         "http://geres.defense.gouv.fr/",
-        "https://geres.defense.gouv.fr/"
+        "https://geres.defense.gouv.fr/",
+        "https://geres.defense.gouv.fr/pages/module_commun/public/index.xhtml"
       ],
       "statusCode": 200
     },
