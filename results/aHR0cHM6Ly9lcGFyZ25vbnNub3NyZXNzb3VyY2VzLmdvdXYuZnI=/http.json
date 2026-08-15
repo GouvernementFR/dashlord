@@ -9,15 +9,15 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 11 Jun 2026 03:29:04 GMT",
+      "date": "Sat, 15 Aug 2026 02:40:44 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "last-modified": "Wed, 10 Jun 2026 13:17:06 GMT",
+      "last-modified": "Fri, 14 Aug 2026 08:02:33 GMT",
       "vary": "Accept-Encoding,User-Agent",
       "set-cookie": [
-        "__cf_bm=2GWQqf_FVI80pFQXxMD88aOlPbXWy6IgJAUf_hPf_Zw-1781148544.1301777-1.0.1.1-3YaTQ3UIfQ7Miiw6lIWWVspozra2X1pYPmVWN4vmVpy_MrUoPQ4qeBRcv74PwG9CwYr7chm9qV1a.w7akzw4udGbQrYd9WXC3G0ULgWKg4hZ..zjIH7AMwj1bCnFsfu_; HttpOnly; SameSite=None; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Thu, 11 Jun 2026 03:59:04 GMT"
+        "__cf_bm=i0DJiehnCIFVtMZo5TO1jD1DetcpNLVQwMgoKsV.V38-1786761643.78701-1.0.1.1-7ZL.hY8HRlsxew4_Iqb0Qts752EPdjCgrcy6EBC9sYN7HOpT78FT4yA0oOlnQSXB_0KcRuE8HXxxCtcWd2IST2X39k14ji7vFdiVA8hpIitYt5HE1NcOwPQcPxRjlDBH; HttpOnly; SameSite=None; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Sat, 15 Aug 2026 03:10:44 GMT"
       ],
       "x-front": "TEMPLATEDEBIAN11",
       "access-control-allow-origin": "https://epargnonsnosressources.gouv.fr",
@@ -29,7 +29,7 @@
       "permissions-policy": "accelerometer=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
       "content-security-policy": "upgrade-insecure-requests",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a09d8780c896b82e-LAX"
+      "cf-ray": "a2b4d611abad1585-IAD"
     }
   },
   "tests": {
@@ -68,7 +68,7 @@
       "data": {
         "__cf_bm": {
           "domain": "epargnonsnosressources.gouv.fr",
-          "expires": "2026-06-11T03:59:04.000Z",
+          "expires": "2026-08-15T03:10:44.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -81,19 +81,22 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "https://epargnonsnosressources.gouv.fr"
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://epargnonsnosressources.gouv.fr/",
+      "destination": "https://epargnonsnosressources.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://epargnonsnosressources.gouv.fr/",
+        "https://epargnonsnosressources.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
