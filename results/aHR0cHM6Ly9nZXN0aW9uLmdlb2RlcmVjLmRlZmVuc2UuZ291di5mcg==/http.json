@@ -1,24 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 13 Jun 2026 03:30:32 GMT",
+      "date": "Sat, 15 Aug 2026 02:40:43 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=63072000; includeSubdomains; preload",
       "upgrade": "h2",
       "connection": "Upgrade, close",
       "cache-control": "max-age=0, must-revalidate, no-cache, no-store, private",
-      "x-debug-token": "86dfd0",
-      "expires": "Sat, 13 Jun 2026 03:30:32 GMT",
+      "x-content-type-options": "nosniff",
+      "x-debug-token": "7a505c",
+      "expires": "Sat, 15 Aug 2026 02:40:43 GMT",
       "set-cookie": [
-        "sf_redirect=deleted; expires=Fri, 13 Jun 2025 03:30:31 GMT; Max-Age=0; path=/; httponly"
+        "sf_redirect=deleted; expires=Fri, 15 Aug 2025 02:40:42 GMT; Max-Age=0; path=/; httponly"
       ],
       "vary": "Accept-Encoding",
       "transfer-encoding": "chunked",
@@ -45,7 +46,7 @@
       "data": {
         "sf_redirect": {
           "domain": "gestion.geoderec.defense.gouv.fr",
-          "expires": "2025-06-13T03:30:31.000Z",
+          "expires": "2025-08-15T02:40:42.000Z",
           "httponly": true,
           "max-age": 0,
           "path": "/",
@@ -53,7 +54,7 @@
         },
         "PHPSESSID": {
           "domain": "gestion.geoderec.defense.gouv.fr",
-          "expires": "2027-06-13T03:30:31.000Z",
+          "expires": "2027-08-15T02:40:42.000Z",
           "httponly": true,
           "max-age": 31536000,
           "path": "/",
@@ -114,10 +115,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
