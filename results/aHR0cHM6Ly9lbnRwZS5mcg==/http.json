@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C-",
     "error": null,
-    "score": 65,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "must-revalidate, no-cache, private",
       "content-language": "fr",
-      "content-length": "108647",
-      "content-type": "text/html; charset=UTF-8",
-      "date": "Thu, 11 Jun 2026 03:36:02 GMT",
+      "content-length": "107425",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sat, 15 Aug 2026 02:40:37 GMT",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "traceresponse": "00-18b7e98b5bf872ca749d9e20f5431da1-e400656b2b8fe61a-01",
+      "traceresponse": "00-18cbda3e333f9a0c80548900b5c8397f-a7beead25091944e-01",
       "x-content-type-options": "nosniff",
       "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
       "x-drupal-cache": "HIT",
@@ -59,16 +59,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-all-redirects-preloaded",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://www.entpe.fr/",
       "redirects": true,
-      "route": [
-        "http://entpe.fr/",
-        "https://entpe.fr/",
-        "https://www.entpe.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -85,10 +81,10 @@
       "pass": true,
       "result": "hsts-preloaded",
       "scoreModifier": 5,
-      "data": "max-age=31536000; includeSubDomains; preload",
+      "data": null,
       "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "maxAge": null,
+      "preload": false,
       "preloaded": true
     },
     "subresource-integrity": {
