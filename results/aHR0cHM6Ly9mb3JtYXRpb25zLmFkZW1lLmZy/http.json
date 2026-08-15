@@ -1,35 +1,34 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C-",
     "error": null,
-    "score": 75,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 13 Jun 2026 03:27:00 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 15 Aug 2026 02:40:39 GMT",
+      "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "cache-control": "no-store, must-revalidate, max-age=0",
+      "content-language": "fr",
+      "content-security-policy": "frame-src 'self'; frame-ancestors 'self' ; object-src 'none';",
+      "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "server": "cloudflare",
-      "vary": "Accept-Encoding",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=30,cfOrigin;dur=620",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "permissions-policy": "camera=(), microphone=(), geolocation=()",
-      "x-robots-tag": "noindex, nofollow",
-      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://t.screeb.app https://cdntag.tarteaucitron.io https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.youtube.com https://tarteaucitron.io https://cdn.tarteaucitron.io https://cdntag.tarteaucitron.io https://tag.aticdn.net https://www.google.com https://www.gstatic.com https://itkz.formations.ademe.fr; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdn.tarteaucitron.io https://itkz.formations.ademe.fr; font-src 'self' data: blob: https://t.screeb.app https://fonts.gstatic.com; connect-src 'self' wss://centipede.screeb.app https://rpc.screeb.app https://t.screeb.app https://www.google.com ademe.elmg.net https://www.google-analytics.com https://www.googletagmanager.com https://tarteaucitron.io https://cdn.tarteaucitron.io https://logs.tarteaucitron.io https://itkz.formations.ademe.fr; img-src 'self' data: https://* https://itkz.formations.ademe.fr; frame-src 'self' https://www.youtube.com https://www.google.com https://itkz.formations.ademe.fr https://www.iorad.com; frame-ancestors 'self';",
-      "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "set-cookie": [
-        "__Host-PHPSESSID=3t8n3b9ga29p9c144te8a22vgk37kpjm; path=/; secure; HttpOnly; SameSite=Lax",
-        "__cf_bm=ho1v6k8V_OWp3ly5Frdin9GDjZuJeMQFCLOvUF_0tfI-1781321219.9757855-1.0.1.1-PWemAV09HUZWrgm_wH1tFU9SKwqar6azNI3MZdXcHwjPgMqyTMMYgSsSaexu3rz3QyaEMd.fKBqTmOVtKQLk6Va6LecAEEkoWM1nqDoi3HWKLBBh6IN6.XJy2FaoUn81; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 13 Jun 2026 03:57:00 GMT"
+        "AUTH_SESSION_ID=OHlqem5aTTFPZHRCWHNYUENBQ1RKUENzLjB5MTBMWk5RZm03VlJ4R0lwcEROVW01bmxZN2tJTVFPcHpJX2F2T3VrVDlPdGtobmFRLTR5S1RDQ29nZHo5R1BsZmE2LUZRNmJLX2prMXRTN1czS2tB.prod-fa-keycloakx-1-2552;Version=1;Path=/auth/realms/master/;Secure;HttpOnly;SameSite=None",
+        "KC_AUTH_SESSION_HASH=\"gWN3nlrmWJpEael8xi0oOfC9/o88VvWl1oliqr98YPE\";Version=1;Path=/auth/realms/master/;Max-Age=60;Secure;SameSite=None"
       ],
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
+      "x-robots-tag": "none",
+      "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a0adff38d84072d4-IAD"
+      "cf-ray": "a2b4d5f47b3228fe-MSP"
     }
   },
   "tests": {
@@ -39,69 +38,14 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
-        "default-src": [
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "https://cdn.jsdelivr.net",
-          "https://cdn.tarteaucitron.io",
-          "https://cdntag.tarteaucitron.io",
-          "https://itkz.formations.ademe.fr",
-          "https://t.screeb.app",
-          "https://tag.aticdn.net",
-          "https://tarteaucitron.io",
-          "https://www.google.com",
-          "https://www.googletagmanager.com",
-          "https://www.gstatic.com",
-          "https://www.youtube.com"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://cdn.jsdelivr.net",
-          "https://cdn.tarteaucitron.io",
-          "https://fonts.googleapis.com",
-          "https://itkz.formations.ademe.fr"
-        ],
-        "font-src": [
-          "'self'",
-          "blob:",
-          "data:",
-          "https://fonts.gstatic.com",
-          "https://t.screeb.app"
-        ],
-        "connect-src": [
-          "'self'",
-          "ademe.elmg.net",
-          "https://cdn.tarteaucitron.io",
-          "https://itkz.formations.ademe.fr",
-          "https://logs.tarteaucitron.io",
-          "https://rpc.screeb.app",
-          "https://t.screeb.app",
-          "https://tarteaucitron.io",
-          "https://www.google-analytics.com",
-          "https://www.google.com",
-          "https://www.googletagmanager.com",
-          "wss://centipede.screeb.app"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "https://*",
-          "https://itkz.formations.ademe.fr"
-        ],
         "frame-src": [
-          "'self'",
-          "https://itkz.formations.ademe.fr",
-          "https://www.google.com",
-          "https://www.iorad.com",
-          "https://www.youtube.com"
+          "'self'"
         ],
         "frame-ancestors": [
           "'self'"
+        ],
+        "object-src": [
+          "'none'"
         ]
       },
       "http": true,
@@ -114,7 +58,7 @@
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": false
@@ -123,29 +67,53 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "cookies-session-without-httponly-flag",
+      "scoreModifier": -30,
       "data": {
+        "__cf_bm": {
+          "domain": "ademe.fr",
+          "expires": "2026-08-15T03:10:37.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
         "__Host-PHPSESSID": {
-          "domain": "formations.ademe.fr",
+          "domain": "academie.ademe.fr",
           "httponly": true,
           "path": "/",
           "port": null,
           "samesite": "lax",
           "secure": true
         },
-        "__cf_bm": {
-          "domain": "ademe.fr",
-          "expires": "2026-06-13T03:57:00.000Z",
+        "SimpleSAML": {
+          "domain": "academie.ademe.fr",
           "httponly": true,
           "path": "/",
           "port": null,
           "samesite": "none",
           "secure": true
+        },
+        "AUTH_SESSION_ID": {
+          "domain": "moncompte.ademe.fr",
+          "httponly": true,
+          "path": "/auth/realms/master/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "KC_AUTH_SESSION_HASH": {
+          "domain": "moncompte.ademe.fr",
+          "max-age": 60,
+          "path": "/auth/realms/master/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
         }
       },
-      "sameSite": true
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -156,24 +124,26 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://formations.ademe.fr/",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://moncompte.ademe.fr/auth/realms/master/protocol/saml?SAMLRequest=fZJPb%2BIwEMW%2FSuR7cAhNCBYg0aKqSN1tBGwPe1kNyaRY8p%2Bsx%2Bm2375OKCp7KCdL43nzm%2Fc0cwKtWrHq%2FNFs8W%2BH5KM3rQyJ4WPBOmeEBZIkDGgk4SuxW%2F14FOkoEa2z3lZWsQvJdQUQofPSGhZt1gv2p8lvimlVZFkONWAO0MwOkCZFdsiKWT3JkyIfTydNPZ6y6BkdBeWChUFBTtThxpAH40MpSfM4KeJxtk9ScZOIyew3i9bBjTTgB9XR%2B5YE59qayurW4whq1DhqHIfgnjsEpYlrII%2BOn63x3lNPK8Pq8hUXzLsOWbQ6G7mzhjqNbofuVVb4a%2Fv4hYKqR8gLEkndKuxnhj3qTuGoPbYDg9PpTWOoaKgOIhaVn5vcSlNL83I938OpicTDfl%2FG5dNuz5bzfqwY8nLLb1eb88u2%2BeksfgbAZl1aJav36N46Df46v6%2FIOm6GVuEdGJJofMhLKfvvLmTszxHy5Qn5%2F%2FEtPwA%3D&RelayState=https%3A%2F%2Facademie.ademe.fr%2Fback%2Fconncheck.php%3Fredirect%3Dhttps%253A%252F%252Facademie.ademe.fr%252Faccueil&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=z3hSPzst0UfWXjWQ2WCtMFnfRRKCvx55xtHrrdGo93rX5a0njqvPqvoQhJLgA0oRwzmB8ciulsCdNISNFG%2Bn0fo33xwEJ126qDGOVaA%2FULNuSZyVq1Wp6atHL1KZIYtkhLB9qFXQ9s5Ux%2BQmZVXq6vjGgSllNDItJZlLdM1OKfd2qx1ZrhjbPy9%2BTSsqsI8Sab0%2BXbcOAoTZRzeo9GK6uKnGTYAtBXem19evO0dkWauRlMtiqP%2BBPSpwbx%2B%2FQk8G9bJwjiDXtHqUwmkH7HPcf26%2FxQS1BnSv3EBZBJ9sBp0iRU%2FKPTj4p8C9mE9qdhx3EbnBmY75H%2BVRMNVPbaf6nA%3D%3D",
       "redirects": true,
       "route": [
         "http://formations.ademe.fr/",
-        "https://formations.ademe.fr/"
+        "https://academie.ademe.fr/",
+        "https://academie.ademe.fr/accueil",
+        "https://moncompte.ademe.fr/auth/realms/master/protocol/saml?SAMLRequest=fZJPb%2BIwEMW%2FSuR7cAhNCBYg0aKqSN1tBGwPe1kNyaRY8p%2Bsx%2Bm2375OKCp7KCdL43nzm%2Fc0cwKtWrHq%2FNFs8W%2BH5KM3rQyJ4WPBOmeEBZIkDGgk4SuxW%2F14FOkoEa2z3lZWsQvJdQUQofPSGhZt1gv2p8lvimlVZFkONWAO0MwOkCZFdsiKWT3JkyIfTydNPZ6y6BkdBeWChUFBTtThxpAH40MpSfM4KeJxtk9ScZOIyew3i9bBjTTgB9XR%2B5YE59qayurW4whq1DhqHIfgnjsEpYlrII%2BOn63x3lNPK8Pq8hUXzLsOWbQ6G7mzhjqNbofuVVb4a%2Fv4hYKqR8gLEkndKuxnhj3qTuGoPbYDg9PpTWOoaKgOIhaVn5vcSlNL83I938OpicTDfl%2FG5dNuz5bzfqwY8nLLb1eb88u2%2BeksfgbAZl1aJav36N46Df46v6%2FIOm6GVuEdGJJofMhLKfvvLmTszxHy5Qn5%2F%2FEtPwA%3D&RelayState=https%3A%2F%2Facademie.ademe.fr%2Fback%2Fconncheck.php%3Fredirect%3Dhttps%253A%252F%252Facademie.ademe.fr%252Faccueil&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=z3hSPzst0UfWXjWQ2WCtMFnfRRKCvx55xtHrrdGo93rX5a0njqvPqvoQhJLgA0oRwzmB8ciulsCdNISNFG%2Bn0fo33xwEJ126qDGOVaA%2FULNuSZyVq1Wp6atHL1KZIYtkhLB9qFXQ9s5Ux%2BQmZVXq6vjGgSllNDItJZlLdM1OKfd2qx1ZrhjbPy9%2BTSsqsI8Sab0%2BXbcOAoTZRzeo9GK6uKnGTYAtBXem19evO0dkWauRlMtiqP%2BBPSpwbx%2B%2FQk8G9bJwjiDXtHqUwmkH7HPcf26%2FxQS1BnSv3EBZBJ9sBp0iRU%2FKPTj4p8C9mE9qdhx3EbnBmY75H%2BVRMNVPbaf6nA%3D%3D"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -181,27 +151,18 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
+      "data": "max-age=16070400; includeSubDomains; preload",
       "includeSubDomains": true,
-      "maxAge": 31536000,
+      "maxAge": 16070400,
       "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdntag.tarteaucitron.io/load.js?domain=formations.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
