@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 13 Jun 2026 03:31:13 GMT",
+      "date": "Sat, 15 Aug 2026 02:41:47 GMT",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "vary": "Accept-Encoding, Accept",
@@ -22,14 +22,14 @@
       "discourse-no-onebox": "1",
       "cross-origin-opener-policy": "same-origin-allow-popups",
       "cache-control": "no-cache, no-store",
-      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-CZ1sKYBkYt40IfJr7sf28cnzC' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'",
-      "x-request-id": "347962c4-2af7-43fc-9469-f81c9eaebddc",
-      "x-runtime": "0.019970",
+      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-LvdjA9kDtCVV1Gg3hHqtRrasS' 'strict-dynamic' 'wasm-unsafe-eval'; worker-src 'self' blob:; frame-ancestors 'self'; manifest-src 'self'",
+      "x-request-id": "06a5cd7c-39c5-4458-bc8a-4d87b3e8eb70",
+      "x-runtime": "0.042850",
       "x-discourse-trackview": "1",
       "strict-transport-security": "max-age=31536000",
       "set-cookie": [
-        "SESSION-RP=30172170.47873.0000; path=/; Httponly; Secure",
-        "TS014d4b06=0161bc9718bd6a1211b8e2a1188192896ace0b349b54faff2daf7c450307f7a0930b6864eaf1311e7ce4134b158eac8ded173af3a8fae908b7cf972a74ff833b76dbd21546; Path=/; Domain=.gendcom.gendarmerie.interieur.gouv.fr"
+        "SESSION-RP=114058250.47873.0000; path=/; Httponly; Secure",
+        "TS014d4b06=0161bc9718d7219ffbc0ae65f3ac40c75187bddec33de576f171e54ce65bf4f0369343a9fdbbd626f8dbf9864acee00d4fb26ad60be9336d44e467e03fefa52e466a73abf0; Path=/; Domain=.gendcom.gendarmerie.interieur.gouv.fr"
       ],
       "transfer-encoding": "chunked"
     }
@@ -51,8 +51,13 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-cz1skybkyt40ifjr7sf28cnzc'",
-          "'strict-dynamic'"
+          "'nonce-lvdja9kdtcvv1gg3hhqtrrass'",
+          "'strict-dynamic'",
+          "'wasm-unsafe-eval'"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
         ],
         "frame-ancestors": [
           "'self'"
