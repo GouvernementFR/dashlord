@@ -9,20 +9,19 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 11 Jun 2026 03:34:06 GMT",
+      "date": "Sat, 15 Aug 2026 02:40:45 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "x-powered-by": "PHP/8.2.31, PleskLin",
+      "x-powered-by": "PHP/8.2.33, PleskLin",
       "vary": "User-Agent,Accept-Encoding,Referer",
-      "last-modified": "Wed, 10 Jun 2026 20:07:27 GMT",
+      "last-modified": "Sat, 15 Aug 2026 01:05:55 GMT",
       "set-cookie": [
-        "__cf_bm=gNW1OT0t2kBXjqwrIWAMzvoD7S4.gy.I2OxQsbAwS2Y-1781148845.851414-1.0.1.1-WfjSDcv2a0M.lMjXRWNIoo8A4PX5q8Oxv38CLJ8dn58maIJYzLVkjoXkmeA68IL9OTjyNkPGAeOsKfynueLkoXdooyH6Wsi7QaPbY7zo765K41qjv6NblQBkCpiMqoTc; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 11 Jun 2026 04:04:06 GMT"
+        "__cf_bm=TG4hWqbH8FUl3VSM2x6T5feaEnBL0abY1zE08l5kEPg-1786761644.9915895-1.0.1.1-AeLJb6gKkiOw_j8G4JbLcfnbdbrmt4qkrWPl5faQ6gopz0EIsAt5YYPPi6cJ2ObImTlQ63O5OMamX4cyNWWy6PFeUGWnCw2yWPvMmkpUpk4ttjbZzmu_EVU98V0y7n24; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 15 Aug 2026 03:10:45 GMT"
       ],
       "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=504,cfOrigin;dur=452",
-      "cf-ray": "a09d8ede9daa6a03-DFW"
+      "cf-ray": "a2b4d61938132fe3-IAD"
     }
   },
   "tests": {
@@ -45,7 +44,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-06-11T04:04:06.000Z",
+          "expires": "2026-08-15T03:10:45.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -98,14 +97,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
