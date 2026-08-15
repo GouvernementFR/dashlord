@@ -1,33 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "D-",
     "error": null,
-    "score": 45,
+    "score": 25,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 13 Jun 2026 03:27:50 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "22273",
-      "connection": "close",
-      "x-powered-by": "PHP/8.2.30",
-      "set-cookie": [
-        "PHPSESSID=c8a6e9330b50875212b1f7e7b65b5832; path=/; secure"
-      ],
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
-      "pragma": "no-cache",
-      "x-ua-compatible": "IE=edge",
-      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+      "content-length": "22328",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 15 Aug 2026 02:40:22 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "link": "<https://gar.education.fr/wp-json/>; rel=\"https://api.w.org/\", <https://gar.education.fr/wp-json/wp/v2/pages/504>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://gar.education.fr/>; rel=shortlink",
+      "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "PHPSESSID=cb1abec37b82f5310cfc14f66ae029d2; path=/; secure"
+      ],
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "x-frame-options": "sameorigin",
+      "x-powered-by": "PHP/8.2.30",
+      "x-ua-compatible": "IE=edge",
       "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      "connection": "close"
     }
   },
   "tests": {
@@ -66,14 +66,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://gar.education.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://gar.education.fr/",
+      "redirects": false,
       "route": [
-        "http://gar.education.fr/",
-        "https://gar.education.fr/"
+        "http://gar.education.fr/"
       ],
       "statusCode": 200
     },
