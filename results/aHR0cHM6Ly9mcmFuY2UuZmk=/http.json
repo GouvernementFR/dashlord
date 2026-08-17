@@ -10,12 +10,15 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 13 Jun 2026 03:33:02 GMT",
+      "date": "Mon, 17 Aug 2026 02:53:03 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "link": "<https://www.france.fi/wp-json/>; rel=\"https://api.w.org/\""
+      "link": "<https://www.france.fi/wp-json/>; rel=\"https://api.w.org/\", <https://www.france.fi/wp-json/wp/v2/pages/26160>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.france.fi/>; rel=shortlink",
+      "set-cookie": [
+        "_fbp=fb.1.1786935183004.1541033764.AQECAQIB; expires=Sun, 15 Nov 2026 02:53:03 GMT; Max-Age=7776000; path=/; domain=france.fi; secure; SameSite=Lax"
+      ]
     }
   },
   "tests": {
@@ -33,10 +36,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "_fbp": {
+          "domain": "france.fi",
+          "expires": "2026-11-15T02:53:03.000Z",
+          "max-age": 7776000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
