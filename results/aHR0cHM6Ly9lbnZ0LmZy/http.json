@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 70,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 13 Jun 2026 03:27:07 GMT",
+      "date": "Mon, 17 Aug 2026 02:54:15 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -51,16 +51,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://envt.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://envt.fr/",
+      "redirects": false,
       "route": [
-        "http://envt.fr/",
-        "https://envt.fr/"
+        "http://envt.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 404
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
