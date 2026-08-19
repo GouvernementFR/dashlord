@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "B",
     "error": null,
-    "score": 80,
+    "score": 75,
     "statusCode": 200,
     "testsFailed": 1,
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 15 Jun 2026 03:29:31 GMT",
+      "date": "Wed, 19 Aug 2026 02:52:17 GMT",
       "set-cookie": [
         "DW7fa065a06cb74b536c124cfbe56ac6d3=deleted; expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0; path=/; secure; HttpOnly"
       ],
@@ -17,7 +17,6 @@
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
-      "content-security-policy": "base-uri 'self'; connect-src 'self' https://statistiques.sigp.aviation-civile.gouv.fr https://www.stac.aviation-civile.gouv.fr; default-src 'none'; font-src 'self'; img-src 'self' data: https://statistiques.sigp.aviation-civile.gouv.fr https://www.stac.aviation-civile.gouv.fr; media-src 'self'; script-src 'self' 'unsafe-inline' https://statistiques.sigp.aviation-civile.gouv.fr https://www.stac.aviation-civile.gouv.fr; style-src 'self' 'unsafe-inline';",
       "x-ua-compatible": "IE=edge,chrome=1",
       "content-type": "text/html; charset=utf-8",
       "strict-transport-security": "max-age=31536000",
@@ -32,59 +31,13 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "base-uri": [
-          "'self'"
-        ],
-        "connect-src": [
-          "'self'",
-          "https://statistiques.sigp.aviation-civile.gouv.fr",
-          "https://www.stac.aviation-civile.gouv.fr"
-        ],
-        "default-src": [
-          "'none'"
-        ],
-        "font-src": [
-          "'self'"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "https://statistiques.sigp.aviation-civile.gouv.fr",
-          "https://www.stac.aviation-civile.gouv.fr"
-        ],
-        "media-src": [
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://statistiques.sigp.aviation-civile.gouv.fr",
-          "https://www.stac.aviation-civile.gouv.fr"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": true,
-        "insecureBaseUri": false,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
