@@ -1,21 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "openresty/1.29.2.3",
-      "date": "Wed, 17 Jun 2026 03:27:59 GMT",
-      "content-length": "11920",
       "connection": "close",
-      "content-type": "text/html",
-      "cache-control": "private, no-cache, no-store, must-revalidate, max-age=0",
-      "cf-edge-cache": "no-cache"
+      "x-powered-by": "PHP/8.3.33",
+      "x-dns-prefetch-control": "on",
+      "content-type": "text/html; charset=UTF-8",
+      "link": "<https://ifsuede.com/wp-json/>; rel=\"https://api.w.org/\", <https://ifsuede.com/wp-json/wp/v2/pages/21643>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://ifsuede.com/>; rel=shortlink",
+      "etag": "\"628979-1787237618;br\"",
+      "x-litespeed-cache": "hit",
+      "vary": "Accept-Encoding",
+      "content-length": "87030",
+      "date": "Fri, 21 Aug 2026 03:02:36 GMT",
+      "server": "LiteSpeed",
+      "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
     }
   },
   "tests": {
@@ -47,13 +52,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://ifsuede.com/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://ifsuede.com/",
+      "redirects": true,
       "route": [
-        "http://ifsuede.com/"
+        "http://ifsuede.com/",
+        "https://ifsuede.com/"
       ],
       "statusCode": 200
     },
