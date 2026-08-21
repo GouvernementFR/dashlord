@@ -1,27 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D+",
     "error": null,
-    "score": 5,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 15 Jun 2026 03:32:15 GMT",
+      "date": "Fri, 21 Aug 2026 02:57:22 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "last-modified": "Tue, 30 Dec 2025 13:42:58 GMT",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=9,cfOrigin;dur=271",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=O3TXp8UyMmqWVbSx1BYVYZ91hs%2FMw1sjwaR8ALSDd5qTTy4lu3XEseDffnxWrq6KVsF3jH9o0uA7GP%2FHywbooy4z6BbkplLbyKDZXPxI64D3X4Nt5Z9tmYmG7dXU\"}]}",
-      "vary": "Accept-Encoding",
       "server": "cloudflare",
-      "x-turbo-charged-by": "LiteSpeed",
-      "cf-cache-status": "DYNAMIC",
+      "last-modified": "Wed, 01 Jul 2026 16:21:55 GMT",
+      "vary": "Accept-Encoding",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=249,cfOrigin;dur=9",
+      "strict-transport-security": "max-age=31536000",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tQ6PR9hTWjyOSjgMktse2Gs53ykg2zOB43vd1MByS2PF9jiOvAppjP1vsZ4Hdzfs7EvibjtKe68UUyhERQbUqRuiay4XKSfX0I91NIx7%2FKsJeMKiNMMK3%2BWbnYsYtYViug%3D%3D\"}]}",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "cf-ray": "a0be81aab97c2265-IAD",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a2e65eb20d9aabce-IAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -55,12 +55,13 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://ifindia.in/",
-      "redirects": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.ifindia.in/",
+      "redirects": true,
       "route": [
-        "http://ifindia.in/"
+        "http://ifindia.in/",
+        "https://www.ifindia.in/"
       ],
       "statusCode": 200
     },
@@ -75,12 +76,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -90,25 +91,21 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-167619141-1": {
+        "https://akunlibra168.com/buttonlibra/style.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.googletagmanager.com/gtag/js?id=AW-310376211": {
+        "https://code.jquery.com/jquery-3.6.0.min.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.googletagmanager.com/gtag/js?id=UA-226714078-1": {
+        "https://akunlibra168.com/libra168/gimik.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.google.com/recaptcha/api.js?render=6LfU-7cUAAAAAJ6P6El5CtIysSSL6frEG7uuzlgq": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
         }
       }
     },
