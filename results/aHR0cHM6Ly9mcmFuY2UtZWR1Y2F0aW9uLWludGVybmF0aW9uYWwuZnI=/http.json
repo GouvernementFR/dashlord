@@ -1,32 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "F",
     "error": null,
-    "score": 55,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "content-type": "text/html; charset=UTF-8",
+      "cache-control": "no-store",
+      "set-cookie": [
+        "techaro.lol-anubis-auth=; Path=/; Expires=Fri, 21 Aug 2026 02:56:28 GMT; Max-Age=0; Secure; SameSite=None",
+        "techaro.lol-anubis-cookie-verification=01a02240-82dd-740b-a076-8ee848384fb3; Path=/; Expires=Fri, 21 Aug 2026 03:27:28 GMT; Secure; SameSite=None"
+      ],
+      "date": "Fri, 21 Aug 2026 02:57:28 GMT",
+      "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
-      "cache-control": "max-age=600, public",
-      "date": "Mon, 15 Jun 2026 03:05:49 GMT",
-      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Mon, 15 Jun 2026 03:05:48 GMT",
-      "etag": "W/\"1781492748\"",
-      "vary": "Cookie",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
       "x-boost-step1": "haproxy-external; ssl-frontend; frontend=external-11-143",
       "x-boost-server": "ebizproduction-lb02",
-      "x-request-id": "fdb8d549-4216-4c0d-8f96-cac08bdf246a",
+      "x-request-id": "181ddf7e-a616-4fdb-bf99-407ddd2fe59f",
       "connection": "close"
     }
   },
@@ -45,10 +38,28 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "techaro.lol-anubis-auth": {
+          "domain": "france-education-international.fr",
+          "expires": "2026-08-21T02:56:28.000Z",
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "techaro.lol-anubis-cookie-verification": {
+          "domain": "france-education-international.fr",
+          "expires": "2026-08-21T03:27:28.000Z",
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -59,14 +70,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://france-education-international.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://france-education-international.fr/",
+      "redirects": false,
       "route": [
-        "http://france-education-international.fr/",
-        "https://france-education-international.fr/"
+        "http://france-education-international.fr/"
       ],
       "statusCode": 200
     },
@@ -99,17 +109,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
