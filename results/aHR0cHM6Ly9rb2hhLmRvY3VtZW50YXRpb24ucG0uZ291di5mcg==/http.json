@@ -10,11 +10,11 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 17 Jun 2026 03:29:10 GMT",
+      "date": "Fri, 21 Aug 2026 02:59:51 GMT",
       "content-type": "text/html",
-      "transfer-encoding": "chunked",
+      "content-length": "162",
       "connection": "close",
-      "strict-transport-security": "max-age=63072000"
+      "strict-transport-security": "max-age=63072000; includeSubDomains"
     }
   },
   "tests": {
@@ -71,8 +71,8 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
       "maxAge": 63072000,
       "preload": false,
       "preloaded": false
