@@ -1,32 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "F",
     "error": null,
-    "score": 50,
-    "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 10,
+    "statusCode": 403,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 17 Jun 2026 03:28:04 GMT",
-      "content-type": "text/html; charset=utf-8",
+      "date": "Fri, 21 Aug 2026 02:58:06 GMT",
+      "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "vary": "Accept-Encoding, X-UA-Device, Accept",
-      "x-rid": "42287629a7b58353ab686a62a6b511ed",
-      "x-xss-protection": "1; mode=block",
-      "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=15552001",
-      "x-tumblr-user": "minagri-infographies",
-      "x-tumblr-pixel-0": "https://px.srvcs.tumblr.com/impixu?T=1781666883&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2luZm9ncmFwaGllcy5hZ3JpY3VsdHVyZS5nb3V2LmZyLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyJ9&U=MLNIJEMOIC&K=694727f9c5423f6663779414e4f78f137c31468bf286be0eeba9e834aff17aea--https://px.srvcs.tumblr.com/impixu?T=1781666883&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9pbmZvZ3JhcGhpZXMuYWdyaWN1bHR1cmUuZ291di5mci8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii8iLCJwb3N0cyI6W3sicG9zdGlkIjoiNjY0MzczMTc5MjM1NTY1NTY4IiwiYmxvZ2lkIjoxODI3MDE1",
-      "x-tumblr-pixel-1": "NzMsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiOTk1NTcwNzQ1MjIiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiI3MzAzNDk3NTUxNjg4NDk5MjAiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiIxMTM4NzY0OTg1NTIiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiI2NDUwODcyNzEwNzc0MjkyNDgiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiIxNzU1NzY5MjMwMzciLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiIxMTIxMzQ5OTIzMzciLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM3",
-      "x-tumblr-pixel-2": "0seyJwb3N0aWQiOiIxNTUzODYzMjg4NTIiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiI4MTA4NzU1Njg3NzA5MDgxNjAiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM30seyJwb3N0aWQiOiI4MTA2ODY2NDEwOTMxMzIyODgiLCJibG9naWQiOjE4MjcwMTU3Mywic291cmNlIjozM31dfQ==&U=ACEFKEDGOH&K=526c3b02edb6e023ce71d48415466bdf4b1999d3de84aef61d002083f362d3a5",
-      "x-tumblr-pixel": "3",
-      "link": "<https://64.media.tumblr.com/3e9d7c41c4d84f29e25aeebd5de1d177/2d36a582e6750d80-a7/s128x128u_c1/8f97b21df5cb000a6c5b71cfe56a6c52709a2d0c.pnj>; rel=icon",
-      "x-ua-compatible": "IE=Edge,chrome=1",
-      "x-ua-device": "desktop",
+      "vary": "Accept-Encoding",
+      "set-cookie": [
+        "_hcc=N2JlMjU3NzA4ZmFiOTUwZDY4OTg5MGVkZTBmMzE2M2QxNTk5Y2U2MThhM2I0Yzk5ODYyOTdlZDUwYzUwOGI2Ng==:MjAuNDkuMTMuMTc2fDE3ODcyODEwODZ8SlJqRntfamNOal1kSVh4XXhTTVhWWFJcekdjd0Nma298MQ==; Max-Age=30; Path=/"
+      ],
       "x-nc": "MISS"
     }
   },
@@ -44,18 +35,25 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "_hcc": {
+          "domain": "infographies.agriculture.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "https://http-observatory.security.mozilla.org"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -68,7 +66,7 @@
         "http://infographies.agriculture.gouv.fr/",
         "https://infographies.agriculture.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -81,61 +79,28 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=15552001",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 15552001,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202625": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.tumblr.com/e6lc7yi/aTlnbzy4q/headliner-plugins.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.tumblr.com/e6lc7yi/cyanbzy54/headliner-app.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://securepubads.g.doubleclick.net/tag/js/gpt.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=556c8cff1980b8ff6446e0be7b9365a1": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
