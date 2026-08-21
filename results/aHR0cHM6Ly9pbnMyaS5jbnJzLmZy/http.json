@@ -1,138 +1,39 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "C",
     "error": null,
-    "score": 80,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 14 Jun 2026 08:09:39 GMT",
-      "cache-control": "max-age=86400, public",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "content-security-policy": "default-src 'self'; script-src 'self' *.axept.io *.cegedim.cloud player.ausha.co *.cloudflare.com cdn.mathjax.org v.calameo.com *.dailymotion.com *.vimeo.com 'unsafe-eval' webpack: 'unsafe-inline' stats-cnrs-preprod.cegedim.cloud www.statistiques.cnrs.fr statistiques.cnrs.fr; object-src 'none'; style-src 'self' 'unsafe-inline' *.axept.io *.cloudflare.com cdnjs.cloudflare.com fonts.googleapis.com; img-src 'self' axeptio.imgix.net favicons.axept.io *.openstreetmap.org data:; media-src 'self'; frame-src 'self' player.ausha.co *.dailymotion.com *.vimeo.com v.calameo.com *.youtube.com mediavideo.cnrs.fr webcast.in2p3.fr *.scoop.it *.genial.ly; frame-ancestors 'self'; child-src 'self'; font-src 'self' fonts.gstatic.com *.axept.io; connect-src 'self' *.axept.io www.statistiques.cnrs.fr statistiques.cnrs.fr *.cegedim.cloud; report-uri /report-csp-violation; upgrade-insecure-requests",
-      "last-modified": "Sun, 14 Jun 2026 08:09:37 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "age": "69747",
-      "accept-ranges": "bytes",
-      "x-cache": "HIT",
-      "x-cache-hits": "854",
-      "connection": "close",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
       "set-cookie": [
-        "TSc1dc6a3a029=087dc22938ab280079ee803ec764b42bf66d96a67522cbc49439c0d4914996cd61b057a140027e5dff03dbe7fd7f1c97; Secure; Max-Age=30; Path=/",
-        "TSd85d6352027=087dc22938ab200050ae9d33635ca293751e70dc1802e0adfc148f0e787d0508dcffd06f69391f4708ef3c02851130002f7f531096b5a799cae46ee67dffdf00440d72c792b58c2fee5e938fe5143117808a7b055279a7d49d55b926cfe58160; Secure; Path=/"
+        "TSc1dc6a3a029=087dc22938ab280045451925996babbf45bbf58d9c496e01d1d0b2c3dad5f735c69e72a55856568e018b39bdf4766683; Secure; Max-Age=30; Path=/",
+        "TSc1dc6a3a078=087dc22938ab20009dd0d21ba84e23f2a321c4131cf9e1b74b09064f3bce7b11c68477624d16c3310826e1adf1184001f16ba7a60d883d66cb58a9009febacb650b3f35b64757ceb8620cee551fbfe4bb453151ab19aa4604b7404bfe42e467f70d5a42b68925a158d31f9f823670ca0bc5fec77159963e1e2ceed70e7780fa17721c6211ee8a76aaef3be1eeec82acb5f1c45684bd59489c4d18e452ed6f5f24401e1151cf7319ceeaba223b1f2753ae3ba96d9cd29eb5bea6e0d57c1c6b5704ead8bcae702cfa4ce0ebc316dc62fe676e2dfb7d7f33540428bbc978ca8271dc10a3f3911396abb5c540a56c6c2458dd97c9c7ca02f2b6064c2e78c46e5558b9e3cb1d2b27347432a47bc68d7c039f2316ff081eda330df9ce7b512e6f37a4a2669eb025ae9c03de76cfe87dccef25148f5e3a7014d701ad35434989a48bb9eada9e8c730b82144859f11e68c20c590d3fdc73b254296114967de3d5ecbdf05106bc7c549e18b6891c1469a4d2b5c13; Secure; Max-Age=30; Path=/",
+        "TSd85d6352027=087dc22938ab200098b9cd5841446e0af70db0b9efa21381dc615976e283a8f3f437ca94579de405088aa6d1881130001cef67ed51ad8c50d8894fb1ccd16c0bca3fdd762761a0e2c09cc8546e77f74c6e2fd162502e356701638e473fbc7c53; Secure; Path=/"
       ],
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6877",
+      "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "*.axept.io",
-          "*.cegedim.cloud",
-          "*.cloudflare.com",
-          "*.dailymotion.com",
-          "*.vimeo.com",
-          "cdn.mathjax.org",
-          "player.ausha.co",
-          "statistiques.cnrs.fr",
-          "stats-cnrs-preprod.cegedim.cloud",
-          "v.calameo.com",
-          "webpack:",
-          "www.statistiques.cnrs.fr"
-        ],
-        "object-src": [
-          "'none'"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "*.axept.io",
-          "*.cloudflare.com",
-          "cdnjs.cloudflare.com",
-          "fonts.googleapis.com"
-        ],
-        "img-src": [
-          "'self'",
-          "*.openstreetmap.org",
-          "axeptio.imgix.net",
-          "data:",
-          "favicons.axept.io"
-        ],
-        "media-src": [
-          "'self'"
-        ],
-        "frame-src": [
-          "'self'",
-          "*.dailymotion.com",
-          "*.genial.ly",
-          "*.scoop.it",
-          "*.vimeo.com",
-          "*.youtube.com",
-          "mediavideo.cnrs.fr",
-          "player.ausha.co",
-          "v.calameo.com",
-          "webcast.in2p3.fr"
-        ],
-        "frame-ancestors": [
-          "'self'"
-        ],
-        "child-src": [
-          "'self'"
-        ],
-        "font-src": [
-          "'self'",
-          "*.axept.io",
-          "fonts.gstatic.com"
-        ],
-        "connect-src": [
-          "'self'",
-          "*.axept.io",
-          "*.cegedim.cloud",
-          "statistiques.cnrs.fr",
-          "www.statistiques.cnrs.fr"
-        ],
-        "report-uri": [
-          "/report-csp-violation"
-        ],
-        "upgrade-insecure-requests": [
-          "'none'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -141,14 +42,21 @@
       "scoreModifier": 0,
       "data": {
         "TSc1dc6a3a029": {
-          "domain": "www.ins2i.cnrs.fr",
+          "domain": "ins2i.cnrs.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TSc1dc6a3a078": {
+          "domain": "ins2i.cnrs.fr",
           "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
         },
         "TSd85d6352027": {
-          "domain": "www.ins2i.cnrs.fr",
+          "domain": "ins2i.cnrs.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -168,13 +76,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.ins2i.cnrs.fr/fr",
+      "destination": "https://ins2i.cnrs.fr/",
       "redirects": true,
       "route": [
         "http://ins2i.cnrs.fr/",
-        "https://ins2i.cnrs.fr/",
-        "https://www.ins2i.cnrs.fr/",
-        "https://www.ins2i.cnrs.fr/fr"
+        "https://ins2i.cnrs.fr/"
       ],
       "statusCode": 200
     },
@@ -189,12 +95,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -215,8 +121,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
