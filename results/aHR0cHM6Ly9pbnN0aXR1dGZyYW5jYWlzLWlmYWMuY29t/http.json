@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 0,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 17 Jun 2026 03:10:42 GMT",
+      "date": "Sun, 23 Aug 2026 02:32:03 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -32,19 +32,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "o2s-chl": {
-          "domain": "institutfrancais-ifac.com",
-          "expires": "2026-06-18T03:10:42.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -56,13 +47,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://institutfrancais-ifac.com/",
       "redirects": true,
       "route": [
-        "http://institutfrancais-ifac.com/",
         "http://institutfrancais-ifac.com/",
         "https://institutfrancais-ifac.com/"
       ],
