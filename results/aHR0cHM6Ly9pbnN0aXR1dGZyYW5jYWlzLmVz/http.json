@@ -1,28 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 0,
-    "statusCode": 202,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "score": 25,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 17 Jun 2026 03:29:18 GMT",
-      "content-type": "text/html",
-      "content-length": "167",
+      "date": "Sun, 23 Aug 2026 02:51:02 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "sg-captcha": "challenge",
-      "x-robots-tag": "noindex",
-      "set-cookie": [
-        "nevercache-b39818=Y;Max-Age=-1"
-      ],
-      "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-      "cache-control": "no-store,no-cache,max-age=0",
+      "vary": "Accept-Encoding",
+      "x-cache-enabled": "True",
+      "link": "<https://www.institutfrancais.es/wp-json/>; rel=\"https://api.w.org/\", <https://www.institutfrancais.es/wp-json/wp/v2/pages/281>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.institutfrancais.es/>; rel=shortlink",
+      "x-httpd-modphp": "1",
+      "access-control-allow-origin": "*",
       "host-header": "8441280b0c35cbc1147f8ba998a563a7",
-      "x-proxy-cache-info": "DT:1"
+      "x-proxy-cache": "HIT"
     }
   },
   "tests": {
@@ -39,37 +37,32 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "nevercache-b39818": {
-          "domain": "institutfrancais.es",
-          "max-age": -1,
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://institutfrancais.es/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.institutfrancais.es/",
+      "redirects": true,
       "route": [
-        "http://institutfrancais.es/"
+        "http://institutfrancais.es/",
+        "https://institutfrancais.es/",
+        "https://www.institutfrancais.es/"
       ],
-      "statusCode": 202
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -93,10 +86,27 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://pdcc.gdpr.es/pdcc.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://plausible.io/js/plausible.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/api.js?render=6LcOHqsZAAAAAE7FDZovYe34iicIeZlhN0wBMSwd&ver=3.0": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
