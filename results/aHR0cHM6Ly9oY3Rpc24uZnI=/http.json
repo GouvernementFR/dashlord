@@ -3,26 +3,23 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 20,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 17 Jun 2026 03:28:00 GMT",
-      "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
-      "content-type": "text/html; charset=utf-8",
-      "composed-by": "SPIP @ www.spip.net",
-      "x-spip-cache": "86400",
-      "last-modified": "Wed, 17 Jun 2026 03:28:00 GMT",
-      "set-cookie": [
-        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
-      ],
-      "vary": "Cookie,Accept-Encoding",
-      "cache-control": "private",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "date": "Sun, 23 Aug 2026 02:50:51 GMT",
+      "server": "",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "last-modified": "Thu, 20 Aug 2026 16:53:56 GMT",
+      "etag": "\"8ec1-6597d5d9d7917-gzip\"",
+      "vary": "Accept-Encoding",
+      "content-length": "6214",
+      "content-type": "text/html",
+      "content-language": "fr"
     }
   },
   "tests": {
@@ -39,16 +36,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "SRV": {
-          "domain": "www.hctisn.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -95,7 +86,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
