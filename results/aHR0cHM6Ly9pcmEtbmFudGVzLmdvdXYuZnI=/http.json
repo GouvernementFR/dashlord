@@ -1,19 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 30,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 17 Jun 2026 03:34:43 GMT",
-      "server": "Apache/2.4.67 (Debian)",
+      "date": "Sun, 23 Aug 2026 02:50:51 GMT",
+      "server": "Apache/2.4.68 (Debian)",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "permissions-policy": "",
       "vary": "Accept-Encoding,Cookie",
-      "cache-control": "max-age=3, must-revalidate",
-      "content-length": "37165",
+      "link": "<https://www.ira-nantes.gouv.fr/index.php/wp-json/>; rel=\"https://api.w.org/\", <https://www.ira-nantes.gouv.fr/index.php/wp-json/wp/v2/pages/8732>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.ira-nantes.gouv.fr/>; rel=shortlink",
+      "content-length": "37295",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -58,10 +63,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -84,17 +89,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
