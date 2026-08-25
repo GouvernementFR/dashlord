@@ -1,24 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B",
     "error": null,
-    "score": 30,
-    "statusCode": 403,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 70,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "content-type": "text/html",
-      "transfer-encoding": "chunked",
+      "content-length": "6706",
       "connection": "close",
-      "date": "Fri, 19 Jun 2026 07:19:44 GMT",
-      "vary": "Accept-Encoding",
-      "cache-control": "no-cache",
-      "x-cache": "Error from cloudfront",
-      "via": "1.1 a81e9bdf6a788f0d1c6f46cc56e7121e.cloudfront.net (CloudFront)",
-      "x-amz-cf-pop": "DFW56-P7",
-      "x-amz-cf-id": "z8vQzaIjV2t0rJ28A9gR9Rd8xmsOhTM52ABthMAe1gi2j2sYHT5dwA=="
+      "date": "Tue, 25 Aug 2026 02:52:10 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "strict-transport-security": "max-age=63072000; includeSubdomains;",
+      "vary": "x-webfence-id,Accept-Encoding",
+      "last-modified": "Wed, 08 Jul 2026 09:12:42 GMT",
+      "etag": "\"60ca-65615e8e7e1b2-gzip\"",
+      "accept-ranges": "bytes",
+      "x-cache": "Miss from cloudfront",
+      "via": "1.1 6670ee9e0650f7e00fb4790cba91ee96.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "PHX50-P1",
+      "x-amz-cf-id": "xJXNRJVCnypX8tt_3F76J2_0BlwNAUlFM0yrxAvRk6s-kVt4omARPQ=="
     }
   },
   "tests": {
@@ -59,7 +63,7 @@
         "http://interop.esante.gouv.fr/",
         "https://interop.esante.gouv.fr/"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -72,12 +76,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubdomains;",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
@@ -97,10 +101,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
