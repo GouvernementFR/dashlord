@@ -4,16 +4,22 @@
     "grade": "D",
     "error": null,
     "score": 30,
-    "statusCode": 403,
+    "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:19:40 GMT",
-      "server": "Apache",
-      "content-length": "202",
+      "date": "Tue, 25 Aug 2026 02:52:06 GMT",
+      "server": "Apache/2.4.37 (Red Hat Enterprise Linux)",
+      "cache-control": "no-store, max-age=0",
+      "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "sympa_session=47539949997535; path=/; secure; HttpOnly"
+      ],
+      "via": "1.1 liste-diff.education.gouv.fr",
+      "x-rproxy-isi": "rp2ngextdu",
       "connection": "close",
-      "content-type": "text/html; charset=iso-8859-1"
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -31,9 +37,17 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "sympa_session": {
+          "domain": "liste-diff.education.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -48,13 +62,14 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://liste-diff.education.gouv.fr/",
+      "destination": "https://liste-diff.education.gouv.fr/sympa",
       "redirects": true,
       "route": [
         "http://liste-diff.education.gouv.fr/",
-        "https://liste-diff.education.gouv.fr/"
+        "https://liste-diff.education.gouv.fr/",
+        "https://liste-diff.education.gouv.fr/sympa"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -79,7 +94,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
