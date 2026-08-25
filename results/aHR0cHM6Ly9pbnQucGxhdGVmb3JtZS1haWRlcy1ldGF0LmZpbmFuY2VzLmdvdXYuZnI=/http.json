@@ -9,12 +9,12 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:19:38 GMT",
+      "date": "Tue, 25 Aug 2026 02:51:59 GMT",
       "content-type": "text/html",
       "content-length": "1739",
       "connection": "close",
-      "last-modified": "Wed, 03 Jun 2026 15:06:16 GMT",
-      "etag": "\"6a2042e8-6cb\"",
+      "last-modified": "Tue, 23 Jun 2026 09:43:30 GMT",
+      "etag": "\"6a3a5542-6cb\"",
       "accept-ranges": "bytes",
       "x-frame-options": "DENY",
       "x-content-type-options": "nosniff",
@@ -94,15 +94,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://int.plateforme-aides-etat.finances.gouv.fr/",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://int.plateforme-aides-etat.finances.gouv.fr/",
-        "https://int.plateforme-aides-etat.finances.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
