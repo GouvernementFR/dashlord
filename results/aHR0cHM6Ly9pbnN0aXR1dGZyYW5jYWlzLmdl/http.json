@@ -9,16 +9,19 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 17 Jun 2026 03:29:10 GMT",
+      "date": "Tue, 25 Aug 2026 02:50:49 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "link": "<https://institutfrancais.ge/wp-json/>; rel=\"https://api.w.org/\", <https://institutfrancais.ge/wp-json/wp/v2/pages/273>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://institutfrancais.ge/>; rel=shortlink",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=P5l5SOc2%2BiCYsDLPrhzyJuvWgGGnZBmYzeo70C7cU3h959xA1lv3r1Aq7ZdvxIpz8lxn0x9sqcKRNMLEO%2Bm%2BsinRo0LRqHI%2BuN7cnmxpBtH7CJyYqAp6R3Gu%2FlwQfZ5hzlgAT%2FEU\"}]}",
+      "set-cookie": [
+        "pvc_visits[0]=%7B%22version%22%3A1%2C%22session_id%22%3A%22aba4fa84-f3e4-4b6e-bbe6-f5979039a1d1%22%2C%22started_at%22%3A1787626249%2C%22expires_at%22%3A1787669449%2C%22visited%22%3A%7B%22post%22%3A%5B273%5D%7D%7D; expires=Tue, 25-Aug-2026 14:50:49 GMT; Max-Age=43200; path=/; secure; SameSite=LAX"
+      ],
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Vt%2FY%2Bqps7Vc4hSkGB%2FFEpCfvirgAlvA3oxIqf2ek8jeZ%2F9xwwCoYYCUQEbuYWENuG5qaTXVEs8%2BqZP1h9I8FbkOASa3fQmsSm65LbKJp3LILQAg1%2BIbtYyRLJDAkYqhb2uaPiBA5\"}]}",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a0cef7e1feb1f45a-IAD",
+      "cf-ray": "a3074a937d74f92b-ORD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -37,10 +40,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "pvc_visits[0]": {
+          "domain": "institutfrancais.ge",
+          "expires": "2026-08-25T14:50:49.000Z",
+          "max-age": 43200,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
