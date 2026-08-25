@@ -1,64 +1,113 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B",
     "error": null,
-    "score": 5,
+    "score": 70,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 17 Jun 2026 03:33:19 GMT",
+      "server": "nginx",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "set-cookie": [
-        "PHPSESSID=5n9475tae91kghg83dmf28aqkh; expires=Wed, 17 Jun 2026 04:33:18 GMT; Max-Age=3600; path=/; domain=imagesdefense.gouv.fr; secure; HttpOnly; SameSite=Lax"
-      ],
-      "content-security-policy-report-only": "font-src https://fonts.gstatic.com https://ws.colissimo.fr payment.payline.com payment-2.payline.com homologation-payment.payline.com homologation-payment-2.payline.com payment.cdn.payline.com homologation-payment.cdn.payline.com maxcdn.bootstrapcdn.com data: 'self' 'unsafe-inline'; form-action geostag.cardinalcommerce.com geo.cardinalcommerce.com 1eafstag.cardinalcommerce.com 1eaf.cardinalcommerce.com centinelapistag.cardinalcommerce.com centinelapi.cardinalcommerce.com https://plumrocket.com 'self' 'unsafe-inline'; frame-ancestors 'self'; frame-src fast.amc.demdex.net *.adobe.com bid.g.doubleclick.net *.youtube.com *.youtube-nocookie.com geostag.cardinalcommerce.com geo.cardinalcommerce.com 1eafstag.cardinalcommerce.com 1eaf.cardinalcommerce.com centinelapistag.cardinalcommerce.com centinelapi.cardinalcommerce.com player.vimeo.com https://www.google.com/recaptcha/ https://plumrocket.com https://www.youtube.com https://form.typeform.com payment.payline.com payment-2.payline.com homologation-payment.payline.com homologation-payment-2.payline.com payment.cdn.payline.com homologation-payment.cdn.payline.com 'self' 'unsafe-inline'; img-src assets.adobedtm.com amcglobal.sc.omtrdc.net dpm.demdex.net cm.everesttech.net *.adobe.com widgets.magentocommerce.com data: googleads.g.doubleclick.net www.google.com bid.g.doubleclick.net www.googleadservices.com www.google-analytics.com analytics.google.com www.googletagmanager.com *.vimeocdn.com i.ytimg.com *.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://ws.colissimo.fr https://*.tile.openstreetmap.fr https://*.onyourmap.com https://google.fr payment.payline.com payment-2.payline.com homologation-payment.payline.com homologation-payment-2.payline.com payment.cdn.payline.com homologation-payment.cdn.payline.com data: 'self' 'unsafe-inline'; script-src assets.adobedtm.com *.adobe.com googleads.g.doubleclick.net www.googleadservices.com www.google-analytics.com analytics.google.com www.googletagmanager.com geostag.cardinalcommerce.com 1eafstag.cardinalcommerce.com geoapi.cardinalcommerce.com 1eafapi.cardinalcommerce.com songbird.cardinalcommerce.com includestest.ccdc02.com s.ytimg.com www.googleapis.com vimeo.com www.vimeo.com *.vimeocdn.com *.youtube.com https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://maps.googleapis.com https://www.google.com https://www.gstatic.com https://ws.colissimo.fr https://api.mapbox.com https://*.typeform.com payment.payline.com payment-2.payline.com homologation-payment.payline.com homologation-payment-2.payline.com payment.cdn.payline.com homologation-payment.cdn.payline.com *.googletagmanager.com 'self' matomo.thewetailers.fr analytics.ecpad.fr https://matomo.thewetailers.fr https://analytics.ecpad.fr 'self' 'unsafe-inline' 'unsafe-eval'; style-src *.adobe.com https://fonts.googleapis.com https://ws.colissimo.fr https://api.mapbox.com https://*.typeform.com payment.payline.com payment-2.payline.com homologation-payment.payline.com homologation-payment-2.payline.com payment.cdn.payline.com homologation-payment.cdn.payline.com 'self' 'unsafe-inline'; object-src 'self' 'unsafe-inline'; media-src *.adobe.com 'self' 'unsafe-inline'; manifest-src 'self' 'unsafe-inline'; connect-src dpm.demdex.net amcglobal.sc.omtrdc.net www.googleadservices.com www.google-analytics.com analytics.google.com www.googletagmanager.com vimeo.com geostag.cardinalcommerce.com geo.cardinalcommerce.com 1eafstag.cardinalcommerce.com 1eaf.cardinalcommerce.com centinelapistag.cardinalcommerce.com centinelapi.cardinalcommerce.com https://ws.colissimo.fr https://maps.googleapis.com https://nominatim.openstreetmap.org https://*.onyourmap.com https://*.mapbox.com payment.payline.com payment-2.payline.com homologation-payment.payline.com homologation-payment-2.payline.com payment.cdn.payline.com homologation-payment.cdn.payline.com maps.googleapis.com https://matomo.thewetailers.fr https://analytics.ecpad.fr analytics.ecpad.fr 'self' 'unsafe-inline'; child-src http: https: blob: 'self' 'unsafe-inline'; default-src 'self' 'unsafe-inline' 'unsafe-eval'; base-uri 'self' 'unsafe-inline';",
+      "cache-control": "max-age=86400, private",
+      "date": "Tue, 25 Aug 2026 02:51:13 GMT",
+      "x-arko-cache-strategy": "etag",
+      "x-arko-version": "8.135",
+      "etag": "W/\"90100a4c31e78f34-f942a0eeccbc2821aa7c5774d19f428100a56678a07df5f1811bcf00dfc16f7d-ec55cbf8be745120bcfd6bf9320ed73c-8.135-1--1\"",
+      "content-security-policy": "base-uri 'self'; default-src *; img-src * 'self' data: https: blob:; script-src * 'self' data: 'unsafe-inline'; worker-src 'self' blob: 'self'; object-src 'none'; frame-src * data: blob:; child-src * data: blob:; style-src * 'self' 'unsafe-inline'; font-src * data: 'self'; frame-ancestors 'self'",
+      "x-fastcgi-cache": "MISS",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
-      "x-frame-options": "SAMEORIGIN",
-      "pragma": "no-cache",
-      "expires": "-1",
-      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
-      "cf-cache-status": "DYNAMIC",
-      "server": "cloudflare",
-      "cf-ray": "a0cefdf6dd1bddae-DFW",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "permissions-policy": "fullscreen=*, picture-in-picture=*, idle-detection=*",
+      "referrer-policy": "strict-origin-when-cross-origin"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented-but-reporting-enabled",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "base-uri": [
+          "'self'"
+        ],
+        "default-src": [
+          "*"
+        ],
+        "img-src": [
+          "'self'",
+          "*",
+          "blob:",
+          "data:",
+          "https:"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*",
+          "data:"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "frame-src": [
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "child-src": [
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*"
+        ],
+        "font-src": [
+          "'self'",
+          "*",
+          "data:"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "PHPSESSID": {
-          "domain": "imagesdefense.gouv.fr",
-          "expires": "2026-06-17T04:33:18.000Z",
-          "httponly": true,
-          "max-age": 3600,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -69,44 +118,45 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://imagesdefense.gouv.fr/",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://archives.ecpad.fr/archives/archives",
       "redirects": true,
       "route": [
         "http://imagesdefense.gouv.fr/",
-        "https://imagesdefense.gouv.fr/"
+        "https://archives.ecpad.fr/",
+        "https://archives.ecpad.fr/archives/archives"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
-        "//maps.googleapis.com/maps/api/js?key=AIzaSyA4COVy_9_7t_Q98YjZ24UpmsTdRMccV9Q": {
+        "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?flags=gated&features=IntersectionObserver%2CIntersectionObserverEntry%2CURL%2CSymbol%2Ces2016%2CNodeList.prototype.forEach%2Cfetch%2CFunction.prototype.name&callback=onPolyfill": {
           "crossorigin": null,
           "integrity": null
         }
@@ -122,9 +172,9 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
