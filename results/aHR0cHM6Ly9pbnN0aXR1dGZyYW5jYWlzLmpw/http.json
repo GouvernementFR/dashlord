@@ -1,21 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
-    "statusCode": 200,
+    "score": 10,
+    "statusCode": 403,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 17 Jun 2026 03:38:11 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 25 Aug 2026 02:50:49 GMT",
+      "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "vary": "Accept-Encoding, Accept-Encoding,Cookie",
-      "cache-control": "max-age=3, must-revalidate"
+      "vary": "Accept-Encoding",
+      "last-modified": "Mon, 07 Aug 2023 03:29:06 GMT",
+      "etag": "W/\"b1b-6024cd945b1e2\""
     }
   },
   "tests": {
@@ -47,16 +48,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://institutfrancais.jp/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://institutfrancais.jp/",
+      "redirects": false,
       "route": [
-        "http://institutfrancais.jp/",
-        "https://institutfrancais.jp/"
+        "http://institutfrancais.jp/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -80,15 +80,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=GT-T567VB4": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
