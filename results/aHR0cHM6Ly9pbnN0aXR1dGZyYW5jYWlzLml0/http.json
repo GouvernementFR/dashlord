@@ -10,17 +10,17 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 19 Jun 2026 07:19:54 GMT",
+      "date": "Thu, 27 Aug 2026 04:06:25 GMT",
       "content-type": "text/html; charset=utf-8",
       "x-powered-by": "PHP/7.4.33",
       "x-drupal-cache": "HIT",
-      "etag": "\"1781853184-1\"",
+      "etag": "\"1787800428-1\"",
       "content-language": "it",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-generator": "Drupal 7 (http://drupal.org)",
       "cache-control": "public, max-age=0",
-      "last-modified": "Fri, 19 Jun 2026 07:13:04 GMT",
+      "last-modified": "Thu, 27 Aug 2026 03:13:48 GMT",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -58,13 +58,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.institutfrancais.it/",
       "redirects": true,
       "route": [
         "http://institutfrancais.it/",
-        "http://www.institutfrancais.it/",
         "https://www.institutfrancais.it/"
       ],
       "statusCode": 200
@@ -81,7 +80,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented-no-https",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
