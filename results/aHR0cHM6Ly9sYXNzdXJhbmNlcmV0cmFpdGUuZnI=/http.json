@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B+",
     "error": null,
-    "score": 30,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:28:53 GMT",
+      "date": "Thu, 27 Aug 2026 04:05:52 GMT",
       "set-cookie": [
-        "JSESSIONID=AC7F8924709CD7552C164931BCCDB090; Path=/; Secure; HttpOnly"
+        "JSESSIONID=D47A433A7ECF7FD477E08E86CAB28FDB; Path=/; Secure; HttpOnly"
       ],
       "pragma": "no-cache",
       "vary": "accept-encoding",
@@ -219,15 +219,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//tag.aticdn.net/602952/smarttag.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
