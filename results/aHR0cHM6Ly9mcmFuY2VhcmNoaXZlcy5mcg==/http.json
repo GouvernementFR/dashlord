@@ -1,23 +1,29 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B-",
     "error": null,
-    "score": 5,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:29:58 GMT",
-      "set-cookie": [
-        "bot_mitigation_cookie=KYF4JBOASYUOA5SYXOMPRAN6NAZYLGY2FDA7GHAOSPL6DIUCXMYW67C2AAOALXNX4DGQUJ4DVQK74D4FRKDQU5UVQGYRWRU3NV5PUNBFPO6N4IS2TM3Q====; Path=/; SameSite=lax"
-      ],
-      "content-type": "text/html",
-      "cache-control": "no-store",
-      "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C2-e09c2999-3aca3add",
+      "accept-ranges": "bytes",
+      "age": "48859",
+      "content-language": "fr",
+      "content-length": "9887",
+      "content-type": "text/html;charset=UTF-8",
+      "date": "Thu, 27 Aug 2026 04:05:52 GMT",
+      "server": "hide",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "vary": "Accept-Language, Accept-Encoding",
+      "via": "1.1 varnish (Varnish/6.5)",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-storage": "default",
+      "x-varnish": "766771213 85427069",
+      "x-xss-protection": "1",
       "connection": "close"
     }
   },
@@ -35,17 +41,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "bot_mitigation_cookie": {
-          "domain": "francearchives.gouv.fr",
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -79,35 +78,64 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=francearchives.gouv.fr&uuid=cb6c31eaf0d65c6f8768c5734dd1a8df6bfd7780": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://francearchives.gouv.fr/data/70cdd41665159ff238032a1ec3f11d5b/jquery-3.1.1.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://francearchives.gouv.fr/data/70cdd41665159ff238032a1ec3f11d5b/jquery-typeahead/jquery.typeahead.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://francearchives.gouv.fr/data/70cdd41665159ff238032a1ec3f11d5b/cubes.pnia_portal.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://francearchives.gouv.fr/data/70cdd41665159ff238032a1ec3f11d5b/bundle-portal-francearchives.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://francearchives.gouv.fr/data/70cdd41665159ff238032a1ec3f11d5b/dsfr/dsfr.module.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://francearchives.gouv.fr/data/70cdd41665159ff238032a1ec3f11d5b/dsfr/dsfr.nomodule.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "DENY"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
