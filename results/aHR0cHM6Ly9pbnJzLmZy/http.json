@@ -3,19 +3,19 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 5,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:20:59 GMT",
+      "date": "Thu, 27 Aug 2026 04:06:40 GMT",
       "server": "Apache",
       "x-magnolia-registration": "Registered",
       "pragma": "no-cache",
       "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
       "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
-      "last-modified": "Fri, 19 Jun 2026 07:15:06 GMT",
+      "last-modified": "Thu, 27 Aug 2026 04:00:07 GMT",
       "content-type": "text/html;charset=UTF-8",
       "vary": "Accept-Encoding",
       "set-cookie": [
@@ -94,15 +94,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
