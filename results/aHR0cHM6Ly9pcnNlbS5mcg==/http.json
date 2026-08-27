@@ -1,21 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 19 Jun 2026 07:19:43 GMT",
+      "date": "Thu, 27 Aug 2026 04:05:04 GMT",
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-cache, private",
       "set-cookie": [
-        "XSRF-TOKEN=eyJpdiI6InNIM0ZXa0M2SlUvQ1pVTmZnT2VQWFE9PSIsInZhbHVlIjoiYUVQVFF5cFZ2SmZObzgzT3hNN3ZFcldNS0xkR2xhcGswTG52MWwvVUhQWkZOS3Nyenp1RnJzbEEwQWRQWnlTTHhPa0dzanBvdFhCQm45Z0YrQ2J1eXBxYkFycEJiMlllTURkOUsvY1QyVDVrbGtCMnE1STdaWXBnNjJKcVhyaU0iLCJtYWMiOiI5ZTFhNjJiMWVlYTkxN2JjNmMzNjhiYTExNzZhYjc0MmZjMGEwMTBhNDdhYjI4YTUwODE0MTgzMzJhOTVjNjY3IiwidGFnIjoiIn0%3D; expires=Fri, 19 Jun 2026 09:19:43 GMT; Max-Age=7200; path=/; secure; samesite=lax",
-        "irsem_session=eyJpdiI6InBCV1lVTzV0NnhSejk5akR5dUIyNWc9PSIsInZhbHVlIjoiajVZdmlaVi9VcnM5WE5xYS81aDM4T3VMK0R5a2RrZEU1QzRUcTI5aXRiaU1RWkJQKzU3U2JXNmVxbXdtR3RpcEdidVFhb0JTZ3hpcjg3S3Z2UU1zYWxpd1hTdmdCVWRWd3A3K2p0R3Z5NmFNRzdQQ3NJbDU3YnJaWmZqWTloK0UiLCJtYWMiOiIwNDEyNjNlMGE2MmY3OGJmMjM0ZDUyYTY0ZTNlMDQzMDYwZGNmM2Q4MGU2YzI1ZmU1Y2FkZmVmZTBmMmMxNmM1IiwidGFnIjoiIn0%3D; expires=Fri, 19 Jun 2026 09:19:43 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax"
+        "XSRF-TOKEN=eyJpdiI6InUzU0NFREpKT1dZMzAzZk5XMFpGMVE9PSIsInZhbHVlIjoiZXRsVmhTRGI0dHoxd2VRbk8xVGFyZGh5SEhwRUxTcmRsWFRoeDJvTzBuNXhpR3M4OHFlekt2UVpBclU2VDRPMFZhMS9pdzdEK3BBZTR5L1h6VnFHdUV1Z3ozQU9POXRoRnZoWk54dEhTUW13SjFTNEFFYkU2b3JQWWpnT1ZvVnoiLCJtYWMiOiIwMDhmMzhlNDgwMDMwMjNlODI0NWM5YjdhZTQyZDFhNTY2YmYxMWY3MWJiMzk5ZGZjMTU0ODA0YWJmMjNmNzA0IiwidGFnIjoiIn0%3D; expires=Thu, 27 Aug 2026 06:05:04 GMT; Max-Age=7200; path=/; secure; samesite=lax",
+        "irsem_session=eyJpdiI6Ik9rL1dvZEh1d0lSdTEvVzZHVmlkUnc9PSIsInZhbHVlIjoiekVXSHFsQlhncTlJdjl2Y3RJam55VG9DL05KQ1lJWnA1RktCNTlsbUJFT3dMQ2JKQmkrbGtwRVdNS2FGdHNlRnltamVJVFplbEViUjcyNDRlWGk2V3RyKzNYUWRlZ3o0VkxxQVJKcVp1d1hkb3Q2b2l5ZXBNU3VWcm10Vm9jazciLCJtYWMiOiI3MzdiNmNiNjNmMDJkNzhhZmM0NDcyYmNkNjUwYWU1NDllMWMwZDZiZmFmY2VhMzY5MTM1ZTM1OTYwMzUxMGQwIiwidGFnIjoiIn0%3D; expires=Thu, 27 Aug 2026 06:05:04 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax"
       ],
       "vary": "Accept-Encoding",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -88,7 +88,7 @@
       "data": {
         "XSRF-TOKEN": {
           "domain": "www.irsem.fr",
-          "expires": "2026-06-19T09:19:43.000Z",
+          "expires": "2026-08-27T06:05:04.000Z",
           "max-age": 7200,
           "path": "/",
           "port": null,
@@ -97,7 +97,7 @@
         },
         "irsem_session": {
           "domain": "www.irsem.fr",
-          "expires": "2026-06-19T09:19:43.000Z",
+          "expires": "2026-08-27T06:05:04.000Z",
           "httponly": true,
           "max-age": 7200,
           "path": "/",
@@ -140,13 +140,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented-no-https",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
