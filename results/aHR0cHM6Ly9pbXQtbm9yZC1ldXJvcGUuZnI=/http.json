@@ -5,19 +5,19 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:19:43 GMT",
+      "date": "Thu, 27 Aug 2026 04:05:04 GMT",
       "server": "Apache/2.4.62 (Rocky Linux) OpenSSL/3.2.2",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "link": "<https://imt-nord-europe.fr/wp-json/>; rel=\"https://api.w.org/\", <https://imt-nord-europe.fr/wp-json/wp/v2/pages/2>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://imt-nord-europe.fr/>; rel=shortlink",
-      "x-litespeed-tag": "358_front,358_URL.6666cd76f96956469e7be39d750cc7d9,358_F,358_Po.2,358_PGS,358_,358_MIN.e066a760545efa232bbaef74eafdfd54.css",
+      "x-litespeed-tag": "358_front,358_URL.6666cd76f96956469e7be39d750cc7d9,358_F,358_Po.2,358_PGS,358_,358_MIN.7cc11b4d3eafac93dcc46d491aaa00de.css",
       "set-cookie": [
-        "PHPSESSID=o4c6e4g95an5dtbjokr2e4irsa; path=/"
+        "PHPSESSID=cb9rvpn8s92og7nppqj4ugjqln; path=/"
       ],
       "connection": "close",
       "transfer-encoding": "chunked",
@@ -92,15 +92,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://js.hcaptcha.com/1/api.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
