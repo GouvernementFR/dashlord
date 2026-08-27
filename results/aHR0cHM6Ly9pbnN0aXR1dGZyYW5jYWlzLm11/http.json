@@ -1,25 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "C",
     "error": null,
-    "score": 40,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Fri, 19 Jun 2026 07:20:46 GMT",
+      "date": "Thu, 27 Aug 2026 04:05:44 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "content-length": "0",
       "connection": "close",
-      "x-powered-by": "PHP/8.4.20, PleskLin",
+      "x-powered-by": "PHP/8.4.22, PleskLin",
       "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
       "link": "<https://www.institutfrancais.mu/wp-json/>; rel=\"https://api.w.org/\", <https://www.institutfrancais.mu/wp-json/wp/v2/pages/3280>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.institutfrancais.mu/>; rel=shortlink",
       "vary": "Accept-Encoding,User-Agent",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "content-security-policy": "frame-ancestors 'self' *.aec-app.com *.aec.app",
+      "content-security-policy": "frame-ancestors 'self' *.aec.app",
       "x-frame-options": "SAMEORIGIN"
     }
   },
@@ -32,7 +31,6 @@
       "data": {
         "frame-ancestors": [
           "'self'",
-          "*.aec-app.com",
           "*.aec.app"
         ]
       },
@@ -83,11 +81,11 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": true,
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -103,19 +101,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=GT-KDBHWQB": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://ifmaurice.extranet-aec.com/js/kiosque-aec.js?ver=6.9.4": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
