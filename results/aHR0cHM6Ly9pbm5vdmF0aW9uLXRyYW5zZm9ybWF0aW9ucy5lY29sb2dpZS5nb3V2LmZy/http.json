@@ -1,27 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "B",
     "error": null,
-    "score": 40,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:20:51 GMT",
+      "date": "Thu, 27 Aug 2026 04:05:07 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000, max-age=63072000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=UTF-8",
-      "expires": "Fri, 19 Jun 2026 07:20:51 GMT",
+      "expires": "Thu, 27 Aug 2026 04:05:07 GMT",
       "referrer-policy": "strict-origin-when-cross-origin",
       "content-security-policy": "upgrade-insecure-requests",
       "x-xss-protection": "1; mode=block",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "PHPSESSID=gng9e40h04l5pltqnltgaks7vnqi070v8of9nq8a; path=/; secure; httponly; samesite=lax",
-        "SRV=01fc7570-9eb4-48d9-8507-977c6000bf28; path=/"
+        "PHPSESSID=lcbdelidehf8goda4kla6da2940tpvqm93l0bir7; path=/; secure; httponly; samesite=lax",
+        "SRV=ef55cd54-a616-4256-ac27-d3ba78cc1df0; path=/"
       ],
       "vary": "Accept-Encoding",
       "cache-control": "max-age=0, must-revalidate, private",
@@ -60,8 +60,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "PHPSESSID": {
           "domain": "innovation-transformations.ecologie.gouv.fr",
@@ -110,12 +110,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-header-invalid",
-      "scoreModifier": -20,
-      "data": "max-age=31536000, max-age=63072000",
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
