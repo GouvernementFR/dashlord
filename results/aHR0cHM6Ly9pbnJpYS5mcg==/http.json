@@ -1,30 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 05:15:13 GMT",
-      "server": "Apache",
-      "cache-control": "must-revalidate, no-cache, private",
-      "x-drupal-dynamic-cache": "HIT",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-generator": "Drupal 11 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "upgrade": "h2",
-      "connection": "Upgrade, close",
-      "vary": "Accept-Encoding",
-      "content-length": "23316",
-      "content-type": "text/html; charset=UTF-8"
+      "cache-control": "no-store",
+      "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "inria-anubis-auth=; Path=/; Domain=inria.fr; Expires=Thu, 27 Aug 2026 04:04:02 GMT; Max-Age=0; Secure; SameSite=None; HttpOnly",
+        "inria-anubis-cookie-verification=01a04164-897b-7702-86a6-a81161efac11; Path=/; Domain=inria.fr; Expires=Thu, 27 Aug 2026 04:35:02 GMT; Secure; SameSite=None; HttpOnly",
+        "wwwinriafr-pow=yes; path=/; HttpOnly; Secure",
+        "request-id=01a04164-897a-74d2-8007-ae63adf70a79; Path=/; HttpOnly; Secure; SameSite=Lax"
+      ],
+      "date": "Thu, 27 Aug 2026 04:05:02 GMT",
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=16000000; includeSubDomains; preload",
+      "connection": "close"
     }
   },
   "tests": {
@@ -42,9 +38,44 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "inria-anubis-auth": {
+          "domain": "inria.fr",
+          "expires": "2026-08-27T04:04:02.000Z",
+          "httponly": true,
+          "max-age": 0,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "inria-anubis-cookie-verification": {
+          "domain": "inria.fr",
+          "expires": "2026-08-27T04:35:02.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
+        "wwwinriafr-pow": {
+          "domain": "inria.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "request-id": {
+          "domain": "inria.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax",
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -56,15 +87,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://www.inria.fr/fr",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://inria.fr/",
       "redirects": true,
       "route": [
         "http://inria.fr/",
-        "https://www.inria.fr/",
-        "https://www.inria.fr/fr"
+        "https://inria.fr/"
       ],
       "statusCode": 200
     },
@@ -82,37 +112,32 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
+      "data": "max-age=16000000; includeSubDomains; preload",
       "includeSubDomains": true,
-      "maxAge": 31536000,
+      "maxAge": 16000000,
       "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": false,
-      "result": "x-frame-options-header-invalid",
+      "result": "x-frame-options-not-implemented",
       "scoreModifier": -20,
-      "data": "SAMEORIGIN, SAMEORIGIN"
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
