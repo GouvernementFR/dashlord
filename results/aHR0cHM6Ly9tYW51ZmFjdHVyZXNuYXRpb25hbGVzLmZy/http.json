@@ -1,23 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "C-",
     "error": null,
-    "score": 40,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:31:36 GMT",
-      "x-frame-options": "DENY",
-      "last-modified": "Mon, 10 Feb 2025 15:34:09 GMT",
-      "etag": "\"2e96-62dcb707bbcb9-gzip\"",
-      "accept-ranges": "bytes",
-      "vary": "Accept-Encoding",
-      "content-length": "1796",
-      "content-type": "text/html; charset=UTF-8",
-      "server": "server",
+      "cache-control": "must-revalidate, no-cache, private",
+      "content-language": "fr",
+      "content-length": "18498",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 27 Aug 2026 04:07:15 GMT",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "traceresponse": "00-18cf8def322316a47c965dcd4db1cf8a-7c2605517fab6a5f-01",
+      "x-content-type-options": "nosniff",
+      "x-debug-info": "eyJyZXRyaWVzIjowfQ==",
+      "x-frame-options": "SAMEORIGIN",
+      "x-platform-cache": "MISS",
+      "x-platform-cluster": "5jneoc4progoq-main-bvxea6i",
+      "x-platform-processor": "2h247nwsbwlvab5ltxs7ahdaee",
+      "x-platform-router": "myevzwah4ze3ib3r3md7wxg7im",
       "connection": "close"
     }
   },
@@ -87,7 +92,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://unpkg.com/jquery@3.4.1/dist/jquery.js": {
+        "https://cdn.jsdelivr.net/npm/orejime@3.1.0/dist/orejime-standard-fr.js": {
           "crossorigin": null,
           "integrity": null
         }
@@ -95,17 +100,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "DENY"
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
