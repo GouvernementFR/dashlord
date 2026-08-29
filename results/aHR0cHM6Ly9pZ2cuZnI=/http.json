@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D-",
     "error": null,
-    "score": 10,
+    "score": 25,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 07:23:57 GMT",
+      "date": "Sat, 29 Aug 2026 02:32:33 GMT",
       "server": "Apache",
       "vary": "Accept-Encoding",
       "content-length": "434",
@@ -47,12 +47,13 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://igg.fr/",
-      "redirects": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://rseagro.com/",
+      "redirects": true,
       "route": [
-        "http://igg.fr/"
+        "http://igg.fr/",
+        "https://rseagro.com/"
       ],
       "statusCode": 200
     },
