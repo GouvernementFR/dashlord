@@ -3,21 +3,21 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 21 Jun 2026 07:06:29 GMT",
+      "date": "Sat, 29 Aug 2026 02:33:47 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "last-modified": "Fri, 19 Jun 2026 07:44:03 GMT",
+      "last-modified": "Fri, 28 Aug 2026 10:47:59 GMT",
       "vary": "Accept-Encoding,User-Agent",
       "set-cookie": [
-        "__cf_bm=kBt0FKLRtqQyx6Fdn._g5qL1SWnOkd1gQWNtf6Tl2b8-1782025588.718217-1.0.1.1-VU2tAfIQd9ekFDi6DOQamzFSpzXiTGmGdKi_HaE6hsSVlu8HipYWl4QPZkB9eI.Y7U8AorEkvAOkErm3aCgT7mZcl6uIynYoHv30BbT2a_u.3VZLv9k2ZKi.eo8dbBvX; HttpOnly; SameSite=None; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Sun, 21 Jun 2026 07:36:29 GMT"
+        "__cf_bm=MjVGBqrM81dxBt9m.FKFLSy6JrE.hK.brSv4tXHcD_I-1787970827.1113045-1.0.1.1-NZfyyLYwlqNRLiO1JjYzAcrfQNHOUOOigt671FAWrk32wUGXnHRhyuNxpxJm.cUpKPWvhfXzaAqO6mlH.OC.XFx2BNLxPApAVcPt_4uqZTYV3sZP1sgGL2mvywFl3ka1; HttpOnly; SameSite=None; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Sat, 29 Aug 2026 03:03:47 GMT"
       ],
       "x-front": "TEMPLATEDEBIAN11",
       "access-control-allow-origin": "https://epargnonsnosressources.gouv.fr",
@@ -29,7 +29,7 @@
       "permissions-policy": "accelerometer=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
       "content-security-policy": "upgrade-insecure-requests",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a0f12bb97b26e5e8-IAD"
+      "cf-ray": "a32827256dbef81c-DFW"
     }
   },
   "tests": {
@@ -68,7 +68,7 @@
       "data": {
         "__cf_bm": {
           "domain": "epargnonsnosressources.gouv.fr",
-          "expires": "2026-06-21T07:36:29.000Z",
+          "expires": "2026-08-29T03:03:47.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -87,14 +87,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://epargnonsnosressources.gouv.fr/",
       "redirects": true,
       "route": [
         "http://longuevieauxobjets.gouv.fr/",
-        "https://longuevieauxobjets.gouv.fr/",
         "https://epargnonsnosressources.gouv.fr/"
       ],
       "statusCode": 200
@@ -129,11 +128,11 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://epargnonsnosressources.gouv.fr/wp-content/cache/min/1/ajax/libs/iframe-resizer/4.3.6/iframeResizer.min.js?ver=1777262060": {
+        "https://epargnonsnosressources.gouv.fr/wp-content/cache/min/1/ajax/libs/iframe-resizer/4.3.6/iframeResizer.min.js?ver=1786694553": {
           "crossorigin": "anonymous",
           "integrity": null
         },
-        "https://epargnonsnosressources.gouv.fr/wp-content/cache/min/1/wp-content/themes/ademe/dist/app.js?ver=1777262060": {
+        "https://epargnonsnosressources.gouv.fr/wp-content/cache/min/1/wp-content/themes/ademe/dist/app.78cddb74.js?ver=1786694553": {
           "crossorigin": null,
           "integrity": null
         },
