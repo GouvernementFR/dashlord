@@ -1,38 +1,38 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D+",
     "error": null,
-    "score": 70,
+    "score": 40,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 19 Jun 2026 06:29:42 GMT",
-      "server": "Apache/2.4.67 (Debian)",
+      "date": "Sat, 29 Aug 2026 00:13:30 GMT",
+      "server": "Apache",
       "cache-control": "max-age=86400, public, private",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "content-security-policy-report-only": "object-src *; script-src 'self' https://stats.inalco.fr/matomo.js chosen.js https://cdnjs.cloudflare.com; script-src-attr 'self'",
+      "content-security-policy-report-only": "object-src *; script-src 'self' https://stats.inalco.fr/matomo.js https://cdnjs.cloudflare.com; script-src-attr 'self'",
       "content-security-policy": "frame-ancestors 'self'",
-      "cache-tags": "config:block_list config:block.block.open_theme_titredepage config:block.block.open_theme_onglets_2 config:block.block.open_theme_onglets config:block.block.blockheaderinalco config:block.block.open_theme_messages config:block.block.open_theme_blockfoundationbannerinalco node:3979 config:block.block.open_theme_actionsdadministrationprincipales config:block.block.open_theme_contenudelapageprincipale config:block.block.open_theme_connexionutilisateur config:block.block.blockfooterinalco config:block.block.blockbacktotopinalco config:block.block.open_theme_filsdariane config:block.block.open_theme_breadcrumb config:block.block.open_theme_admin config:block.block.open_theme_tools block_view footer config:system.menu.footer-first config:system.menu.footer-legacy config:system.menu.footer-second node_view paragraph_view paragraph:12461 config:paragraphs.settings inalco_language_map paragraph:12462 node_list:news_article paragraph:12468 paragraph:12472 paragraph:12460 node_list:event_page event_page paragraph:12459 taxonomy_term_list:homepage_animation user:4 config:system.site header config:system.menu.header-main config:system.menu.header-shortcut language_selector content_translation rendered config:cas.settings http_response config:user.role.anonymous config:csp.settings library_info",
-      "last-modified": "Fri, 19 Jun 2026 06:29:42 GMT",
-      "etag": "\"1781850582-gzip\"",
-      "content-type": "text/html; charset=UTF-8",
-      "x-varnish": "7158294 6754867",
-      "age": "844",
-      "via": "1.1 varnish (Varnish/7.1)",
-      "accept-ranges": "bytes",
-      "content-length": "86356",
-      "set-cookie": [
-        "SERVERID=w-prod-cache; path=/"
-      ],
-      "strict-transport-security": "max-age=63072000;includeSubDomains",
+      "cache-tags": "config:block_list config:block.block.open_theme_titredepage config:block.block.open_theme_onglets_2 config:block.block.open_theme_onglets config:block.block.blockheaderinalco config:block.block.open_theme_messages config:block.block.open_theme_blockfoundationbannerinalco node:6539 config:block.block.open_theme_actionsdadministrationprincipales config:block.block.open_theme_contenudelapageprincipale config:block.block.open_theme_connexionutilisateur config:block.block.blockfooterinalco config:block.block.blockbacktotopinalco config:block.block.open_theme_filsdariane config:block.block.open_theme_breadcrumb config:block.block.open_theme_admin config:block.block.open_theme_tools block_view footer config:system.menu.footer-first config:system.menu.footer-legacy config:system.menu.footer-second node_view paragraph_view paragraph:51776 config:paragraphs.settings inalco_language_map paragraph:51775 node_list:news_article paragraph:51766 paragraph:51802 paragraph:51815 node_list:event_page event_page paragraph:51757 taxonomy_term_list:homepage_animation user:981 config:system.site header config:system.menu.header-main config:system.menu.header-shortcut language_selector content_translation rendered config:cas.settings http_response config:user.role.anonymous config:csp.settings library_info",
+      "last-modified": "Sat, 29 Aug 2026 00:13:29 GMT",
+      "etag": "\"1787962409-gzip\"",
+      "strict-transport-security": "max-age=63072000;includeSubDomains, max-age=63072000;includeSubDomains",
       "x-xss-protection": "1; mode=block",
+      "content-type": "text/html; charset=UTF-8",
+      "x-varnish": "1775065 1240861",
+      "age": "8360",
+      "via": "1.1 lgs-w-prod-cache (Varnish/7.7)",
+      "accept-ranges": "bytes",
+      "content-length": "85594",
+      "set-cookie": [
+        "SERVERID=lgs-w-prod-cache; path=/"
+      ],
       "connection": "close"
     }
   },
@@ -67,8 +67,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "SERVERID": {
           "domain": "inalco.fr",
@@ -87,16 +87,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
-      "destination": "https://www.inalco.fr/",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://inalco.fr/",
-        "https://www.inalco.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -109,12 +106,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000;includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=63072000;includeSubDomains, max-age=63072000;includeSubDomains",
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
