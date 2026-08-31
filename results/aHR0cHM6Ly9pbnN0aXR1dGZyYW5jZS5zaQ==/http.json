@@ -9,11 +9,11 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 21 Jun 2026 07:07:37 GMT",
+      "date": "Mon, 31 Aug 2026 02:35:42 GMT",
       "server": "Apache",
       "link": "<https://www.institutfrance.si/wp-json/>; rel=\"https://api.w.org/\", <https://www.institutfrance.si/wp-json/wp/v2/pages/44>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.institutfrance.si/>; rel=shortlink",
       "set-cookie": [
-        "pll_language=sl; expires=Mon, 21-Jun-2027 07:07:37 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax",
+        "pll_language=sl; expires=Tue, 31 Aug 2027 02:35:44 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax",
         "PH_HPXY_CHECK=s1; path=/; HttpOnly; Secure; SameSite=Strict"
       ],
       "transfer-encoding": "chunked",
@@ -41,7 +41,7 @@
       "data": {
         "pll_language": {
           "domain": "www.institutfrance.si",
-          "expires": "2027-06-21T07:07:37.000Z",
+          "expires": "2027-08-31T02:35:44.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -106,7 +106,11 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
-        "//www.institutfrance.si/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1759904518": {
+        "https://www.googletagmanager.com/gtag/js?id=AW-11468583245": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "//www.institutfrance.si/wp-content/uploads/pum/pum-site-scripts.js?defer&generated=1787321065&ver=1.24.0": {
           "crossorigin": null,
           "integrity": null
         }
