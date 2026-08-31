@@ -1,25 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B+",
     "error": null,
-    "score": 55,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 21 Jun 2026 07:11:37 GMT",
+      "date": "Mon, 31 Aug 2026 02:34:41 GMT",
       "server": "Apache",
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "strict-transport-security": "max-age=63072000; includeSubdomains; preload",
-      "last-modified": "Tue, 09 Jun 2026 10:29:31 GMT",
+      "last-modified": "Tue, 04 Aug 2026 09:46:42 GMT",
       "accept-ranges": "bytes",
-      "content-length": "13688",
+      "content-length": "14614",
       "x-xss-protection": "1;mode=block",
       "x-content-type-options": "nosniff",
       "x-webkit-csp": "default-src 'self'",
       "x-permitted-cross-domain-policies": "master-only",
+      "content-security-policy": "script-src 'self' 'unsafe-eval' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net; object-src 'self'; style-src 'self' https://use.typekit.net 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'  https://unpkg.com https://use.typekit.net https://p.typekit.net https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net; connect-src 'self' *.esante.gouv.fr *.francecentral.azure.elastic-cloud.com *.jsdelivr.net; frame-ancestors 'self'; base-uri 'self';",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -28,13 +29,66 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'"
+        ],
+        "script-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net",
+          "https://maxcdn.bootstrapcdn.com"
+        ],
+        "object-src": [
+          "'self'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://use.typekit.net"
+        ],
+        "style-src-elem": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net",
+          "https://maxcdn.bootstrapcdn.com",
+          "https://p.typekit.net",
+          "https://unpkg.com",
+          "https://use.typekit.net"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.esante.gouv.fr",
+          "*.francecentral.azure.elastic-cloud.com",
+          "*.jsdelivr.net"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -84,14 +138,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        }
-      }
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -102,9 +151,9 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN, SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
