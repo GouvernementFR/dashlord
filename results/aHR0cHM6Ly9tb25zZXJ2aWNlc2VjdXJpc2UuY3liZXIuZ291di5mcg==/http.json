@@ -1,38 +1,39 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "A+",
     "error": null,
-    "score": 55,
+    "score": 110,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-      "content-length": "29921",
-      "content-security-policy": "default-src 'self'; connect-src 'self' https://sentry.incubateur.net https://stats.beta.gouv.fr/matomo.php ; img-src 'self' https://storage.crisp.chat https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com; media-src 'self' https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com; style-src 'self' 'nonce-ZKN1Qk99PdwnYW4mY8vEJQ=='; style-src-elem 'self' 'nonce-ZKN1Qk99PdwnYW4mY8vEJQ=='; script-src 'self' https://browser.sentry-cdn.com 'nonce-ZKN1Qk99PdwnYW4mY8vEJQ=='; frame-src https://metabase.monservicesecurise.beta.gouv.fr/",
+      "content-security-policy": "default-src 'self'; connect-src 'self' https://sentry.incubateur.net https://stats.beta.gouv.fr/matomo.php ; img-src 'self' https://storage.crisp.chat https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com; media-src 'self' https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com; style-src 'self' 'nonce-OBhyi3kemvFJBqcEbhupQw=='; style-src-elem 'self' 'nonce-OBhyi3kemvFJBqcEbhupQw=='; script-src 'self' https://browser.sentry-cdn.com 'nonce-OBhyi3kemvFJBqcEbhupQw=='",
       "content-type": "text/html; charset=utf-8",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Sun, 21 Jun 2026 07:11:55 GMT",
-      "etag": "W/\"74e1-/6VhwJn7TPwTwf4hPnDZ+J0EGtY\"",
+      "date": "Mon, 31 Aug 2026 02:34:38 GMT",
+      "etag": "W/\"7698-frAma3JXfH1hC+Pm4aYbEGt/+qI\"",
       "expires": "0",
       "pragma": "no-cache",
       "referrer-policy": "no-referrer",
       "set-cookie": [
-        "session=eyJfY3NyZlNlY3JldCI6IktWbCtNdUZsdWhZelpBPT0ifQ==; path=/; samesite=strict; secure; httponly",
-        "session.sig=pVg_TYlSuZzpzGLwjd_F1JC1H4U; path=/; samesite=strict; secure; httponly",
-        "X-Clever-Cloud-Sticky-Id=tux4p_tpq1iemcwqbkvodg; Path=/"
+        "session=eyJfY3NyZlNlY3JldCI6IldjK0duK1RjSVppeWRRPT0ifQ==; path=/; samesite=strict; secure; httponly",
+        "session.sig=-aQhsH6vzCKwdRQ_9byT24RViEo; path=/; samesite=strict; secure; httponly",
+        "CCADCBALANCEID=jhpwxu1rqoivthlskhd3na; path=/"
       ],
-      "sozu-id": "01KVMGB3GX7XV0DPPY12YSXEPX",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "surrogate-control": "no-store",
+      "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-ratelimit-limit": "600",
       "x-ratelimit-remaining": "599",
-      "x-ratelimit-reset": "1782025976",
-      "connection": "close"
+      "x-ratelimit-reset": "1788143739",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -60,20 +61,17 @@
           "https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com"
         ],
         "style-src": [
-          "'nonce-zkn1qk99pdwnyw4my8vejq=='",
+          "'nonce-obhyi3kemvfjbqcebhupqw=='",
           "'self'"
         ],
         "style-src-elem": [
-          "'nonce-zkn1qk99pdwnyw4my8vejq=='",
+          "'nonce-obhyi3kemvfjbqcebhupqw=='",
           "'self'"
         ],
         "script-src": [
-          "'nonce-zkn1qk99pdwnyw4my8vejq=='",
+          "'nonce-obhyi3kemvfjbqcebhupqw=='",
           "'self'",
           "https://browser.sentry-cdn.com"
-        ],
-        "frame-src": [
-          "https://metabase.monservicesecurise.beta.gouv.fr/"
         ]
       },
       "http": true,
@@ -96,8 +94,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "session": {
           "domain": "monservicesecurise.cyber.gouv.fr",
@@ -115,7 +113,7 @@
           "samesite": "strict",
           "secure": true
         },
-        "X-Clever-Cloud-Sticky-Id": {
+        "CCADCBALANCEID": {
           "domain": "monservicesecurise.cyber.gouv.fr",
           "path": "/",
           "port": null
@@ -154,13 +152,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -169,7 +167,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.53.4/lab-anssi-ui-kit.iife.js": {
+        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.60.9/lab-anssi-ui-kit.iife.js": {
           "crossorigin": null,
           "integrity": null
         },
