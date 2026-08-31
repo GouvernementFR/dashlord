@@ -1,31 +1,31 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D+",
     "error": null,
-    "score": 55,
+    "score": 40,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 21 Jun 2026 07:07:40 GMT",
+      "date": "Mon, 31 Aug 2026 02:35:05 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "content-language": "fr",
       "set-cookie": [
-        "lang=fr; Path=/; Expires=Mon, 21 Jun 2027 07:07:40 GMT; SameSite=Strict"
+        "lang=fr; Path=/; Expires=Tue, 31 Aug 2027 02:35:05 GMT; SameSite=Strict"
       ],
-      "content-security-policy": "script-src 'nonce-aa1c9fb6-0056-411c-86ad-fc764fe94d0a' 'strict-dynamic' 'unsafe-eval'; object-src 'none'; base-uri 'none';",
-      "etag": "W/\"5128-2sYYsItWCeV1MxnHdSqdUlvKhGI\"",
+      "content-security-policy": "script-src 'nonce-66802245-527a-4fa8-a496-9453cffc0701' 'strict-dynamic' 'unsafe-eval'; object-src 'none'; base-uri 'none';",
+      "x-content-type-options": "nosniff, nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin, strict-origin-when-cross-origin",
+      "permissions-policy": "camera=(), microphone=(self), geolocation=(), payment=(), geolocation=(), camera=(), microphone=(self)",
+      "strict-transport-security": "max-age=31536000, max-age=86400; includeSubDomains",
+      "etag": "W/\"50bf-m9ScJguLruRwWw4Ua7zqQdOleaA\"",
       "vary": "Accept-Encoding",
-      "x-frame-options": "SAMEORIGIN",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "x-content-type-options": "nosniff",
-      "permissions-policy": "geolocation=(), camera=(), microphone=(self)",
-      "strict-transport-security": "max-age=86400; includeSubDomains"
+      "x-frame-options": "SAMEORIGIN"
     }
   },
   "tests": {
@@ -36,7 +36,7 @@
       "scoreModifier": -10,
       "data": {
         "script-src": [
-          "'nonce-aa1c9fb6-0056-411c-86ad-fc764fe94d0a'",
+          "'nonce-66802245-527a-4fa8-a496-9453cffc0701'",
           "'strict-dynamic'",
           "'unsafe-eval'"
         ],
@@ -72,14 +72,14 @@
       "data": {
         "lang": {
           "domain": "lanceurs-dalerte.emploi.gouv.fr",
-          "expires": "2027-06-21T07:07:40.000Z",
+          "expires": "2027-08-31T02:35:05.000Z",
           "path": "/",
           "port": null,
           "samesite": "strict"
         },
         "compaas": {
           "domain": "lanceurs-dalerte.emploi.gouv.fr",
-          "expires": "2026-06-21T19:07:39.000Z",
+          "expires": "2026-08-31T14:35:04.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -88,7 +88,7 @@
         },
         "compaas.sig": {
           "domain": "lanceurs-dalerte.emploi.gouv.fr",
-          "expires": "2026-06-21T19:07:39.000Z",
+          "expires": "2026-08-31T14:35:04.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -125,18 +125,18 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
+      "data": "strict-origin-when-cross-origin, strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=86400; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 86400,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=31536000, max-age=86400; includeSubDomains",
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -166,10 +166,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
