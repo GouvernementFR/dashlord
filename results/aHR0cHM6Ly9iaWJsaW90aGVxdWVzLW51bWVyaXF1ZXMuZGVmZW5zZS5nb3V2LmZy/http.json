@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 21 Jun 2026 06:00:15 GMT",
+      "date": "Mon, 31 Aug 2026 02:34:41 GMT",
       "server": "Apache",
       "x-powered-by": "PHP/8.2.27",
       "cache-control": "must-revalidate, no-cache, private",
@@ -19,12 +19,12 @@
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "content-length": "39958",
+      "x-drupal-cache": "MISS",
+      "content-length": "39271",
       "content-type": "text/html; charset=UTF-8",
-      "strict-transport-security": "max-age=63072000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "set-cookie": [
-        "LBAPACHE=CLADE1; path=/"
+        "LBAPACHE=CLADE2; path=/"
       ],
       "connection": "close"
     }
@@ -89,8 +89,8 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
       "maxAge": 63072000,
       "preload": false,
       "preloaded": false
