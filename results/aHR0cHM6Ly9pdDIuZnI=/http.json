@@ -1,56 +1,79 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C+",
     "error": null,
-    "score": 0,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 21 Jun 2026 07:07:44 GMT",
+      "date": "Mon, 31 Aug 2026 02:34:30 GMT",
       "content-type": "text/html; charset=utf-8",
       "content-length": "100225",
       "connection": "close",
       "set-cookie": [
-        "frontend_lang=fr_FR; Expires=Mon, 21 Jun 2027 06:52:52 GMT; Path=/",
-        "session_id=IqgP0fY1SxE_T8nllW34fO5PZ3-hRiqe88epvJj0OG6YQiAutdR7tXyn--vZvYnbElB1xI-KSQ2O0g9jmOT-; Expires=Mon, 21 Jun 2027 06:52:52 GMT; Max-Age=604800; HttpOnly; Path=/",
-        "frontend_lang=fr_FR; Expires=Mon, 21 Jun 2027 07:07:44 GMT; Path=/",
-        "session_id=u4IfbkTWpAAYzO6GXSHq1jWPvW0_1WbO5n1Kq6EKvLqo-UAFWxgoo2b0Y-rySILwXJ65lg1WyA1vKctV6-i4; Expires=Mon, 21 Jun 2027 07:07:44 GMT; Max-Age=604800; HttpOnly; Path=/"
+        "frontend_lang=fr_FR; Expires=Tue, 31 Aug 2027 02:09:55 GMT; Path=/",
+        "session_id=dm45gg3ftt6XihagFPfs-sflGwfPOpCjug2_7ak4-lJj-W5P7Nmj5ktNpb2a3X8TqMVkSidYwW_N6onrFap9; Expires=Tue, 31 Aug 2027 02:09:55 GMT; Max-Age=604800; HttpOnly; Path=/",
+        "frontend_lang=fr_FR; Expires=Tue, 31 Aug 2027 02:34:30 GMT; Path=/",
+        "session_id=eGHiEXwFzRNtw7byMTjEvUzm4G5HfDVPjgTD0tuFY2FgiZ5jXBojYLrXcKHuChRsc-825gN8SG_mRfhKH2VV; Expires=Tue, 31 Aug 2027 02:34:30 GMT; Max-Age=604800; HttpOnly; Path=/"
       ],
-      "x-content-type-options": "nosniff",
-      "x-powered-by": "PleskLin"
+      "x-content-type-options": "nosniff, nosniff",
+      "x-powered-by": "PleskLin",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self' http: https: data: blob:;"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "http:",
+          "https:"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": true,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
       "data": {
         "frontend_lang": {
           "domain": "it2.fr",
-          "expires": "2027-06-21T07:07:44.000Z",
+          "expires": "2027-08-31T02:34:30.000Z",
           "path": "/",
           "port": null
         },
         "session_id": {
           "domain": "it2.fr",
-          "expires": "2027-06-21T07:07:44.000Z",
+          "expires": "2027-08-31T02:34:30.000Z",
           "httponly": true,
           "max-age": 604800,
           "path": "/",
@@ -90,13 +113,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -117,17 +140,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-header-invalid",
+      "scoreModifier": -5,
+      "data": "nosniff, nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
