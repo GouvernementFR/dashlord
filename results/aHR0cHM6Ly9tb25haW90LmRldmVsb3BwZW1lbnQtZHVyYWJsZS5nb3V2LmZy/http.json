@@ -1,27 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 22 Jun 2026 22:00:29 GMT",
-      "server": "Apache",
+      "date": "Mon, 31 Aug 2026 22:00:53 GMT",
       "cache-control": "must-revalidate, no-cache, private",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "content-length": "56739",
+      "content-length": "56718",
       "connection": "close",
-      "content-type": "text/html; charset=UTF-8"
+      "content-type": "text/html; charset=UTF-8",
+      "set-cookie": [
+        "TS013b685b=01ce77d60097ab544ca8118b7c9b6c8fba04453c6f172bf4cf9d73bce3f0a292af8f0d96fc509a19e0bad29b4bdb895123712e7307; Path=/; Domain=.monaiot.developpement-durable.gouv.fr"
+      ]
     }
   },
   "tests": {
@@ -38,10 +39,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "TS013b685b": {
+          "domain": "monaiot.developpement-durable.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
