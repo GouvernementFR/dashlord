@@ -10,17 +10,16 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "no-store, no-cache, must-revalidate, proxy-revalidate",
-      "content-security-policy": "script-src 'self' https://stats.beta.gouv.fr https://browser.sentry-cdn.com https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com;img-src 'self' https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com https://storage.crisp.chat https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/ data:;connect-src 'self' https://stats.beta.gouv.fr https://sentry.incubateur.net;media-src 'self' https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com https://ressources-mac.cellar-c2.services.clever-cloud.com https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/;style-src 'self' 'nonce-W0r8XLKyZu4YVi1UEHn+vg==' https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com https://storage.crisp.chat https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/ data:;object-src 'none';script-src 'self' https://stats.beta.gouv.fr https://browser.sentry-cdn.com https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com;script-src-attr 'none';style-src 'self' 'nonce-j2aT8440Lg+d3MT4bsXnkQ==' https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com;upgrade-insecure-requests;connect-src 'self' https://stats.beta.gouv.fr https://sentry.incubateur.net;media-src 'self' https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com https://ressources-mac.cellar-c2.services.clever-cloud.com https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
       "content-type": "text/html; charset=utf-8",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
-      "date": "Tue, 23 Jun 2026 06:28:02 GMT",
-      "etag": "W/\"6bb0-M/GBRP2z4bGm5PBs+2cpwnqDZT4\"",
+      "date": "Tue, 01 Sep 2026 02:32:59 GMT",
+      "etag": "W/\"6b184-V06oa622wnreKXz/aQGd+LQem6g\"",
       "expires": "0",
       "origin-agent-cluster": "?1",
       "pragma": "no-cache",
       "referrer-policy": "no-referrer",
-      "sozu-id": "01KVSJM59C9SP33C0JBZG9PKZV",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "surrogate-control": "no-store",
       "vary": "Accept-Encoding",
@@ -31,7 +30,7 @@
       "x-permitted-cross-domain-policies": "none",
       "x-ratelimit-limit": "1000",
       "x-ratelimit-remaining": "999",
-      "x-ratelimit-reset": "1782196143",
+      "x-ratelimit-reset": "1788230040",
       "x-xss-protection": "0",
       "connection": "close",
       "transfer-encoding": "chunked"
@@ -44,35 +43,6 @@
       "result": "csp-implemented-with-no-unsafe",
       "scoreModifier": 5,
       "data": {
-        "script-src": [
-          "'self'",
-          "https://browser.sentry-cdn.com",
-          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
-          "https://stats.beta.gouv.fr"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
-          "https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
-          "https://storage.crisp.chat"
-        ],
-        "connect-src": [
-          "'self'",
-          "https://sentry.incubateur.net",
-          "https://stats.beta.gouv.fr"
-        ],
-        "media-src": [
-          "'self'",
-          "https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
-          "https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com",
-          "https://ressources-mac.cellar-c2.services.clever-cloud.com"
-        ],
-        "style-src": [
-          "'nonce-w0r8xlkyzu4yvi1uehn+vg=='",
-          "'self'",
-          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com"
-        ],
         "default-src": [
           "'self'"
         ],
@@ -90,14 +60,43 @@
         "frame-ancestors": [
           "'self'"
         ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
+          "https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
+          "https://storage.crisp.chat"
+        ],
         "object-src": [
           "'none'"
+        ],
+        "script-src": [
+          "'self'",
+          "https://browser.sentry-cdn.com",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com",
+          "https://stats.beta.gouv.fr"
         ],
         "script-src-attr": [
           "'none'"
         ],
+        "style-src": [
+          "'nonce-j2at8440lg+d3mt4bsxnkq=='",
+          "'self'",
+          "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com"
+        ],
         "upgrade-insecure-requests": [
           "'none'"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://sentry.incubateur.net",
+          "https://stats.beta.gouv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "https://messervicescyber-ressources.cellar-c2.services.clever-cloud.com/",
+          "https://monservicesecurise-ressources.cellar-c2.services.clever-cloud.com",
+          "https://ressources-mac.cellar-c2.services.clever-cloud.com"
         ]
       },
       "http": true,
@@ -172,7 +171,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.53.2/lab-anssi-ui-kit.iife.js": {
+        "https://lab-anssi-ui-kit-prod-s3-assets.cellar-c2.services.clever-cloud.com/1.60.9/lab-anssi-ui-kit.iife.js": {
           "crossorigin": null,
           "integrity": null
         }
