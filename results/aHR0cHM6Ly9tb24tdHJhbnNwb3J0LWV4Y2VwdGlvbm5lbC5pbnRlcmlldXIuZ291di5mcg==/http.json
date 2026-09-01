@@ -9,10 +9,10 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 23 Jun 2026 06:24:26 GMT",
+      "date": "Tue, 01 Sep 2026 02:31:10 GMT",
       "set-cookie": [
-        "lemonldappdata=%7B%22issuerRequestoauth2%22%3A%221782123986_38391%22%2C%22keepPdata%22%3A%5B%22issuerRequestoauth2%22%2C%22issuerRequestoauth2Path%22%5D%2C%22issuerRequestoauth2Path%22%3A%5B%22authorize%22%5D%2C%22issuerTs%22%3A1782195866%2C%22_url%22%3A%22aHR0cHM6Ly9hdXRoLnNzby5kc3IuaW50ZXJpZXVyLmdvdXYuZnIvb2F1dGgy%22%7D; path=/; HttpOnly=1; SameSite=Lax; secure",
-        "bZA_=v1bZLOgw__tIq; Expires=Tue, 23-Jun-2026 08:24:26 GMT; Path=/"
+        "lemonldappdata=%7B%22issuerRequestoauth2Path%22%3A%5B%22authorize%22%5D%2C%22issuerTs%22%3A1788229870%2C%22issuerRequestoauth2%22%3A%221788157990_8933%22%2C%22keepPdata%22%3A%5B%22issuerRequestoauth2%22%2C%22issuerRequestoauth2Path%22%5D%2C%22_url%22%3A%22aHR0cHM6Ly9hdXRoLnNzby5kc3IuaW50ZXJpZXVyLmdvdXYuZnIvb2F1dGgy%22%7D; path=/; HttpOnly=1; SameSite=Lax; secure",
+        "bZA_=v1bZLOgw__tIq; Expires=Tue, 01-Sep-2026 04:31:10 GMT; Path=/"
       ],
       "content-type": "text/html",
       "content-length": "2135",
@@ -91,7 +91,7 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "mod_auth_openidc_state_G7CqiTBqfRYfbt6gubao01AoMt8": {
+        "mod_auth_openidc_state_7AH4wqM_1SqoznzmBIcHydVI2TI": {
           "domain": "mon-transport-exceptionnel.interieur.gouv.fr",
           "httponly": true,
           "path": "/",
@@ -109,7 +109,7 @@
         },
         "bZA_": {
           "domain": "auth.sso.dsr.interieur.gouv.fr",
-          "expires": "2026-06-23T08:24:26.000Z",
+          "expires": "2026-09-01T04:31:10.000Z",
           "path": "/",
           "port": null
         }
@@ -128,11 +128,11 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://auth.sso.dsr.interieur.gouv.fr//oauth2/authorize?response_type=code&scope=openid%20email%20profile%20agentdata&client_id=site_oidc-client-id&state=5sYnw7NdiWgx1nGBs8JL1mH5aek&redirect_uri=https%3A%2F%2Fmon-transport-exceptionnel.interieur.gouv.fr%2Flogin-callback&nonce=_rEv3s-E65ymLaar_NzXK1-9q8qm78WMtyfkpTVtv0w",
+      "destination": "https://auth.sso.dsr.interieur.gouv.fr//oauth2/authorize?response_type=code&scope=openid%20email%20profile%20agentdata&client_id=site_oidc-client-id&state=BjfllCJ1hmSCXZI04ntDaze_R7w&redirect_uri=https%3A%2F%2Fmon-transport-exceptionnel.interieur.gouv.fr%2Flogin-callback&nonce=bFXSqPU8sbrYo58t6vqLUUFVlcPwH4BursItGc7rQPs",
       "redirects": true,
       "route": [
         "http://mon-transport-exceptionnel.interieur.gouv.fr/",
-        "https://auth.sso.dsr.interieur.gouv.fr//oauth2/authorize?response_type=code&scope=openid%20email%20profile%20agentdata&client_id=site_oidc-client-id&state=5sYnw7NdiWgx1nGBs8JL1mH5aek&redirect_uri=https%3A%2F%2Fmon-transport-exceptionnel.interieur.gouv.fr%2Flogin-callback&nonce=_rEv3s-E65ymLaar_NzXK1-9q8qm78WMtyfkpTVtv0w"
+        "https://auth.sso.dsr.interieur.gouv.fr//oauth2/authorize?response_type=code&scope=openid%20email%20profile%20agentdata&client_id=site_oidc-client-id&state=BjfllCJ1hmSCXZI04ntDaze_R7w&redirect_uri=https%3A%2F%2Fmon-transport-exceptionnel.interieur.gouv.fr%2Flogin-callback&nonce=bFXSqPU8sbrYo58t6vqLUUFVlcPwH4BursItGc7rQPs"
       ],
       "statusCode": 200
     },
