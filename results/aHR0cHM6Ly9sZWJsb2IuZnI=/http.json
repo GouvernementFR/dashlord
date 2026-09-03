@@ -3,16 +3,16 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 23 Jun 2026 06:23:23 GMT",
+      "date": "Thu, 03 Sep 2026 02:37:55 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "43125",
+      "content-length": "45110",
       "connection": "close",
       "vary": "Accept-Encoding, Cookie",
       "cache-control": "max-age=86400, public",
@@ -21,13 +21,13 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Tue, 23 Jun 2026 06:15:03 GMT",
-      "etag": "W/\"1782195303\"",
+      "last-modified": "Thu, 03 Sep 2026 02:30:04 GMT",
+      "etag": "W/\"1788402604\"",
       "x-generator": "Drupal 10 (https://www.drupal.org)",
       "x-drupal-cache-tags": "",
       "x-drupal-cache": "MISS",
-      "x-varnish": "327878 3",
-      "age": "498",
+      "x-varnish": "164034 65541",
+      "age": "469",
       "via": "1.1 varnish (Varnish/6.2)",
       "cache-tags": "HIT",
       "accept-ranges": "bytes",
@@ -96,15 +96,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://polyfill.io/v3/polyfill.min.js?features=default%2CPromise%2CPromise.prototype.finally%2CArray.isArray": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
