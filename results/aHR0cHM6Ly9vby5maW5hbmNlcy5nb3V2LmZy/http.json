@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 25 Jun 2026 06:19:24 GMT",
+      "date": "Thu, 03 Sep 2026 02:37:11 GMT",
       "server": "nginx",
       "content-security-policy": "img-src 'self' data:;style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';default-src 'self';upgrade-insecure-requests;frame-ancestors 'self' https://bercydoc.finances.gouv.fr",
       "strict-transport-security": "max-age=34560000; includeSubDomains; preload, max-age=31536000",
@@ -20,7 +20,7 @@
       "last-modified": "Thu, 28 Nov 2024 02:51:33 GMT",
       "vary": "Accept-Encoding",
       "etag": "W/\"6747dab5-124d\"",
-      "expires": "Fri, 25 Jun 2027 06:19:24 GMT",
+      "expires": "Fri, 03 Sep 2027 02:37:11 GMT",
       "cache-control": "max-age=31536000",
       "connection": "close",
       "transfer-encoding": "chunked",
@@ -93,16 +93,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://oo.finances.gouv.fr/welcome/",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://oo.finances.gouv.fr/",
-        "https://oo.finances.gouv.fr/",
-        "https://oo.finances.gouv.fr/welcome/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
