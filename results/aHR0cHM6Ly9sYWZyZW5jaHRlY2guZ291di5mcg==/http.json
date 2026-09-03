@@ -3,26 +3,32 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 75,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 23 Jun 2026 06:25:51 GMT",
+      "date": "Thu, 03 Sep 2026 02:34:33 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "24769",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "last-modified": "Mon, 22 Jun 2026 22:00:40 GMT",
+      "last-modified": "Wed, 02 Sep 2026 15:10:13 GMT",
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "content-security-policy": "default-src https: 'self'; object-src 'none'; child-src https: platform.twitter.com; img-src https: data:; font-src https: data:; style-src  https: 'unsafe-inline' 'unsafe-eval' 'self'; script-src https: 'unsafe-inline' 'unsafe-eval' 'self';",
       "referrer-policy": "strict-origin",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "set-cookie": [
+        "visid_incap_3331490=Q38qWfKESb6di6h/mTTHEVTdmGoAAAAAQUIPAAAAAABVQqTzD2oGU+jsqtiNCpdm; expires=Thu, 02 Sep 2027 06:48:37 GMT; HttpOnly; path=/; Domain=.lafrenchtech.gouv.fr",
+        "incap_ses_1093_3331490=LpNhYNzI8hBiOOgavx0rD1TdmGoAAAAAfkHxUuJb0zPyRt+vjuQT/A==; path=/; Domain=.lafrenchtech.gouv.fr"
+      ],
+      "x-cdn": "Imperva",
+      "transfer-encoding": "chunked",
+      "x-iinfo": "37-82353831-82353835 NNNN CT(95 98 0) RT(1788403029222 11) q(0 0 2 1) r(4 4) U5"
     }
   },
   "tests": {
@@ -83,10 +89,23 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "visid_incap_3331490": {
+          "domain": "lafrenchtech.gouv.fr",
+          "expires": "2027-09-02T06:48:37.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_1093_3331490": {
+          "domain": "lafrenchtech.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
