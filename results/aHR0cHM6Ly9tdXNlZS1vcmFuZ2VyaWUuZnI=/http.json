@@ -1,20 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C+",
     "error": null,
-    "score": 65,
+    "score": 60,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 23 Jun 2026 06:24:24 GMT",
+      "date": "Thu, 03 Sep 2026 02:37:07 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "set-cookie": [
-        "__wadp_clearance_sid=1782195863563_980jnnzv6; Path=/; Max-Age=21600; Expires=Tue, 23 Jun 2026 12:24:23 GMT; Max-Age=21600"
+        "__wadp_clearance_sid=1788403027689_rlc5vukwz; Path=/; Max-Age=21600; Expires=Thu, 03 Sep 2026 08:37:07 GMT; Max-Age=21600"
       ],
       "cache-control": "max-age=900, public",
       "content-language": "fr",
@@ -22,15 +22,15 @@
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "HIT",
-      "last-modified": "Tue, 23 Jun 2026 06:20:13 GMT",
+      "last-modified": "Thu, 03 Sep 2026 02:35:31 GMT",
       "strict-transport-security": "max-age=15768000",
       "age": "0",
       "x-content-type-options": "nosniff",
-      "x-clara-wadp": "689246421",
+      "x-clara-wadp": "2423361637",
       "server": "cloudflare",
       "x-wadp-cache": "MISS",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a10168d1cd628901-LAX"
+      "cf-ray": "a3515eead87b170f-ORD"
     }
   },
   "tests": {
@@ -53,7 +53,7 @@
       "data": {
         "__cf_bm": {
           "domain": "musee-orangerie.fr",
-          "expires": "2026-06-23T06:54:23.000Z",
+          "expires": "2026-09-03T03:07:07.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -62,7 +62,7 @@
         },
         "__wadp_clearance_sid": {
           "domain": "www.musee-orangerie.fr",
-          "expires": "2026-06-23T12:24:23.000Z",
+          "expires": "2026-09-03T08:37:07.000Z",
           "max-age": 21600,
           "path": "/",
           "port": null
@@ -113,10 +113,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://webapp.askmona.ai/embed/embed.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
