@@ -1,118 +1,105 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C+",
     "error": null,
-    "score": 55,
-    "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 60,
+    "statusCode": 403,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 23 Jun 2026 06:22:00 GMT",
+      "date": "Thu, 03 Sep 2026 02:37:48 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-X0Gw9N5pis4aeEb4xYpoQE' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
-      "cache-control": "max-age=0, must-revalidate, public, s-maxage=56505",
-      "x-drupal-dynamic-cache": "MISS",
-      "content-language": "fr",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"a3515fe99d4ec4e5\"",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Tue, 23 Jun 2026 22:00:00 GMT",
-      "last-modified": "Tue, 23 Jun 2026 06:18:14 GMT",
-      "cache-tags": "HIT",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "content-security-policy": "object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: t.contentsquare.net contentsquare.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self' https://www.mnhn.fr http://www.museedelhomme.fr https://www.museedelhomme.fr http://www.harmasjeanhenrifabre.fr https://www.harmasjeanhenrifabre.fr http://www.jardindesplantesdeparis.fr https://www.jardindesplantesdeparis.fr http://www.vigienature.fr https://www.vigienature.fr http://pzp.preprod.mnhn.insite.coop https://pzp.preprod.mnhn.insite.coop http://www.parczoologiquedeparis.fr https://www.parczoologiquedeparis.fr http://vn.preprod.mnhn.insite.coop https://vn.preprod.mnhn.insite.coop http://menton.preprod.mnhn.insite.coop https://menton.preprod.mnhn.insite.coop http://www.jardinbotaniquevalrahmehmenton.fr https://www.jardinbotaniquevalrahmehmenton.fr http://ht.preprod.mnhn.insite.coop https://ht.preprod.mnhn.insite.coop http://www.zoodelahautetouche.fr https://www.zoodelahautetouche.fr http://bibliotheques.preprod.mnhn.insite.coop https://bibliotheques.preprod.mnhn.insite.coop http://bibliotheques.mnhn.fr https://bibliotheques.mnhn.fr; frame-ancestors 'self' *.mnhn.fr; report-uri https://www.mnhn.fr/fr/report-uri/enforce",
-      "x-drupal-cache": "MISS",
-      "x-varnish-cacheable": "YES",
-      "vary": "Cookie, Accept-Encoding",
-      "x-varnish": "758949437 757920837",
-      "age": "225",
-      "via": "1.1 varnish (Varnish/7.1)",
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a10165559cfae5b6-IAD"
+      "vary": "accept-encoding",
+      "set-cookie": [
+        "__cf_bm=KoZF4arXcy_lIs91j3DAdFUnM8jXivDTLvaCaWK6IsM-1788403068.4113154-1.0.1.1-7JTU3Sb_cN1u1cz.i8ugYC5d5xSbPsN.Zr4UD.Wu48QKMJQWyaJkmGnXXr6FNZXPsIxAxcNwFW6oR0WZwN8cfSS1_VGt_ygQZpWfAjW.WgHItK49megfI5PsOKHQelnv; HttpOnly; SameSite=None; Secure; Path=/; Domain=mnhn.fr; Expires=Thu, 03 Sep 2026 03:07:48 GMT"
+      ],
+      "cf-ray": "a3515fe99d4ec4e5-ORD"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
+      "result": "csp-implemented-with-insecure-scheme",
       "scoreModifier": -20,
       "data": {
-        "object-src": [
+        "default-src": [
           "'none'"
         ],
         "script-src": [
-          "'self'",
+          "'nonce-x0gw9n5pis4aeeb4xypoqe'",
           "'unsafe-eval'",
-          "'unsafe-inline'",
-          "contentsquare.com",
-          "https:",
-          "t.contentsquare.net"
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
         ],
         "worker-src": [
-          "'self'",
           "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
         ],
         "base-uri": [
           "'self'"
-        ],
-        "form-action": [
-          "'self'",
-          "http://bibliotheques.mnhn.fr",
-          "http://bibliotheques.preprod.mnhn.insite.coop",
-          "http://ht.preprod.mnhn.insite.coop",
-          "http://menton.preprod.mnhn.insite.coop",
-          "http://pzp.preprod.mnhn.insite.coop",
-          "http://vn.preprod.mnhn.insite.coop",
-          "http://www.harmasjeanhenrifabre.fr",
-          "http://www.jardinbotaniquevalrahmehmenton.fr",
-          "http://www.jardindesplantesdeparis.fr",
-          "http://www.museedelhomme.fr",
-          "http://www.parczoologiquedeparis.fr",
-          "http://www.vigienature.fr",
-          "http://www.zoodelahautetouche.fr",
-          "https://bibliotheques.mnhn.fr",
-          "https://bibliotheques.preprod.mnhn.insite.coop",
-          "https://ht.preprod.mnhn.insite.coop",
-          "https://menton.preprod.mnhn.insite.coop",
-          "https://pzp.preprod.mnhn.insite.coop",
-          "https://vn.preprod.mnhn.insite.coop",
-          "https://www.harmasjeanhenrifabre.fr",
-          "https://www.jardinbotaniquevalrahmehmenton.fr",
-          "https://www.jardindesplantesdeparis.fr",
-          "https://www.mnhn.fr",
-          "https://www.museedelhomme.fr",
-          "https://www.parczoologiquedeparis.fr",
-          "https://www.vigienature.fr",
-          "https://www.zoodelahautetouche.fr"
-        ],
-        "frame-ancestors": [
-          "'self'",
-          "*.mnhn.fr"
-        ],
-        "report-uri": [
-          "https://www.mnhn.fr/fr/report-uri/enforce"
         ]
       },
       "http": true,
-      "meta": false,
+      "meta": true,
       "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
+        "antiClickjacking": false,
+        "defaultNone": true,
         "insecureBaseUri": false,
-        "insecureFormAction": false,
+        "insecureFormAction": true,
         "insecureSchemeActive": true,
         "insecureSchemePassive": false,
         "strictDynamic": false,
         "unsafeEval": true,
-        "unsafeInline": true,
+        "unsafeInline": false,
         "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
-      "numPolicies": 1
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -122,7 +109,7 @@
       "data": {
         "__cf_bm": {
           "domain": "mnhn.fr",
-          "expires": "2026-06-23T06:52:00.000Z",
+          "expires": "2026-09-03T03:07:48.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -144,24 +131,22 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.mnhn.fr/fr",
+      "destination": "https://mnhn.fr/",
       "redirects": true,
       "route": [
         "http://mnhn.fr/",
-        "https://mnhn.fr/",
-        "https://www.mnhn.fr/",
-        "https://www.mnhn.fr/fr"
+        "https://mnhn.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
-      "http": false,
-      "meta": true
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
+      "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
@@ -191,17 +176,17 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
