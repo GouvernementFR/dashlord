@@ -11,21 +11,20 @@
     "responseHeaders": {
       "accept-ranges": "bytes",
       "age": "0",
-      "cache-control": "public, s-maxage=86400",
-      "content-length": "12394",
+      "cache-control": "max-age=0, must-revalidate, private, s-maxage=86400",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Tue, 23 Jun 2026 06:25:49 GMT",
-      "server": "Apache",
-      "set-cookie": [
-        "eZSESSID98defd6ee70dfb1dea416cecdf391f58=7no3aau017kinpottbj3uborle; expires=Wed, 01-Jul-2026 06:25:49 GMT; Max-Age=691200; path=/; secure; HttpOnly"
-      ],
+      "date": "Thu, 03 Sep 2026 02:37:44 GMT",
+      "expires": "Thu, 03 Sep 2026 02:37:44 GMT",
+      "server": "Apache/2.4.67 (Debian)",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "vary": "cookie,authorization,Accept-Encoding",
+      "vary": "Origin,cookie,authorization,Accept-Encoding",
+      "x-backend": "web_bo",
       "x-ogo-cache": "MISS",
-      "x-powered-by": "eZ Platform v2",
-      "x-varnish": "1347244736",
-      "xkey": "ez-all r2087 r2222 r2057 r79 c52 ct13 l54 pl2 p1 p2 p54",
-      "connection": "close"
+      "x-powered-by": "Ibexa Open Source v3",
+      "x-ttl": "86400.000",
+      "x-varnish": "259289549, 179127692",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -43,27 +42,17 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "eZSESSID98defd6ee70dfb1dea416cecdf391f58": {
-          "domain": "www.mangerbouger.fr",
-          "expires": "2026-07-01T06:25:49.000Z",
-          "httponly": true,
-          "max-age": 691200,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "null"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
