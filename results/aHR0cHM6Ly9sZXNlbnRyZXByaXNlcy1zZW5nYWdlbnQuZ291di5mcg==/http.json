@@ -1,118 +1,48 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "D",
     "error": null,
-    "score": 110,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 0,
-    "testsPassed": 10,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 23 Jun 2026 06:23:22 GMT",
+      "date": "Thu, 03 Sep 2026 02:37:30 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "70793684-1f17-4ba0-8d34-9b4d1e2af197",
-      "referrer-policy": "no-referrer",
-      "x-frame-options": "DENY",
+      "cf-ray": "a3515f78cd787ce6-IAD",
+      "cf-cache-status": "DYNAMIC",
+      "cache-control": "s-maxage=3600, stale-while-revalidate=31532400",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nCqo92WEo761Koa3a4pV1qYTnOY54r0fsf1WrPXpGwwt%2BgPOWjur%2FA%2Fcaqa9rh23iLykLGE3QJVRHVZDMf0h2DkvjY%2BLzAL3kW4sCLqQ3GTIcjJ8bw%2B5nC3Jos2JdodpuiGZRzJ5it5zse6jjxmhV28k8A%3D%3D\"}]}",
+      "server": "cloudflare",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff",
-      "x-xss-protection": "0",
-      "strict-transport-security": "max-age=63072000; includeSubDomains",
-      "content-security-policy": "default-src 'self' data:; script-src 'self' 'nonce-ODhkMTE0OWUtN2UwOS00ZWQ2LTkxMmYtM2JkM2U3ZmZkMDlj' tag.aticdn.net www.googletagmanager.com gva.et-gv.fr *.gouv.fr snap.licdn.com 'sha256-A+Na0UD9JyZvXLepJqUfQMWfcn9nOlpTllAwDx45MIE=' rpwg.lesentreprises-sengagent.gouv.fr; frame-src form.typeform.com itou.typeform.com *.doubleclick.net *.youtube.com *.gouv.fr *.service-public.fr lesentreprises-sengagent-data-warehouse.osc-fr1.scalingo.io; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: *.xiti.com *.doubleclick.net *.gouv.fr *.graphassets.com *.ads.linkedin.com www.google.com; connect-src 'self' *.google-analytics.com *.xiti.com api-adresse.data.gouv.fr https://openmaptiles.geo.data.gouv.fr/ https://openmaptiles.data.gouv.fr/ https://openmaptiles.github.io https://*.ingest.de.sentry.io https://www.google.com *.ads.linkedin.com; frame-ancestors 'self' manifesteinclusion.org agefiph.fr fiphfp.fr handicap.gouv.fr travail-emploi.gouv.fr; worker-src blob:;",
+      "x-frame-options": "SAMEORIGIN",
       "x-nextjs-cache": "HIT",
-      "cache-control": "s-maxage=31536000",
+      "x-nextjs-prerender": "1",
+      "x-nextjs-stale-time": "300",
       "x-powered-by": "Next.js",
-      "etag": "\"6hm4ynuspk4cy1\"",
-      "vary": "Accept-Encoding"
+      "x-request-id": "19ed4dab-66cb-4cdd-a133-46f91e2ed58a",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=0,cfWorker;dur=422",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": true,
-      "result": "csp-implemented-with-unsafe-inline-in-style-src-only",
-      "scoreModifier": 0,
-      "data": {
-        "default-src": [
-          "'self'",
-          "data:"
-        ],
-        "script-src": [
-          "'nonce-odhkmte0owutn2uwos00zwq2ltkxmmytm2jkm2u3zmzkmdlj'",
-          "'self'",
-          "'sha256-a+na0ud9jyzvxlepjqufqmwfcn9nolptllawdx45mie='",
-          "*.gouv.fr",
-          "gva.et-gv.fr",
-          "rpwg.lesentreprises-sengagent.gouv.fr",
-          "snap.licdn.com",
-          "tag.aticdn.net",
-          "www.googletagmanager.com"
-        ],
-        "frame-src": [
-          "*.doubleclick.net",
-          "*.gouv.fr",
-          "*.service-public.fr",
-          "*.youtube.com",
-          "form.typeform.com",
-          "itou.typeform.com",
-          "lesentreprises-sengagent-data-warehouse.osc-fr1.scalingo.io"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ],
-        "img-src": [
-          "'self'",
-          "*.ads.linkedin.com",
-          "*.doubleclick.net",
-          "*.gouv.fr",
-          "*.graphassets.com",
-          "*.xiti.com",
-          "blob:",
-          "data:",
-          "www.google.com"
-        ],
-        "connect-src": [
-          "'self'",
-          "*.ads.linkedin.com",
-          "*.google-analytics.com",
-          "*.xiti.com",
-          "api-adresse.data.gouv.fr",
-          "https://*.ingest.de.sentry.io",
-          "https://openmaptiles.data.gouv.fr/",
-          "https://openmaptiles.geo.data.gouv.fr/",
-          "https://openmaptiles.github.io",
-          "https://www.google.com"
-        ],
-        "frame-ancestors": [
-          "'self'",
-          "agefiph.fr",
-          "fiphfp.fr",
-          "handicap.gouv.fr",
-          "manifesteinclusion.org",
-          "travail-emploi.gouv.fr"
-        ],
-        "worker-src": [
-          "blob:"
-        ]
-      },
-      "http": true,
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": false,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -131,14 +61,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://lesentreprises-sengagent.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://lesentreprises-sengagent.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://lesentreprises-sengagent.gouv.fr/",
-        "https://lesentreprises-sengagent.gouv.fr/"
+        "http://lesentreprises-sengagent.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -147,27 +76,32 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "no-referrer",
+      "data": "strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A=="
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -179,9 +113,9 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "DENY"
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
