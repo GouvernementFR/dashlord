@@ -1,31 +1,36 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D",
     "error": null,
-    "score": 70,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
+      "date": "Sat, 05 Sep 2026 02:32:22 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "15097",
+      "connection": "close",
       "accept-ranges": "bytes",
       "age": "0",
       "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
       "content-language": "fr-FR",
-      "content-length": "15773",
-      "content-security-policy": "frame-ancestors 'self' https://billetterie.musee-marine.fr",
-      "content-type": "text/html; charset=utf-8",
-      "date": "Wed, 24 Jun 2026 17:37:20 GMT",
+      "content-security-policy": "frame-ancestors 'self' https://billetterie.musee-marine.fr https://mnm-invitations.shop.secutix.com",
       "expires": "0",
       "pragma": "no-cache",
-      "server": "server",
+      "server": "cloudflare",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff, nosniff",
       "x-ua-compatible": "IE=edge",
       "x-xss-protection": "1",
-      "connection": "close"
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=p2q4NBu6FMk6YlUQOoMLqfU%2BCVQf%2FjMoUQ1bjQBVyNtDrzDUIVk3i8rU4O4G%2BSV57Vv8tcegr5lXRmuwmpf%2FfOhzmNsZpsL9qzkne%2BkaQNsRTv1rd%2FFUFykJtZtGl8R51CC0eh0%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "cf-ray": "a361d2b118ff474e-DFW",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -37,7 +42,8 @@
       "data": {
         "frame-ancestors": [
           "'self'",
-          "https://billetterie.musee-marine.fr"
+          "https://billetterie.musee-marine.fr",
+          "https://mnm-invitations.shop.secutix.com"
         ]
       },
       "http": true,
@@ -74,16 +80,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://www.musee-marine.fr/",
       "redirects": true,
-      "route": [
-        "http://musee-marine.fr/",
-        "https://musee-marine.fr/",
-        "https://www.musee-marine.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -97,12 +99,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
