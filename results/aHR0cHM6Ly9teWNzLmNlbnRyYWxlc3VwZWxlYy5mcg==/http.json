@@ -9,23 +9,22 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 14 Jun 2026 17:25:57 GMT",
-      "server": "Apache/2.4.10 (Debian)",
+      "date": "Sat, 05 Sep 2026 02:33:33 GMT",
+      "server": "Apache/2.4.67 (Debian)",
       "cache-control": "max-age=1800, public",
-      "x-drupal-dynamic-cache": "HIT",
-      "link": "<https://mycs.centralesupelec.fr/fr/home>; rel=\"alternate\"; hreflang=\"fr\", <https://mycs.centralesupelec.fr/fr/home>; rel=\"canonical\", <https://mycs.centralesupelec.fr/fr/node/783>; rel=\"shortlink\", <https://mycs.centralesupelec.fr/fr/home>; rel=\"revision\"",
+      "x-drupal-dynamic-cache": "MISS",
       "x-ua-compatible": "IE=edge",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Fri, 04 Sep 2026 08:00:04 GMT",
+      "etag": "\"1788508804-gzip\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-generator": "Drupal 8 (https://www.drupal.org)",
+      "x-generator": "Drupal 9 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
-      "last-modified": "Thu, 18 Jun 2026 14:47:05 GMT",
-      "etag": "\"1781794025-gzip\"",
-      "content-length": "7007",
       "connection": "close",
+      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -95,6 +94,10 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
+        "https://www.googletagmanager.com/gtag/js?id=UA-51617378-33": {
+          "crossorigin": null,
+          "integrity": null
+        },
         "//openagenda.com/js/embed/oaPreviewWidget.js": {
           "crossorigin": null,
           "integrity": null
