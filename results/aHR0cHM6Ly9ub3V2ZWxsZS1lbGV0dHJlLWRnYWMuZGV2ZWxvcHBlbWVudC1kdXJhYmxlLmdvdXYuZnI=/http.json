@@ -1,29 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 25 Jun 2026 06:19:21 GMT",
-      "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
-      "content-type": "text/html; charset=utf-8",
-      "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://nouvelle-elettre-dgac.developpement-durable.gouv.fr/local/cache-css/967a7be83185b2e401ffaebdbabd83d1.css?1782116842>;rel=\"preload\";as=\"style\"",
-      "x-spip-cache": "3600",
-      "last-modified": "Thu, 25 Jun 2026 06:19:21 GMT",
-      "set-cookie": [
-        "SRV=52696967-2676-464a-b1a3-0c4be5f98167; path=/"
-      ],
-      "vary": "Cookie,Accept-Encoding",
-      "cache-control": "private",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "date": "Sat, 05 Sep 2026 02:31:54 GMT",
+      "server": "",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "last-modified": "Thu, 20 Aug 2026 16:53:56 GMT",
+      "etag": "\"8ec1-6597d5d9c9946-gzip\"",
+      "vary": "Accept-Encoding",
+      "content-length": "6213",
+      "content-type": "text/html",
+      "content-language": "fr"
     }
   },
   "tests": {
@@ -40,16 +36,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
-      "data": {
-        "SRV": {
-          "domain": "nouvelle-elettre-dgac.developpement-durable.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -86,16 +76,16 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
