@@ -1,26 +1,31 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 10,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 25 Jun 2026 06:20:23 GMT",
+      "date": "Sat, 05 Sep 2026 02:32:01 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "15758",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "vary": "User-Agent,Accept-Encoding",
-      "set-cookie": [
-        "e806afafb16320088daa8eba13a1f7ac=fr-FR; path=/"
-      ],
-      "expires": "Mon, 1 Jan 2001 00:00:00 GMT",
-      "last-modified": "Thu, 25 Jun 2026 06:20:23 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "pragma": "no-cache"
+      "cf-ray": "a361d22eafed2b55-LAX",
+      "cf-cache-status": "HIT",
+      "age": "44608",
+      "last-modified": "Fri, 04 Sep 2026 14:47:09 GMT",
+      "link": "<https://cdn.prod.website-files.com>; rel=preconnect; crossorigin, <https://cdn.prod.website-files.com/6a0f929ed37b2d3e9030bfbe/css/miqcp-gouv-f.webflow.shared.84d9861e5.css>; rel=preload; as=style; crossorigin; integrity=\"sha384-hNmGHlUN7dK6dqg93pNCSbOdYImKCUTyOWtIeSLR4+RUUpJ3txA5P6M/kT4PHG/B\"",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=31536000",
+      "vary": "accept-encoding",
+      "surrogate-control": "max-age=432000",
+      "surrogate-key": "www.miqcp.gouv.fr 6a0f929ed37b2d3e9030bfbe pageId:6a0f92a0d37b2d3e9030c004 6a3d4ed1ddf158f72d5096ec",
+      "x-lambda-id": "01690bc2-3e45-42c0-97ad-bf01146ef148",
+      "x-wf-region": "us-east-1",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -37,24 +42,20 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
-        "08813efe27b028b1ff37323c7de54f3f": {
+        "_cfuvid": {
           "domain": "miqcp.gouv.fr",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "none",
           "secure": true
-        },
-        "e806afafb16320088daa8eba13a1f7ac": {
-          "domain": "miqcp.gouv.fr",
-          "path": "/",
-          "port": null
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -68,12 +69,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://miqcp.gouv.fr/index.php?lang=fr",
+      "destination": "https://www.miqcp.gouv.fr/",
       "redirects": true,
       "route": [
         "http://miqcp.gouv.fr/",
         "https://miqcp.gouv.fr/",
-        "https://miqcp.gouv.fr/index.php?lang=fr"
+        "https://www.miqcp.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -88,21 +89,42 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6a0f929ed37b2d3e9030bfbe": {
+          "crossorigin": "anonymous",
+          "integrity": "sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        },
+        "https://cdn.prod.website-files.com/6a0f929ed37b2d3e9030bfbe/js/webflow.schunk.36b8fb49256177c8.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G"
+        },
+        "https://cdn.prod.website-files.com/6a0f929ed37b2d3e9030bfbe/js/webflow.schunk.1398ace9ffbb200a.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-EVP6t2U07qoLfhZHt+I2uUY5DBG5cLU1LidMdpFA0l5xbMsorberyNhh8TZYB7b1"
+        },
+        "https://cdn.prod.website-files.com/6a0f929ed37b2d3e9030bfbe/js/webflow.303ec8e7.a3a5276a709fbb44.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-Hac3QXziCU9gE8I1diMSDROQT/wUuqeZiROZsfi8DrVFQk5h7ccmtXdCboY3d4qp"
+        },
+        "https://cdn.prod.website-files.com/6a0f929ed37b2d3e9030bfbe%2F689e5ba67671442434f3ca35%2F6a1d53d5870940ae79813b06%2Fnavbar_mobile_toggle-1.0.0.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
