@@ -1,20 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "A+",
     "error": null,
-    "score": 80,
+    "score": 105,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 0,
+    "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "no-store",
       "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr https://api.tally.so https://*.tally.so; font-src 'self' https://fonts.gstatic.com https://tally.so https://*.tally.so; img-src 'self' https://tally.so https://*.tally.so data:; script-src 'self' https://*.gouv.fr https://tally.so https://*.tally.so; frame-src 'self' https://*.gouv.fr https://tally.so https://*.tally.so; style-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so https://*.tally.so",
       "content-type": "text/html; charset=utf-8",
-      "date": "Thu, 25 Jun 2026 06:19:17 GMT",
-      "etag": "W/\"6a2b3b96-8f1\"",
-      "last-modified": "Thu, 11 Jun 2026 22:49:58 GMT",
+      "date": "Sat, 05 Sep 2026 02:33:06 GMT",
+      "etag": "W/\"6a9b4e5f-8f1\"",
+      "last-modified": "Fri, 04 Sep 2026 23:03:59 GMT",
       "referrer-policy": "strict-origin-when-cross-origin",
       "server": "nginx",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
@@ -112,15 +112,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://mon-domifa.fabrique.social.gouv.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://mon-domifa.fabrique.social.gouv.fr/",
+      "redirects": true,
       "route": [
-        "http://mon-domifa.fabrique.social.gouv.fr/"
+        "http://mon-domifa.fabrique.social.gouv.fr/",
+        "https://mon-domifa.fabrique.social.gouv.fr/"
       ],
-      "statusCode": 503
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
