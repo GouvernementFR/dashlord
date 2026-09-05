@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 24 Jun 2026 21:30:09 GMT",
+      "date": "Fri, 04 Sep 2026 21:30:42 GMT",
       "cache-control": "max-age=2764800, public",
       "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
@@ -22,14 +22,13 @@
       "vary": "Cookie",
       "content-security-policy": "report-uri /report-csp-violation",
       "x-drupal-cache": "HIT",
-      "content-length": "30485",
+      "content-length": "30491",
       "content-type": "text/html; charset=UTF-8",
+      "connection": "close",
       "set-cookie": [
-        "ROUTEID=.route1; path=/; Domain=.justice.gouv.fr; max-age=3600",
-        "mj_rsid=!khZY4oTrZoHIIBbCvQ1DvNdtxm38M9/4MvuYJShdGDm+zndLzUm26IwEQmQPllrLqo9kcI8NERlc3t0=; path=/; Httponly",
-        "TS01adc431=01a6efdead08559bc149e266b94440f2dda4390201522c0e1dc7a037318847fc9a97ad09d47ba1c66d9e026c605af126a859a5be07537e6e8da4fe9d6c69b719cda9dc3e9dc00a984cf1dda74e8a5c2f2cc9969d8c; Path=/; Domain=.opm.justice.gouv.fr"
-      ],
-      "connection": "close"
+        "mj_rsid=!hWtjmfd2ObIYs9YnjcbxOu7xFfIXgWV+f9z0YxOYXA2bi6dXBdgVX3wS0YOz3xreMDWLnYzvN0Nge6U=; path=/; Httponly",
+        "TS01adc431=01a6efdead1a344cbeb6c8c718757cab7c1082f02be68a970ec6b56399cf4540754f7cd0425337d3e0060c36b6e4d7efbb83f89b940a0a4838a52760fe912dec6f24cbb55f; Path=/; Domain=.opm.justice.gouv.fr"
+      ]
     }
   },
   "tests": {
@@ -66,12 +65,6 @@
       "result": "cookies-without-secure-flag",
       "scoreModifier": -20,
       "data": {
-        "ROUTEID": {
-          "domain": "justice.gouv.fr",
-          "max-age": 3600,
-          "path": "/",
-          "port": null
-        },
         "mj_rsid": {
           "domain": "opm.justice.gouv.fr",
           "httponly": true,
