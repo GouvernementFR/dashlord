@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 25 Jun 2026 06:19:24 GMT",
+      "date": "Sat, 05 Sep 2026 02:31:57 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://mes-services.mer.gouv.fr/local/cache-css/56f9c82ac0ee60e1e59f5f7d7f493dea.css?1782134966>;rel=\"preload\";as=\"style\"",
+      "link": "<https://mes-services.mer.gouv.fr/local/cache-css/56f9c82ac0ee60e1e59f5f7d7f493dea.css?1788530257>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Thu, 25 Jun 2026 06:19:24 GMT",
+      "last-modified": "Sat, 05 Sep 2026 02:31:57 GMT",
       "set-cookie": [
-        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
+        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
