@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
-      "date": "Thu, 25 Jun 2026 06:25:24 GMT",
+      "date": "Mon, 07 Sep 2026 02:31:58 GMT",
       "server": "Apache",
       "cache-control": "must-revalidate, no-cache, private",
       "content-language": "fr",
@@ -25,14 +25,15 @@
       "transfer-encoding": "chunked",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "x-cdn": "Imperva",
-      "x-iinfo": "13-45574623-45574625 NNNN CT(82 85 0) RT(1782368724725 14) q(0 0 2 -1) r(3 3) U12"
+      "content-security-policy-report-only": "default-src 'self' 'unsafe-eval' 'unsafe-hashes' 'unsafe-inline' data: blob: ; form-action 'none' ; frame-ancestors 'self' ; script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample'; report-uri /csp_report",
+      "x-iinfo": "18-110490192-110490193 NNNN CT(91 94 0) RT(1788748318523 3) q(0 0 2 -1) r(3 3) U12"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
+      "result": "csp-not-implemented-but-reporting-enabled",
       "scoreModifier": -25,
       "data": null,
       "http": false,
@@ -48,7 +49,7 @@
       "data": {
         "visid_incap_3071635": {
           "domain": "nantes.port.fr",
-          "expires": "2027-06-24T07:15:08.000Z",
+          "expires": "2027-09-06T07:17:11.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -63,7 +64,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_1539_3071635": {
+        "incap_ses_328_3071635": {
           "domain": "nantes.port.fr",
           "path": "/",
           "port": null,
