@@ -1,24 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 0,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 27 Jun 2026 06:07:49 GMT",
-      "server": "Apache",
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-      "pragma": "no-cache",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade, close",
-      "vary": "Accept-Encoding",
-      "content-length": "6274",
-      "content-type": "text/html; charset=iso-8859-1"
+      "access-control-allow-origin": "*",
+      "age": "139769",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Mon, 07 Sep 2026 02:32:09 GMT",
+      "etag": "W/\"f469f5c2c823b93f2dbea3b7dabb98cf\"",
+      "last-modified": "Sat, 05 Sep 2026 11:42:39 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "sfo1::v6sc8-1788748329264-f13f4b021d4d",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -35,24 +39,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "PHPSESSID": {
-          "domain": "pass-loisirs-culture.igesa.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        },
-        "sc_u": {
-          "domain": "pass-loisirs-culture.igesa.fr",
-          "expires": "2027-06-27T06:07:48.000Z",
-          "max-age": 31536000,
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -67,12 +57,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://pass-loisirs-culture.igesa.fr/identification/",
+      "destination": "https://www.monpcld.fr/",
       "redirects": true,
       "route": [
         "http://pass-loisirs-culture.igesa.fr/",
         "https://pass-loisirs-culture.igesa.fr/",
-        "https://pass-loisirs-culture.igesa.fr/identification/"
+        "https://www.monpcld.fr/"
       ],
       "statusCode": 200
     },
@@ -87,30 +77,21 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.google.com/recaptcha/api.js?render=6LcaBtcZAAAAAJ7yr0SDfnfoDWKc-L4nvS9qBLeU": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://www.googletagmanager.com/gtag/js?id=UA-64522085-1": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
