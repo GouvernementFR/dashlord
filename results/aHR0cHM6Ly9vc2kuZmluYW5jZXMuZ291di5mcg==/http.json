@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 27 Jun 2026 06:07:47 GMT",
+      "date": "Mon, 07 Sep 2026 02:31:49 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=34560000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
@@ -55,15 +55,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://osi.finances.gouv.fr/",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://osi.finances.gouv.fr/",
-        "https://osi.finances.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
