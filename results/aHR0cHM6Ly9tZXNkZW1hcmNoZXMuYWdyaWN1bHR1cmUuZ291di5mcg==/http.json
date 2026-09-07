@@ -1,26 +1,36 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C-",
     "error": null,
-    "score": 70,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 25 Jun 2026 06:26:27 GMT",
-      "server": "",
-      "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=63072000;includeSubDomains; preload",
-      "vary": "Cookie,Accept-Encoding,User-Agent",
-      "composed-by": "SPIP 2.1.23 @ www.spip.net + ciag(1.13), ciautoriser(1.2), cicas(1.45), cichat(1.1), cid(1.21), cifiltre(1.1), ciimport(1.3), ciparam(1.62), cipr(1.22), cirr(1.11), cirv(1.1), cisf(1.60), cisquel(1.94), images(1.0.1), msie_compat(1.0.0), porte_plume(1.7.9), safehtml(1.3.7), vertebres(1.0.0), charte(0.4), config(0.2), ciar(1.53), ciform(1.33), cispam(1.23), compresseur(1.0.2)",
-      "x-spip-cache": "86400",
-      "last-modified": "Thu, 25 Jun 2026 06:26:27 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "x-xss-protection": "1; mode=block",
+      "server": "nginx",
+      "date": "Mon, 07 Sep 2026 02:31:48 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "160097",
       "connection": "close",
-      "transfer-encoding": "chunked"
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie",
+      "x-host": "AGRIGOUV-HTTP21",
+      "x-drupal-dynamic-cache": "MISS",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "last-modified": "Sun, 06 Sep 2026 21:01:52 GMT",
+      "etag": "\"1788728512\"",
+      "cache-tags": "config:block_list config:block.block.agrigouv_local_actions node:111263 config:block.block.agrigouv_local_tasks config:block.block.agrigouv_page_title config:block.block.agrigouv_help config:block.block.agrigouv_content config:block.block.agrigouv_views_block__carrefour_related_items_block_1 config:block.block.portraitministre config:block.block.portaitministredeleguee config:block.block.agrigouv_powered config:block.block.agrigouv_branding config:block.block.agrigouv_account_menu config:block.block.agrigouv_tools config:block.block.agrigouv_messages config:block.block.agrigouv_breadcrumbs config:block.block.formulaireexposerechercher_principalpage_1 config:block.block.alerterouge config:block.block.formulaireexposerechercher_presse_etenduepage_1 config:block.block.blocheaderpourespacepresseetendu config:block.block.agrigouv_formulaireexposetous_les_dossierspage_1 config:block.block.agrigouv_formulaireexposetoutes_les_actualitespage_1 config:block.block.agrigouv_formulaireexposetoutes_les_regionspage_1 config:block.block.agrigouv_footer config:block.block.pieddepagereseau block_content:2 config:block.block.pieddepagepresentation config:block.block.trackinggarealarage config:block.block.trackingplantesendanger config:block.block.trackingpesteporcineafricaine config:block.block.typedecontenu config:block.block.thematique config:block.block.rubrique config:block.block.facetdateblock config:block.block.facetresetblock config:block.block.parthematiquepresse config:block.block.typepresse config:block.block.facetdatepresseblock config:block.block.facetresetpresseblock config:block.block.contactpresse config:block.block.navigationprincipale config:block.block.lastatistiqueagricole config:block.block.dernieresactus config:block.block.toutesnosinfographies config:matomo.settings config:system.menu.reseaux-sociaux block_view node_view node:64686 node:95441 config:toc_api.toc_type.dsfr config:filter.format.full_html user:1024 config:system.site node:109438 config:system.menu.menu-header rendered config:cas.settings http_response config:user.role.anonymous config:system.menu.reseau config:system.menu.footer node:86702 node:86622 node:86621 node:62837 node:87159 config:system.menu.main node:86644 node:109205 node:109208 node:86646 node:86633 node:86643 node:109250 node:86631 node:90331 node:86655 node:86638 node:86637 node:86659 node:100573 node:86650 node:86654 node:108802 node:93847 node:86630 node:86628 node:86685 node:87849 node:107964 node:86674 node:86686 node:109423 node:86684 node:109417 block_content_view config:core.entity_view_display.block_content.basic.default",
+      "from-origin": "same",
+      "surrogate-control": "no-store, content=\"BigPipe/1.0\"",
+      "x-drupal-cache": "UNCACHEABLE (response policy)",
+      "cache-control": "max-age=300",
+      "age": "237",
+      "x-cache": "HIT",
+      "accept-ranges": "bytes",
+      "strict-transport-security": "max-age=2592000;"
     }
   },
   "tests": {
@@ -55,11 +65,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://mesdemarches.agriculture.gouv.fr/",
+      "destination": "https://agriculture.gouv.fr/mes-demarches",
       "redirects": true,
       "route": [
         "http://mesdemarches.agriculture.gouv.fr/",
-        "https://mesdemarches.agriculture.gouv.fr/"
+        "https://mesdemarches.agriculture.gouv.fr/",
+        "https://agriculture.gouv.fr/mes-demarches"
       ],
       "statusCode": 200
     },
@@ -74,13 +85,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000;includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2592000;",
+      "includeSubDomains": false,
+      "maxAge": 2592000,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -92,17 +103,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
