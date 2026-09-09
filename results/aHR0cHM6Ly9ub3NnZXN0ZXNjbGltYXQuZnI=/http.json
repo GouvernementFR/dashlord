@@ -9,21 +9,24 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 27 Jun 2026 06:08:56 GMT",
+      "server": "nginx/1.28.3 (Ubuntu)",
+      "date": "Wed, 09 Sep 2026 02:27:51 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "cbee5c0b-2329-4e12-8ba9-959a123b70f1",
+      "x-request-id": "86856326-df66-4e00-ad60-8ad05424f95f",
       "set-cookie": [
-        "ngc_anon_user=Fe26.2*1*e84f795432cb9ac89258f31b5d73df2fbc63487926336392d37ae2c06020f2ef*6X2kVixqU5jFn_CLLwbrVA*WBNj1k_K7V3Z7DMs88ERGIUNDi76X2Li4gSA8OEQaZPJw7sKjiIq8KO6i85uxC0n9gQReXW4URg80toJGO3jfVSyj7xGKLRRbhtDdwAX1SQA3PK5ctE1yn5VCEU1dxNn*1845612536711*0a1a984d8a2ee04fbe5717d05549b5e6d49203104b17cbf8ae1bbda2b74705f2*I7fBdO8tYupPt7iIEt8nFCZq0h18wQP1C24Ce37zYEo~2; Max-Age=63071940; Domain=nosgestesclimat.fr; Path=/; HttpOnly; Secure; Partitioned; SameSite=None"
+        "ngc_region=%7B%22current%22%3A%22US%22%2C%22initial%22%3A%22US%22%7D; Path=/; Secure; HttpOnly; SameSite=none; Partitioned"
       ],
       "x-next-i18n-router-locale": "fr",
       "x-middleware-rewrite": "/fr",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
-      "link": "</_next/static/media/Marianne_Bold-s.p.1acc68c8.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/Marianne_ExtraBold-s.p.edd00840.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/Marianne_Light-s.p.a8574de2.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/Marianne_Medium-s.p.8e20235c.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/Marianne_Regular-s.p.99097f17.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/Marianne_Thin-s.p.20902f35.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/chunks/91d3bd4f25013f3e.css>; rel=preload; as=\"style\", </_next/static/chunks/735f0d16c2a20ed4.css>; rel=preload; as=\"style\", </_next/static/chunks/a7f828e9470bfc7c.css>; rel=preload; as=\"style\"",
+      "x-nextjs-stale-time": "300",
+      "x-nextjs-postponed": "1",
       "x-powered-by": "Next.js",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-      "strict-transport-security": "max-age=31536000"
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "x-cache-status": "MISS"
     }
   },
   "tests": {
@@ -44,10 +47,9 @@
       "result": "cookies-secure-with-httponly-sessions-and-samesite",
       "scoreModifier": 5,
       "data": {
-        "ngc_anon_user": {
+        "ngc_region": {
           "domain": "nosgestesclimat.fr",
           "httponly": true,
-          "max-age": 63071940,
           "path": "/",
           "port": null,
           "samesite": "none",
@@ -90,9 +92,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
