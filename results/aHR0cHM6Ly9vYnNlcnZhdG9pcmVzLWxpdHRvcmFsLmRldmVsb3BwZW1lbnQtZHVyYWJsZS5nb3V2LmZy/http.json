@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 27 Jun 2026 06:12:08 GMT",
+      "date": "Wed, 09 Sep 2026 02:27:18 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://observatoires-littoral.developpement-durable.gouv.fr/local/cache-css/1ed67600d2aa29bdeabab1da72d75e27.css?1782135395>;rel=\"preload\";as=\"style\"",
+      "link": "<https://observatoires-littoral.developpement-durable.gouv.fr/local/cache-css/1ed67600d2aa29bdeabab1da72d75e27.css?1788530145>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sat, 27 Jun 2026 06:12:08 GMT",
+      "last-modified": "Wed, 09 Sep 2026 02:27:18 GMT",
       "set-cookie": [
-        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
+        "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
