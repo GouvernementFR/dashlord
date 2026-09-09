@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 27 Jun 2026 06:09:01 GMT",
+      "date": "Wed, 09 Sep 2026 02:28:27 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://nouvelle-elettre.developpement-durable.gouv.fr/local/cache-css/09cff27622882a8773d33cd5f5cf619f.css?1780048472>;rel=\"preload\";as=\"style\"",
+      "link": "<https://nouvelle-elettre.developpement-durable.gouv.fr/local/cache-css/09cff27622882a8773d33cd5f5cf619f.css?1788780357>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sat, 27 Jun 2026 06:09:01 GMT",
+      "last-modified": "Wed, 09 Sep 2026 02:28:27 GMT",
       "set-cookie": [
         "SRV=c24ad79d-b7fe-4480-8d22-0db8012d8461; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
