@@ -1,50 +1,71 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "B+",
     "error": null,
-    "score": 45,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 27 Jun 2026 06:11:10 GMT",
+      "date": "Wed, 09 Sep 2026 02:28:20 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "vary": "Accept-Encoding",
-      "cache-control": "must-revalidate, no-cache, private",
-      "x-drupal-dynamic-cache": "UNCACHEABLE",
-      "x-ua-compatible": "IE=edge",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff, nosniff",
-      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "x-generator": "Drupal 9 (https://www.drupal.org)",
-      "strict-transport-security": "max-age=63072000",
-      "x-xss-protection": "1; mode=block",
-      "x-permitted-cross-domain-policies": "master-only",
-      "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=10,cfOrigin;dur=900",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9i%2B6z5p0sXvGOy2P%2Fip78bsViKMwTxWuyGK1XC2rnIJ0zwQDa%2BnP4m285sNwJJNnaEpioKSd8s0N68oV6GuzO48hNa6VGnTmc9296KbWOjrjYDzTP3uYIc4YGqy%2Fa9OzUR6uQ%2Bf5\"}]}",
-      "cf-ray": "a1224af06cb8fca9-SJC",
-      "alt-svc": "h3=\":443\"; ma=86400"
+      "link": "<https://www.museepicassoparis.fr/>; rel=shortlink",
+      "server-timing": "wp-before-template;dur=288.15, cfCacheStatus;desc=\"HIT\", cfEdge;dur=19,cfOrigin;dur=0",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "payment=(), usb=(), interest-cohort=()",
+      "content-security-policy": "object-src 'none'; base-uri 'self'; frame-ancestors 'self';",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self';",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gc1d0QDV26Zl8cgf99%2BimnjyrdkGv7VuTnX5dhW%2Fd8D%2B5VCmrIywodk6oUmChjqsLm88dr%2FUSAXHMG4VyoFBnonRGSE0N3ArEIhLyMWRWu3KYRA4TLYsUtnnOFmAqE4SMHFY3Do%2FDTu8Ig%3D%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "age": "2499",
+      "last-modified": "Wed, 09 Sep 2026 01:49:34 GMT",
+      "cache-control": "no-store",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a382c24a18f5ef9b-SJC"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "object-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -66,30 +87,32 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://museepicassoparis.fr/",
+      "destination": "https://www.museepicassoparis.fr/fr/",
       "redirects": true,
       "route": [
         "http://museepicassoparis.fr/",
-        "https://museepicassoparis.fr/"
+        "https://museepicassoparis.fr/",
+        "https://www.museepicassoparis.fr/",
+        "https://www.museepicassoparis.fr/fr/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "origin",
-      "http": false,
-      "meta": true
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
       "maxAge": 63072000,
       "preload": false,
       "preloaded": false
@@ -100,25 +123,25 @@
       "result": "sri-implemented-and-external-scripts-loaded-securely",
       "scoreModifier": 5,
       "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+          "integrity": "sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
         }
       }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-header-invalid",
-      "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
-      "data": "SAMEORIGIN, SAMEORIGIN"
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
