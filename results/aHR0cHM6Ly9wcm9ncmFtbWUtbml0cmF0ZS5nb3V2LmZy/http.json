@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 03:25:08 GMT",
+      "date": "Wed, 09 Sep 2026 02:29:41 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.consultations-publiques.developpement-durable.gouv.fr/local/cache-css/1662c5025fb3e12f1eed31acd0a52015.css?1782114112>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.consultations-publiques.developpement-durable.gouv.fr/local/cache-css/1662c5025fb3e12f1eed31acd0a52015.css?1788543194>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Mon, 29 Jun 2026 03:25:08 GMT",
+      "last-modified": "Wed, 09 Sep 2026 02:29:41 GMT",
       "set-cookie": [
-        "SRV=52696967-2676-464a-b1a3-0c4be5f98167; path=/"
+        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -87,9 +87,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
