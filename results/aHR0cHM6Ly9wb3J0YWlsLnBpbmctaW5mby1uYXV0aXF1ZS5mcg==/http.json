@@ -1,20 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "B",
     "error": null,
-    "score": 40,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 03:28:36 GMT",
+      "date": "Fri, 11 Sep 2026 02:31:50 GMT",
       "server": "openresty",
-      "strict-transport-security": "max-age=31536000, max-age=31536000; includeSubDomains; preload",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html",
-      "last-modified": "Fri, 10 Apr 2026 07:25:05 GMT",
-      "etag": "\"69d8a5d1-14273-gzip\"",
+      "last-modified": "Thu, 20 Aug 2026 12:39:09 GMT",
+      "etag": "\"6a86f56d-14273-gzip\"",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin",
@@ -99,8 +99,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "SRV": {
           "domain": "portail.ping-info-nautique.fr",
@@ -141,12 +141,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-header-invalid",
-      "scoreModifier": -20,
-      "data": "max-age=31536000, max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
