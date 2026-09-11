@@ -3,15 +3,15 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 50,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
       "content-type": "text/html; charset=utf-8",
-      "date": "Mon, 29 Jun 2026 03:26:23 GMT",
+      "date": "Fri, 11 Sep 2026 02:31:58 GMT",
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
       "strict-transport-security": "max-age=31536000",
@@ -99,22 +99,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
       "data": {
-        "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.0/qs.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha256-fcITAMO7J6YJrwMbJLsTbzXHkWL9akCiSVJWZxA4rVk="
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.8.3/angular-locale_fr-fr.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://cdn.jsdelivr.net/npm/lodash@4.18.1/lodash.min.js": {
           "crossorigin": "anonymous",
           "integrity": "sha512-EQB6Jk/jqPpQNKhvLTcB3xjm6nHAsopiSg5haDbCUibQJJZU59lKB8g3E9NEJkFRn0cAaw/jW4jHOGed0SjmLw=="
