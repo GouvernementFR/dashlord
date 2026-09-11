@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 20,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 03:26:29 GMT",
+      "date": "Fri, 11 Sep 2026 02:31:54 GMT",
       "set-cookie": [
-        "YOMe1h3tgHKNQxhV6V7n5g__=v1w-HOgwSD7Ob; Expires=Mon, 29-Jun-2026 05:26:29 GMT; Path=/"
+        "bZA_=v1F-XOgw__QqE; Expires=Fri, 11-Sep-2026 04:31:54 GMT; Path=/"
       ],
       "content-type": "text/html",
       "last-modified": "Tue, 12 May 2026 16:15:35 GMT",
       "etag": "W/\"6a035227-317\"",
       "x-robots-tag": "noindex, nofollow, nosnippet, noarchive",
       "cache-control": "no-cache",
-      "strict-transport-security": "max-age=2678400",
+      "strict-transport-security": "max-age=31536000",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -38,12 +38,12 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
-        "YOMe1h3tgHKNQxhV6V7n5g__": {
+        "bZA_": {
           "domain": "qualification.fourrieres.interieur.gouv.fr",
-          "expires": "2026-06-29T05:26:29.000Z",
+          "expires": "2026-09-11T04:31:54.000Z",
           "path": "/",
           "port": null
         }
@@ -60,15 +60,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://qualification.fourrieres.interieur.gouv.fr/",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://qualification.fourrieres.interieur.gouv.fr/",
-        "https://qualification.fourrieres.interieur.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -81,12 +78,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=2678400",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": 2678400,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
