@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 03:25:07 GMT",
+      "date": "Fri, 11 Sep 2026 02:31:44 GMT",
       "expires": "",
       "cache-control": "private, pre-check=0, post-check=0, max-age=0, no-transform",
       "pragma": "no-cache",
@@ -20,7 +20,7 @@
       "accept-ranges": "none",
       "x-frame-options": "sameorigin",
       "vary": "Accept-Encoding",
-      "content-length": "10830",
+      "content-length": "11069",
       "content-type": "text/html; charset=utf-8",
       "strict-transport-security": "max-age=31536000",
       "connection": "close"
@@ -63,16 +63,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://qualification.formi.interieur.gouv.fr/login/index.php",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://qualification.formi.interieur.gouv.fr/",
-        "https://qualification.formi.interieur.gouv.fr/",
-        "https://qualification.formi.interieur.gouv.fr/login/index.php"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
