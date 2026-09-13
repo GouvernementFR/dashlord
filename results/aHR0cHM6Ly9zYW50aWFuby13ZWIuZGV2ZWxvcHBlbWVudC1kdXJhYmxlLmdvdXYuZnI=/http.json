@@ -9,10 +9,10 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Jul 2026 03:26:39 GMT",
+      "date": "Sun, 13 Sep 2026 02:30:49 GMT",
       "server": "Apache/2.4.59 (Debian)",
       "cache-control": "max-age=0, must-revalidate, private",
-      "expires": "Wed, 01 Jul 2026 03:26:39 GMT",
+      "expires": "Sun, 13 Sep 2026 02:30:49 GMT",
       "vary": "Accept-Encoding",
       "connection": "close",
       "transfer-encoding": "chunked",
@@ -37,6 +37,15 @@
       "result": "cookies-session-without-secure-flag",
       "scoreModifier": -40,
       "data": {
+        "locale": {
+          "domain": "santiano-web.developpement-durable.gouv.fr",
+          "expires": "2027-09-13T02:30:48.000Z",
+          "httponly": true,
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        },
         "PHPSESSID": {
           "domain": "santiano-web.developpement-durable.gouv.fr",
           "httponly": true,
