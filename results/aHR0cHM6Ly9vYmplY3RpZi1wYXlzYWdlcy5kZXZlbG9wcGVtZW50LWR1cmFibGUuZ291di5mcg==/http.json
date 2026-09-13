@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 03:25:05 GMT",
+      "date": "Sun, 13 Sep 2026 02:29:36 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://objectif-paysages.developpement-durable.gouv.fr/local/cache-css/13343867ded3073057c9a2c7706ae252.css?1780903302>;rel=\"preload\";as=\"style\"",
+      "link": "<https://objectif-paysages.developpement-durable.gouv.fr/local/cache-css/13343867ded3073057c9a2c7706ae252.css?1788780085>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Mon, 29 Jun 2026 03:25:04 GMT",
+      "last-modified": "Sun, 13 Sep 2026 02:29:36 GMT",
       "set-cookie": [
         "SRV=2301a027-9bb3-4d9d-9b1f-32ba044d45fe; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
