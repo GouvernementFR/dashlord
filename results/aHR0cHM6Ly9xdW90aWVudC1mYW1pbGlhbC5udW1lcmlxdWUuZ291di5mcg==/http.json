@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 01 Jul 2026 03:25:32 GMT",
+      "date": "Sun, 13 Sep 2026 02:30:44 GMT",
       "content-type": "text/html; charset=utf-8",
       "content-length": "13266",
       "connection": "close",
@@ -20,13 +20,13 @@
       "x-permitted-cross-domain-policies": "none",
       "referrer-policy": "strict-origin-when-cross-origin",
       "link": "</assets/dsfr-fonts-d48588c7a88bdead4bd1ee0276e7d37920b8be2e7615bef9dbd3f89993ad4a16.css>; rel=preload; as=style; nopush,</assets/dsfr-886102426b28a3c8cd38352678bb0ad00af64476ee62e64147d5991c92a745b6.css>; rel=preload; as=style; nopush,</assets/dsfr-utility-9345e7bbd463ca4071e1b66a29fd5441ef55428405945960910686bfa90c55df.css>; rel=preload; as=style; nopush,</assets/application-c8699c4860e7f6404b448b0e3e0b421e99311d85c2a81a408820cda988520edc.css>; rel=preload; as=style; nopush,</assets/dsfr.module-ee5f65c2b264b74f4d013c7724fe89af2c58587f3cf275b705a833217d668ccb.js>; rel=preload; as=script; nopush",
-      "etag": "W/\"88fc069d33779d1c426fc19458447617\"",
+      "etag": "W/\"345d4f5fc3f40ff84971f517dc96ba34\"",
       "cache-control": "max-age=0, private, must-revalidate",
       "set-cookie": [
-        "_session_id=bf682161646c2d6d352ccdbb07e302fc; path=/; expires=Thu, 02 Jul 2026 03:25:33 GMT; secure; httponly"
+        "_session_id=43fb46307ecc0c96002efda15f2adf86; path=/; expires=Mon, 14 Sep 2026 02:30:44 GMT; secure; httponly; samesite=lax"
       ],
-      "x-request-id": "33269df4-df2b-4ddf-850e-db2909f69ca9",
-      "x-runtime": "0.028407",
+      "x-request-id": "ac5cb41c-872a-4e11-8e65-8a1641d2ee0e",
+      "x-runtime": "0.012988",
       "strict-transport-security": "max-age=63072000"
     }
   },
@@ -45,19 +45,20 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
       "data": {
         "_session_id": {
           "domain": "quotient-familial.numerique.gouv.fr",
-          "expires": "2026-07-02T03:25:33.000Z",
+          "expires": "2026-09-14T02:30:44.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
+          "samesite": "lax",
           "secure": true
         }
       },
-      "sameSite": false
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
