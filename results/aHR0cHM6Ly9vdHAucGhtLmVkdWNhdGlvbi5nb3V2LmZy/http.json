@@ -9,19 +9,20 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 03:30:37 GMT",
-      "content-length": "1154",
-      "expires": "Mon, 29 Jun 2026 03:30:37 GMT",
+      "date": "Sun, 13 Sep 2026 02:30:36 GMT",
+      "content-length": "1230",
+      "expires": "Sun, 13 Sep 2026 02:30:36 GMT",
       "cache-control": "max-age=0, no-cache, no-store, must-revalidate, private",
       "x-frame-options": "SAMEORIGIN",
       "vary": "Accept-Language,Cookie,Accept-Encoding",
       "content-language": "en",
       "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin-when-cross-origin",
+      "cross-origin-opener-policy": "same-origin-allow-popups",
       "set-cookie": [
-        "sessionid=io5rr4cw9yonuwptzhpoiv62s5q1e689; expires=Mon, 29 Jun 2026 04:30:37 GMT; HttpOnly; Max-Age=3600; Path=/; SameSite=Lax; Secure"
+        "sessionid=y30rd3dxvxekl6f493a2w8yw8ilm1u26; expires=Sun, 13 Sep 2026 03:30:36 GMT; HttpOnly; Max-Age=3600; Path=/; SameSite=Lax; Secure",
+        "device_id=df4bb910-f1bc-43ee-aa19-ba6bdb4e56bc; expires=Mon, 13 Sep 2027 02:30:36 GMT; HttpOnly; Max-Age=31536000; Path=/; SameSite=None; Secure"
       ],
-      "x-xss-protection": "1; mode=block",
       "permissions-policy": "fullscreen=(self)",
       "connection": "close",
       "content-type": "text/html; charset=utf-8"
@@ -45,9 +46,19 @@
       "result": "cookies-secure-with-httponly-sessions-and-samesite",
       "scoreModifier": 5,
       "data": {
+        "device_id": {
+          "domain": "otp.phm.education.gouv.fr",
+          "expires": "2027-09-13T02:30:36.000Z",
+          "httponly": true,
+          "max-age": 31536000,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        },
         "sessionid": {
           "domain": "otp.phm.education.gouv.fr",
-          "expires": "2026-06-29T04:30:37.000Z",
+          "expires": "2026-09-13T03:30:36.000Z",
           "httponly": true,
           "max-age": 3600,
           "path": "/",
@@ -61,9 +72,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
