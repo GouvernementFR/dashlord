@@ -9,11 +9,11 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Jul 2026 03:26:36 GMT",
+      "date": "Sun, 13 Sep 2026 02:29:34 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "909672fd-2f21-4e6b-9d8d-d5ae210d60c5",
+      "x-request-id": "2306458b-437e-438f-b64b-6080156cd1a2",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-resource-policy": "same-origin",
       "origin-agent-cluster": "?1",
@@ -26,13 +26,13 @@
       "x-xss-protection": "0",
       "feature-policy": "geolocation 'self'",
       "permissions-policy": "geolocation=(self), accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()",
-      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' https://stats.beta.gouv.fr/ https://*.tile.openstreetmap.org/ https://axeptio.imgix.net https://www.google.com/ https://www.google.fr/ https://www.facebook.com https://googleads.g.doubleclick.net https://*.crisp.chat https://*.crisp.help data:;object-src 'none';script-src 'self' https://stats.beta.gouv.fr/ 'sha256-sqjiu0yVEwRFwPjX2fpBsUHfmtb6Cd2U2U+ip0KXg4c=' https://static.axept.io/ https://connect.facebook.net https://www.googletagmanager.com/ https://www.googleadservices.com/ https://googleads.g.doubleclick.net https://*.crisp.chat https://*.crisp.help 'sha256-t4VtNIUiuBKi5VJfKaIxe2Ww1/6O3gae/Qtmhx4B0uE=';script-src-attr 'self' 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;frame-src https://santepsy-metabase.osc-secnum-fr1.scalingo.io https://stats.santepsyetudiant.beta.gouv.fr https://embed.acast.com/kaavan-podcast?feed=true&theme=light&wmode=opaque https://bid.g.doubleclick.net/ https://game.crisp.chat https://*.crisp.chat https://*.crisp.help;connect-src 'self' https://nominatim.openstreetmap.org https://stats.beta.gouv.fr/ https://client.axept.io/ wss://client.relay.crisp.chat https://client.crisp.chat https://storage.crisp.chat wss://stream.relay.crisp.chat https://cdn.jsdelivr.net https://*.crisp.chat https://*.crisp.help https://data.geopf.fr",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' https://stats.beta.gouv.fr/ https://*.tile.openstreetmap.org/ https://axeptio.imgix.net https://www.google.com/ https://www.google.fr/ https://www.facebook.com https://googleads.g.doubleclick.net https://*.crisp.chat https://*.crisp.help data:;object-src 'self' blob:;script-src 'self' https://stats.beta.gouv.fr/ 'sha256-sqjiu0yVEwRFwPjX2fpBsUHfmtb6Cd2U2U+ip0KXg4c=' https://static.axept.io/ https://connect.facebook.net https://www.googletagmanager.com/ https://www.googleadservices.com/ https://googleads.g.doubleclick.net https://*.crisp.chat https://*.crisp.help 'sha256-t4VtNIUiuBKi5VJfKaIxe2Ww1/6O3gae/Qtmhx4B0uE=';script-src-attr 'self' 'unsafe-inline';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;frame-src https://santepsy-metabase.osc-secnum-fr1.scalingo.io https://stats.santepsyetudiant.beta.gouv.fr https://embed.acast.com/kaavan-podcast?feed=true&theme=light&wmode=opaque https://bid.g.doubleclick.net/ https://game.crisp.chat https://*.crisp.chat https://*.crisp.help blob:;connect-src 'self' https://nominatim.openstreetmap.org https://stats.beta.gouv.fr/ https://client.axept.io/ wss://client.relay.crisp.chat https://client.crisp.chat https://storage.crisp.chat wss://stream.relay.crisp.chat https://cdn.jsdelivr.net https://*.crisp.chat https://*.crisp.help https://data.geopf.fr",
       "cache-control": "no-cache, no-store, must-revalidate",
       "pragma": "no-cache",
       "expires": "0",
       "accept-ranges": "bytes",
-      "last-modified": "Tue, 30 Jun 2026 09:46:20 GMT",
-      "etag": "W/\"747-19f17ec25e0\"",
+      "last-modified": "Mon, 07 Sep 2026 14:45:36 GMT",
+      "etag": "W/\"747-1a07c54ee80\"",
       "vary": "Accept-Encoding"
     }
   },
@@ -74,7 +74,8 @@
           "https://www.google.fr/"
         ],
         "object-src": [
-          "'none'"
+          "'self'",
+          "blob:"
         ],
         "script-src": [
           "'self'",
@@ -102,6 +103,7 @@
           "'none'"
         ],
         "frame-src": [
+          "blob:",
           "https://*.crisp.chat",
           "https://*.crisp.help",
           "https://bid.g.doubleclick.net/",
