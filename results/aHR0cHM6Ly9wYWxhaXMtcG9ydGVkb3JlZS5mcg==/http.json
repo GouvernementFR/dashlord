@@ -1,25 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "C-",
     "error": null,
-    "score": 50,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "3535",
+      "age": "1112",
       "cache-control": "max-age=3600, public",
       "content-language": "fr",
-      "content-length": "226217",
+      "content-length": "226078",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Wed, 01 Jul 2026 03:25:35 GMT",
-      "etag": "\"1782839972\"",
+      "date": "Tue, 15 Sep 2026 02:33:35 GMT",
+      "etag": "\"1789427569\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Tue, 30 Jun 2026 17:19:32 GMT",
-      "traceresponse": "00-18be0c94da0dfec796bec8f35afcf022-fd3f03fd0f13b4d2-01",
+      "last-modified": "Mon, 14 Sep 2026 23:12:49 GMT",
+      "traceresponse": "00-18d55dd98b173944928bb5ba902cce8c-6fc33281ea5316a6-01",
       "vary": "Cookie",
       "via": "1.1 varnish.0 (Varnish/7.3)",
       "x-content-type-options": "nosniff",
@@ -31,7 +31,7 @@
       "x-platform-cluster": "sdswrrccnsh2q-prod-m5kk7fq",
       "x-platform-processor": "cclepa6qoc27wkohyqemgpfghe",
       "x-platform-router": "2cz4gcrao2smxteplq2gk4dadm",
-      "x-varnish": "220932557 206954498",
+      "x-varnish": "217878519 210410032",
       "connection": "close"
     }
   },
@@ -97,10 +97,15 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://admin-pipeline.upsun-fr-3.observability-pipeline.blackfire.io/js/probe.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
