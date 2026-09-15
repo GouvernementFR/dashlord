@@ -1,21 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "F",
     "error": null,
-    "score": 45,
+    "score": 0,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 7,
+    "testsPassed": 3,
     "testsQuantity": 10,
     "responseHeaders": {
-      "accept-ranges": "bytes",
-      "content-length": "7725",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Wed, 01 Jul 2026 03:30:08 GMT",
-      "etag": "\"69fb552f-1e2d\"",
-      "last-modified": "Wed, 06 May 2026 14:50:23 GMT",
+      "date": "Tue, 15 Sep 2026 02:32:57 GMT",
+      "etag": "\"6a9e8d3f-1e2d:dtagent10341260622154106mWsD\"",
+      "last-modified": "Mon, 07 Sep 2026 10:09:02 GMT",
       "server": "nginx/1.25.1",
+      "server-timing": "dtTrId;desc=\"ab8d32be2398166bb76e41cffc23e2d8\", dtSInfo;desc=\"0\", dtRpid;desc=\"917897889\"",
+      "set-cookie": [
+        "dtCookie=v_4_srv_7_sn_1AE761B273CB85D4364B96C63F300EE3_perc_100000_ol_0_mul_1_app-3A3fc2fffdc7204251_1_rcs-3Acss_0; Path=/; Domain=.anah.gouv.fr"
+      ],
+      "x-oneagent-js-injection": "true",
+      "x-ruxit-js-agent": "true",
+      "transfer-encoding": "chunked",
       "strict-transport-security": "max-age=16000000;includeSubDomains;",
       "x-content-type-options": "nosniff",
       "referrer-policy": "no-referrer-when-downgrade",
@@ -37,10 +42,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "dtCookie": {
+          "domain": "anah.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -52,16 +63,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://sprh.anah.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://sare.anah.gouv.fr/",
-        "https://sare.anah.gouv.fr/",
-        "https://sprh.anah.gouv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -75,12 +82,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=16000000;includeSubDomains;",
-      "includeSubDomains": true,
-      "maxAge": 16000000,
+      "pass": false,
+      "result": "hsts-invalid-cert",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
