@@ -1,23 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
-    "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "score": 30,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Jul 2026 03:28:08 GMT",
-      "set-cookie": [
-        "bot_mitigation_cookie=LPFTLX2SNYFKHPLIENKHPC34E7DDJRUKYTURA7FUAJXUYANLRPVE5ZURHKZPLZRFGU6XXGNLGNLCKTEFXOTLHGAYZG6ZEZPUIN33HTPKR6VOJS6MAR4Q====; Path=/; SameSite=lax"
-      ],
+      "date": "Thu, 17 Sep 2026 02:33:26 GMT",
+      "accept-ranges": "bytes",
       "content-type": "text/html",
-      "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "200",
-      "x-cp-via": "C3-cd093572-aaac76b5",
+      "content-length": "321",
+      "x-cp-via": "C2-06331ada-2bb78437",
       "connection": "close"
     }
   },
@@ -35,17 +32,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "bot_mitigation_cookie": {
-          "domain": "semaphore.culture.gouv.fr",
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -66,7 +56,7 @@
         "http://semaphore.culture.gouv.fr/",
         "https://semaphore.culture.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -91,7 +81,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
