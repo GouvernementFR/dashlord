@@ -1,26 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Jul 2026 03:30:20 GMT",
+      "date": "Thu, 17 Sep 2026 02:32:22 GMT",
       "content-type": "text/html; charset=UTF-8",
       "x-content-type-options": "nosniff",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "referrer-policy": "no-referrer, strict-origin-when-cross-origin, no-referrer, strict-origin-when-cross-origin",
       "x-xss-protection": "1; mode=block; report=/nelmio/xss/report",
-      "age": "43499",
+      "age": "39553",
       "vary": "Origin,X-Editorial-Mode,X-Requested-With,Accept-Encoding",
       "cache-control": "public, s-maxage=86400, stale-while-revalidate=3600, stale-if-error=3600",
       "accept-ranges": "bytes",
       "x-forwarded-for": ";",
-      "x-cp-via": "C2-d833d53f-41d275b4",
+      "x-cp-via": "C3-b2e188db-8e5d880c",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -54,13 +54,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://rencontresnumeriques.culture.gouv.fr/",
       "redirects": true,
       "route": [
         "http://rencontres-numeriques.org/",
+        "https://rencontres-numeriques.org/",
         "https://rencontresnumeriques.culture.gouv.fr/"
       ],
       "statusCode": 200
@@ -95,7 +96,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://tarteaucitron.io/load.js?domain=rencontres-numeriques.culture.gouv.fr&uuid=cb6c31eaf0d65c6f8768c5734dd1a8df6bfd7780": {
+        "https://cdntag.tarteaucitron.io/load.js?domain=rencontres-numeriques.culture.gouv.fr&uuid=cb6c31eaf0d65c6f8768c5734dd1a8df6bfd7780": {
           "crossorigin": null,
           "integrity": null
         }
