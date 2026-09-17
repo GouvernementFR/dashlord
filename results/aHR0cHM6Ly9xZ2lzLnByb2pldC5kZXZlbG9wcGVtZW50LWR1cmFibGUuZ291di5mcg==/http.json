@@ -9,21 +9,21 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 01 Jul 2026 03:30:57 GMT",
+      "date": "Thu, 17 Sep 2026 02:32:18 GMT",
       "server": "Apache",
       "content-type": "text/html; charset=utf-8",
       "status": "200 OK",
-      "cache-control": "max-age=0, private, must-revalidate",
+      "cache-control": "no-store",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-permitted-cross-domain-policies": "none",
       "x-xss-protection": "1; mode=block",
-      "x-request-id": "7fcd4845-5ea4-4e85-bf59-46d3e3cd4649",
+      "x-request-id": "5ffecfe4-1809-4987-a785-360c46950676",
       "x-download-options": "noopen",
-      "etag": "W/\"5f696e528047ed29ecfc8ae426c4af8d\"",
+      "etag": "W/\"a02e21e5763f851c1d90abfe8c653e75\"",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "_redmine_session=bzFpNmVRRlJyQTI0aGlWZ1JGcmxwTTlmNGhsRFQxbW1PK2JGRlpEVVhxdTBIUHlRYTR4RFZvUHV6WUZYODIrLzIwSjhPY2FrbC9SRGtJR3ZRVmRUUmxUSzJCVFNiajA1bW5NMzA2bHBTZHMvQW5tU1ZHUllBYWFpWC9wdWltNS9zQ0JFR0Zza2lMWUEwdzVZUFJvWXV5aDZmdVQwanRGVzRZUUxYZ3FpblFFTDhxUHNrM0hQR0ZSVXZUYWozOW1CLS1oeTVMWitXSE45SXZFR2ZSRVlVa1RBPT0%3D--c3a5d8d5d532ef6d12c693b8bbdc569cdd43ea7c; path=/; httponly; samesite=lax"
+        "_redmine_session=R2FMUC9heFpMS1pwK01CcW1DU0haVFRtZ1pQZ1phVW9ZVHhYSHRSblFRSytBcEFzRlgrejM5aElCTGh4WkV4ZVl1TVoxZGkrVy9UanlXR2ttdVNWenBWaGRNM1NxN1hzTTNmMFBBUkFQeVJFN2RZYlpZVGVyOGJoelZpd2dMSlFHN0hoK08ySEdsWTh2ek5ZNWVodG9aMyt6Y0tVeVkyN00vejE3eWlZS3EwQk13VzdPa3FCQ01hZ2M2QUZ0R21KLS1DZmNzNGNJYVZocVhWcTZXa25qN2JBPT0%3D--caddef096ec5b7b240b8c257cc499fed2d0db38c; path=/; httponly; samesite=lax"
       ],
       "via": "1.1 qgis.projet.din.developpement-durable.gouv.fr",
       "vary": "User-Agent",
@@ -71,11 +71,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://qgis.projet.developpement-durable.gouv.fr/",
+      "destination": "https://qgis.projet.developpement-durable.gouv.fr/login?back_url=http%3A%2F%2Fqgis.redmine.ac.cs%2F",
       "redirects": true,
       "route": [
         "http://qgis.projet.developpement-durable.gouv.fr/",
-        "https://qgis.projet.developpement-durable.gouv.fr/"
+        "https://qgis.projet.developpement-durable.gouv.fr/",
+        "https://qgis.projet.developpement-durable.gouv.fr/login?back_url=http%3A%2F%2Fqgis.redmine.ac.cs%2F"
       ],
       "statusCode": 200
     },
