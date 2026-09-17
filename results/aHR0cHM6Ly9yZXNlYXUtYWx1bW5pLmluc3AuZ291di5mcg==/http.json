@@ -9,15 +9,15 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Jul 2026 03:22:03 GMT",
+      "date": "Thu, 17 Sep 2026 02:33:39 GMT",
       "server": "Apache/2",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "set-cookie": [
-        "PHPSESSID=ppm5n31drqahvkqgm4s3nfilqn; expires=Sun, 02-Aug-2026 03:22:03 GMT; Max-Age=2592000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax",
-        "langue_selected=fr; expires=Sun, 02-Aug-2026 03:22:03 GMT; Max-Age=2592000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax",
-        "as_id=f35cba9149b78d996bf1fb060aa0facd; expires=Sun, 03-Jan-2027 04:22:04 GMT; Max-Age=15901200; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax"
+        "PHPSESSID=1ue7k3nc3skv4vuok5bcm9hlkh; expires=Sat, 17-Oct-2026 02:33:39 GMT; Max-Age=2592000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax",
+        "langue_selected=fr; expires=Sat, 17-Oct-2026 02:33:39 GMT; Max-Age=2592000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax",
+        "as_id=154b50d0e74138687d727b96be7bb2a5; expires=Wed, 17-Mar-2027 03:33:40 GMT; Max-Age=15642000; path=/; domain=.reseau-alumni.insp.gouv.fr; secure; HttpOnly; SameSite=Lax"
       ],
       "x-frame-options": "SAMEORIGIN",
       "upgrade": "h2",
@@ -27,7 +27,7 @@
       "x-content-type-options": "nosniff",
       "access-control-allow-credentials": "true",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
-      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' wss://*.hotjar.com *.hotjar.com data:;img-src * data: blob:; connect-src 'self' wss://*.hotjar.com *.hotjar.com *.hotjar.io *.addthis.com *.pa-cd.com lydia-app.com *.lydia-app.com *.openstreetmap.org maps.googleapis.com *.analytics.google.com *.google-analytics.com *.gstatic.com *.hcaptcha.com *.facebook.com *.raygun.io wss://*.crisp.chat *.cometchat.io *.api-eu.cometchat.io *.widget-eu.cometchat.io wss://*.websocket-eu.cometchat.io cdnjs.cloudflare.com https://app  https://matomo.insp.gouv.fr/ ; object-src 'self' https://www.youtube.com https://www.dailymotion.com; frame-ancestors 'self' ; base-uri https://reseau-alumni.insp.gouv.fr/; form-action 'self' https://login.microsoftonline.com/ https://netanswer.rpxnow.com https://preprod-tpeweb.e-transactions.fr/ https://tpeweb.e-transactions.fr/ https://paiement.creditmutuel.fr https://systempay.cyberpluspaiement.com https://payment-webinit-mercanet.test.sips-atos.com/paymentInit https://payment-webinit-mercanet.test.sips-services.com/paymentInit https://payment-webinit.mercanet.bnpparibas.net/paymentInit https://old.pta.netanswer.fr https://www.paristech-alumni.org https://www.whats4u.org https://whats4u.org https://wats4u.com.alumnforce.org http://manageurs.mjb.lan https://manageurs.mjr1108.com https://www.xmp-consult.org https://tpeweb.paybox.com https://www.saferpay.com/",
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' wss://*.hotjar.com *.hotjar.com data:;img-src * data: blob:; connect-src 'self' wss://*.hotjar.com *.hotjar.com *.hotjar.io *.addthis.com *.pa-cd.com lydia-app.com *.lydia-app.com *.openstreetmap.org maps.googleapis.com *.analytics.google.com analytics.google.com *.google-analytics.com *.googletagmanager.com *.doubleclick.net *.googleadservices.com *.googlesyndication.com *.google.com *.gstatic.com *.hcaptcha.com *.facebook.com *.raygun.io wss://*.crisp.chat *.cometchat.io *.api-eu.cometchat.io *.widget-eu.cometchat.io wss://*.websocket-eu.cometchat.io cdnjs.cloudflare.com https://app  https://matomo.insp.gouv.fr/ ; object-src 'self' https://www.youtube.com https://www.dailymotion.com; frame-ancestors 'self' ; base-uri https://reseau-alumni.insp.gouv.fr/; form-action 'self' https://login.microsoftonline.com/ https://netanswer.rpxnow.com https://preprod-tpeweb.e-transactions.fr/ https://tpeweb.e-transactions.fr/ https://paiement.creditmutuel.fr https://systempay.cyberpluspaiement.com https://payment-webinit-mercanet.test.sips-atos.com/paymentInit https://payment-webinit-mercanet.test.sips-services.com/paymentInit https://payment-webinit.mercanet.bnpparibas.net/paymentInit https://old.pta.netanswer.fr https://www.paristech-alumni.org https://www.whats4u.org https://whats4u.org https://wats4u.com.alumnforce.org http://manageurs.mjb.lan https://manageurs.mjr1108.com https://www.xmp-consult.org https://tpeweb.paybox.com https://www.saferpay.com/",
       "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -58,8 +58,13 @@
           "*.analytics.google.com",
           "*.api-eu.cometchat.io",
           "*.cometchat.io",
+          "*.doubleclick.net",
           "*.facebook.com",
           "*.google-analytics.com",
+          "*.google.com",
+          "*.googleadservices.com",
+          "*.googlesyndication.com",
+          "*.googletagmanager.com",
           "*.gstatic.com",
           "*.hcaptcha.com",
           "*.hotjar.com",
@@ -69,6 +74,7 @@
           "*.pa-cd.com",
           "*.raygun.io",
           "*.widget-eu.cometchat.io",
+          "analytics.google.com",
           "cdnjs.cloudflare.com",
           "https://app",
           "https://matomo.insp.gouv.fr/",
@@ -137,7 +143,7 @@
       "data": {
         "PHPSESSID": {
           "domain": "reseau-alumni.insp.gouv.fr",
-          "expires": "2026-08-02T03:22:03.000Z",
+          "expires": "2026-10-17T02:33:39.000Z",
           "httponly": true,
           "max-age": 2592000,
           "path": "/",
@@ -147,7 +153,7 @@
         },
         "langue_selected": {
           "domain": "reseau-alumni.insp.gouv.fr",
-          "expires": "2026-08-02T03:22:03.000Z",
+          "expires": "2026-10-17T02:33:39.000Z",
           "httponly": true,
           "max-age": 2592000,
           "path": "/",
@@ -157,9 +163,9 @@
         },
         "as_id": {
           "domain": "reseau-alumni.insp.gouv.fr",
-          "expires": "2027-01-03T04:22:04.000Z",
+          "expires": "2027-03-17T03:33:40.000Z",
           "httponly": true,
-          "max-age": 15901200,
+          "max-age": 15642000,
           "path": "/",
           "port": null,
           "samesite": "lax",
