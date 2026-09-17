@@ -3,14 +3,29 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 10,
-    "statusCode": 403,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "score": 0,
+    "statusCode": 200,
+    "testsFailed": 6,
+    "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cache-control": "no-cache",
-      "content-type": "text/html"
+      "date": "Thu, 17 Sep 2026 02:33:14 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "vary": "Accept-Encoding",
+      "x-xss-protection": "1; mode=block",
+      "content-length": "15765",
+      "content-type": "text/html; charset=UTF-8",
+      "age": "0",
+      "x-cache": "Miss",
+      "accept-ranges": "bytes",
+      "set-cookie": [
+        "LS-FPGZETSIYBPLGQOQ=8a0b88352ca9e3062f47450834c4089e; path=/; HttpOnly",
+        "LS-FPGZETSIYBPLGQOQ=8a0b88352ca9e3062f47450834c4089e; expires=Thu, 17 Sep 2026 04:33:14 GMT; Max-Age=7200; path=/; HttpOnly",
+        "lsid=lime3; path=/"
+      ],
+      "connection": "close"
     }
   },
   "tests": {
@@ -27,10 +42,24 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
+      "data": {
+        "LS-FPGZETSIYBPLGQOQ": {
+          "domain": "sg.questionnaire.interieur.gouv.fr",
+          "expires": "2026-09-17T04:33:14.000Z",
+          "httponly": true,
+          "max-age": 7200,
+          "path": "/",
+          "port": null
+        },
+        "lsid": {
+          "domain": "sg.questionnaire.interieur.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -75,7 +104,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
