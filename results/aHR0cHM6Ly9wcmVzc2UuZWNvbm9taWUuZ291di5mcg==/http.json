@@ -9,14 +9,15 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Jul 2026 03:25:03 GMT",
+      "date": "Sat, 19 Sep 2026 02:28:52 GMT",
       "server": "",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate, max-age=31536000, private, must-revalidate",
       "pragma": "no-cache",
+      "x-xss-protection": "1; mode=block",
       "access-control-allow-methods": "HEAD, POST, GET, OPTIONS",
       "set-cookie": [
-        "PHPSESSID=i2vrv48evshl2g1qe16tklolgd; path=/;HttpOnly;Secure;SameSite=Lax"
+        "PHPSESSID=afeae43c4a3013f379795a62933be342; path=/;HttpOnly;Secure;SameSite=Lax"
       ],
       "content-security-policy": "script-src 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://code.jquery.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://www.google-analytics.com https://ajax.googleapis.com https://cdn.datatables.net https://cdn.jsdelivr.net https://fastly.ink.sapo.pt https://buttons.github.io https://platform.twitter.com https://ws.sharethis.com https://cdn.syndication.twimg.com https://t.sharethis.com https://twitter.com https://www.googletagmanager.com https://ssl.google-analytics.com https://fonts.google.com https://static.hotjar.com https://dcinfos.abtasty.com https://script.hotjar.com https://f.vimeocdn.com https://www.youtube.com https://unpkg.com https://player.vimeo.com https://cdn.tiny.cloud https://cdn.tagcommander.com https://cdn.trustcommander.net https://tag.aticdn.net https://cdn.trustcommander.net https://ipinfo.io https://stackpath.bootstrapcdn.com https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://api.dmcdn.net https://js.hcaptcha.com https://cdn.tailwindcss.com https://static.epresspack.eu https://cdn.curator.io https://addevent.com https://cdn.addevent.com https://www.addevent.com https://myux.presse.economie.gouv.fr https://platform.linkedin.com https://try.abtasty.com https://gva.et-gv.fr  'self';   object-src 'self';",
       "access-control-allow-headers": "Content-Type, X-Requested-With, token, x-csrf-token",
@@ -29,7 +30,7 @@
       "vary": "Accept-Encoding",
       "x-content-type-options": "nosniff",
       "access-control-allow-origin": "*",
-      "content-length": "19936",
+      "content-length": "21733",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -140,11 +141,10 @@
       "pass": true,
       "result": "redirection-all-redirects-preloaded",
       "scoreModifier": 0,
-      "destination": "https://presse.economie.gouv.fr/",
+      "destination": "http://presse.economie.gouv.fr/",
       "redirects": true,
       "route": [
-        "http://presse.economie.gouv.fr/",
-        "https://presse.economie.gouv.fr/"
+        "http://presse.economie.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -178,7 +178,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.9.1": {
+        "https://www.google.com/recaptcha/api.js?hl=en&&ver=7.0.4#038;render=explicit": {
           "crossorigin": null,
           "integrity": null
         }
