@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Jul 2026 03:22:09 GMT",
+      "date": "Sat, 19 Sep 2026 02:29:05 GMT",
       "server": "Apache/2.4.6 (Red Hat Enterprise Linux)",
       "vary": "Cookie,Accept-Encoding",
-      "composed-by": "SPIP 4.4.15 @ www.spip.net + https://primabord.eduscol.education.fr/local/config.txt",
-      "link": "<https://primabord.eduscol.education.fr/local/cache-css/a2be1486195bf78d8f6024620b00b161.css?1781800316>;rel=\"preload\";as=\"style\"",
+      "composed-by": "SPIP 4.4.23 @ www.spip.net + https://primabord.eduscol.education.fr/local/config.txt",
+      "link": "<https://primabord.eduscol.education.fr/local/cache-css/cde9406c657334ab1f3f49d411f7e795.css?1789630724>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "86400",
-      "last-modified": "Fri, 03 Jul 2026 03:22:09 GMT",
-      "content-length": "12187",
+      "last-modified": "Sat, 19 Sep 2026 02:29:05 GMT",
+      "content-length": "11804",
       "connection": "close",
       "content-type": "text/html; charset=utf-8",
       "x_server_node": "/Publique/pool_svc-daneweb.ac-normandie.fr_80 172.26.73.113%1002 80",
@@ -53,15 +53,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://primabord.eduscol.education.fr/",
+      "destination": "http://primabord.eduscol.education.fr/",
       "redirects": true,
-      "route": [
-        "http://primabord.eduscol.education.fr/",
-        "https://primabord.eduscol.education.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
