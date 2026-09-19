@@ -9,29 +9,28 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Jul 2026 03:21:57 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Sat, 19 Sep 2026 02:29:06 GMT",
+      "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "max-age=10800, public",
       "content-language": "fr",
       "set-cookie": [
-        "__cf_bm=EQrdorJTZ8.3KhB1H0cGxSKAnW4bienDGMs7A_IXWuw-1783048916.7688687-1.0.1.1-P7pFDN8FO2v4O6cKjAYJCByAbRqTcmP9EiLa8L8DeDsKpJIqxxyeeETHCGd84XMxBB8jEq_E_YaJawBVSiiTj5odJEbpMdKtoxfrQ4byyTn.svDFQFjRWEufGhIa6P3z; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 03 Jul 2026 03:51:57 GMT"
+        "__cf_bm=XcGhw_Pz5NjxRRXToJzggtBpbBWp88_IJky68Ua0zu0-1789784945.3900383-1.0.1.1-hLpBu.rSi_jcfHlvBjMIXtJzDAnZKhP2HK8dUCsHHxuYCQKnyfmfmsFWPij_OVadHigXZShyzrN0atxoYx36be51ekjIoQagY2lRsdsUY1Gvchs2QY5lir.cC3OyiGVg; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sat, 19 Sep 2026 02:59:06 GMT"
       ],
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Thu, 02 Jul 2026 17:23:10 GMT",
+      "last-modified": "Fri, 18 Sep 2026 14:09:20 GMT",
       "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "server": "cloudflare",
       "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
       "vary": "Cookie",
       "x-content-type-options": "nosniff",
       "x-drupal-cache": "HIT",
-      "x-drupal-dynamic-cache": "HIT",
+      "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=342,cfOrigin;dur=489",
-      "cf-ray": "a152c351c9677fb0-ORD"
+      "cf-ray": "a3d52924acaa4383-LAX"
     }
   },
   "tests": {
@@ -54,7 +53,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-07-03T03:51:57.000Z",
+          "expires": "2026-09-19T02:59:06.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -113,10 +112,6 @@
         "https://tarteaucitron.io/load.js?domain=recherche.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
           "crossorigin": null,
           "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
         }
       }
     },
