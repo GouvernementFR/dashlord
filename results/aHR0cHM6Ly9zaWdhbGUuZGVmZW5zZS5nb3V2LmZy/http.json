@@ -1,17 +1,17 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "B-",
     "error": null,
-    "score": 40,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 03 Jul 2026 03:32:10 GMT",
+      "date": "Sat, 19 Sep 2026 02:29:51 GMT",
       "set-cookie": [
-        "YOMe1h3tgHKNQxhV6V7n5g__=v1zpLOgwSD0zk; Expires=Fri, 03-Jul-2026 05:32:10 GMT; Path=/"
+        "YOMe1h3tgHKNQxhV6V7n5g__=v1zpLOgwSD0zk; Expires=Sat, 19-Sep-2026 04:29:51 GMT; Path=/"
       ],
       "content-type": "text/html; charset=UTF-8",
       "content-length": "3752",
@@ -19,9 +19,9 @@
       "access-control-allow-credentials": "true",
       "access-control-allow-headers": "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding, Access-Control-Allow-Origin, Origin, X-Requested-With, Content-Type, Accept, SigaleUser, CodeAccreditation, EmailContact, OperateurId, ProxyOperateurId, ProxyOperateurRacineId, OperateurRacineId, idDossierLiu, Body-Stream-Req-Type, File-Upload-Req-Type, File-Sync-Req-Type, Referencement",
       "x-frame-options": "SAMEORIGIN",
-      "x-correlation-id": "860b36f9-890c-42db-9561-0ca895aad141",
+      "x-correlation-id": "493075d6-66d6-4d51-bfb2-1175d234ebba",
       "vary": "Origin,User-Agent",
-      "strict-transport-security": "max-age=2678400",
+      "strict-transport-security": "max-age=31536000",
       "connection": "close"
     }
   },
@@ -40,12 +40,12 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
         "YOMe1h3tgHKNQxhV6V7n5g__": {
           "domain": "sigale.defense.gouv.fr",
-          "expires": "2026-07-03T05:32:10.000Z",
+          "expires": "2026-09-19T04:29:51.000Z",
           "path": "/",
           "port": null
         }
@@ -62,15 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://sigale.defense.gouv.fr/",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://sigale.defense.gouv.fr/",
-        "https://sigale.defense.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -83,12 +80,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=2678400",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": 2678400,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
