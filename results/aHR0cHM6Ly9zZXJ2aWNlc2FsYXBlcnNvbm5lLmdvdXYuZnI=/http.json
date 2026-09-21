@@ -10,17 +10,17 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sun, 05 Jul 2026 03:20:23 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 21 Sep 2026 02:32:30 GMT",
+      "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "cache-control": "max-age=600",
-      "x-drupal-dynamic-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 05 Jul 2026 03:30:23 GMT",
-      "last-modified": "Thu, 02 Jul 2026 12:16:46 GMT",
-      "etag": "\"1782994606\"",
+      "expires": "Mon, 21 Sep 2026 02:42:30 GMT",
+      "last-modified": "Mon, 14 Sep 2026 09:40:50 GMT",
+      "etag": "\"1789378850\"",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "HIT",
       "x-proxy-cache": "HIT",
@@ -35,12 +35,12 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3064534=FdJ788qhSvyeD9VVDl6fXHbNSWoAAAAAQUIPAAAAAADos0CqPkQxDjnlY1Lc9UvV; expires=Sun, 04 Jul 2027 08:12:04 GMT; HttpOnly; path=/; Domain=.servicesalapersonne.gouv.fr; Secure; SameSite=None",
-        "incap_ses_1538_3064534=CQXJDGGm7WKIwaPk9RJYFXbNSWoAAAAA7OW5J5zghFuuPY1/9M4Viw==; path=/; Domain=.servicesalapersonne.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3064534=xlMhq7drR8WBFS0Wm3SDaT2XsGoAAAAAQUIPAAAAAAC4HTQ7lKa7wOQrMRPpDuu+; expires=Mon, 20 Sep 2027 07:29:24 GMT; HttpOnly; path=/; Domain=.servicesalapersonne.gouv.fr; Secure; SameSite=None",
+        "incap_ses_1410_3064534=E4lHZHD4YCJuej6COFSREz6XsGoAAAAAF0ibfGIGhy2Dxamr+u4fUQ==; path=/; Domain=.servicesalapersonne.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "11-20997759-20997761 NNYN CT(106 223 0) RT(1783221622614 11) q(0 0 4 0) r(5 5) U12"
+      "x-iinfo": "9-3480487-3480489 NNYN CT(139 293 0) RT(1789957950052 14) q(0 0 4 0) r(7 7) U12"
     }
   },
   "tests": {
@@ -92,14 +92,14 @@
       "data": {
         "visid_incap_3064534": {
           "domain": "servicesalapersonne.gouv.fr",
-          "expires": "2027-07-04T08:12:04.000Z",
+          "expires": "2027-09-20T07:29:24.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_1538_3064534": {
+        "incap_ses_1410_3064534": {
           "domain": "servicesalapersonne.gouv.fr",
           "path": "/",
           "port": null,
