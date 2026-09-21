@@ -9,17 +9,16 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Jul 2026 03:26:07 GMT",
+      "date": "Mon, 21 Sep 2026 02:33:30 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
       "access-control-allow-origin": "*",
       "set-cookie": [
-        "__cf_bm=rGcLXFMBo5Ml_ge5dFQwfjKwT5xPjk37MQPw_NRqErg-1783221967.017965-1.0.1.1-1eDUg8.8BlEv_EiS.hgQWTnO_MZ5E3FqRsL6OTxUWB5FwCjEht6BJNadB2OYlbcnZN9BBL74kDLWvKtZBwUfs.Ig8HqiVnVOhe0hGw.iwaUAUsznIRWWj5dCp1vCm6rJ; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sun, 05 Jul 2026 03:56:07 GMT"
+        "__cf_bm=LGlzF6jbJbPrwTsjup9o0yIeqSJu1KR_Kx5ZLQ_L2UE-1789958010.405851-1.0.1.1-7UvdbaZJbaQ8cuD9RHHYcM53LJNtR3gaH9H1ZPxGmgDFMp0zM6CYNhKwVN39W5odZfRIl2wnJkJx.e.XHEdWnHtNa7GFflz.5ISdOMgJTq5PCA0bGIBM0_6GNzXhewjr; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 21 Sep 2026 03:03:30 GMT"
       ],
       "content-security-policy": "frame-ancestors 'self' prod-syderepv2.direct.prod.ademe-scw.fr prod-syderepv2.prod.ademe-scw.fr syderep.ademe.fr;",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=242,cfOrigin;dur=445",
-      "last-modified": "Thu, 11 Jun 2026 14:51:36 GMT",
+      "last-modified": "Wed, 15 Jul 2026 10:42:14 GMT",
       "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "referrer-policy": "strict-origin",
       "server": "cloudflare",
@@ -29,7 +28,7 @@
       "x-frame-options": "sameorigin",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a163442ddda9e5d2-DFW"
+      "cf-ray": "a3e5aa5d0e9816a7-IAD"
     }
   },
   "tests": {
@@ -71,7 +70,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-07-05T03:56:07.000Z",
+          "expires": "2026-09-21T03:03:30.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -124,14 +123,9 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
-        }
-      }
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
