@@ -9,19 +9,13 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Jul 2026 03:26:42 GMT",
-      "server": "",
-      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
-      "strict-transport-security": "max-age=63072000;includeSubDomains; preload, max-age=63072000;includeSubDomains; preload",
-      "vary": "Cookie,Accept-Encoding,User-Agent",
-      "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://snamafo.fr/local/cache-css/f305bcd9c974918ac4e45efa2f9d7df2.css?1776422751>;rel=\"preload\";as=\"style\"",
-      "x-spip-cache": "3600",
-      "last-modified": "Sun, 05 Jul 2026 03:26:43 GMT",
-      "x-xss-protection": "1; mode=block",
-      "content-type": "text/html; charset=utf-8",
-      "content-length": "21335",
-      "connection": "close"
+      "date": "Wed, 23 Sep 2026 02:28:09 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "link": "<https://snamafo.fr/wp-json/>; rel=\"https://api.w.org/\", <https://snamafo.fr/wp-json/wp/v2/pages/27>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\"",
+      "server": "o2switch-PowerBoost-v3"
     }
   },
   "tests": {
@@ -54,12 +48,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": null,
+      "destination": "https://snamafo.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://snamafo.fr/",
+        "https://snamafo.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -73,9 +70,9 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-header-invalid",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
-      "data": "max-age=63072000;includeSubDomains; preload, max-age=63072000;includeSubDomains; preload",
+      "data": null,
       "includeSubDomains": false,
       "maxAge": null,
       "preload": false,
@@ -98,9 +95,9 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": false,
-      "result": "x-frame-options-header-invalid",
+      "result": "x-frame-options-not-implemented",
       "scoreModifier": -20,
-      "data": "SAMEORIGIN, SAMEORIGIN"
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
