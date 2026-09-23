@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Jul 2026 03:21:34 GMT",
+      "date": "Wed, 23 Sep 2026 02:28:02 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://rt-re-batiment.developpement-durable.gouv.fr/local/cache-css/4fd9a37da60ef5d3c9e604dda55639a6.css?1782112453>;rel=\"preload\";as=\"style\"",
+      "link": "<https://rt-re-batiment.developpement-durable.gouv.fr/local/cache-css/4fd9a37da60ef5d3c9e604dda55639a6.css?1788543179>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sun, 05 Jul 2026 03:21:33 GMT",
+      "last-modified": "Wed, 23 Sep 2026 02:28:02 GMT",
       "set-cookie": [
         "SRV=c24ad79d-b7fe-4480-8d22-0db8012d8461; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
