@@ -9,16 +9,16 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 07 Jul 2026 03:22:02 GMT",
+      "date": "Wed, 23 Sep 2026 02:27:06 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "8281",
+      "content-length": "8275",
       "cache-control": "max-age=600, public",
       "content-language": "fr",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Mon, 06 Jul 2026 13:03:27 GMT",
-      "etag": "\"1783343007-gzip\"",
-      "age": "194",
+      "last-modified": "Mon, 21 Sep 2026 18:28:12 GMT",
+      "etag": "\"1790015292-gzip\"",
+      "age": "57",
       "accept-ranges": "bytes",
       "x-cache": "HIT",
       "referrer-policy": "strict-origin-when-cross-origin",
@@ -28,7 +28,7 @@
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
       "permissions-policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
-      "content-security-policy": "default-src 'self';script-src 'self' 'unsafe-inline' https://gvb.et-gv.fr https://hdge.diplomatie.gouv.fr https://ton.twimg.com https://platform.twitter.com;connect-src 'self' https://hdge.diplomatie.gouv.fr;object-src 'none';frame-src 'self' https://player.vimeo.com https://platform.twitter.com https://www.youtube.com https://www.youtube-nocookie.com;img-src 'self' data: https://media.diplomatie.gouv.fr;style-src 'self';font-src 'self' data:;",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://embedr.flickr.com https://*.flickr.com *.flickr.com flic.kr https://platform.twitter.com https://syndication.twitter.com https://www.instagram.com https://www.facebook.com https://*.tiktok.com https://*.tiktokcdn.com https://linkedin.com https://*.licdn.com https://gvb.et-gv.fr https://hdge.diplomatie.gouv.fr https://ton.twimg.com; style-src 'self' 'unsafe-inline' https://*.flickr.com https://platform.twitter.com https://*.licdn.com; img-src 'self' https://staticflickr.com https://*.flickr.com *.flickr.com flic.kr https://syndication.twitter.com https://*.twimg.com https://*.instagram.com https://*.fbcdn.net https://*.tiktokcdn.com https://*.licdn.com https://linkedin.com https://media.diplomatie.gouv.fr data:; frame-src 'self' https://embedr.flickr.com https://www.flickr.com *.flickr.com flic.kr https://platform.twitter.com https://www.instagram.com https://*.tiktok.com https://podcastics.com https://linkedin.com https://*.linkedin.com https://player.vimeo.com https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://*.flickr.com https://www.instagram.com https://*.tiktok.com https://*.tiktokcdn.com https://hdge.diplomatie.gouv.fr; media-src 'self' https://*.tiktokcdn.com; object-src 'none'; font-src 'self' data:;",
       "x-dns-prefetch-control": "off",
       "alt-svc": "h3=\":443\"; ma=86400",
       "strict-transport-security": "max-age=63072000",
@@ -48,32 +48,75 @@
         "script-src": [
           "'self'",
           "'unsafe-inline'",
+          "*.flickr.com",
+          "flic.kr",
+          "https://*.flickr.com",
+          "https://*.licdn.com",
+          "https://*.tiktok.com",
+          "https://*.tiktokcdn.com",
+          "https://embedr.flickr.com",
           "https://gvb.et-gv.fr",
           "https://hdge.diplomatie.gouv.fr",
+          "https://linkedin.com",
           "https://platform.twitter.com",
-          "https://ton.twimg.com"
+          "https://syndication.twitter.com",
+          "https://ton.twimg.com",
+          "https://www.facebook.com",
+          "https://www.instagram.com"
         ],
-        "connect-src": [
+        "style-src": [
           "'self'",
-          "https://hdge.diplomatie.gouv.fr"
-        ],
-        "object-src": [
-          "'none'"
-        ],
-        "frame-src": [
-          "'self'",
-          "https://platform.twitter.com",
-          "https://player.vimeo.com",
-          "https://www.youtube-nocookie.com",
-          "https://www.youtube.com"
+          "'unsafe-inline'",
+          "https://*.flickr.com",
+          "https://*.licdn.com",
+          "https://platform.twitter.com"
         ],
         "img-src": [
           "'self'",
+          "*.flickr.com",
           "data:",
-          "https://media.diplomatie.gouv.fr"
+          "flic.kr",
+          "https://*.fbcdn.net",
+          "https://*.flickr.com",
+          "https://*.instagram.com",
+          "https://*.licdn.com",
+          "https://*.tiktokcdn.com",
+          "https://*.twimg.com",
+          "https://linkedin.com",
+          "https://media.diplomatie.gouv.fr",
+          "https://staticflickr.com",
+          "https://syndication.twitter.com"
         ],
-        "style-src": [
-          "'self'"
+        "frame-src": [
+          "'self'",
+          "*.flickr.com",
+          "flic.kr",
+          "https://*.linkedin.com",
+          "https://*.tiktok.com",
+          "https://embedr.flickr.com",
+          "https://linkedin.com",
+          "https://platform.twitter.com",
+          "https://player.vimeo.com",
+          "https://podcastics.com",
+          "https://www.flickr.com",
+          "https://www.instagram.com",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.flickr.com",
+          "https://*.tiktok.com",
+          "https://*.tiktokcdn.com",
+          "https://hdge.diplomatie.gouv.fr",
+          "https://www.instagram.com"
+        ],
+        "media-src": [
+          "'self'",
+          "https://*.tiktokcdn.com"
+        ],
+        "object-src": [
+          "'none'"
         ],
         "font-src": [
           "'self'",
@@ -92,7 +135,7 @@
         "strictDynamic": false,
         "unsafeEval": false,
         "unsafeInline": true,
-        "unsafeInlineStyle": false,
+        "unsafeInlineStyle": true,
         "unsafeObjects": false
       },
       "numPolicies": 1
