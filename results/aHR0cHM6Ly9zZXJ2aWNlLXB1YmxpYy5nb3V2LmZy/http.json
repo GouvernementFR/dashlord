@@ -9,22 +9,22 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Jul 2026 03:20:24 GMT",
+      "date": "Wed, 23 Sep 2026 02:27:01 GMT",
       "content-type": "text/html;charset=UTF-8",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "x-csrf-token": "8284756b-0c9c-4b18-af89-5e81a1d36aaa",
+      "x-csrf-token": "4342dfec-143e-4ef4-b320-1e37114abeba",
       "cache-control": "max-age=0, s-maxage=28800, public",
-      "expires": "Sun, 05 Jul 2026 00:42:25 GMT",
+      "expires": "Wed, 23 Sep 2026 01:38:02 GMT",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "0",
       "x-frame-options": "SAMEORIGIN",
       "content-language": "fr-FR",
-      "age": "9478",
+      "age": "2939",
       "set-cookie": [
-        "SP_SESSION=ZTUzZTc1OGMtNmNlZC00MGU1LThmMTYtZDZjMDA1NmU2OWRi; Domain=service-public.gouv.fr; Path=/; Secure; HttpOnly; SameSite=Lax",
-        "TS01ad993f=012a7f58e0634c998a4cd9452026e0d26333b151912390693f7d848c556eee73d20e997424d8820103b9578031021ff515be2364c4; Path=/; Secure; HttpOnly",
-        "TS015ce0c6=012a7f58e0bc013028c64f8446b0196bb23feaa5902390693f7d848c556eee73d20e997424006c9f30b9da4ae6da2bf86416702b313cf6a5952eeacdcffb3f663a30147848; path=/; domain=service-public.gouv.fr; HttpOnly; Secure"
+        "SP_SESSION=NDhiODc3YjYtMDFhOS00MDIyLThkMjYtNmI3ZjliMWUzYjA3; Domain=service-public.gouv.fr; Path=/; Secure; HttpOnly; SameSite=Lax",
+        "TS01ad993f=012a7f58e0dc561bb84fcdb314b98a790e073f0ba6bfa9fe7b0c2d692d3e920af1188f15f5c24db31369f374e086492e60fc83b4d3; Path=/; Secure; HttpOnly",
+        "TS015ce0c6=012a7f58e0c596ce9a5af005757e51aa5653a5dd2bbfa9fe7b0c2d692d3e920af1188f15f5cd12c113781682c44ea54e6b79079e4126e137a7d766ca145481e6eb0102d5b6; path=/; domain=service-public.gouv.fr; HttpOnly; Secure"
       ],
       "access-control-allow-origin": "https://lannuaire.service-public.gouv.fr",
       "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization,  x-csrf-token",
@@ -36,8 +36,8 @@
       "cross-origin-opener-policy": "same-origin-allow-popups",
       "cross-origin-resource-policy": "cross-origin",
       "cross-origin-embedder-policy": "unsafe-none",
-      "x-sp-correlation-id": "12482-1783221624.412-52.159.139.244-333-20787318",
-      "content-security-policy": "default-src 'self' *.service-public.fr *.gouv.fr; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: *.abtasty.com https://policevss.minint.chat https://gendarmerie-nationale.minint.chat *.gouv.fr *.service-public.fr; connect-src 'self' *.abtasty.com *.service-public.fr *.gouv.fr *.readspeaker.com; img-src 'self' data: *.service-public.fr *.gouv.fr *.abtasty.com; font-src 'self' data: *.service-public.fr *.gouv.fr *.abtasty.com; style-src 'self' 'unsafe-inline' *.service-public.fr *.gouv.fr *.abtasty.com; object-src 'none'; frame-src *.gouv.fr *.service-public.fr https://gendarmerie-nationale.minint.chat https://policevss.minint.chat https://dggn.my.site.com https://www.youtube.com https://www.dailymotion.com https://vimeo.com https://www.youtube-nocookie.com *.readspeaker.com *.abtasty.com; frame-ancestors 'self' https://www.service-public.gouv.fr https://entreprendre.service-public.gouv.fr",
+      "x-sp-correlation-id": "5011-1790130421.925-57.151.123.242-333-5254645",
+      "content-security-policy": "default-src 'self' *.service-public.fr *.gouv.fr; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: *.abtasty.com https://policevss.minint.chat https://gendarmerie-nationale.minint.chat *.gouv.fr *.service-public.fr; connect-src 'self' *.abtasty.com *.service-public.fr *.gouv.fr *.readspeaker.com; img-src 'self' data: *.service-public.fr *.gouv.fr *.abtasty.com; font-src 'self' data: *.service-public.fr *.gouv.fr *.abtasty.com; style-src 'self' 'unsafe-inline' *.service-public.fr *.gouv.fr *.abtasty.com; object-src 'none'; frame-src *.gouv.fr *.service-public.fr https://gendarmerie-nationale.minint.chat https://policevss.minint.chat https://dggn.my.site.com https://www.youtube.com https://www.dailymotion.com https://vimeo.com https://player.vimeo.com https://www.youtube-nocookie.com *.readspeaker.com *.abtasty.com; frame-ancestors 'self' https://www.service-public.gouv.fr https://entreprendre.service-public.gouv.fr",
       "transfer-encoding": "chunked"
     }
   },
@@ -102,6 +102,7 @@
           "*.service-public.fr",
           "https://dggn.my.site.com",
           "https://gendarmerie-nationale.minint.chat",
+          "https://player.vimeo.com",
           "https://policevss.minint.chat",
           "https://vimeo.com",
           "https://www.dailymotion.com",
