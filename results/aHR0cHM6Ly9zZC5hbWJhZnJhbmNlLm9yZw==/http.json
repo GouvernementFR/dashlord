@@ -1,28 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "A+",
     "error": null,
-    "score": 80,
-    "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "score": 120,
+    "statusCode": 403,
+    "testsFailed": 0,
+    "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Jul 2026 03:21:42 GMT",
+      "date": "Wed, 23 Sep 2026 02:27:12 GMT",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "14013",
-      "vary": "Cookie,Accept-Encoding",
-      "link": "<https://sd.ambafrance.org/local/cache-css/c7c9fd57cbc811ef003583bfb0328683.css?1782113706>;rel=\"stylesheet prefetch\"",
-      "x-spip-cache": "86400",
-      "last-modified": "Sun, 05 Jul 2026 03:21:42 GMT",
+      "transfer-encoding": "chunked",
+      "content-security-policy": "default-src 'none'; script-src 'strict-dynamic' 'nonce-9EU3WmOz2xoec6u1QP6j113wgkzVFiKL'; style-src 'nonce-8Bw9HhD4prfSZX4n2wTk5tX7lr5gTu2q'; frame-ancestors 'none'; base-uri 'none'; img-src data:; font-src data:; require-trusted-types-for 'script';",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), aria-notify=(), captured-surface-control=(), cross-origin-isolated=(), deferred-fetch=(), deferred-fetch-minimal=(), on-device-speech-recognition=(), summarizer=(), wildcards=(), private-state-token-issuance=(), private-state-token-redemption=(), ch-ua-high-entropy-values=(), gamepad=(), local-network=(), local-network-access=(), loopback-network=(), interest-cohort=()",
-      "content-security-policy": "object-src 'none'; form-action 'self'; frame-ancestors 'self';",
       "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(), battery=(), bluetooth=(), browsing-topics=(), camera=(), compute-pressure=(), display-capture=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(), publickey-credentials-create=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), speaker-selection=(), storage-access=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=(), interest-cohort=()",
+      "cache-control": "no-cache, no-store, must-revalidate",
       "x-dns-prefetch-control": "off",
-      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-frame-options": "SAMEORIGIN",
       "strict-transport-security": "max-age=63072000",
       "connection": "close"
     }
@@ -30,33 +26,49 @@
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe-default-src-none",
+      "scoreModifier": 10,
       "data": {
-        "object-src": [
+        "default-src": [
           "'none'"
         ],
-        "form-action": [
-          "'self'"
+        "script-src": [
+          "'nonce-9eu3wmoz2xoec6u1qp6j113wgkzvfikl'",
+          "'strict-dynamic'"
+        ],
+        "style-src": [
+          "'nonce-8bw9hhd4prfszx4n2wtk5tx7lr5gtu2q'"
         ],
         "frame-ancestors": [
-          "'self'"
+          "'none'"
+        ],
+        "base-uri": [
+          "'none'"
+        ],
+        "img-src": [
+          "data:"
+        ],
+        "font-src": [
+          "data:"
+        ],
+        "require-trusted-types-for": [
+          "'script'"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
         "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
-        "strictDynamic": false,
+        "strictDynamic": true,
         "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
         "unsafeObjects": false
       },
       "numPolicies": 1
@@ -87,7 +99,7 @@
         "http://sd.ambafrance.org/",
         "https://sd.ambafrance.org/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -112,7 +124,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
