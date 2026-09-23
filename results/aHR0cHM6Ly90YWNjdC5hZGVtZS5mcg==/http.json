@@ -9,20 +9,23 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 07 Jul 2026 03:22:56 GMT",
+      "date": "Wed, 23 Sep 2026 02:28:23 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "referrer-policy": "same-origin",
-      "server-timing": "cfEdge;dur=43,cfOrigin;dur=0",
+      "server-timing": "cfEdge;dur=11,cfOrigin;dur=0",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=1XX2zTpDecSMlICgvWLNNe2HvDFVhOjd48_XeVrwWA4-1783394576.4060397-1.0.1.1-88xJuMv8gLZzaiEEZ36RZaQLtijGnbVqQGEjD2g_UfnwE3LP6IKMXMcVcm3HcF5Dn4J62eclueZbU5v4YQ16U4JtzdTT_I2k95IpKyi5T7QHOgtMTpojhaa73jd2Kfxq; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Tue, 07 Jul 2026 03:52:56 GMT"
+        "__cf_bm=zraIxK05PzcyB19506JcHErwZn1r3CK95cD.TBxvKW0-1790130503.3325841-1.0.1.1-szcRBd1oTiF_DgHPwGaEtG8aw09Yoj.ATZsyHw_3e04oxCIPE1AGcHbCTpIbPp0c6.5zvTuLqk2bCev8Am6cH3dlvmNiAu92dJ3dF12xCGtZPF9VZP_gqPTGHlM7FfPi; HttpOnly; SameSite=None; Secure; Path=/; Domain=tacct.ademe.fr; Expires=Wed, 23 Sep 2026 02:58:23 GMT"
       ],
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6ayedPjQFyW82Ewtae8EOEZAfhyE0uoa3mdxZL6RnUYsFAyPjN3wsuBq0FTSzM%2FDLEsPOaS9xLYtjI2BXcN5VOPGO5Yjt8vSQ81rr7Rx%2BDJ4Xu1tanAoDikcapJaQUwyPQ%3D%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "server": "cloudflare",
-      "cf-ray": "a173ba468e391331-IAD"
+      "cf-ray": "a3f61d9ddc5431bb-IAD",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -44,8 +47,8 @@
       "scoreModifier": 5,
       "data": {
         "__cf_bm": {
-          "domain": "ademe.fr",
-          "expires": "2026-07-07T03:52:56.000Z",
+          "domain": "tacct.ademe.fr",
+          "expires": "2026-09-23T02:58:23.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
