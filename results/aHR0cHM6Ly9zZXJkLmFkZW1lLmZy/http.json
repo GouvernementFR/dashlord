@@ -1,41 +1,104 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "D+",
     "error": null,
-    "score": 25,
-    "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "score": 40,
+    "statusCode": 403,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Jul 2026 03:25:18 GMT",
+      "date": "Wed, 23 Sep 2026 02:27:36 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-nKmGUmeokPfqwZm32hKuR3' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
-      "x-powered-by": "PHP/8.3.31, PleskLin",
-      "vary": "User-Agent,Accept-Encoding,Referer",
-      "last-modified": "Sat, 04 Jul 2026 21:48:17 GMT",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"a3f61c7c0d1f8e47\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=ajsBRCYI2MhTZPsQtJuUY8LhN5gPE4nHu84eOMyhpsE-1783221917.8529627-1.0.1.1-fSDx0SOXF09hk11cF7noo0CHK_EN6NdOSHm8g4MKjaN0bROyczZDTWvVFkS7uq7YJ42P2QigpBXHlhivOBCOcvZMIz7qmRx9Ps.stpUrv4RQrtYd56bFP4XK7sl6hBLZ; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sun, 05 Jul 2026 03:55:18 GMT"
+        "__cf_bm=ivqS9gNRoi07JPhqo_jB4_mLjRtwoXh64EHaRohEGZc-1790130456.9613912-1.0.1.1-9s7kbHB1n4yJ7AamW9YSZq1G_DIcCULmWky5k9E6B1d1QEe1A_nrSbwcSwB44QBBVvTQuxGpduoxY3ZoSqMJgINs6jeXmQbKNHmfqMxh8ajziQFvAYxPvAfzwNwmBA11; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 23 Sep 2026 02:57:36 GMT"
       ],
-      "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=13,cfOrigin;dur=484",
-      "cf-ray": "a16342fa9827f268-IAD"
+      "cf-ray": "a3f61c7c0d1f8e47-LAX"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
-      "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-nkmgumeokpfqwzm32hkur3'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -45,7 +108,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-07-05T03:55:18.000Z",
+          "expires": "2026-09-23T02:57:36.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -64,24 +127,23 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://serd.ademe.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://serd.ademe.fr/",
+      "redirects": false,
       "route": [
-        "http://serd.ademe.fr/",
-        "https://serd.ademe.fr/"
+        "http://serd.ademe.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -97,41 +159,32 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://cdntag.tarteaucitron.io/load.js?domain=serd.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
-          "crossorigin": "anonymous",
-          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
