@@ -10,16 +10,16 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 07 Jul 2026 03:27:50 GMT",
+      "date": "Fri, 25 Sep 2026 02:30:09 GMT",
       "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "x-drupal-cache": "HIT",
-      "etag": "\"1783393221-0-gzip\"",
+      "etag": "\"1790301610-0-gzip\"",
       "content-language": "fr",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "cache-control": "public, max-age=600",
-      "last-modified": "Tue, 07 Jul 2026 03:00:21 GMT",
+      "last-modified": "Fri, 25 Sep 2026 02:00:10 GMT",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:;",
@@ -33,13 +33,13 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3065003=QUsE67EeRUGvLRHWJPtCOzhyTGoAAAAAQUIPAAAAAADqQRvMe69U+/wH0h35YC/O; expires=Tue, 06 Jul 2027 06:46:04 GMT; HttpOnly; path=/; Domain=.tarifs-bancaires.gouv.fr; Secure; SameSite=None",
-        "nlbi_3065003=wDsfeBcE7xyUF01+QEJpVgAAAADUwU9DV7u5iCfGp98MMtQ0; HttpOnly; path=/; Domain=.tarifs-bancaires.gouv.fr; Secure; SameSite=None",
-        "incap_ses_341_3065003=8MAnO2N5AWP17sxY/nm7BDlyTGoAAAAAgKevysT0wnS6c7ZDVd7aow==; path=/; Domain=.tarifs-bancaires.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3065003=Xb8fImogTmGLCHPs4tyV1LDctWoAAAAAQUIPAAAAAABnaEp74NY09A0cihzyLOXE; expires=Fri, 24 Sep 2027 07:04:57 GMT; HttpOnly; path=/; Domain=.tarifs-bancaires.gouv.fr; Secure; SameSite=None",
+        "nlbi_3065003=XDElbMIpKAOMBtquQEJpVgAAAAB0+8NuPFw53mpD6A0dslAu; HttpOnly; path=/; Domain=.tarifs-bancaires.gouv.fr; Secure; SameSite=None",
+        "incap_ses_177_3065003=I57URJxIFmxDgI6D2tR0ArDctWoAAAAALxTNNWk+eCsqJYlRQ6eoZg==; path=/; Domain=.tarifs-bancaires.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "50-34737661-34737665 NNNN CT(172 347 0) RT(1783394873154 4) q(0 0 5 0) r(7 7) U12"
+      "x-iinfo": "42-58524570-58524574 NNNN CT(178 399 0) RT(1790303408426 11) q(0 0 6 0) r(8 8) U12"
     }
   },
   "tests": {
@@ -91,7 +91,7 @@
       "data": {
         "visid_incap_3065003": {
           "domain": "tarifs-bancaires.gouv.fr",
-          "expires": "2027-07-06T06:46:04.000Z",
+          "expires": "2027-09-24T07:04:57.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -106,7 +106,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_341_3065003": {
+        "incap_ses_177_3065003": {
           "domain": "tarifs-bancaires.gouv.fr",
           "path": "/",
           "port": null,
