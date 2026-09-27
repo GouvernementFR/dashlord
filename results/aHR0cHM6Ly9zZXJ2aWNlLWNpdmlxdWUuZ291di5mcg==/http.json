@@ -1,24 +1,27 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B+",
     "error": null,
-    "score": 50,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "2",
+      "age": "29",
       "cache-control": "must-revalidate, max-age=0",
-      "content-length": "22278",
+      "content-length": "23650",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://sdk.woosmap.com https://platform.twitter.com https://connect.facebook.net https://genii-script.tolk.ai https://app.api-engagement.beta.gouv.fr https://funnel.service-civique.gouv.fr https://sdk.privacy-center.org https://tarteaucitron.io https://media.service-civique.gouv.fr https://s2.adform.net https://*.bing.com https://*.bing.net https://googleads.g.doubleclick.net https://www.clarity.ms https://scripts.clarity.ms https://server.adform.net https://www.tiktok.com https://*.ttwstatic.com https://youtube.com https://*.youtube.com https://sc-static.net https://analytics.tiktok.com https://tags.srv.stackadapt.com https://kwo.eulerian.net https://tr.snapchat.com; style-src 'self' 'unsafe-inline' https://sdk.privacy-center.org https://genii-script.tolk.ai https://storage.googleapis.com https://fonts.googleapis.com https://tags.srv.stackadapt.com https://genii-public.oos.cloudgouv-eu-west-1.outscale.com https://*.ttwstatic.com; img-src 'self' data: https://media.service-civique.gouv.fr https://www.facebook.com https://storage.googleapis.com https://www.service-civique.gouv.fr https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://www.google.com https://www.google.fr https://*.bing.com https://*.bing.net https://*.clarity.ms https://www.googletagmanager.com https://server.adform.net https://ad.doubleclick.net https://tags.srv.stackadapt.com https://sdk.privacy-center.org https://genii-public.oos.cloudgouv-eu-west-1.outscale.com; connect-src 'self' https://funnel-ui.service-civique.gouv.fr https://funnel.service-civique.gouv.fr https://api.woosmap.com https://sdk.woosmap.com https://app.api-engagement.beta.gouv.fr https://api.api-engagement.beta.gouv.fr https://genii-api.tolk.ai https://genii-messages-01.tolk.ai wss://genii-messages-01.tolk.ai https://hooks.zapier.com https://api.privacy-center.org https://ad.doubleclick.net https://server.adform.net https://www.google.com https://google.com https://*.bing.com https://*.bing.net https://*.clarity.ms https://connect.facebook.net https://analytics.tiktok.com https://analytics-ipv6.tiktokw.us https://tr6.snapchat.com https://tr.snapchat.com; worker-src 'self' blob:; frame-src 'self' https://www.google.com https://youtube.com https://*.youtube.com https://www.facebook.com https://platform.twitter.com https://*.fls.doubleclick.net https://www.tiktok.com https://*.adform.net https://tr.snapchat.com; font-src 'self' data: https://cdn.jsdelivr.net https://fonts.gstatic.com https://sdk.woosmap.com https://genii-script.tolk.ai; frame-ancestors 'self'; form-action 'self'; base-uri 'self'",
       "content-type": "text/html; charset=utf-8",
-      "date": "Tue, 07 Jul 2026 03:28:17 GMT",
-      "etag": "W/\"217db-Hw7xio6xkddhUdGxgWOZoE4NVUo\"",
+      "date": "Sun, 27 Sep 2026 02:32:50 GMT",
+      "etag": "W/\"22626-ti5UIncJEu8zxyNJwzFNJKkfdAw\"",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "vary": "Accept-Encoding",
-      "x-varnish": "303699066 303374874, 195448842",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-varnish": "1476195285 1466843089, 980948101",
       "connection": "close"
     }
   },
@@ -26,13 +29,153 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "https://*.bing.com",
+          "https://*.bing.net",
+          "https://*.ttwstatic.com",
+          "https://*.youtube.com",
+          "https://analytics.tiktok.com",
+          "https://app.api-engagement.beta.gouv.fr",
+          "https://connect.facebook.net",
+          "https://funnel.service-civique.gouv.fr",
+          "https://genii-script.tolk.ai",
+          "https://googleads.g.doubleclick.net",
+          "https://kwo.eulerian.net",
+          "https://media.service-civique.gouv.fr",
+          "https://platform.twitter.com",
+          "https://s2.adform.net",
+          "https://sc-static.net",
+          "https://scripts.clarity.ms",
+          "https://sdk.privacy-center.org",
+          "https://sdk.woosmap.com",
+          "https://server.adform.net",
+          "https://tags.srv.stackadapt.com",
+          "https://tarteaucitron.io",
+          "https://tr.snapchat.com",
+          "https://www.clarity.ms",
+          "https://www.google.com",
+          "https://www.googletagmanager.com",
+          "https://www.gstatic.com",
+          "https://www.tiktok.com",
+          "https://youtube.com"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.ttwstatic.com",
+          "https://fonts.googleapis.com",
+          "https://genii-public.oos.cloudgouv-eu-west-1.outscale.com",
+          "https://genii-script.tolk.ai",
+          "https://sdk.privacy-center.org",
+          "https://storage.googleapis.com",
+          "https://tags.srv.stackadapt.com"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://*.bing.com",
+          "https://*.bing.net",
+          "https://*.clarity.ms",
+          "https://*.tile.openstreetmap.org",
+          "https://ad.doubleclick.net",
+          "https://genii-public.oos.cloudgouv-eu-west-1.outscale.com",
+          "https://media.service-civique.gouv.fr",
+          "https://sdk.privacy-center.org",
+          "https://server.adform.net",
+          "https://storage.googleapis.com",
+          "https://tags.srv.stackadapt.com",
+          "https://tile.openstreetmap.org",
+          "https://www.facebook.com",
+          "https://www.google.com",
+          "https://www.google.fr",
+          "https://www.googletagmanager.com",
+          "https://www.service-civique.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.bing.com",
+          "https://*.bing.net",
+          "https://*.clarity.ms",
+          "https://ad.doubleclick.net",
+          "https://analytics-ipv6.tiktokw.us",
+          "https://analytics.tiktok.com",
+          "https://api.api-engagement.beta.gouv.fr",
+          "https://api.privacy-center.org",
+          "https://api.woosmap.com",
+          "https://app.api-engagement.beta.gouv.fr",
+          "https://connect.facebook.net",
+          "https://funnel-ui.service-civique.gouv.fr",
+          "https://funnel.service-civique.gouv.fr",
+          "https://genii-api.tolk.ai",
+          "https://genii-messages-01.tolk.ai",
+          "https://google.com",
+          "https://hooks.zapier.com",
+          "https://sdk.woosmap.com",
+          "https://server.adform.net",
+          "https://tr.snapchat.com",
+          "https://tr6.snapchat.com",
+          "https://www.google.com",
+          "wss://genii-messages-01.tolk.ai"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://*.adform.net",
+          "https://*.fls.doubleclick.net",
+          "https://*.youtube.com",
+          "https://platform.twitter.com",
+          "https://tr.snapchat.com",
+          "https://www.facebook.com",
+          "https://www.google.com",
+          "https://www.tiktok.com",
+          "https://youtube.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://cdn.jsdelivr.net",
+          "https://fonts.gstatic.com",
+          "https://genii-script.tolk.ai",
+          "https://sdk.woosmap.com"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "form-action": [
+          "'self'"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -92,17 +235,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
