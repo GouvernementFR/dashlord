@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 03:22:37 GMT",
+      "date": "Sun, 27 Sep 2026 02:33:34 GMT",
       "server": "",
       "last-modified": "Wed, 22 Jan 2014 21:13:08 GMT",
       "etag": "\"40030-0-4f095976c2631\"",
@@ -48,16 +48,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https",
-      "scoreModifier": -20,
-      "destination": "http://wikigeotech.developpement-durable.gouv.fr/index.php/Portail:Wikigeotech",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": "http://wikigeotech.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://wikigeotech.developpement-durable.gouv.fr/",
-        "http://wikigeotech.developpement-durable.gouv.fr/index.php/Portail:Wikigeotech"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
