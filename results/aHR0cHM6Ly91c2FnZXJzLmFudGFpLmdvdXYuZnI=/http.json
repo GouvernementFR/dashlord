@@ -9,23 +9,23 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 03:23:52 GMT",
-      "last-modified": "Wed, 25 Mar 2026 14:58:52 GMT",
-      "etag": "\"e4e1-64dda818d6300-gzip\"",
+      "date": "Tue, 29 Sep 2026 02:33:01 GMT",
+      "content-security-policy": "frame-ancestors 'self', antai.gouv.fr google.com",
+      "last-modified": "Thu, 20 Aug 2026 08:30:25 GMT",
+      "etag": "\"e4e1-6597654e5c62e-gzip\"",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1;mode=block",
       "x-content-type-options": "nosniff",
-      "content-length": "8239",
+      "content-length": "8238",
       "connection": "close",
       "content-type": "text/html",
       "set-cookie": [
-        "BIGipServerRMxtAG90Ij/lqyLgEA8F6Q=!qec6o/GWNaErcPeFdQy6qgFCOaexJjYDGPpM3yqCLyCRbaouHEH4hkRf1YROESSX+YwsOnQPIE6v/N0=; path=/; Httponly; Secure",
-        "TS01cc36f2=010fe107acaae6210feafd89e82774f5a62d00fcfdcc5ea964db46c12c99e86bafbba77c9f162f6de00d32b35ff45aac3f23290dbe7491445832bce530f9271dc3da2d3f15; Path=/"
+        "BIGipServerRMxtAG90Ij/lqyLgEA8F6Q=!g0ZeZ6z/zlOktFOFdQy6qgFCOaexJlH+guP6PlWTUN9/5lR4sdEbAYtvoz+X7NrW82tlTkNsbEZobXk=; path=/; Httponly; Secure",
+        "TS01cc36f2=010fe107ac4b5683fef905948b6959c32e93492d996fbac6d3ec08c6a82a930439ab1c45f658afdad664537de0687488eff14b94e70c44d7ff45784ccf1887f4c9337d20ce; Path=/"
       ],
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
-      "content-security-policy": "antai.gouv.fr google.com",
       "x-content-security-policy": "antai.gouv.fr google.com",
       "referrer-policy": "strict-origin"
     }
@@ -37,14 +37,16 @@
       "result": "csp-implemented-with-unsafe-inline",
       "scoreModifier": -20,
       "data": {
-        "antai.gouv.fr": [
+        "frame-ancestors": [
+          "'self',",
+          "antai.gouv.fr",
           "google.com"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": false,
+        "antiClickjacking": true,
         "defaultNone": false,
         "insecureBaseUri": true,
         "insecureFormAction": true,
@@ -137,8 +139,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
