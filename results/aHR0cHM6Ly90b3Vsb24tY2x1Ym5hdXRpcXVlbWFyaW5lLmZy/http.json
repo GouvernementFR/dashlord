@@ -3,26 +3,26 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 20,
     "statusCode": 200,
     "testsFailed": 6,
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 03:23:00 GMT",
+      "date": "Tue, 29 Sep 2026 02:33:07 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
       "x-ua-compatible": "IE=edge",
       "link": "<https://www.toulon-clubnautiquemarine.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.toulon-clubnautiquemarine.fr/wp-json/wp/v2/pages/45>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.toulon-clubnautiquemarine.fr/>; rel=shortlink",
-      "x-litespeed-tag": "d10_front,d10_URL.6666cd76f96956469e7be39d750cc7d9,d10_F,d10_Po.45,d10_PGS,d10_,d10_MIN.d6661d2743296593a683472512d8f10f.css",
+      "x-litespeed-tag": "d10_front,d10_URL.6666cd76f96956469e7be39d750cc7d9,d10_F,d10_Po.45,d10_PGS,d10_,d10_MIN.a148b21ef1cf79566e76503ab4339ece.css,d10_MIN.365fa0ffc49ce419dc1f5f4619670883.js",
       "server": "cloudflare",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=g%2BLchsRdZ158CEFmmOrzajcM2fPVY2AUeWYv2nu5adHmwM%2BfwnH78duOahC9pQX%2BABtmW2EjTl9jzAfAEneTZtsadytzt2E3ld36is929lGR%2Fddfxl5z4qtmA2rRGsyu6BWir%2F%2F5hoGCj2cNV%2FMGpm9NVQ%3D%3D\"}]}",
       "cf-cache-status": "DYNAMIC",
-      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=18,cfOrigin;dur=984",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZcDmRwncHEkh9ho790IX8xfFm3uJRkECA3sKP5WzTCwjRKmdHkyix4O05bdKBDIqOSufXk%2BfmPx6yiuNHqHS8T%2FC%2BuWTXrTMPUD0MBRCewaQLhCoAkhIKvXtnrN5qEl6OWBTtr21akSRXSicH2XfQ37wFA%3D%3D\"}]}",
-      "cf-ray": "a18435188c2b9100-SJC",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=25,cfOrigin;dur=1254",
+      "cf-ray": "a42794c48a6f9c66-IAD",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -89,24 +89,16 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
       "data": {
         "https://www.googletagmanager.com/gtag/js?id=G-PYN12FYGM7": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://jxxfz6rfvcpeab6pt.ay.delivery/manager/jxxFZ6RfvcpEAb6pt": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "//www.toulon-clubnautiquemarine.fr/?wordfence_syncAttackData=1783567379.729": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
+          "integrity": "sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
         }
       }
     },
