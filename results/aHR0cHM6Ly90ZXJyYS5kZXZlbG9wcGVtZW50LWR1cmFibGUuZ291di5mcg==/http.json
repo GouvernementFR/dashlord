@@ -3,28 +3,25 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 55,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 03:23:51 GMT",
-      "server": "Apache",
-      "x-content-type-options": "nosniff",
+      "date": "Tue, 29 Sep 2026 02:33:55 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "session=de89qeal63old3o19c7thmcidi; expires=Tue, 29 Sep 2026 05:33:56 GMT; Max-Age=10800; path=/; secure; HttpOnly"
+      ],
+      "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
-      "referrer-policy": "strict-origin",
-      "permissions-policy": "microphone=(), accelerometer=(), ambient-light-sensor=(), battery =(), gyroscope=(), magnetometer=(), midi=(), payment=(), picture-in-picture=(), vibrate=(), vr=(), wake-lock=(), speaker=(self), fullscreen=(self)",
-      "access-control-allow-methods": "POST, GET",
-      "access-control-max-age": "1000",
-      "access-control-allow-headers": "x-requested-with, Content-Type, origin, authorization, accept, client-security-token, SOAPAction",
-      "strict-transport-security": "max-age=63072000",
-      "last-modified": "Wed, 11 Jan 2023 09:43:25 GMT",
-      "etag": "\"21d3-5f1f9d4f19730\"",
-      "accept-ranges": "bytes",
-      "content-length": "8659",
-      "connection": "close",
-      "content-type": "text/html"
+      "transfer-encoding": "chunked",
+      "content-type": "text/html; charset=UTF-8",
+      "server": "Ephoto",
+      "connection": "close"
     }
   },
   "tests": {
@@ -42,9 +39,19 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
+      "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
-      "data": null,
+      "data": {
+        "session": {
+          "domain": "mediatheque-terra.developpement-durable.gouv.fr",
+          "expires": "2026-09-29T05:33:56.000Z",
+          "httponly": true,
+          "max-age": 10800,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -59,31 +66,32 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://terra.developpement-durable.gouv.fr/",
+      "destination": "https://mediatheque-terra.developpement-durable.gouv.fr/",
       "redirects": true,
       "route": [
         "http://terra.developpement-durable.gouv.fr/",
-        "https://terra.developpement-durable.gouv.fr/"
+        "https://terra.developpement-durable.gouv.fr/",
+        "https://mediatheque-terra.developpement-durable.gouv.fr/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -96,17 +104,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
