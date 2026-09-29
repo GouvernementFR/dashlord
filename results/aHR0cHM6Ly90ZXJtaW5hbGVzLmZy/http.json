@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 03:27:41 GMT",
+      "date": "Tue, 29 Sep 2026 02:34:05 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -23,14 +23,14 @@
       "x-permitted-cross-domain-policies": "master-only",
       "referrer-policy": "same-origin",
       "alt-svc": "h3=\":443\"; ma=86400",
-      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
-      "last-modified": "Thu, 09 Jul 2026 03:27:41 GMT",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MmuKBwVarCia0RIyxxwCm5EMA9qthx8sHJxCIoPlTFRHEg8QSYIFUyLDQjZEHx%2BocwyM7yr97HUgVLVBKmSHX0qrK4knoMEPKPS5uiOqBvsP5hgoEq1ccMeNiTx1kDMEPW%2F8nA%3D%3D\"}]}",
+      "last-modified": "Tue, 29 Sep 2026 02:34:05 GMT",
       "cache-control": "max-age=31536000",
       "cf-cache-status": "EXPIRED",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "speculation-rules": "\"/cdn-cgi/speculation\"",
-      "server-timing": "cfCacheStatus;desc=\"EXPIRED\", cfEdge;dur=17,cfOrigin;dur=1133",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bfmNOrEacWufjzJTrIKNHk%2F%2FzpejWnKDvYGdiDquwjlaByq9M%2B9BdN%2BIX9vBhZtGO%2FED011Mcg8kMRo4HY3Mxbm0GOetYv38tgmhQDjBHxgDQtT%2BaSJLeb5zrtJ6TfZJXphAYQ%3D%3D\"}]}",
-      "cf-ray": "a1843bf7cf8df897-SJC"
+      "server-timing": "cfCacheStatus;desc=\"EXPIRED\", cfEdge;dur=19,cfOrigin;dur=1131",
+      "cf-ray": "a4279630af6c174a-SJC"
     }
   },
   "tests": {
@@ -116,9 +116,9 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495": {
           "crossorigin": "anonymous",
-          "integrity": "sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
+          "integrity": "sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
         }
       }
     },
