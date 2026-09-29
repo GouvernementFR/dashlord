@@ -1,59 +1,40 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "C",
     "error": null,
-    "score": 80,
-    "statusCode": 403,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "score": 55,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cache-control": "no-cache",
-      "connection": "close",
-      "content-security-policy": "default-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
-      "content-type": "text/html; charset=utf-8",
-      "pragma": "no-cache",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-blocked": "yes",
+      "date": "Tue, 29 Sep 2026 02:32:56 GMT",
+      "content-type": "text/html",
+      "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
-      "content-length": "9840"
+      "last-modified": "Tue, 04 Jan 2022 16:00:07 GMT",
+      "etag": "W/\"18c70-5d4c3bb248fc0\"",
+      "x-varnish": "4945064",
+      "age": "0",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -91,19 +72,19 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
@@ -119,7 +100,7 @@
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "DENY"
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
