@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 11 Jul 2026 03:21:36 GMT",
+      "date": "Thu, 01 Oct 2026 02:41:18 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://webissimo.developpement-durable.gouv.fr/local/cache-css/113aeaf2f298db216eeaadedfd6fa3dd.css?1783076957>;rel=\"preload\";as=\"style\"",
+      "link": "<https://webissimo.developpement-durable.gouv.fr/local/cache-css/113aeaf2f298db216eeaadedfd6fa3dd.css?1788780056>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sat, 11 Jul 2026 03:21:35 GMT",
+      "last-modified": "Thu, 01 Oct 2026 02:41:18 GMT",
       "set-cookie": [
         "SRV=2301a027-9bb3-4d9d-9b1f-32ba044d45fe; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
