@@ -1,21 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 03:28:55 GMT",
+      "date": "Thu, 01 Oct 2026 02:41:10 GMT",
       "server": "Apache",
       "expires": "Wed, 1 Jan 2025 00:00:00 GMT",
       "cache-control": "max-age=0, no-cache, no-store, must-revalidate",
       "pragma": "no-cache",
       "set-cookie": [
-        "mailUtilisateur=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Domain=ucanss.fr; Path=/; Secure; HttpOnly"
+        "mailUtilisateur=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Domain=ucanss.fr; Path=/; Secure; HttpOnly",
+        "redirect=/accueil; Path=/"
       ],
       "content-type": "text/html;charset=UTF-8",
       "x-xss-protection": "1; mode=block",
@@ -56,9 +57,9 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "cookies-without-secure-flag",
+      "scoreModifier": -20,
       "data": {
         "jahiacookieid": {
           "domain": "www.ucanss.fr",
@@ -75,6 +76,11 @@
           "path": "/",
           "port": null,
           "secure": true
+        },
+        "redirect": {
+          "domain": "www.ucanss.fr",
+          "path": "/",
+          "port": null
         }
       },
       "sameSite": false
