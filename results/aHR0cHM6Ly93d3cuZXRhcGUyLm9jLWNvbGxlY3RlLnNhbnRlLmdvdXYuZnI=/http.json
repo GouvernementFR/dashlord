@@ -11,14 +11,11 @@
     "responseHeaders": {
       "cache-control": "private",
       "content-type": "text/html; charset=utf-8",
-      "set-cookie": [
-        "ASP.NET_SessionId=0gv52k44sluz1ek11a3gxwmj; HttpOnly; path=/; HttpOnly; SameSite=Lax; Secure"
-      ],
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "date": "Sat, 11 Jul 2026 03:21:31 GMT",
-      "content-length": "2538",
+      "date": "Thu, 01 Oct 2026 02:41:28 GMT",
+      "content-length": "15121",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -38,19 +35,10 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "ASP.NET_SessionId": {
-          "domain": "www.etape2.oc-collecte.sante.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -64,15 +52,14 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx",
+      "destination": "https://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
       "redirects": true,
       "route": [
         "http://www.etape2.oc-collecte.sante.gouv.fr/",
         "https://www.etape2.oc-collecte.sante.gouv.fr/",
         "http://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
         "https://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
-        "https://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
-        "https://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx"
+        "https://www.etape2.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f"
       ],
       "statusCode": 200
     },
@@ -99,7 +86,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
