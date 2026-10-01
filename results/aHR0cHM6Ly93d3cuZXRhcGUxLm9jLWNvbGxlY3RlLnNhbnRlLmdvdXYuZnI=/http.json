@@ -11,11 +11,14 @@
     "responseHeaders": {
       "cache-control": "private",
       "content-type": "text/html; charset=utf-8",
+      "set-cookie": [
+        "ASP.NET_SessionId=55nvseilor1osvlmenf4h1d5; HttpOnly; path=/; HttpOnly; SameSite=Lax; Secure"
+      ],
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "date": "Sat, 11 Jul 2026 03:21:39 GMT",
-      "content-length": "2612",
+      "date": "Thu, 01 Oct 2026 02:42:10 GMT",
+      "content-length": "15121",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -61,15 +64,14 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx",
+      "destination": "https://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
       "redirects": true,
       "route": [
         "http://www.etape1.oc-collecte.sante.gouv.fr/",
         "https://www.etape1.oc-collecte.sante.gouv.fr/",
         "http://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
         "https://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
-        "https://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
-        "https://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx"
+        "https://www.etape1.oc-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f"
       ],
       "statusCode": 200
     },
@@ -96,7 +98,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
       "scoreModifier": 0,
       "data": {}
     },
