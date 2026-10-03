@@ -10,16 +10,19 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "19361",
-      "cache-control": "public, s-maxage=86391",
+      "age": "0",
+      "cache-control": "max-age=0, must-revalidate, private, s-maxage=86400",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Fri, 10 Jul 2026 22:00:08 GMT",
-      "server": "Apache",
+      "date": "Sat, 03 Oct 2026 02:23:50 GMT",
+      "expires": "Sat, 03 Oct 2026 02:23:50 GMT",
+      "server": "Apache/2.4.67 (Debian)",
       "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "vary": "Accept-Encoding",
-      "via": "1.1 varnish (Varnish/6.1)",
-      "x-location-id": "63 2498 2383 2861 2856 2404 2657 1250 1712",
-      "x-varnish": "4208609 7009617",
+      "vary": "Origin,cookie,authorization,Accept-Encoding",
+      "via": "1.1 varnish (Varnish/6.5)",
+      "x-backend": "web_bo",
+      "x-powered-by": "Ibexa Open Source v3",
+      "x-ttl": "86400.000",
+      "x-varnish": "61822311",
       "connection": "close",
       "transfer-encoding": "chunked"
     }
@@ -47,20 +50,21 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "null"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://vaccination-info-service.fr/",
+      "destination": "https://www.vaccination-info-service.fr/",
       "redirects": true,
       "route": [
         "http://vaccination-info-service.fr/",
-        "https://vaccination-info-service.fr/"
+        "https://vaccination-info-service.fr/",
+        "https://www.vaccination-info-service.fr/"
       ],
       "statusCode": 200
     },
