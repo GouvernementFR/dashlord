@@ -1,24 +1,24 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "A+",
+    "grade": "B+",
     "error": null,
-    "score": 115,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 0,
-    "testsPassed": 10,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Jul 2026 03:28:14 GMT",
+      "date": "Mon, 05 Oct 2026 02:34:44 GMT",
       "server": "Apache",
-      "content-security-policy": "default-src 'self'; upgrade-insecure-requests; frame-ancestors 'none'",
-      "strict-transport-security": "max-age=34560000; includeSubDomains; preload",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.finances.gouv.fr ; connect-src 'self' https://*.finances.gouv.fr; upgrade-insecure-requests; frame-ancestors 'none'",
+      "strict-transport-security": "max-age=34560000;includeSubDomains;preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "sameorigin",
-      "x-xss-protection": "1; mode=block",
+      "x-xss-protection": "1;mode=block",
       "referrer-policy": "same-origin",
       "cache-control": "max-age=0, must-revalidate, private",
-      "expires": "Mon, 13 Jul 2026 03:28:14 GMT",
+      "expires": "Mon, 05 Oct 2026 02:34:44 GMT",
       "content-type": "text/html; charset=UTF-8",
       "content-language": "fr",
       "connection": "close",
@@ -28,12 +28,21 @@
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": true,
-      "result": "csp-implemented-with-no-unsafe",
-      "scoreModifier": 5,
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
       "data": {
         "default-src": [
           "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.finances.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.finances.gouv.fr"
         ],
         "upgrade-insecure-requests": [
           "'none'"
@@ -53,7 +62,7 @@
         "insecureSchemePassive": false,
         "strictDynamic": false,
         "unsafeEval": false,
-        "unsafeInline": false,
+        "unsafeInline": true,
         "unsafeInlineStyle": false,
         "unsafeObjects": false
       },
@@ -98,7 +107,7 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=34560000; includeSubDomains; preload",
+      "data": "max-age=34560000;includeSubDomains;preload",
       "includeSubDomains": true,
       "maxAge": 34560000,
       "preload": true,
