@@ -1,16 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "D",
     "error": null,
-    "score": 55,
+    "score": 35,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 13 Jul 2026 03:22:01 GMT",
+      "date": "Mon, 05 Oct 2026 02:34:42 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -73,15 +73,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://univ-jfc.fr/",
       "redirects": true,
-      "route": [
-        "http://univ-jfc.fr/",
-        "https://univ-jfc.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -96,7 +93,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
