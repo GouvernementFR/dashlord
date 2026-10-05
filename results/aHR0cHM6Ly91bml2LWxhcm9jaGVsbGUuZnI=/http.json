@@ -1,31 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "B",
     "error": null,
-    "score": 65,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Jul 2026 03:23:11 GMT",
+      "date": "Mon, 05 Oct 2026 02:35:59 GMT",
       "server": "Apache",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "accelerometer=(), autoplay=(), browsing-topics=(), camera=(), clipboard-read=(self), clipboard-write=(self), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(self), usb=(), vibrate=(), web-share=(), xr-spatial-tracking=()",
       "strict-transport-security": "max-age=15768000",
       "upgrade": "h2",
       "connection": "Upgrade, close",
-      "last-modified": "Sun, 12 Jul 2026 20:39:43 GMT",
+      "last-modified": "Sun, 04 Oct 2026 18:39:29 GMT",
       "cache-control": "max-age=0",
-      "expires": "Mon, 13 Jul 2026 03:23:11 GMT",
+      "expires": "Mon, 05 Oct 2026 02:35:59 GMT",
       "vary": "Accept-Encoding",
-      "access-control-allow-origin": "*",
-      "x-ua-compatible": "IE=edge",
-      "x-frame-options": "SAMEORIGIN",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "referrer-policy": "no-referrer-when-downgrade",
-      "feature-policy": "geolocation 'self'; camera 'none'; microphone 'none'",
-      "content-length": "33375",
+      "content-length": "32942",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -52,9 +49,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -72,10 +69,10 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "no-referrer-when-downgrade",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
@@ -100,11 +97,11 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.jsdelivr.net/npm/iconify-icon/dist/iconify-icon.min.js?ver=6.7.5": {
+        "https://cdn.jsdelivr.net/npm/iconify-icon/dist/iconify-icon.min.js?ver=6.7.9": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js?ver=6.7.5": {
+        "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js?ver=6.7.9": {
           "crossorigin": null,
           "integrity": null
         },
