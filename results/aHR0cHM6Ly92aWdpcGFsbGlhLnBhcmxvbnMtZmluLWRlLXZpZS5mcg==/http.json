@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "B+",
     "error": null,
-    "score": 60,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "no-cache, no-store",
@@ -14,20 +14,20 @@
       "content-type": "text/html; charset=utf-8",
       "expires": "-1",
       "vary": "Accept-Encoding",
+      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud https://*.openstreetmap.org",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "_syrSessGuid=bc753e54-4207-47be-89f6-4fd209fd565c; expires=Mon, 13-Jul-2026 03:52:01 GMT; path=/; secure; HttpOnly; SameSite=Lax",
-        "_syrPrefsGuid=c748f66d-93cf-41e8-b391-58cdc3c75b2f; expires=Tue, 13-Jul-2027 03:22:01 GMT; path=/; secure; HttpOnly; SameSite=Lax",
-        "InstanceST=CNSPFV=00040JNGSetQ0zid0FYpRLZf8ab6G5xBKlzQ5czYmIW_pzHRNDbVFX3vu93OFaW7ibzmJQty4NjErfDxlBW66cMY=; path=/; secure; HttpOnly; SameSite=None",
-        "InstanceCI=CNSPFV=31wvaOR_gIGp9dzWdauC_o0rTWXzRDsWIzCZVHn0; path=/; secure; HttpOnly; SameSite=None"
+        "_syrSessGuid=a0ea9fb7-21d9-4e57-850e-0c3857d255ee; expires=Mon, 05-Oct-2026 03:05:51 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "_syrPrefsGuid=102e03f5-7e8c-4e39-8f8a-eadc7325a43b; expires=Tue, 05-Oct-2027 02:35:51 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "InstanceST=CNSPFV=00040VXVfIx5TpLKvK2OhRtvPlnZXZOkeoH7v8Hh0M4GKZf6BT5+sObce3pyYRJ7gZGMUXznQRvfc+/UkHad0hNg=; path=/; secure; HttpOnly; SameSite=None",
+        "InstanceCI=CNSPFV=PKc5DYBa4urrC7Xk_JMltkNu5wo8T3ifDn76y5sw; path=/; secure; HttpOnly; SameSite=None"
       ],
       "referrer-policy": "strict-origin-when-cross-origin",
-      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud https://*.openstreetmap.org",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-xss-protection": "0",
-      "date": "Mon, 13 Jul 2026 03:22:02 GMT",
+      "date": "Mon, 05 Oct 2026 02:35:52 GMT",
       "connection": "close",
-      "content-length": "57957"
+      "content-length": "61663"
     }
   },
   "tests": {
@@ -45,7 +45,6 @@
         ],
         "script-src": [
           "'self'",
-          "'unsafe-eval'",
           "'unsafe-inline'",
           "https:"
         ],
@@ -98,7 +97,7 @@
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": false
@@ -113,7 +112,7 @@
       "data": {
         "_syrSessGuid": {
           "domain": "vigipallia.parlons-fin-de-vie.fr",
-          "expires": "2026-07-13T03:52:01.000Z",
+          "expires": "2026-10-05T03:05:51.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -122,7 +121,7 @@
         },
         "_syrPrefsGuid": {
           "domain": "vigipallia.parlons-fin-de-vie.fr",
-          "expires": "2027-07-13T03:22:01.000Z",
+          "expires": "2027-10-05T02:35:51.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -157,13 +156,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://vigipallia.parlons-fin-de-vie.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://vigipallia.parlons-fin-de-vie.fr/",
+      "redirects": true,
       "route": [
-        "http://vigipallia.parlons-fin-de-vie.fr/"
+        "http://vigipallia.parlons-fin-de-vie.fr/",
+        "https://vigipallia.parlons-fin-de-vie.fr/"
       ],
       "statusCode": 200
     },
