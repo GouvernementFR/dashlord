@@ -1,20 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "C-",
     "error": null,
-    "score": 25,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 13 Jul 2026 03:24:01 GMT",
+      "date": "Wed, 07 Oct 2026 02:36:18 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "link": "<https://vae.education.gouv.fr/>; rel=shortlink"
+      "link": "<https://vae.education.gouv.fr/>; rel=shortlink",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload;"
     }
   },
   "tests": {
@@ -68,13 +69,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15552000; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 15552000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
