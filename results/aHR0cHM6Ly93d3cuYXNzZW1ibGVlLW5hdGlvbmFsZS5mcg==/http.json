@@ -9,13 +9,13 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Jul 2026 03:23:08 GMT",
+      "date": "Wed, 07 Oct 2026 02:36:37 GMT",
       "content-type": "text/html; charset=UTF-8",
       "cache-control": "max-age=0, must-revalidate, private",
-      "xkey": "ez-all c735 ct33 l789 pl785 p1 p43 p488 p785 p789 c701 l756 pl516 p491 p516 p756 c497460 l134721 pl92034 p515 p92034 p134721 c1118675 l278433 pl199734 p490 p59411 p199734 p278433 c317264 l75577 pl24820 p24820 p75577 c1111371 l271245 p271245",
+      "xkey": "ez-all c1519 ct33 l1547 pl509 p1 p43 p491 p509 p1547 c1115727 l275537 pl275535 p194010 p194013 p205866 p228871 p275535 p275537 c1112216 l272079 pl508 p508 p272079 c1128637 l288210 pl199734 p490 p59411 p199734 p288210 c1121156 l280895 pl24822 p515 p24822 p280895 c1128339 l287921 pl200409 p25266 p25996 p200409 p287921",
       "vary": "cookie,Accept-Encoding,authorization",
-      "expires": "Mon, 13 Jul 2026 03:22:15 GMT",
-      "be": "f1",
+      "expires": "Wed, 07 Oct 2026 02:36:25 GMT",
+      "be": "f2",
       "access-control-allow-credentials": "true",
       "accept-ranges": "bytes",
       "x-cacheable": "Not cacheable: private",
@@ -88,9 +88,14 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.3/superfish.min.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-ILhCOhy8ymQsMbul+kZsRny+Egfi0k/iuIaQI3seK6GtMUDvPTnWfy7HFYAUK0YUzJMFOQQkdBhA/yDB6VoPxw=="
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
