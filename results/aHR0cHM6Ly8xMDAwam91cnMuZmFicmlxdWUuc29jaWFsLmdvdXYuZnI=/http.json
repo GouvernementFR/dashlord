@@ -3,81 +3,44 @@
     "algorithmVersion": 4,
     "grade": "C",
     "error": null,
-    "score": 55,
+    "score": 50,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-security-policy": "default-src 'self' data:; connect-src 'self' https://*.gouv.fr https://metrics.articulate.com; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
+      "accept-ranges": "bytes",
+      "age": "119",
+      "content-length": "52514",
       "content-type": "text/html; charset=utf-8",
-      "date": "Mon, 13 Jul 2026 03:32:43 GMT",
-      "etag": "W/\"692d6bf0-44df\"",
-      "last-modified": "Mon, 01 Dec 2025 10:20:32 GMT",
-      "server": "nginx",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "date": "Wed, 07 Oct 2026 02:35:20 GMT",
+      "etag": "W/\"4be38-LaKoXmtFE27Puk/nrA7vMOrYkmo\"",
+      "server": "Apache",
+      "strict-transport-security": "max-age=15552000; includeSubDomains, max-age=15552000; includeSubDomains; preload",
       "vary": "Accept-Encoding",
-      "x-content-type-options": "none",
-      "x-frame-options": "sameorigin",
+      "x-cache": "MISS",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "deny",
+      "x-ogo-cache": "HIT",
+      "x-served-by": "p199",
+      "x-varnish": "518718183 515659105",
       "x-xss-protection": "1; mode=block",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "connection": "close"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'",
-          "data:"
-        ],
-        "connect-src": [
-          "'self'",
-          "https://*.gouv.fr",
-          "https://metrics.articulate.com"
-        ],
-        "font-src": [
-          "'self'",
-          "data:"
-        ],
-        "img-src": [
-          "'self'"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "https://*.gouv.fr"
-        ],
-        "frame-src": [
-          "'self'",
-          "https://*.gouv.fr"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -96,15 +59,17 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://1000jours.fabrique.social.gouv.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://www.1000-premiers-jours.fr/fr",
+      "redirects": true,
       "route": [
-        "http://1000jours.fabrique.social.gouv.fr/"
+        "http://1000jours.fabrique.social.gouv.fr/",
+        "https://1000jours.fabrique.social.gouv.fr/",
+        "https://www.1000-premiers-jours.fr/fr"
       ],
-      "statusCode": 503
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -117,35 +82,40 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-header-invalid",
+      "scoreModifier": -20,
+      "data": "max-age=15552000; includeSubDomains, max-age=15552000; includeSubDomains; preload",
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.tagcommander.com/5116/tc_APB_23.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-header-invalid",
-      "scoreModifier": -5,
-      "data": "none"
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "sameorigin"
+      "data": "deny"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
