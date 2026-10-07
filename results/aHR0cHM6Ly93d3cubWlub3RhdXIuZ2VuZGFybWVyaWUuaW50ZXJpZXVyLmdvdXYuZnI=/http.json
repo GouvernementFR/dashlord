@@ -3,35 +3,102 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
-    "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "score": 20,
+    "statusCode": 403,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 13 Jul 2026 03:34:30 GMT",
-      "server": "Apache",
-      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "cache-control": "no-store, no-cache, must-revalidate",
-      "pragma": "no-cache",
-      "p3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-      "vary": "Accept-Encoding,User-Agent",
-      "content-length": "1802",
+      "date": "Wed, 07 Oct 2026 02:36:40 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "connection": "close"
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-tTupcCMxiKYC8HjBLmt6uM' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "server": "cloudflare",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"a46985019f50fc6c\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "strict-transport-security": "max-age=2592000; preload",
+      "vary": "accept-encoding",
+      "cf-ray": "a46985019f50fc6c-CDG",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
-      "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-ttupccmxikyc8hjblmt6um'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -63,34 +130,35 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https",
-      "scoreModifier": -20,
-      "destination": "http://www.minotaur.gendarmerie.interieur.gouv.fr/get/contact",
+      "result": "redirection-not-to-https-on-initial-redirection",
+      "scoreModifier": -10,
+      "destination": "https://www.gendarmerie.interieur.gouv.fr/reserves/reserve-operationnelle-de-la-gendarmerie-nationale",
       "redirects": true,
       "route": [
         "http://www.minotaur.gendarmerie.interieur.gouv.fr/",
-        "http://www.minotaur.gendarmerie.interieur.gouv.fr/get/contact"
+        "http://www.minotaur.gendarmerie.interieur.gouv.fr/get/contact",
+        "https://www.gendarmerie.interieur.gouv.fr/reserves/reserve-operationnelle-de-la-gendarmerie-nationale"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2592000; preload",
       "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "maxAge": 2592000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -102,25 +170,25 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
