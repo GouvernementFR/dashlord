@@ -1,29 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Jul 2026 03:16:38 GMT",
-      "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
-      "content-type": "text/html; charset=utf-8",
-      "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.cgt-snpam.syndicat.min-e2.fr/local/cache-css/8524ff4317d4c69deffc02a859f71c23.css?1782114129>;rel=\"preload\";as=\"style\"",
-      "x-spip-cache": "3600",
-      "last-modified": "Wed, 15 Jul 2026 03:16:38 GMT",
-      "set-cookie": [
-        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
-      ],
-      "vary": "Cookie,Accept-Encoding",
-      "cache-control": "private",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "date": "Fri, 09 Oct 2026 02:42:19 GMT",
+      "server": "",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "upgrade": "h2,h2c",
+      "connection": "Upgrade, close",
+      "last-modified": "Thu, 20 Aug 2026 16:53:56 GMT",
+      "etag": "\"8ec1-6597d5d9d7917-gzip\"",
+      "vary": "Accept-Encoding",
+      "content-length": "6214",
+      "content-type": "text/html",
+      "content-language": "fr"
     }
   },
   "tests": {
@@ -40,16 +36,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag-but-protected-by-hsts",
-      "scoreModifier": -5,
-      "data": {
-        "SRV": {
-          "domain": "www.cgt-snpam.syndicat.min-e2.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -86,16 +76,16 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
