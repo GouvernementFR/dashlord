@@ -1,25 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "B+",
     "error": null,
-    "score": 75,
+    "score": 80,
     "statusCode": 200,
     "testsFailed": 1,
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Jul 2026 03:16:43 GMT",
+      "date": "Fri, 09 Oct 2026 02:42:06 GMT",
       "server": "Apache",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "x-frame-options": "SAMEORIGIN",
       "referrer-policy": "strict-origin",
-      "permissions-policy": "microphone=(), accelerometer=(), ambient-light-sensor=(), battery =(), gyroscope=(), magnetometer=(), midi=(), payment=(), picture-in-picture=(), vibrate=(), vr=(), wake-lock=(), speaker=(self), fullscreen=(self)",
-      "access-control-allow-methods": "POST, GET",
-      "access-control-max-age": "1000",
-      "access-control-allow-headers": "x-requested-with, Content-Type, origin, authorization, accept, client-security-token, SOAPAction",
+      "permissions-policy": "camera=(), microphone=(), geolocation=(), accelerometer=(), gyroscope=(), magnetometer=(), midi=(), payment=(), usb=(), picture-in-picture=(), screen-wake-lock=(), xr-spatial-tracking=(), display-capture=(), fullscreen=(self)",
+      "content-security-policy": "frame-ancestors 'self';",
       "strict-transport-security": "max-age=63072000",
+      "set-cookie": [
+        "JSESSIONID=9927972539D7B887FB249ED71C3CB468; Path=/; Secure; HttpOnly; SameSite=None; Partitioned"
+      ],
       "accept-ranges": "bytes",
       "etag": "W/\"6329-1658383741444\"",
       "last-modified": "Thu, 21 Jul 2022 06:09:01 GMT",
@@ -32,21 +33,46 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "JSESSIONID": {
+          "domain": "www.mediatheque.marine.defense.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -105,8 +131,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
