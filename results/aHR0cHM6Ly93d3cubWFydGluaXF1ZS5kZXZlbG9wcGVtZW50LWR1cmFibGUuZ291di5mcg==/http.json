@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Jul 2026 03:16:52 GMT",
+      "date": "Fri, 09 Oct 2026 02:42:20 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.martinique.developpement-durable.gouv.fr/local/cache-css/e9f8d92a03587a89c5ce310db0491511.css?1782135858>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.martinique.developpement-durable.gouv.fr/local/cache-css/e9f8d92a03587a89c5ce310db0491511.css?1791472384>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Wed, 15 Jul 2026 03:16:52 GMT",
+      "last-modified": "Fri, 09 Oct 2026 02:42:19 GMT",
       "set-cookie": [
         "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
