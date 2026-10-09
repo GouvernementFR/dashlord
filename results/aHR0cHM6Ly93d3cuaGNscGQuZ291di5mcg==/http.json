@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Jul 2026 03:16:57 GMT",
+      "date": "Fri, 09 Oct 2026 02:42:14 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.hclpd.gouv.fr/local/cache-css/c679d4a2c21d068631c5609524d4422c.css?1775143499>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.hclpd.gouv.fr/local/cache-css/c679d4a2c21d068631c5609524d4422c.css?1791472620>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Wed, 15 Jul 2026 03:16:56 GMT",
+      "last-modified": "Fri, 09 Oct 2026 02:42:14 GMT",
       "set-cookie": [
         "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
