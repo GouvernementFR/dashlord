@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C",
     "error": null,
-    "score": 15,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "private",
@@ -14,8 +14,8 @@
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "date": "Wed, 15 Jul 2026 03:16:48 GMT",
-      "content-length": "2542",
+      "date": "Fri, 09 Oct 2026 02:41:10 GMT",
+      "content-length": "2440",
       "connection": "close",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -58,12 +58,19 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.socialecole-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://www.socialecole-collecte.sante.gouv.fr/",
+        "https://www.socialecole-collecte.sante.gouv.fr/",
+        "http://www.socialecole-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
+        "https://www.socialecole-collecte.sante.gouv.fr/SpeInteractiveCollecte/",
+        "https://www.socialecole-collecte.sante.gouv.fr/SpeInteractiveCollecte/identification.aspx?ReturnUrl=%2fSpeInteractiveCollecte%2f",
+        "https://www.socialecole-collecte.sante.gouv.fr/SpeInteractiveCollecte/Fermeture.aspx"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -77,12 +84,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-invalid-cert",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
