@@ -9,9 +9,9 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Jul 2026 03:16:22 GMT",
+      "date": "Fri, 09 Oct 2026 02:42:03 GMT",
       "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
-      "last-modified": "Thu, 21 May 2026 10:40:37 GMT",
+      "last-modified": "Mon, 28 Sep 2026 16:06:55 GMT",
       "accept-ranges": "bytes",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "0",
@@ -19,13 +19,13 @@
       "pragma": "no-cache",
       "expires": "0",
       "x-frame-options": "DENY",
-      "content-security-policy": "default-src 'self' 'nonce-dsfr-index' 'nonce-javascript-index' 'nonce-roboto-index' 'nonce-icons-index' 'nonce-fontsgstatic'; object-src 'none';img-src 'self' data:; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' data: fonts.gstatic.com; connect-src 'self' https://api-adresse.data.gouv.fr/ https://geo.api.gouv.fr/ https://agadir-app.rct01.kleegroup.com/ https://*.auth.integ-app.daccord-ssg.net https://*.auth.valid-app.daccord-ssg.net; script-src 'self' 'nonce-dsfr-index' 'nonce-javascript-index' 'nonce-roboto-index' 'nonce-icons-index' 'nonce-fontsgstatic'",
+      "content-security-policy": "default-src 'self' 'nonce-dsfr-index' 'nonce-javascript-index' 'nonce-roboto-index' 'nonce-icons-index' 'nonce-fontsgstatic'; object-src 'none';img-src 'self' data:; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' data: fonts.gstatic.com; connect-src 'self' https://api-adresse.data.gouv.fr/ https://geo.api.gouv.fr/ https://agadir-app.rct01.kleegroup.com/ https://sentry2.fabrique.social.gouv.fr https://*.auth.integ-app.daccord-ssg.net https://*.auth.valid-app.daccord-ssg.net; script-src 'self' 'nonce-dsfr-index' 'nonce-javascript-index' 'nonce-roboto-index' 'nonce-icons-index' 'nonce-fontsgstatic'",
       "content-type": "text/html;charset=UTF-8",
       "content-language": "en-US",
       "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-accords-depot-prod2.cegedim.cloud-tcp80=!Mkeeu3SggMUX75CIuV0oqLPgQB/HDMESHUO15r8Cd05awn8GFoSOPLiH0kyJNaRpmG8R5zEzwbSp5SxNHYJSysKbRDY=; path=/; Httponly; Secure",
-        "TS01ac8ac8=01352d38115ad9e78c380ec64a76bf429f5f25c7fe4f23589479f2e57194ad330fb302717ef33ce7877ff9f072996ec0b73002d063; Path=/; Secure; HttpOnly"
+        "BIGipServerpool-accords-depot-prod2.cegedim.cloud-tcp80=!HuCPgYnUCjfwUX7XIR0kSm/kMHs/fGLE6nnBBfZqAj7baHIi5hJah+p/fOP146GcAn5Ir0FGAKqOxhWOHLc3wP3zmeU=; path=/; Httponly; Secure",
+        "TS01ac8ac8=01352d3811bc4b0cf50b88dacfe8a7b79c3936056d4b17da054268ef71af6aeb5c0060b200c619df9e8e1f94ba3c0c8aa69ad66e41; Path=/; Secure; HttpOnly"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "transfer-encoding": "chunked"
@@ -68,7 +68,8 @@
           "https://*.auth.integ-app.daccord-ssg.net",
           "https://*.auth.valid-app.daccord-ssg.net",
           "https://api-adresse.data.gouv.fr/",
-          "https://geo.api.gouv.fr/"
+          "https://geo.api.gouv.fr/",
+          "https://sentry2.fabrique.social.gouv.fr"
         ],
         "script-src": [
           "'nonce-dsfr-index'",
