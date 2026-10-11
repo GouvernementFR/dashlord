@@ -1,28 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B",
     "error": null,
-    "score": 20,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 17 Jul 2026 03:22:48 GMT",
+      "date": "Sun, 11 Oct 2026 02:41:13 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "ff545d0b-4279-46dc-aaa0-8b9d813fdd8a",
+      "x-request-id": "64d97293-dbad-4bad-9630-6d13acadc40a",
       "vary": "Accept-Encoding, Cookie",
       "cache-control": "max-age=1728000, public",
-      "x-drupal-dynamic-cache": "MISS",
+      "x-drupal-dynamic-cache": "HIT",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Thu, 09 Jul 2026 20:22:23 GMT",
-      "etag": "W/\"1783628543\"",
+      "last-modified": "Fri, 09 Oct 2026 08:04:05 GMT",
+      "etag": "W/\"1791533045\"",
       "x-generator": "Drupal 11 (https://www.drupal.org)",
       "x-drupal-cache": "HIT",
       "strict-transport-security": "max-age=31536000"
@@ -90,15 +90,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-      "scoreModifier": -50,
-      "data": {
-        "//cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
