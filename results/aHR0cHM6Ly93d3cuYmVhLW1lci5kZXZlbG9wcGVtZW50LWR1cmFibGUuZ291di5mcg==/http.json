@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 15 Jul 2026 03:17:44 GMT",
+      "date": "Sun, 11 Oct 2026 02:41:07 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.bea-mer.developpement-durable.gouv.fr/local/cache-css/9de9f06b952bb2a266416d711c5fa792.css?1780047805>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.bea-mer.developpement-durable.gouv.fr/local/cache-css/9de9f06b952bb2a266416d711c5fa792.css?1791472585>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Wed, 15 Jul 2026 03:17:43 GMT",
+      "last-modified": "Sun, 11 Oct 2026 02:41:07 GMT",
       "set-cookie": [
         "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
