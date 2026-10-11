@@ -1,24 +1,29 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C-",
     "error": null,
-    "score": 30,
+    "score": 45,
     "statusCode": 200,
     "testsFailed": 4,
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
+      "date": "Sun, 11 Oct 2026 02:41:15 GMT",
       "server": "nginx",
-      "date": "Wed, 15 Jul 2026 03:20:50 GMT",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
-      "content-length": "11700",
-      "connection": "close",
+      "composed-by": "SPIP @ www.spip.net",
+      "link": "<https://www.hauts-de-france.developpement-durable.gouv.fr/local/cache-css/fa56773b95e8c099c54b23f8c8f01371.css?1791473265>;rel=\"preload\";as=\"style\"",
+      "x-spip-cache": "3600",
+      "last-modified": "Sun, 11 Oct 2026 02:41:15 GMT",
+      "set-cookie": [
+        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
+      ],
       "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Wed, 15 Jul 2026 03:20:50 GMT",
-      "x-cachettl": "no: TTL problem",
-      "grace": "",
-      "accept-ranges": "bytes"
+      "cache-control": "private",
+      "content-length": "12821",
+      "connection": "close"
     }
   },
   "tests": {
@@ -35,10 +40,16 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "SRV": {
+          "domain": "www.hauts-de-france.developpement-durable.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -72,12 +83,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
