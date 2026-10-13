@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 17 Jul 2026 03:22:51 GMT",
+      "date": "Tue, 13 Oct 2026 02:42:14 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.radiofrequences.gouv.fr/local/cache-css/cc8c73c571ce7e7038895e6c39bef043.css?1784211283>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.radiofrequences.gouv.fr/local/cache-css/cc8c73c571ce7e7038895e6c39bef043.css?1791536606>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Fri, 17 Jul 2026 03:22:50 GMT",
+      "last-modified": "Tue, 13 Oct 2026 02:42:13 GMT",
       "set-cookie": [
-        "SRV=0e3907ec-94b1-4775-8bfa-dd9daceae996; path=/"
+        "SRV=2f7dab86-1c52-40fb-965c-004605895c86; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
