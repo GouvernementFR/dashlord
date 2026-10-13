@@ -1,84 +1,42 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "F",
     "error": null,
-    "score": 40,
-    "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 10,
+    "statusCode": 403,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 09 Jul 2026 10:33:06 GMT",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie",
-      "content-security-policy": "frame-ancestors 'self'; report-uri https://www.alerte-enlevement.justice.gouv.fr/report-uri/enforce",
-      "last-modified": "Thu, 09 Jul 2026 10:33:06 GMT",
-      "etag": "W/\"1783593186\"",
-      "content-type": "text/html; charset=UTF-8",
-      "x-url": "/",
-      "x-host": "www.alerte-enlevement.justice.gouv.fr",
-      "x-cacheable": "YES",
-      "x-cache-ttl": "86400.000",
-      "x-cache": "HIT",
-      "x-cache-ttl-remaining": "25823.281",
-      "x-cache-age": "60576",
-      "x-cache-hits": "2219",
-      "cache-control": "max-age=120, public",
-      "accept-ranges": "bytes",
-      "content-length": "9880",
+      "server": "nginx",
+      "date": "Tue, 13 Oct 2026 02:42:11 GMT",
+      "content-type": "text/html",
+      "content-length": "146",
       "connection": "close",
-      "set-cookie": [
-        "TS01103350=01a6efdeada9d50966acd4becabad46d72c70a97f7f30d0a0684b242e36a67fb7f90621e66c1298ae46b09b2916db55132b6b0fc35; Path=/"
-      ]
+      "x-id-fe": "rabf02-hw-edge-or0003",
+      "x-id": "rabf02-hw-edge-or0003",
+      "traceparent": "00-a9ed80a556bf9dfdb1defb3d00d51b8a-de6bf12c993c8406-01"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "frame-ancestors": [
-          "'self'"
-        ],
-        "report-uri": [
-          "https://www.alerte-enlevement.justice.gouv.fr/report-uri/enforce"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": true
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "TS01103350": {
-          "domain": "www.alerte-enlevement.justice.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -90,17 +48,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://www.alerte-enlevement.justice.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://alerte-enlevement.justice.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://alerte-enlevement.justice.gouv.fr/",
-        "https://alerte-enlevement.justice.gouv.fr/",
-        "https://www.alerte-enlevement.justice.gouv.fr/"
+        "http://alerte-enlevement.justice.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -125,23 +81,23 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
