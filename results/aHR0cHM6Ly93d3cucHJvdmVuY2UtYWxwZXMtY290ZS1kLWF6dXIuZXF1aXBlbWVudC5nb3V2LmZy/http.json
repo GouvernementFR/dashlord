@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 17 Jul 2026 03:27:18 GMT",
+      "date": "Tue, 13 Oct 2026 02:44:43 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.provence-alpes-cote-d-azur.equipement.gouv.fr/local/cache-css/70fdd57f7eb181b77b764eff1cdeacb8.css?1784215230>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.provence-alpes-cote-d-azur.equipement.gouv.fr/local/cache-css/70fdd57f7eb181b77b764eff1cdeacb8.css?1791819642>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Fri, 17 Jul 2026 03:27:18 GMT",
+      "last-modified": "Tue, 13 Oct 2026 02:44:39 GMT",
       "set-cookie": [
         "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
       ],
@@ -62,15 +62,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://www.provence-alpes-cote-d-azur.equipement.gouv.fr/",
+      "destination": "http://www.provence-alpes-cote-d-azur.equipement.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://www.provence-alpes-cote-d-azur.equipement.gouv.fr/",
-        "https://www.provence-alpes-cote-d-azur.equipement.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -86,9 +83,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
