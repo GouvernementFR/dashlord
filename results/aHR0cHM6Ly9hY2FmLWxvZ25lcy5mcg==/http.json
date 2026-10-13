@@ -1,20 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B-",
     "error": null,
-    "score": 5,
+    "score": 65,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 17 Jul 2026 03:25:57 GMT",
+      "date": "Tue, 13 Oct 2026 02:42:16 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "last-modified": "Sat, 11 Apr 2026 12:00:54 GMT",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "permissions-policy": "camera=(), microphone=(), geolocation=()",
+      "strict-transport-security": "max-age=2592000",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'self' https://clerk.acaf-lognes.fr https://challenges.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.clerk.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://clerk.acaf-lognes.fr https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.openstreetmap.org https://challenges.cloudflare.com; worker-src 'self' blob:; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; report-uri /api/csp.php",
+      "last-modified": "Sun, 11 Oct 2026 00:50:21 GMT",
       "server": "o2switch-PowerBoost-v3"
     }
   },
@@ -22,7 +28,7 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
+      "result": "csp-not-implemented-but-reporting-enabled",
       "scoreModifier": -25,
       "data": null,
       "http": false,
@@ -47,61 +53,57 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://acaf-lognes.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://acaf-lognes.fr/",
+      "redirects": true,
       "route": [
-        "http://acaf-lognes.fr/"
+        "http://acaf-lognes.fr/",
+        "https://acaf-lognes.fr/"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=2592000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 2592000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=G-ELL0LJMTMT": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
