@@ -1,12 +1,12 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "B",
     "error": null,
-    "score": 25,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "vary": "Accept-Encoding",
@@ -15,29 +15,58 @@
       "content-type": "text/html",
       "access-control-allow-credentials": "true",
       "p3p": "CP=\"CAO PSA OUR\"",
-      "date": "Sun, 19 Jul 2026 03:23:28 GMT",
+      "strict-transport-security": "max-age=16000000; includeSubDomains; preload;",
+      "content-security-policy": "default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'",
+      "date": "Thu, 15 Oct 2026 02:28:21 GMT",
       "keep-alive": "timeout=5, max=100",
-      "expires": "Sun, 19 Jul 2026 03:28:28 GMT",
+      "expires": "Thu, 15 Oct 2026 02:33:22 GMT",
       "pragma": "public",
       "digi_hacks": "1",
       "access-control-allow-origin": "billetterie.museeairespace.fr",
       "accept-ranges": "bytes",
+      "x-content-type-options": "nosniff",
       "connection": "close",
+      "x-frame-options": "SAMEORIGIN",
       "x-cache-info": "caching",
-      "content-length": "8662"
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-length": "8744",
+      "permissions-policy": "geolocation=(), microphone=(), camera=()"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "*",
+          "blob:",
+          "data:"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -77,21 +106,21 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
-      "preload": false,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16000000; includeSubDomains; preload;",
+      "includeSubDomains": true,
+      "maxAge": 16000000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -100,119 +129,119 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://statics.digitick.com/commun/js/jquery/jquery-1.9.1.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/jquery-1.9.1.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/jquery-migrate-1.1.1.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/jquery-migrate-1.1.1.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/php.namespaced.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/php.namespaced.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/js/composant.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/composant.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/js/gestionFormatPaysEtat.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/gestionFormatPaysEtat.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/Broadcaster/class_Broadcaster.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/Broadcaster/class_Broadcaster.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/Broadcaster/class_BroadcasterError.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/Broadcaster/class_BroadcasterError.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/Broadcaster/class_BroadcasterPlugin.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/Broadcaster/class_BroadcasterPlugin.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/js/componentManager.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/componentManager.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/isMobile.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/isMobile.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/js/libNouveauParcoursAchat.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/libNouveauParcoursAchat.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/plugins/jquery-ui-1.9.2.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery-ui-1.9.2.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.skitter.4.0.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.skitter.4.0.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/plugins/highlight.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/plugins/highlight.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/js/initClosure.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/initClosure.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/jquery-1.6.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/jquery-1.6.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.tools.tooltip.1.2.6.min.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.tools.tooltip.1.2.6.min.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/js/endClosure.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/js/endClosure.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/plugins/tooltip.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/plugins/tooltip.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.notification.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/jquery/plugins/jquery.notification.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/date.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/date.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/commun/js/dateformat.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/commun/js/dateformat.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Page/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Page/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_CarrouselMiseEnAvant/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_CarrouselMiseEnAvant/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Panier/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Panier/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Compte/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Compte/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_ChoixLangue/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_ChoixLangue/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Dialogue/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_Dialogue/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_ListeFiltre/js/general.js?v=df702f2032d4dfac3317afe681132171": {
+        "https://statics.digitick.com/ext/billetterie5/ressource/composant/CSS5c_ListeFiltre/js/general.js?v=562c490e6e3fb90aab5f1d2444d03eb8": {
           "crossorigin": null,
           "integrity": null
         },
@@ -224,17 +253,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
