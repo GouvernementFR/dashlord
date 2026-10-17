@@ -9,16 +9,16 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 19 Jul 2026 03:21:25 GMT",
+      "date": "Sat, 17 Oct 2026 02:23:25 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.occitanie.prse.fr/local/cache-css/9b9b4caf25147bc51e9d077f738eb5cb.css?1784215985>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.occitanie.prse.fr/local/cache-css/9b9b4caf25147bc51e9d077f738eb5cb.css?1791472597>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Sun, 19 Jul 2026 03:21:25 GMT",
+      "last-modified": "Sat, 17 Oct 2026 02:23:25 GMT",
       "set-cookie": [
-        "SRV=723ddce2-e190-4e06-865a-2d279f581a91; path=/"
+        "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "private",
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
