@@ -10,19 +10,19 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Tue, 21 Jul 2026 03:28:43 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 19 Oct 2026 02:35:56 GMT",
+      "content-type": "text/html; charset=utf-8",
       "connection": "close",
       "cache-control": "max-age=600",
-      "x-drupal-dynamic-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Tue, 21 Jul 2026 03:38:43 GMT",
-      "last-modified": "Mon, 20 Jul 2026 12:51:01 GMT",
-      "etag": "\"1784551861\"",
+      "expires": "Mon, 19 Oct 2026 02:45:56 GMT",
+      "last-modified": "Thu, 15 Oct 2026 09:30:44 GMT",
+      "etag": "\"1792056644\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "MISS",
+      "x-drupal-cache": "HIT",
       "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:;",
       "referrer-policy": "same-origin",
@@ -35,11 +35,11 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "incap_ses_605_3077027=+JX4XxgXiVNXs5ogj2RlCGvnXmoAAAAAWF3KK7mOGOGbSzOMnMH0aA==; path=/; Domain=.anc.gouv.fr; Secure; SameSite=None"
+        "incap_ses_1021_3077027=0tBVeLjHcTtbVTTbJVIrDgyC1WoAAAAALBFTunOmOsRpHDvSoYFgAg==; path=/; Domain=.anc.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "52-237857557-237857558 NNYN CT(1218 180 0) RT(1784604521677 4) q(0 0 14 0) r(16 18) U12"
+      "x-iinfo": "53-361416936-361416942 NNYN CT(107 120 0) RT(1792377356394 11) q(0 0 2 1) r(4 4) U12"
     }
   },
   "tests": {
@@ -91,7 +91,7 @@
       "data": {
         "visid_incap_3077027": {
           "domain": "anc.gouv.fr",
-          "expires": "2027-07-20T06:27:28.000Z",
+          "expires": "2027-10-18T06:38:08.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -106,14 +106,14 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_177_3077027": {
+        "incap_ses_919_3077027": {
           "domain": "anc.gouv.fr",
           "path": "/",
           "port": null,
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_605_3077027": {
+        "incap_ses_1021_3077027": {
           "domain": "anc.gouv.fr",
           "path": "/",
           "port": null,
