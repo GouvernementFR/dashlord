@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 21 Jul 2026 03:21:10 GMT",
+      "date": "Mon, 19 Oct 2026 02:33:25 GMT",
       "content-language": "fr-FR",
       "vary": "Accept-Encoding",
       "x-ua-compatible": "IE=edge",
@@ -17,7 +17,7 @@
       "x-frame-options": "SAMEORIGIN",
       "content-security-policy": "frame-ancestors 'self' https://www.arcep.fr https://en.arcep.fr;",
       "x-xss-protection": "1; mode=block",
-      "content-length": "10927",
+      "content-length": "10665",
       "content-type": "text/html; charset=utf-8",
       "accept-ranges": "bytes",
       "expires": "0",
@@ -25,10 +25,7 @@
       "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
       "age": "0",
       "connection": "close",
-      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
-      "set-cookie": [
-        "TSb5d1917d027=087dc22938ab2000588d3686ace8070dda01462dbf358e4c5dd24adb738614fcc28f2a9bc2845b4f086a272e8e1130006b56a6ef888e44492f352f958583d7ca4e5b523f83c920c18d882eb96116d8c1db33de88620e9035502ddafae3596342; Secure; Path=/"
-      ]
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload"
     }
   },
   "tests": {
@@ -64,16 +61,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "TSb5d1917d027": {
-          "domain": "www.arcep.fr",
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
