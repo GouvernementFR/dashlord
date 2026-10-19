@@ -10,12 +10,16 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "76",
-      "content-length": "51949",
+      "access-control-allow-headers": "*",
+      "access-control-allow-methods": "POST, GET, OPTIONS, DELETE, PUT",
+      "access-control-allow-origin": "https://1000-premiers-jours.fr",
+      "age": "68",
+      "content-length": "27378",
       "content-type": "text/html; charset=utf-8",
-      "date": "Tue, 21 Jul 2026 03:22:57 GMT",
-      "etag": "W/\"4ae2c-ZvmEU4ta1qiaLXRiUHD74PtJdck\"",
-      "server": "Apache",
+      "date": "Mon, 19 Oct 2026 02:32:42 GMT",
+      "etag": "W/\"23cfc-ty+xeji8Bk331p3U9JpzZ1IfGgA\"",
+      "referrer-policy": "strict-origin",
+      "server": "Apache/2.4.62 (Red Hat Enterprise Linux)",
       "strict-transport-security": "max-age=15552000; includeSubDomains, max-age=15552000; includeSubDomains; preload",
       "vary": "Accept-Encoding",
       "x-cache": "MISS",
@@ -24,8 +28,8 @@
       "x-download-options": "noopen",
       "x-frame-options": "deny",
       "x-ogo-cache": "HIT",
-      "x-served-by": "p198",
-      "x-varnish": "1634870119 1632202127",
+      "x-served-by": "r54",
+      "x-varnish": "1903438910 1903472973",
       "x-xss-protection": "1; mode=block",
       "connection": "close"
     }
@@ -62,24 +66,23 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.1000-premiers-jours.fr/fr",
+      "destination": "https://1000-premiers-jours.fr/fr",
       "redirects": true,
       "route": [
         "http://1000-premiers-jours.fr/",
         "https://1000-premiers-jours.fr/",
-        "https://www.1000-premiers-jours.fr/",
-        "https://www.1000-premiers-jours.fr/fr/",
-        "https://www.1000-premiers-jours.fr/fr"
+        "http://1000-premiers-jours.fr/fr",
+        "https://1000-premiers-jours.fr/fr"
       ],
       "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
