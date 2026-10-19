@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 21 Jul 2026 03:24:03 GMT",
+      "date": "Mon, 19 Oct 2026 02:33:55 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.paysages.seine-saint-denis.developpement-durable.gouv.fr/local/cache-css/e80c5a0439790b436a12fb013b8e1d9d.css?1784216056>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.paysages.seine-saint-denis.developpement-durable.gouv.fr/local/cache-css/e80c5a0439790b436a12fb013b8e1d9d.css?1791472661>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Tue, 21 Jul 2026 03:24:03 GMT",
+      "last-modified": "Mon, 19 Oct 2026 02:33:55 GMT",
       "set-cookie": [
         "SRV=604a48bf-1823-4062-92c7-92cda72e4b14; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
