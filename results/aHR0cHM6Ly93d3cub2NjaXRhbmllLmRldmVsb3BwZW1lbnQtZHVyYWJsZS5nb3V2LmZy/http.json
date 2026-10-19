@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 21 Jul 2026 03:24:12 GMT",
+      "date": "Mon, 19 Oct 2026 02:35:01 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.occitanie.developpement-durable.gouv.fr/local/cache-css/d21eca75de70e0260d98c96395015d48.css?1784195411>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.occitanie.developpement-durable.gouv.fr/local/cache-css/d21eca75de70e0260d98c96395015d48.css?1791465353>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Tue, 21 Jul 2026 03:24:12 GMT",
+      "last-modified": "Mon, 19 Oct 2026 02:35:01 GMT",
       "set-cookie": [
         "SRV=c4ed43ce-5a35-445c-aef2-f0f5eb9e5865; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
