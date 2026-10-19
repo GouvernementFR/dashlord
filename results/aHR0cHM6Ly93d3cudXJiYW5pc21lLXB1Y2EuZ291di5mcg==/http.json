@@ -9,14 +9,14 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 21 Jul 2026 03:23:06 GMT",
+      "date": "Mon, 19 Oct 2026 02:33:56 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://www.urbanisme-puca.gouv.fr/local/cache-css/4a76039b66ead68d57a49ea2c3de9c3d.css?1783591566>;rel=\"preload\";as=\"style\"",
+      "link": "<https://www.urbanisme-puca.gouv.fr/local/cache-css/4a76039b66ead68d57a49ea2c3de9c3d.css?1791973855>;rel=\"preload\";as=\"style\"",
       "x-spip-cache": "3600",
-      "last-modified": "Tue, 21 Jul 2026 03:23:05 GMT",
+      "last-modified": "Mon, 19 Oct 2026 02:33:56 GMT",
       "set-cookie": [
         "SRV=ff7f87aa-72ca-4b36-809a-7ea857fc851a; path=/"
       ],
@@ -86,9 +86,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
