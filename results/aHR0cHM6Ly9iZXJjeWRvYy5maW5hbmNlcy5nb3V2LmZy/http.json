@@ -9,24 +9,23 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 23 Jul 2026 03:20:11 GMT",
+      "date": "Wed, 21 Oct 2026 02:32:23 GMT",
       "server": "Apache",
       "strict-transport-security": "max-age=34560000; includeSubDomains; preload",
-      "x-request-id": "KPOazcQ8UePYYdzXi5Jt",
+      "x-request-id": "vMTa3czD4WLhSYXA4vZG",
       "cache-control": "no-cache, no-store, must-revalidate",
-      "content-security-policy": "default-src 'none';base-uri 'none';manifest-src 'self';script-src 'nonce-J7Rsefa/ztOt3+KcUagb3YgqAV/DaZFcOo47i8ac6A8=' matomo.finances.gouv.fr blob:;script-src-elem 'strict-dynamic' 'nonce-J7Rsefa/ztOt3+KcUagb3YgqAV/DaZFcOo47i8ac6A8=' matomo.finances.gouv.fr blob:;style-src 'self' 'unsafe-inline';img-src 'self' data: blob: matomo.finances.gouv.fr;font-src 'self' data:;connect-src 'self' matomo.finances.gouv.fr;media-src 'self';frame-src 'self';frame-ancestors 'self';worker-src 'self';form-action 'self'",
+      "content-security-policy": "default-src 'none';base-uri 'none';manifest-src 'self';script-src 'nonce-dL4PBPzlNDYYvjmnze+IWx5zM/jQCZ0F6SKXF7gKkDY=' matomo.finances.gouv.fr blob:;script-src-elem 'strict-dynamic' 'nonce-dL4PBPzlNDYYvjmnze+IWx5zM/jQCZ0F6SKXF7gKkDY=' matomo.finances.gouv.fr blob:;style-src 'self' 'unsafe-inline';img-src 'self' data: blob: matomo.finances.gouv.fr;font-src 'self' data:;connect-src 'self' matomo.finances.gouv.fr;media-src 'self';frame-src 'self';frame-ancestors 'self';worker-src 'self';form-action 'self'",
       "feature-policy": "autoplay 'self';camera 'none';fullscreen 'self';geolocation 'none';microphone 'none';payment 'none'",
       "x-robots-tag": "noindex, nofollow",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-permitted-cross-domain-policies": "none",
-      "x-xss-protection": "1; mode=block",
       "referrer-policy": "no-referrer",
-      "content-length": "7338",
+      "content-length": "7603",
       "content-type": "text/html; charset=UTF-8",
       "content-language": "fr",
       "set-cookie": [
-        "BALANCEID=balancer.bercydoc2-bo; path=/; domain=.finances.gouv.fr;HttpOnly;Secure"
+        "BALANCEID=balancer.bercydoc1-bo; path=/; domain=.finances.gouv.fr;HttpOnly;Secure"
       ],
       "connection": "close"
     }
@@ -48,12 +47,12 @@
           "'self'"
         ],
         "script-src": [
-          "'nonce-j7rsefa/ztot3+kcuagb3ygqav/dazfcoo47i8ac6a8='",
+          "'nonce-dl4pbpzlndyyvjmnze+iwx5zm/jqcz0f6skxf7gkkdy='",
           "blob:",
           "matomo.finances.gouv.fr"
         ],
         "script-src-elem": [
-          "'nonce-j7rsefa/ztot3+kcuagb3ygqav/dazfcoo47i8ac6a8='",
+          "'nonce-dl4pbpzlndyyvjmnze+iwx5zm/jqcz0f6skxf7gkkdy='",
           "'strict-dynamic'",
           "blob:",
           "matomo.finances.gouv.fr"
@@ -169,17 +168,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://bercydoc.finances.gouv.fr/index.php/apps/user_saml/saml/selectUserBackEnd?redirectUrl=",
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://bercydoc.finances.gouv.fr/",
-        "https://bercydoc.finances.gouv.fr/",
-        "https://bercydoc.finances.gouv.fr/index.php/login",
-        "https://bercydoc.finances.gouv.fr/index.php/apps/user_saml/saml/selectUserBackEnd?redirectUrl="
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
