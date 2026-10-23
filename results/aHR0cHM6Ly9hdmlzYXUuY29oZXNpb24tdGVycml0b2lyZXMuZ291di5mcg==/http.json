@@ -10,21 +10,21 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Thu, 23 Jul 2026 03:21:31 GMT",
+      "date": "Fri, 23 Oct 2026 02:33:17 GMT",
       "content-type": "text/html",
-      "last-modified": "Mon, 15 Jun 2026 16:23:05 GMT",
+      "last-modified": "Tue, 13 Oct 2026 16:13:17 GMT",
       "transfer-encoding": "chunked",
-      "etag": "W/\"6a3026e9-348\"",
+      "etag": "W/\"6ace589d-348\"",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "cache-control": "no-cache",
       "x-frame-options": "DENY",
       "x-xss-protection": "0",
       "x-content-type-options": "nosniff",
       "expect-ct": "enforce, max-age=3600",
-      "content-security-policy": "default-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://audience-sites.din.developpement-durable.gouv.fr/piwik.js; frame-src https://audience-sites.din.developpement-durable.gouv.fr/optinout.php;",
+      "content-security-policy": "default-src 'self'; img-src https://* 'self' data:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://audience-sites.din.developpement-durable.gouv.fr; connect-src 'self' https://audience-sites.din.developpement-durable.gouv.fr; frame-src https://audience-sites.din.developpement-durable.gouv.fr",
       "strict-transport-security": "max-age=63072000;includeSubDomains;preload",
       "set-cookie": [
-        "64dc76ede59112d3fc21de44add2429d=1f323dd5633524be64b87f33ec92da6d; path=/; HttpOnly; Secure; SameSite=None"
+        "64dc76ede59112d3fc21de44add2429d=c2d7fbff76aa1ebeed33d1982d80a08c; path=/; HttpOnly; Secure; SameSite=None"
       ],
       "connection": "close"
     }
@@ -41,7 +41,8 @@
         ],
         "img-src": [
           "'self'",
-          "data:"
+          "data:",
+          "https://*"
         ],
         "font-src": [
           "'self'",
@@ -53,10 +54,14 @@
         ],
         "script-src": [
           "'self'",
-          "https://audience-sites.din.developpement-durable.gouv.fr/piwik.js"
+          "https://audience-sites.din.developpement-durable.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://audience-sites.din.developpement-durable.gouv.fr"
         ],
         "frame-src": [
-          "https://audience-sites.din.developpement-durable.gouv.fr/optinout.php"
+          "https://audience-sites.din.developpement-durable.gouv.fr"
         ]
       },
       "http": true,
