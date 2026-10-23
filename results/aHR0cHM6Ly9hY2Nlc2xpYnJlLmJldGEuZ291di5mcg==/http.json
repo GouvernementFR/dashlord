@@ -1,39 +1,118 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "A+",
     "error": null,
-    "score": 70,
+    "score": 115,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 0,
+    "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 23 Jul 2026 03:25:15 GMT",
+      "date": "Fri, 23 Oct 2026 02:33:21 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "a7eefa9c-554a-4b90-9f85-ce544d15ac10",
+      "x-request-id": "89ed0294-4acb-4164-b17e-8c5773294bc5",
       "x-frame-options": "DENY",
-      "vary": "Cookie, origin, Accept-Language",
+      "vary": "Cookie, Accept-Language",
       "content-language": "fr",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "same-origin",
+      "cross-origin-opener-policy": "same-origin",
+      "content-security-policy": "default-src 'self' data: *.mapbox.com *.gouv.fr *.incubateur.net acceslibre.matomo.cloud *.tile.openstreetmap.org *.acceslibre.info; style-src-attr 'unsafe-inline'; worker-src 'self' blob:; style-src 'self' 'nonce-b0mNMz+Y2AvSkDbuJyeqCQ=='; img-src 'self' data: *.mapbox.com *.tile.openstreetmap.org *.acceslibre.info data.geopf.fr *.cartocdn.com blob: api.panoramax.xyz panoramax.ign.fr panoramax.openstreetmap.fr presets.panoramax.fr api.iconify.design raw.githubusercontent.com nominatim.openstreetmap.org; script-src 'self' 'nonce-b0mNMz+Y2AvSkDbuJyeqCQ==' acceslibre.matomo.cloud stats.beta.gouv.fr; connect-src 'self' data: *.mapbox.com *.gouv.fr *.incubateur.net acceslibre.matomo.cloud *.tile.openstreetmap.org *.acceslibre.info api.panoramax.xyz panoramax.ign.fr panoramax.openstreetmap.fr presets.panoramax.fr api.iconify.design raw.githubusercontent.com nominatim.openstreetmap.org data.geopf.fr",
       "set-cookie": [
-        "csrftoken=B2jUifehUWzh30SuunAYzxK5myKPG2C1; expires=Thu, 22 Jul 2027 03:25:15 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
-      ],
-      "strict-transport-security": "max-age=31536000"
+        "csrftoken=hYv4pS9TkCYIERwkjEUnHKsQYHjJX2PJ; expires=Fri, 22 Oct 2027 02:33:21 GMT; HttpOnly; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+      ]
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
-      "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "pass": true,
+      "result": "csp-implemented-with-no-unsafe",
+      "scoreModifier": 5,
+      "data": {
+        "default-src": [
+          "'self'",
+          "*.acceslibre.info",
+          "*.gouv.fr",
+          "*.incubateur.net",
+          "*.mapbox.com",
+          "*.tile.openstreetmap.org",
+          "acceslibre.matomo.cloud",
+          "data:"
+        ],
+        "style-src-attr": [
+          "'unsafe-inline'"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
+        ],
+        "style-src": [
+          "'nonce-b0mnmz+y2avskdbujyeqcq=='",
+          "'self'"
+        ],
+        "img-src": [
+          "'self'",
+          "*.acceslibre.info",
+          "*.cartocdn.com",
+          "*.mapbox.com",
+          "*.tile.openstreetmap.org",
+          "api.iconify.design",
+          "api.panoramax.xyz",
+          "blob:",
+          "data.geopf.fr",
+          "data:",
+          "nominatim.openstreetmap.org",
+          "panoramax.ign.fr",
+          "panoramax.openstreetmap.fr",
+          "presets.panoramax.fr",
+          "raw.githubusercontent.com"
+        ],
+        "script-src": [
+          "'nonce-b0mnmz+y2avskdbujyeqcq=='",
+          "'self'",
+          "acceslibre.matomo.cloud",
+          "stats.beta.gouv.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "*.acceslibre.info",
+          "*.gouv.fr",
+          "*.incubateur.net",
+          "*.mapbox.com",
+          "*.tile.openstreetmap.org",
+          "acceslibre.matomo.cloud",
+          "api.iconify.design",
+          "api.panoramax.xyz",
+          "data.geopf.fr",
+          "data:",
+          "nominatim.openstreetmap.org",
+          "panoramax.ign.fr",
+          "panoramax.openstreetmap.fr",
+          "presets.panoramax.fr",
+          "raw.githubusercontent.com"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": false,
+        "unsafeInlineStyle": false,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -43,7 +122,7 @@
       "data": {
         "csrftoken": {
           "domain": "acceslibre.beta.gouv.fr",
-          "expires": "2027-07-22T03:25:15.000Z",
+          "expires": "2027-10-22T02:33:21.000Z",
           "httponly": true,
           "max-age": 31449600,
           "path": "/",
@@ -57,9 +136,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -77,10 +156,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -88,10 +167,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
       "maxAge": 31536000,
-      "preload": false,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -103,10 +182,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
