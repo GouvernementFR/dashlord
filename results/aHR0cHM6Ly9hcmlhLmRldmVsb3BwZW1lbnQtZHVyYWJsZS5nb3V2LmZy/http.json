@@ -9,28 +9,20 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Jul 2026 03:24:34 GMT",
+      "date": "Sun, 25 Oct 2026 02:30:45 GMT",
       "server": "Apache",
       "cache-control": "no-cache",
-      "x-ua-compatible": "IE=edge",
-      "link": "<https://www.aria.developpement-durable.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.aria.developpement-durable.gouv.fr/wp-json/wp/v2/pages/155202>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.aria.developpement-durable.gouv.fr/>; rel=shortlink",
-      "wpo-cache-status": "not cached",
-      "wpo-cache-message": "Attempt to create subfolder within cache directory failed (www.aria.developpement-durable.gouv.fr)",
-      "set-cookie": [
-        "wpml_referer_url=https%3A%2F%2Fwww.aria.developpement-durable.gouv.fr%2F; expires=Sun, 26 Jul 2026 03:24:34 GMT; Max-Age=86400; path=/",
-        "_icl_current_language=fr; expires=Sun, 26 Jul 2026 03:24:34 GMT; Max-Age=86400; path=/",
-        "masquer_totaux_facettes=0; expires=Sun, 25 Jul 2027 03:24:35 GMT; Max-Age=31536000; path=/",
-        "_icl_current_language=fr; expires=Sun, 26 Jul 2026 03:24:35 GMT; Max-Age=86400; path=/"
-      ],
+      "wpo-cache-status": "cached",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
-      "content-security-policy": "default-src 'self' *.googleapis.com *.google.com *.google.fr *.w.org *.supportcandy.net *.gravatar.com *.dm-event.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.googleapis.com *.google.com *.google.fr *.w.org *.supportcandy.net *.gravatar.com widgetlogic.org api.dmcdn.net *.dailymotion.com; style-src 'self' 'unsafe-inline'  *.googleapis.com; img-src 'self' 'unsafe-inline'  *.googleusercontent.com *.w.org *.supportcandy.net *.gravatar.com data: *.gstatic.com  *.googleapis.com searchwp.com supportcandy.net; frame-src 'self' authentification.din.developpement-durable.gouv.fr *.googleapis.com 208c73af.sibforms.com *.dailymotion.com; font-src 'self' data: *.googleapis.com *.gstatic.com",
+      "content-security-policy": "default-src 'self' *.gstatic.com *.googleapis.com *.google.com *.google.fr *.w.org *.supportcandy.net *.gravatar.com *.dm-event.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.gstatic.com *.googletagmanager.com *.googleapis.com *.google.com *.google.fr *.w.org *.supportcandy.net *.gravatar.com widgetlogic.org api.dmcdn.net *.dailymotion.com; style-src 'self' 'unsafe-inline'  *.googleapis.com; img-src 'self' 'unsafe-inline' *.gstatic.com *.googleusercontent.com *.w.org *.supportcandy.net *.gravatar.com data: *.gstatic.com  *.googleapis.com searchwp.com supportcandy.net; frame-src 'self' blob: authentification.din.developpement-durable.gouv.fr *.aria.developpement-durable.gouv.fr *.google.com *.gstatic.com *.googleapis.com 208c73af.sibforms.com *.dailymotion.com; font-src 'self' data: *.gstatic.com *.googleapis.com *.gstatic.com",
       "x-content-type-options": "nosniff",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "upgrade": "h2,h2c",
       "connection": "Upgrade, close",
-      "vary": "Accept-Encoding,User-Agent",
-      "content-length": "29641",
+      "last-modified": "Tue, 20 Oct 2026 20:39:02 GMT",
+      "vary": "User-Agent",
+      "transfer-encoding": "chunked",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -48,6 +40,7 @@
           "*.google.fr",
           "*.googleapis.com",
           "*.gravatar.com",
+          "*.gstatic.com",
           "*.supportcandy.net",
           "*.w.org"
         ],
@@ -61,6 +54,7 @@
           "*.googleapis.com",
           "*.googletagmanager.com",
           "*.gravatar.com",
+          "*.gstatic.com",
           "*.supportcandy.net",
           "*.w.org",
           "api.dmcdn.net",
@@ -86,10 +80,14 @@
         ],
         "frame-src": [
           "'self'",
+          "*.aria.developpement-durable.gouv.fr",
           "*.dailymotion.com",
+          "*.google.com",
           "*.googleapis.com",
+          "*.gstatic.com",
           "208c73af.sibforms.com",
-          "authentification.din.developpement-durable.gouv.fr"
+          "authentification.din.developpement-durable.gouv.fr",
+          "blob:"
         ],
         "font-src": [
           "'self'",
@@ -121,23 +119,9 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "wpml_referer_url": {
-          "domain": "www.aria.developpement-durable.gouv.fr",
-          "expires": "2026-07-26T03:24:34.000Z",
-          "max-age": 86400,
-          "path": "/",
-          "port": null
-        },
-        "_icl_current_language": {
-          "domain": "www.aria.developpement-durable.gouv.fr",
-          "expires": "2026-07-26T03:24:35.000Z",
-          "max-age": 86400,
-          "path": "/",
-          "port": null
-        },
         "masquer_totaux_facettes": {
-          "domain": "www.aria.developpement-durable.gouv.fr",
-          "expires": "2027-07-25T03:24:35.000Z",
+          "domain": "aria.developpement-durable.gouv.fr",
+          "expires": "2027-10-25T02:30:44.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null
@@ -193,6 +177,10 @@
       "scoreModifier": -5,
       "data": {
         "https://www.googletagmanager.com/gtag/js?id=GT-MQDFQW7": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://www.google.com/recaptcha/enterprise.js?render=6Ld8KuAtAAAAAGCH31Qn8BMGlouneb_2OPLHlvKF&ver=2.2.2": {
           "crossorigin": null,
           "integrity": null
         }
