@@ -1,22 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D+",
+    "grade": "C",
     "error": null,
-    "score": 40,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 31 May 2026 03:26:49 GMT",
+      "date": "Sun, 25 Oct 2026 02:31:46 GMT",
       "content-type": "text/html",
-      "content-length": "533",
-      "connection": "close",
-      "last-modified": "Wed, 20 May 2026 12:06:03 GMT",
-      "etag": "\"6a0da3ab-215\"",
+      "content-length": "523",
+      "last-modified": "Wed, 21 Oct 2026 15:48:38 GMT",
+      "etag": "\"6ad8ded6-20b\"",
       "accept-ranges": "bytes",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-cp-via": "C2-d4ebf8c3-04ab94b7",
+      "connection": "close"
     }
   },
   "tests": {
@@ -48,14 +49,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://cartes.gouv.fr/explorer-les-cartes/",
       "redirects": true,
       "route": [
         "http://cartes.gouv.fr/",
-        "http://cartes.gouv.fr/explorer-les-cartes",
+        "https://cartes.gouv.fr/",
         "https://cartes.gouv.fr/explorer-les-cartes",
         "https://cartes.gouv.fr/explorer-les-cartes/"
       ],
