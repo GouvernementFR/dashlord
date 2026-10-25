@@ -9,22 +9,24 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Jul 2026 03:24:48 GMT",
+      "date": "Sun, 25 Oct 2026 02:30:31 GMT",
       "server": "Apache",
-      "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=63072000; includeSubdomains;",
-      "cache-control": "no-store, max-age=0, no-store, no-cache, must-revalidate",
-      "pragma": "no-cache, no-cache",
-      "set-cookie": [
-        "PHPSESSID=3l8dadnh5mucidm8mg9q6f1jss; path=/",
-        "PHPSESSID=i479c1khmb8ai9jg56ogaqsja9; path=/"
-      ],
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
-      "vary": "Accept-Encoding",
-      "x-frame-options": "sameorigin",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "PHPSESSID=188baf0fc4b87277befbe2db068dc686; path=/"
+      ],
       "x-content-type-options": "nosniff",
-      "referrer-policy": "no-referrer",
-      "content-length": "15252",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "geolocation=(), microphone=(), camera=(), fullscreen=(), payment=()",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-embedder-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "vary": "Accept-Encoding",
+      "content-length": "15247",
       "connection": "close",
       "content-type": "text/html; charset=UTF-8"
     }
@@ -44,8 +46,8 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-httponly-flag",
-      "scoreModifier": -30,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
       "data": {
         "PHPSESSID": {
           "domain": "www.cheznoo.net",
@@ -64,13 +66,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.cheznoo.net/",
       "redirects": true,
       "route": [
         "http://cheznoo.net/",
+        "https://cheznoo.net/",
         "https://www.cheznoo.net/"
       ],
       "statusCode": 200
@@ -80,18 +83,18 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "no-referrer",
+      "data": "strict-origin-when-cross-origin",
       "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=63072000; includeSubdomains;",
-      "includeSubDomains": true,
-      "maxAge": 63072000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
@@ -127,15 +130,15 @@
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "sameorigin"
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
