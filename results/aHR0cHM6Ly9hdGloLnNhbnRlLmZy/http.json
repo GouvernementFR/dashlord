@@ -1,46 +1,109 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "B",
     "error": null,
-    "score": 45,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Jul 2026 03:24:39 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "transfer-encoding": "chunked",
-      "connection": "close",
-      "server": "cloudflare",
-      "x-drupal-cache": "HIT",
+      "alt-svc": "h3=\":443\"; ma=2592000",
+      "cache-control": "max-age=900, public",
       "content-language": "fr",
-      "x-frame-options": "SAMEORIGIN, sameorigin",
-      "x-ua-compatible": "IE=edge,chrome=1",
-      "link": "<https://www.atih.sante.fr/>; rel=\"canonical\",<https://www.atih.sante.fr/>; rel=\"shortlink\"",
-      "cache-control": "public, max-age=86400",
-      "last-modified": "Fri, 24 Jul 2026 16:07:31 GMT",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.cookiefirst.com https://piwik.atih.sante.fr; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://*.cookiefirst.com https://piwik.atih.sante.fr; connect-src 'self' https://*.cookiefirst.com https://piwik.atih.sante.fr; frame-src 'self' https://*.cookiefirst.com https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 25 Oct 2026 02:31:49 GMT",
+      "etag": "\"1792869582-gzip\"",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "last-modified": "Sat, 24 Oct 2026 19:19:42 GMT",
+      "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=()",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
       "vary": "Cookie,Accept-Encoding",
       "x-content-type-options": "nosniff",
+      "x-drupal-cache": "HIT",
+      "x-drupal-dynamic-cache": "HIT",
+      "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
-      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a2080d8beaa19e3f-CDG"
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://*.cookiefirst.com",
+          "https://piwik.atih.sante.fr"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com"
+        ],
+        "font-src": [
+          "'self'",
+          "data:",
+          "https://fonts.gstatic.com"
+        ],
+        "img-src": [
+          "'self'",
+          "blob:",
+          "data:",
+          "https://*.cookiefirst.com",
+          "https://piwik.atih.sante.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://*.cookiefirst.com",
+          "https://piwik.atih.sante.fr"
+        ],
+        "frame-src": [
+          "'self'",
+          "https://*.cookiefirst.com",
+          "https://www.youtube-nocookie.com",
+          "https://www.youtube.com"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'"
+        ],
+        "frame-ancestors": [
+          "'none'"
+        ],
+        "form-action": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": false,
+        "insecureFormAction": false,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -59,13 +122,14 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-off-host-from-http",
-      "scoreModifier": -5,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
       "destination": "https://www.atih.sante.fr/",
       "redirects": true,
       "route": [
         "http://atih.sante.fr/",
+        "https://atih.sante.fr/",
         "https://www.atih.sante.fr/"
       ],
       "statusCode": 200
@@ -73,10 +137,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -84,10 +148,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=15552000; includeSubDomains; preload",
+      "data": "max-age=31536000; includeSubDomains",
       "includeSubDomains": true,
-      "maxAge": 15552000,
-      "preload": true,
+      "maxAge": 31536000,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -96,11 +160,7 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://code.jquery.com/jquery-1.9.1.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js": {
+        "https://consent.cookiefirst.com/sites/atih.sante.fr-5e611ba6-9dfa-4e9e-b509-ac73aa45868d/consent.js": {
           "crossorigin": null,
           "integrity": null
         }
@@ -115,10 +175,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
-      "data": "SAMEORIGIN, sameorigin"
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "DENY"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
