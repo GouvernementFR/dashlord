@@ -9,16 +9,16 @@
     "testsPassed": 10,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 25 Jul 2026 03:24:44 GMT",
+      "date": "Sun, 25 Oct 2026 02:31:28 GMT",
       "content-type": "text/html; charset=\"utf-8\"",
-      "content-length": "605",
+      "content-length": "604",
       "connection": "close",
-      "x-request-id": "f59f03bc-8efb-4dea-9dac-681d5c7630f5",
+      "x-request-id": "c3fdd754-2fb4-4b64-a26e-effd34363272",
       "cache-control": "max-age=60, public",
       "vary": "Accept-Encoding",
-      "last-modified": "Tue, 21 Jul 2026 14:17:11 GMT",
-      "etag": "\"6a5f6347-4ef\"",
-      "content-security-policy": "style-src 'self'; script-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr 'sha256-xVQ4mcypV0CvOtZpQgVcKpcoNvdUkR9BrwZBrtBbU+w=' 'sha256-l0hQskZAA39ZNB1SAbclU+zKPtFeMvhhkjKEgiL2HI0=' 'sha256-/kXZODfqoc2myS1eI6wr0HH8lUt+vRhW8H/oL+YJcMg='; frame-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr; default-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr; img-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr https://*.tile.openstreetmap.org/ data:",
+      "last-modified": "Thu, 22 Oct 2026 12:30:04 GMT",
+      "etag": "\"6ad9e5ac-4ef\"",
+      "content-security-policy": "img-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr https://*.tile.openstreetmap.org/ data:; style-src 'self'; default-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr; frame-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr; script-src 'self' stats.beta.gouv.fr metabase.carbure.beta.gouv.fr www.data.gouv.fr https://*.tile.openstreetmap.org/ sentry.incubateur.net https://tally.so contact.carbure.beta.gouv.fr 'sha256-xVQ4mcypV0CvOtZpQgVcKpcoNvdUkR9BrwZBrtBbU+w=' 'sha256-l0hQskZAA39ZNB1SAbclU+zKPtFeMvhhkjKEgiL2HI0=' 'sha256-/kXZODfqoc2myS1eI6wr0HH8lUt+vRhW8H/oL+YJcMg='",
       "x-frame-options": "DENY",
       "x-content-type-options": "nosniff",
       "referrer-policy": "same-origin",
@@ -33,14 +33,22 @@
       "result": "csp-implemented-with-no-unsafe",
       "scoreModifier": 5,
       "data": {
+        "img-src": [
+          "'self'",
+          "contact.carbure.beta.gouv.fr",
+          "data:",
+          "https://*.tile.openstreetmap.org/",
+          "https://tally.so",
+          "metabase.carbure.beta.gouv.fr",
+          "sentry.incubateur.net",
+          "stats.beta.gouv.fr",
+          "www.data.gouv.fr"
+        ],
         "style-src": [
           "'self'"
         ],
-        "script-src": [
+        "default-src": [
           "'self'",
-          "'sha256-/kxzodfqoc2mys1ei6wr0hh8lut+vrhw8h/ol+yjcmg='",
-          "'sha256-l0hqskzaa39znb1sabclu+zkptfemvhhkjkegil2hi0='",
-          "'sha256-xvq4mcypv0cvotzpqgvckpconvdukr9brwzbrtbbu+w='",
           "contact.carbure.beta.gouv.fr",
           "https://*.tile.openstreetmap.org/",
           "https://tally.so",
@@ -59,20 +67,12 @@
           "stats.beta.gouv.fr",
           "www.data.gouv.fr"
         ],
-        "default-src": [
+        "script-src": [
           "'self'",
+          "'sha256-/kxzodfqoc2mys1ei6wr0hh8lut+vrhw8h/ol+yjcmg='",
+          "'sha256-l0hqskzaa39znb1sabclu+zkptfemvhhkjkegil2hi0='",
+          "'sha256-xvq4mcypv0cvotzpqgvckpconvdukr9brwzbrtbbu+w='",
           "contact.carbure.beta.gouv.fr",
-          "https://*.tile.openstreetmap.org/",
-          "https://tally.so",
-          "metabase.carbure.beta.gouv.fr",
-          "sentry.incubateur.net",
-          "stats.beta.gouv.fr",
-          "www.data.gouv.fr"
-        ],
-        "img-src": [
-          "'self'",
-          "contact.carbure.beta.gouv.fr",
-          "data:",
           "https://*.tile.openstreetmap.org/",
           "https://tally.so",
           "metabase.carbure.beta.gouv.fr",
