@@ -9,27 +9,17 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Jul 2026 01:18:17 GMT",
-      "cache-control": "max-age=10800, public",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Mon, 27 Jul 2026 01:18:16 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "age": "80",
-      "etag": "W/\"1785115096-gzip\"",
-      "x-cache": "HIT",
-      "x-cache-hits": "1",
-      "accept-ranges": "bytes",
-      "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-handicap-v2.cegedim.cloud-http=3485751562.20480.0000; path=/; Httponly; Secure",
-        "TS24c133e9029=087dc22938ab2800e6c97c9b01305471d7da86669ff69b944a7c234569077f9fa71339ce190966734cad293152f983b8; Secure; Max-Age=30; Path=/",
-        "TSe7b29e8c027=087dc22938ab20002c63fb782c9c7e3d5a3929ebd90702b039d719e2c758755645b201db2d99787308add4e1d7113000ce9c76b516adea6ff09cc0b1a725b60378e8fd4f20129eaae9f250e01c36437446398ec7565ef3ff3df2dd21317be257; Secure; Path=/"
+        "TS24c133e9029=087dc22938ab280092ddb87d42dd5a876f2c29e9e7b4d775e2e0d81e43ab332dde9b8e520e2d42f3310d89e113f2d32e; Secure; Max-Age=30; Path=/",
+        "TS24c133e9078=087dc22938ab200095dd39c447f74666f9d681cf9fdf331e8c2436d54720888e2a224f3aec02fe4608805985c018400107ea980da34105896d6f610cb7db9a36907943a012df0a79ef83486519791bfb17eaa3a3acc90d6df7ec7c09560d3f3e8ec8c1ac0211f9dcf84ab1fe9bcb96774970b6116bfb6f648fcac7d48b6f3ff9f90bb9bd3b5e601fdf55307f01aa87c2ed5652d71ad34ad4adf319392ee11031fb536707a0a76a41317ea4e8725c7c643276f697c8e9c937b8cc87a9897bfb24d1631770472e2b71c0f8c45fe8ab17cd51c955dad7203520aa989166e1ec029c189bba9ada56733a7cc7ba0e47f2d2b50fbe909493ca1cb794613a712fc1ddb62a8e132aadf499f6465236157f7846861ecd3053edc657efa2a37baa633f930d899b549e2d2df3dc4cddf505c4f520fbd8c2e1ff52a0af64e1e11b7403e5bf000a503ef4fa8522c9a1894e26791af5acbc372e9a059ce1d969b00f0101c37021272c040d202e9c0a9a1dde35acc82c66; Secure; Max-Age=30; Path=/",
+        "TSe7b29e8c027=087dc22938ab2000ef70f45029a5cb958ce1eab1cd0bca944d8135756b81f50741395db60faff9b3085532f133113000be5f284f0e1a0df915050def47962f5f0957d58173079a4cffdb850edbc46a279e57332a90f0aecd37b927d6b0ea6ce6; Secure; Path=/"
       ],
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6980",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -50,22 +40,22 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-handicap-v2.cegedim.cloud-http": {
-          "domain": "solidarites.gouv.fr",
-          "httponly": true,
+        "TS24c133e9029": {
+          "domain": "cnle.gouv.fr",
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
         },
-        "TS24c133e9029": {
-          "domain": "solidarites.gouv.fr",
+        "TS24c133e9078": {
+          "domain": "cnle.gouv.fr",
           "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
         },
         "TSe7b29e8c027": {
-          "domain": "solidarites.gouv.fr",
+          "domain": "cnle.gouv.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -85,12 +75,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://solidarites.gouv.fr/cnle",
+      "destination": "https://cnle.gouv.fr/",
       "redirects": true,
       "route": [
         "http://cnle.gouv.fr/",
-        "https://cnle.gouv.fr/",
-        "https://solidarites.gouv.fr/cnle"
+        "https://cnle.gouv.fr/"
       ],
       "statusCode": 200
     },
