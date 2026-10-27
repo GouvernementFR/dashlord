@@ -1,25 +1,26 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D-",
+    "grade": "F",
     "error": null,
-    "score": 25,
+    "score": 10,
     "statusCode": 200,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Jul 2026 03:30:58 GMT",
-      "server": "Apache",
-      "last-modified": "Wed, 15 Jul 2026 08:07:55 GMT",
-      "etag": "\"b61-656a1d22a0320-gzip\"",
-      "accept-ranges": "bytes",
-      "vary": "Accept-Encoding",
-      "cache-control": "max-age=60, private, proxy-revalidate",
-      "content-length": "1114",
+      "date": "Tue, 27 Oct 2026 02:37:27 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "content-type": "text/html",
-      "sozu-id": "01KYGT0CSTX6D7JKP55NG7WYH5"
+      "x-request-id": "b3e60025-a922-49fb-b4db-670f9a4c9c69",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "cache-control": "s-maxage=31536000",
+      "etag": "\"13494l1cdq12elp\""
     }
   },
   "tests": {
@@ -51,14 +52,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://conseiller-numerique.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://conseiller-numerique.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://conseiller-numerique.gouv.fr/",
-        "https://conseiller-numerique.gouv.fr/"
+        "http://conseiller-numerique.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -84,15 +84,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://challenges.cloudflare.com/turnstile/v0/api.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
