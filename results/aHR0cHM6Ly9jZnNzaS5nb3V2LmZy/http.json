@@ -1,46 +1,94 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "B-",
     "error": null,
-    "score": 60,
+    "score": 65,
     "statusCode": 200,
     "testsFailed": 3,
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Jul 2026 03:25:06 GMT",
+      "date": "Tue, 27 Oct 2026 02:36:08 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "a520ba27-e367-4155-b446-f73facff3505",
-      "x-frame-options": "DENY",
-      "vary": "Accept-Language, Cookie",
+      "x-request-id": "bda5a13a-e49d-47bb-91ae-85f0cd57051b",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "frame-ancestors 'self'",
+      "vary": "Sec-Fetch-Dest, Accept-Language, Cookie",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin-when-cross-origin",
       "cross-origin-opener-policy": "same-origin",
-      "strict-transport-security": "max-age=31536000"
+      "strict-transport-security": "max-age=31536000",
+      "set-cookie": [
+        "visid_incap_3305489=q3mcCkj4SfaYd8heApdHZxcO4GoAAAAAQUIPAAAAAADiTMXIwS29l7oVWu6RRJlc; expires=Tue, 26 Oct 2027 06:29:34 GMT; HttpOnly; path=/; Domain=.cyber.gouv.fr",
+        "nlbi_3305489=8HGyAD0LYj72+hxN5E3L1QAAAAANRy+n1iZWqPuvg36A/yCm; HttpOnly; path=/; Domain=.cyber.gouv.fr",
+        "incap_ses_79_3305489=aXo8Mbc2JjX9am7MdqoYARcO4GoAAAAA/80sq6rYFQEAaMgyd7C08A==; path=/; Domain=.cyber.gouv.fr"
+      ],
+      "x-cdn": "Imperva",
+      "x-iinfo": "50-199971474-199971487 NNNN CT(137 147 0) RT(1793068568042 47) q(0 0 3 4) r(5 5) U12"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "visid_incap_3305489": {
+          "domain": "cyber.gouv.fr",
+          "expires": "2027-10-26T06:29:34.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "nlbi_3305489": {
+          "domain": "cyber.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_1019_3305489": {
+          "domain": "ssi.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_79_3305489": {
+          "domain": "cyber.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -86,15 +134,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://stats.sites.beta.gouv.fr/js/pa-ClTV6JfIt_XjcYGtUAVle.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -106,9 +149,9 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "DENY"
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
