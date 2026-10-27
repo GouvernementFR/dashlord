@@ -10,19 +10,19 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 27 Jul 2026 03:29:07 GMT",
+      "date": "Tue, 27 Oct 2026 02:37:07 GMT",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close",
       "cache-control": "max-age=600",
-      "x-drupal-dynamic-cache": "HIT",
+      "x-drupal-dynamic-cache": "MISS",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Mon, 27 Jul 2026 03:39:07 GMT",
-      "last-modified": "Fri, 24 Jul 2026 09:34:14 GMT",
-      "etag": "\"1784885654\"",
+      "expires": "Tue, 27 Oct 2026 02:47:07 GMT",
+      "last-modified": "Fri, 23 Oct 2026 09:12:18 GMT",
+      "etag": "\"1792746738\"",
       "vary": "Cookie,Accept-Encoding",
-      "x-drupal-cache": "HIT",
+      "x-drupal-cache": "MISS",
       "x-proxy-cache": "HIT",
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src https: ; child-src https: platform.twitter.com; img-src https: data:; font-src 'self' data: https:;",
       "referrer-policy": "same-origin",
@@ -35,12 +35,12 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3238491=+F5BnqofQ9+koCWDm0aEVYLQZmoAAAAAQUIPAAAAAAAsBoAzxrVFbn1CeXAVbZm2; expires=Mon, 26 Jul 2027 06:30:49 GMT; HttpOnly; path=/; Domain=.conseil-ia-numerique.fr",
-        "incap_ses_328_3238491=7gmuHVUsLg+Fzycf7UqNBILQZmoAAAAAsFlIjYgnjtMDFEoNDtLVhw==; path=/; Domain=.conseil-ia-numerique.fr"
+        "visid_incap_3238491=WBFUF8lgSkixtU2J9t3441IO4GoAAAAAQUIPAAAAAACYAJ5C6oOqUQD39qv8OQvO; expires=Tue, 26 Oct 2027 07:32:29 GMT; HttpOnly; path=/; Domain=.conseil-ia-numerique.fr",
+        "incap_ses_1011_3238491=F0rbfx0y63wzyIE8PMsHDlMO4GoAAAAAyq8nocJ+NSi/MxpWn3Xu3A==; path=/; Domain=.conseil-ia-numerique.fr"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "17-104582782-104582785 NNYN CT(116 234 0) RT(1785122947055 16) q(0 0 4 0) r(5 6) U12"
+      "x-iinfo": "48-124583719-124583725 NNYN CT(118 135 0) RT(1793068627562 8) q(0 0 2 1) r(5 5) U12"
     }
   },
   "tests": {
@@ -97,12 +97,12 @@
       "data": {
         "visid_incap_3238491": {
           "domain": "conseil-ia-numerique.fr",
-          "expires": "2027-07-26T06:30:49.000Z",
+          "expires": "2027-10-26T07:32:29.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_328_3238491": {
+        "incap_ses_1011_3238491": {
           "domain": "conseil-ia-numerique.fr",
           "path": "/",
           "port": null
