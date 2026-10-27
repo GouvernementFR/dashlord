@@ -10,17 +10,18 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 27 Jul 2026 03:29:32 GMT",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Tue, 27 Oct 2026 02:36:13 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "max-age=600",
       "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
-      "expires": "Mon, 27 Jul 2026 03:39:32 GMT",
-      "last-modified": "Sun, 26 Jul 2026 21:40:29 GMT",
-      "etag": "\"1785102029\"",
+      "expires": "Tue, 27 Oct 2026 02:46:13 GMT",
+      "last-modified": "Tue, 27 Oct 2026 01:15:28 GMT",
+      "etag": "\"1793063728-gzip\"",
       "vary": "Cookie,Accept-Encoding",
       "x-drupal-cache": "HIT",
       "x-proxy-cache": "HIT",
@@ -35,13 +36,12 @@
       "x-xss-protection": "1;mode=block",
       "upgrade-insecure-requests": "1",
       "set-cookie": [
-        "visid_incap_3062843=mmHZRwPTTruGp2PIV6HAnJvQZmoAAAAAQUIPAAAAAAAB+sI+WW2DI0c2E4g75EKz; expires=Mon, 26 Jul 2027 06:31:14 GMT; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
-        "nlbi_3062843=hc+uOHyrkQ5871UjA4KP3QAAAAD3Cml0tNGWxPZY8cuGnUG/; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
-        "incap_ses_100_3062843=VluwB+ak5BXOWOcotUVjAZzQZmoAAAAAJTk/17wTpJzdxF5yIE/Bew==; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3062843=txeDFicrRruUr2ZBAsAsqxwO4GoAAAAAQUIPAAAAAAAihjEJ+HKg9Ldv+TlrCZ8G; expires=Tue, 26 Oct 2027 06:58:51 GMT; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
+        "nlbi_3062843=mUtzbn+XXWit7Z43A4KP3QAAAAC5tKScbTavmt3QL5pK/dpe; HttpOnly; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None",
+        "incap_ses_413_3062843=BWn5c5cQsQHhnUVmqEW7BR0O4GoAAAAA1begCd4dpH/oT9qfpp23jA==; path=/; Domain=.entreprises.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
-      "transfer-encoding": "chunked",
-      "x-iinfo": "51-425436783-425436793 NNYN CT(172 363 0) RT(1785122972240 12) q(0 0 5 2) r(7 9) U12"
+      "x-iinfo": "51-129313214-129313215 NNNN CT(174 194 0) RT(1793068572919 3) q(0 0 4 0) r(7 7) U12"
     }
   },
   "tests": {
@@ -98,7 +98,7 @@
       "data": {
         "visid_incap_3062843": {
           "domain": "entreprises.gouv.fr",
-          "expires": "2027-07-26T06:31:14.000Z",
+          "expires": "2027-10-26T06:58:51.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -113,7 +113,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_100_3062843": {
+        "incap_ses_413_3062843": {
           "domain": "entreprises.gouv.fr",
           "path": "/",
           "port": null,
@@ -149,9 +149,9 @@
       "pass": true,
       "result": "referrer-policy-private",
       "scoreModifier": 5,
-      "data": "same-origin",
+      "data": "same-origin, strict-origin-when-cross-origin",
       "http": true,
-      "meta": false
+      "meta": true
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
