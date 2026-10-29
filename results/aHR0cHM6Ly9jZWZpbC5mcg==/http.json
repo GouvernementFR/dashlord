@@ -9,13 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 27 Jul 2026 03:31:04 GMT",
+      "date": "Thu, 29 Oct 2026 02:24:55 GMT",
       "server": "Apache",
-      "link": "<https://www.cefil.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.cefil.fr/wp-json/wp/v2/pages/296>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.cefil.fr/>; rel=shortlink",
+      "last-modified": "Thu, 13 Aug 2026 12:22:26 GMT",
+      "etag": "\"a37-658ecc1c6c208-gzip\"",
+      "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
-      "content-length": "53953",
+      "content-length": "1084",
       "connection": "close",
-      "content-type": "text/html; charset=UTF-8"
+      "content-type": "text/html"
     }
   },
   "tests": {
@@ -80,7 +82,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
