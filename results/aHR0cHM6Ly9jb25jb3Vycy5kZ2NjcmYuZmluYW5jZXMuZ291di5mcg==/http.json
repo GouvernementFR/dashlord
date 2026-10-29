@@ -4,18 +4,15 @@
     "grade": "F",
     "error": null,
     "score": 10,
-    "statusCode": 200,
+    "statusCode": 403,
     "testsFailed": 5,
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Jul 2026 03:25:12 GMT",
-      "set-cookie": [
-        "BWROUTEID=EXPIRED; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
-      ],
-      "content-type": "text/html",
-      "content-length": "33586",
-      "connection": "close"
+      "date": "Thu, 29 Oct 2026 02:24:00 GMT",
+      "content-length": "199",
+      "connection": "close",
+      "content-type": "text/html; charset=iso-8859-1"
     }
   },
   "tests": {
@@ -32,17 +29,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "BWROUTEID": {
-          "domain": "concours.dgccrf.finances.gouv.fr",
-          "expires": "1970-01-01T00:00:00.000Z",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -54,16 +44,15 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://concours.dgccrf.finances.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://concours.dgccrf.finances.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://concours.dgccrf.finances.gouv.fr/",
-        "https://concours.dgccrf.finances.gouv.fr/"
+        "http://concours.dgccrf.finances.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -77,7 +66,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
