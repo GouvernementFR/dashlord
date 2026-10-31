@@ -9,23 +9,23 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 24 Jun 2026 14:33:15 GMT",
+      "date": "Wed, 21 Oct 2026 15:45:58 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
-      "content-type": "text/html; charset=UTF-8",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "content-type": "text/html; charset=utf-8",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "last-modified": "Wed, 24 Jun 2026 14:33:14 GMT",
-      "etag": "W/\"1782311594\"",
+      "last-modified": "Wed, 21 Oct 2026 15:45:52 GMT",
+      "etag": "W/\"1792597552\"",
       "x-micro-cache": "EXPIRED",
       "set-cookie": [
         "SRV=58fe7e32-9e54-4006-80f3-b277c92b2f06; path=/"
       ],
       "vary": "Accept-Encoding,Cookie",
       "cache-control": "max-age=86400, private",
-      "content-length": "12527",
+      "content-length": "12525",
       "connection": "close"
     }
   },
@@ -90,9 +90,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
