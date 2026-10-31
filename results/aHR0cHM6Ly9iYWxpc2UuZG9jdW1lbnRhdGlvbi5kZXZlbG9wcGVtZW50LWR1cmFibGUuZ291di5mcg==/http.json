@@ -1,22 +1,29 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "C-",
     "error": null,
-    "score": 0,
+    "score": 45,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Jul 2026 03:25:28 GMT",
-      "server": "Apache",
-      "x-cocoon-version": "2.1.5.1",
-      "content-type": "text/html;charset=UTF-8",
-      "vary": "Accept-Encoding,User-Agent",
-      "via": "1.1 balise.documentation.developpement-durable.gouv.fr",
-      "content-length": "2534",
-      "connection": "close"
+      "date": "Sat, 31 Oct 2026 02:29:06 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "content-type": "text/html; charset=utf-8",
+      "composed-by": "SPIP @ www.spip.net",
+      "link": "<https://www.strmtg.developpement-durable.gouv.fr/local/cache-css/52678a12da1ce327155c927d04b6b222.css?1792690115>;rel=\"preload\";as=\"style\"",
+      "x-spip-cache": "3600",
+      "last-modified": "Sat, 31 Oct 2026 02:29:05 GMT",
+      "set-cookie": [
+        "SRV=60083507-fb87-4240-800b-c5e497e61c88; path=/"
+      ],
+      "vary": "Cookie,Accept-Encoding",
+      "cache-control": "private",
+      "connection": "close",
+      "transfer-encoding": "chunked"
     }
   },
   "tests": {
@@ -34,12 +41,11 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
       "data": {
-        "JSESSIONID": {
-          "domain": "balise.documentation.developpement-durable.gouv.fr",
-          "httponly": true,
+        "SRV": {
+          "domain": "www.strmtg.developpement-durable.gouv.fr",
           "path": "/",
           "port": null
         }
@@ -58,13 +64,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://balise.documentation.developpement-durable.gouv.fr/index.html",
+      "destination": "https://www.strmtg.developpement-durable.gouv.fr/balise-base-legale-informatisee-pour-la-securite-a776.html",
       "redirects": true,
       "route": [
         "http://balise.documentation.developpement-durable.gouv.fr/",
         "https://balise.documentation.developpement-durable.gouv.fr/",
-        "http://balise.documentation.developpement-durable.gouv.fr/index.html",
-        "https://balise.documentation.developpement-durable.gouv.fr/index.html"
+        "https://www.strmtg.developpement-durable.gouv.fr/balise-base-legale-informatisee-pour-la-securite-a776.html"
       ],
       "statusCode": 200
     },
@@ -79,12 +84,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
