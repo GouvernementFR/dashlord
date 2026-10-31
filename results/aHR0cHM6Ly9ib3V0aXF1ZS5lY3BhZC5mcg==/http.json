@@ -9,17 +9,17 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Jul 2026 03:25:25 GMT",
+      "date": "Sat, 31 Oct 2026 02:29:01 GMT",
       "server": "Apache",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "cache-control": "no-store, no-cache, must-revalidate",
       "pragma": "no-cache",
       "set-cookie": [
-        "PHPSESSID=s6cp5td4t7ojkqalv53gbku41f; expires=Thu, 25-Feb-2083 06:50:50 GMT; Max-Age=1785468325; path=/; secure; HttpOnly; SameSite=Strict",
-        "PrestaShop-d593ebbfe23c22633182b15759a1439e=def502001b4d1d055df530ec66b4957de5afa273b3e1e73ae9694909f9865c9aea4f076479638d667a693fb1d1230a453a76c0cc9055d75a101e2ec581aeee961eeea639995d0158e5a09e4c879eda5d11c8877519bf2ca88d7ee1ce8a92437b20c644df34507e03f26457e4169d715c8ef3a910e40079c3c637637a2e3e39eddd7536f992e55496364e671291d822a9104c2fe79f23e79d5b74bec7f1a775eb568087961c9b692af19276896a29b5d586c93e8b10da57cf309df59ba452c32481883ec68a4765eab45417b48315b262378a20ae2d; expires=Fri, 31-Jul-2026 03:25:25 GMT; Max-Age=172800; path=/; domain=boutique.ecpad.fr; secure; HttpOnly; SameSite=Strict"
+        "PHPSESSID=67d77bb6be747a3f265e65aaca5e5909; expires=Wed, 01 Sep 2083 04:58:02 GMT; Max-Age=1793586541; path=/; secure; HttpOnly; SameSite=Lax",
+        "PrestaShop-e93be7770c701806c7dabc5f14511b12=def50200adc226d2afcc992ba5c5e025f42c9a99b4308fc073aee7f836d9e016dae047c3fbff88aee6cee3c9ee7f0b6ee2cb372ef54868bca480e795b34f6a52e27c1578199748959d0e10b1cbae52efff968f9871d050c101497cce22fcc0312064ad003a0f969155089340018eef5f946b50b41765061a41a42098400921ae4f92229a71ad92a433e01895dfc6d6eb18584bb2c4561be64cd2ffaade1d48b50b3b9438efb1641f67045328f77b040edb05929a62f513fbe0cf3f6a54a0572810a600745470b9c372fa49ae3e65f109d61353ee43; expires=Mon, 02 Nov 2026 02:29:01 GMT; Max-Age=172800; path=/; domain=boutique.ecpad.fr; secure; HttpOnly; SameSite=Lax"
       ],
       "vary": "Accept-Encoding",
-      "content-length": "15265",
+      "content-length": "16274",
       "content-type": "text/html; charset=utf-8",
       "connection": "close"
     }
@@ -44,22 +44,22 @@
       "data": {
         "PHPSESSID": {
           "domain": "boutique.ecpad.fr",
-          "expires": "2083-02-25T06:50:50.000Z",
+          "expires": "2083-09-01T04:58:02.000Z",
           "httponly": true,
-          "max-age": 1785468325,
+          "max-age": 1793586541,
           "path": "/",
           "port": null,
-          "samesite": "strict",
+          "samesite": "lax",
           "secure": true
         },
-        "PrestaShop-d593ebbfe23c22633182b15759a1439e": {
+        "PrestaShop-e93be7770c701806c7dabc5f14511b12": {
           "domain": "boutique.ecpad.fr",
-          "expires": "2026-07-31T03:25:25.000Z",
+          "expires": "2026-11-02T02:29:01.000Z",
           "httponly": true,
           "max-age": 172800,
           "path": "/",
           "port": null,
-          "samesite": "strict",
+          "samesite": "lax",
           "secure": true
         }
       },
@@ -116,6 +116,10 @@
           "integrity": null
         },
         "https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.2/dist/dsfr.nomodule.min.js": {
+          "crossorigin": null,
+          "integrity": null
+        },
+        "https://app.mailjet.com/pas-nc-embedded-v2.js": {
           "crossorigin": null,
           "integrity": null
         }
