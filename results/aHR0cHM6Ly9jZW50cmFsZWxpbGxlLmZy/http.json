@@ -3,17 +3,22 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
+    "score": 5,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Jul 2026 03:29:38 GMT",
+      "date": "Sat, 31 Oct 2026 02:30:05 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000",
       "link": "<https://centralelille.fr/>; rel=shortlink",
       "server": "o2switch-PowerBoost-v3"
     }
@@ -60,20 +65,20 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -83,11 +88,11 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
-        "//centralelille.fr/wp-content/plugins/revslider/public/js/libs/tptools.js?ver=6.7.58": {
+        "//centralelille.fr/wp-content/plugins/revslider/public/js/libs/tptools.js?ver=6.8.1": {
           "crossorigin": null,
           "integrity": null
         },
-        "//centralelille.fr/wp-content/plugins/revslider/public/js/sr7.js?ver=6.7.58": {
+        "//centralelille.fr/wp-content/plugins/revslider/public/js/sr7.js?ver=6.8.1": {
           "crossorigin": null,
           "integrity": null
         },
@@ -99,17 +104,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
