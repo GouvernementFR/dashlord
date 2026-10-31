@@ -1,29 +1,30 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 29 Jul 2026 03:29:58 GMT",
-      "x-spip-cache": "86400",
-      "x-frame-options": "DENY",
-      "last-modified": "Wed, 29 Jul 2026 03:29:58 GMT",
-      "vary": "Accept-Encoding",
+      "date": "Tue, 27 Oct 2026 15:22:21 GMT",
+      "cache-control": "max-age=10800, public",
+      "content-language": "fr",
       "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN, DENY",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "last-modified": "Tue, 27 Oct 2026 15:28:29 GMT",
+      "content-length": "10212",
       "content-type": "text/html; charset=utf-8",
+      "age": "9198",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-hits": "28",
       "connection": "close",
-      "set-cookie": [
-        "BIGipServerpool-dreets2.cegedim.cloud-http=!riMk3qqFkonMTUuIuV0oqLPgQB/HDCsXzwWY/Cr3wMYC8nDtJiKLCfqD+t09l6ZTxhzgAxt95QPsgLEuKYvsOZ8WbK0=; path=/; Httponly; Secure",
-        "TS086c66aa029=087dc22938ab2800d5f318d4cfdff0a70dec592a7e9a2d47822eb0bea6c4e8a2572e57c9e68ca632ace244de29566ed8; Secure; Max-Age=30; Path=/",
-        "TS82bbd089027=087dc22938ab2000960da4e75d58b19a57f40165438da290d74c7aac8ee194c7ce7a299403db7037089af6b30a113000d558b67809516810b3004ebbcdc3aaecd522cfb67aa16b8ddb50c71b3319f884f081f51d7531d3b1b327deac19555b58; Secure; Path=/"
-      ],
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "transfer-encoding": "chunked"
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
   },
   "tests": {
@@ -41,30 +42,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "BIGipServerpool-dreets2.cegedim.cloud-http": {
-          "domain": "corse.dreets.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS086c66aa029": {
-          "domain": "corse.dreets.gouv.fr",
-          "max-age": 30,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
-        "TS82bbd089027": {
-          "domain": "corse.dreets.gouv.fr",
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -123,10 +103,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "DENY"
+      "pass": false,
+      "result": "x-frame-options-header-invalid",
+      "scoreModifier": -20,
+      "data": "SAMEORIGIN, DENY"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
