@@ -14,18 +14,18 @@
       "content-type": "text/html; charset=utf-8",
       "expires": "-1",
       "vary": "Accept-Encoding",
+      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud https://*.openstreetmap.org",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "InstanceST=MNED=00040OPRbVdzFJIrGWtIeL9_umZVEamhh1kHg7Pg0ajJ-qNqmTiaPxI0+6fWBfuyJv+doTTnIP8ou5xs//yOMo9k=; path=/; secure; HttpOnly; SameSite=None",
-        "InstanceCI=MNED=jOn4_rTxOmLR_Q_ziZXBfRH7FSxHMZnKWkXMQM5o; path=/; secure; HttpOnly; SameSite=None"
+        "InstanceST=MNED=000407fapu-cRsaU81BLoub1pvWl_IR3Vvknf1kdltjpjRMWYCV4qhSRR+UeRqSj9M47jr4grwgtNtitBcmwD4+8=; path=/; secure; HttpOnly; SameSite=None",
+        "InstanceCI=MNED=_P2MjAxgx8axf2YWukCXbNX8boIW-rYSYBri3efv; path=/; secure; HttpOnly; SameSite=None"
       ],
       "referrer-policy": "strict-origin-when-cross-origin",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
-      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud",
       "x-xss-protection": "0",
-      "date": "Wed, 29 Jul 2026 03:25:19 GMT",
+      "date": "Sat, 31 Oct 2026 02:29:08 GMT",
       "connection": "close",
-      "content-length": "38901"
+      "content-length": "39509"
     }
   },
   "tests": {
@@ -43,7 +43,6 @@
         ],
         "script-src": [
           "'self'",
-          "'unsafe-eval'",
           "'unsafe-inline'",
           "https:"
         ],
@@ -82,7 +81,8 @@
         "connect-src": [
           "'self'",
           "https://*.google-analytics.com",
-          "https://*.matomo.cloud"
+          "https://*.matomo.cloud",
+          "https://*.openstreetmap.org"
         ]
       },
       "http": true,
@@ -95,7 +95,7 @@
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": false
