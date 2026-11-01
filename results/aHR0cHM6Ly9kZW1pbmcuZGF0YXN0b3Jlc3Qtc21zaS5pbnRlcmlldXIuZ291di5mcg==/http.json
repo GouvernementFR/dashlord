@@ -3,23 +3,17 @@
     "algorithmVersion": 4,
     "grade": "F",
     "error": null,
-    "score": 0,
-    "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "score": 10,
+    "statusCode": 403,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 31 Jul 2026 03:27:00 GMT",
-      "cache-control": "no-cache, private, max-age=1",
-      "expires": "Fri, 31 Jul 2026 03:27:01 GMT",
-      "vary": "Accept-Encoding",
-      "content-type": "text/html; charset=UTF-8",
+      "date": "Sun, 01 Nov 2026 02:30:14 GMT",
+      "cache-control": "no-cache",
+      "content-type": "text/html",
       "age": "0",
       "x-cache": "Miss",
-      "set-cookie": [
-        "XSRF-TOKEN=eyJpdiI6ImFNWGd0dGxLWjVBVnZwYmRPUnlZMmc9PSIsInZhbHVlIjoiVE1kejFlNGgxRVFVZFlRL2tOU2dsTVgzSDRXa2N4eVV4M2xnS0RSa2lzVjc5NFlxOVlsZXN4dStxTG9oNkdrWGhqN2lUZzI5WUdiZmllUGVhVmEveTNiZm9IOFgrbSszT0Mrc2Vsejk1Y2NHVkhsUGZBWjRRWkdLRnlvQmh5aGYiLCJtYWMiOiJiYTA2NTgxN2YwZGVlMjY1NzRhMDNiM2FiNmU2NWM2Njk4ODJhNWU4YTFiY2VkNjhkY2YwZGFlOGYwNTYxMDRjIiwidGFnIjoiIn0%3D; expires=Fri, 31 Jul 2026 05:27:00 GMT; Max-Age=7200; path=/; secure; samesite=lax",
-        "laravel_session=eyJpdiI6InNYcDFRaDVqUEF5SEt3MGpQODlvSEE9PSIsInZhbHVlIjoiME1jK2htWlVHdmlQVG9qQkRESUt1UHREN2lUVHovMnRmS3NqS0RzV1hBRnFPNTR4QWsrYytBaDRZV1FLcjQ4SndFUU05Q1NOQ0ZOZDFScnNmVy9teGtrL2dkR3FtckhGL2h6bVI3aWp4ZDNyNThxUFgyQklCdmI4RlVsdXBjNjQiLCJtYWMiOiI0OGI4YTRhMjg5Yzk0OWNjYzViZjRhODUwMDU4YjRhYzJmMWI3NjBkNDFjNWE5MmQ5MDFkNWU5OWI4NmUxMzA4IiwidGFnIjoiIn0%3D; expires=Fri, 31 Jul 2026 05:27:00 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
-      ],
       "transfer-encoding": "chunked",
       "connection": "close"
     }
@@ -38,34 +32,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "XSRF-TOKEN": {
-          "domain": "deming.datastorest-smsi.interieur.gouv.fr",
-          "expires": "2026-07-31T05:27:00.000Z",
-          "max-age": 7200,
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
-          "secure": true
-        },
-        "laravel_session": {
-          "domain": "deming.datastorest-smsi.interieur.gouv.fr",
-          "expires": "2026-07-31T05:27:00.000Z",
-          "httponly": true,
-          "max-age": 7200,
-          "path": "/",
-          "port": null,
-          "samesite": "lax"
-        },
-        "lsid": {
-          "domain": "deming.datastorest-smsi.interieur.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -78,15 +48,14 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https",
+      "result": "redirection-missing",
       "scoreModifier": -20,
-      "destination": "http://deming.datastorest-smsi.interieur.gouv.fr/login",
-      "redirects": true,
+      "destination": "http://deming.datastorest-smsi.interieur.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://deming.datastorest-smsi.interieur.gouv.fr/",
-        "http://deming.datastorest-smsi.interieur.gouv.fr/login"
+        "http://deming.datastorest-smsi.interieur.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -111,7 +80,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
