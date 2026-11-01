@@ -1,23 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B-",
+    "grade": "C",
     "error": null,
-    "score": 65,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Wed, 29 Jul 2026 03:32:38 GMT",
-      "content-type": "text/html; charset=utf-8",
+      "server": "nginx/1.30.1",
+      "date": "Sun, 01 Nov 2026 02:30:48 GMT",
+      "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding",
-      "x-content-type-options": "nosniff",
-      "x-xss-protection": "1; mode=block",
-      "x-frame-options": "SAMEORIGIN",
-      "strict-transport-security": "max-age=86400; includeSubDomains; preload;",
+      "x-powered-by": "Nuxt",
+      "x-cache-status": "MISS",
+      "strict-transport-security": "max-age=15768000; includeSubDomains; preload;",
       "connection": "close"
     }
   },
@@ -44,20 +43,22 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-not-implemented",
+      "result": "cross-origin-resource-sharing-implemented-with-public-access",
       "scoreModifier": 0,
-      "data": null
+      "data": "*"
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://cada.data.gouv.fr/",
+      "destination": "https://www.data.gouv.fr/explore/cada",
       "redirects": true,
       "route": [
         "http://cada.data.gouv.fr/",
-        "https://cada.data.gouv.fr/"
+        "https://cada.data.gouv.fr/",
+        "https://www.data.gouv.fr/explore/cada/",
+        "https://www.data.gouv.fr/explore/cada"
       ],
       "statusCode": 200
     },
@@ -72,12 +73,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-implemented-max-age-less-than-six-months",
-      "scoreModifier": -10,
-      "data": "max-age=86400; includeSubDomains; preload;",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=15768000; includeSubDomains; preload;",
       "includeSubDomains": true,
-      "maxAge": 86400,
+      "maxAge": 15768000,
       "preload": true,
       "preloaded": false
     },
@@ -90,17 +91,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
