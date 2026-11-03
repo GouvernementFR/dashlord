@@ -1,24 +1,31 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "B+",
     "error": null,
-    "score": 30,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 31 Jul 2026 03:27:41 GMT",
-      "server": "Apache",
+      "date": "Tue, 03 Nov 2026 02:28:38 GMT",
+      "server": "",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "upgrade-insecure-requests",
+      "x-xss-protection": "1; mode=block",
+      "x-powered-by": "",
+      "strict-transport-security": "max-age=31536000",
       "link": "<https://c-its.developpement-durable.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://c-its.developpement-durable.gouv.fr/wp-json/wp/v2/pages/9>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://c-its.developpement-durable.gouv.fr/>; rel=shortlink",
       "set-cookie": [
-        "pll_language=fr; expires=Sat, 31 Jul 2027 03:27:41 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
+        "pll_language=fr; expires=Wed, 03 Nov 2027 02:28:39 GMT; Max-Age=31536000; path=/; secure; SameSite=Lax"
       ],
       "vary": "Accept-Encoding",
       "cache-control": "max-age=0",
-      "expires": "Fri, 31 Jul 2026 03:27:41 GMT",
-      "content-length": "11761",
+      "expires": "Tue, 03 Nov 2026 02:28:38 GMT",
+      "content-length": "11991",
       "content-type": "text/html; charset=UTF-8",
       "connection": "close"
     }
@@ -27,13 +34,29 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -43,7 +66,7 @@
       "data": {
         "pll_language": {
           "domain": "c-its.developpement-durable.gouv.fr",
-          "expires": "2027-07-31T03:27:41.000Z",
+          "expires": "2027-11-03T02:28:39.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -76,20 +99,20 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": null,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
@@ -102,17 +125,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
