@@ -1,107 +1,43 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "D",
     "error": null,
-    "score": 70,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 01 Aug 2026 03:26:26 GMT",
+      "date": "Tue, 03 Nov 2026 02:29:07 GMT",
       "server": "Apache",
-      "set-cookie": [
-        "JSESSIONID=FFE4B75E8F6622A766BA7AAD56FEF30C; Path=/; Secure; HttpOnly"
-      ],
-      "x-frame-options": "DENY",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "x-content-type-options": "nosniff",
-      "referrer-policy": "same-origin",
-      "feature-policy": "vibrate 'none'; usermedia 'none';",
-      "permission-policy": "autoplay 'self'",
-      "content-security-policy": "default-src 'self' blob: ; img-src 'self' https://tarteaucitron.io https://cdn.tarteaucitron.io https://logs.xiti.com data:; style-src 'self'  https://cdn.tarteaucitron.io 'unsafe-inline'; script-src 'self' https://tarteaucitron.io https://cdn.tarteaucitron.io https://tag.aticdn.net https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval' blob: ;",
-      "vary": "Origin,Accept-Encoding,User-Agent,Access-Control-Request-Method,Access-Control-Request-Headers",
-      "last-modified": "Fri, 10 Jul 2026 06:39:42 GMT",
+      "last-modified": "Thu, 24 Sep 2026 13:34:54 GMT",
+      "etag": "\"14d8-65c3aaa393b80-gzip\"",
       "accept-ranges": "bytes",
-      "x-xss-protection": "0",
-      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
-      "pragma": "no-cache",
-      "expires": "0",
-      "content-language": "fr-FR",
+      "vary": "Accept-Encoding,User-Agent",
+      "content-length": "1825",
       "connection": "close",
-      "transfer-encoding": "chunked",
-      "content-type": "text/html;charset=UTF-8"
+      "content-type": "text/html"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'self'",
-          "blob:"
-        ],
-        "img-src": [
-          "'self'",
-          "data:",
-          "https://cdn.tarteaucitron.io",
-          "https://logs.xiti.com",
-          "https://tarteaucitron.io"
-        ],
-        "style-src": [
-          "'self'",
-          "'unsafe-inline'",
-          "https://cdn.tarteaucitron.io"
-        ],
-        "script-src": [
-          "'self'",
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "blob:",
-          "https://cdn.jsdelivr.net",
-          "https://cdn.tarteaucitron.io",
-          "https://tag.aticdn.net",
-          "https://tarteaucitron.io"
-        ],
-        "form-action": [
-          "'none'"
-        ]
-      },
-      "http": true,
-      "meta": true,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": false,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 2
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "JSESSIONID": {
-          "domain": "delia.culture.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -123,49 +59,44 @@
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
-      "pass": false,
-      "result": "referrer-policy-unsafe",
-      "scoreModifier": -5,
-      "data": "same-origin, origin",
-      "http": true,
-      "meta": true
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://tag.aticdn.net/18798/smarttag.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "DENY"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
