@@ -9,22 +9,19 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 01 Aug 2026 03:27:59 GMT",
+      "date": "Thu, 05 Nov 2026 02:29:35 GMT",
       "server": "",
-      "cache-control": "max-age=0",
-      "x-ua-compatible": "IE=100",
-      "content-type": "text/html; charset=utf-8",
+      "last-modified": "Wed, 04 Nov 2026 12:46:59 GMT",
+      "etag": "\"217d-65f72c6667937\"",
+      "accept-ranges": "bytes",
+      "content-length": "8573",
       "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "strict-transport-security": "max-age=63072000",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "content-security-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'",
-      "set-cookie": [
-        "sympa_session=15308427908191; path=/; HttpOnly;Secure",
-        "BALANCER_ROUTE_ID_lb-ostic-pr-eil=.1; path=/; SameSite=Lax; Secure"
-      ],
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "content-type": "text/html; charset=UTF-8",
+      "connection": "close"
     }
   },
   "tests": {
@@ -71,18 +68,11 @@
           "port": null,
           "secure": true
         },
-        "sympa_session": {
-          "domain": "eil.syndicat.education.gouv.fr",
+        "BIGipServer5gNlzF4Mcblylg0Pk5mudg": {
+          "domain": "desabonnement.syndicat.education.gouv.fr",
           "httponly": true,
           "path": "/",
           "port": null,
-          "secure": true
-        },
-        "BALANCER_ROUTE_ID_lb-ostic-pr-eil": {
-          "domain": "eil.syndicat.education.gouv.fr",
-          "path": "/",
-          "port": null,
-          "samesite": "lax",
           "secure": true
         }
       },
@@ -119,10 +109,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
-      "includeSubDomains": false,
-      "maxAge": 63072000,
-      "preload": false,
+      "data": "max-age=31536000; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
