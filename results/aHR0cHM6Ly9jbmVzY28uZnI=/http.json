@@ -10,17 +10,22 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Sat, 01 Aug 2026 03:26:37 GMT",
+      "date": "Thu, 05 Nov 2026 02:29:41 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding, Accept-Encoding,Cookie",
+      "access-control-allow-headers": "Content-Type, Authorization",
+      "access-control-allow-methods": "GET,POST",
       "content-security-policy": "upgrade-insecure-requests;",
+      "cross-origin-opener-policy": "unsafe-none",
+      "cross-origin-resource-policy": "cross-origin",
+      "permissions-policy": "accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(self), encrypted-media=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=*, picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=(), gamepad=(), serial=()",
       "referrer-policy": "strict-origin-when-cross-origin, origin-when-cross-origin",
       "strict-transport-security": "max-age=63072000, max-age=31536000; includeSubDomains; preload",
-      "x-content-security-policy": "default-src 'self'; img-src *; media-src * data:;",
       "x-content-type-options": "nosniff, nosniff",
-      "x-frame-options": "SAMEORIGIN"
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none"
     }
   },
   "tests": {
@@ -106,10 +111,6 @@
       "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
       "scoreModifier": -50,
       "data": {
-        "https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js?ver=0.2.3": {
           "crossorigin": null,
           "integrity": null
@@ -133,10 +134,10 @@
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
+      "result": "corp-implemented-with-cross-origin",
       "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "data": "cross-origin",
+      "http": true,
       "meta": false
     }
   }
