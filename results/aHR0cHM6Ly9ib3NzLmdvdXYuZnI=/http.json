@@ -1,1 +1,153 @@
-{"error":"The site seems to be down."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "D",
+    "error": null,
+    "score": 35,
+    "statusCode": 200,
+    "testsFailed": 5,
+    "testsPassed": 5,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 05 Nov 2026 02:24:54 GMT",
+      "expires": "Wed, 09 May 1979 05:30:00 GMT",
+      "cache-control": "no-cache, no-store, must-revalidate, proxy-revalidate, max-age=0",
+      "pragma": "no-cache",
+      "content-type": "text/html;charset=UTF-8",
+      "connection": "close",
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+      "vary": "Accept-Encoding",
+      "set-cookie": [
+        "TS70e2d9b8029=08864aa589ab2800f58cafa054c20a2848f243f75f425e198d8c5f4bd39ec3232f7fffd9bad331c9b893ec3f8c1ae6fd; Max-Age=30; Path=/",
+        "TS92a2c665027=08864aa589ab200050f299f524b9089ad2cbd94274f8fd00a20f53602467a44b1895daa6a5ef2b0a08968b7c4e1130003ad1ae1090c098c7241f017191759e4c8f07c1d5b631004ba3224ba79eb3ca6382c5126bc5bed5128d383115e2e4dd48; Path=/"
+      ],
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -10,
+      "data": {
+        "TS01d44451": {
+          "domain": "boss.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "TS70e2d9b8029": {
+          "domain": "boss.gouv.fr",
+          "max-age": 30,
+          "path": "/",
+          "port": null
+        },
+        "TS92a2c665027": {
+          "domain": "boss.gouv.fr",
+          "path": "/",
+          "port": null
+        },
+        "JSESSIONID": {
+          "domain": "boss.gouv.fr",
+          "httponly": true,
+          "path": "/portail",
+          "port": null
+        },
+        "TS0126514d": {
+          "domain": "boss.gouv.fr",
+          "path": "/portail",
+          "port": null
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://boss.gouv.fr/portail/accueil.html",
+      "redirects": true,
+      "route": [
+        "http://boss.gouv.fr/",
+        "https://boss.gouv.fr/",
+        "https://boss.gouv.fr/portail/",
+        "https://boss.gouv.fr/portail/accueil.html"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://cdn.tagcommander.com/4736/tc_Acoss_21.js": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
