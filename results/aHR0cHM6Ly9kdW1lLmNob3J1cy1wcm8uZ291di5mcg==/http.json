@@ -13,13 +13,13 @@
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "date": "Mon, 03 Aug 2026 03:25:33 GMT",
+      "date": "Sat, 07 Nov 2026 02:29:43 GMT",
       "server": "Web Server",
-      "last-modified": "Wed, 17 Jun 2026 12:43:33 GMT",
-      "etag": "\"5af-6547268515ec6-gzip\"",
+      "last-modified": "Wed, 28 Oct 2026 11:42:12 GMT",
+      "etag": "\"5af-65ee50dc9176f-gzip\"",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding",
-      "content-security-policy": "default-src 'none'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://fonts.googleapis.com data:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com",
+      "content-security-policy": "default-src 'none'; connect-src 'self' https://astra.aife.economie.gouv.fr; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://fonts.googleapis.com data:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://fonts.gstatic.com",
       "content-type": "text/html",
       "connection": "close",
       "content-length": "1455"
@@ -36,7 +36,8 @@
           "'none'"
         ],
         "connect-src": [
-          "'self'"
+          "'self'",
+          "https://astra.aife.economie.gouv.fr"
         ],
         "font-src": [
           "'self'",
