@@ -9,24 +9,24 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 03 Aug 2026 03:25:25 GMT",
+      "date": "Sat, 07 Nov 2026 02:30:57 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=utf-8",
       "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://contact.mer.gouv.fr/local/cache-css/190a8948cc45a24f4a281a4d1720171d.css?1784215960>;rel=\"preload\";as=\"style\"",
+      "link": "<https://contact.mer.gouv.fr/local/cache-css/190a8948cc45a24f4a281a4d1720171d.css?1791473021>;rel=\"preload\";as=\"style\"",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "pragma": "no-cache",
       "x-spip-cache": "3600",
-      "last-modified": "Mon, 03 Aug 2026 03:25:24 GMT",
+      "last-modified": "Sat, 07 Nov 2026 02:30:56 GMT",
       "set-cookie": [
-        "PHPSESSID=6f97465740e9da0bea0aee57d4581e2c; path=/; secure",
-        "SRV=e43d4b6c-6e32-444d-9981-4c3e32107c36; path=/"
+        "PHPSESSID=c4023343a029235798bcaa129fc09a79; path=/; secure",
+        "SRV=52696967-2676-464a-b1a3-0c4be5f98167; path=/"
       ],
       "vary": "Cookie,Accept-Encoding",
       "cache-control": "no-store, no-cache, must-revalidate",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "content-length": "9956",
+      "connection": "close"
     }
   },
   "tests": {
@@ -95,9 +95,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
