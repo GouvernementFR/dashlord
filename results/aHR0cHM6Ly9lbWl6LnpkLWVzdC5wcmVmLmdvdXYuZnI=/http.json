@@ -1,31 +1,16 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 03 Aug 2026 03:28:17 GMT",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sat, 01 Jan 2000 05:00:00 GMT",
-      "cache-control": "private_no_expire, must-revalidate",
-      "pragma": "no-cache",
-      "last-modified": "Mon, 03 Aug 2026 03:28:17",
-      "accept-ranges": "bytes",
-      "ploopi-connected": "0",
-      "content-length": "3103",
-      "content-type": "text/html; charset=utf-8",
-      "vary": "Accept-Encoding",
-      "age": "0",
-      "x-cache": "Miss",
-      "set-cookie": [
-        "ploopi44919d777ab6ace242ab82fc642282b33fd5773589ec535c056291ea88697ad4=8n9g2ui8gl0s3mifdo1ag2bsn5; path=/; HttpOnly",
-        "ploopi44919d777ab6ace242ab82fc642282b33fd5773589ec535c056291ea88697ad4=v8iuo5eersh1h12kaq7rle4976; path=/; HttpOnly"
-      ],
+      "content-length": "654",
+      "content-type": "text/html",
       "connection": "close"
     }
   },
@@ -43,17 +28,10 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-without-secure-flag",
-      "scoreModifier": -20,
-      "data": {
-        "ploopi44919d777ab6ace242ab82fc642282b33fd5773589ec535c056291ea88697ad4": {
-          "domain": "emiz.zd-est.pref.gouv.fr",
-          "httponly": true,
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -65,14 +43,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://emiz.zd-est.pref.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://emiz.zd-est.pref.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://emiz.zd-est.pref.gouv.fr/",
-        "https://emiz.zd-est.pref.gouv.fr/"
+        "http://emiz.zd-est.pref.gouv.fr/"
       ],
       "statusCode": 200
     },
@@ -99,7 +76,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
@@ -112,10 +89,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
