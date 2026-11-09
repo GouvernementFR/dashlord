@@ -9,25 +9,25 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "content-type": "text/html; charset=UTF-8",
-      "content-length": "23325",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "3355",
       "connection": "close",
-      "date": "Mon, 03 Aug 2026 03:25:04 GMT",
-      "x-age": "632",
+      "date": "Mon, 09 Nov 2026 02:23:39 GMT",
+      "x-age": "8534",
       "content-language": "en",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "accept-ranges": "bytes",
-      "x-fpfis": "426810 458810",
+      "x-fpfis": "2656598 688279",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload;",
       "cache-control": "public, max-age=300, s-maxage=300",
       "vary": "Accept-Encoding",
       "x-cache": "Hit from cloudfront",
-      "via": "1.1 2ea7f302d33babb724de99a42c1cb5e2.cloudfront.net (CloudFront)",
+      "via": "1.1 f8e39b59dd045139140ce58fd7a75258.cloudfront.net (CloudFront)",
       "x-amz-cf-pop": "DFW57-P9",
-      "x-amz-cf-id": "CwHpgJsa7V54eEYKJTQJ7G9Jk9E7Ys1sFSlM4xKdlyMVTKPC06Y_Ow==",
-      "age": "36"
+      "x-amz-cf-id": "BXpOYd3-fhz_PZbmVu33fmsjGDc-LRDTX91Gz7bRwqTbnz-zseVQtg==",
+      "age": "181"
     }
   },
   "tests": {
@@ -62,12 +62,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://commission.europa.eu/index_en",
+      "destination": "https://commission.europa.eu/select-language?destination=/node/1",
       "redirects": true,
       "route": [
         "http://commission.europa.eu/",
         "https://commission.europa.eu/",
-        "https://commission.europa.eu/index_en"
+        "https://commission.europa.eu/select-language?destination=/node/1"
       ],
       "statusCode": 200
     },
