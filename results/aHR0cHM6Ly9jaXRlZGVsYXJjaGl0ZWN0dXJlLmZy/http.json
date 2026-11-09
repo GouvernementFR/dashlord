@@ -9,22 +9,22 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 03 Aug 2026 03:24:29 GMT",
+      "date": "Mon, 09 Nov 2026 02:12:05 GMT",
       "cache-control": "max-age=900, public",
-      "x-drupal-dynamic-cache": "MISS",
-      "link": "<https://www.citedelarchitecture.fr/fr/home>; rel=\"alternate\"; hreflang=\"fr\", <https://www.citedelarchitecture.fr/en/home>; rel=\"alternate\"; hreflang=\"en\"",
+      "link": "<https://citedelarchitecture.fr/fr/home>; rel=\"alternate\"; hreflang=\"fr\", <https://citedelarchitecture.fr/en/home>; rel=\"alternate\"; hreflang=\"en\"",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie,Accept-Encoding",
-      "x-generator": "Drupal 10 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "last-modified": "Mon, 03 Aug 2026 03:24:28 GMT",
-      "etag": "\"1785727468-gzip\"",
-      "content-length": "13944",
-      "content-type": "text/html; charset=UTF-8",
-      "age": "0",
+      "last-modified": "Mon, 09 Nov 2026 02:11:36 GMT",
+      "etag": "\"1794190296-gzip\"",
+      "content-length": "14683",
+      "content-type": "text/html; charset=utf-8",
+      "age": "889",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-hits": "3",
       "connection": "close"
     }
   },
@@ -47,7 +47,7 @@
       "scoreModifier": -20,
       "data": {
         "SERVERID": {
-          "domain": "www.citedelarchitecture.fr",
+          "domain": "citedelarchitecture.fr",
           "path": "/",
           "port": null
         }
@@ -66,13 +66,12 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.citedelarchitecture.fr/fr",
+      "destination": "https://citedelarchitecture.fr/fr",
       "redirects": true,
       "route": [
         "http://citedelarchitecture.fr/",
         "https://citedelarchitecture.fr/",
-        "https://www.citedelarchitecture.fr/",
-        "https://www.citedelarchitecture.fr/fr"
+        "https://citedelarchitecture.fr/fr"
       ],
       "statusCode": 200
     },
