@@ -1,61 +1,37 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "C",
     "error": null,
-    "score": 80,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Wed, 05 Aug 2026 03:22:56 GMT",
+      "date": "Mon, 09 Nov 2026 02:27:49 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "transfer-encoding": "chunked",
+      "content-length": "25713",
       "connection": "close",
-      "vary": "Accept-Encoding",
-      "link": "<https://election-ca.creps-toulouse.sports.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://election-ca.creps-toulouse.sports.gouv.fr/wp-json/wp/v2/pages/15>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://election-ca.creps-toulouse.sports.gouv.fr/>; rel=shortlink",
-      "strict-transport-security": "max-age=15768000; includeSubDomains; preload",
-      "x-frame-options": "SAMEORIGIN",
-      "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval' always",
-      "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "feature-policy": "geolocation none;midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;payment none;"
+      "link": "<https://election-ca.creps-toulouse.sports.gouv.fr/wp-json/>; rel=\"https://api.w.org/\", <https://election-ca.creps-toulouse.sports.gouv.fr/wp-json/wp/v2/pages/15>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://election-ca.creps-toulouse.sports.gouv.fr/>; rel=shortlink",
+      "vary": "Accept-Encoding"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "default-src": [
-          "'unsafe-eval'",
-          "'unsafe-inline'",
-          "always",
-          "data:",
-          "https:"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": false,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": true,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": true
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -96,13 +72,13 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=15768000; includeSubDomains; preload",
-      "includeSubDomains": true,
-      "maxAge": 15768000,
-      "preload": true,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
