@@ -9,22 +9,23 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 05 Aug 2026 03:21:54 GMT",
+      "date": "Mon, 09 Nov 2026 02:26:41 GMT",
       "content-type": "text/html",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "last-modified": "Thu, 09 Jul 2026 20:58:05 GMT",
-      "etag": "W/\"6a500b5d-937\"",
+      "last-modified": "Mon, 26 Oct 2026 16:09:38 GMT",
+      "etag": "W/\"6adf7b42-894\"",
+      "cache-control": "no-cache",
       "x-frame-options": "DENY",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "set-cookie": [
-        "visid_incap_3275205=RVsBYGAdTpCUp0PihpLi71GscmoAAAAAQUIPAAAAAAAdw3iM3wMbZYbd6zwF5naW; expires=Wed, 04 Aug 2027 09:06:37 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None",
-        "nlbi_3275205=+H9uF+cRLUimQ/3HvSC9iwAAAAAi3inimB+J8VdigdQfTO9P; HttpOnly; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None",
-        "incap_ses_362_3275205=66XUfFe8WhSvVS6dXxUGBVGscmoAAAAAcE3nmCCumkFEKGVxvrzRWg==; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None"
+        "visid_incap_3275205=E28nYy2WRdKwXULgxLavDmAv8WoAAAAAQUIPAAAAAAC0Mpf8NbBvYXtjE9YESlJq; expires=Mon, 08 Nov 2027 07:02:33 GMT; HttpOnly; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None",
+        "nlbi_3275205=S24lS66X9GAPFzWhvSC9iwAAAADkQMgs7jJCr3oJ+4m+WaMq; HttpOnly; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None",
+        "incap_ses_396_3275205=zjGvEz4CgXSWf/NqRuB+BWEv8WoAAAAA55TsPYlpJ1SsXmg1QvhAjQ==; path=/; Domain=.numerique.gouv.fr; Secure; SameSite=None"
       ],
       "x-cdn": "Imperva",
-      "x-iinfo": "52-171814465-171814467 NNNN CT(143 153 0) RT(1785900113963 5) q(0 0 3 0) r(4 4) U12"
+      "x-iinfo": "50-75276844-75276852 NNNN CT(138 143 0) RT(1794191201133 27) q(0 0 2 0) r(4 4) U12"
     }
   },
   "tests": {
@@ -47,7 +48,7 @@
       "data": {
         "visid_incap_3275205": {
           "domain": "numerique.gouv.fr",
-          "expires": "2027-08-04T09:06:37.000Z",
+          "expires": "2027-11-08T07:02:33.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -62,7 +63,7 @@
           "samesite": "none",
           "secure": true
         },
-        "incap_ses_362_3275205": {
+        "incap_ses_396_3275205": {
           "domain": "numerique.gouv.fr",
           "path": "/",
           "port": null,
