@@ -9,19 +9,19 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 07 Aug 2026 03:18:48 GMT",
+      "date": "Fri, 13 Nov 2026 02:28:56 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "cf-ray": "a27322da1e66c9b4-IAD",
+      "cf-ray": "a59a588bdaf9317e-IAD",
       "cf-cache-status": "DYNAMIC",
-      "age": "10631",
+      "age": "8648",
       "cache-control": "public, max-age=0, must-revalidate",
-      "etag": "W/\"14j72q3saoy7qgf\"",
+      "etag": "W/\"16h3ba4veq7yew\"",
       "server": "cloudflare",
       "strict-transport-security": "max-age=31536000",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, accept-encoding",
-      "content-security-policy": "default-src 'self' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' blob: *; img-src * 'self' blob: data:; connect-src *; font-src *; frame-src *; object-src 'none'; base-uri 'self' https://static-2v.gitbook.com; form-action 'self' https://static-2v.gitbook.com *; frame-ancestors https: ;",
+      "content-security-policy": "default-src 'self' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' blob: *; img-src * 'self' blob: data:; connect-src *; font-src *; frame-src *; object-src 'none'; base-uri 'self' https://static-2v.gitbook.com; form-action 'self' https://static-2v.gitbook.com *; frame-ancestors https: ionic: capacitor: ;",
       "referrer-policy": "no-referrer-when-downgrade",
       "x-content-type-options": "nosniff",
       "x-gitbook-route-site": "docs.a-just.beta.gouv.fr/guide-dutilisateur-a-just/",
@@ -31,7 +31,7 @@
       "x-nextjs-prerender": "1",
       "x-nextjs-stale-time": "300",
       "x-vercel-cache": "HIT",
-      "x-vercel-id": "iad1::iad1::thdnw-1786072728674-ed62b34962a4",
+      "x-vercel-id": "iad1::cle1::m8ddw-1794536936324-57b7060eacce",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -86,7 +86,9 @@
           "https://static-2v.gitbook.com"
         ],
         "frame-ancestors": [
-          "https:"
+          "capacitor:",
+          "https:",
+          "ionic:"
         ]
       },
       "http": true,
@@ -162,99 +164,79 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
-        "https://static-2v.gitbook.com/_next/static/chunks/87c73c54-e11922cda838f8cc.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/87c73c54-2973455fcdb73c08.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/61968-1a2e13e36359c138.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/1968-e47a20ff47cf6567.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/main-app-9aaf5fde163636ee.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/main-app-91564d502fa56e7b.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/app/global-error-cb548642fb61c4b8.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/app/global-error-c2e8c669ce47dddd.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/f5718501-f8647bebf95cae86.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/f5718501-951e444b77b0df9b.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/9071f66d-982394c776a76fdc.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/9246-4ad7d9fb8c57ae6e.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/59598-d4089e5eb530ccd8.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/854-95367c8d2a394197.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/68393-80fee37ca0a28907.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/1910-91a8494d9be813ae.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/43607-c0b478bd8ec4756f.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/8925-576ad472597a1565.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/60237-efa262e0e9a57a6a.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/9935-9e53c2ebc9c4b609.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/40077-961fa675195913d4.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/2335-e4ef59ee0d027629.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/87434-781b5f4cfec82b8e.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/7348-4f95e53239351a03.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/48925-f62d93f8582e0e3c.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/3971-39891b172a592385.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/14012-d41c038ff6cfd708.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/app/sites/static/%5Bmode%5D/%5BsiteURL%5D/%5BsiteData%5D/(content)/%5BpagePath%5D/page-6e61cc539e560357.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/23782-39f5ed03961218c1.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/7886-8c88c05ba79be1f8.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/71759-14231dd19f8270b8.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/5275-5a09c0dae090fcf3.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/2822-a7423de1a3b6400f.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/app/sites/static/%5Bmode%5D/%5BsiteURL%5D/%5BsiteData%5D/(content)/layout-7b3675bbffc779a3.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/33885-8f1884f2440fd712.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://static-2v.gitbook.com/_next/static/chunks/app/sites/static/%5Bmode%5D/%5BsiteURL%5D/%5BsiteData%5D/(content)/%5BpagePath%5D/page-11276b9ad222fb6b.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static-2v.gitbook.com/_next/static/chunks/17012-635472360daffc7e.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static-2v.gitbook.com/_next/static/chunks/29374-27f571b4c08bed5d.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static-2v.gitbook.com/_next/static/chunks/app/sites/static/%5Bmode%5D/%5BsiteURL%5D/%5BsiteData%5D/(content)/layout-1b82be9a13d753bf.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static-2v.gitbook.com/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://static-2v.gitbook.com/_next/static/chunks/webpack-d8869b73f5cf6ec7.js?dpl=p-4be043d96eccfe9472ae26e18b82d8": {
+        "https://static-2v.gitbook.com/_next/static/chunks/webpack-e34c2d8547733960.js?dpl=p-6029a31c072b33fe26af7c9d7f99de": {
           "crossorigin": null,
           "integrity": null
         }
