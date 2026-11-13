@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "TSa1d3e6c3029=087dc22938ab280048ec38f93b37704ec5051acccf40279bfee4525b418c2b98be2dd54201e09ae244d3ce0f6a017971; Secure; Max-Age=30; Path=/",
-        "TSc4ff0492027=087dc22938ab200017a0a9d3685127483bbc5bc5ce3e7fad46f4cc662aff2a5debeaa3789e662ba1081b42b8701130004d915081d799255604646b7f25c7949a48205027d91af510e3ea585139ea9eb3c193259f3623a2bbb66aee2cbea50395; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab2800fb03da4a506f2cbfd25aa9f71bec11f94566e6018dfe75c4dcbc89844b8a554574ec8ea028dd4b21; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab2000a5cceba85b63d786e9466aa676acce0bf6303292b7f17dbe6c9d8974a470056608da982b2c11300088195edb5ae12978d478549d3b1a8173cab4c7353333c9eb948c05d20b95c7babde7436ec79b05a578156463f0222ada; Secure; Path=/"
       ],
       "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
       "content-type": "text/html",
-      "content-length": "6744",
+      "content-length": "5425",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff"
@@ -48,6 +48,20 @@
         },
         "TSc4ff0492027": {
           "domain": "emploi.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "emploi.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS012247d4": {
+          "domain": "emploi.gouv.fr",
+          "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
