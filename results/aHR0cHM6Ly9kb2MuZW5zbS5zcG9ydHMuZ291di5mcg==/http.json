@@ -14,19 +14,19 @@
       "content-type": "text/html; charset=utf-8",
       "expires": "-1",
       "vary": "Accept-Encoding",
+      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud https://*.openstreetmap.org",
       "x-content-type-options": "nosniff",
       "set-cookie": [
-        "_syrSessGuid=3881655f-3446-418e-ac34-2ebae2922549; expires=Fri, 07-Aug-2026 03:48:12 GMT; path=/; secure; HttpOnly; SameSite=Lax",
-        "_syrPrefsGuid=f80998d1-6bd7-4d2a-a309-4e5cbbded186; expires=Sat, 07-Aug-2027 03:18:12 GMT; path=/; secure; HttpOnly; SameSite=Lax",
-        "InstanceST=ENS=00040EGc5xRypjIWio5XD7yulsmxeAcvfpKbP3SDWk-heo0e+ZGVktexSYb5/QO+CR5MxihoGzDaYISBNr+RKVr8=; path=/; secure; HttpOnly; SameSite=None",
-        "InstanceCI=ENS=F0nObk12HMkqrNW6kSPLqJWViuYkG3hKJSvtiPco; path=/; secure; HttpOnly; SameSite=None"
+        "_syrSessGuid=706243b6-897f-48d1-a661-e1162ed0bbc3; expires=Fri, 13-Nov-2026 02:58:09 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "_syrPrefsGuid=8acbf627-bea0-4f5e-9438-66e9420b1405; expires=Sat, 13-Nov-2027 02:28:09 GMT; path=/; secure; HttpOnly; SameSite=Lax",
+        "InstanceST=ENS=00040t-BBz5JukvUTZ670fjSyHFbvhz6UTZchGxhVoputKmqcQFDwe9xPoPKvhMKA9vzHfAZ8h8fKjeGz2GfO1wM=; path=/; secure; HttpOnly; SameSite=None",
+        "InstanceCI=ENS=pLLqF8hi9hMEpHlGKDJ7KIOyj1dwUpwsVSj6PLYX; path=/; secure; HttpOnly; SameSite=None"
       ],
       "referrer-policy": "strict-origin-when-cross-origin",
-      "content-security-policy": "default-src 'self'; form-action 'self'; script-src https: 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'none'; style-src https: 'self' 'unsafe-inline'; img-src https: 'self' data: blob:; font-src 'self' data: https:; frame-src 'self' https: blob:; frame-ancestors 'self' https:; media-src 'self' blob:; connect-src 'self' https://*.google-analytics.com https://*.matomo.cloud",
       "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-xss-protection": "0",
-      "date": "Fri, 07 Aug 2026 03:18:13 GMT",
-      "content-length": "35846",
+      "date": "Fri, 13 Nov 2026 02:28:10 GMT",
+      "content-length": "34658",
       "connection": "close"
     }
   },
@@ -45,7 +45,6 @@
         ],
         "script-src": [
           "'self'",
-          "'unsafe-eval'",
           "'unsafe-inline'",
           "https:"
         ],
@@ -84,7 +83,8 @@
         "connect-src": [
           "'self'",
           "https://*.google-analytics.com",
-          "https://*.matomo.cloud"
+          "https://*.matomo.cloud",
+          "https://*.openstreetmap.org"
         ]
       },
       "http": true,
@@ -97,7 +97,7 @@
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
         "strictDynamic": false,
-        "unsafeEval": true,
+        "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
         "unsafeObjects": false
@@ -112,7 +112,7 @@
       "data": {
         "_syrSessGuid": {
           "domain": "doc.ensm.sports.gouv.fr",
-          "expires": "2026-08-07T03:48:12.000Z",
+          "expires": "2026-11-13T02:58:09.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -121,7 +121,7 @@
         },
         "_syrPrefsGuid": {
           "domain": "doc.ensm.sports.gouv.fr",
-          "expires": "2027-08-07T03:18:12.000Z",
+          "expires": "2027-11-13T02:28:09.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
