@@ -9,11 +9,11 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 07 Aug 2026 03:18:02 GMT",
+      "date": "Fri, 13 Nov 2026 02:28:26 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "x-request-id": "bbdd8abc-2a93-4cd3-baba-68d1f9b9bd2d",
+      "x-request-id": "af67fe39-760c-4772-875b-bd6d0997939b",
       "x-frame-options": "SAMEORIGIN",
       "content-security-policy": "frame-ancestors 'self'",
       "vary": "Sec-Fetch-Dest, Accept-Language, Cookie",
@@ -21,7 +21,14 @@
       "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin-when-cross-origin",
       "cross-origin-opener-policy": "same-origin",
-      "strict-transport-security": "max-age=31536000"
+      "strict-transport-security": "max-age=31536000",
+      "set-cookie": [
+        "visid_incap_3305489=JaBM+zMVRcikx5KJ+/uv8sV19moAAAAAQUIPAAAAAAA2wpL2Dc3YNtE4q1Etve3e; expires=Fri, 12 Nov 2027 07:20:51 GMT; HttpOnly; path=/; Domain=.cyber.gouv.fr",
+        "nlbi_3305489=W6WgM9Gi8HcirNsb5E3L1QAAAADZbccpZt4Ny/A57GbsCqrZ; HttpOnly; path=/; Domain=.cyber.gouv.fr",
+        "incap_ses_187_3305489=msQXGdDbemJmN9Gv2FuYAsp19moAAAAAKlDqAeBtv0PrF7jaLIb7FQ==; path=/; Domain=.cyber.gouv.fr"
+      ],
+      "x-cdn": "Imperva",
+      "x-iinfo": "54-213859910-213859932 NNNN CT(151 144 0) RT(1794536901844 63) q(0 0 3 5) r(51 51) U1"
     }
   },
   "tests": {
@@ -54,10 +61,29 @@
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "visid_incap_3305489": {
+          "domain": "cyber.gouv.fr",
+          "expires": "2027-11-12T07:20:51.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "nlbi_3305489": {
+          "domain": "cyber.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_187_3305489": {
+          "domain": "cyber.gouv.fr",
+          "path": "/",
+          "port": null
+        }
+      },
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -102,15 +128,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://stats.sites.beta.gouv.fr/js/pa-ClTV6JfIt_XjcYGtUAVle.js": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
