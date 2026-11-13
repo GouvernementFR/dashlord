@@ -9,26 +9,17 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 07 Aug 2026 02:19:49 GMT",
-      "cache-control": "max-age=10800, public",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "last-modified": "Fri, 07 Aug 2026 02:19:49 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "age": "591",
-      "etag": "W/\"1786069189-gzip\"",
-      "accept-ranges": "bytes",
-      "x-cache": "HIT",
-      "x-cache-hits": "4",
-      "connection": "close",
       "set-cookie": [
-        "TS24c133e9029=087dc22938ab2800d558d612178678c83b39c7c553612d933fa9e435fe76bd98702d9dcaa60df0a9fd9a6d6e668c3916; Secure; Max-Age=30; Path=/",
-        "TSe7b29e8c027=087dc22938ab2000c4e1d788993e969c4bcb18d8ff1af9e459a229477e6bbeeb4161c159fe3e74c30839c93cf311300013ce649f32aa3b3119315315edd0385554c3da3019ba513ee601eebaf590ce00b7583a0a80f6811cd27feff384a67a12; Secure; Path=/"
+        "TS24c133e9029=087dc22938ab280008df3040a0ce2e2bf66290f3566440bacba2befd2cd6deb2686ad355c61f1766e4c42d5c5cce222c; Secure; Max-Age=30; Path=/",
+        "TS24c133e9078=087dc22938ab200053535ac90bed71960e08ebe1f0c009078855caa1d2621d58b684bf227f9439f60832d64de21840017528a025fa237468cb58a9009febacb649ec51e8e65a50119811d76f21867b95425235dfee19c0076e466ce61e40c6962b9890f2b6664173d9580278748e8adcec2e69e52a8d4b38228853d329bb7e9d4d3a99270861c5315b504f5c453ac35e3ac5cc24d735882db1d9979e21f5451f549aff87c2d20b5d8198e7226e5b40722ea2a381dfbd06dec4229a6b346bcb807537f21c712f9599aae31d4107a8044428e52210b2462df2e4f6c84c66c1125fb23759369aea130385a057de5c58a053e5651846cefa6c81d1ba1bb038a0d99dcd3a20ac76a8ec9f626dfbaa491ccd31745f09c5ec3f87371dd4225c3d7f7856214bf07ecb7dd396de149124e34bbbc0c4592cd1f0f786e92cb5dace2d182de3bf1026a5e8b9cd7126efe50c891171ccaf161045b3a392e2642b74502555153ca0076fe716c9a8e281b17846486de6cb; Secure; Max-Age=30; Path=/",
+        "TSe7b29e8c027=087dc22938ab20003b196ea6f1e4a586d4ef8958269d361f87f26b0a76e5432e178c1ad4eb28d5ae08a30021401130005def63579af8607a41083b518278fbbfdb29b6804147ecd16f7038c837291f2487fdead4c172b8a4aa0b228164ff88cd; Secure; Path=/"
       ],
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "6177",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -49,22 +40,22 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-handicap-v2.cegedim.cloud-http": {
-          "domain": "solidarites.gouv.fr",
-          "httponly": true,
+        "TS24c133e9029": {
+          "domain": "enfance.gouv.fr",
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
         },
-        "TS24c133e9029": {
-          "domain": "solidarites.gouv.fr",
+        "TS24c133e9078": {
+          "domain": "enfance.gouv.fr",
           "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
         },
         "TSe7b29e8c027": {
-          "domain": "solidarites.gouv.fr",
+          "domain": "enfance.gouv.fr",
           "path": "/",
           "port": null,
           "secure": true
@@ -84,13 +75,11 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://solidarites.gouv.fr/protection-enfance",
+      "destination": "https://enfance.gouv.fr/",
       "redirects": true,
       "route": [
         "http://enfance.gouv.fr/",
-        "https://enfance.gouv.fr/",
-        "https://solidarites.gouv.fr/solidarites/protection-de-lenfance",
-        "https://solidarites.gouv.fr/protection-enfance"
+        "https://enfance.gouv.fr/"
       ],
       "statusCode": 200
     },
