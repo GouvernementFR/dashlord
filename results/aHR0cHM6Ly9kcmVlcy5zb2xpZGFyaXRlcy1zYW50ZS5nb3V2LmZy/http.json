@@ -1,34 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "C",
     "error": null,
-    "score": 75,
+    "score": 55,
     "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 07 Aug 2026 01:09:42 GMT",
-      "cache-control": "max-age=10800, public",
-      "x-drupal-dynamic-cache": "HIT",
-      "content-language": "fr",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "vary": "Cookie,Accept-Encoding",
-      "x-generator": "Drupal 11 (https://www.drupal.org)",
-      "x-drupal-cache": "HIT",
-      "last-modified": "Fri, 07 Aug 2026 03:15:58 GMT",
-      "content-type": "text/html; charset=UTF-8",
-      "connection": "close",
       "set-cookie": [
-        "BIGipServerpool-drees-site-v2.cegedim.cloud-http=!RVj8VfjOpvzUB5CIuV0oqLPgQB/HDC9Q4AbuhPWPIZdWvVafAifBbh8SiSXpwKWPfgH2rw/Fc1BaMZt1mYsZV+JR+KM2; path=/; Httponly; Secure",
-        "TS4b36953e029=087dc22938ab28008610215bfb3ee3102d9608e9ce8d8dcfd58a86d4e2ad50b7c3778718b9524b3476ef35cb4c627fa0; Secure; Max-Age=30; Path=/",
-        "TSb0c6f747027=087dc22938ab20002b477f219078bdec986e8460a1fccddb7b4a9c96701fe7647473ea83dc8e8867086b2e0d12113000c8de7e0257c4efc464dfd66fe02594f7283868118dc9e4c849a0cdcd2953c38893d93211a33c8daf4b22c12a324c4b8c; Secure; Path=/"
+        "TS4b36953e029=087dc22938ab2800446f3c3b7591a8ce07ec24c5aeb09f6a2f7e0f6f8a356f63e1ccd2b41ede5f48ba8f83a27d359e21; Secure; Max-Age=30; Path=/",
+        "TS4b36953e078=087dc22938ab200030b504826023bb04adcafe1d93ab731c8fcc23e2c07d041dcf4d4eeb218b55a3081ba22f3c1858011724e8526349d634fe31f24e33e2655a129849ebafc48954147d04467ad23d041e6644f489ea28a5bbc9c0b9f64ea89453f35eaa36067b2aa62040d3a4d9445c6eb05d25bee8988320d5cb427922b70735903a10586700ffae0ea49a0dff33439b68aa2c33c0e5fae826cc5f2749020e232861bca017f9dbff43e3f51bb968cf07de39fc9be56816dc0d5b922f925bbd7c444681d4de65cc8f624d8e68a6fc1d82657c00ea9aba41bac467f3e7b2e330285e7f05a39ec9b4ef3ed123c2fde9cdb18d212897f64fe30cc6b6bdabf1dafd35985382e3df215e973f22ca70f222dda57af6e3cd93d08ae60bb0b90738e3af27801c0754bc33988b4b99975a90a93d00af73239609a93144255c0b4bb0792985058938100a30d61303ac947d7893d47276ae3e353de01fc07b1b1a8e04b79c837f9b5918d414f58a9238d9c80ef4e013c879c9d33c9d4aa779dce324ee9825f2fa22c560e3f6b5; Secure; Max-Age=30; Path=/",
+        "TSb0c6f747027=087dc22938ab20000a3601cc7b754d4c201115e90ec32320700fd027b288e287b249d50016ef496808ece4a6ef113000ed18a2f3610e512f465c50e99683373a6fe11c21e849fcb04aaa4831aecc7d1bcc06260b2116691aa581a55b8a0e6235; Secure; Path=/"
       ],
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "transfer-encoding": "chunked"
+      "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
+      "content-type": "text/html",
+      "content-length": "5065",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "1; mode=block",
+      "x-content-type-options": "nosniff"
     }
   },
   "tests": {
@@ -49,14 +40,14 @@
       "result": "cookies-secure-with-httponly-sessions",
       "scoreModifier": 0,
       "data": {
-        "BIGipServerpool-drees-site-v2.cegedim.cloud-http": {
+        "TS4b36953e029": {
           "domain": "drees.solidarites-sante.gouv.fr",
-          "httponly": true,
+          "max-age": 30,
           "path": "/",
           "port": null,
           "secure": true
         },
-        "TS4b36953e029": {
+        "TS4b36953e078": {
           "domain": "drees.solidarites-sante.gouv.fr",
           "max-age": 30,
           "path": "/",
@@ -103,12 +94,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
