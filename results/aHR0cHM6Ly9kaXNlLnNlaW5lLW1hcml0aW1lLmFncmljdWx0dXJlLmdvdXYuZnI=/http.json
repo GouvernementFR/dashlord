@@ -1,27 +1,21 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 30,
-    "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 50,
+    "statusCode": 403,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 07 Aug 2026 03:18:28 GMT",
+      "date": "Fri, 13 Nov 2026 02:28:58 GMT",
       "server": "",
-      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
-      "strict-transport-security": "max-age=63072000;includeSubDomains; preload, max-age=63072000;includeSubDomains; preload",
-      "vary": "Cookie,Accept-Encoding,User-Agent",
-      "composed-by": "SPIP @ www.spip.net",
-      "link": "<https://dise.seine-maritime.agriculture.gouv.fr/local/cache-css/93fc87c03b4a2872b2e6f70b5cfb0f96.css?1776411595>;rel=\"preload\";as=\"style\"",
-      "x-spip-cache": "3600",
-      "last-modified": "Fri, 07 Aug 2026 03:18:28 GMT",
-      "x-xss-protection": "1; mode=block",
-      "content-type": "text/html; charset=utf-8",
-      "content-length": "10930",
-      "connection": "close"
+      "x-frame-options": "SAMEORIGIN",
+      "strict-transport-security": "max-age=63072000;includeSubDomains; preload",
+      "content-length": "318",
+      "connection": "close",
+      "content-type": "text/html; charset=iso-8859-1"
     }
   },
   "tests": {
@@ -73,9 +67,9 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-header-invalid",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
-      "data": "max-age=63072000;includeSubDomains; preload, max-age=63072000;includeSubDomains; preload",
+      "data": null,
       "includeSubDomains": false,
       "maxAge": null,
       "preload": false,
@@ -84,7 +78,7 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "result": "sri-not-implemented-but-no-scripts-loaded",
       "scoreModifier": 0,
       "data": {}
     },
@@ -97,10 +91,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
-      "data": "SAMEORIGIN, SAMEORIGIN"
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
