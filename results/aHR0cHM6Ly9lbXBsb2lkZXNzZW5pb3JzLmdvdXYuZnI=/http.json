@@ -10,12 +10,12 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "set-cookie": [
-        "TSa1d3e6c3029=087dc22938ab2800ea4003cae2f06dd3e9e6e95622fc31f78e8a824e46e1a6c660dd94b85e5ce6770579a5249898ae00; Secure; Max-Age=30; Path=/",
-        "TSc4ff0492027=087dc22938ab20009ee7ca06694f9c63dea1532f943a467e1ab3ff77e2ce2abbf573287bd5c5af530841c187e01130002fbc36654986e0aa9cf28b25acc0fd4ccb3cc606a1278776af5b1714fcaad73a20ba921429e7a5791d0e00fde4ec7d2d; Secure; Path=/"
+        "TSa1d3e6c3029=087dc22938ab2800de9bcba352bafa892b7b9bbb5fc92cfcdd8f8a7f8b700aa5c0760c51f56010d919095bec586ad02e; Secure; Max-Age=30; Path=/",
+        "TSc4ff0492027=087dc22938ab200086121cc30e76aa4b57954632a2be691dad7c3258ecea8ee1f1311a2a89f579fb08a62556ad113000efb0f8b569c282f44bb99772a32d0a843b59a08ff669a6a8369c8e698be2e1b59a9bebff0b9c2da3333522473c1bad30; Secure; Path=/"
       ],
       "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
       "content-type": "text/html",
-      "content-length": "6721",
+      "content-length": "5996",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff"
@@ -48,6 +48,20 @@
         },
         "TSc4ff0492027": {
           "domain": "emploidesseniors.gouv.fr",
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "BIGipServerpool-dicom-portail-dares.cegedim.cloud-http": {
+          "domain": "emploidesseniors.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS017ff981": {
+          "domain": "emploidesseniors.gouv.fr",
+          "httponly": true,
           "path": "/",
           "port": null,
           "secure": true
