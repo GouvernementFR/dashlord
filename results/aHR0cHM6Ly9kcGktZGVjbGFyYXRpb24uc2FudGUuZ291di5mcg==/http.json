@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Fri, 07 Aug 2026 03:18:27 GMT",
+      "date": "Fri, 13 Nov 2026 02:28:01 GMT",
       "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
       "strict-transport-security": "max-age=63072000; includeSubDomains",
       "x-content-type-options": "nosniff",
@@ -18,10 +18,10 @@
       "content-type": "text/html;charset=UTF-8",
       "content-length": "662",
       "set-cookie": [
-        "CSRF-TOKEN=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3MGJkMTAzMjA5Y2Y0MzFjYjFiYzVlMzVkZmJlZDAwMyJ9.bWo61mT3Yy9RQDKjzgkY5fwgqKiCGFNUhuqYssr0z04;Path=/dpi-webapp;Max-Age=14400;Expires=ven., 07-août-2026 05:18:41 CEST;Secure;SameSite=Strict",
-        "JSESSIONID=F78DC7F58238642DB57233371DA5ABD7; Path=/dpi-webapp; Secure; HttpOnly",
-        "TS014f54a1=012337f68d0f1dc839bfe84fc488536363cf64d2b9255fc7b6112b37b1e422447bf42d2c894f4b41eae39482a76291ebde6bd77e083fae8215e56dc6d717fba0c77c42e125; Path=/",
-        "TS017ec504=012337f68da337745bbe6cc5c4be932550b33ba8e0255fc7b6112b37b1e422447bf42d2c894f4b41eae39482a76291ebde6bd77e0857401f985c468994352f9b53f24e0e43cd7e141bff3d79fa553a835ac7d281e3de156ee9ecaa0fe9c7436ee0beca084b; path=/dpi-webapp"
+        "CSRF-TOKEN=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1MmM5MGE4Njk4NDM0NGE3YThkMGVjNmE1NjY3MjU3ZSJ9.C2R83Jurg5s1uyuRIqFk5Egzk4SL-2dIDU62YWGwbtg;Path=/dpi-webapp;Max-Age=14400;Expires=ven., 13-nov.-2026 03:28:15 CET;Secure;SameSite=Strict",
+        "JSESSIONID=E079629C2E02DEBFAED09D87C69827DB; Path=/dpi-webapp; Secure; HttpOnly",
+        "TS014f54a1=012337f68dd5c7d46b25b5eaa565ad909790e7b64aaa892f86440d6b7a732c45d3580558ef9b7ffe88aca226515a2823dc1adcb8ce07d2bd49d1574723ab10562c2f564b2a; Path=/",
+        "TS017ec504=012337f68dcc7ac14b845c17664fa4505902016f71aa892f86440d6b7a732c45d3580558ef9b7ffe88aca226515a2823dc1adcb8ce57f70dd31bb3c2a96a9379d5bf695b4037c93a2ca19365c5db641f217cf257345904eda33ecded431ed0d37a1b618149; path=/dpi-webapp"
       ],
       "connection": "close"
     }
@@ -86,6 +86,7 @@
         },
         "CSRF-TOKEN": {
           "domain": "dpi-declaration.sante.gouv.fr",
+          "expires": "2026-11-13T03:28:15.000Z",
           "max-age": 14400,
           "path": "/dpi-webapp",
           "port": null,
