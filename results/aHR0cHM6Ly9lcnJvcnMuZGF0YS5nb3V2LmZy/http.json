@@ -11,15 +11,15 @@
     "responseHeaders": {
       "cache-control": "max-age=0, no-cache, no-store, must-revalidate, private",
       "content-language": "en",
-      "content-length": "15073",
-      "content-security-policy-report-only": "frame-ancestors 'none'; font-src 'self' data:; style-src 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'report-sample' errors.data.gouv.fr 'nonce-hHRww3v3noQue0xvxO7TcA=='; connect-src 'self' *.algolia.net *.algolianet.com *.algolia.io; base-uri 'none'; img-src blob: data: *; default-src 'none'; media-src *; worker-src 'none'; object-src 'none'",
+      "content-length": "15071",
+      "content-security-policy-report-only": "worker-src 'none'; script-src 'self' 'unsafe-inline' 'report-sample' errors.data.gouv.fr 'nonce-Xugt+SMt4VW4EYb79VxNaQ=='; default-src 'none'; object-src 'none'; connect-src 'self' *.algolia.net *.algolianet.com *.algolia.io; font-src 'self' data:; img-src blob: data: *; style-src 'unsafe-inline' *; base-uri 'none'; frame-ancestors 'none'; media-src *",
       "content-type": "text/html",
-      "date": "Sun, 09 Aug 2026 03:03:34 GMT",
-      "expires": "Sun, 09 Aug 2026 03:03:34 GMT",
+      "date": "Sun, 15 Nov 2026 02:23:40 GMT",
+      "expires": "Sun, 15 Nov 2026 02:23:40 GMT",
       "server": "nginx",
       "set-cookie": [
-        "sc=vjBdzNEEdLJ5yjrRnPmNmPRhz8ZjJk6V; expires=Sun, 08 Aug 2027 03:03:34 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
-        "sentrysid=eyJ0ZXN0Y29va2llIjoid29ya2VkIiwiX25leHQiOiIvIn0:1wstp0:1mkcKSGKqgPBGtkvHqU6ata0iqWNdoIWDfKXMDweNUg; expires=Sun, 23 Aug 2026 03:03:34 GMT; HttpOnly; Max-Age=1209600; Path=/; Secure"
+        "sc=zQENjQ2PgtBn11FGVjAHIRgaj9wf4Bvh; expires=Sun, 14 Nov 2027 02:23:40 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure",
+        "sentrysid=eyJ0ZXN0Y29va2llIjoid29ya2VkIiwiX25leHQiOiIvIn0:1xSPu8:CalxSLqyxzcLK4q6qPDmpLFbBxEmq7hv2QU-pQ9j6Cc; expires=Sun, 29 Nov 2026 02:23:40 GMT; HttpOnly; Max-Age=1209600; Path=/; Secure"
       ],
       "vary": "Accept-Language, Cookie",
       "x-content-type-options": "nosniff",
@@ -48,7 +48,7 @@
       "data": {
         "sentrysid": {
           "domain": "errors.data.gouv.fr",
-          "expires": "2026-08-23T03:03:34.000Z",
+          "expires": "2026-11-29T02:23:40.000Z",
           "httponly": true,
           "max-age": 1209600,
           "path": "/",
@@ -57,7 +57,7 @@
         },
         "sc": {
           "domain": "errors.data.gouv.fr",
-          "expires": "2027-08-08T03:03:34.000Z",
+          "expires": "2027-11-14T02:23:40.000Z",
           "max-age": 31449600,
           "path": "/",
           "port": null,
