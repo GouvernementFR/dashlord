@@ -3,36 +3,37 @@
     "algorithmVersion": 4,
     "grade": "B",
     "error": null,
-    "score": 70,
+    "score": 75,
     "statusCode": 200,
     "testsFailed": 2,
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 29 Jun 2026 11:39:52 GMT",
+      "date": "Mon, 26 Oct 2026 15:33:22 GMT",
       "content-language": "fr",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "vary": "Cookie",
+      "content-security-policy": "default-src 'self' 'unsafe-inline' *.youtube-nocookie.com gva.et-gv.fr bhog.justice.gouv.fr minjus.ent.et-gv.fr; script-src 'self' 'unsafe-inline' *.youtube-nocookie.com gva.et-gv.fr bhog.justice.gouv.fr minjus.ent.et-gv.fr; object-src 'none'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' 'unsafe-inline' data: *.youtube.com *.ytimg.com *.tile.openstreetmap.fr gva.et-gv.fr *.gva.et-gv.fr bhog.justice.gouv.fr *.bhog.justice.gouv.fr minjus.ent.et-gv.fr; media-src 'self' *.youtube.com *.mediatheque.justice.gouv.fr; frame-src 'self' *.youtube.com *.youtube-nocookie.com *.dailymotion.com player.vimeo.com *.stats.justice.gouv.fr; font-src 'self' 'unsafe-inline' data: fonts.googleapis.com fonts.gstatic.com ; connect-src 'self' 'unsafe-inline' *.tile.openstreetmap.fr; report-uri /report-csp-violation; upgrade-insecure-requests",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "last-modified": "Mon, 29 Jun 2026 11:39:52 GMT",
-      "etag": "W/\"1782733192\"",
-      "content-type": "text/html; charset=UTF-8",
+      "last-modified": "Mon, 26 Oct 2026 15:33:22 GMT",
+      "etag": "W/\"1793028802\"",
+      "content-type": "text/html; charset=utf-8",
       "x-url": "/",
       "x-host": "www.eng.justice.fr",
       "x-cacheable": "YES",
       "x-cache-ttl": "86400.000",
       "x-cache": "HIT",
-      "x-cache-ttl-remaining": "32496.793",
-      "x-cache-age": "53903",
-      "x-cache-hits": "613",
+      "x-cache-ttl-remaining": "48075.460",
+      "x-cache-age": "38324",
+      "x-cache-hits": "615",
       "cache-control": "max-age=120, public",
       "accept-ranges": "bytes",
-      "content-length": "8326",
+      "content-length": "8662",
       "set-cookie": [
         "ROUTEID=.route1; path=/; Domain=.eng.intranet.justice.gouv.fr; max-age=3600",
-        "mj_rsid=!nay50+M8x5jqLaVYN19vP6Mri/m+AQP4QysULSdo+/8nJRIpW29QjrdjmW8Z5lZgFn9Pk+cNj5qwwg==; path=/; Httponly"
+        "mj_rsid=!gVUufvI70XxfuNNb+JFnzeFafYHWoV8+WlkRp5jY4yIyxijX1xf8+Fca5uhICFKZAQzwR1qxWcZERw==; path=/; Httponly"
       ],
       "connection": "close"
     }
@@ -41,13 +42,94 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.youtube-nocookie.com",
+          "bhog.justice.gouv.fr",
+          "gva.et-gv.fr",
+          "minjus.ent.et-gv.fr"
+        ],
+        "script-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.youtube-nocookie.com",
+          "bhog.justice.gouv.fr",
+          "gva.et-gv.fr",
+          "minjus.ent.et-gv.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "fonts.googleapis.com"
+        ],
+        "img-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.bhog.justice.gouv.fr",
+          "*.gva.et-gv.fr",
+          "*.tile.openstreetmap.fr",
+          "*.youtube.com",
+          "*.ytimg.com",
+          "bhog.justice.gouv.fr",
+          "data:",
+          "gva.et-gv.fr",
+          "minjus.ent.et-gv.fr"
+        ],
+        "media-src": [
+          "'self'",
+          "*.mediatheque.justice.gouv.fr",
+          "*.youtube.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "*.dailymotion.com",
+          "*.stats.justice.gouv.fr",
+          "*.youtube-nocookie.com",
+          "*.youtube.com",
+          "player.vimeo.com"
+        ],
+        "font-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "data:",
+          "fonts.googleapis.com",
+          "fonts.gstatic.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "*.tile.openstreetmap.fr"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ],
+        "upgrade-insecure-requests": [
+          "'none'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
