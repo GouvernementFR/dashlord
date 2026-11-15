@@ -9,19 +9,23 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 09 Aug 2026 03:03:46 GMT",
+      "date": "Sun, 15 Nov 2026 02:23:23 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
       "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
       "referrer-policy": "same-origin",
+      "server-timing": "cfEdge;dur=31,cfOrigin;dur=0",
       "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=uFzcVgo_aUDIccMbGdUPB3a4mAATKICJvJPAQX5G3cI-1786244626.8641238-1.0.1.1-J1kSNMCPamVnVQHd40hhcufI4nSi3NOF0JGll5QU_bU7Hu9MKCgAvdEGxBD3NVPOCIXgUzHf3e7T1I4InhUmW7I9BwHjbcI3q5XCPeItSaETYYH5XZtllHW83a3guZ2x; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Sun, 09 Aug 2026 03:33:46 GMT"
+        "__cf_bm=RoUIwf1_YZMCs3bGmXoGvjbM2bjY7.pnvvTeDu9afr4-1794709403.563458-1.0.1.1-JqG49DuUlPnxh7rQa.xvR4BIbG3FxQKY_Gy5vgzepr2XAIzD0K8NOpKP9jPY76V2A_dmEAU37Z1p4I2.iqPM5D6l5pOJevMioc6x_W2xQUwqraPaLixOG7bPy.jWYA7p; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=tacct.ademe.fr; Expires=Sun, 15 Nov 2026 02:53:23 GMT"
       ],
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=K1lFA%2Fkq9oX9EY%2B5pOcUOcD8iF50RihRDc4U1bw17KpVZhwuIhfcXl0%2FS6ZlR1HsZwXISSk%2FiRiA99kCQbBwlCFX0hlUNdPOgOFPl%2FdGtRNq7Q6l3rE5P1cF0EN7oPZ4ag%3D%3D\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "server": "cloudflare",
-      "cf-ray": "a2838795eccbc38b-SJC"
+      "cf-ray": "a5aacb2c4cd0acdb-MSP",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -43,8 +47,8 @@
       "scoreModifier": 5,
       "data": {
         "__cf_bm": {
-          "domain": "ademe.fr",
-          "expires": "2026-08-09T03:33:46.000Z",
+          "domain": "tacct.ademe.fr",
+          "expires": "2026-11-15T02:53:23.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
