@@ -1,24 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "B+",
     "error": null,
-    "score": 75,
+    "score": 80,
     "statusCode": 200,
     "testsFailed": 1,
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 09 Aug 2026 03:04:23 GMT",
+      "date": "Sun, 15 Nov 2026 02:22:09 GMT",
       "server": "Apache",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "x-frame-options": "SAMEORIGIN",
       "referrer-policy": "strict-origin",
-      "permissions-policy": "microphone=(), accelerometer=(), ambient-light-sensor=(), battery =(), gyroscope=(), magnetometer=(), midi=(), payment=(), picture-in-picture=(), vibrate=(), vr=(), wake-lock=(), speaker=(self), fullscreen=(self)",
-      "access-control-allow-methods": "POST, GET",
-      "access-control-max-age": "1000",
-      "access-control-allow-headers": "x-requested-with, Content-Type, origin, authorization, accept, client-security-token, SOAPAction",
+      "permissions-policy": "camera=(), microphone=(), geolocation=(), accelerometer=(), gyroscope=(), magnetometer=(), midi=(), payment=(), usb=(), picture-in-picture=(), screen-wake-lock=(), xr-spatial-tracking=(), display-capture=(), fullscreen=(self)",
+      "content-security-policy": "frame-ancestors 'self';",
       "strict-transport-security": "max-age=63072000",
       "last-modified": "Thu, 13 Jul 2023 08:48:11 GMT",
       "etag": "\"16a2-6005a6463dda3\"",
@@ -32,13 +30,29 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -105,8 +119,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
