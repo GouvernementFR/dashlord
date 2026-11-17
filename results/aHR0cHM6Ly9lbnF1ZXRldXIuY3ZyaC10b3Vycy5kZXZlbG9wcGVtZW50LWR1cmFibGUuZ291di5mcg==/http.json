@@ -9,15 +9,15 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 11 Aug 2026 03:08:10 GMT",
+      "date": "Tue, 17 Nov 2026 02:28:25 GMT",
       "server": "nginx",
-      "strict-transport-security": "max-age=31536000",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "content-type": "text/html; charset=UTF-8",
       "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
       "pragma": "no-cache",
       "set-cookie": [
-        "PHPSESSID=716ef7b233a4c8bd3c04475103a0fd23; path=/; secure",
-        "SRV=0d626fbb-5871-416e-b903-35fb2f3d2a5b; path=/"
+        "PHPSESSID=c2dfceb140280e7333937b338a3e9fdb; path=/; secure",
+        "SRV=0c088678-341a-40a6-9bb4-f4d38d080fb4; path=/"
       ],
       "vary": "Accept-Encoding",
       "cache-control": "no-store, no-cache, must-revalidate",
@@ -67,12 +67,15 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "http://enqueteur.cvrh-tours.developpement-durable.gouv.fr/",
+      "destination": "https://enqueteur.cvrh-tours.developpement-durable.gouv.fr/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://enqueteur.cvrh-tours.developpement-durable.gouv.fr/",
+        "https://enqueteur.cvrh-tours.developpement-durable.gouv.fr/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -88,9 +91,9 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
-      "maxAge": 31536000,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
