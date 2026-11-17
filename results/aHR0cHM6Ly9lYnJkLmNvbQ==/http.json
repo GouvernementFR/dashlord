@@ -9,34 +9,32 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "cteonnt-length": "143806",
-      "x-xss-protection": "1; mode=block",
+      "cteonnt-length": "144866",
       "content-security-policy": "img-src 'self' https: data: *.ebrd.com ;, frame-ancestors 'self' ;",
       "permissions-policy": "camera=(), geolocation=(), bluetooth=(), gyroscope=(), microphone=(), payment=(),  usb=(), xr-spatial-tracking=(), idle-detection=(), hid=(), serial=()",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "reporting-endpoints": "csp-endpoint=\"https://csp-rep.ebrd-microsites.com/report/xJLEQhH6\"",
+      "content-security-policy-report-only": "default-src 'self'; script-src 'report-sample' 'self' 'unsafe-eval' 'unsafe-inline' https://info.ebrd.com https://*.mktoweb.com https://www.gstatic.com https://munchkin.marketo.net https://assets.adobedtm.com https://www.recaptcha.net/recaptcha/api.js https://mdb-dashboard-widget.vercel.app/widget.js https://*.kaltura.com https://app.everviz.com https://universal-editor-service.adobe.io; style-src 'report-sample' 'self' 'unsafe-inline' https://info.ebrd.com https://maxcdn.bootstrapcdn.com https://*.mktoweb.com https://app.everviz.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://*.mktoutil.com https://*.ebrd.com https://www.recaptcha.net https://*.112.2o7.net https://dpm.demdex.net https://*.omtrdc.net https://api.ipify.org https://mdb-dashboard-widget.vercel.app https://*.mktoresp.com https://*.kaltura.com; font-src 'self' https://maxcdn.bootstrapcdn.com https://*.kaltura.com https://app.everviz.com; frame-src 'self' https://www.youtube.com https://*.mktoweb.com https://www.recaptcha.net https://ebrd.demdex.net; img-src 'self' data: https://dev.day.com https://dpm.demdex.net https://cm.everesttech.net https://*.112.2o7.net https://*.kaltura.com https://mdb-dashboard-widget.vercel.app; manifest-src 'self'; media-src 'self' data: blob: https://*.kaltura.com; worker-src 'self' blob:; block-all-mixed-content; upgrade-insecure-requests;report-uri https://csp-rep.ebrd-microsites.com/report/xJLEQhH6; report-to csp-endpoint",
+      "x-permitted-cross-domain-policies": "none",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
       "x-frame-options": "SAMEORIGIN",
       "x-vhost": "www.ebrd.com",
       "x-forwarded-host": "www.ebrd.com",
       "content-type": "text/html;charset=utf-8",
       "x-content-type-options": "nosniff",
       "accept-ranges": "bytes",
-      "age": "586",
-      "date": "Sun, 09 Aug 2026 03:07:34 GMT",
-      "x-served-by": "cache-lga21989-LGA",
+      "date": "Tue, 17 Nov 2026 02:27:29 GMT",
+      "age": "892",
+      "x-served-by": "cache-bur-kbur8200089-BUR",
       "x-cache": "HIT",
-      "x-timer": "S1786244854.084501,VS0,VS0,VE2",
+      "x-timer": "S1794882450.685395,VS0,VS0,VE8",
       "vary": "Accept-Encoding,Origin",
       "connection": "close",
-      "set-cookie": [
-        "waf_mgt_id=AAA79e53ajswFA4AAAAAADubZiQFBAMM6_UzO7gHJdt0w6LDhUDEQ9U4dWIHBP7xOw==evJ3ag==yiD20iDoQGm3ixo5oTqwz3cWpkw=; Domain=.ebrd.com; Path=/",
-        "waf_mgt_id_.ebrd.com_%2F_wat=AAAAAAWpJ7gA-KC2WuIJuIY4TxEeM--lRRmCXg_AsDt6iBWXT9CQ5j6dA0di4LR8HYp1_s3qUtx77iDeUGQTQ5H1oXR3&; Domain=.ebrd.com; Path=/"
-      ],
       "x-cache-control-orig": "max-age=900, s-maxage=900, stale-while-revalidate=300, stale-if-error=300",
       "cache-control": "max-age=3, must-revalidate, private",
-      "x-expires-orig": "Sun, 09 Aug 2026 03:02:47 GMT",
+      "x-expires-orig": "Tue, 17 Nov 2026 01:46:31 GMT",
       "expires": "Mon, 26 Jul 1997 05:00:00 GMT",
-      "etag": "\"b791be-764e5a0cdbd7\"",
+      "etag": "\"e116d6-23dbdeac8506\"",
       "transfer-encoding": "chunked"
     }
   },
@@ -81,19 +79,7 @@
       "result": "cookies-without-secure-flag-but-protected-by-hsts",
       "scoreModifier": -5,
       "data": {
-        "affinity": {
-          "domain": "ebrd.com",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        },
         "waf_mgt_id": {
-          "domain": "ebrd.com",
-          "path": "/",
-          "port": null
-        },
-        "waf_mgt_id_.ebrd.com_%2F_wat": {
           "domain": "ebrd.com",
           "path": "/",
           "port": null
@@ -136,10 +122,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=63072000; includeSubDomains; preload",
       "includeSubDomains": true,
-      "maxAge": 31536000,
-      "preload": false,
+      "maxAge": 63072000,
+      "preload": true,
       "preloaded": false
     },
     "subresource-integrity": {
