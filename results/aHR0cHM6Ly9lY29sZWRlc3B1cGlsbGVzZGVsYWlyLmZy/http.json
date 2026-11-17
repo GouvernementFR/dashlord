@@ -1,22 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "D",
     "error": null,
-    "score": 10,
+    "score": 30,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 09 Aug 2026 02:47:25 GMT",
+      "date": "Tue, 17 Nov 2026 02:05:16 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "Accept-Encoding",
-      "last-modified": "Sun, 09 Aug 2026 01:24:58 GMT",
+      "last-modified": "Mon, 16 Nov 2026 22:20:48 GMT",
       "cache-control": "public, max-age=0",
-      "expires": "Sun, 09 Aug 2026 03:07:10 GMT",
+      "expires": "Tue, 17 Nov 2026 02:27:37 GMT",
       "server": "o2switch-PowerBoost-v3"
     }
   },
@@ -49,15 +49,16 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://ecoledespupillesdelair.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://ecoledespupillesdelair.fr/",
+      "redirects": true,
       "route": [
-        "http://ecoledespupillesdelair.fr/"
+        "http://ecoledespupillesdelair.fr/",
+        "https://ecoledespupillesdelair.fr/"
       ],
-      "statusCode": 503
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
