@@ -1,34 +1,22 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "B",
     "error": null,
-    "score": 45,
-    "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 75,
+    "statusCode": 403,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Tue, 11 Aug 2026 03:06:50 GMT",
-      "server": "Apache",
-      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-      "cache-control": "no-cache, must-revalidate",
-      "content-language": "fr",
-      "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
-      "x-content-type-options": "nosniff, nosniff",
-      "x-generator": "Drupal 7 (https://www.drupal.org)",
-      "link": "<https://www.ecrins-parcnational.fr/parc-national-des-ecrins>; rel=\"canonical\",<https://www.ecrins-parcnational.fr/node/1>; rel=\"shortlink\"",
-      "ws-security": "0909",
-      "permissions-policy": "interest-cohort=()",
+      "x-content-type-options": "nosniff",
       "referrer-policy": "strict-origin-when-cross-origin",
-      "strict-transport-security": "max-age=63072000",
-      "upgrade": "h2,h2c",
-      "connection": "Upgrade, close",
-      "vary": "Accept-Encoding",
-      "access-control-allow-origin": "*",
-      "x-xss-protection": "1; mode=block",
-      "content-length": "14523",
-      "content-type": "text/html; charset=utf-8"
+      "strict-transport-security": "max-age=31536000",
+      "x-frame-options": "SAMEORIGIN",
+      "content-length": "2206",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Thu, 19 Nov 2026 02:26:42 GMT",
+      "connection": "close"
     }
   },
   "tests": {
@@ -54,23 +42,22 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-public-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "*"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://www.ecrins-parcnational.fr/",
+      "destination": "https://ecrins-parcnational.fr/",
       "redirects": true,
       "route": [
         "http://ecrins-parcnational.fr/",
-        "https://ecrins-parcnational.fr/",
-        "https://www.ecrins-parcnational.fr/"
+        "https://ecrins-parcnational.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
@@ -86,37 +73,32 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=63072000",
+      "data": "max-age=31536000",
       "includeSubDomains": false,
-      "maxAge": 63072000,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://www.googletagmanager.com/gtag/js?id=UA-7988554-2": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-header-invalid",
-      "scoreModifier": -5,
-      "data": "nosniff, nosniff"
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-header-invalid",
-      "scoreModifier": -20,
-      "data": "SAMEORIGIN, SAMEORIGIN"
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
