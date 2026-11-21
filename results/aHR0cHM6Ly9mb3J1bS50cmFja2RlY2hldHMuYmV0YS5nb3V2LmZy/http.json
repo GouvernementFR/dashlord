@@ -10,7 +10,7 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Thu, 13 Aug 2026 03:18:23 GMT",
+      "date": "Sat, 21 Nov 2026 02:22:24 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -21,13 +21,14 @@
       "x-permitted-cross-domain-policies": "none",
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-discourse-route": "list/latest",
+      "link": "<https://forum.trackdechets.beta.gouv.fr/latest.md>; rel=\"alternate\"; type=\"text/markdown\"",
       "cross-origin-opener-policy": "same-origin-allow-popups",
       "x-robots-tag": "noindex, nofollow",
       "cache-control": "no-cache, no-store",
-      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-n8b786vigp8MvVhRLJihhpktZ' 'strict-dynamic'; frame-ancestors 'self'; manifest-src 'self'",
+      "content-security-policy": "upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-geAOhZGTzCyGf9irP1PGZKF0p' 'strict-dynamic' 'wasm-unsafe-eval'; worker-src 'self' blob:; frame-ancestors 'self'; manifest-src 'self'",
       "x-discourse-cached": "skip",
-      "x-request-id": "95f65497-fc4d-425a-80fb-cc67d962f003",
-      "x-runtime": "0.141531",
+      "x-request-id": "908fda1c-3571-4c01-8eaf-1136797f97c8",
+      "x-runtime": "0.212755",
       "x-discourse-trackview": "1",
       "strict-transport-security": "max-age=31536000"
     }
@@ -49,8 +50,13 @@
           "'none'"
         ],
         "script-src": [
-          "'nonce-n8b786vigp8mvvhrljihhpktz'",
-          "'strict-dynamic'"
+          "'nonce-geaohzgtzcygf9irp1pgzkf0p'",
+          "'strict-dynamic'",
+          "'wasm-unsafe-eval'"
+        ],
+        "worker-src": [
+          "'self'",
+          "blob:"
         ],
         "frame-ancestors": [
           "'self'"
