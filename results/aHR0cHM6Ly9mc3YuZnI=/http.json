@@ -1,18 +1,18 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
       "cache-control": "s-maxage=31536000",
       "content-type": "text/html; charset=utf-8",
-      "date": "Thu, 13 Aug 2026 03:19:06 GMT",
-      "etag": "\"qt61pzefe0p5p\"",
+      "date": "Sat, 21 Nov 2026 02:22:29 GMT",
+      "etag": "\"52m2302l5no2t\"",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-nextjs-cache": "HIT",
       "x-nextjs-prerender": "1, 1",
@@ -51,15 +51,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://fsv.fr/",
       "redirects": true,
-      "route": [
-        "http://fsv.fr/",
-        "https://fsv.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -74,7 +71,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
