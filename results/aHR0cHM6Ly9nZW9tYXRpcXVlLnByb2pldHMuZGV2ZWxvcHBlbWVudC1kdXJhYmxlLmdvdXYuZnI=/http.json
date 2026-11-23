@@ -1,1 +1,135 @@
-{"error":"Site did respond with an unexpected HTTP status code 503."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "F",
+    "error": null,
+    "score": 15,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Mon, 23 Nov 2026 02:33:27 GMT",
+      "server": "Apache",
+      "content-type": "text/html; charset=utf-8",
+      "status": "200 OK",
+      "cache-control": "no-store",
+      "vary": "Accept,X-Requested-With,User-Agent",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "1; mode=block",
+      "x-request-id": "e2e33594-fa24-4c88-b9d5-972454d22fb3",
+      "x-download-options": "noopen",
+      "etag": "W/\"2f92b5ef72db4c59cccd4e9070e64d08\"",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "set-cookie": [
+        "_redmine_session=eFFDM3dDd0ZxMEEvbk9SRWF5K0ZOREhoL1pNenFvZUNXRnVRU0pBKzNyR3Q0NmtQWnpUc3VoanZ1MS9PWlEvTTNtczdlOEdBdDdWVk5vdFZha0lGTndxRklJMTQ1cDV0Y1hldUVWbi9xbU5LeHd1NnFwZEpuc29laDZ6bnZOeTdhQ01VTjlHMW00RFRJb0JJYk5VRmNNazRPdUc3UVM1UnZvd1lxODRQcjJ6a09kMm0yNUxqTFhBU0tuWFlqL0taLS1wU2FzaW1YbmJ5QkF1WFVPR3dpc2pBPT0%3D--afcf4a3af5bb2c114415f3376d5dd4a48d290ef6; path=/; httponly; samesite=lax"
+      ],
+      "via": "1.1 geomatique.projets.developpement-durable.gouv.fr",
+      "content-length": "3157",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-session-without-secure-flag",
+      "scoreModifier": -40,
+      "data": {
+        "_redmine_session": {
+          "domain": "geomatique.projets.developpement-durable.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "lax"
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://geomatique.projets.developpement-durable.gouv.fr/login?back_url=https%3A%2F%2Fgeomatique.projets.developpement-durable.gouv.fr%2F",
+      "redirects": true,
+      "route": [
+        "http://geomatique.projets.developpement-durable.gouv.fr/",
+        "https://geomatique.projets.developpement-durable.gouv.fr/",
+        "http://geomatique.projets.developpement-durable.gouv.fr/login?back_url=https%3A%2F%2Fgeomatique.projets.developpement-durable.gouv.fr%2F",
+        "https://geomatique.projets.developpement-durable.gouv.fr/login?back_url=https%3A%2F%2Fgeomatique.projets.developpement-durable.gouv.fr%2F"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-not-implemented",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
