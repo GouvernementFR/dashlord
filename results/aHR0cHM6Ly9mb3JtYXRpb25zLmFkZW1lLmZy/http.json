@@ -1,69 +1,45 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "F",
     "error": null,
-    "score": 45,
+    "score": 20,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 15 Aug 2026 02:40:39 GMT",
+      "date": "Mon, 23 Nov 2026 02:32:42 GMT",
       "content-type": "text/html;charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "no-store, must-revalidate, max-age=0",
       "content-language": "fr",
-      "content-security-policy": "frame-src 'self'; frame-ancestors 'self' ; object-src 'none';",
       "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
       "server": "cloudflare",
+      "server-timing": "intid;desc=158f2354b5c13c43",
       "set-cookie": [
-        "AUTH_SESSION_ID=OHlqem5aTTFPZHRCWHNYUENBQ1RKUENzLjB5MTBMWk5RZm03VlJ4R0lwcEROVW01bmxZN2tJTVFPcHpJX2F2T3VrVDlPdGtobmFRLTR5S1RDQ29nZHo5R1BsZmE2LUZRNmJLX2prMXRTN1czS2tB.prod-fa-keycloakx-1-2552;Version=1;Path=/auth/realms/master/;Secure;HttpOnly;SameSite=None",
-        "KC_AUTH_SESSION_HASH=\"gWN3nlrmWJpEael8xi0oOfC9/o88VvWl1oliqr98YPE\";Version=1;Path=/auth/realms/master/;Max-Age=60;Secure;SameSite=None"
+        "AUTH_SESSION_ID=RFN2cjY3SGRoR3dXTjRsMW14VW9TQU5YLjhpZElpeHczcHRYNVczc0w3b0NkcDVWXzh1ZWVjU0IyVTliSDI2QzdVT2VoeFg3dER5Vkh0ZVlKZVd0dm5rakpVdnNZQlJNRmw3VmtOR3I4SENZVDhB.prod-fa-keycloakx-2-18522;Version=1;Path=/auth/realms/master/;Secure;HttpOnly;SameSite=None",
+        "KC_AUTH_SESSION_HASH=\"4k4k4WAlr6anUQ1apdmJ8zun3OTWcfsde5QN/cL4lrhW2J2U2ahJi/0rYqbeusxl\";Version=1;Path=/auth/realms/master/;Max-Age=60;Secure;SameSite=None"
       ],
       "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
-      "x-frame-options": "SAMEORIGIN",
-      "x-robots-tag": "none",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a2b4d5f47b3228fe-MSP"
+      "cf-ray": "a5ecc3ccacd0eb22-SJC"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "frame-src": [
-          "'self'"
-        ],
-        "frame-ancestors": [
-          "'self'"
-        ],
-        "object-src": [
-          "'none'"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": false
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -73,12 +49,10 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-08-15T03:10:37.000Z",
+          "expires": "2026-11-23T03:02:41.000Z",
           "httponly": true,
           "path": "/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
+          "port": null
         },
         "__Host-PHPSESSID": {
           "domain": "academie.ademe.fr",
@@ -127,13 +101,14 @@
       "pass": false,
       "result": "redirection-off-host-from-http",
       "scoreModifier": -5,
-      "destination": "https://moncompte.ademe.fr/auth/realms/master/protocol/saml?SAMLRequest=fZJPb%2BIwEMW%2FSuR7cAhNCBYg0aKqSN1tBGwPe1kNyaRY8p%2Bsx%2Bm2375OKCp7KCdL43nzm%2Fc0cwKtWrHq%2FNFs8W%2BH5KM3rQyJ4WPBOmeEBZIkDGgk4SuxW%2F14FOkoEa2z3lZWsQvJdQUQofPSGhZt1gv2p8lvimlVZFkONWAO0MwOkCZFdsiKWT3JkyIfTydNPZ6y6BkdBeWChUFBTtThxpAH40MpSfM4KeJxtk9ScZOIyew3i9bBjTTgB9XR%2B5YE59qayurW4whq1DhqHIfgnjsEpYlrII%2BOn63x3lNPK8Pq8hUXzLsOWbQ6G7mzhjqNbofuVVb4a%2Fv4hYKqR8gLEkndKuxnhj3qTuGoPbYDg9PpTWOoaKgOIhaVn5vcSlNL83I938OpicTDfl%2FG5dNuz5bzfqwY8nLLb1eb88u2%2BeksfgbAZl1aJav36N46Df46v6%2FIOm6GVuEdGJJofMhLKfvvLmTszxHy5Qn5%2F%2FEtPwA%3D&RelayState=https%3A%2F%2Facademie.ademe.fr%2Fback%2Fconncheck.php%3Fredirect%3Dhttps%253A%252F%252Facademie.ademe.fr%252Faccueil&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=z3hSPzst0UfWXjWQ2WCtMFnfRRKCvx55xtHrrdGo93rX5a0njqvPqvoQhJLgA0oRwzmB8ciulsCdNISNFG%2Bn0fo33xwEJ126qDGOVaA%2FULNuSZyVq1Wp6atHL1KZIYtkhLB9qFXQ9s5Ux%2BQmZVXq6vjGgSllNDItJZlLdM1OKfd2qx1ZrhjbPy9%2BTSsqsI8Sab0%2BXbcOAoTZRzeo9GK6uKnGTYAtBXem19evO0dkWauRlMtiqP%2BBPSpwbx%2B%2FQk8G9bJwjiDXtHqUwmkH7HPcf26%2FxQS1BnSv3EBZBJ9sBp0iRU%2FKPTj4p8C9mE9qdhx3EbnBmY75H%2BVRMNVPbaf6nA%3D%3D",
+      "destination": "https://moncompte.ademe.fr/auth/realms/master/protocol/saml?SAMLRequest=fZLNTsMwEIRfJfI9cZw%2FtVZTqdADlYqI2sCBC3KdhVqK7eB1Kh6fJKWiHOjJ8nq%2FnZmVFyh02%2FFV749mB589oA%2B%2BdGuQTw8l6Z3hVqBCboQG5F7y%2Fepxy5Mo5p2z3krbkivkNiEQwXllDQk265K8xYcsh4yxfF7IJi%2FmLAU2m7F8lslGNKzJMyiYzJI4JcELOBzIkgyDBhyxh41BL4wfSnFShIyFSVrHCU8TnrFXEqyHNMoIP1FH7zvklGprpNWdh0g0oCF6d1QM6akD0WqkWqAHRy%2FR6JhpVKsG6%2BoEJfGuBxKsLkHurcFeg9uDOykJz7vtr5SQo4S6UkKluxbGmYOPpm8h6o7dpEHxfCahkDhVJ4gE1Y%2BTO2UaZT5u7%2FdwbkL%2BUNdVWD3ta7JcjGP5tC%2B3%2FNfagl63nW9%2F%2F8XyGw%3D%3D&RelayState=https%3A%2F%2Facademie.ademe.fr%2Fback%2Fconncheck.php%3Fredirect%3Dhttps%253A%252F%252Facademie.ademe.fr%252Faccueil&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=pdqlMTXGsx7uUhPv4g3VL634EjLX8jZC2zELcR9W8Y9dwJZk3D7tJQyOqbJ0h8raBdTkNrh%2FAx6tGjoIfwCPf7AFKwONTBB7uWUfzwu6BAmL8UGmmVBW%2BSsd4E07AlICXe0ikzhd7LM3O%2FdYYjOQgWmcrb8S9tC9nr7%2F81RRmFgSB5yj8ay1IZLSD4R%2FSTj%2BTI17%2BVsD2akSGexyCRlA2QFsqAmkyk37EiKyjMISiPeBlbUvslTxPJkGPmMQ0NwsL21inpry4ioyPi0%2FAKByV6qsrCIlZqqYr6pT%2BGjo5RVYtpOhXUsDkgEKNOSEvrXwdeYbAgJSh0QVvNM43xJvQA%3D%3D",
       "redirects": true,
       "route": [
         "http://formations.ademe.fr/",
         "https://academie.ademe.fr/",
+        "http://academie.ademe.fr/accueil",
         "https://academie.ademe.fr/accueil",
-        "https://moncompte.ademe.fr/auth/realms/master/protocol/saml?SAMLRequest=fZJPb%2BIwEMW%2FSuR7cAhNCBYg0aKqSN1tBGwPe1kNyaRY8p%2Bsx%2Bm2375OKCp7KCdL43nzm%2Fc0cwKtWrHq%2FNFs8W%2BH5KM3rQyJ4WPBOmeEBZIkDGgk4SuxW%2F14FOkoEa2z3lZWsQvJdQUQofPSGhZt1gv2p8lvimlVZFkONWAO0MwOkCZFdsiKWT3JkyIfTydNPZ6y6BkdBeWChUFBTtThxpAH40MpSfM4KeJxtk9ScZOIyew3i9bBjTTgB9XR%2B5YE59qayurW4whq1DhqHIfgnjsEpYlrII%2BOn63x3lNPK8Pq8hUXzLsOWbQ6G7mzhjqNbofuVVb4a%2Fv4hYKqR8gLEkndKuxnhj3qTuGoPbYDg9PpTWOoaKgOIhaVn5vcSlNL83I938OpicTDfl%2FG5dNuz5bzfqwY8nLLb1eb88u2%2BeksfgbAZl1aJav36N46Df46v6%2FIOm6GVuEdGJJofMhLKfvvLmTszxHy5Qn5%2F%2FEtPwA%3D&RelayState=https%3A%2F%2Facademie.ademe.fr%2Fback%2Fconncheck.php%3Fredirect%3Dhttps%253A%252F%252Facademie.ademe.fr%252Faccueil&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=z3hSPzst0UfWXjWQ2WCtMFnfRRKCvx55xtHrrdGo93rX5a0njqvPqvoQhJLgA0oRwzmB8ciulsCdNISNFG%2Bn0fo33xwEJ126qDGOVaA%2FULNuSZyVq1Wp6atHL1KZIYtkhLB9qFXQ9s5Ux%2BQmZVXq6vjGgSllNDItJZlLdM1OKfd2qx1ZrhjbPy9%2BTSsqsI8Sab0%2BXbcOAoTZRzeo9GK6uKnGTYAtBXem19evO0dkWauRlMtiqP%2BBPSpwbx%2B%2FQk8G9bJwjiDXtHqUwmkH7HPcf26%2FxQS1BnSv3EBZBJ9sBp0iRU%2FKPTj4p8C9mE9qdhx3EbnBmY75H%2BVRMNVPbaf6nA%3D%3D"
+        "https://moncompte.ademe.fr/auth/realms/master/protocol/saml?SAMLRequest=fZLNTsMwEIRfJfI9cZw%2FtVZTqdADlYqI2sCBC3KdhVqK7eB1Kh6fJKWiHOjJ8nq%2FnZmVFyh02%2FFV749mB589oA%2B%2BdGuQTw8l6Z3hVqBCboQG5F7y%2Fepxy5Mo5p2z3krbkivkNiEQwXllDQk265K8xYcsh4yxfF7IJi%2FmLAU2m7F8lslGNKzJMyiYzJI4JcELOBzIkgyDBhyxh41BL4wfSnFShIyFSVrHCU8TnrFXEqyHNMoIP1FH7zvklGprpNWdh0g0oCF6d1QM6akD0WqkWqAHRy%2FR6JhpVKsG6%2BoEJfGuBxKsLkHurcFeg9uDOykJz7vtr5SQo4S6UkKluxbGmYOPpm8h6o7dpEHxfCahkDhVJ4gE1Y%2BTO2UaZT5u7%2FdwbkL%2BUNdVWD3ta7JcjGP5tC%2B3%2FNfagl63nW9%2F%2F8XyGw%3D%3D&RelayState=https%3A%2F%2Facademie.ademe.fr%2Fback%2Fconncheck.php%3Fredirect%3Dhttps%253A%252F%252Facademie.ademe.fr%252Faccueil&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=pdqlMTXGsx7uUhPv4g3VL634EjLX8jZC2zELcR9W8Y9dwJZk3D7tJQyOqbJ0h8raBdTkNrh%2FAx6tGjoIfwCPf7AFKwONTBB7uWUfzwu6BAmL8UGmmVBW%2BSsd4E07AlICXe0ikzhd7LM3O%2FdYYjOQgWmcrb8S9tC9nr7%2F81RRmFgSB5yj8ay1IZLSD4R%2FSTj%2BTI17%2BVsD2akSGexyCRlA2QFsqAmkyk37EiKyjMISiPeBlbUvslTxPJkGPmMQ0NwsL21inpry4ioyPi0%2FAKByV6qsrCIlZqqYr6pT%2BGjo5RVYtpOhXUsDkgEKNOSEvrXwdeYbAgJSh0QVvNM43xJvQA%3D%3D"
       ],
       "statusCode": 200
     },
@@ -173,10 +148,10 @@
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
