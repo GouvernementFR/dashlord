@@ -1,35 +1,35 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "B+",
     "error": null,
-    "score": 75,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sat, 15 Aug 2026 02:40:44 GMT",
+      "date": "Mon, 23 Nov 2026 02:32:29 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
-      "server": "cloudflare",
-      "last-modified": "Fri, 14 Aug 2026 08:02:33 GMT",
-      "vary": "Accept-Encoding,User-Agent",
-      "set-cookie": [
-        "__cf_bm=i0DJiehnCIFVtMZo5TO1jD1DetcpNLVQwMgoKsV.V38-1786761643.78701-1.0.1.1-7ZL.hY8HRlsxew4_Iqb0Qts752EPdjCgrcy6EBC9sYN7HOpT78FT4yA0oOlnQSXB_0KcRuE8HXxxCtcWd2IST2X39k14ji7vFdiVA8hpIitYt5HE1NcOwPQcPxRjlDBH; HttpOnly; SameSite=None; Secure; Path=/; Domain=epargnonsnosressources.gouv.fr; Expires=Sat, 15 Aug 2026 03:10:44 GMT"
-      ],
-      "x-front": "TEMPLATEDEBIAN11",
-      "access-control-allow-origin": "https://epargnonsnosressources.gouv.fr",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "last-modified": "Thu, 19 Nov 2026 19:08:05 GMT",
       "x-frame-options": "SAMEORIGIN",
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block",
       "referrer-policy": "strict-origin-when-cross-origin",
       "permissions-policy": "accelerometer=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
-      "content-security-policy": "upgrade-insecure-requests",
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a2b4d611abad1585-IAD"
+      "content-security-policy": "upgrade-insecure-requests; frame-ancestors 'self'; object-src 'none'; base-uri 'self'",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "cache-control": "no-cache, must-revalidate",
+      "expires": "Sun, 22 Nov 2026 20:04:00 GMT",
+      "age": "23309",
+      "cf-cache-status": "HIT",
+      "vary": "accept-encoding",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=R8rkIackJxnNXHvQ3VQ27ECQGEOxiJQYigyN%2BuWypMxvF5YSIXvjrm%2BqlWaLR0jHVeKEq1%2F7Noy7EHZdoPkiywIvI%2FuFMO%2F5uuP7fE8Kkqq43ubXXTi%2BL8dvLKBew93J4ApEjw%2BWzcoaJMsUZJOZVg%3D%3D\"}]}",
+      "server": "cloudflare",
+      "cf-ray": "a5ecc382de81417a-IAD"
     }
   },
   "tests": {
@@ -41,14 +41,23 @@
       "data": {
         "upgrade-insecure-requests": [
           "'none'"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "base-uri": [
+          "'self'"
         ]
       },
       "http": true,
       "meta": false,
       "policy": {
-        "antiClickjacking": false,
+        "antiClickjacking": true,
         "defaultNone": false,
-        "insecureBaseUri": true,
+        "insecureBaseUri": false,
         "insecureFormAction": true,
         "insecureSchemeActive": false,
         "insecureSchemePassive": false,
@@ -56,34 +65,24 @@
         "unsafeEval": false,
         "unsafeInline": true,
         "unsafeInlineStyle": true,
-        "unsafeObjects": true
+        "unsafeObjects": false
       },
       "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions-and-samesite",
-      "scoreModifier": 5,
-      "data": {
-        "__cf_bm": {
-          "domain": "epargnonsnosressources.gouv.fr",
-          "expires": "2026-08-15T03:10:44.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "samesite": "none",
-          "secure": true
-        }
-      },
-      "sameSite": true
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "https://epargnonsnosressources.gouv.fr"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -120,15 +119,10 @@
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://tarteaucitron.io/load.js?domain=epargnonsnosressources.gouv.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
-          "crossorigin": null,
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
@@ -140,8 +134,8 @@
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
       "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
       "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
