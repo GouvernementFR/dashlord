@@ -1,43 +1,125 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "D+",
     "error": null,
-    "score": 30,
-    "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 40,
+    "statusCode": 403,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "server": "nginx",
-      "date": "Sat, 15 Aug 2026 02:40:41 GMT",
+      "date": "Mon, 23 Nov 2026 02:33:26 GMT",
       "content-type": "text/html; charset=UTF-8",
-      "content-length": "22133",
+      "transfer-encoding": "chunked",
       "connection": "close",
-      "x-powered-by": "PHP/8.2.33, PleskLin",
-      "vary": "User-Agent,Accept-Encoding,Referer",
-      "last-modified": "Fri, 14 Aug 2026 16:17:58 GMT"
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-45XdENU4cOrbXdpphRdgdT' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+      "server": "cloudflare",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"a5ecc4e54b5797f3\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "set-cookie": [
+        "__cf_bm=BcEwjHrSBBAsYRpsBx.Pa1egSbBbwL62z7lqTmu77JY-1795401206.612076-1.0.1.1-gHvnSnXXXxrQPyPXSWftmWeDDqUGKGYh75ufMWT.xKvC_z23_ve1N3XWKAL9fc989Duy5VgNp7wCebEYycoNZBKHu5vZfQTZB_E0.iRnNncH_87uQ6jK79L_KfOL0gcd; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=fresquedusol.com; Expires=Mon, 23 Nov 2026 03:03:26 GMT"
+      ],
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YlmSlTTJS3tyM%2Bb2kDOF2n23exvkpQzSGl%2FMrDz0U6PqSyKK8A%2FX7GUen%2BLyjlunhLJ%2BK5uoa2360k1USBGEAY4riL3Y%2BscFQL7JoOX5O%2FT1ltefZVP1FZULuI3mGVidaLd2\"}]}",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "cf-ray": "a5ecc4e54b5797f3-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
-      "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-45xdenu4corbxdpphrdgdt'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-not-found",
-      "scoreModifier": 0,
-      "data": null,
-      "sameSite": false
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "__cf_bm": {
+          "domain": "fresquedusol.com",
+          "expires": "2026-11-23T03:03:26.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
@@ -48,24 +130,23 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://fresquedusol.com/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://fresquedusol.com/",
+      "redirects": false,
       "route": [
-        "http://fresquedusol.com/",
-        "https://fresquedusol.com/"
+        "http://fresquedusol.com/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -88,25 +169,25 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
