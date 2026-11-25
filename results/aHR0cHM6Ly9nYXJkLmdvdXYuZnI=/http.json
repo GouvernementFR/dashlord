@@ -1,30 +1,35 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "F",
+    "grade": "B",
     "error": null,
-    "score": 0,
+    "score": 75,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:52:37 GMT",
-      "cache-control": "must-revalidate, no-cache, private",
-      "pragma": "no-cache",
-      "expires": "Mon, 17 Aug 2026 00:52:37 GMT",
-      "last-modified": "Mon, 17 Aug 2026 02:52:37 GMT",
-      "served-by": "www.gard.gouv.fr",
-      "content-language": "fr-FR",
-      "vary": "X-User-Hash,Accept-Encoding",
+      "date": "Wed, 25 Nov 2026 02:20:57 GMT",
+      "cache-control": "max-age=10800, public",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "permissions-policy": "accelerometer=(), autoplay=(), bluetooth=(), camera=(), fullscreen=self, geolocation=(), gyroscope=(), microphone=()",
+      "content-security-policy": "default-src 'self'; script-src https://*.gard.gouv.fr 'self' https://cdnjs.cloudflare.com https://snow.artifica.fr https://cdn.ckeditor.com https://*.interieur.gouv.fr 'sha256-5q4LN+Pb8O9R0pqtDNZU1N9Cdew/HwhcsRX4ou9xRK0=' 'sha256-1IrCP9b5qPENLpX0Oq9cMLk00pD6SczarJwuXqMGZS8=' 'sha256-CqIPL1QhzKPNIXZBSxSA7s3S3N4nqHCCKe5xdnA4T1o=' 'sha256-MguIPR6qNR8D3B+eAlK+bIRTZe8t3wkOY4B/56Me9FU=' 'sha256-vMed1meIy7R36iPOPy2jjJlqUwnxl+G5T9M86qL1D9U=' 'sha256-eNs2sVcJNkd/ZZushjLqX3m8LbOuPSjFmNgDAk4Z7GI=' 'unsafe-hashes' 'unsafe-eval' blob:; object-src 'none'; style-src 'self' 'unsafe-inline' https://snow.artifica.fr https://cdnjs.cloudflare.com; img-src 'self' data: https://snow.artifica.fr https://www.info.gouv.fr https://tile.openstreetmap.org https://cdnjs.cloudflare.com https://jedonnemonavis.numerique.gouv.fr; frame-src *; frame-ancestors 'self'; font-src 'self' https://snow.artifica.fr; connect-src 'self' https://snow.artifica.fr; report-uri /report-csp-violation",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=1000; includeSubDomains",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "last-modified": "Wed, 25 Nov 2026 02:21:39 GMT",
+      "etag": "\"1795573299-gzip\"",
+      "content-length": "17912",
       "content-type": "text/html; charset=utf-8",
-      "age": "0",
-      "x-cache": "Miss",
+      "age": "571",
       "accept-ranges": "bytes",
-      "set-cookie": [
-        "eZSESSID=ti688t97uha4tu1tdelfq8t3m1; path=/"
-      ],
-      "transfer-encoding": "chunked",
+      "x-cache": "HIT",
+      "x-cache-hits": "9",
       "connection": "close"
     }
   },
@@ -32,45 +37,106 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'sha256-1ircp9b5qpenlpx0oq9cmlk00pd6sczarjwuxqmgzs8='",
+          "'sha256-5q4ln+pb8o9r0pqtdnzu1n9cdew/hwhcsrx4ou9xrk0='",
+          "'sha256-cqipl1qhzkpnixzbsxsa7s3s3n4nqhccke5xdna4t1o='",
+          "'sha256-ens2svcjnkd/zzushjlqx3m8lboupsjfmngdak4z7gi='",
+          "'sha256-mguipr6qnr8d3b+ealk+birtze8t3wkoy4b/56me9fu='",
+          "'sha256-vmed1meiy7r36ipopy2jjjlquwnxl+g5t9m86ql1d9u='",
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "blob:",
+          "https://*.gard.gouv.fr",
+          "https://*.interieur.gouv.fr",
+          "https://cdn.ckeditor.com",
+          "https://cdnjs.cloudflare.com",
+          "https://snow.artifica.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdnjs.cloudflare.com",
+          "https://snow.artifica.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://cdnjs.cloudflare.com",
+          "https://jedonnemonavis.numerique.gouv.fr",
+          "https://snow.artifica.fr",
+          "https://tile.openstreetmap.org",
+          "https://www.info.gouv.fr"
+        ],
+        "frame-src": [
+          "*"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "https://snow.artifica.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://snow.artifica.fr"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
-      "pass": false,
-      "result": "cookies-session-without-secure-flag",
-      "scoreModifier": -40,
-      "data": {
-        "eZSESSID": {
-          "domain": "www.gard.gouv.fr",
-          "path": "/",
-          "port": null
-        }
-      },
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "null"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
       "destination": "https://www.gard.gouv.fr/",
       "redirects": true,
       "route": [
         "http://gard.gouv.fr/",
-        "http://www.gard.gouv.fr/",
         "https://www.gard.gouv.fr/"
       ],
       "statusCode": 200
@@ -78,20 +144,20 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=1000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 1000,
       "preload": false,
       "preloaded": false
     },
@@ -104,17 +170,17 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
