@@ -5,15 +5,15 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:53:00 GMT",
+      "date": "Wed, 25 Nov 2026 02:32:22 GMT",
       "cache-control": "must-revalidate, no-cache, private",
       "pragma": "no-cache",
-      "expires": "Mon, 17 Aug 2026 00:53:00 GMT",
-      "last-modified": "Mon, 17 Aug 2026 02:53:00 GMT",
+      "expires": "Wed, 25 Nov 2026 00:32:23 GMT",
+      "last-modified": "Wed, 25 Nov 2026 02:32:23 GMT",
       "served-by": "www.hautes-alpes.gouv.fr",
       "content-language": "fr-FR",
       "vary": "X-User-Hash,Accept-Encoding",
@@ -22,7 +22,7 @@
       "x-cache": "Miss",
       "accept-ranges": "bytes",
       "set-cookie": [
-        "eZSESSID=il8iq1s2t9so3led21u0olq937; path=/"
+        "eZSESSID=pneq27dafhjkh3l7hnkh6t35l2; path=/"
       ],
       "transfer-encoding": "chunked",
       "connection": "close"
@@ -63,17 +63,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
-      "destination": "https://www.hautes-alpes.gouv.fr/",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": null,
       "redirects": true,
-      "route": [
-        "http://hautes-alpes.gouv.fr/",
-        "http://www.hautes-alpes.gouv.fr/",
-        "https://www.hautes-alpes.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
