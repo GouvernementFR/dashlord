@@ -1,19 +1,20 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C-",
+    "grade": "C",
     "error": null,
-    "score": 45,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:52:47 GMT",
+      "date": "Wed, 25 Nov 2026 02:33:13 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "link": "<https://www.francecompetences.fr/wp-json/>; rel=\"https://api.w.org/\", <https://www.francecompetences.fr/wp-json/wp/v2/pages/270>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.francecompetences.fr/>; rel=shortlink",
+      "x-content-type-options": "nosniff",
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
   },
@@ -104,10 +105,10 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
