@@ -1,40 +1,104 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "D+",
     "error": null,
-    "score": 30,
-    "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "score": 40,
+    "statusCode": 403,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:53:45 GMT",
+      "date": "Wed, 25 Nov 2026 02:33:12 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
+      "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cf-mitigated": "challenge",
+      "content-security-policy": "default-src 'none'; script-src 'nonce-p1O0c2BlrbebdxWghvuV7Z' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
       "server": "cloudflare",
-      "x-powered-by": "PHP/8.2.33, PleskLin",
-      "vary": "User-Agent,Accept-Encoding,Referer",
-      "last-modified": "Sun, 16 Aug 2026 20:30:05 GMT",
+      "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+      "cross-origin-embedder-policy": "require-corp",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "origin-agent-cluster": "?1",
+      "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+      "referrer-policy": "same-origin",
+      "server-timing": "chlray;desc=\"a5fd3f4f2fb3c17b\"",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
       "set-cookie": [
-        "__cf_bm=BeMaRLF79rUrb0DHBg4IrxCCMmTDI8xZ25PrIAt8CKE-1786935224.926932-1.0.1.1-f8.RySyTm1fUndJT_3BXaFJU281xc1f.6iq4yNzFgXNQj_h_l0ozXhiK_DYAOx._B94QAsX7VrK1WHvMdqrTAs62q0XVR.UbrdZinOHrce08rntYyHV.FKadq3e6Iw40; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Mon, 17 Aug 2026 03:23:45 GMT"
+        "__cf_bm=CRNYdOlKhHiVYuzjpI9RqhY13JIWIwpDD_.Ky5E_hqo-1795573992.827154-1.0.1.1-lWOb05lVuHHN7nU7GXCzkyLcwTaJ6hRwP79Zr4YmChfrqCatgQjcgmQlQlUePiBsplp6sBySV7gxqq_RN5uq79m.BqgNSJeLB4DwErMboFbwamrvv6aoirG6qyp2.5Yf; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=ademe.fr; Expires=Wed, 25 Nov 2026 03:03:12 GMT"
       ],
-      "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a2c563e3c8bbedc5-ORD"
+      "cf-ray": "a5fd3f4f2fb3c17b-IAD"
     }
   },
   "tests": {
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
-      "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "result": "csp-implemented-with-insecure-scheme",
+      "scoreModifier": -20,
+      "data": {
+        "default-src": [
+          "'none'"
+        ],
+        "script-src": [
+          "'nonce-p1o0c2blrbebdxwghvuv7z'",
+          "'unsafe-eval'",
+          "https://challenges.cloudflare.com"
+        ],
+        "script-src-attr": [
+          "'none'"
+        ],
+        "style-src": [
+          "'unsafe-inline'"
+        ],
+        "img-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://challenges.cloudflare.com"
+        ],
+        "frame-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "child-src": [
+          "'self'",
+          "blob:",
+          "https://challenges.cloudflare.com"
+        ],
+        "worker-src": [
+          "blob:"
+        ],
+        "form-action": [
+          "http:",
+          "https:"
+        ],
+        "base-uri": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": true,
+      "policy": {
+        "antiClickjacking": false,
+        "defaultNone": true,
+        "insecureBaseUri": false,
+        "insecureFormAction": true,
+        "insecureSchemeActive": true,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 2
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -44,7 +108,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-08-17T03:23:45.000Z",
+          "expires": "2026-11-25T03:03:12.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -63,24 +127,23 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://experimentationsurbaines.ademe.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://experimentationsurbaines.ademe.fr/",
+      "redirects": false,
       "route": [
-        "http://experimentationsurbaines.ademe.fr/",
-        "https://experimentationsurbaines.ademe.fr/"
+        "http://experimentationsurbaines.ademe.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -103,25 +166,25 @@
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-sameorigin-or-deny",
+      "scoreModifier": 0,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
       "pass": true,
-      "result": "corp-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "corp-implemented-with-same-origin",
+      "scoreModifier": 10,
+      "data": "same-origin",
+      "http": true,
       "meta": false
     }
   }
