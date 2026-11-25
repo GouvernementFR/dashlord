@@ -9,11 +9,11 @@
     "testsPassed": 4,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:54:15 GMT",
+      "date": "Wed, 25 Nov 2026 02:31:55 GMT",
       "cache-control": "must-revalidate, no-cache, private",
       "pragma": "no-cache",
-      "expires": "Mon, 17 Aug 2026 00:54:15 GMT",
-      "last-modified": "Mon, 17 Aug 2026 02:54:15 GMT",
+      "expires": "Wed, 25 Nov 2026 00:31:56 GMT",
+      "last-modified": "Wed, 25 Nov 2026 02:31:56 GMT",
       "served-by": "www.haute-saone.gouv.fr",
       "content-language": "fr-FR",
       "vary": "X-User-Hash,Accept-Encoding",
@@ -22,7 +22,7 @@
       "x-cache": "Miss",
       "accept-ranges": "bytes",
       "set-cookie": [
-        "eZSESSID=fntcj8agmjv6305u64ilmq94o7; path=/"
+        "eZSESSID=djvmgvu6r426gqi4fugpal9qe6; path=/"
       ],
       "transfer-encoding": "chunked",
       "connection": "close"
@@ -57,9 +57,9 @@
     "cross-origin-resource-sharing": {
       "expectation": "cross-origin-resource-sharing-not-implemented",
       "pass": true,
-      "result": "cross-origin-resource-sharing-implemented-with-restricted-access",
+      "result": "cross-origin-resource-sharing-not-implemented",
       "scoreModifier": 0,
-      "data": "null"
+      "data": null
     },
     "redirection": {
       "expectation": "redirection-to-https",
@@ -87,7 +87,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
