@@ -5,15 +5,15 @@
     "error": null,
     "score": 0,
     "statusCode": 200,
-    "testsFailed": 6,
-    "testsPassed": 4,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:54:05 GMT",
+      "date": "Wed, 25 Nov 2026 02:32:57 GMT",
       "cache-control": "must-revalidate, no-cache, private",
       "pragma": "no-cache",
-      "expires": "Mon, 17 Aug 2026 00:54:05 GMT",
-      "last-modified": "Mon, 17 Aug 2026 02:54:05 GMT",
+      "expires": "Wed, 25 Nov 2026 00:32:57 GMT",
+      "last-modified": "Wed, 25 Nov 2026 02:32:57 GMT",
       "served-by": "www.haute-vienne.gouv.fr",
       "content-language": "fr-FR",
       "vary": "X-User-Hash,Accept-Encoding",
@@ -21,10 +21,10 @@
       "age": "0",
       "x-cache": "Miss",
       "accept-ranges": "bytes",
+      "content-length": "15896",
       "set-cookie": [
-        "eZSESSID=kcn262iet443kac3ji1ugf5mv5; path=/"
+        "eZSESSID=sc0t12qjn0e1nkcvo3hq54rln7; path=/"
       ],
-      "transfer-encoding": "chunked",
       "connection": "close"
     }
   },
@@ -63,17 +63,13 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-not-to-https-on-initial-redirection",
-      "scoreModifier": -10,
-      "destination": "https://www.haute-vienne.gouv.fr/",
+      "pass": true,
+      "result": "redirection-not-needed-no-http",
+      "scoreModifier": 0,
+      "destination": "http://haute-vienne.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://haute-vienne.gouv.fr/",
-        "http://www.haute-vienne.gouv.fr/",
-        "https://www.haute-vienne.gouv.fr/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
