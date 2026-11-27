@@ -1,1 +1,195 @@
-{"error":"The site seems to be down."}
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 3,
+    "testsPassed": 7,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 26 Nov 2026 17:01:08 GMT",
+      "cache-control": "max-age=10800, public",
+      "x-drupal-dynamic-cache": "HIT",
+      "content-language": "fr",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+      "vary": "Cookie,Accept-Encoding",
+      "permissions-policy": "accelerometer=(), autoplay=(), bluetooth=(), camera=(), fullscreen=self, geolocation=(), gyroscope=(), microphone=()",
+      "content-security-policy": "default-src 'self'; script-src https://*.haute-garonne.gouv.fr 'self' https://cdnjs.cloudflare.com https://snow.artifica.fr https://cdn.ckeditor.com https://*.interieur.gouv.fr 'sha256-5q4LN+Pb8O9R0pqtDNZU1N9Cdew/HwhcsRX4ou9xRK0=' 'sha256-1IrCP9b5qPENLpX0Oq9cMLk00pD6SczarJwuXqMGZS8=' 'sha256-CqIPL1QhzKPNIXZBSxSA7s3S3N4nqHCCKe5xdnA4T1o=' 'sha256-MguIPR6qNR8D3B+eAlK+bIRTZe8t3wkOY4B/56Me9FU=' 'sha256-vMed1meIy7R36iPOPy2jjJlqUwnxl+G5T9M86qL1D9U=' 'sha256-eNs2sVcJNkd/ZZushjLqX3m8LbOuPSjFmNgDAk4Z7GI=' 'unsafe-hashes' 'unsafe-eval' blob:; object-src 'none'; style-src 'self' 'unsafe-inline' https://snow.artifica.fr https://cdnjs.cloudflare.com; img-src 'self' data: https://snow.artifica.fr https://www.info.gouv.fr https://tile.openstreetmap.org https://cdnjs.cloudflare.com https://jedonnemonavis.numerique.gouv.fr; frame-src *; frame-ancestors 'self'; font-src 'self' https://snow.artifica.fr; connect-src 'self' https://snow.artifica.fr; report-uri /report-csp-violation",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": "max-age=1000; includeSubDomains",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "last-modified": "Fri, 27 Nov 2026 02:22:46 GMT",
+      "etag": "\"1795746166-gzip\"",
+      "content-length": "15167",
+      "content-type": "text/html; charset=utf-8",
+      "age": "539",
+      "accept-ranges": "bytes",
+      "x-cache": "HIT",
+      "x-cache-hits": "7",
+      "connection": "close"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-eval",
+      "scoreModifier": -10,
+      "data": {
+        "default-src": [
+          "'self'"
+        ],
+        "script-src": [
+          "'self'",
+          "'sha256-1ircp9b5qpenlpx0oq9cmlk00pd6sczarjwuxqmgzs8='",
+          "'sha256-5q4ln+pb8o9r0pqtdnzu1n9cdew/hwhcsrx4ou9xrk0='",
+          "'sha256-cqipl1qhzkpnixzbsxsa7s3s3n4nqhccke5xdna4t1o='",
+          "'sha256-ens2svcjnkd/zzushjlqx3m8lboupsjfmngdak4z7gi='",
+          "'sha256-mguipr6qnr8d3b+ealk+birtze8t3wkoy4b/56me9fu='",
+          "'sha256-vmed1meiy7r36ipopy2jjjlquwnxl+g5t9m86ql1d9u='",
+          "'unsafe-eval'",
+          "'unsafe-hashes'",
+          "blob:",
+          "https://*.haute-garonne.gouv.fr",
+          "https://*.interieur.gouv.fr",
+          "https://cdn.ckeditor.com",
+          "https://cdnjs.cloudflare.com",
+          "https://snow.artifica.fr"
+        ],
+        "object-src": [
+          "'none'"
+        ],
+        "style-src": [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdnjs.cloudflare.com",
+          "https://snow.artifica.fr"
+        ],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://cdnjs.cloudflare.com",
+          "https://jedonnemonavis.numerique.gouv.fr",
+          "https://snow.artifica.fr",
+          "https://tile.openstreetmap.org",
+          "https://www.info.gouv.fr"
+        ],
+        "frame-src": [
+          "*"
+        ],
+        "frame-ancestors": [
+          "'self'"
+        ],
+        "font-src": [
+          "'self'",
+          "https://snow.artifica.fr"
+        ],
+        "connect-src": [
+          "'self'",
+          "https://snow.artifica.fr"
+        ],
+        "report-uri": [
+          "/report-csp-violation"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": true,
+        "unsafeInline": false,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": false
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": false,
+      "result": "redirection-off-host-from-http",
+      "scoreModifier": -5,
+      "destination": "https://www.haute-garonne.gouv.fr/",
+      "redirects": true,
+      "route": [
+        "http://haute-garonne.gouv.fr/",
+        "https://www.haute-garonne.gouv.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": false,
+      "result": "hsts-implemented-max-age-less-than-six-months",
+      "scoreModifier": -10,
+      "data": "max-age=1000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 1000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
