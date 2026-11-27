@@ -9,20 +9,19 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 19 Aug 2026 02:52:08 GMT",
-      "server": "Apache",
-      "strict-transport-security": "max-age=34560000; preload",
-      "last-modified": "Mon, 12 Jan 2026 10:05:04 GMT",
-      "etag": "\"3ed-6482e02447400-gzip\"",
+      "strict-transport-security": "max-age=34560000; includeSubDomains",
+      "date": "Fri, 27 Nov 2026 02:32:28 GMT",
+      "last-modified": "Mon, 19 Oct 2026 14:53:09 GMT",
+      "etag": "\"3ed-65e32ac199f40-gzip\"",
       "accept-ranges": "bytes",
       "vary": "Accept-Encoding,User-Agent",
       "x-ua-compatible": "IE=edge",
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1;mode=block",
-      "content-length": "414",
       "connection": "close",
-      "content-type": "text/html; charset=UTF-8"
+      "content-type": "text/html; charset=UTF-8",
+      "content-length": "1005"
     }
   },
   "tests": {
@@ -79,10 +78,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=34560000; preload",
-      "includeSubDomains": false,
+      "data": "max-age=34560000; includeSubDomains",
+      "includeSubDomains": true,
       "maxAge": 34560000,
-      "preload": true,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
