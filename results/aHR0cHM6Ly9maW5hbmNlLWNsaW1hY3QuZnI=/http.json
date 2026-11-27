@@ -1,25 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "F",
     "error": null,
-    "score": 30,
+    "score": 10,
     "statusCode": 200,
-    "testsFailed": 4,
-    "testsPassed": 6,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Mon, 17 Aug 2026 02:56:05 GMT",
+      "date": "Fri, 27 Nov 2026 02:31:40 GMT",
       "server": "Apache",
       "link": "<https://finance-climact.fr/wp-json/>; rel=\"https://api.w.org/\"",
       "upgrade": "h2,h2c",
       "connection": "Upgrade, close",
       "cache-control": "max-age=0",
-      "expires": "Mon, 17 Aug 2026 02:56:05 GMT",
+      "expires": "Fri, 27 Nov 2026 02:31:40 GMT",
       "vary": "Accept-Encoding",
       "x-xss-protection": "1; mode=block",
       "x-content-type-options": "nosniff",
-      "content-length": "13873",
+      "content-length": "14312",
       "content-type": "text/html; charset=UTF-8"
     }
   },
@@ -52,15 +52,12 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
+      "pass": false,
+      "result": "redirection-invalid-cert",
+      "scoreModifier": -20,
       "destination": "https://finance-climact.fr/",
       "redirects": true,
-      "route": [
-        "http://finance-climact.fr/",
-        "https://finance-climact.fr/"
-      ],
+      "route": [],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -75,7 +72,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented",
+      "result": "hsts-invalid-cert",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
