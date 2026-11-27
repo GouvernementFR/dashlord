@@ -9,7 +9,7 @@
     "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 19 Aug 2026 00:00:13 GMT",
+      "date": "Fri, 27 Nov 2026 01:21:06 GMT",
       "server": "Apache",
       "cache-control": "max-age=3600, public",
       "content-language": "fr",
@@ -20,8 +20,8 @@
       "from-origin": "same",
       "referrer-policy": "no-referrer",
       "expect-ct": "max-age=86400, report-uri=\"/report-expect-ct-failure\"",
-      "last-modified": "Wed, 19 Aug 2026 00:00:12 GMT",
-      "etag": "\"1787097612-gzip\"",
+      "last-modified": "Fri, 27 Nov 2026 01:21:06 GMT",
+      "etag": "\"1795742466-gzip\"",
       "content-type": "text/html; charset=utf-8",
       "strict-transport-security": "max-age=31536000; preload",
       "x-xss-protection": "1; mode=block",
@@ -29,12 +29,13 @@
       "x-permitted-cross-domain-policies": "none",
       "connection": "close",
       "set-cookie": [
-        "visid_incap_3314458=6LIdua62Q1yq3cCOWd1YeXkahWoAAAAAQUIPAAAAAAAZiTlRxYaFuvqg3gK40qri; expires=Thu, 19 Aug 2027 02:26:15 GMT; HttpOnly; path=/; Domain=.esante.gouv.fr",
-        "incap_ses_607_3314458=lBTOOoJJsizRqdCUlX9sCHkahWoAAAAAAQjLahsa6D8Tpva4ieM3oQ==; path=/; Domain=.esante.gouv.fr"
+        "visid_incap_3314458=6Xux4URxRKSe5DSj4EHNacDrCGsAAAAAQUIPAAAAAADTXoXbOPaOE3VrZz0mymAm; expires=Fri, 26 Nov 2027 06:32:08 GMT; HttpOnly; path=/; Domain=.esante.gouv.fr",
+        "nlbi_3314458=y0gYIogqGQb3hHGBOfCZmQAAAABN3cR00HQ86XhYpTvVdq0/; HttpOnly; path=/; Domain=.esante.gouv.fr",
+        "incap_ses_102_3314458=j8VqOSlqZzOj3PYg1WBqAcDrCGsAAAAAk9hiQguEwV8VqHic3b/ojA==; path=/; Domain=.esante.gouv.fr"
       ],
       "x-cdn": "Imperva",
       "transfer-encoding": "chunked",
-      "x-iinfo": "51-53064063-53064154 NNNY CT(4 6 0) RT(1787107961423 192) q(0 0 0 0) r(1 1) U12"
+      "x-iinfo": "50-24531650-24531683 NNNN CT(149 154 0) RT(1795746752716 56) q(0 0 3 32) r(7 7) U12"
     }
   },
   "tests": {
@@ -183,12 +184,18 @@
       "data": {
         "visid_incap_3314458": {
           "domain": "esante.gouv.fr",
-          "expires": "2027-08-19T02:26:15.000Z",
+          "expires": "2027-11-26T06:32:08.000Z",
           "httponly": true,
           "path": "/",
           "port": null
         },
-        "incap_ses_607_3314458": {
+        "nlbi_3314458": {
+          "domain": "esante.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "incap_ses_102_3314458": {
           "domain": "esante.gouv.fr",
           "path": "/",
           "port": null
