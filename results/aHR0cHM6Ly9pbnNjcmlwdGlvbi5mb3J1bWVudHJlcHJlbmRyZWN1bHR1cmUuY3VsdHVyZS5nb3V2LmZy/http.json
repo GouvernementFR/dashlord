@@ -1,31 +1,23 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B",
+    "grade": "F",
     "error": null,
-    "score": 70,
-    "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "score": 10,
+    "statusCode": 403,
+    "testsFailed": 5,
+    "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Wed, 19 Aug 2026 02:50:55 GMT",
-      "content-type": "text/html; charset=utf-8",
-      "content-length": "94932",
+      "server": "CloudFront",
+      "date": "Fri, 27 Nov 2026 02:31:39 GMT",
+      "content-type": "text/html",
+      "content-length": "915",
       "connection": "close",
-      "x-frame-options": "SAMEORIGIN",
-      "x-xss-protection": "0",
-      "x-content-type-options": "nosniff",
-      "x-permitted-cross-domain-policies": "none",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "etag": "W/\"549b06531900827ba78666dd78e66d6a\"",
-      "cache-control": "max-age=0, private, must-revalidate",
-      "set-cookie": [
-        "utm_data=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkludDlJZz09IiwiZXhwIjoiMjAyNy0wOC0xOVQwMjo1MDo1NS42NTRaIiwicHVyIjoiY29va2llLnV0bV9kYXRhIn19--91d51ba5f549571ca20af10abb7b07bb38c879ec; path=/; expires=Thu, 19 Aug 2027 02:50:55 GMT; secure; httponly"
-      ],
-      "x-request-id": "944f24eb81745a04ec43bd3ffc988885",
-      "x-runtime": "0.153386",
-      "strict-transport-security": "max-age=31536000; includeSubDomains"
+      "x-cache": "Error from cloudfront",
+      "via": "1.1 513345163ac68041d8347fbccae18b9c.cloudfront.net (CloudFront)",
+      "x-amz-cf-pop": "IAD61-P6",
+      "x-amz-cf-id": "SJH6b1FkGrrvtaGY6UhNaqVAAofTOiGKe2ipUIHWu0163uzzTKI0FQ=="
     }
   },
   "tests": {
@@ -43,18 +35,9 @@
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
       "pass": true,
-      "result": "cookies-secure-with-httponly-sessions",
+      "result": "cookies-not-found",
       "scoreModifier": 0,
-      "data": {
-        "utm_data": {
-          "domain": "inscription.forumentreprendreculture.culture.gouv.fr",
-          "expires": "2027-08-19T02:50:55.000Z",
-          "httponly": true,
-          "path": "/",
-          "port": null,
-          "secure": true
-        }
-      },
+      "data": null,
       "sameSite": false
     },
     "cross-origin-resource-sharing": {
@@ -66,114 +49,56 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": true,
-      "result": "redirection-to-https",
-      "scoreModifier": 0,
-      "destination": "https://inscription.forumentreprendreculture.culture.gouv.fr/",
-      "redirects": true,
+      "pass": false,
+      "result": "redirection-missing",
+      "scoreModifier": -20,
+      "destination": "http://inscription.forumentreprendreculture.culture.gouv.fr/",
+      "redirects": false,
       "route": [
-        "http://inscription.forumentreprendreculture.culture.gouv.fr/",
-        "https://inscription.forumentreprendreculture.culture.gouv.fr/"
+        "http://inscription.forumentreprendreculture.culture.gouv.fr/"
       ],
-      "statusCode": 200
+      "statusCode": 403
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": true,
-      "result": "hsts-implemented-max-age-at-least-six-months",
-      "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
-      "includeSubDomains": true,
-      "maxAge": 31536000,
+      "pass": false,
+      "result": "hsts-not-implemented-no-https",
+      "scoreModifier": -20,
+      "data": null,
+      "includeSubDomains": false,
+      "maxAge": null,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-      "pass": false,
-      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
-      "scoreModifier": -5,
-      "data": {
-        "https://assets.eventmaker.io/assets/website/website-328fd17ca3e89526f629b33de2b0d6147eddb5de95bb6e49d8d70e3d77eb179e.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/assets/i18n/fr-9f5ad4251de0cdc5ee357e4b365ae8a4f50edaa5d0768bef7d5e395e6983ff45.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://code.jquery.com/jquery-migrate-3.3.2.min.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cms-assets.eventmaker.io/builds/grand-conference/assets-c565fbe82/main.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/runtime-aa4a57094e2c94d9cbea.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/6432-4d71944246ede48200e6.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/4171-ba63048e078d34bb657d.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/1141-92a4ffb216c989d671a1.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/7595-bb0f2316b0f428ec642b.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/2547-dd285ac7a2a0f8bdcf09.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/01timeConflictChecker-a2c5de9d574a08c7d277.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/6441-c41d3319a181b96aaaf2.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        },
-        "https://assets.eventmaker.io/packs/js/apiClient-af8cbb430a151e82b98c.js": {
-          "crossorigin": "anonymous",
-          "integrity": null
-        }
-      }
+      "pass": true,
+      "result": "sri-not-implemented-but-no-scripts-loaded",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-sameorigin-or-deny",
-      "scoreModifier": 0,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
