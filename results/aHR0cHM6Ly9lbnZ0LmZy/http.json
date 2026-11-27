@@ -1,25 +1,25 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B",
     "error": null,
-    "score": 50,
+    "score": 70,
     "statusCode": 200,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "testsFailed": 2,
+    "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "nginx",
-      "date": "Mon, 17 Aug 2026 02:54:15 GMT",
+      "date": "Fri, 27 Nov 2026 02:31:38 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "cache-control": "max-age=3600, must-revalidate",
       "hummingbird-cache": "Served",
-      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-      "x-frame-options": "sameorigin",
-      "x-xss-protection": "1; mode=block",
-      "x-content-type-options": "nosniff"
+      "strict-transport-security": "max-age=31536000",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin"
     }
   },
   "tests": {
@@ -51,23 +51,24 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-missing",
-      "scoreModifier": -20,
-      "destination": "http://envt.fr/",
-      "redirects": false,
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://envt.fr/",
+      "redirects": true,
       "route": [
-        "http://envt.fr/"
+        "http://envt.fr/",
+        "https://envt.fr/"
       ],
-      "statusCode": 404
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -75,10 +76,10 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains; preload",
-      "includeSubDomains": true,
+      "data": "max-age=31536000",
+      "includeSubDomains": false,
       "maxAge": 31536000,
-      "preload": true,
+      "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
@@ -87,6 +88,10 @@
       "result": "sri-not-implemented-but-external-scripts-loaded-securely",
       "scoreModifier": -5,
       "data": {
+        "https://www.google.com/recaptcha/api.js?onload=c4wp_onloadCallback&render=explicit&hl=en&ver=7.6.2": {
+          "crossorigin": null,
+          "integrity": null
+        },
         "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js?ver=2.8.3": {
           "crossorigin": null,
           "integrity": null
@@ -113,7 +118,7 @@
       "pass": true,
       "result": "x-frame-options-sameorigin-or-deny",
       "scoreModifier": 0,
-      "data": "sameorigin"
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",
